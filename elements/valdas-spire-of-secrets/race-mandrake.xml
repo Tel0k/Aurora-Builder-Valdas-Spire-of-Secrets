@@ -2,6 +2,7 @@
 <elements>
 	<info>
 		<name>Mandrake</name>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
 		<update version="0.0.1">
 			<file name="race-mandrake.xml" url="" />
 		</update>
