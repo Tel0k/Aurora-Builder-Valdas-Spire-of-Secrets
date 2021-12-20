@@ -2,6 +2,7 @@
 <elements>
 	<info>
 		<name>Mandrake</name>
+		<description>The Mandrake Race from Valda’s Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
 		<update version="0.0.1">
 			<file name="race-mandrake.xml" url="" />
