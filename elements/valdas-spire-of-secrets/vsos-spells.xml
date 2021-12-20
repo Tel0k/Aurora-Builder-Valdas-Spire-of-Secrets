@@ -5,7 +5,7 @@
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
 		<update version="0.0.1">
-			<file name="vsos-spells.xml" url="" />
+			<file name="vsos-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-spells.xml" />
 		</update>
 	</info>
 	<element name="Abduct" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_ABDUCT">
