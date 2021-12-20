@@ -5,7 +5,7 @@
         <description>The Freerunner from Valda's Spire of Secrets</description>
         <author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
         <update version="0.0.1">
-            <file name="ranger-freerunner.xml" url="" />
+            <file name="ranger-freerunner.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-freerunner.xml" />
         </update>
     </info>
     <element name="Freerunner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RANGER_FREERUNNER">
