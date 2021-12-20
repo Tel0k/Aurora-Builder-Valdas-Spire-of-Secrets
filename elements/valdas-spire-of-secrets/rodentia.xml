@@ -6,7 +6,7 @@
 		<file name="rodentia.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rodentia.xml" />
 	    </update>
     </info>	
-    <element name="Rodentia" type="Language" source="Valda’s Spire of Secrets" id="ID_LANGUAGE_RODENTIA">
+    <element name="Rodentia" type="Language" source="Valda's Spire of Secrets" id="ID_LANGUAGE_RODENTIA">
 	    <supports>Exotic</supports>
 	    <description>
 		<p>Typically spoken by mousefolk. No standard script form, but it uses Common script when annotating sounds of Rodentia words. </p>
