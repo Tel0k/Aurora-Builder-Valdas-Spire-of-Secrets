@@ -3,6 +3,7 @@
 	<info>
 		<name>Mousefolk</name>
 		<description>The Mousefolk Race from Valda’s Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
 		<update version="0.0.2">
 			<file name="race-mousefolk.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-mousefolk.xml" />
 		</update>
@@ -21,7 +22,7 @@
 			<h4>MOUSEFOLK NAMES</h4>
 			<p>Most mousefolk names are derived from Rodentia, the mousefolk language, and are fairly squeaky when pronounced, as a result.</p>
 			<p>
-              <span class="feature">Male Names:</span>Arven, Blodge, Dunfur, Frisk, Jinoree, Phrenik, Reep, Skapp<br/>
+              		  <span class="feature">Male Names:</span>Arven, Blodge, Dunfur, Frisk, Jinoree, Phrenik, Reep, Skapp<br/>
 			  <span class="feature">Female Names:</span>Beeka, Constance, Juniper, Tess, Romsca, Serena, Wincey
 			</p>
 			<h4>MOUSEFOLK TRAITS</h4>
@@ -162,7 +163,7 @@
 			<description>You have resistance to poison damage.</description>
 		</sheet>
 		<rules>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+      			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
 	
