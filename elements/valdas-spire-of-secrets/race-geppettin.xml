@@ -2,8 +2,9 @@
 <elements>
 	<info>
 		<name>Geppettin</name>
+		<description>The Geppettin Race from Valda’s Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-geppettin.xml" url="" />
 		</update>
 	</info>
