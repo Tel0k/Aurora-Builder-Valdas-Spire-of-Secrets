@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spirithost</name>
+		<update version="0.0.1">
+			<file name="race-spirithost.xml" url="" />
+		</update>
+	</info>
+	<element name="Spirithost" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_SPIRITHOST">
+		<description>
+			<p class="flavor">Half-immaterial and half-flesh, spirithosts are the eerie, spectral, humanlike residents of the Border Ethereal. Though often confused for specters, ghosts, and other incorporeal undead, spirithosts are very much alive, as much as their shifting, partly-material bodies allow.</p>
+			<h4>SPECTRAL SONS AND DAUGHTERS</h4>
+			<p>The Ethereal Plane is generally thought to be lifeless, exclusively the domain of restless, incorporeal undead and other transient souls. While it is true that there are no creatures native to that plane, the Border Ethereal has its fair share of adopted inhabitants, such as the blink dog, phase spider, and spirithost. The latter is the only humanoid to hail from this desolate plane, and might be considered its only true descendant.</p>
+			<p class="indent">Though most spirithosts reside on the Material Plane, they can step sideways into the Ethereal naturally, allowing them to bypass physical obstacles, and can see into the Ethereal effortlessly, allowing them to navigate both planes at once. They can even communicate with the dead directly, a feat few mediums take lightly.</p>
+			<h4>BRANDED UNDEAD</h4>
+			<p>Though their bodies resemble those of ghosts—slightly translucent, glowing from inside with a pale, white light—spirithosts are not undead. Far from it: they are born, grow old, and die, and can even raise children.</p>
+			<p class="indent">Despite this, most spirithosts are wrongfully believed to be undead, their eerie, spectral forms too similar to ghosts for the layman to differentiate. Many a well-meaning but ignorant cleric has tried to turn or banish a spirithost, to no avail. To avoid such conflict, spirithosts often avoid large, unfamiliar towns, or disguise their ethereality from others.</p>
+			<h4>SPIRITHOST NAMES</h4>
+			<p>Spirithost names are gentle and sibilant, sounding as if they are whispered. They sound strange in most tongues, for they originate in an old, now forgotten, dialect of Common, practiced by the spirithost in days long past.</p>
+			<p>
+              <span class="feature">Male Names:</span>Astras, Boreas, Cin'nilas, Cusnon, Fesim, Mesaron, Senvas, Servalas, Sesirops, Yalsin<br/>
+			  <span class="feature">Female Names:</span>Amias, Belias, Heathimis, Lethreas, Nix'silia, Priscilla, Sayu, Shavaras, Sunda, Wishnas
+			</p>
+			<h4>SPIRITHOST TRAITS</h4>
+			<p>Your borderline ethereal body grants you the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1, and any other ability score of your choice increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Spirithost do not experience time in the same way as most mortal creatures. As a result, even though they mature in their teens, their lives can stretch on for hundreds of years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Though some spirithosts are evil, most are simply chaotic, harboring a deep distrust for institutions that so readily brand them as undead.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Spirithost stand as tall as humans, usually around 5 to 6 feet tall. However, their slightly ethereal form is only loosely affiliated with gravity, weighing half as much as a similarly-sized human. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Spirithosts move gracefully, as if drifting through water. Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Ethereal Vision.</em></strong> Your supernatural nature grants you superior vision. While you are on the Material Plane, you can see 60 feet into the Ethereal Plane.</p>
+			<p class="indent"><strong><em>Incorporeal Movement.</em></strong> You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but your partially-material form cannot pass through more than one foot of stone, one inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+			<p class="indent">If you end your movement occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</p>
+			<p class="indent"><strong><em>Ethereal Nature.</em></strong> You can go twice as long without eating, drinking, or breathing, without penalty.</p>
+			<p class="indent"><strong><em>Spirit Speech.</em></strong> You can cast the spell speak with dead, without using spell slots or material components. You can only ask one question of a corpse when you cast this spell in this way. Once you use this trait, you can't use it again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Translucence.</em></strong> As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Creatures which can see into the Ethereal Plane can see you normally. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong>You can speak, read, and write Common and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Astras, Boreas, Cin'nilas, Cusnon, Fesim, Mesaron, Senvas, Servalas, Sesirops, Yalsin</set>
+			<set name="names" type="female">Amias, Belias, Heathimis, Lethreas, Nix'silia, Priscilla, Sayu, Shavaras, Sunda, Wishnas</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<stat name="Dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mandrake)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Spirithost)" number="1" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_VISION" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_INCORPOREAL_MOVEMENT" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_NATURE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TRANSLUCENCE" />
+		</rules>
+	</element>
+	<element name="Ethereal Vision" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_VISION">
+		<description>
+			<p>Your supernatural nature grants you superior vision. While you are on the Material Plane, you can see 60 feet into the Ethereal Plane.</p>
+		</description>
+		<sheet>
+			<description>You can see {{ethereal:range}} feet into the Ethereal Plane.</description>
+		</sheet>
+		<rules>
+			<stat name="ethereal:range" value="60" bonus="base"  />
+		</rules>
+	</element>
+	<element name="Incorporeal Movement" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_INCORPOREAL_MOVEMENT">
+		<description>
+			<p>You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but your partially-material form cannot pass through more than one foot of stone, one inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+			<p class="indent">If you end your movement occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</p>
+		</description>
+		<sheet>
+			<description>You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but you cannot pass through more than one foot of stone, one inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. If you end occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space and take force damage equal to twice the number of feet you are moved.</description>
+		</sheet>
+	</element>
+	<element name="Ethereal Nature" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_NATURE">
+		<description>
+			<p>You can go twice as long without eating, drinking, or breathing, without penalty.</p>
+		</description>
+		<sheet>
+			<description>You can go twice as long without eating, drinking, or breathing, without penalty.</description>
+		</sheet>
+	</element>
+	<element name="Spirit Speech" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH">
+		<description>
+			<p>You can cast the spell <em>speak with dead</em>, without using spell slots or material components. You can only ask one question of a corpse when you cast this spell in this way. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet  usage="1/Long Rest">
+			<description>You can cast the spell 'Speak with Dead' without using spell slots or material components. You can only ask one question of a corpse when you cast this spell in this way. </description>
+		</sheet>	
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="1" />
+		</rules>
+	</element>
+	<element name="Translucence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TRANSLUCENCE">
+		<description>
+			<p>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Creatures which can see into the Ethereal Plane can see you normally. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Creatures which can see into the Ethereal Plane can see you normally.</description>
+		</sheet>
+	</element>
+</elements>
+	

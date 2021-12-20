@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Vigilante</name>
+        <description>The Vigilante from Valda's Spire of Secrets</description>
+        <author url="">Valda's Spire of Secrets by Mage Hand Press</author>
+        <update version="0.0.1">
+            <file name="ranger-vigilante.xml" url="" />
+        </update>
+    </info>
+    <element name="Vigilante" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RANGER_VIGILANTE">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>When evildoers run rampant and the city calls out for justice, vigilantes rise to the occasion. Clad in a larger-than-life persona, capped off with a cape, mask, pair of tights, or some combination thereof, vigilantes embark on a crusade against villainy in all its forms. Many vigilantes are beacons of hope, dispatching bows with fighting prowess and dramatic flair, while other paint themselves as brooding antiheroes, out for themselves and seeking some kind of vengeance against the criminal underworld.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_HEROIC_MAGIC" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_MASKED_PERSONA" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_HAND_TO_HAND" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_FLASHBANG" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_BIFF_BAM_POW" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_CATCHPHRASE" />
+        </description>
+        <sheet>
+            <description>Clad in a larger-than-life persona, capped off with a cape, mask, pair of tights, or some combination thereof, vigilantes embark on a crusade against villainy in all its forms.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_HEROIC_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_MASKED_PERSONA" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_HAND_TO_HAND" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_FLASHBANG" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_BIFF_BAM_POW" level="11" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_CATCHPHRASE" level="15" />
+        </rules>
+    </element>
+    <element name="Heroic Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_HEROIC_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Heroic Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>       
+            <h5>HEROIC SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td><em>jump</em></td></tr>
+                <tr><td>5rd</td><td><em>enhance ability</em></td></tr>
+                <tr><td>9th</td><td><em>fly</em></td></tr>
+                <tr><td>13th</td><td><em>private sanctum</em></td></tr>
+                <tr><td>17th</td><td><em>passwall</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_JUMP" level="3" spellcasting="Ranger"/>
+            <grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="5" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" level="9" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="13" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="17" spellcasting="Ranger" />
+        </rules>
+    </element>
+    <element name="Masked Persona" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_MASKED_PERSONA">
+        <description>
+            <p>At 3rd level, you assume a costumed alter ego to conceal your identity as a crime fighter. While wearing a mask or costume, your AC equals 10 + your Wisdom modifier + your Dexterity modifier.</p>
+        </description>
+       <sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense vigilante}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense vigilante:base" value="10" />
+			<stat name="ac:unarmored defense vigilante:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense vigilante:wisdom" value="wisdom:modifier" />
+			<stat name="ac:unarmored defense vigilante" value="ac:unarmored defense vigilante:base" />
+			<stat name="ac:unarmored defense vigilante" value="ac:unarmored defense vigilante:dexterity" />
+			<stat name="ac:unarmored defense vigilante" value="ac:unarmored defense vigilante:wisdom" />
+			<stat name="ac:calculation" value="ac:unarmored defense vigilante" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Vigilante)" />
+		</rules>
+    </element>
+    <element name="Hand-to-Hand" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_HAND_TO_HAND">
+        <description>
+            <p>At 3rd level, you have learned to fight using nothing but your bare handsand an array of "pows" and "blams".</p>
+            <p> You gain gain the following benefits while you are unarmored or wearing only light armor:</p>
+            <ul>
+				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes.</li>
+				<li>Your unarmed strikes deal improved damage, and improve as you gain levels in this class, as shown on the Unarmed Damage table below.</li>
+				<li>When you hit a creature with an unarmed strike, you can use your bonus action to deal an additional unarmed strike damage die to the damage roll .</li>
+			</ul>
+            <h5>UNARMED DAMAGE</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Unarmed Strike Damage</td></tr>
+                </thead>
+                <tr><td>3rd</td><td><em>1d6</em></td></tr>
+                <tr><td>5rd</td><td><em>1d8</em></td></tr>
+                <tr><td>11th</td><td><em>1d10</em></td></tr>
+                <tr><td>15th</td><td><em>1d12</em></td></tr>
+            </table>
+        </description>
+        <sheet>
+			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you hit a creature with an unarmed strike, you can use your bonus action to deal an additional unarmed strike damage die to the damage roll.</description>
+		</sheet>
+		<rules>
+			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" level="3" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="11" />
+			<stat name="martial arts:dice" value="12" bonus="martial arts" level="17" />
+		</rules>
+    </element>
+    <element name="Flashbang" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_FLASHBANG">
+        <description>
+            <p>Starting 7th level, you carry a number of flashpaper bombs for quick escapes and dramatic entrances. As a bonus action, you throw a concussive bomb at your feet, disorienting and distracting nearby foes. Each creature within 5ft of you can't take reactions until the start of its next turn.</p>
+        </description>
+        <sheet action="Bonus Action" >
+            <description>As a bonus action, you throw a concussive bomb at your feet. Each creature within 5ft of you can't take reactions until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Biff! Bam! Pow!" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_BIFF_BAM_POW">
+        <description>
+            <p>Beginning at 11th level, you can unleash a barrage of punches in the name of justice! Whenever you make an unarmed strike on your turn, you can choose to make two unarmed strikes with disadvantage, regardless of circumstance.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make an unarmed strike on your turn, you can choose to make two unarmed strikes with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Catchphrase!" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_VIGIL_CATCHPHRASE">
+        <description>
+            <p>By 15th level, your personal catchprase has gained supernatural levels of cultural cache. You can utter your catchphrase whenever you hit a creature with an attack roll, beat a creature in an opposed strength, dexterity, constitution check, or when you succed on a saving throw.</p>
+            <p class="indent">Until the beginning of your next turn, you have resistance to all damage, and can add your Wisdom modifier to damage rolls. Once you use this ability, you can't use it again until you score a critical hit or finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description> You can utter your catchphrase whenever you hit a creature with an attack roll, win an opposed strength, dexterity, constitution check, or when you succed on a saving throw, until the beginning of your next turn, you have resistance to all damage and can add your Wisdom modifier to damage rolls. Once used, you can't use it again until you score a critical hit or finish a short or long rest..</description>
+        </sheet>
+    </element>
+</elements>

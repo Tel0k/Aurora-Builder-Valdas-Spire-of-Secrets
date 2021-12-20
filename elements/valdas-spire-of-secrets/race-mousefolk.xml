@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mousefolk</name>
+		<update version="0.0.1">
+			<file name="race-mousefolk.xml" url="" />
+		</update>
+	</info>
+	<element name="Mousefolk" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_MOUSEFOLK">
+		<description>
+			<p class="flavor">Never to be looked down upon, the slight, unassuming mousefolk are kindhearted to a fault and possess courage greater than most giants.</p>
+			<h4>TINY BUT BRAVE</h4>
+			<p>Though the tiny, big-eared mousefolk are often overlooked by larger creatures, history is brimming with stories of gallant mouse-knights staring down dragons, crossing blades with warlords, and charging into grand battles. It happens that few histories are written about the valor of mousefolk—and many more should be—yet they make appearances in legend all the same, their bravery cementing their place in history.</p>
+			<p class="indent">Even excluding the long and proud history of mouse-knights, few mousefolk are apt to fear either big folk or monsters. Mousefolk are good to their neighbors and rarely pick fights; after all, most folks can be reasoned with. Those who can't be reasoned with, however, should rightly fear mousefolk striking at their knees. Mousefolk do not suffer bullies lightly.</p>
+			<h4>STORYTELLERS AND LEGEND-KEEPERS</h4>
+			<p>The mousefolk language, Rodentia, has no written form, thus mousefolk preserve their history in story and in song passed from elders to children through the generations. Their oral tradition is rich, filled with stories of grand heroics, shrewd tricks, and swooning romance. Indeed, many mousefolk live to see themselves preserved in the legends of their people, their deeds remembered in a grand epic for the ages.</p>
+			<h4>HOODED OR DISGRACED</h4>
+			<p>Though ratlings have long abandoned the old ways, a mouseling is never to be seen without a hood. Following ancient tradition, mouselings wear their hoods, which they have sewn themselves, at all times, except in the direst circumstances. A hood is a symbol of wealth and social standing, and is sometimes replaced with hats or other headwear, when appropriate.</p>
+			<p class="indent">Where this tradition originated, none can say, but mouselings hold to it strongly. If one is seen without a hood, it is surely a sign of disgrace and exile, the most personal punishment a village of mouselings can inflict.</p>
+			<h4>MOUSEFOLK NAMES</h4>
+			<p>Most mousefolk names are derived from Rodentia, the mousefolk language, and are fairly squeaky when pronounced, as a result.</p>
+			<p>
+              <span class="feature">Male Names:</span>Arven, Blodge, Dunfur, Frisk, Jinoree, Phrenik, Reep, Skapp<br/>
+			  <span class="feature">Female Names:</span>Beeka, Constance, Juniper, Tess, Romsca, Serena, Wincey
+			</p>
+			<h4>MOUSEFOLK TRAITS</h4>
+			<p>Slight and swift, you possess the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Mousefolk mature in their teens and live around 80 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Most mousefolk are neutral good. They tend to be kind-hearted and have deeply-rooted values.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Mouselings stand around 3 feet tall, but appear slightly taller with their large ears, and normally weigh no more than 40 pounds. Ratlings, by contrast, stand almost 4 feet tall, but have much smaller ears. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Mousefolk have superior vision in dim light and darkness. You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Lightfooted.</em></strong> You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Scurry.</em></strong> You can move through the space of any hostile creature as if it were difficult terrain.</p>
+			<p class="indent"><strong><em>Squeeze.</em></strong> You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common. You can also speak Rodentia, a quiet and squeaky language that has no established written form. Mouselings value the oral tradition highly and only take notes in Common, or using an improvised shorthand that approximates the sounds of Rodentia in Common script.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Mousefolk are commonly divided into two subraces: mouselings and ratlings. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Arven, Blodge, Dunfur, Frisk, Jinoree, Phrenik, Reep, Skapp</set>
+			<set name="names" type="female">Beeka, Constance, Juniper, Tess, Romsca, Serena, Wincey</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<stat name="Dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mandrake)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_RODENTIA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_LIGHTFOOTED" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SCURRY" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_MOUSEFOLK_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Lightfooted" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_LIGHTFOOTED">
+		<description>
+			<p>You have proficiency in the Stealth skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Stealth skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Scurry" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SCURRY">
+		<description>
+			<p>You can move through the space of any hostile creature as if it were difficult terrain.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any hostile creature as if it were difficult terrain.</description>
+		</sheet>
+	</element>
+	<element name="Squeeze" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE">
+		<description>
+			<p>You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</p>
+		</description>
+		<sheet>
+			<description>You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</description>
+		</sheet>
+	</element>
+	<element name="Subrace" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_MOUSEFOLK_SUBRACE">
+		<description>
+			<p>Mousefolk are commonly divided into two subraces: mouselings and ratlings. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Subrace" supports="Mousefolk" />
+		</rules>
+	</element>
+
+	<element name="Mouseling" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_MOUSELING">
+		<supports>Mousefolk</supports>
+		<description>
+			<p>Mouselings are smaller than their ratling cousins, but are all the more daring. They sport a wide variety of coats, from grey to brown to very rare whites, but all possess large ears and round, black eyes. Though these features often make them look adorable to big folk, most mouselings want nothing more than to be taken seriously. They fancy themselves knights, merchants, minstrels, explorers, and a wide variety of other occupations; only humans rival mouselings for ambition.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Brave.</em></strong> You have advantage on saving throws you make against being frightened.</p>
+			<p class="indent"><strong><em>Nimble Escape.</em></strong> When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_BRAVE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_NIMBLE_ESCAPE" />
+		</rules>
+	</element> 	
+	<element name="Brave" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BRAVE">
+		<description>
+			<p>You have advantage on saving throws you make against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make against being frightened.</description>
+		</sheet>
+	</element>
+	<element name="Nimble Escape" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_NIMBLE_ESCAPE">
+		<description>
+			<p>When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor.</p>
+		</description>
+			<sheet action="Reaction">
+			<description>When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor.</description>
+		</sheet>
+	</element>
+
+	<element name="Ratling" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_RATLING">
+		<supports>Mousefolk</supports>
+		<description>
+			<p>Often, ratlings stand a full foot taller than their mouseling relatives, with longer tails and more pointed ears. They are tougher, more resistant to poison, and far more stubborn than other mousefolk, but are unquestionably resourceful. When needed, a ratling can escape just about any enclosure that isn't constructed entirely from metal and stone, a fact which many jailers hold in contempt.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Gnaw.</em></strong> You can use your action to chew through and break a small nonmagical object that isn't being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can't chew through materials that are harder than your teeth, such as metal, stone, or crystals.</p>
+			<p class="indent"><strong><em>Rat Resilience.</em></strong> You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_GNAW" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_RAT_RESILIENCE" />
+		</rules>
+	</element>
+	<element name="Gnaw" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_GNAW">
+		<description>
+			<p>You can use your action to chew through and break a small nonmagical object that isn't being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can't chew through materials that are harder than your teeth, such as metal, stone, or crystals.</p>
+		</description>
+		<sheet usage="Action">
+			<description>You can chew through and break a small nonmagical object that isn't being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can't chew through materials that are harder than your teeth, such as metal, stone, or crystals.</description>
+		</sheet>
+	</element>
+	<element name="Rat Resiliencence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_RAT_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+		</description>
+			<sheet>
+			<description>You have resistance to poison damage.</description>
+		</sheet>
+		<rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	
+	<element name="Rodentia" type="Language" source="Valda’s Spire of Secrets" id="ID_LANGUAGE_RODENTIA">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by mousefolk. No standard script form, but it uses Common script when annotating sounds of Rodentia words. </p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Mousefolk</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+</elements>
+	

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mandrake</name>
+		<update version="0.0.1">
+			<file name="race-mandrake.xml" url="" />
+		</update>
+	</info>
+	<element name="Mandrake" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_MANDRAKE">
+		<description>
+			<p class="flavor">Laymen believe that mandrakes are screaming, crying babies grown from the roots of a plant. However, small, wailing mandrakes are those which are harvested too early, literally children still in infancy. If allowed to grow for a year and a day before being harvested, they emerge fully-formed, able to mature into great and powerful tree people.</p>
+			<h4>FLESH FROM WOOD</h4>
+			<p>With a skin of thick bark and leaves growing at their extremities, you could be forgiven for believing that mandrakes are simply bizarre plants, treants, or animated trees. This might even be partially true: it seems that mandrakes originated from some plant ancestor, but through strange magic or stranger evolution, they have become something midway between animal and plant.</p>
+			<p class="indent">Mandrake anatomies are filled with paradoxes: they bleed a ruby ichor, reminiscent of both blood and sap. Their hearts, which look like a knot of roots, pump this around their body, enriching it with oxygen borne by leaves and special pores on their extremities. By preference, mandrakes can bask in the sunlight or consume living things for nourishment, and can even absorb nutrients through their feet, though they rarely subsist by sunlight and water alone.</p>
+			<h4>FOREST ENVOYS</h4>
+			<p>Alchemists and arcanists alike scratch their heads at mandrakes, but druids know them as the green emissaries who stand between the realms of animals and plants, making peace for all parties. To druidic tradition, mandrakes are unique, ancient constructions of Mother Nature herself, intended to act as delegates for her will. Mandrakes are credited by old druids with aligning elves with the forests and dwarves with the mountains; only with the rising tide of humanoids and their preponderance of gods did most creatures forget about Mother Nature and her half-plant ambassadors.</p>
+			<p class="indent">Today, mandrakes are rare, and make their homes in the forests near where villages and cities meet the true wilds. Humans tell tales of mandrakes savaging those who enter their domain, but druids and those who respect the old traditions of the forest know that such ire is seldom undeserved.</p>
+			<h4>MANDRAKE NAMES</h4>
+			<p>Taking their names from the old spirits of the forest, which have long been forgotten by men, mandrakes treat all names with great reverence.</p>
+			<p>
+	  	  <span class="feature">Male Names:</span>Akathaso, Bistonis, Cithaeron, Hathor, Nomina, Orseis, Othrys, Yggdras<br/>
+			  <span class="feature">Female Names:</span>Argyra, Circe, Claea, Hadryade, Helike, Lauma, Moria, Thronia
+			</p>
+			<h4>MANDRAKE TRAITS</h4>
+			<p>Because you are neither beast nor plant, you have the following characteristics: </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Mandrakes must grow undisturbed for a year and a day before they are harvested. They then mature in a decade and live for centuries, growing wider, with more gnarled bark as they age.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Mandrakes are known to keep centuries-old concords known only to the oldest of creatures. Though they stay neutral in most matters, they tend to lean toward lawful alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Mandrakes usually stand tall and slim, usually almost seven feet high, with spring mandrakes being smaller and winter mandrakes being slightly larger, and often hunched over. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Plant Nature.</em></strong> Even though you are not fully a plant, you still possess many of the same traits as one. As long as you are within direct sunlight for at least 4 hours a day, you do not need to eat. Additionally, you can breathe through your leaves and extremities and can absorb water and nutrients through your feet.</p>
+			<p class="indent">Even if you are not proficient in Stealth, you can add your proficiency bonus to Dexterity (Stealth) checks that you make to hide in natural environments, such as forests.</p>
+			<p class="indent"><strong><em>Root Magic.</em></strong> You know the <em>shillelagh</em> cantrip and can target yourself with the spell, treating one of your limbs as a club instead of an unarmed strike. When you reach 3rd level, you can cast the <em>goodberry</em> spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>barkskin</em> spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common. You can also communicate simple ideas to nonmagical plants and can question plants about events that occurred nearby during the past day, gaining information about creatures that have passed, weather, and other circumstances.</p>
+			<p class="indent"><strong><em>Seasonal Subrace.</em></strong> Depending on the season in which mandrakes are harvested, they take on vastly different characteristics when they mature. Pick one seasonal subrace from Spring, Summer, Autumn, and Winter.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Akathaso, Bistonis, Cithaeron, Hathor, Nomina, Orseis, Othrys, Yggdras</set>
+			<set name="names" type="female">Argyra, Circe, Claea, Hadryade, Helike, Lauma, Moria, Thronia</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<stat name="Wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mandrake)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="1"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_PLANT_NATURE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ROOT_MAGIC" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SEASONAL_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Plant Nature" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PLANT_NATURE">
+		<description>
+			<p>Even though you are not fully a plant, you still possess many of the same traits as one. As long as you are within direct sunlight for at least 4 hours a day, you do not need to eat. Additionally, you can breathe through your leaves and extremities and can absorb water and nutrients through your feet.</p>
+			<p class="indent">Even if you are not proficient in Stealth, you can add your proficiency bonus to Dexterity (Stealth) checks that you make to hide in natural environments, such as forests.</p>
+		</description>
+		<sheet>
+			<description>If you stay at least 4hrs in direct sunlight, you don’t need to eat. You can absorb nutrients and water from your feet. You can always add your PB to Dex(Stealth) checks made in natural environments.</description>
+		</sheet>
+	</element>
+	<element name="Root Magic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ROOT_MAGIC">
+		<description>
+			<p>You know the <em>shillelagh</em> cantrip and can target yourself with the spell, treating one of your limbs as a club instead of an unarmed strike. When you reach 3rd level, you can cast the <em>goodberry</em> spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>barkskin</em> spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the shillelagh cantrip. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the shillelagh cantrip. You can cast goodberry spell once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the shillelagh cantrip. You can cast goodberry and barkskin spells once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHILLELAGH" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="3" requirements="!ID_MHP_VSOS_SUB_RACE_AUTUMN"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="5" />
+		</rules>
+	</element>
+	<element name="Seasonal Subrace" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SEASONAL_SUBRACE">
+		<description>
+			<p>Depending on the season in which mandrakes are harvested, they take on vastly different characteristics when they mature. Pick one seasonal subrace from Spring, Summer, Autumn, and Winter.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Seasonal Subrace" supports="Mandrake" />
+		</rules>
+	</element>
+
+	<element name="Spring" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_SPRING">
+		<supports>Mandrake</supports>
+		<description>
+			<p>Mandrakes harvested in the spring are limber and flexible, with lighter bark and short green buds instead of leaves. They are by far the thinnest and also the most agile of the mandrakes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Sprightly Movement.</em></strong> Your base movement speed increases by 5 feet.</p>
+			<p class="indent"><strong><em>Storm Resistance.</em></strong> Accustomed to the thunderstorms of spring, you have resistance to lightning damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SPRIGHTLY_MOVEMENT" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_STORM_RESISTANCE" />
+		</rules>
+	</element> 	
+	<element name="Sprightly Movement" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPRIGHTLY_MOVEMENT">
+		<description>
+			<p>Your base movement speed increases by 5 feet.</p>
+		</description>
+		<sheet>
+			<description>Your base movement speed increases by 5 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="5" />
+		</rules>
+	</element>
+	<element name="Storm Resistance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_STORM_RESISTANCE">
+		<description>
+			<p>Accustomed to the thunderstorms of spring, you have resistance to lightning damage.</p>
+		</description>
+			<sheet>
+			<description>You have resistance to lightning damage.</description>
+		</sheet>
+		<rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+
+	<element name="Summer" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_SUMMER">
+		<supports>Mandrake</supports>
+		<description>
+			<p>Summer mandrakes grow high and strong, as they are accustomed to the warm months and everabundant sunlight. Their leaves almost form a canopy, and the roots along their feet can hold fast to the loam when the need arises.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Deep Roots.</em></strong> As long as your feet are on natural ground, you have advantage on Strength saving throws and on all ability checks you make to resist being pushed, shoved, knocked prone, or otherwise moved involuntarily.</p>
+			<p class="indent"><strong><em>Wildfire Resistance.</em></strong> Having withstood the dry conditions and occasional forest fires of midsummer, you have resistance to fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_DEEP_ROOTS" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_WILDFIRE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Deep Roots" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_DEEP_ROOTS">
+		<description>
+			<p>As long as your feet are on natural ground, you have advantage on Strength saving throws and on all ability checks you make to resist being pushed, shoved, knocked prone, or otherwise moved involuntarily.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Strength saving throws and on all ability checks you make to resist being pushed, shoved, knocked prone, or otherwise moved involuntarily.</description>
+		</sheet>
+	</element>
+	<element name="Wildfire Resistance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_WILDFIRE_RESISTANCE">
+		<description>
+			<p>Having withstood the dry conditions and occasional forest fires of midsummer, you have resistance to fire damage.</p>
+		</description>
+			<sheet>
+			<description>You have resistance to fire damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Autumn" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_AUTUMN">
+		<supports>Mandrake</supports>
+		<description>
+			<p>Mandrakes of the autumn are more colorful than their kin, often literally so, decorated with leaves in a myriad of reds, purples, yellows, and all the hues in between. They reflect the natural world at its most bountiful and seek to share the harvest's gifts with all who will accept them.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score further increases by 1.</p>
+			<p class="indent"><strong><em>Abundance.</em></strong> You gain the ability to cast the goodberry spell, as per your Root Magic trait, when you choose this subrace at 1st level, rather than at 3rd level. When you cast this spell using this trait, each creature that consumes a berry regains hit points equal to your proficiency bonus.</p>
+			<p class="indent"><strong><em>Toxin Resistance.</em></strong> The vibrant colors of autumn bring with them the promise of harvests to come. To protect such a harvest, you have resistance to poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Autumn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ABUNDANCE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TOXIN_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Abundance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ABUNDANCE">
+		<description>
+			<p>You gain the ability to cast the goodberry spell, as per your Root Magic trait, when you choose this subrace at 1st level, rather than at 3rd level. When you cast this spell using this trait, each creature that consumes a berry regains hit points equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description level="1"> You can cast goodberry spell once per long rest, as per Root Magic trait. Each berry restores {{proficiency}} hp instead of 1.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1"/>
+		</rules>
+	</element>
+	<element name="Toxin Resistance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TOXIN_RESISTANCE">
+		<description>
+			<p>The vibrant colors of autumn bring with them the promise of harvests to come. To protect such a harvest, you have resistance to poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+<element name="Winter" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_WINTER">
+		<supports>Mandrake</supports>
+		<description>
+			<p>Mandrakes which are harvested in winter first glimpse the natural world at its harshest, becoming harsh in return. Winter mandrakes never grow leaves and develop gnarled bark that makes them look much older than they are. In addition, they grow large, for surviving the winter months fosters a certain strength that other mandrakes rarely, if ever, develop.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score further increases by 1.</p>
+			<p class="indent"><strong><em>Frost Resistance.</em></strong> Due to the bitter frost of the long winter months, you have resistance to cold damage.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Winter)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_FROST_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_POWERFUL_BUILD" />
+		</rules>
+	</element>
+	<element name="Frost Resistance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FROST_RESISTANCE">
+		<description>
+			<p>Due to the bitter frost of the long winter months, you have resistance to cold damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+    <rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+</elements>

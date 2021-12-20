@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Freerunner</name>
+        <description>The Freerunner from Valda's Spire of Secrets</description>
+        <author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="ranger-freerunner.xml" url="" />
+        </update>
+    </info>
+    <element name="Freerunner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RANGER_FREERUNNER">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>Agile, evasive, and unmoored from the constraints that slow down other rangers, the archetypal freerunner is supremely nimble and capable of crossing terrain as quickly as possible. They accomplish this through a skilled combination of dashing, leaping, and nimbly climbing, that guides them down clever paths through their environments. Moreover, an adept freerunner can convert the momentum from their gymnastics into deadly force, crushing their enemies with exceptional impact from unexpected directions.</p>
+            <p class="indent">A freerunner is most at home in a city or in the treetops of a great forest, for their unique movement requires a place that is steeped with complex geometry which reaches high into the sky. Of course, even on flat terrain, a freerunner's agility is not to be underestimated, for they can dive through a giant's legs or scurry up its back with ease.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_MOMENTUM" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_EVASIVE_FIGHTER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_HIT_HARD_HIT_FAST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_NIMBLE_DODGE" />
+        </description>
+        <sheet>
+            <description>A freerunner is most at home in a city or in the treetops of a great forest, but of course, even on flat terrain, a freerunner's agility is not to be underestimated.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_MOMENTUM" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_EVASIVE_FIGHTER" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_HIT_HARD_HIT_FAST" level="11" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_NIMBLE_DODGE" level="15" />
+        </rules>
+    </element>
+    <element name="Freerunning" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING">
+        <description>
+            <p>Starting when you choose this archetype at 3rd level, you have trained extensively to move freely over and through any terrain using only the abilities of the body. You have advantage on Dexterity (Acrobatics) checks made to navigate obstacles while running and can use Dexterity in place of Strength when making a Strength (Athletics) check to climb, jump, or swing on a rope.</p>
+            <p class="indent">Additionally, you have mastered a number of techniques. You can use your freerunning techniques a number of times equal to your Dexterity modifier, and regain all expended uses when you finish a short or long rest. While in your favoured terrain, using a technique does not count against your total number of uses.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong>SLIDE.</strong> As a bonus action, you can move up to 10 feet without spending movement through another creature's space or squeeze up to 10 feet through a smaller space.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong>TUMBLE.</strong> As a bonus action, you can nimbly jump, dive, or roll up to 10 feet in a straight line without spending movement. During this movement, any attacks of opportunity made against you have disadvantage.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong>WALL RUN.</strong> As a bonus action, you can choose to run along a vertical surface as part of your movement. Until the end of your turn, you gain a climb speed equal to your walking speed. If you jump while running along a wall, you can complete the distance of your jump, even if doing so would exceed your movement speed.</p>
+        </description>
+        <sheet>
+			<description>You have advantage on Dexterity (Acrobatics) checks made to navigate obstacles and can use Dexterity when making a Strength(Athletics) check. You also have access to the following techniques you can use {{technique}} times per short or long rest:</description>
+		</sheet>
+        <rules>
+			<stat name="technique" value="dexterity:modifier" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING_SLIDE" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING_TUMBLE" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING_WALL_RUN" />
+		</rules>
+    </element>
+    <element name="Slide" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING_SLIDE">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can move up to 10 feet without spending movement through another creature's space or squeeze up to 10 feet through a smaller space.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can move up to 10 feet without spending movement through another creature's space or squeeze up to 10 feet through a smaller space..</description>
+		</sheet>
+	</element>
+	<element name="Tumble" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING_TUMBLE">
+		<compendium display="false" />
+		<description>
+			<p>You can jump, dive, or roll up to 10 feet in a straight line without spending movement. During this, any attacks of opportunity made against you have disadvantage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can jump, dive, or roll up to 10 feet in a straight line without spending movement. During this, any attacks of opportunity made against you have disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Wall Run" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_FREERUNNING_WALL_RUN">
+		<compendium display="false" />
+		<description>
+			<p>You can choose to run along a vertical surface as part of your movement. Until the end of your turn, you gain a climb speed equal to your walking speed. If you jump while running along a wall, you can complete the distance of your jump, even if it would exceed your movement speed.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can run along a vertical surface as part of your movement. Until the end of your turn, you gain a climb speed equal to your walking speed. If you jump while running along a wall, you can complete the distance of your jump, even if it would exceed your movement speed.</description>
+		</sheet>
+	</element>
+    <element name="Momentum" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_MOMENTUM">
+        <description>
+            <p>At 3rd level, if you move through a hostile creature's space, leave a creature's reach, or move at least 15 feet, you deal an additional 1d6 on the next weapon attack you make on your turn.</p>
+        </description>
+        <sheet>
+            <description>While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness.</description>
+        </sheet>
+    </element>
+    <element name="Evasive Fighter" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_EVASIVE_FIGHTER">
+        <description>
+            <p>Beginning at 7th level, when you use a freerunning technique, you gain a +2 bonus to your AC until the beginning of your next turn.</p>
+        </description>
+        <sheet>
+          <description>When you use a freerunning technique, you gain a +2 bonus to your AC until the beginning of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Hit Hard, Hit Fast" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_HIT_HARD_HIT_FAST">
+        <description>
+            <p>Starting at 11th level, the additional damage from your Momentum feature increases to 2d6</p>
+        </description>
+        <sheet>
+            <description>The additional damage from your Momentum feature increases to 2d6.</description>
+        </sheet>
+    </element>
+    <element name="Nimble Dodge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_NIMBLE_DODGE">
+        <description>
+            <p>At 15th level, when a spell or other effect would have you make a saving throw due to being in an area of effect, you can use your reaction to move up to half your movement speed, potentially moving you outside the effect's area.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When making a saving throw due to being in an area of effect, you can use your reaction to move up to half your movement speed.</description>
+        </sheet>
+    </element>
+</elements>

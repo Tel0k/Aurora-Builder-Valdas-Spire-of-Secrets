@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Geppettin</name>
+		<update version="0.0.1">
+			<file name="race-geppettin.xml" url="" />
+		</update>
+	</info>
+	<element name="Geppettin" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_GEPPETTIN">
+		<description>
+			<p class="flavor">Ever a joy to children, geppettin resemble living playthings made of wood, cloth, or porcelain. Though easily mistaken for puppets, geppettin are not manipulated by a just-out-of-sight puppeteer; they are animated, sentient, and independent.</p>
+			<h4>DIVERSE ODDITIES</h4>
+			<p>As a race, the geppettin are an oddity. Though rare, they are numerous enough and share enough similarities with each other that they may be counted as an actual race of people, and not just freak mishaps of magic. While it may be that there are dedicated creators of geppettin, as there are with golems, a significant number of them have come to life on their own.</p>
+			<p class="indent">Physically, geppettin are quite small, often slightly shorter than halflings. Their physical features vary greatly from type to type, but they are almost always humanoid in shape. For simplicity, geppettin are classified by the materials by which they are composed: bisque are porcelain, marionettes are wood, and raggedy are made of fabric.</p>
+			<p class="indent">Despite being made of somewhat flimsy materials, sentience seems to grant them an odd hardiness. As well, due to their non-living nature, they never hunger, rarely tire, and are adept at being innocuous. Most find some form of work or profession in entertainment, but a few find fantastic success as spies and assassins.</p>
+			<h4>CHARMING, YET UNCANNY</h4>
+			<p>Though they bring delight to children, geppettin instill a cold fear in many adults: the type of fear that accompanies the uncanny realization that something inanimate is, in fact, alive. A person’s first reactions to a geppettin can be most telling, and usually fall into two camps: those that find the geppettin delightful, perhaps recalling cherished childhood memories, and those that are taken by an unnerving phobia, feeling a sudden chill upon seeing a doll move of its own impetus.</p>
+			<h4>GEPPETTIN NAMES</h4>
+			<p>Like other constructs, geppettin rarely name themselves. Typically, a construct has no conception that living creatures obsessively name everything, and have a name bestowed upon them—in this case, geppettin are normally named by children, or are given terms of endearment by adults.</p>
+			<p>
+			<span class="feature">Names:</span>Birdie, Cuddles, Desmond, Dusty, Hobbes, Fluffie, Frowny, Lizzie, Patches, Princess, Pup-pup, Red Jacket, Teddy
+			</p>
+			<h4>GEPPETTIN TRAITS</h4>
+			<p>As a geppettin, you have the following racial traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1, and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> As constructs, geppettin do not age, and are mature as soon as they become sentient.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Geppettin, as varied as they are, run the gamut of alignments: Raggedies are generally good, bisques tend towards evil, and marionettes are usually in between.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Geppettin are Small creatures, rarely breaking 3 feet in height.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Geppettin have superior vision in dim light and darkness. You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Construct Anatomy.</em></strong> Even though you were constructed, you are a living creature. You are immune to nonmagical diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish.</p>
+			<p class="indent">Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal. You can still be placed into a torpor by sleepinducing magic.</p>
+			<p class="indent"><strong><em>Innocuous.</em></strong> Geppettin are generally indistinguishable from non-living dolls of the same type. Because of that, they can be very stealthy when required. You have advantage on Charisma (Deception) checks you make to appear as a mundane toy.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> Geppettin can read and write Common as well as one other language based on their creator's race (your choice).</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Geppettin are divided into subraces based on material. Choose bisque, marionette, or raggedy for your subrace.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="custom">Birdie, Cuddles, Desmond, Dusty, Hobbes, Fluffie, Frowny, Lizzie, Patches, Princess, Pup-pup, Red Jacket, Teddy</set>
+			<set name="names-format">{{custom}}</set>
+			<set name="height" modifier="2d4">2'8"</set>
+			<set name="weight" modifier="1d4"> 8 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Geppettin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Geppettin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Geppettin)" number="1" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="1"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CONSTRUCT_ANATOMY" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_INNOCUOUS" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_GEPPETTIN_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Construct Anatomy" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CONSTRUCT_ANATOMY">
+		<description>
+			<p>Even though you were constructed, you are a living creature. You are immune to nonmagical diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish.</p>
+			<p class="indent">Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal. You can still be placed into a torpor by sleepinducing magic.</p>
+		</description>
+		<sheet>
+			<description>You don’t need to eat, drink, or breathe. You are immune to nonmagical disease. Instead of sleeping you enter an inactive state for 4 hours each day, you are still conscious and can see and hear as normal. You can still be affected by sleepinducing magic.</description>
+		</sheet>
+	</element>
+	<element name="Innocuous" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_INNOCUOUS">
+		<description>
+			<p>Geppettin are generally indistinguishable from non-living dolls of the same type. Because of that, they can be very stealthy when required. You have advantage on Charisma (Deception) checks you make to appear as a mundane toy.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma (Deception) checks you make to appear as a mundane toy.</description>
+		</sheet>
+	</element>
+	<element name="Geppettin Subrace" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_GEPPETTIN_SUBRACE">
+		<description>
+			<p>Geppettin are divided into subraces based on material. Choose bisque, marionette, or raggedy for your subrace.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Geppettin Subrace" supports="Geppettin" />
+		</rules>
+	</element>
+
+	<element name="Bisque" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_BISQUE">
+		<supports>Geppettin</supports>
+		<description>
+			<p>Bisque geppettin are a form of porcelain doll, crafted with exacting specification and often luxurious clothing materials. Though they are designed to look as realistic as possible, they are often thought to be the most terrifying of geppettin, due to their lifeless visage. Though their faces are often very fragile, their construction is generally much hardier than their brethren.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>China Doll.</em></strong> Any Wisdom (Insight) check made to discern your true emotions has disadvantage.</p>
+			<p class="indent"><strong><em>Surprise Attack.</em></strong> Bisque know that their small size and natural stealth lead to being very efficient stalkers. If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.</p>
+			<p class="indent"><strong><em>Terrifying.</em></strong> Your lifeless eyes and face tend to instill fear in people, often without even trying. You gain proficiency in the Intimidation skill, and have advantage on any Charisma (Intimidation) rolls in which you are attempting to scare someone that was not initially aware you are alive.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bisque)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CHINA_DOLL" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SURPRISE_ATTACK" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TERRIFYING" />
+		</rules>
+	</element> 	
+	<element name="China Doll" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CHINA_DOLL">
+		<description>
+			<p>Any Wisdom (Insight) check made to discern your true emotions has disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Any Wisdom (Insight) check made to discern your true emotions has disadvantage..</description>
+		</sheet>
+	</element>
+	<element name="Surprise Attack" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SURPRISE_ATTACK">
+		<description>
+			<p>If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.</p>
+		</description>
+		<sheet display="false">
+			<description>Once per combat, on your first turn, if you surprise a creature and hit it with an attack, it deals an extra 2d6 damage to it.</description>
+		</sheet>
+		<rules>
+			<stat name="sneak-attack:count" value="2" level="1" />
+			<stat name="sneak-attack:die" value="6" bonus="die" />
+		</rules>
+	</element>
+	<element name="Terrifying" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TERRIFYING">
+		<description>
+			<p>You gain proficiency in the Intimidation skill, and have advantage on any Charisma (Intimidation) rolls in which you are attempting to scare someone that was not initially aware you are alive.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+
+	<element name="Marionette" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_MARIONETTE">
+		<supports>Geppettin</supports>
+		<description>
+			<p>Marionettes are made mostly out of wood, with painted faces and carved clothing. Due to their construction, their jointed limbs are quite flexible, and they are known to be fantastic dancers.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score further increases by 1.</p>
+			<p class="indent"><strong><em>Clipped Strings.</em></strong> You can manipulate your old strings, using them to attack. When you make a melee attack with a light weapon on your turn, the weapon gains the Reach property if it didn't already have it.</p>
+			<p class="indent"><strong><em>Pantomime.</em></strong> Fitted with strings, all marionettes are taught to dance. You gain proficiency in the Performance skill, and have advantage on Charisma (Performance) checks made to dance.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Marionette)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CLIPPED_STRINGS" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_PANTOMIME" />
+		</rules>
+	</element>
+	<element name="Clipped Strings" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CLIPPED_STRINGS">
+		<description>
+			<p>You can manipulate your old strings, using them to attack. When you make a melee attack with a light weapon on your turn, the weapon gains the Reach property if it didn't already have it.</p>
+		</description>
+		<sheet>
+			<description>When you make a melee attack with a light weapon on your turn, the weapon gains the Reach property.</description>
+		</sheet>
+	</element>
+	<element name="Pantomime" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PANTOMIME">
+		<description>
+			<p>Fitted with strings, all marionettes are taught to dance. You gain proficiency in the Performance skill, and have advantage on Charisma (Performance) checks made to dance.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Performance skill, and have advantage on Charisma (Performance) checks made to dance.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+		</rules>
+	</element>
+
+	<element name="Raggedy" type="Sub Race" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SUB_RACE_RAGGEDY">
+		<supports>Geppettin</supports>
+		<description>
+			<p>Raggedy geppettin, also commonly called plushies, are any form of stuffed or soft doll. Though they often look humanoid, they may also look like animals, monsters, or any other form of anthropomorphic creature.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score further increases by 1.</p>
+			<p class="indent"><strong><em>Adorable.</em></strong> Raggedy, before coming to life, were designed to be appealing to children. As such, you gain proficiency in the Persuasion skill, and have advantage on Charisma (Persuasion) rolls you make against children or other humanoids that are fond of cute things.</p>
+			<p class="indent"><strong><em>Stuffed with Fluff.</em></strong> Raggedy are filled with a lightweight, soft material. When you take bludgeoning damage, you can use your reaction to gain resistance to the damage, and you are also knocked 5 feet away from the source of the damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Raggedy)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ADORABLE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_STUFFED_WITH_FLUFF" />
+		</rules>
+	</element>
+	<element name="Adorable" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ADORABLE">
+		<description>
+			<p>Raggedy, before coming to life, were designed to be appealing to children. As such, you gain proficiency in the Persuasion skill, and have advantage on Charisma (Persuasion) rolls you make against children or other humanoids that are fond of cute things.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Persuasion skill, and have advantage on Charisma (Persuasion) rolls you make against children or other humanoids that are fond of cute things..</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Stuffed with Fluff" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_STUFFED_WITH_FLUFF">
+		<description>
+			<p>Raggedy are filled with a lightweight, soft material. When you take bludgeoning damage, you can use your reaction to gain resistance to the damage, and you are also knocked 5 feet away from the source of the damage.</p>
+		</description>
+		<sheet>
+			<description>When you take bludgeoning damage, you can use your reaction to gain resistance to the damage, and you are also knocked 5 feet away from the source of the damage.</description>
+		</sheet>
+	</element>
+</elements>
