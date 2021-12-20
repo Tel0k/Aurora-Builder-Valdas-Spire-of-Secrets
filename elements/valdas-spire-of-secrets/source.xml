@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/source.xml" />
+		</update>
+	</info>	
+	<element name="Valda's Spire of Secrets" type="Source" source="Core" id="ID_MHP_SOURCE_VALDAS_SPIRE_OF_SECRETS">
+		<description>			
+			<p><strong><em>A magical mixture of rules options for the world's greatest roleplaying game.</em></strong></p>
+		</description>
+		<setters>
+			<set name="abbreviation">VSOS</set>
+			<set name="url">https://mfov.magehandpress.com</set>
+			<set name="author" abbreviation="MHP" url="https://mfov.magehandpress.com">Mage Hand Press</set>
+			<set name="third-party">true</set>
+			<set name="supplement">true</set>
+			<set name="release">20210930</set>
+		</setters>
+	</element>
+</elements>
