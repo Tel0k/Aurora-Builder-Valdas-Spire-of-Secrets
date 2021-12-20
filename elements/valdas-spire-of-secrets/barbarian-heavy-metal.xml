@@ -14,17 +14,17 @@
 			<p>The barbarians of the Path of Heavy Metal do not do things by halves. They fight the strongest foes, swing the biggest axes, and play the loudest music. For this reason, any battle they get involved in tends to be noisy, violent, and short.</p>
 			<p class="indent">Armored only in face paint and studded belts, these fearless hellions are known for screaming their enemies into submission and trashing taverns, though they can also be thoughtful and erudite when not tapping into their primal fury. Away from the battlefield, the "thunderheads" form a tight fraternity, bonded together by absolute commitment to their path and the shared recognition that he life of an adventurer -with its grueling travel, explosive violence, and unfamiliar lodgings- is essentially a neverending tour.</p>
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_BONUS_PROFICIENCIES" />
-            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_HEAVY_METAL_AXE" />
+            		<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_HEAVY_METAL_AXE" />
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_SOLO_SHREDDING" />
-            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS" />
+           		<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS" />
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_UP_TO_ELEVEN" />
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_SMASH_IT" />
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_BONUS_PROFICIENCIES" level="3" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_HEAVY_METAL_AXE" level="3" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_SOLO_SHREDDING" level="3" />
+            		<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_HEAVY_METAL_AXE" level="3" />
+            		<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_SOLO_SHREDDING" level="3" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS" level="6" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_UP_TO_ELEVEN" level="10" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_SMASH_IT" level="14" />
@@ -56,9 +56,9 @@
 		<sheet>
 			<description> When you deal damage to an enemy with your instrument weapon while raging, you increase your Rage bonus damage by 1, to a maximum of +{{rage:damage:bonus}}, until you are incapacitated, no longer holding your instrument weapon, miss an attack or your rage end.</description>
 		</sheet>
-        <rules>
-            <stat name="rage:damage:bonus" value="proficiency" bonus="double"/>
-        </rules>    
+       		<rules>
+            		<stat name="rage:damage:bonus" value="proficiency" bonus="double"/>
+        	</rules>    
 	</element>
     <element name="Killer Vocals" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS">
 		<description>
@@ -84,7 +84,7 @@
 			<p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
 		</description>
 		<sheet usage="1/Short||Long Rest">
-            <description>When you hit an enemy with your instrument weapon while raging, you can deal an additional 4d12 damage. A nonmagical instrument weapon gets destroyed, while a magical one loses its musical components and becomes a normal weapon.</description>
+            		<description> When you hit an enemy with your instrument weapon while raging, you can deal an additional 4d12 damage. A nonmagical instrument weapon gets destroyed, while a magical one loses its musical components and becomes a normal weapon.</description>
 		</sheet>
 	</element>	
 </elements>
