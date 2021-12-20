@@ -3,8 +3,8 @@
     <info>
         <name>Vigilante</name>
         <description>The Vigilante from Valda's Spire of Secrets</description>
-        <author url="">Valda's Spire of Secrets by Mage Hand Press</author>
-        <update version="0.0.1">
+        <author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets by Mage Hand Press</author>
+        <update version="0.0.2">
             <file name="ranger-vigilante.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-vigilante.xml" />
         </update>
     </info>
