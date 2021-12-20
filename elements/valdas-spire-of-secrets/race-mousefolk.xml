@@ -166,17 +166,5 @@
       			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
-	
-	<element name="Rodentia" type="Language" source="Valda’s Spire of Secrets" id="ID_LANGUAGE_RODENTIA">
-		<supports>Standard</supports>
-		<description>
-			<p>Typically spoken by mousefolk. No standard script form, but it uses Common script when annotating sounds of Rodentia words. </p>
-		</description>
-		<setters>
-			<set name="standard">true</set>
-			<set name="speakers">Mousefolk</set>
-			<set name="script">Common</set>
-		</setters>
-	</element>
 </elements>
 	
