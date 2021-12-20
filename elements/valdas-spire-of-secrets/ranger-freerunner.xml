@@ -3,8 +3,8 @@
     <info>
         <name>Freerunner</name>
         <description>The Freerunner from Valda's Spire of Secrets</description>
-        <author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
-        <update version="0.0.1">
+        <author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+        <update version="0.0.2">
             <file name="ranger-freerunner.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-freerunner.xml" />
         </update>
     </info>
