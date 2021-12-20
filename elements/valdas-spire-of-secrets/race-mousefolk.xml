@@ -2,8 +2,9 @@
 <elements>
 	<info>
 		<name>Mousefolk</name>
-		<update version="0.0.1">
-			<file name="race-mousefolk.xml" url="" />
+		<description>The Mousefolk Race from Valda’s Spire of Secrets</description>
+		<update version="0.0.2">
+			<file name="race-mousefolk.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-mousefolk.xml" />
 		</update>
 	</info>
 	<element name="Mousefolk" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_MOUSEFOLK">
