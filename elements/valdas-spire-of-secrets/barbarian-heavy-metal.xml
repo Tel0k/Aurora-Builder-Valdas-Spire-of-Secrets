@@ -57,7 +57,7 @@
 			<description> When you deal damage to an enemy with your instrument weapon while raging, you increase your Rage bonus damage by 1, to a maximum of +{{rage:damage:bonus}}, until you are incapacitated, no longer holding your instrument weapon, miss an attack or your rage end.</description>
 		</sheet>
         <rules>
-            <stat name="rage:damage:bonus" value="proficiency" bonus="double">
+            <stat name="rage:damage:bonus" value="proficiency" bonus="double"/>
         </rules>    
 	</element>
     <element name="Killer Vocals" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS">
