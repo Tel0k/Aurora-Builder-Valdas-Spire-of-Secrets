@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Path of the Fin</name>
+        <description>Path of the Fin from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="barbarian-fin.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-fin.xml" />
+        </update>
+    </info>
+    <element name="Path of the Fin" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BARBARIAN_PATH_OF_THE_FIN">
+      <supports>Primal Path</supports>
+      <description>
+        <p>Tribal communities exist all across the realms, in all manner of locales and climes. While their customs often change, one steadfast certainty, seen time and time again, is the reverence for particular animals local to that tribe. These are often wildly varied; northern tribes may revere the Wolf or the Bear, those of the deserts follow the Hawk or the Jackal, and those of the jungle may aspire to the Ape or the Tiger. It is in this tradition that the Path of the Fin, island warriors capturing the bloodthirsty essence of the great Shark, arose.</p>
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_AQUATIC" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_FEEDING_FRENZY" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_BLOOD_SENSE" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_MAKO" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_TSUNAMI" />
+      </description>
+      <sheet display="false" />
+      <rules>
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_AQUATIC" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_FEEDING_FRENZY" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_BLOOD_SENSE" level="6" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_MAKO" level="10" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_TSUNAMI" level="14" />
+      </rules>
+    </element>
+    <element name="Aquatic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_AQUATIC">
+      <description>
+        <p>Starting when you choose this path at 3rd level, you are permanently adapted to life underwater. You can breathe water as well as air and have a swim speed equal to your base movement speed. Additionally, if you are swimming, your rage can't end early.</p>
+      </description>
+      <sheet>
+        <description>You can breathe underwater and your swimming speed equals your walking speed. Additionally if you're swimming your rage can't end early.</description>
+      </sheet>
+      <rules>
+        <stat name="speed:swim" value="speed" bonus="base"/>
+      </rules>
+    </element>
+    <element name="Feeding Frenzy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_FEEDING_FRENZY">
+      <description>
+        <p>Unlike their land-locked brothers, fin barbarians undergo drastic physical transformations when they enter a rage. At 3rd level, while raging, you sprout rows of razor-sharp shark teeth and gain a melee bite attack. Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike.</p>
+        <p class="indent">When you hit a creature within 5 feet of you with a melee attack, you can use a bonus action to make a bite attack against that creature. This attack has advantage if the creature has half its hit points or fewer. You can use this feature a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you finish a long rest.</p>
+      </description>
+      <sheet action="Bonus Action" usage="{{constitution:modifier}}/Long Rest">
+        <description>While raging, you gain a melee bite attack,that deals 1d8+{{strength:modifier}}. This attack can be made as a bonus action after hitting a creature within 5ft with a melee attack. If the creature has half or less his original hp, you have advantage on the melee bite attack.</description>
+      </sheet>
+    </element>
+    <element name="Blood Sense" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_BLOOD_SENSE">
+      <description>
+        <p>A fully-grown shark can smell a single drop of blood in the water almost a mile away. At 6th level, you gain an amazing sense of smell. You have advantage on all Intelligence (Investigation) and Wisdom (Perception) checks dealing with smell, and you can automatically track a single living creature whose scent you are familiar with as long as the trail is less than a week old. By spending a minute concentrating, you can detect the scents of all living creatures in a 100-foot radius, or up to a mile in the water.</p>
+      </description>
+      <sheet>
+        <description> You have advantage on all Intelligence (Investigation) and Wisdom (Perception) checks dealing with smell. You can automatically track a single living creature whose scent you are familiar with as long as the trail is less than a week old. By spending a minute concentrating, you can detect the scents of all living creatures in a 100-foot radius, or up to a mile in the water.</description>
+      </sheet>
+    </element>
+    <element name="Mako" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_MAKO">
+      <description>
+        <p>Starting at 10th level, your bite attack damage increases to 1d10. Additionally, once per turn when you hit a creature with your bite attack, it must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone or grappled by you (your choice). The target has disadvantage on this save if you are swimming.</p>
+      </description>
+      <shdes usage="1/Turn">
+        <description>Your bite attack damage increases to 1d10. When you hit a creature with your bite attack, it must make a Dexterity saving throw (DC {{mako:dc}}) or be knocked prone or grappled by you (your choice). The target has disadvantage on this save if you are swimming.</description>
+      </sheet>
+      <rules>
+			  <stat name="mako:dc" value="8" />
+			  <stat name="mako:dc" value="proficiency" />
+			  <stat name="mako:dc" value="strength:modifier" />
+		  </rules>
+    </element>
+    <element name="Tsunami" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_TSUNAMI">
+      <description>
+        <p>By 14th level, as a bonus action, you can conjure a magical wave of salt water that rises at your feet and glides beneath you. The wave is up to 15 feet wide and 15 feet tall, and moves with you as you swim. If a creature is caught up in the wave, it is forced to swim and hold its breath until it leaves the wave's area or the wave moves away from it. The wave extinguishes unprotected flames in its area. The wave lasts for 1 minute, after which it spreads across the ground in all directions and quickly evaporates.</p>
+        <p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+      </description>
+      <sheet action="Bonus Action" usage="1/Short||Long Rest">
+        <description>You conjure a magical wave of salt water that rises at your feet and glides beneath you. The wave is up to 15 feet wide and 15 feet tall, and moves with you as you swim. If a creature is caught up in it, it's forced to swim and hold its breath until it leaves the wave's area or the wave moves away from it. The wave extinguishes unprotected flames in its area. The wave lasts for 1 minute, after that it dissipates.</description>
+      </sheet>
+    </element>
+</elements>
