@@ -39,7 +39,7 @@
 			<description>You gain proficiency with three musical instruments of your choice.</description>
 		</sheet>
 	</element>
-    <element name="Heavy Metal Axe" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_HEAVY_METAL_AXE">
+    	<element name="Heavy Metal Axe" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_HEAVY_METAL_AXE">
 		<description>
 			<p><em>3rd-level Path of Heavy Metal feature</em></p>
 			<p>At 3rd level, your dabbling with craftsmen and bards has taught you how to build the sickest instruments possible. You can spend 8 hours of work converting a two-handed weapon into an instrument with which you are proficient. Only you can play an instrument weapon you have created, which retains all its combat capabilities. You can maintain a total number of instrument weapons equal to your proficiency bonus.</p>
@@ -60,7 +60,7 @@
             		<stat name="rage:damage:bonus" value="proficiency" bonus="double"/>
         	</rules>    
 	</element>
-    <element name="Killer Vocals" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS">
+    	<element name="Killer Vocals" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_HEAVY_METAL_KILLER_VOCALS">
 		<description>
 			<p><em>6th-level Path of Heavy Metal feature</em></p>
 			<p>By 6th level, as a bonus action, you can release a thunderous battle cry, blood-curdling screech, or growl. Each Large or smaller creature you choose within 5 feet of you is pushed 5 feet away from you and is deafened until the end of your next turn.</p>
