@@ -47,9 +47,7 @@
 			<p>At 10th level, you can throw massive boulders or other suitably large objects as weapons. Such weapons are considered two-handed, heavy, thrown weapons with a range of 30/60 feet. You have proficiency in such weapons. On a hit, a boulder deals 2d8 bludgeoning damage. You can only throw one boulder per turn.</p>
 		</description>
 		<sheet usage="1/Turn">
-			<description>You can touch one creature and confer one of the following benefits of your choice to that creature: &#13;
-			For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll. &#13;
-			Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower. Once a creature receives this benefit, that creature can't receive it again until after a long rest.</description>
+			<description>You can throw massive boulders or other suitably large objects as weapons. Such weapons are considered two-handed, heavy, thrown weapons with a range of 30/60 feet. You have proficiency in such weapons. On a hit, a boulder deals 2d8 bludgeoning damage.</description>
 		</sheet>
 	</element>
 	<element name="Colossal Strength" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_COLOSSAL_STRENGTH">
