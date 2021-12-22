@@ -63,10 +63,10 @@
         <description>Your bite attack damage increases to 1d10. When you hit a creature with your bite attack, it must make a Dexterity saving throw (DC {{mako:dc}}) or be knocked prone or grappled by you (your choice). The target has disadvantage on this save if you are swimming.</description>
       </sheet>
       <rules>
-			  <stat name="mako:dc" value="8" />
-			  <stat name="mako:dc" value="proficiency" />
-			  <stat name="mako:dc" value="strength:modifier" />
-		  </rules>
+	      <stat name="mako:dc" value="8" />
+	      <stat name="mako:dc" value="proficiency" />
+	      <stat name="mako:dc" value="strength:modifier" />
+      </rules>
     </element>
     <element name="Tsunami" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_TSUNAMI">
       <description>
