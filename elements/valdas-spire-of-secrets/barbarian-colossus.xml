@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Colossus</name>
+		<description>The Path of the Colossus from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="barbarian-colossus.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-colossus.xml" />
+		</update>
+	</info>
+	<element name="Path of the Colossus" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BARBARIAN_PATH_OF_THE_COLOSSUS">
+		<supports>Primal Path</supports>
+		<description>
+			<p>The colossus, sometimes known as a war-hulk, is a barbarian of the front-lines, hefting massive weapons and sweeping away smaller combatants in their fury. To a war-hulk, strength is the only attribute that matters. Cunning is for the weak; faith is for the weak; speed is for the weak. Victory is for the strong alone, and rage is the purest path to strength. This path is a favorite of goliaths and giants, who step easily into crushing smaller opponents.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_LARGER_THAN_LIFE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_IMPOSING_PRESENCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_BOULDER_THROW" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_COLOSSAL_STRENGTH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_LARGER_THAN_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_IMPOSING_PRESENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_BOULDER_THROW" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_COLOSSAL_STRENGTH" level="14" />
+		</rules>
+	</element>
+	<element name="Larger Than Life" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_LARGER_THAN_LIFE">
+		<description>
+			<p>Starting when you choose this path at 3rd level, you become a titan in your anger. When you begin a rage, your size doubles in all dimensions, and your weight is multiplied by eight. This growth increases your size by one category—from Medium to Large, for example. This size increase does not stack with similar size increases, such as from the enlarge/reduce spell. If there isn't enough room for you to double your size, you attain the maximum possible size in the space available. Your weapons also grow to match your new size. While these weapons are enlarged, your attacks with them deal 1d4 extra damage.</p>
+			<p class="indent">While raging, you can use your action to make a massive swing against all creatures in a 15-foot line within your reach. Roll a separate attack roll for each target in the line. </p>
+		</description>
+		<sheet>
+			<description>When you begin a rage, your size increases by one category. This size increase does not stack with similar ones. Your weapons also grow to match your new size, and while enlarged, your attacks with them deal 1d4 extra damage.</description>
+		</sheet>
+	</element>
+	<element name="Imposing Presence" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_IMPOSING_PRESENCE">
+		<description>
+			<p>At 6th level, your immense stature can block line of sight. Ranged effects drawing line of sight through your position treat targets behind you as if they have three-quarters cover. When you are raging, this becomes total cover.</p>
+		</description>
+		<sheet>
+			<description>Ranged effects drawing line of sight through your position treat targets behind you as if they have three-quarters cover. When you are raging, this becomes total cover.</description>
+		</sheet>
+	</element>
+	<element name="Boulder Throw" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_BOULDER_THROW">
+		<description>
+			<p>At 10th level, you can throw massive boulders or other suitably large objects as weapons. Such weapons are considered two-handed, heavy, thrown weapons with a range of 30/60 feet. You have proficiency in such weapons. On a hit, a boulder deals 2d8 bludgeoning damage. You can only throw one boulder per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can touch one creature and confer one of the following benefits of your choice to that creature: &#13;
+			For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll. &#13;
+			Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower. Once a creature receives this benefit, that creature can't receive it again until after a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Colossal Strength" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_COLOSSAL_STRENGTH">
+		<description>
+			<p>At 14th level, your Strength score increases by 2 and your maximum for this score becomes 22. At 20th level, your Strength maximum becomes 26, rather than 24.</p>
+		</description>
+		<sheet>
+			<description>Immediately after you take damage or fail a saving throw while raging, you can roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</description>
+		</sheet>
+		<rules>
+			<stat name="strength:max" value="2" />
+			<stat name="strength:max" value="6" level="20" />
+		</rules>
+	</element>
+</elements>
