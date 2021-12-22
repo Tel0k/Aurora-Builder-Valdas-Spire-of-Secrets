@@ -4,12 +4,12 @@
 		<name>Path of Heavy Metal</name>
 		<description>The Path of Heavy Metal from Valda’s Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="barbarian-heavy-metal.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-heavy-metal.xml" />
 		</update>
 	</info>
 	<element name="Path of Heavy Metal" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BARBARIAN_PATH_OF_HEAVY_METAL">
-		<supports> Heavy Metal Path</supports>
+		<supports> Primal Path</supports>
 		<description>
 			<p>The barbarians of the Path of Heavy Metal do not do things by halves. They fight the strongest foes, swing the biggest axes, and play the loudest music. For this reason, any battle they get involved in tends to be noisy, violent, and short.</p>
 			<p class="indent">Armored only in face paint and studded belts, these fearless hellions are known for screaming their enemies into submission and trashing taverns, though they can also be thoughtful and erudite when not tapping into their primal fury. Away from the battlefield, the "thunderheads" form a tight fraternity, bonded together by absolute commitment to their path and the shared recognition that he life of an adventurer -with its grueling travel, explosive violence, and unfamiliar lodgings- is essentially a neverending tour.</p>
