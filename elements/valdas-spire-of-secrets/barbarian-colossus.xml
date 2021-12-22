@@ -4,7 +4,7 @@
 		<name>Path of the Colossus</name>
 		<description>The Path of the Colossus from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="barbarian-colossus.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-colossus.xml" />
 		</update>
 	</info>
@@ -58,8 +58,7 @@
 			<description>Immediately after you take damage or fail a saving throw while raging, you can roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</description>
 		</sheet>
 		<rules>
+			<stat name="strength" value="2" />
 			<stat name="strength:max" value="2" />
-			<stat name="strength:max" value="6" level="20" />
-		</rules>
 	</element>
 </elements>
