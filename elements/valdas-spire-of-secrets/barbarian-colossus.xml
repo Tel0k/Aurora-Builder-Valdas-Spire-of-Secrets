@@ -31,7 +31,7 @@
 			<p class="indent">While raging, you can use your action to make a massive swing against all creatures in a 15-foot line within your reach. Roll a separate attack roll for each target in the line. </p>
 		</description>
 		<sheet>
-			<description>When you begin a rage, your size increases by one category. This size increase does not stack with similar ones. Your weapons also grow to match your new size, and while enlarged, your attacks with them deal 1d4 extra damage.</description>
+			<description> When you begin a rage, your size increases by one category. This size increase does not stack with similar ones. Your weapons also grow to match your new size, and while enlarged, your attacks with them deal 1d4 extra damage.</description>
 		</sheet>
 	</element>
 	<element name="Imposing Presence" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_IMPOSING_PRESENCE">
@@ -39,7 +39,7 @@
 			<p>At 6th level, your immense stature can block line of sight. Ranged effects drawing line of sight through your position treat targets behind you as if they have three-quarters cover. When you are raging, this becomes total cover.</p>
 		</description>
 		<sheet>
-			<description>Ranged effects drawing line of sight through your position treat targets behind you as if they have three-quarters cover. When you are raging, this becomes total cover.</description>
+			<description> Ranged effects drawing line of sight through your position treat targets behind you as if they have three-quarters cover. When you are raging, this becomes total cover.</description>
 		</sheet>
 	</element>
 	<element name="Boulder Throw" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_BOULDER_THROW">
@@ -47,15 +47,16 @@
 			<p>At 10th level, you can throw massive boulders or other suitably large objects as weapons. Such weapons are considered two-handed, heavy, thrown weapons with a range of 30/60 feet. You have proficiency in such weapons. On a hit, a boulder deals 2d8 bludgeoning damage. You can only throw one boulder per turn.</p>
 		</description>
 		<sheet usage="1/Turn">
-			<description>You can throw massive boulders or other suitably large objects as weapons. Such weapons are considered two-handed, heavy, thrown weapons with a range of 30/60 feet. You have proficiency in such weapons. On a hit, a boulder deals 2d8 bludgeoning damage.</description>
+			<description> You can throw massive boulders or other suitably large objects as weapons. Such weapons are considered two-handed, heavy, thrown weapons with a range of 30/60 feet. You have proficiency in such weapons. On a hit, a boulder deals 2d8 bludgeoning damage.</description>
 		</sheet>
 	</element>
 	<element name="Colossal Strength" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_COLOSSUS_COLOSSAL_STRENGTH">
 		<description>
 			<p>At 14th level, your Strength score increases by 2 and your maximum for this score becomes 22. At 20th level, your Strength maximum becomes 26, rather than 24.</p>
+			<p class="indent">When you make a melee weapon attack while raging, the attack has reach if it did not have it before.</p>
 		</description>
 		<sheet>
-			<description>Immediately after you take damage or fail a saving throw while raging, you can roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</description>
+			<description> When you make a melee weapon attack while raging, the attack has reach if it did not have it before.</description>
 		</sheet>
 		<rules>
 			<stat name="strength" value="2" />
