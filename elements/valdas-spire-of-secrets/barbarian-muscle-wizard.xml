@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Muscle Wizard</name>
+		<description>The Path of the Muscle Wizard from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="barbarian-muscle-wizard.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-muscle-wizard.xml" />
+		</update>
+	</info>
+	<element name="Path of the Muscle Wizard" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BARBARIAN_PATH_OF_THE_MUSCLE_WIZARD">
+		<supports>Primal Path</supports>
+		<description>
+			<p>You're a wizard! Perhaps you went to wizarding school on a football scholarship or just picked up a book at the gym and started reading. No matter how you got here, you're a wizard, one that just coincidentally has massive, rippling muscles. You have the big dumb hat and the book filled with gibberish and everything!</p>
+			<p class="indent">You gently remind others, often by beating them to a pulp and cracking their bones, that your magical powers shouldn't be questioned. You're a good wizard, the best one, even! And only a fool would say otherwise.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_UNARGUABLE_WIZARDRY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_MAGIC_RESISTANCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_I_CAST_FIST" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_UNARGUABLE_WIZARDRY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_MAGIC_RESISTANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_I_CAST_FIST" level="14" />
+		</rules>
+	</element>
+	<element name="Unarguable Wizardry" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_UNARGUABLE_WIZARDRY">
+		<description>
+			<p>Starting at 3rd level, your unquestionable legitimacy (and immense pectoral muscles) gives you advantage on Charisma (Intimidation) checks made to convince others that you are, in fact, a wizard.</p>
+			<p class="indent">Additionally, if someone questions your legitimate magical prowess, you can instantly fly into a rage for 1 round. This rage can't be extended and does not count against your total number of Rages following a long rest. While in this rage, you can only attack the creature that provoked your ire and the creature's allies.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma (Intimidation) checks made to convince others that you are a wizard. If someone questions your magical prowess you enter rage for 1 round, during which, you only attack the one who provoked you and its allies. This rage doesn't count against your total number of uses.</description>
+		</sheet>
+	</element>
+	<element name="Cantrips" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS">
+		<description>
+			<p>At 3rd level, you can call upon your "magic" to cast "cantrips" in combat. You can use the following "cantrips" a number of times equal to your Strength modifier. You regain all expended uses when you take a short or long rest. While you are raging, you can cast your "cantrips" at will; using them does not count against your total number of uses.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Mage Hand.</em></strong> As a bonus action on your turn when you hit a creature with a melee weapon attack, you can use your hand (and you are a mage, after all) to attempt to shove the target over. The target must make an opposed Strength check against you. If your Strength check is higher, the target is knocked prone.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Shocking Grasp.</em></strong> As a bonus action when you take the Attack action on your turn, you can hit your target even harder than usual, a fact which they will find quite shocking. On a hit, the target can't take a reaction until the beginning of your next turn.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>True Strike.</em></strong> As a bonus action when you take the Attack action on your turn, you can really, truly strike your target. On a hit, you deal an additional 1d8 damage.</p>
+		</description>
+		<sheet usage="{{strength:modifier}}/Short||Long Rest">
+			<description>You can call upon your "magic" to cast the following "cantrips" in combat: </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS_MAGE_HAND" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS_SHOCKING_GRASP" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS_TRUE_STRIKE" />
+		</rules>
+	</element>
+	<element name="Mage Hand" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS_MAGE_HAND">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action on your turn when you hit a creature with a melee weapon attack, you can use your hand (and you are a mage, after all) to attempt to shove the target over. The target must make an opposed Strength check against you. If your Strength check is higher, the target is knocked prone.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> When you hit a creature with a melee weapon attack, you can use your hand to attempt to shove the target. The target must make an opposed Strength check against you, and if your check is higher, the target is knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Shocking Grasp" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS_SHOCKING_GRASP">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action when you take the Attack action on your turn, you can hit your target even harder than usual, a fact which they will find quite shocking. On a hit, the target can't take a reaction until the beginning of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You make an attack, on a hit, the target can't take a reaction until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="True Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_CANTRIPS_TRUE_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action when you take the Attack action on your turn, you can really, truly strike your target. On a hit, you deal an additional 1d8 damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You make an attack, on a hit, you deal an additional 1d8 damage.</description>
+		</sheet>
+	</element>
+	<element name="Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS">
+		<description>
+			<p>By 6th level, your "magic" is powerful enough to cast every "spell" that exists (and no one can or will prove otherwise without broken ribs.) However, you only prepared the following "spells" today.</p>
+			<p class="indent">You can cast each of these "spells" once and recover all expended uses when you finish a long rest.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Burning Hands.</em></strong> Your backhand slap is legendary. As an action on your turn, you can make an unarmed strike against each creature within your reach. On a hit, this attack deals bludgeoning damage equal to 1d8 + your Strength modifier.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Magic Missile.</em></strong> When you take the Attack action on your turn, you can use your bonus action to make a ranged attack using a weapon you are holding. Because magic missile never misses, you have advantage on this attack roll.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Shield.</em></strong>As a reaction when you're targeted by an attack, you can quickly produce a shield to defend yourself. You gain the shield's bonus to AC against this attack, even if you weren't holding it before. If you are hit, you can reduce the amount of damage taken by 1d12 + your Constitution modifier.</p>
+		</description>
+		<sheet usage="1 Each/Long Rest">
+			<description> Your "magic" is powerful enough to cast each of these "spells":</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS_BURNING_HANDS" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS_MAGIC_MISSILE" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS_SHIELD" />
+		</rules>
+	</element>
+	<element name="Burning Hands" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS_BURNING_HANDS">
+		<compendium display="false" />
+		<description>
+			<p>Your backhand slap is legendary. As an action on your turn, you can make an unarmed strike against each creature within your reach. On a hit, this attack deals bludgeoning damage equal to 1d8 + your Strength modifier.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can make an unarmed strike against each creature within your reach. On a hit, this attack deals 1d8 + {{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+	<element name="Magic Missile" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS_MAGIC_MISSILE">
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn, you can use your bonus action to make a ranged attack using a weapon you are holding. Because magic missile never misses, you have advantage on this attack roll.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>After a melee attack, you can make a ranged attack using a weapon you are holding. You have advantage on this attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Shield" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_SPELLS_SHIELD">
+		<compendium display="false" />
+		<description>
+			<p>As a reaction when you're targeted by an attack, you can quickly produce a shield to defend yourself. You gain the shield's bonus to AC against this attack, even if you weren't holding it before. If you are hit, you can reduce the amount of damage taken by 1d12 + your Constitution modifier.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can quickly produce a shield to defend yourself. You gain +{{ac:shield}}AC against this attack, even if you weren't holding it before. If you are hit, you can reduce the amount of damage taken by 1d12 + {{constitution:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Magic Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_MAGIC_RESISTANCE">
+		<description>
+			<p>By 10th level, you're such an amazing wizard that other wizards can't even touch you. While you're raging, you have resistance to damage from spells.</p>
+		</description>
+		<sheet>
+			<description> While you're raging, you have resistance to damage from spells.</description>
+		</sheet>
+	</element>
+	<element name="I Cast Fist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_MUSCLE_WIZARD_I_CAST_FIST">
+		<description>
+			<p>Starting at 14th level, you can crush your enemies with your ultimate "spell," Fist. While you're raging, you can use your action and bonus action to punch your foe really, really hard. Make a melee attack roll, with advantage, against one creature within your reach. On a hit, you deal bludgeoning damage equal to 8d8 + your Strength modifier.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you stop raging and begin a new rage.</p>
+		</description>
+		<sheet action="Action + Bonus Action" usage="1/Active Rage">
+			<description>While raging, you can make a melee attack roll with advantage against one creature within your reach. On a hit you deal 8d8 + {{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+</elements>

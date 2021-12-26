@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Rage Mage</name>
+		<description>The Path of the Colossus from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="barbarian-rage-mage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-rage-mage.xml" />
+		</update>
+	</info>
+	<element name="Path of the Rage Mage" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BARBARIAN_PATH_OF_THE_RAGE_MAGE">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Most barbarians who possess the spark of arcane talent never realize it, introspection not always being a barbaric strength. Those who find this spark, however, might learn to channel their brute ferocity through magic, and embark on the Path of the Rage Mage. Through their rage-fueled arcane might, such a barbarian possesses a uniquely calamitous fury, merging physical prowess with spell slinging in a warpath of fire, blades, and blood.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_INTUITION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_RAMPAGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SUPERNATURAL_EXPLOITS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ELDRITCH_EXPLOSIONS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_INTUITION" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_RAMPAGE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SUPERNATURAL_EXPLOITS" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ELDRITCH_EXPLOSIONS" level="14" />
+		</rules>
+	</element>
+	<element name="Arcane Intuition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_INTUITION">
+		<description>
+			<p>Starting when you adopt this path at 3rd level, you gain proficiency in the Arcana skill, and can use your Constitution, instead of Intelligence, for Intelligence (Arcana) checks.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Arcana skill, and can use your Constitution, instead of Intelligence, for Intelligence (Arcana) checks.</description>
+		</sheet>
+	</element>
+	<element name="Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SPELLCASTING">
+		<description>
+			<p>Also at 3rd level, your rage manifests as a surge of arcane power. While you are raging, you can cast and concentrate on spells. Additionally, casting a spell on your turn counts as attacking a hostile creature for the purpose of sustaining your rage.</p>
+			<h5>CANTRIPS</h5>
+			<p> You learn two cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 10th level.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Rage Mage Spellcasting table shows how many spell slots you have to cast your spells of 1st level or higher. To cast one of these spells, you must be raging and expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know three 1st-level sorcerer spells of your choice, two of which you must choose from the evocation or transmutation spells on the sorcerer spell list.</p>
+			<p class="indent">The Spells Known column of the Rage Mage Spellcasting table shows when you learn more sorcerer spells of 1st level or higher. Each of these spells must be an evocation or transmutation spell of your choice, and must be of a level for which you have spell slots.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the sorcerer spells you know with another spell of your choice from the sorcerer spell list. The new spell must be of a level for which you have spell slots, and it must be an evocation or transmutation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your sorcerer spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description>While you are raging, you can cast and concentrate on spells. Additionally, casting a spell on your turn counts as attacking a hostile creature for the purpose of sustaining your rage.</description>
+		</sheet>
+		<spellcasting name="Sorcerer" ability="Charisma" allowReplace="true">
+			<list>Sorcerer</list>
+		</spellcasting>
+		<rules>
+			<!-- <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" /> -->
+			<stat name="sorcerer:spellcasting:slots:1" value="2" level="3" />
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="4" />
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="7" />
+			<stat name="sorcerer:spellcasting:slots:2" value="2" level="7" />
+			<stat name="sorcerer:spellcasting:slots:2" value="1" level="10" />
+			<stat name="sorcerer:spellcasting:slots:3" value="3" level="13" />
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="19" />
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="20" />
+			<select type="Spell" name="Cantrip (Sorcerer)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Sorcerer" />
+			<select type="Spell" name="Cantrip (Sorcerer)" supports="$(spellcasting:list),0" level="10" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="3" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>
+		</rules>
+	</element>
+	<element name="Arcane Rampage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_RAMPAGE">
+		<description>
+			<p>Starting at 6th level, if you take the Attack action while you are raging and attack recklessly, you can use your bonus action to cast a spell in place of one of your attacks. The spell must have a casting time of 1 action or 1 bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> While raging and after a Reckless Attack, you can cast a spell in place of one of your attacks. The spell must have a casting time of 1 action or 1 bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Supernatural Exploits" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SUPERNATURAL_EXPLOITS">
+		<description>
+			<p>By 10th level, you can channel your latent magic to perform spectacular feats of daring. Even when you are not raging, you can cast the following spells at will, targeting yourself only, without using a spell slot or material components: <em>darkvision, feather fall, jump,</em> and <em>see invisibility</em>.</p>
+		</description>
+		<sheet usage="At Will">
+			<description> You can cast the following spells even when not raging, targeting yourself only, without using a spell slot or material components: darkvision, feather fall, jump, and see invisibility.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKVISION" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+			<grant type="Spell" id="ID_PHB_SPELL_JUMP" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
+		</rules>
+	</element>
+	<element name="Eldritch Explosions" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ELDRITCH_EXPLOSIONS">
+		<description>
+			<p>Beginning at 14th level, you manifest surges of arcane wrath with every strike. Once per turn, when you hit a creature with a melee weapon attack, you can expend one spell slot to create an explosion of energy at a point you choose within 10 feet of you.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description> When you hit a creature with a melee weapon attack, you can expend one spell slot to create an explosion of energy at a point you choose within 10 feet of you.</description>
+		</sheet>
+	</element>
+</elements>
