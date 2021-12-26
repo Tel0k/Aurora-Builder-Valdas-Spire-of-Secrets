@@ -4,7 +4,7 @@
 		<name>Path of the Colossus</name>
 		<description>The Path of the Colossus from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="barbarian-colossus.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-colossus.xml" />
 		</update>
 	</info>
@@ -61,5 +61,6 @@
 		<rules>
 			<stat name="strength" value="2" />
 			<stat name="strength:max" value="2" />
+		</rules>	
 	</element>
 </elements>
