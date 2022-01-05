@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Tranquility</name>
+		<description>The Path of Tranquility from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="barbarian-tranquility.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-tranquility.xml" />
+		</update>
+	</info>
+	<element name="Path of Tranquility" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BARBARIAN_PATH_OF_TRANQUILITY">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Barbarians who follow the Path of Tranquility embrace a zen philosophy of restraint and moderation, much in contrast with their furious brethren. Embraced by the fey and called “the serene,” these barbarians are calm, tactical warriors who issue swift retaliation instead of violent assaults. At their pinnacle, the serene are one with nature and with themselves, entering flow states at will to dispatch their foes with dispassionate precision.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_MANTRA" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_ANTICIPATE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_BATTLE_TRANCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_TRANQUILITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_ZEN_STATE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_MANTRA" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_ANTICIPATE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_BATTLE_TRANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_TRANQUILITY" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_ZEN_STATE" level="14" />
+		</rules>
+	</element>
+	<element name="Mantra" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_MANTRA">
+		<description>
+			<p>Starting when you select this path at 3rd level, taking the Dodge action on your turn counts as attacking a hostile creature for the purposes of sustaining your rage.</p>
+		</description>
+		<sheet>
+			<description> Taking the Dodge action on your turn counts as attacking a hostile creature for the purposes of sustaining your rage.</description>
+		</sheet>
+	</element>
+	<element name="Anticipate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_ANTICIPATE">
+		<description>
+			<p>Also at 3rd level, whenever you do not make an attack roll on your turn, you prepare yourself for blows. Until the start of your next turn, whenever a creature makes a melee attack against you, you can use your reaction to make one melee weapon attack against that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description> Until your next turn, if a crature makes a melee attack against you, you can retaliate with another melee weapon attack. You can do this only if you do not take the attack action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Battle Trance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_BATTLE_TRANCE">
+		<description>
+			<p>At 6th level, whenever you use your reaction to make an attack, you can make two attacks instead.</p>
+		</description>
+		<sheet>
+			<description> Whenever you use your reaction to make an attack, you can make two attacks instead.</description>
+		</sheet>
+	</element>
+	<element name="Tranquility" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_TRANQUILITY">
+		<description>
+			<p>At 10th level, you can chant calming verses to entice, relieve, and protect those around you. You can cast the calm emotions, enthrall, and sanctuary spells once each, without expending spell slots or components, and regain the ability to do so when you finish a long rest. You can cast these spells while you are raging. Your spell save DC for these spells is 8 + your proficiency bonus + your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>You can cast the calm emotions, enthrall, and sanctuary spells once each, without expending spell slots or components. You can cast these spells while you are raging. Your spell save DC for these spells is {{tranquility:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="tranquility:dc" value="8" />
+			<stat name="tranquility:dc" value="proficiency" />
+			<stat name="tranquility:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Zen State" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_TRANQUILITY_ZEN_STATE">
+		<description>
+			<p>At 14th level, whenever a creature misses you with a melee attack, you gain a +2 bonus to your Armor Class, up to a maximum of +6. This bonus resets to 0 if you take damage or at the start of your turn.</p>
+		</description>
+		<sheet>
+			<description> Whenever a creature misses you with a melee attack, you gain a +2 bonus to your Armor Class, up to a maximum of +6. This bonus resets to 0 if you take damage or at the start of your turn.</description>
+		</sheet>
+	</element>
+</elements>
