@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>College of Jesters</name>
+    <description>The College of Jesters from Valda's Spire of Secrets</description>
+    <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+    <update version="0.0.1">
+      <file name="bard-jesters.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/bard-jesters.xml" />
+    </update>
+  </info>
+  <element name="College of Jesters" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_COLLEGE_OF_JESTERS">
+    <supports>Bard College</supports>
+    <description>
+      <p>Consummate humorists, acrobats, and orators, bards of the College of Jesters can often be found in royal courts and livening up the local tavern. These bards specialize in truth through biting humor, rather than stories or sonnets, and compliment their razor wits with acrobatic stunts and other feats of showmanship. When among nobility, jesters offer off-kilter wisdom and fierce satire in equal measures. Among their peers, jesters make fine companions, as long as you can take a joke.</p>
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_RACONTEUR" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_ADVANCED_TUMBLING" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_JUGGLING" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_GRAND_FINALE" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_RACONTEUR" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_ADVANCED_TUMBLING" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_JUGGLING" level="6" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_GRAND_FINALE" level="14" />
+    </rules>
+  </element>
+  <element name="Raconteur" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_RACONTEUR">
+    <description>
+      <p>When you join this college at 3rd level, you learn the <em>vicious mockery</em> cantrip if you don't already know it. You can spend a use of your Bardic Inspiration when a creature fails a saving throw against <em>vicious mockery</em> to add a roll of the Bardic Inspiration die plus your Charisma modifier to the damage roll. If a creature fails its saving throw against vicious mockery by 5 or more, it also has disadvantage on the first saving throw it makes before the beginning of its next turn.</p>
+    </description>
+    <sheet>
+      <description> When a creature fails a saving throw against vicious mockery, you can spend a use of Bardic Inspiration to add 1d{{bardic-inspiration:dice}}+{{charisma:modifier}} to the damage roll. If a creature fails its saving throw against vicious mockery by 5 or more, it also has disadvantage on the first saving throw it makes before the beginning of its next turn.</description>
+    </sheet>
+    <rules>
+    	<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+		</rules>
+  	</element>
+  <element name="Advanced Tumbling" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_ADVANCED_TUMBLING">
+    <description>
+      <p>Also at 3rd level, you can move through the space of any creature by performing acrobatic bounds and flips. Once you have moved through a creature's space, that creature has disadvantage on opportunity attacks against you until the end of your turn.</p>
+    </description>
+    <sheet>
+      <description> You can move through the space of any creature by performing acrobatic bounds and flips. Once you have moved through a creature's space, that creature has disadvantage on opportunity attacks against you until the end of your turn.</description>
+    </sheet>
+  </element>
+  <element name="Juggling" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_JUGGLING">
+    <description>
+      <p>By 6th level, you are a renowned and daring juggler. You can use your bonus action to start juggling a number of thrown weapons up to twice your proficiency bonus. Once on each of your turns, when you take the Attack action to throw a weapon, move out of a creature's reach, or cast the vicious mockery cantrip, you can make one ranged weapon attack against a creature you can see using one of your juggled weapons.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description> You start juggling a number of thrown weapons up to {{juggling:proficiency}}. Once on each of your turns, when you take the Attack action to throw a weapon, move out of a creature's reach, or cast the vicious mockery cantrip, you can make one ranged weapon attack against a creature you can see using one of your juggled weapons.</description>
+    </sheet>
+    <rules>
+      <stat name="juggling:proficiency" value="proficiency" bonus="double" />
+    </rules>
+  </element>
+  <element name="Grand Finale" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_JESTERS_GRAND_FINALE">
+    <description>
+      <p>Starting at 14th level, you can perform a climactic stunt, conclude a stirring oration, or bring a song to a close with pizzazz. When you use this feature, you can take one additional action on top of your regular action and a possible bonus action. You can't use this feature on the first round of combat. Once you use this feature, you can’t take actions on your following turn.</p>
+    </description>
+    <sheet>
+      <description> When you use this feature, you can take one additional action on top of your regular action and a possible bonus action. You can't use this feature on the first round of combat. Once you use this feature, you can’t take actions on your following turn.</description>
+    </sheet>
+  </element>
+</elements>
