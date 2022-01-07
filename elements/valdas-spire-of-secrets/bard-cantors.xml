@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>College of Cantors</name>
+    <description>The College of Cantors from Valda's Spire of Secrets</description>
+    <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+    <update version="0.0.1">
+      <file name="bard-cantors.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/bard-cantors.xml" />
+    </update>
+  </info>
+  <element name="College of Cantors" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_COLLEGE_OF_CANTORS">
+    <supports>Bard College</supports>
+    <description>
+      <p>The cantors are a group of bards who lead the faithful through the praise and worship of the gods. Their music is directed towards the heavens, with their instruments usually relating in some way to the god that they worship. Cantors are well loved within their respective communities, and it is hard to find a talented cantor who will stay in one place for long, as the demand for their soothing hymns is widespread.</p>
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_HEAVENLY_VOICE" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_HEALING_HYMN" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_ANGELIC_CHORUS" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_SONG_OF_THE_DIVINES" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_HEAVENLY_VOICE" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_HEALING_HYMN" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_ANGELIC_CHORUS" level="6" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_SONG_OF_THE_DIVINES" level="14" />
+    </rules>
+  </element>
+  <element name="Heavenly Voice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_HEAVENLY_VOICE">
+    <description>
+      <p>When you choose this college at 3rd level, you gain the <em>thaumaturgy</em> cantrip, which counts as a bard spell for you and does not count against the number of cantrips you can learn.</p>
+    </description>
+    <sheet>
+      <description level="3"> You gain the thaumaturgy cantrip, which counts as a bard spell for you and does not count against the number of cantrips you can learn.</description>
+    </sheet>
+    <rules>
+    	<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+		</rules>
+  	</element>
+  <element name="Healing Hymn" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_HEALING_HYMN">
+    <description>
+      <p>Also at 3rd level, when you cast a spell of 1st level or higher which restores hit points to one or more creatures, you can expend one use of your Bardic Inspiration to bolster that healing. Each creature that regains hit points adds a roll of your Bardic Inspiration die plus half your bard level to the number of hit points regained.</p>
+    </description>
+    <sheet>
+      <description> You expend one use of your Bardic Inspiration. When you cast a healing spell, each creature that regains hp adds a d{{bardic-inspiration:dice}}+{{level:bard:half}} to the number of hp regained.</description>
+    </sheet>
+  </element>
+  <element name="Angelic Chorus" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_ANGELIC_CHORUS">
+    <description>
+      <p>Starting at 6th level, your heavenly music empowers those who join in its chorus. You can create the following additional effects when using the thaumaturgy cantrip: </p>
+      <ul>
+      	<li>As part of the action used to cast this spell, you can use the Help action to aid two allies. If you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you.</li>
+      	<li>You ward a willing creature you can see within 30 feet with a shimmering golden radiance for up to 1 minute. Only one creature can be warded using this ability at a time. When an attacker within 5 feet of the warded creature hits it with an attack, the creature can use its reaction to deal radiant damage equal to half your bard level to the attacker.</li>
+      </ul>
+    </description>
+    <sheet >
+      <description> You can create the following additional effects when using the thaumaturgy cantrip: 
+       - You can use the Help action to aid two allies. If you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you. 
+       - You ward a willing creature you can see within 30 feet for up to 1 minute. Only one creature can be warded using this ability at a time. When an attacker within 5 feet of the warded creature hits it with an attack, the creature can use its reaction to deal {{level:bard:half}} radiant damage to the attacker. </description>
+    </sheet>
+  </element>
+  <element name="Song of the Divines" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_CANTORS_SONG_OF_THE_DIVINES">
+    <description>
+      <p>Starting at 14th level, you can use your Healing Hymn ability without expending uses of your Bardic Inspiration.</p>
+    </description>
+    <sheet>
+      <description>You can use your Healing Hymn ability without expending uses of your Bardic Inspiration.</description>
+    </sheet>
+  </element>
+</elements>

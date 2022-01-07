@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>College of the Mad God</name>
+    <description>The College of the Mad God from Valda's Spire of Secrets</description>
+    <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+    <update version="0.0.1">
+      <file name="bard-mad-god.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/bard-mad-god.xml" />
+    </update>
+  </info>
+  <element name="College of the Mad God" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_COLLEGE_OF_THE_MAD_GOD">
+    <supports>Bard College</supports>
+    <description>
+      <p>In the middle of the night, you hear the music. Every time, it begins the same way, rising from a low drone into a deafening cacophony. The noise is maddening. In your waking hours, your fingers learn to imitate this melody and bring others to your level of psychosis.</p>
+      <p class="indent">Some attribute the dreadful nightmares to a curse or stress, but you know better. You and others like you are called nightly by the beating of vile drums and the thin monotonous whine of accursed flutes, the sounds of a mad god who echoes the pandemonium of the universe, and summons you to do something. You know not what.</p>
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_BONUS_PROFICIENCIES" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_CACOPHONY" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_FRENZIED_STRINGS" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_MAD_MELODY" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_BONUS_PROFICIENCIES" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_CACOPHONY" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_FRENZIED_STRINGS" level="6" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_MAD_MELODY" level="14" />
+    </rules>
+  </element>
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_BONUS_PROFICIENCIES">
+    <description>
+      <p>When you join this college at 3rd level, you gain proficiency in one skill, which is selected for you by the GM. Whenever you finish a long rest, your GM can change this selection.</p>
+    </description>
+    <sheet>
+      <description> You gain proficiency in one skill, which is selected for you by the GM. Whenever you finish a long rest, your GM can change this selection.</description>
+    </sheet>
+    <rules>
+    	<select type="Proficiency" name="Skill Proficiency (Mad God)" supports="Skill" />
+		</rules>
+  	</element>
+  <element name="Cacophony" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_CACOPHONY">
+    <description>
+      <p>By 3rd level, the discordant sounds of your instrument can drive others to tears and utter madness. Once on each of your turns, when a creature fails an Intelligence, Wisdom, or Charisma saving throw against one of your bard spells or features while you are holding an instrument, you can expend a use of your Bardic Inspiration to play a cacophonous noise. A deafened creature is immune to this effect. Choose one of the following effects: </p>
+      <ul>
+      	<li>The creature takes psychic damage equal to a roll of your Bardic Inspiration die.</li>
+      	<li>The creature is deafened and cant speak until the end of its next turn.</li>
+      	<li>The creature moves up to 10 feet in a direction you choose. This movement doesn't provoke opportunity attacks.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description> Once on each of your turns, when a creature fails an Intelligence, Wisdom, or Charisma saving throw against one of your bard spells or features while you are holding an instrument, you can expend a use of your Bardic Inspiration to play a cacophonous noise. A deafened creature is immune to this effect. Choose one of the following effects: -The creature takes psychic damage equal to a roll of your Bardic Inspiration die. -The creature is deafened and cant speak until the end of its next turn. -The creature moves up to 10 feet in a direction you choose. This movement doesn't provoke opportunity attacks.</description>
+    </sheet>
+  </element>
+  <element name="Frenzied Strings" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_FRENZIED_STRINGS">
+    <description>
+      <p>Starting at 6th level, as an action, you can play a mind-infecting tune for a creature within 60 feet that can hear you. This creature must make a Wisdom saving throw or be frenzied for up to 1 minute. The creature can repeat this saving throw whenever it takes damage, ending the effect on itself on a success.</p>
+      <p class="indent">A frenzied creature loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an opportunity attack if any creature provokes one.</p>
+      <p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Short||Long Rest">
+      <description> You play a mind-infecting tune for a creature within 60 feet that can hear you. This creature must make a Wisdom saving throw or be frenzied for up to 1 minute. The creature can repeat this saving throw whenever it takes damage, ending the effect on itself on a success. While frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an opportunity attack if any creature provokes one.</description>
+    </sheet>
+  </element>
+  <element name="Mad Melody" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MADGOD_MAD_MELODY">
+    <description>
+      <p>Beginning at 14th level, you can use your action to begin playing the accursed melody which haunts your dreams. On each of your subsequent turns, you can use your action to continue the melody. Only creatures you choose within 60 feet of you can hear the melody; all other creatures hear it as discordant noise. Even deafened creatures can hear the haunting melody.</p>
+      <p class="indent">When you use your action to play the melody, a creature that can hear the melody must make a Wisdom saving throw against your spell save DC. On a failed save, it takes psychic damage and suffers an additional effect based on the number of consecutive turns you have been playing the melody, as shown on the Mad Melody table. After four consecutive rounds, or if no creature hears the melody for one round, the melody begins again at the first round.</p>
+      <h5>Mad Melody Table</h5>
+			<table>
+				<thead>
+					<tr><td>Round</td><td>Psychic Damage</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1st</td><td>4d8</td><td><em>The target is deafened</em></td></tr>
+				<tr><td>2nd</td><td>7d8</td><td><em>The target can't speak and has disadvantage on ability checks</em></td></tr>
+				<tr><td>3rd</td><td>4d8</td><td><em>The target is charmed by you until the end of its turn</em></td></tr>
+				<tr><td>4th</td><td>9d8</td><td><em> - </em></td></tr>
+			</table>
+    </description>
+    <sheet action="Action">
+      <description> You play the accursed melody of your dreams. On your following turns you can continue the melody by using your acton. Only the creatures you choose within 60ft of you can hear it, even deafened ones, others hear discrdant noises. A creature that can hear the melody must make a Wisdom saving throw against your spell save DC. On a failed save, it takes psychic damage and suffers an additional effect based on the number of consecutive turns you have been playing the melody, as shown on the Mad Melody table. After four consecutive rounds, or if no creature hears the melody for one round, the melody begins again at the first round.</description>
+    </sheet>
+  </element>
+</elements>
