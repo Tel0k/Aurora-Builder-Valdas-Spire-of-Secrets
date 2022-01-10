@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>College of Romance</name>
+    <description>The College of Romance from Valda's Spire of Secrets</description>
+    <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+    <update version="0.0.1">
+      <file name="bard-romance.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/bard-romance.xml" />
+    </update>
+  </info>
+  <element name="College of Romance" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_COLLEGE_OF_ROMANCE">
+    <supports>Bard College</supports>
+    <description>
+      <p>Love is a powerful thing, and none know this better than the bards of the College of Romance. Paramours, seductors, and silver-tongued devils, these bards have turned the art of wooing someone into a science, which they ply to their advantage with mechanical efficiency. Given the option, these bards would rather make love than war, knowing full well that an enemy turned ally is twice as effective as an enemy slain.</p>
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_LIKEABLE" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_CUPIDS_ARROW" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_ENEMY_OF_MY_ENEMY" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_INFATUATE" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_LIKEABLE" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_CUPIDS_ARROW" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_ENEMY_OF_MY_ENEMY" level="6" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_INFATUATE" level="14" />
+    </rules>
+  </element>
+  <element name="Likable" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_LIKEABLE">
+    <description>
+      <p>Starting when you choose this college at 3rd level, you have a magnetic personality. You can use your bonus action to distract a hostile creature you have charmed. On its turn, the charmed creature has disadvantage on attack rolls and can't move further away from you unless it first takes the Disengage action.</p>
+      <p class="indent">If you charm a creature that isn't hostile to you, it regards you and your allies as friendly acquaintances.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description> You distract a hostile creature you have charmed. On its turn, the charmed creature has disadvantage on attack rolls and can't move further away from you unless it first takes the Disengage action. If you charm a creature that isn't hostile to you, it regards you and your allies as friendly acquaintances.</description>
+    </sheet>
+    <rules>
+    	<grant />
+		</rules>
+  	</element>
+  <element name="Cupid's Arrow" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_CUPIDS_ARROW">
+    <description>
+      <p>Also at 3rd level, you can sway other creatures through your personality. As an action, expend one use of Bardic Inspiration and choose one creature you can see within 30 feet which can see or hear you to make a Wisdom saving throw. On a failed save, the creature is charmed by you for a number of rounds equal to the die roll.</p>
+      <p class="indent">This effect ends early if you move more than 30 feet away from the creature, if the creature can neither see nor hear you, if the creature takes damage from you or your allies, or if you use this ability again.</p>
+    </description>
+    <sheet action="Action">
+      <description> You expend one use of Bardic Inspiration and choose one creature you can see within 30 feet which can see or hear you to make a Wisdom saving throw. On a failed save, the creature is charmed by you for a number of rounds equal to the die roll. This effect ends early if you move more than 30 feet away from the creature, if the creature can neither see nor hear you, if the creature takes damage from you or your allies, or if you use this ability again.</description>
+    </sheet>
+  </element>
+  <element name="Enemy of my Enemy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_ENEMY_OF_MY_ENEMY">
+    <description>
+      <p>At 6th level, when you take the Attack action, you can use your bonus action to direct a creature you have charmed that can see or hear you to attack. That creature can immediately use its reaction to make one weapon attack.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description> When you take the Attack action, you can direct a creature you have charmed that can see or hear you, to attack. That creature can immediately use its reaction to make one weapon attack.</description>
+    </sheet>
+  </element>
+  <element name="Infatuate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_ROMANCE_INFATUATE">
+    <description>
+      <p>Starting at 14th level, you can make yourself the object of another creature's affections. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a <em>remove curse</em> spell is cast on it, the charmed condition is removed from it, or you use this feature again.</p>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Action" usage="Short||Long Rest">
+      <description> You touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again.</description>
+    </sheet>
+  </element>
+</elements>
