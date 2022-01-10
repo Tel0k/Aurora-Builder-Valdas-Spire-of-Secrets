@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>College of Masks</name>
+    <description>The College of Masks from Valda's Spire of Secrets</description>
+    <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+    <update version="0.0.1">
+      <file name="bard-masks.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/bard-masks.xml" />
+    </update>
+  </info>
+  <element name="College of Masks" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_COLLEGE_OF_MASKS">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards in the College of Masks (the masters of masks, as they have come to be called) are virtuoso performers who practice becoming the figure they portray, rather than merely imitating them. Bards who join in this college come to believe that all life is performed, rather than lived, and that to become an actor in this Great Play requires that one merely puts on the metaphorical mask of another. To engage in this great stage drama, a master of masks carries with him a number of masks, each a potent magical artifact of a specific archetypal character or creature to allow them to better enter those roles.</p>
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_BONUS_PROFICIENCIES" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_HIDDEN_PERSONA" />
+      <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_MASTER_OF_MANY_FACES" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_BONUS_PROFICIENCIES" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS" level="3" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_HIDDEN_PERSONA" level="6" />
+      <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_MASTER_OF_MANY_FACES" level="14" />
+    </rules>
+  </element>
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_BONUS_PROFICIENCIES">
+    <description>
+      <p>When you join the College of Masks at 3rd level, you gain proficiency in the Performance skill.</p>
+    </description>
+    <sheet display="false">
+      <description> You gain proficiency in the Performance skill.</description>
+    </sheet>
+    <rules>
+    	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" level="3"/>
+		</rules>
+  	</element>
+  <element name="Persona Masks" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS">
+    <description>
+      <p>Also at 3rd level, you learn to craft potent magical masks, each of which allows you to take on a different persona and gain some aspect of that archetypal character. You gain two Persona Masks of your choice. You gain an additional mask at 6th level (3 masks) and another one at 14th level (4 masks). You can exchange a mask you have for another mask whenever you gain a level in this class. If one of your masks is lost or stolen, you can remake the mask with 8 hours of work and 100 gp in materials.</p>
+      <p class="indent">You can put on a mask or switch masks as a bonus action. Only you can gain the effects of your Persona Masks.</p>
+      <p class="indent">Beginning at 6th level, some of your persona masks improve and gain additional abilities.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description> You gain two Persona Masks of your choice. You gain an additional mask at 6th level (3 masks) and another one at 14th level (4 masks). You can exchange a mask you have for another mask whenever you gain a level in this class. At 6th level, some of your persona masks improve and gain additional abilities. If one of your masks is lost or stolen, you can remake the mask with 8 hours of work and 100 gp in materials.</description>
+    </sheet>
+    <rules>
+    	<select type="Archetype Feature" name="Persona Mask (Bard 3)" supports="Persona Mask Option" level="3" number="2" />
+    	<select type="Archetype Feature" name="Persona Mask (Bard 6)" supports="Persona Mask Option" level="6" />
+    	<select type="Archetype Feature" name="Persona Mask (Bard 14)" supports="Persona Mask Option" level="14" />
+    </rules>
+  </element>
+  <element name="Hidden Persona" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_HIDDEN_PERSONA">
+    <description>
+      <p>By 6th level, you wear the masks of others wherever you go, even when others cannot see it. You can use your bonus action to cause a mask you are wearing to become invisible or return to visibility.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description> You can cause a mask you are wearing to become invisible or return to visibility.</description>
+    </sheet>
+  </element>
+  <element name="Master of Many Faces" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_MASTER_OF_MANY_FACES">
+    <description>
+      <p>At 14th level, you have become a master of assuming the archetypes contained within the masks. You can wear two masks simultaneously, gaining the benefits of each.</p>
+    </description>
+    <sheet>
+      <description>You can wear two masks simultaneously, gaining the benefits of each.</description>
+    </sheet>
+  </element>
+  
+  <element name="Angel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_ANGEL" >
+  <supports>Persona Mask Option</supports>
+  <description>
+  	<p>An alluring, serene face gazes out of this mask of flawless alabaster. When you hit a creature with a melee weapon attack, you can expend a use of your Bardic Inspiration to deal additional radiant damage to the target equal to the number you roll on the Bardic Inspiration die plus your Charisma modifier.</p>
+  </description>
+  <sheet>
+  	<description> When you hit a creature with a melee weapon attack, you can expend a use of your Bardic Inspiration to deal 1d{{bardic-inspiration:dice}} + {{charisma:modifier}} radiant damage to the target</description>
+  </sheet>
+  </element>
+  <element name="Arch Mage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_ARCH_MAGE" >
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>This clay mask bears exaggerated wrinkles and the scowl of a cantankerous old man. You know the fire bolt cantrip, as well as the spells shown on the table below. As you gain higher levels in this class, you know additional spells while wearing the mask. These spells count as bard spells for you, but don’t count against the total number of spells you know.</p>
+			<table>
+				<thead>
+					<tr><td>Bard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>gust of wind, scorching ray</em></td></tr>
+				<tr><td>5th</td><td><em>lightning bolt, protection from energy</em></td></tr>
+				<tr><td>7th</td><td><em>dimension door, ice storm</em></td></tr>
+				<tr><td>9th</td><td><em>scrying, wall of stone</em></td></tr>
+			</table>
+  	</description>
+  	<sheet>
+  		<description> You know the fire bolt cantrip and some other spells.</description>
+  	</sheet>
+  	<rules>
+  		<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" level="3" />
+  		<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" />
+		<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="3" />
+		<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" />
+		<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" />
+		<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" />
+		<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" />
+		<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" />
+		<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" />
+	</rules>
+  </element>
+  <element name="Devil" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_DEVIL">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>This obsidian mask grins with the fangs and horns of a handsome fiend. As a reaction when you take damage from a creature you can see within 5 feet of you, you can expend one use of your Bardic Inspiration to deal fire damage equal to two rolls of your Bardic Inspiration die to the creature.</p>
+  	</description>
+  	<sheet action="Reaction">
+  		<description> While wearing this mask, when you take damage from a creature you can see within 5 feet of you, you can expend one use of your Bardic Inspiration to deal 2d{{bardic-inspiration:dice}} fire damage to the creature.</description>
+  	</sheet>
+  </element>
+  <element name="Dragon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_DRAGON">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>Painted cloth forms the scales, horns, eyes, flowing whiskers, and teeth of a multihued dragon’s head. While you wear this mask, you can use your action and expend one use of your Bardic Inspiration to exhale destructive energy. Each creature in a 15-foot cone must make a Dexterity saving throw against your spell save DC. A creature takes fire damage equal to three rolls of your Bardic Inspiration die on a failed save, or half as much damage on a successful one.</p>
+  	</description>
+  	<sheet action="Action">
+  		<description>While you wear this mask, you can expend one use of your Bardic Inspiration to exhale destructive energy. Each creature in a 15-foot cone must make a DC{{spellcasting:dc}} Dexterity saving throw. A creature takes 3d{{bardic-inspiration:dice}} fire damage on a failed save, or half as much on a successful one.</description>
+  	</sheet>
+  </element>
+  <element name="Faceless" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_FACELESS">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>Two perfectly round eyeholes stare out of this otherwise blank, featureless porcelain mask. While you wear this mask, can cast the spell disguise self without expending a spell slot.</p>
+  	</description>
+  	<sheet>
+  		<description>While you wear this mask, can cast the spell disguise self without expending a spell slot.</description>
+  	</sheet>
+  </element>
+  <element name="Fool" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_FOOL">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>This porcelain mask of a grinning jester is adorned with bells, ribbons, and vibrant checkerboard paints. While you wear this mask, your movement speed increases by 10 feet. Additionally, you can take the Disengage action as a bonus action.</p>
+  		<p class="indent"><strong>IMPROVEMENT.</strong>Beginning at 6th level, you can take the Dash action as a bonus action.</p>
+  	</description>
+  	<sheet>
+  		<description>While you wear this mask, your movement speed increases by 10 feet. Additionally, you can take the Disengage action as a bonus action. At 6th level, you can take the Dash action as a bonus action.</description>
+  	</sheet>
+	<rules>
+		<stat name="speed" value="10" />
+	</rules>
+  </element>
+  <element name="Gladiator" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_GLADIATOR">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>This grim metal helm, pockmarked and scratched, conceals the entire face. While you wear this mask, you have proficiency with martial weapons and shields.</p>
+  		<p class="indent"><strong>IMPROVEMENT.</strong>Beginning at 6th level, you can add your Charisma modifier to your melee weapon damage rolls.</p>
+  	</description>
+  	<sheet>
+  		<description>While you wear this mask, you have proficiency with martial weapons and shields. At 6th level, you can add your Charisma modifier to your melee weapon damage rolls.</description>
+  	</sheet>
+  	<rules>
+  		<grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+  		<grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+  	</rules>
+  </element>
+  <element name="High Priest" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_HIGH_PRIEST">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>In lieu of a face, this bronze mask bears the image of a holy symbol, with the barest of slits to see out of. You know the <em>sacred flame</em> cantrip, as well as the spells shown on the table below. As you gain higher levels in this class, you know additional spells while wearing the mask. These spells count as bard spells for you, but don’t count against the total number of spells you know.</p>
+  		<table>
+				<thead>
+				<tr><td>Bard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>aid, lesser restoration</em></td></tr>
+				<tr><td>5th</td><td><em>mass healing word, tongues</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, death ward</em></td></tr>
+				<tr><td>9th</td><td><em>greater restoration, mass cure wounds</em></td></tr>
+			</table>
+  	</description>
+  	<sheet>
+  		<description> While you wear this mask, you know the sacred flame cantrip and some other spells.</description>
+  	</sheet>
+  	<rules>
+  		<grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" level="3" />
+  		<grant type="Spell" id="ID_PHB_SPELL_AID" level="3" />
+		<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" />
+		<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" />
+		<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="5" />
+		<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" />
+		<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" />
+		<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" />
+		<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" />
+	</rules>
+  </element>
+  <element name="Lord" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_LORD">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>This gleaming silver mask bears a golden, jeweled diadem instead of eyes. When a creature rolls one of your Bardic Inspiration dice and rolls a 1 while you wear this mask, it can reroll the die and must use the new roll.</p>
+  		<p class="indent"><strong>IMPROVEMENT.</strong>Starting at 6th level, the creature can reroll the Bardic Inspiration die when it rolls a 1 or 2, and must use the new roll.</p>
+  	</description>
+  	<sheet>
+  		<description>When a creature rolls one of your Bardic Inspiration dice and rolls a 1 while you wear this mask, it can reroll the die and must use the new roll. At 6th level, it can reroll on a 1 or 2, must use the new result.</description>
+  	</sheet>
+  </element>
+  <element name="Spirit" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_SPIRIT">
+  	<supports>Persona Mask Option</supports>
+  	<description>
+  		<p>This white fabric mask conceals the face as a funeral shroud, with two gold coins sewn over the eyes. You become invisible if you do not speak, move, or take any actions for 1 minute. You remain invisible for up to 10 minutes, or until you remove this mask, take damage, make an attack, or cast a spell. While invisible, you can become half-visible as a ghostly image or return to invisibility as a bonus action.</p>
+  		<p class="indent"><strong>IMPROVEMENT.</strong>Starting at 6th level, while invisible, you levitate an inch above the ground, which allows you to ignore difficult terrain and make no noise while moving.</p>
+  	</description>
+  	<sheet>
+  		<description> If you do not speak, move, or take any actions for 1 minute, you become invisible for up to 10 minutes, or until you remove this mask, take damage, make an attack, or cast a spell. While invisible, you can become half-visible or return to invisibility as a bonus action. At 6th level, while invisible, you levitate an inch above the ground.</description>
+  	</sheet>
+  </element>
+</elements>
