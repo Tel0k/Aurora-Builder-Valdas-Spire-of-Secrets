@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spellbreaker</name>
+        <description>The Spellbreaker from Valda's Spire of Secrets</description>
+         <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="ranger-spellbreaker.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-spellbreaker.xml" />
+        </update>
+    </info>
+    <element name="Spellbreaker" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RANGER_SPELLBREAKER">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>When a wizard embraces forbidden, volatile magic or a sorcerer loses control of their arcane power, a spellbreaker is not far behind. This ancient order of rangers tracks dangerous spellcasters, from rogue bards to demonic warlocks, and eliminates them before their magic can wreak havoc on an entire city or endanger the multiverse itself. They are trained in techniques to bypass magical defenses and rip small holes in the fabric of magic itself to catch unaware any spellcaster caught in their midst. While most spellbreakers execute their quarry or capture them for the authorities, a few still burn witches at the stake, earning all spellbreakers a grim reputation. For this reason alone, a mage on the run has good reason to look over their shoulder and fear the spellbreaker's arrival.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELLBREAKER_MAGIC" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ANTIMAGIC_STRIKE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELL_RESISTANCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ARCANE_BURST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ANTIMAGIC_CURSE" />
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELLBREAKER_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ANTIMAGIC_STRIKE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELL_RESISTANCE" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ARCANE_BURST" level="11" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ANTIMAGIC_CURSE" level="15" />
+        </rules>
+    </element>
+    <element name="Spellbreaker Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELLBREAKER_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Spellbreaker Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>       
+            <h5>SPELLBREAKER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td><em>detect magic</em></td></tr>
+                <tr><td>5rd</td><td><em>see invisibility</em></td></tr>
+                <tr><td>9th</td><td><em>counterspell</em></td></tr>
+                <tr><td>13th</td><td><em>freedom of movement</em></td></tr>
+                <tr><td>17th</td><td><em>scrying</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Ranger"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="5" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" spellcasting="Ranger" />
+        </rules>
+    </element>
+    <element name="Antimagic Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ANTIMAGIC_STRIKE">
+        <description>
+            <p>At 3rd level, you’ve mastered the mage-slaying technique of cutting through magic itself. Once on each of your turns, when you make an attack against a creature you can see, you can use your bonus action to deliver a small antimagic pulse. For the duration of the attack and damage rolls, the effects of spells targeting the creature, as well as the properties and powers of magic items worn or carried by the creature are suppressed. This disrupts spells like mage armor or mirror image which protect the creature, as well as spells like hellish rebuke which are triggered as a reaction to the attack or damage roll. On a hit, the creature takes an additional 1d6 force damage, or an additional 2d6 force damage, if it was concentrating on a spell when it was attacked.</p>
+        </description>
+       <sheet action="Bonus Action" usage="1/Turn">
+			<description> When you make an attack against a creature you can see, you can deliver a small antimagic pulse. For the duration of the attack and damage rolls, the effects of spells targeting the creature, as well as the properties and powers of magic items worn or carried by the creature are suppressed. On a hit, the creature takes an additional 1d6 force damage, or an additional 2d6 force damage, if it was concentrating on a spell when it was attacked.</description>
+		</sheet>
+    </element>
+    <element name="Spell Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELL_RESISTANCE">
+        <description>
+            <p>By 7th level, you can shake off even the most potent magic. You have advantage on saving throws you make against spells.</p>
+        </description>
+        <sheet action="Bonus Action" >
+            <description> You have advantage on saving throws you make against spells.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Burst" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ARCANE_BURST">
+        <description>
+            <p>Beginning at 11th level, you’ve learned to rip at the fabric of magic itself. As an action, you can expend a spell slot to create a small arcane explosion centered on yourself in a 10-foot radius sphere. Each creature other than you within the area must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes force damage equal to half your ranger level, plus 1d8 for each level of the spell slot, or half as much on a successful save.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can expend a spell slot to create a small arcane explosion centered on yourself in a 10-foot radius sphere. Each creature other than you within the area must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes force damage equal to half your ranger level, plus 1d8 for each level of the spell slot, or half as much on a successful save.</description>
+        </sheet>
+    </element>
+    <element name="Antimagic Curse" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_ANTIMAGIC_CURSE">
+        <description>
+            <p>Starting at 15th level, you’ve mastered the art of tearing small, persistent holes in the fabric of magic, and attaching them to unfortunate souls. As an action, you create a 5-foot diameter sphere of antimagic, centered on a point you choose within 60 feet, as per the spell <em>antimagic field</em>. If the point you choose is on a creature, the sphere moves with the creature. This <em>antimagic field</em> lasts for 1 minute, or until you choose to end it on your turn (no action required.)</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> You create a 5-foot diameter sphere of antimagic, centered on a point you choose within 60 feet, as per the spell antimagic field. If the point you choose is on a creature, the sphere moves with the creature. It lasts for 1 minute, or until you chose to end it (no action required).</description>
+        </sheet>
+    </element>
+</elements>

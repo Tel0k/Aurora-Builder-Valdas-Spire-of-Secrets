@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Trophy Hunter</name>
+        <description>The Trophy Hunter from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="ranger-trophy-hunter.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-trophy-hunter.xml" />
+        </update>    
+    </info>
+    <element name="Trophy Hunter" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RANGER_TROPHY_HUNTER">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>Many rangers steal out into the wilds to slay dire beasts that encroach upon civilization, safeguarding cities and towns from their animalistic fury. But some rangers take this further, obsessing over a single kill at a time, and hunting their quarry to the ends of the earth. Archetypal trophy hunters might track any creature, provided that it is as threatening as it is colossal, but are so named for the horns, claws, and teeth they bring back—trophies of a successful hunt.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_VISCERAL_ATTACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_TROPHY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_CLEVER_WRESTLER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_FELL_THE_LEVIATHAN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_MASTERFUL_SIDESTEP" />
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_VISCERAL_ATTACK" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_TROPHY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_CLEVER_WRESTLER" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_FELL_THE_LEVIATHAN" level="11" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_MASTERFUL_SIDESTEP" level="15" />
+        </rules>
+    </element>
+    <element name="Visceral Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_VISCERAL_ATTACK">
+        <description>
+            <p>Beginning when you choose this archetype at 3rd level, you can make the most out of a solitary strike. When you deal damage with a weapon attack, you can choose to deal maximum damage with that weapon’s damage dice. This ability does not apply to additional sources of damage, such as from a rogue’s Sneak Attack or the <em>hunter's mark</em> spell.</p>
+            <p class="indent">Once you use this ability, you can't do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+			<description> When you deal damage with a weapon attack, you can choose to deal maximum damage with that weapon’s damage dice. This ability does not apply to additional sources of damage, such as from a rogue's Sneak Attack or the hunter's mark spell.</description>
+		</sheet>
+    </element>
+    <element name="Bestial Aspect" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_TROPHY">
+        <description>
+            <p>At 3rd level, you can draw strength from your defeated enemies. Whenever you slay a Large or larger beast, giant, humanoid, monstrosity, or undead, you can take a body part as a trophy. You do not need to have dealt the killing blow, but you must have dealt damage to the creature during the combat that killed it. Harvesting a body part in this way is a process that takes 1 minute. Over the course of a long rest, you can apply a mixture of herbs and preservatives worth 50 gp to the body part, after which it becomes a trophy.</p>
+            <p class="indent">You can wear one trophy at a time, and when you take a short or long rest, you can change which trophy you are wearing. While wearing a trophy, you gain the following benefits:</p>
+            <ul class="unstyled">
+                <li> Creatures of the same type as the trophy are treated as your favored enemy.</li>
+                <li> You gain a +2 bonus to damage rolls you make against creatures of the trophy’s type.</li>
+                <li> You gain a +2 bonus to AC and saving throws against the attacks and effects of creatures of the trophy’s type.</li>
+            </ul>
+            <p>Starting at 6th level, you can make a trophy from an aberration, celestial, construct, dragon, elemental, or fiend you have slain.</p>
+        </description>
+        <sheet>
+            <description> You can create a trophy by harvesting a body part from a Large (or bigger) beast, giant, humanoid, monstrosity, or undead, you killed or helped to kill. Harvesting process takes 1 minute, than creating the trophy needs the application of a mixture of herbs and other chemicals worth 50gp, over the course of a long rest. Only one trophy can be worn at any time, and can be changed whenever you take a short or long rest. While wearing a trophy, you treat creatures of the same type as the trophy as your favored enemy, you gain a +2 bonus to damage rolls you make against those creatures, and a +2 bonus to AC and saving throws against the attacks and effects of theirs. At 6th level, you can make a trophy from an aberration, celestial, construct, dragon, elemental, or fiend you have slain.</description>
+        </sheet>
+    </element>
+    <element name="Clever Wrestler" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_CLEVER_WRESTLER">
+        <description>
+            <p>Beginning at 7th level, your experience escaping from gnashing teeth, writhing tentacles, and slashing claws has made you hard to pin down. Whenever you are grappled, you can use a bonus action to end the grapple without making an ability check and move 5 feet without provoking opportunity attacks.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> Whenever you are grappled, you can end the grapple without making an ability check and move 5 feet without provoking opportunity attacks.</description>
+        </sheet>
+    </element>
+    <element name="Fell the Leviathan" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_FELL_THE_LEVIATHAN">
+        <description>
+            <p>At 11th level, you are a master of capitalizing on the weaknesses of larger foes. When you take the Attack action on your turn targeting a Large or larger creature, you can make an additional attack.</p>
+        </description>
+        <sheet>
+            <description> When you take the Attack action on your turn targeting a Large or larger creature, you can make an additional attack.</description>
+        </sheet>
+    </element>
+    <element name="Masterful Sidestep" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_MASTERFUL_SIDESTEP">
+        <description>
+            <p>At 15th level, you are a blur across the field of battle, avoiding attacks that would slay others. When you are hit by an attack, you can use a reaction to immediately move half your movement without provoking opportunity attacks.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When you are hit by an attack, you can immediately move half your movement without provoking opportunity attacks.</description>
+        </sheet>
+    </element>
+</elements>

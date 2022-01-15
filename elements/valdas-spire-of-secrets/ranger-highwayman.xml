@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Highwayman</name>
+        <description>The Highwayman from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="ranger-highwayman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-highwayman.xml" />
+        </update>    
+    </info>
+    <element name="Highwayman" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RANGER_HIGHWAYMAN">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>For bandits, bank robbers, and green-clad folk heroes, there’s no better way to make money than robbing nobles at knifepoint, especially in caravans. None are more prosperous at roadside robbery, perhaps, than highwaymen, who leverage their stealth and numbers to steal anything they wish, before escaping into the trees with their bounty. A team of bandits work in smooth coordination, watching each other's backs in a choreographed theater of shouting, looting, and cutting down anyone who runs.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_NOBODY_MOVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_MERRY_CONFEDERATES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_VANTAGE_POINT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_NO_SERIOUSLY_DONT_MOVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_GET_OUT_OF_DODGE" />
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_NOBODY_MOVE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_MERRY_CONFEDERATES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_VANTAGE_POINT" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_NO_SERIOUSLY_DONT_MOVE" level="11" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_GET_OUT_OF_DODGE" level="15" />
+        </rules>
+    </element>
+    <element name="Nobody Move!" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_NOBODY_MOVE">
+        <description>
+            <p>Beginning when you choose this archetype at 3rd level, you’ve taken to working with a team of accomplices to rob lucrative, well-defended targets, like caravans, banks, and groups of unsuspecting nobles. When a creature you can see provokes an opportunity attack from a friendly creature, you can use your reaction to make an opportunity attack against it using a ranged or melee weapon. This attack occurs before the provoking creature moves and before the friendly creature can make an opportunity attack.</p>
+        </description>
+        <sheet action="Reaction">
+			<description> When a creature you can see provokes an opportunity attack from a friendly creature, you can an opportunity attack against it using a ranged or melee weapon. This attack occurs before the provoking creature moves and before the friendly creature can make an opportunity attack.</description>
+		</sheet>
+    </element>
+    <element name="Bestial Aspect" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_MERRY_CONFEDERATES">
+        <description>
+            <p>At 3rd level, when you and two or more friendly creatures hide in preparation for an ambush, you and any friendly creatures hiding with you have advantage on your Dexterity (Stealth) checks.</p>
+        </description>
+        <sheet>
+            <description> When you and two or more friendly creatures hide in preparation for an ambush, you all have advantage on your Dexterity (Stealth) checks.</description>
+        </sheet>
+    </element>
+    <element name="Vantage Point" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_VANTAGE_POINT">
+        <description>
+            <p>By 7th level, you can quickly scale walls to gain a perch above your foes. Climbing no longer costs you extra movement. In addition, by climbing at half speed, you can climb up difficult surfaces (such as vertical walls) without making an ability check.</p>
+        </description>
+        <sheet>
+            <description> Climbing costs you no extra movement. You can climb up difficult surfaces (such as vertical walls) without making an ability check by climbing at half speed.</description>
+        </sheet>
+    </element>
+    <element name="No Seriously, Don't Move!" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_NO_SERIOUSLY_DONT_MOVE">
+        <description>
+            <p>Beginning at 11th level, your jumpy, shoot-them-in-the-back philosophy has started to show dividends. You can make two attacks with a ranged or melee weapon, instead of one, when you make an opportunity attack.</p>
+        </description>
+        <sheet>
+            <description> You can make two attacks with a ranged or melee weapon, instead of one, when you make an opportunity attack.</description>
+        </sheet>
+    </element>
+    <element name="Get Out of Dodge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_GET_OUT_OF_DODGE">
+        <description>
+            <p>By 15th level, you’ll escape the long arm of the law or die trying. When you take the Disengage action on your turn, you gain two of the following benefits as a part of that action:</p>
+            <ul class="unstyled">
+                <li> You gain the benefits of the Dash action.</li>
+                <li> You can take the Use an Object action.</li>
+                <li> You can make one weapon attack against a creature you can see.</li>
+                <li> You can attempt to shove a creature.</li>
+                <li> You take half damage from falling and your jump distance doubles until the start of your next turn.</li>
+            </ul>
+        </description>
+        <sheet action="Disengage">
+            <description> You gain two of the following benefits as a part of that action: 
+            -You gain the benefits of the Dash action. -You can take the Use an Object action. 
+            -You can make one weapon attack against a creature you can see. 
+            -You can attempt to shove a creature. 
+            -You take half damage from falling and your jump distance doubles until the start of your next turn.</description>
+        </sheet>
+    </element>
+</elements>
