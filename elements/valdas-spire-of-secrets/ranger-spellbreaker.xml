@@ -55,9 +55,9 @@
         <description>
             <p>At 3rd level, you’ve mastered the mage-slaying technique of cutting through magic itself. Once on each of your turns, when you make an attack against a creature you can see, you can use your bonus action to deliver a small antimagic pulse. For the duration of the attack and damage rolls, the effects of spells targeting the creature, as well as the properties and powers of magic items worn or carried by the creature are suppressed. This disrupts spells like mage armor or mirror image which protect the creature, as well as spells like hellish rebuke which are triggered as a reaction to the attack or damage roll. On a hit, the creature takes an additional 1d6 force damage, or an additional 2d6 force damage, if it was concentrating on a spell when it was attacked.</p>
         </description>
-       <sheet action="Bonus Action" usage="1/Turn">
-			<description> When you make an attack against a creature you can see, you can deliver a small antimagic pulse. For the duration of the attack and damage rolls, the effects of spells targeting the creature, as well as the properties and powers of magic items worn or carried by the creature are suppressed. On a hit, the creature takes an additional 1d6 force damage, or an additional 2d6 force damage, if it was concentrating on a spell when it was attacked.</description>
-		</sheet>
+	<sheet action="Bonus Action" usage="1/Turn">
+	    <description> When you make an attack against a creature you can see, you can deliver a small antimagic pulse. For the duration of the attack and damage rolls, the effects of spells targeting the creature, as well as the properties and powers of magic items worn or carried by the creature are suppressed. On a hit, the creature takes an additional 1d6 force damage, or an additional 2d6 force damage, if it was concentrating on a spell when it was attacked.</description>
+	</sheet>
     </element>
     <element name="Spell Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_SPBREAK_SPELL_RESISTANCE">
         <description>
