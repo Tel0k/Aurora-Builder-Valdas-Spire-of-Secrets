@@ -32,8 +32,8 @@
             <p>Beginning when you choose this archetype at 3rd level, you’ve taken to working with a team of accomplices to rob lucrative, well-defended targets, like caravans, banks, and groups of unsuspecting nobles. When a creature you can see provokes an opportunity attack from a friendly creature, you can use your reaction to make an opportunity attack against it using a ranged or melee weapon. This attack occurs before the provoking creature moves and before the friendly creature can make an opportunity attack.</p>
         </description>
         <sheet action="Reaction">
-			<description> When a creature you can see provokes an opportunity attack from a friendly creature, you can an opportunity attack against it using a ranged or melee weapon. This attack occurs before the provoking creature moves and before the friendly creature can make an opportunity attack.</description>
-		</sheet>
+	    <description> When a creature you can see provokes an opportunity attack from a friendly creature, you can an opportunity attack against it using a ranged or melee weapon. This attack occurs before the provoking creature moves and before the friendly creature can make an opportunity attack.</description>
+	</sheet>
     </element>
     <element name="Bestial Aspect" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_HIGH_MERRY_CONFEDERATES">
         <description>
