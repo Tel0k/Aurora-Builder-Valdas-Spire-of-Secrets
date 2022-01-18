@@ -33,8 +33,8 @@
             <p class="indent">Once you use this ability, you can't do so again until you finish a short or long rest.</p>
         </description>
         <sheet usage="1/Short||Long Rest">
-			<description> When you deal damage with a weapon attack, you can choose to deal maximum damage with that weapon’s damage dice. This ability does not apply to additional sources of damage, such as from a rogue's Sneak Attack or the hunter's mark spell.</description>
-		</sheet>
+	    <description> When you deal damage with a weapon attack, you can choose to deal maximum damage with that weapon’s damage dice. This ability does not apply to additional sources of damage, such as from a rogue's Sneak Attack or the hunter's mark spell.</description>
+	</sheet>
     </element>
     <element name="Bestial Aspect" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_THUNT_TROPHY">
         <description>
