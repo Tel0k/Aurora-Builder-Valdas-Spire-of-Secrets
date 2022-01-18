@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Bone Knight</name>
+      <description>The Bone Knight from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="fighter-bone-knight.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/fighter-bone-knight.xml" />
+      </update>    
+    </info>
+    <element name="Bone Knight" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_BONEKNIGHT">
+      <supports>Martial Archetype</supports>
+      <description>
+        <p>A bone knight, or an osteoth, is a warrior that has undergone an agonizing transmutation ritual, granting them the ability to fully control their bones. Naturally, this power is hideous and disfiguring, but allows them to grow bone protrusions for weapons and armor, changing their skeleton’s size and shape at will. Mastering this ability is a feat of endurance and creativity, but results in a fighter whose most powerful weapon is not sheathed at their side, but sheathed within their flesh.</p>
+        <p class="indent">Many fighters believe the osteoth ritual is a mere myth, a flight of fancy traded around campfires, but the process is indeed real, preserved among moldering tomes and in the minds of deranged wizards. With some resourcefulness, the procedure can be replicated with the contents of any alchemist’s lab, with a generous fatality rate of nearly half.</p>
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_ADAMANT_IVORY" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_BONE_BLADES" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_HARDY_CONSTITUTION" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_RESTRUCTURE" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_IMPROVED_IVORY" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_MASTER_OSTEOTH" />
+      </description>
+      <sheet display="false" />
+      <rules>
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_ADAMANT_IVORY" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_BONE_BLADES" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_HARDY_CONSTITUTION" level="7" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_RESTRUCTURE" level="10" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_IMPROVED_IVORY" level="15" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_MASTER_OSTEOTH" level="18" />
+      </rules>
+    </element>
+    <element name="Adamant Ivory" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_ADAMANT_IVORY">
+      <description>
+        <p>Starting when you choose this archetype at 3rd level, you can sprout plates of bone from your skin. While you are not wearing any armor, your Armor Class 17. You can use a shield and still gain this benefit. At higher levels, your Armor Class increases as shown in the Adamant Ivory table.</p>
+        <p class="indent">Additionally, when you take bludgeoning, piercing, or slashing damage, you can use your reaction to shield yourself from the damage. Expend a Hit Die, roll it, and decrease the damage taken by the number rolled.</p>
+        <h5 class="caption">ADAMANT IVORY</h5>
+        <table>
+			  <thead>
+			    <tr><td>Fighter Level</td><td>Armor Class</td></tr>
+			  </thead>
+			    <tr><td>3rd</td><td>17</td></tr>
+			    <tr><td>5th</td><td>18</td></tr>
+			    <tr><td>10th</td><td>19</td></tr>
+			    <tr><td>18th</td><td>20</td></tr>
+		    </table>
+      </description>
+      <sheet action="Reaction">
+        <description> When you take bludgeoning, piercing, or slashing damage, you can expend a Hit Die, roll it, and decrease the damage taken by the number rolled.</description>
+			</sheet>
+      <rules>
+        	<stat name="ac:unarmored defense boneknight" value="17" level="3" />
+        	<stat name="ac:unarmored defense boneknight" value="1" level="5" />
+        	<stat name="ac:unarmored defense boneknight" value="1" level="10" />
+        	<stat name="ac:unarmored defense boneknight" value="1" level="18" />
+        	<stat name="ac:calculation" value="ac:unarmored defense boneknight" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Bone Knight)" />
+			</rules>
+    </element>
+    <element name="Bone Blades" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_BONE_BLADES">
+      <description>
+        <p>At 3rd level, you have total control over your skeletal structure, allowing you to sprout blades of jagged bone from each of your palms or wrists as you would draw a weapon. These bone weapons have your choice of the statistics of a longsword, shortsword, or scimitar. You can’t be disarmed of these weapons. You can retract these weapons as you would sheathe a weapon.</p>
+        <p class="indent">Starting at 7th level, your blades count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Additionally, once per turn when you hit a creature with a bone weapon, you can expend a Hit Die to extend the bone into the target. Add the Hit Die and your Constitution modifier to the weapon’s damage roll.</p>
+      </description>
+      <sheet>
+        <description> Your control over your skeletal structure, allows you to sprout blades of bone from your palms or wrists. These bone weapons have your choice of the stats of a longsword, shortsword, or scimitar. You can’t be disarmed of these weapons. You can retract these weapons as you would sheathe a weapon.</description>
+        <description level="7" usage="1/Turn"> Your control over your skeletal structure, allows you to sprout blades of bone from your palms or wrists. These bone weapons have your choice of the stats of a longsword, shortsword, or scimitar. You can’t be disarmed of these weapons. You can retract these weapons as you would sheathe a weapon. Your blades count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. When you hit a creature with a bone weapon, you can expend a Hit Die. Add the Hit Die and your Constitution modifier to the weapon’s damage roll.</description>
+      </sheet>
+    </element>
+    <element name="Hardy Constitution" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_HARDY_CONSTITUTION">
+      <description>
+        <p>By 7th level, your bones and their marrow have grown more robust, granting you a formidable healing factor. You regain your total number of hit dice when you finish a long rest.</p>
+      </description>
+      <sheet>
+        <description> You regain your total number of hit dice when you finish a long rest.</description>
+      </sheet>
+    </element>
+    <element name="Restructure" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_RESTRUCTURE">
+      <description>
+        <p>Starting at 10th level, you can shift your skeletal structure as an action to transform your appearance. When you do so, you determine the specifics of the changes, including adjusting your height and weight, the shape of your face, the presence or absence of your teeth, your posture, and so on. You can even change your size from Medium to Small or vice versa. The extent of these changes only extends to your bone structure: you can’t change your skin color, hair length, or clothing using this ability.</p>
+      </description>
+      <sheet>
+        <description> You can shift your skeletal structure as an action to transform your appearance (height and weight, the shape of your face, your posture, and so on). You can even change your size from Medium to Small or vice versa. The extent of these changes only extends to your bone structure: you can’t change your skin color, hair length, or clothing using this ability.</description>
+      </sheet>
+    </element>
+    <element name="Improved Ivory" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_IMPROVED_IVORY">
+      <description>
+        <p>By 15th level, your bones are as hard as steel and as plastic as copper. When you expend a Hit Die to use your Adamant Ivory feature to reduce damage or use your Bone Blades feature to deal additional damage, you can expend two Hit Dice at once. You subtract the total from the bludgeoning, piercing, or slashing damage you take, or add the total and your Constitution modifier to the weapon’s damage roll, respectively.</p>
+      </description>
+      <sheet>
+        <description>When you use either your Adamant Ivory or Bone Blades feature, you can expend two Hit Dice at once.</description>
+      </sheet>
+    </element>
+    <element name="Master Osteoth" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_MASTER_OSTEOTH">
+      <description>
+        <p>Starting at 18th level, when you roll initiative and have fewer than half your Hit Dice, you regain 1d6 Hit Dice. Additionally, on your turn, you can expend 3 Hit Dice to regain a use of your Second Wind feature, or expend 8 Hit Dice to regain a use of your Action Surge feature (no action required).</p>
+      </description>
+      <sheet>
+        <description> When you roll initiative and have fewer than half your Hit Dice, you regain 1d6 Hit Dice. On your turn, you can expend 3 Hit Dice to regain a use of your Second Wind feature, or expend 8 Hit Dice to regain a use of your Action Surge feature (no action required).</description>
+      </sheet>
+    </element>
+</elements>
