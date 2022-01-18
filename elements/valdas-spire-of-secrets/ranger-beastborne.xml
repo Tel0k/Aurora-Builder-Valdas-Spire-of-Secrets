@@ -34,38 +34,38 @@
             <p style="text-indent: -1em; margin-left: 1em"><strong>KEEN SMELL.</strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
         </description>
         <sheet>
-			<description>You gain the shapechanger subtype. Additionally, you gain darkvision out to a range of 60 feet. If you already have it from your race, its range increases by 30 feet. You also have advantage on Wisdom (Perception) checks that rely on smell.</description>
-		</sheet>
+		<description>You gain the shapechanger subtype. Additionally, you gain darkvision out to a range of 60 feet. If you already have it from your race, its range increases by 30 feet. You also have advantage on Wisdom (Perception) checks that rely on smell.</description>
+	</sheet>
         <rules>
-			<grant id="ID_VISION_DARKVISION" type="Vision"/>
-		</rules>
+		<grant id="ID_VISION_DARKVISION" type="Vision"/>
+	</rules>
     </element>
     <element name="Bestial Aspect" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_BEAST_BESTIAL_ASPECT">
         <description>
-            <p>At 3rd level, as blood is shed, you gradually lose control and slip into a beastlike form, ravenous and hungry for carnage. Whenever you take damage or deal damage to a hostile creature with an attack, add the total number together; this is your damage pool. You gain a bonus to your damage rolls, as well as additional beastlike abilities, according to your total damage pool, as shown on the Bestial Aspect table. After 1 minute of taking and dealing no damage, reset your damage pool to 0.</p>
-            <h5 class="caption">Bestial Aspect</h5>
-            <table>
-			    <thead>
-			    <tr><td>Damage Pool</td><td>Damage Bonus</td><td>Ability</td></tr>
-			    </thead>
-			    <tr><td>0</td><td>--</td><td>--</td></tr>
-			    <tr><td>10</td><td>+2</td><td>You sprout a set of vicious claws, which are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</td></tr>
-			    <tr><td>20</td><td>+2</td><td>You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</td></tr>
-			    <tr><td>30</td><td>+2</td><td>Your movement speed increases by 10 feet.</td></tr>
-                <tr><td>40</td><td>+3</td><td>You gain blindsight with a range of 10 feet.</td></tr>
-			    <tr><td>50</td><td>+3</td><td>You gain a climbing speed equal to your movement speed.</td></tr>
-			    <tr><td>70</td><td>+3</td><td>Your movement speed increases by an additional 10 feet (20 feet total).</td></tr>
-			    <tr><td>100</td><td>+3</td><td>Your claws deal an additional 1d6 slashing damage on a hit.</td></tr>
-		    </table>
+		<p>At 3rd level, as blood is shed, you gradually lose control and slip into a beastlike form, ravenous and hungry for carnage. Whenever you take damage or deal damage to a hostile creature with an attack, add the total number together; this is your damage pool. You gain a bonus to your damage rolls, as well as additional beastlike abilities, according to your total damage pool, as shown on the Bestial Aspect table. After 1 minute of taking and dealing no damage, reset your damage pool to 0.</p>
+		<h5 class="caption">Bestial Aspect</h5>
+		<table>
+		    <thead>
+		    <tr><td>Damage Pool</td><td>Damage Bonus</td><td>Ability</td></tr>
+		    </thead>
+		    <tr><td>0</td><td>--</td><td>--</td></tr>
+		    <tr><td>10</td><td>+2</td><td>You sprout a set of vicious claws, which are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</td></tr>
+		    <tr><td>20</td><td>+2</td><td>You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</td></tr>
+		    <tr><td>30</td><td>+2</td><td>Your movement speed increases by 10 feet.</td></tr>
+		    <tr><td>40</td><td>+3</td><td>You gain blindsight with a range of 10 feet.</td></tr>
+		    <tr><td>50</td><td>+3</td><td>You gain a climbing speed equal to your movement speed.</td></tr>
+		    <tr><td>70</td><td>+3</td><td>Your movement speed increases by an additional 10 feet (20 feet total).</td></tr>
+		    <tr><td>100</td><td>+3</td><td>Your claws deal an additional 1d6 slashing damage on a hit.</td></tr>
+		</table>
         </description>
         <sheet>
-            <description> Whenever you take damage or deal damage to a hostile creature with an attack, add the total number together; this is your damage pool. You gain a bonus to your damage rolls, as well as additional beastlike abilities, according to your total damage pool, as shown on the Bestial Aspect table. After 1 minute of taking and dealing no damage, reset your damage pool to 0.</description>
+		<description> Whenever you take damage or deal damage to a hostile creature with an attack, add the total number together; this is your damage pool. You gain a bonus to your damage rolls, as well as additional beastlike abilities, according to your total damage pool, as shown on the Bestial Aspect table. After 1 minute of taking and dealing no damage, reset your damage pool to 0.</description>
         </sheet>
     </element>
     <element name="Wolfbane Fury" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_BEAST_WOLFBANE_FURY">
         <description>
             <p>Starting at 7th level, you can whip yourself into a lycanthropic fury. As a bonus action, you can roll 4d6 and add the total to your damage pool. Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
-        </description>
+	    </description>
         <sheet action="Bonus Action" usage="1/Short||Long Rest">
             <description> You can roll 4d6 and add the total to your damage pool.</description>
         </sheet>
