@@ -36,25 +36,25 @@
         <p class="indent">Additionally, when you take bludgeoning, piercing, or slashing damage, you can use your reaction to shield yourself from the damage. Expend a Hit Die, roll it, and decrease the damage taken by the number rolled.</p>
         <h5 class="caption">ADAMANT IVORY</h5>
         <table>
-			  <thead>
-			    <tr><td>Fighter Level</td><td>Armor Class</td></tr>
-			  </thead>
-			    <tr><td>3rd</td><td>17</td></tr>
-			    <tr><td>5th</td><td>18</td></tr>
-			    <tr><td>10th</td><td>19</td></tr>
-			    <tr><td>18th</td><td>20</td></tr>
-		    </table>
+		<thead>
+		  <tr><td>Fighter Level</td><td>Armor Class</td></tr>
+	 	</thead>
+		  <tr><td>3rd</td><td>17</td></tr>
+		  <tr><td>5th</td><td>18</td></tr>
+		  <tr><td>10th</td><td>19</td></tr>
+		  <tr><td>18th</td><td>20</td></tr>
+	</table>
       </description>
       <sheet action="Reaction">
         <description> When you take bludgeoning, piercing, or slashing damage, you can expend a Hit Die, roll it, and decrease the damage taken by the number rolled.</description>
-			</sheet>
+      </sheet>
       <rules>
-        	<stat name="ac:unarmored defense boneknight" value="17" level="3" />
-        	<stat name="ac:unarmored defense boneknight" value="1" level="5" />
-        	<stat name="ac:unarmored defense boneknight" value="1" level="10" />
-        	<stat name="ac:unarmored defense boneknight" value="1" level="18" />
-        	<stat name="ac:calculation" value="ac:unarmored defense boneknight" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Bone Knight)" />
-			</rules>
+        <stat name="ac:unarmored defense boneknight" value="17" level="3" />
+        <stat name="ac:unarmored defense boneknight" value="1" level="5" />
+        <stat name="ac:unarmored defense boneknight" value="1" level="10" />
+        <stat name="ac:unarmored defense boneknight" value="1" level="18" />
+        <stat name="ac:calculation" value="ac:unarmored defense boneknight" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Bone Knight)" />
+      </rules>
     </element>
     <element name="Bone Blades" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BONEKNIGHT_BONE_BLADES">
       <description>
