@@ -38,35 +38,35 @@
             <li> Your unarmed strikes and improvised weapons deal improved damage, and improve as you gain levels in this class, as shown on the following table.</li>
         </ul>
         <table>
-			  <thead>
-			    <tr><td>Fighter Level</td><td>Damage</td></tr>
-			  </thead>
-			    <tr><td>3rd</td><td>1d4</td></tr>
-			    <tr><td>5th</td><td>1d6</td></tr>
-			    <tr><td>11th</td><td>1d8</td></tr>
-			    <tr><td>17th</td><td>1d12</td></tr>
-		    </table>
+	 <thead>
+	  <tr><td>Fighter Level</td><td>Damage</td></tr>
+	 </thead>
+	  <tr><td>3rd</td><td>1d4</td></tr>
+	  <tr><td>5th</td><td>1d6</td></tr>
+	  <tr><td>11th</td><td>1d8</td></tr>
+	  <tr><td>17th</td><td>1d12</td></tr>
+	</table>
       </description>
       <sheet>
         <description> You are proficient with improvised weapons and treat one-handed improvised weapons as if they had the Thrown (range 20/60) property. While unarmed or wielding an improvised weapon and not wearing medium or heavy armor, you gain the following benefits:
         You can use your Strength instead of your Dexterity when determining your AC.
         Your unarmed strikes and improvised weapons deal 1d{{brawler:dice}} damage </description>
-	  </sheet>
+      </sheet>
       <rules>
-			<stat name="brawler:dice" value="6" bonus="brawler" level="3" />
-			<stat name="brawler:dice" value="8" bonus="brawler" level="5" />
-			<stat name="brawler:dice" value="10" bonus="brawler" level="11" />
-			<stat name="brawler:dice" value="12" bonus="brawler" level="17" />
-			<stat name="ac:unarmored:ability" value="dexterity:modifier" bonus="modifier" />
-			<stat name="ac:unarmored:ability" value="strength:modifier" bonus="modifier" />
-			<stat name="ac:unarmored" value="-ac:unarmored:dexterity" />
-			<stat name="ac:unarmored" value="ac:unarmored:ability" />
-			<stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none]"  />
-			<stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:light]" />
-			<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
-			<stat name="ac:armored:ability" value="strength:modifier" bonus="ability" />
-			<stat name="ac:armored" value="ac:armored:ability" equipped="[armor:light]" />
-		</rules>
+	<stat name="brawler:dice" value="6" bonus="brawler" level="3" />
+	<stat name="brawler:dice" value="8" bonus="brawler" level="5" />
+	<stat name="brawler:dice" value="10" bonus="brawler" level="11" />
+	<stat name="brawler:dice" value="12" bonus="brawler" level="17" />
+	<stat name="ac:unarmored:ability" value="dexterity:modifier" bonus="modifier" />
+	<stat name="ac:unarmored:ability" value="strength:modifier" bonus="modifier" />
+	<stat name="ac:unarmored" value="-ac:unarmored:dexterity" />
+	<stat name="ac:unarmored" value="ac:unarmored:ability" />
+	<stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none]"  />
+	<stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:light]" />
+	<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
+	<stat name="ac:armored:ability" value="strength:modifier" bonus="ability" />
+	<stat name="ac:armored" value="ac:armored:ability" equipped="[armor:light]" />
+      </rules>
     </element>
     <element name="Brute Force" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRUTE_FORCE">
       <description>
@@ -78,9 +78,9 @@
       </sheet>
       <rules>
         <stat name="bruteforce:dice" value="6" bonus="bruteforce" level="3" />
-		    <stat name="bruteforce:dice" value="8" bonus="bruteforce" level="5" />
-		    <stat name="bruteforce:dice" value="10" bonus="bruteforce" level="11" />
-		    <stat name="bruteforce:dice" value="12" bonus="bruteforce" level="17" />
+	<stat name="bruteforce:dice" value="8" bonus="bruteforce" level="5" />
+	<stat name="bruteforce:dice" value="10" bonus="bruteforce" level="11" />
+	<stat name="bruteforce:dice" value="12" bonus="bruteforce" level="17" />
       </rules>
     </element>
     <element name="Imposing Physique" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_IMPOSING_PHYSIQUE">
@@ -91,13 +91,13 @@
         <description> You gain proficiency in the Intimidation skill, and you can use your Strength bonus instead of your Charisma bonus for Charisma (Intimidation) checks. Your capacities for carrying, lifting, pushing, and pulling are doubled.</description>
       </sheet>
       <rules>
-	    	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
         <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
         <stat name="intimidation:proficiency" value="-charisma:modifier" />
         <stat name="intimidation:proficiency:ability" value="charisma:modifier" bonus="ability" />
         <stat name="intimidation:proficiency:ability" value="strength:modifier" bonus="ability" />
         <stat name="intimidation:proficiency" value="intimidation:proficiency:ability" />
-	  </rules>
+      </rules>
     </element>
     <element name="Haymaker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_HAYMAKER">
       <description>
