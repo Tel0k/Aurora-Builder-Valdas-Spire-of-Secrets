@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Brawler</name>
+      <description>The Brawler from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="fighter-brawler.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/fighter-brawler.xml" />
+      </update>    
+    </info>
+    <element name="Brawler" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_BRAWLER">
+      <supports>Martial Archetype</supports>
+      <description>
+        <p>Brawlers use their bare fists and raw force as their first and best weapons in combat. Such warriors come from tough stock—prize fighters, outlanders, bouncers, and veterans—and have learned to hone their bodies into implements of war. Wherever a brawler goes, bruised and broken bodies follow. It doesn’t matter whether they’re tossing thugs around a tavern or going toe-to-toe with a red dragon, brute force always comes out on top.</p>
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRAWLING" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRUTE_FORCE" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_IMPOSING_PHYSIQUE" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_HAYMAKER" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_OWLBEAR_WRESTLER" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_SKULLBREAKER" />
+      </description>
+      <sheet display="false" />
+      <rules>
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRAWLING" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRUTE_FORCE" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_IMPOSING_PHYSIQUE" level="7" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_HAYMAKER" level="10" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_OWLBEAR_WRESTLER" level="15" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_SKULLBREAKER" level="18" />
+      </rules>
+    </element>
+    <element name="Brawling" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRAWLING">
+      <description>
+        <p>Starting at 3rd level, you’ve mastered a brutal, bloody-knuckle style of combat. You are proficient with improvised weapons and treat one-handed improvised weapons as if they had the Thrown (range 20/60) property.</p>
+        <p class="indent">Additionally, while you are unarmed or wielding an improvised weapon and you are not wearing medium or heavy armor, you gain the following benefits:</p>
+        <ul class="unstyled">
+            <li> You can use your Strength instead of your Dexterity when determining your AC.</li>
+            <li> Your unarmed strikes and improvised weapons deal improved damage, and improve as you gain levels in this class, as shown on the following table.</li>
+        </ul>
+        <table>
+			  <thead>
+			    <tr><td>Fighter Level</td><td>Damage</td></tr>
+			  </thead>
+			    <tr><td>3rd</td><td>1d4</td></tr>
+			    <tr><td>5th</td><td>1d6</td></tr>
+			    <tr><td>11th</td><td>1d8</td></tr>
+			    <tr><td>17th</td><td>1d12</td></tr>
+		    </table>
+      </description>
+      <sheet>
+        <description> You are proficient with improvised weapons and treat one-handed improvised weapons as if they had the Thrown (range 20/60) property. While unarmed or wielding an improvised weapon and not wearing medium or heavy armor, you gain the following benefits:
+        You can use your Strength instead of your Dexterity when determining your AC.
+        Your unarmed strikes and improvised weapons deal 1d{{brawler:dice}} damage </description>
+	  </sheet>
+      <rules>
+			<stat name="brawler:dice" value="6" bonus="brawler" level="3" />
+			<stat name="brawler:dice" value="8" bonus="brawler" level="5" />
+			<stat name="brawler:dice" value="10" bonus="brawler" level="11" />
+			<stat name="brawler:dice" value="12" bonus="brawler" level="17" />
+			<stat name="ac:unarmored:ability" value="dexterity:modifier" bonus="modifier" />
+			<stat name="ac:unarmored:ability" value="strength:modifier" bonus="modifier" />
+			<stat name="ac:unarmored" value="-ac:unarmored:dexterity" />
+			<stat name="ac:unarmored" value="ac:unarmored:ability" />
+			<stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none]"  />
+			<stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:light]" />
+			<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:armored:ability" value="strength:modifier" bonus="ability" />
+			<stat name="ac:armored" value="ac:armored:ability" equipped="[armor:light]" />
+		</rules>
+    </element>
+    <element name="Brute Force" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_BRUTE_FORCE">
+      <description>
+        <p>Also at 3rd level, you can maneuver your opponents to gain a ruthless edge in combat. When you hit a creature with an unarmed strike or a melee attack using an improvised weapon, you can use your bonus action to attempt to grapple the target or deal an additional 1d6 damage.</p>
+        <p class="indent">This damage increases as you gain higher levels in this class. At 5th level, the additional damage you deal increases to 1d8 damage, at 11th level it increases to 1d10 damage, and at 17th level, it increases to 1d12 damage.</p>
+      </description>
+      <sheet action="Bonus Action">
+        <description> When you hit a creature with an unarmed strike or a melee attack using an improvised weapon, you can use your bonus action to attempt to grapple the target or deal an additional 1d{{bruteforce:dice}}] damage.</description>
+      </sheet>
+      <rules>
+        <stat name="bruteforce:dice" value="6" bonus="bruteforce" level="3" />
+		    <stat name="bruteforce:dice" value="8" bonus="bruteforce" level="5" />
+		    <stat name="bruteforce:dice" value="10" bonus="bruteforce" level="11" />
+		    <stat name="bruteforce:dice" value="12" bonus="bruteforce" level="17" />
+      </rules>
+    </element>
+    <element name="Imposing Physique" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_IMPOSING_PHYSIQUE">
+      <description>
+        <p>Starting at 7th level, you learn to speak more with your prodigious muscles instead of your words. You gain proficiency in the Intimidation skill, and you can use your Strength bonus instead of your Charisma bonus for Charisma (Intimidation) checks. Additionally, your capacities for carrying, lifting, pushing, and pulling are doubled.</p>
+      </description>
+      <sheet>
+        <description> You gain proficiency in the Intimidation skill, and you can use your Strength bonus instead of your Charisma bonus for Charisma (Intimidation) checks. Your capacities for carrying, lifting, pushing, and pulling are doubled.</description>
+      </sheet>
+      <rules>
+	    	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+        <stat name="intimidation:proficiency" value="-charisma:modifier" />
+        <stat name="intimidation:proficiency:ability" value="charisma:modifier" bonus="ability" />
+        <stat name="intimidation:proficiency:ability" value="strength:modifier" bonus="ability" />
+        <stat name="intimidation:proficiency" value="intimidation:proficiency:ability" />
+	  </rules>
+    </element>
+    <element name="Haymaker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_HAYMAKER">
+      <description>
+        <p>At 10th level, you can put all your force into one blow. When you use the Attack action on your turn to make an unarmed strike, you can choose to forgo any additional attacks you could make with your action to make a single, devastating blow. For each attack you would give up in this way, you can add two additional damage dice to the attack's damage roll. This attack is treated as magical for the purposes of bypassing damage resistance and immunity.</p>
+      </description>
+      <sheet>
+        <description> When you use the Attack action on your turn to make an unarmed strike, you can choose to forgo any additional attacks you could make with your action. For each attack you would give up in this way, you can add two additional damage dice to the attack's damage roll. This attack is treated as magical for the purposes of bypassing damage resistance and immunity.</description>
+      </sheet>
+    </element>
+    <element name="Owlbear Wrestler" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_OWLBEAR_WRESTLER">
+      <description>
+        <p>Starting at 15th level, you’ve learned how to pin down even the most towering foes. You have advantage on Strength (Athletics) checks you make to grapple creatures of Large size and smaller, and you can attempt to grapple creatures of any size category.</p>
+      </description>
+      <sheet>
+        <description> You have advantage on Strength (Athletics) checks you make to grapple creatures of Large size and smaller, and you can attempt to grapple creatures of any size category.</description>
+      </sheet>
+    </element>
+    <element name="Skullbreaker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIGHTER_BRAWLER_SKULLBREAKER">
+      <description>
+        <p>Starting at 18th level, your blows are able to rattle even the greatest of foes. Once on each of your turns when you deal damage to a creature with an unarmed strike or an improvised weapon, you can choose to shatter their resolve. You gain resistance to any damage that creature deals to you until the beginning of your next turn.</p>
+      </description>
+      <sheet usage="1/Turn">
+        <description> When you deal damage to a creature with an unarmed strike or an improvised weapon, you gain resistance to any damage that creature deals to you until the beginning of your next turn.</description>
+      </sheet>
+    </element>
+</elements>
