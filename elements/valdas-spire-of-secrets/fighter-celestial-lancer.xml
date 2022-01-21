@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Celestial Lancer</name>
+      <description>The Celestial Lancer from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="fighter-celestial-lancer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/fighter-celestial-lancer.xml" />
+      </update>    
+    </info>
+    <element name="Celestial Lancer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER">
+      <supports>Martial Archetype</supports>
+      <description>
+        <p>Feared frontline warriors bearing lances and unique, streamlined armor, Celestial Lancers are famous for their Meteor Jump, a supernatural technique taught only to the rare few. The lancers trace their origins back to an order of dragon hunters who learned to leap above diving dragons and pin their wings with a swift, downward lance strike. This technique, combined with a suite of mystical powers drawn from the yawning sky, make the lancers decisive warriors in the arena of vertical combat. Though Celestial Lancers may be hampered in claustrophobic dungeons, they excel underneath the open sky, where they can leap high and come crashing down for devastating impacts.</p>
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_LANCE_SPECIALTY" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_METEOR_JUMP" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_PLUNGING_ATTACK" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_APEX_MOMENT" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_EARTHSHAKER" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_CELESTIAL_AURA" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_COMET_STRIKE" />
+      </description>
+      <sheet display="false" />
+      <rules>
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_LANCE_SPECIALTY" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_METEOR_JUMP" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_PLUNGING_ATTACK" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_APEX_MOMENT" level="7" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_EARTHSHAKER" level="10" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_CELESTIAL_AURA" level="15" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_COMET_STRIKE" level="18" />
+      </rules>
+    </element>
+    <element name="Lance Specialty" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_LANCE_SPECIALTY">
+      <description>
+        <p>Beginning when you select this archetype at 3rd level, when you wield a lance, you do not suffer disadvantage when attacking creatures within 5 feet of you. However, you must still wield a lance two handed when not mounted.</p>
+      </description>
+      <sheet>
+        <description> When you wield a lance, you do not suffer disadvantage when attacking creatures in a 5ft range, but you must still wield a lance two handed when not mounted.</description>
+	  </sheet>
+    </element>
+    <element name="Meteor Jump" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_METEOR_JUMP">
+      <description>
+        <p>Starting at 3rd level, you can perform a supernaturally high leap. Once on each of your turns, you can use 20 feet of your movement to perform a high jump reaching 10 feet in height. You need to move 10 feet immediately before making this jump and do not provoke opportunity attacks while jumping or falling. You can land within 10 feet of where you began. At the end of a fall, subtract 10 feet from the distance you fell when calculating your falling damage.</p>
+        <p class="indent">The height you can jump and the distance you subtract when you fall increases, as shown on the Meteor Jump table below.</p>
+        <h5>METEOR JUMP</h5>
+            <table>
+                <thead>
+                    <tr><td>Fighter Level</td><td>Jump Height</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>10 feet</td></tr>
+                <tr><td>5rd</td><td>20 feet</td></tr>
+                <tr><td>11th</td><td>30 feet</td></tr>
+                <tr><td>17th</td><td>40 feet</td></tr>
+            </table>
+      </description>
+      <sheet action="Bonus Action" usage="1/Turn">
+        <description> You can use 20 feet of your movement to perform a high jump reaching 10 feet in height. You need to move 10 feet immediately before making this jump and do not provoke opportunity attacks while jumping or falling. You can land within 10 feet of where you began. At the end of a fall, subtract 10 feet from the distance you fell when calculating your falling damage. Jump height and fall distance reduction, increases as per the Meteor Jump table.</description>
+      </sheet>
+    </element>
+    <element name="Plunging Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_PLUNGING_ATTACK">
+      <description>
+        <p>Also at 3rd level, you can direct the momentum of gravity into your strike. Once on each of your turns, when you hit a creature with a melee weapon attack while falling, you can add 1d6 to the damage roll for every 10 feet you fell, up to a maximum of 5d6.</p>
+      </description>
+      <sheet usage="1/Turn">
+        <description> When you hit a creature with a melee weapon attack while falling, you can add 1d6 to the damage roll for every 10 feet you fell, up to a maximum of 5d6.</description>
+      </sheet>
+    </element>
+    <element name="Apex Moment" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_APEX_MOMENT">
+      <description>
+        <p>Starting at 7th level, you gain the mystical ability to hang at the peak of your jump before you come plunging back down. When you use your Meteor Jump ability, you can choose to hover until the start of your next turn instead of falling immediately. When you do so, you can't use your Meteor Jump on your next turn.</p>
+      </description>
+      <sheet>
+        <description> When you use your Meteor Jump ability, you can choose to hover until the start of your next turn instead of falling immediately. When you do so, you can't use your Meteor Jump on your next turn.</description>
+      </sheet>
+    </element>
+    <element name="Earthshaker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_EARTHSHAKER">
+      <description>
+        <p>Beginning at 10th level, at the end of a fall of 20 feet or higher, you can use a bonus action to strike the earth like a meteor. Each creature in contact with the ground within 10 feet of where you land must succeed a Dexterity saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</p>
+        <p class="indent">You can use this feature a number of times equal to your Strength modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+      </description>
+      <sheet action="Bonus Action" usage="{{strength:modifier}}/Long Rest" >
+        <description> At the end of a fall of 20 feet or higher, each creature in contact with the ground within 10 feet of where you land must succeed a DC{{earthshaker:dc}} Dexterity saving throw or be knocked prone.</description>
+      </sheet>
+      <rules>
+        <stat name="earthshaker:dc" value="8" />
+		<stat name="earthshaker:dc" value="proficiency" />
+		<stat name="earthshaker:dc" value="strength:modifier" />
+      </rules>
+    </element>
+    <element name="Celestial Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_CELESTIAL_AURA">
+      <description>
+        <p>By 15th level, you can draw mystic power from your connection to the open sky. When you use your Second Wind feature, you and each friendly creature you choose within 10 feet of you gain temporary hit points equal to your fighter level.</p>
+      </description>
+      <sheet>
+        <description> When you use your Second Wind feature, you and each friendly creature you choose within 10 feet of you gain temporary hit points equal to your fighter level.</description>
+      </sheet>
+    </element>
+    <element name="Comet Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_COMET_STRIKE">
+      <description>
+        <p>Starting at 18th level, you plummet wreathed in flames, like a devastating meteor. When you use your Earthshaker ability, a creature that fails its saving throw takes 4d6 fire damage, or half as much on a success. Additionally, when you roll initiative and have no uses of your Earthshaker feature left, you regain one use of that feature.</p>
+      </description>
+      <sheet>
+        <description> When you use your Earthshaker ability, a creature that fails its saving throw takes 4d6 fire damage, or half as much on a success. When you roll initiative and have no uses of your Earthshaker feature left, you regain one use of that feature.</description>
+      </sheet>
+    </element>
+</elements>
