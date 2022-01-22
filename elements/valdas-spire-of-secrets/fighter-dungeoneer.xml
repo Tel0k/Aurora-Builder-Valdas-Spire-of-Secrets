@@ -36,7 +36,7 @@
       </description>
       <sheet>
         <description> You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</description>
-	  </sheet>
+      </sheet>
     </element>
     <element name="Kick In The Door" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR">
       <description>
