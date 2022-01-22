@@ -53,9 +53,9 @@
       </sheet>
       <rules>
         <stat name="surprise-attack:number" value="1" bonus="surprise-attack" level="3" />
-			  <stat name="surprise-attack:number" value="2" bonus="surprise-attack" level="7" />
-			  <stat name="surprise-attack:number" value="3" bonus="surprise-attack" level="11" />
-			  <stat name="surprise-attack:number" value="4" bonus="surprise-attack" level="15" />
+	<stat name="surprise-attack:number" value="2" bonus="surprise-attack" level="7" />
+	<stat name="surprise-attack:number" value="3" bonus="surprise-attack" level="11" />
+	<stat name="surprise-attack:number" value="4" bonus="surprise-attack" level="15" />
       </rules>
     </element>
     <element name="Commandeer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CORSAIR_COMMANDEER">
@@ -84,8 +84,8 @@
       </sheet>
       <rules>
         <stat name="earthshaker:dc" value="8" />
-		    <stat name="earthshaker:dc" value="proficiency" />
-		    <stat name="earthshaker:dc" value="strength:modifier" />
+	<stat name="earthshaker:dc" value="proficiency" />
+	<stat name="earthshaker:dc" value="strength:modifier" />
       </rules>
     </element>
     <element name="Slippery Positioning" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CORSAIR_SLIPPERY_POSITIONING">
