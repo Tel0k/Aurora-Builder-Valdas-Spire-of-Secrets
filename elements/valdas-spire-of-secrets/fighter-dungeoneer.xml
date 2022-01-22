@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Dungeoneer</name>
+      <description>The Dungeoneer from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="fighter-dungeoneer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/fighter-dungeoneer.xml" />
+      </update>    
+    </info>
+    <element name="Dungeoneer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER">
+      <supports>Martial Archetype</supports>
+      <description>
+        <p>Only fools would think to dive headfirst into an abandoned crypt filled with monsters and deathtraps, but it seems only fools emerge from such crypts laden with as much loot as they can carry. The archetypal dungeon delver is a veteran of such suicidal dungeon delves, and has become intimately familiar with the hazards therein. In the course of their adventures, such a dungeoneer will have adopted countless best practices, along with a litany of unproven superstitions which they believe keeps them alive. Principles from "always be the first one to hit the monster" to "never be the first one to touch a treasure chest" line a dungeoneer's journal. However, it's probably better to be paranoid and superstitious than lying at the bottom of a pit trap, incinerated by a fireball, or digested by a mimic.</p>
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_DANGER_SENSE" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_DUNGEOONERS_INTUITION" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_MONSTER_KILL" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_LETHALITY_PREVENTION" />
+        <div element="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_AVOIDANCE" />
+      </description>
+      <sheet display="false" />
+      <rules>
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_DANGER_SENSE" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_COMMANDEER" level="3" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_DUNGEOONERS_INTUITION" level="7" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_MONSTER_KILL" level="10" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_LETHALITY_PREVENTION" level="15" />
+        <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_AVOIDANCE" level="18" />
+      </rules>
+    </element>
+    <element name="Danger Sense" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_DANGER_SENSE">
+      <description>
+        <p>Beginning when you choose this archetype at 3rd level, you have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</p>
+      </description>
+      <sheet>
+        <description> You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</description>
+	  </sheet>
+    </element>
+    <element name="Kick In The Door" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR">
+      <description>
+        <p>Also at 3rd level, you know how to charge through each chamber of a dungeon and come out alive. When you initiate combat by kicking down a door, diving in from overhead, crashing through a window, or any other suitably reckless tactic (as adjudicated by the GM), you have advantage on your initiative roll and on attacks you make during your first round of combat. You can’t gain this benefit when you are surprised or when fighting creatures you can’t see.</p>
+      </description>
+      <sheet>
+        <description> When you initiate combat by using any suitably reckless tactic (as adjudicated by the GM), you have advantage on your initiative roll and on attacks you make during your first round of combat. You can’t gain this benefit when you are surprised or when fighting creatures you can’t see.</description>
+      </sheet>
+    </element>
+    <element name="Dungeoneer Intuition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_DUNGEOONERS_INTUITION">
+      <description>
+        <p>By 7th level, you have a second-sense for the unique hazards present in a dungeon. You have advantage on ability checks you make to detect shapechangers, traps, and unseen magical effects, and can make a check to detect such hazards even if you would not normally make such a check.</p>
+      </description>
+      <sheet>
+        <description> You have advantage on ability checks you make to detect shapechangers, traps, and unseen magical effects, and can make a check to detect such hazards even if you would not normally make such a check.</description>
+      </sheet>
+    </element>
+    <element name="Monster Kill" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_MONSTER_KILL">
+      <description>
+        <p>Starting at 10th level, when you hit an aberration, fey, fiend, monstrosity, or undead with a weapon attack, you can deal an additional die of damage to the target. You can use this ability three times, and regain all expended uses when you finish a short or long rest.</p>
+      </description>
+      <sheet usage="3/Short||Long Rest" >
+        <description> When you hit an aberration, fey, fiend, monstrosity, or undead with a weapon attack, you can deal an additional die of damage to the target.</description>
+      </sheet>
+    </element>
+    <element name="Lethality Prevention" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_LETHALITY_PREVENTION">
+      <description>
+        <p>By 15th level, you are a foremost expert in avoiding death. Whenever you would take damage in excess of 50 hit points but are not killed outright, you can instead reduce the damage taken to 50 hit points.</p>
+      </description>
+      <sheet>
+        <description> Whenever you would take more than 50 hit points damage but are not killed outright, you can instead reduce the damage taken to 50 hit points.</description>
+      </sheet>
+    </element>
+    <element name="Avoidance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_DUNGEONEER_AVOIDANCE">
+      <description>
+        <p>Starting at 18th level, when you are subjected to an effect that allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+      </description>
+      <sheet>
+        <description> When an effect allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you take no damage if you succeed on it, and only half damage if you fail.</description>
+      </sheet>
+    </element>
+</elements>
