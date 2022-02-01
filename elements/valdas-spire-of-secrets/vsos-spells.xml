@@ -4,7 +4,7 @@
 		<name>Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="vsos-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-spells.xml" />
 		</update>
 	</info>
@@ -180,7 +180,7 @@
 			<set name="isConcentration">true</set>
 		</setters>
 	</element>
-	<element name="Arc Blade" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_SUMMON_BEAST">
+	<element name="Arc Blade" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_ARC_BLADE">
 		<supports>Warmage</supports>
 		<description>
 			<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the target suffers the weapon attack’s normal effects, except that any damage dealt by the attack is lightning damage instead of its normal type. Additionally, an arc of lightning jumps to a creature you choose within 5 feet of the target, dealing 1d6 lightning damage.</p>
