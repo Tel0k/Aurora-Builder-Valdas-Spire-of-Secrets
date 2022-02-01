@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Warmage</name>
+      <description>The Warmage from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="class-warmage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warmage.xml" />
+      </update>    
+    </info>
+    <element name="Warmage" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_WARMAGE">
+		<description>
+			<p>An elf recites the motions again for the simplest spell she knows, repeating them until she knows they are perfect. With a single, precise stroke, she unleashes a wave of arcane energy, focused into a searing blue beam.</p>
+			<p class="indent">A tiefling waves her hands to conjure floating greatswords of humming blue energy, which dance about in mesmerizing and deadly arcs. One blade takes on an aspect of fire, and the other lightning, as she begins to cleave through the goblinoid horde. Waving a black and red checkered banner, a dragonborn king charges into the fore. At his sides are warmages of all houses, a chessboard of elite arcanists, poised to turn the tide of battle.</p>
+			<p class="indent">The undisputed masters of cantrips, warmages turn the most fundamental types of magic into a deadly and precise art.</p>
+			<h4>CANTRIP MASTERS</h4>
+			<p>While other spellcasters aspire to grander and more complex spells, warmages refine and master the most fundamental magic: cantrips. Warmages wield their magic in the same way that a warrior uses a sword, bow, or axe: as weapons to be perfected and mastered, not as an unknowable force to be feared. In contrast to sorcerers and WARMAGEs, their magic is a trainable skill, one that can be mastered by almost anyone with discipline and aptitude. Therefore, warmages stand among the most fearsome of spellcasters, with only the most rudimentary of spells.</p>
+			<h4>STRATEGIC GENIUSES</h4>
+			<p>Warmages have a long and storied history as grand strategists and tacticians, both in grand battles and personal skirmishes. If a warmage is outgunned or outmanned, they'll try to outthink their foes, which works more often than not. They demonstrate an efficient kind of pragmatism, owing perhaps to their ability to solve many problems with a few magical tools.</p>
+            <h4>ALIGNED FREE AGENTS</h4>
+			<p>While some warmages are fully self-taught, the majority join a House, a loose confederation of warmages which practice together and share secrets of the trade. Houses teach invaluable battlefield strategy, but each individual Houses also touts their own brands of tactics and styles of magical tricks. The House of Knights, for example, emphasizes armor and martial prowess, whereas the House of Kings emphasizes battlefield strategy.</p>
+			<p class="indent">By way of metaphor, Houses which value honor and teamwork above all else brand themselves after games of strategy, whereas those who epitomize selfreliance name themselves for games of chance. This division in the warmage Houses is representative of a schism that dates back to the earliest warmage masters. Legend has it that the first two masters separated when one decided to found a college. The other, out of spite, built a casino outside its grounds.</p>
+            <h4>CREATING A WARMAGE </h4>
+			<p>Warmages come from all walks of life, so as you build yours, consider where you first learned the fundamentals of magic, which you would go on to perfect. You might have picked up cantrips from a fellow adventurer or in the early stages of WARMAGEing training. You could even be self-taught. Choose an Arcane Initiation which best fits your character's history with magic.</p>
+			<p class="indent">Moreover, consider how you feel about magic as a whole. Are you envious of other spellcasters, or are you confident you could best them regardless? Did you once pine to be a WARMAGE, but found you could never muster enough true magic to form a spell slot? Did you choose warmagistry to hone your talents to their absolute peak, or did you choose it to wield power no warrior can equal?</p>
+			<p class="indent">Lastly, consider your prospective warmage house. Though you don't choose one until reaching third level, your aspirations might shape which house you favor the most. If you would like to dabble with greater arcane magic, the House of Bishops is the best fit. If the clashing of swords at the frontlines piques your interest, consider the House of Knights.</p>
+            <h5>QUICK BUILD</h5>
+			<p>You can make a Warmage quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution. Make Strength your third highest if you plan to take the House of Knights. Then choose the cantrips <i>chill touch</i>, <i>force weapon</i>, and <i>phantom grapnel</i>, and the Adventurer Arcane Initiation. Pick any background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a warmage, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per warmage level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per warmage level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> One Artisan's kit, one musical instrument</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Constitution, Intelligence</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Animal Handling, Arcana, Athletics, History, Investigation, Medicine, Perception, and Survival</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>Leather armor, a dagger, and any simple weapon</li>
+				<li>A spellcasting focus or material component pouch</li>
+				<li>An explorer's pack and (a) a scholar's pack or (b) any simple weapon</li>
+				<li>(a) a scholar's pack or (b) one kit you're proficient in</li>
+			</ul>
+			<h5 class="caption">THE WARMAGE</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Cantrip Bonus Dice</td><td class="col-10">Tricks Known</td>
+				</thead>
+				<tr><td> 1st</td><td class="left">Spellcasting, Arcane Initiation, Arcane Fighting Style</td><td>4</td><td>0</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Warmage Edge, Warmage Tricks</td><td>4</td><td>0</td><td>2</td></tr>
+				<tr><td> 3rd</td><td class="left">Warmage House</td><td>5</td><td>0</td><td>3</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>5</td><td>0</td><td>3</td></tr>
+				<tr><td> 5th</td><td class="left">Arcane Surge</td><td>6</td><td>1</td><td>4</td></tr>
+				<tr><td> 6th</td><td class="left">Tactical Insight</td><td>6</td><td>1</td><td>4</td></tr>
+				<tr><td> 7th</td><td class="left">Warmage House feature</td><td>6</td><td>1</td><td>5</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>6</td><td>1</td><td>5</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>7</td><td>1</td><td>6</td></tr>
+				<tr><td>10th</td><td class="left">Warmage House feature</td><td>7</td><td>1</td><td>6</td></tr>
+				<tr><td>11th</td><td class="left">Arcane Surge Improvement</td><td>7</td><td>2</td><td>7</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>7</td><td>2</td><td>7</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>8</td><td>2</td><td>8</td></tr>
+				<tr><td>14th</td><td class="left">Strategic Deflection</td><td>8</td><td>2</td><td>8</td></tr>
+				<tr><td>15th</td><td class="left">Warmage House feature</td><td>8</td><td>2</td><td>9</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>8</td><td>2</td><td>9</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>9</td><td>3</td><td>10</td></tr>
+				<tr><td>18th</td><td class="left">Warmage House feature</td><td>9</td><td>3</td><td>10</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>9</td><td>3</td><td>10</td></tr>
+				<tr><td>20th</td><td class="left">Master Warmage</td><td>10</td><td>3</td><td>10</td></tr>
+			</table>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_SPELLCASTING_WARMAGE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_EDGE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_HOUSE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ABILITYSCOREIMPROVEMENT_WARMAGE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_SURGE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_TACTICAL_INSIGHT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_STRATEGIC_DEFLECTION" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_MASTER_WARMAGE" />
+		</description>
+		<sheet display="false">
+			<description> The undisputed masters of cantrips, warmages turn the most fundamental types of magic into a deadly and precise art.</description>
+		</sheet>
+		<setters>
+			<set name="short">The undisputed masters of cantrips, warmages turn the most fundamental types of magic into a deadly and precise art.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
+			<select type="Proficiency" name="Skill Proficiency (WARMAGE)" supports="Skill,WARMAGE" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_SPELLCASTING_WARMAGE" level="1"/>
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION" level="1" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE" level="1" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_EDGE" level="2" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS" level="2" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_HOUSE" level="3" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ABILITYSCOREIMPROVEMENT_WARMAGE" level="4" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_SURGE" level="5" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_TACTICAL_INSIGHT" level="6" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_STRATEGIC_DEFLECTION" level="14" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_MASTER_WARMAGE" level="20" />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_WARMAGE">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">—</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_SPELLCASTING_WARMAGE">
+		<description>
+			<p>At 1st level, you begin to learn the simple, yet potent, brand of spellcasting for which warmages are known.</p>
+			<h5>CANTRIPS</h5>
+			<p>You learn four cantrips of your choice from the warmage spell list. You learn additional warmage cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warmage table. Additionally, when you gain a level in this class, you can choose one of the warmage cantrips you know and replace it with another warmage cantrip.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your warmage spells, since you learn your spells through practice and mental discipline. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a warmage spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your warmage spells.</p>
+		</description>
+		<sheet display="false">
+			<description> You can use an arcane focus to cast spells.</description>
+		</sheet>
+		<spellcasting name="Warmage" ability="Intelligence">
+			<list>Warmage</list>
+		</spellcasting>
+		<rules>
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="1" number="4" spellcasting="Warmage" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="3" number="1" spellcasting="Warmage" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="5" number="1" spellcasting="Warmage" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="9" number="1" spellcasting="Warmage" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="13" number="1" spellcasting="Warmage" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="17" number="1" spellcasting="Warmage" />
+			<select type="Spell" name="Cantrip (Warmage)" supports="$(spellcasting:list), 0" level="20" number="1" spellcasting="Warmage" />
+		</rules>
+	</element>
+	<element name="Arcane Initiation" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION">
+		<description>
+			<p>Warmages come from all backgrounds and walks of life. At 1st level, choose where you first learned the basics of magic. The cantrips offered by your initiation don't count against your total number of warmage cantrips known.</p>
+			<h5 class="caption">ADVENTURER</h5>
+			<p>You picked up your magic informally by travelling with a dozen different mages over the years. You learn the <i>mage hand</i> and <i>ray of frost</i> cantrips.</p>
+			<h5 class="caption">CIRCUS PERFORMER</h5>
+			<p>You learned a few simple tricks to participate in a sideshow or circus act. You learn the <i>dancing lights</i> and <i>minor illusion</i> cantrips.</p>
+			<h5 class="caption">ELDRITCH EVENT</h5>
+			<p>An influx of insidious magic left an imprint on you. You learn the <i>chill touch</i> and <i>message</i> cantrips.</p>
+			<h5 class="caption">MERCENARY</h5>
+			<p>You mastered the fundamentals of war magic to engage in battle with similarly-armed arcanists. You learn the <i>arc blade</i> and <i>true strike</i> cantrips.</p>
+			<h5 class="caption">TEMPLE</h5>
+			<p>A monastery or temple educated you in the ways of gentle healing magic. You learn the <i>sacred flame</i> and <i>spare the dying</i> cantrips.</p>
+			<h5 class="caption">TOWER APPRENTICE</h5>
+			<p>You apprenticed under a spellcaster for some time, who taught you the fundamentals of arcana. You learn the <i>prestidigitation</i> and <i>shocking grasp</i> cantrips.</p>
+			<h5 class="caption">SELF-TAUGHT</h5>
+			<p>You taught yourself all the fundamentals of magic from a dusty old tome or abandoned scroll. You learn the <i>fire bolt</i> and <i>light cantrips</i>.</p>
+			<h5 class="caption">SURVIVAL</h5>
+			<p>To survive in the wilderness, you taught yourself to cast simple spells. You learn the <i>druidcraft</i> and <i>shillelagh</i> cantrips.</p>
+		</description>
+		<sheet>
+			<description> Choose where you first learned the basics of magic. The cantrips offered by your initiation don't count against your total number of warmage cantrips known.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Arcane Initiation" supports="Arcane Initiation, Warmage" level="1" />
+		</rules>
+	</element>
+	<element name="Arcane Fighting Style" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE">
+		<description>
+			<p>Warmages learn that magic is the purest of weapons, and can be wielded just as easily as any other. At 1st level, select one of the following fighting styles:</p>
+			<h5 class="caption">BLASTER</h5>
+			<p>The spell save DC for your warmage cantrips increases by 1.</p>
+			<h5 class="caption">DEFLECTOR</h5>
+			<p>When you have one hand free and a creature hits you with a spell attack or a ranged weapon attack, you can use your reaction to add your proficiency bonus to your Armor Class, potentially causing the attack to miss.</p>
+			<h5 class="caption">RESISTIVE</h5>
+			<p>While you are wearing light armor or are under the effects of the <i>mage armor</i> spell, you gain a +1 bonus to your Armor Class.</p>
+			<h5 class="caption">SNIPER</h5>
+			<p>When making a ranged spell attack, you gain a +1 bonus to the attack roll. Additionally, your ranged cantrips ignore half cover.</p>
+			<h5 class="caption">STRIKER</h5>
+			<p>When you hit with a cantrip requiring a melee attack and exceed the target’s AC by 5 or more or score a critical hit, you can add your proficiency modifier to the damage roll.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Arcane Fighting Style" supports="Arcane Fighting Style, Warmage" level="1" />
+		</rules>
+	</element>
+	<element name="Warmage Edge" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_EDGE">
+		<description>
+			<p>Starting at 2nd level, once on each of your turns when you deal damage with a warmage cantrip, you can improve one damage roll of the spell, adding your Intelligence modifier to the roll. Starting at 5th level, and as you gain levels in this class, you also add additional dice of cantrip damage, as shown on the Cantrip Bonus Dice column of the Warmage table, to the damage roll. For example, when you are at 5th level, you can enhance the damage of the fire bolt cantrip to deal fire damage equal to 3d10 + your Intelligence modifier on a hit.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="2">When you deal damage with a warmage cantrip, you can add your Int modifier to the roll.</description>
+			<description level="5">When you deal damage with a warmage cantrip, you can add your Int modifier to the roll, and 1 additional cantrip damage die.</description>
+			<description level="11">When you deal damage with a warmage cantrip, you can add your Int modifier to the roll, and 2 additional cantrip damage dice.</description>
+			<description level="17">When you deal damage with a warmage cantrip, you can add your Int modifier to the roll, and 3 additional cantrip damage dice.</description>
+		</sheet>	
+	</element>
+	<element name="Warmage Tricks" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS">
+		<description>
+			<p>Beginning at 2nd level, you learn a Warmage Trick, a special technique that alters the way you fight, move, and cast your spells. You learn 2 tricks at 2nd level, and an additional trick as shown on the Tricks Known column of the Warmage table.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can replace a trick that you know with another trick for which you meet the prerequisites.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Warmage Trick" supports="Warmage Trick" />
+		</rules>
+	</element>
+	<element name="Warmage House" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_HOUSE">
+		<description>
+			<p>The College of Warmages divides its students into distinct Houses, teaching different skills, abilities, and techniques. Upon reaching 3rd level, you can select a House, which offers you features at 3rd level, and additional features at 7th, 10th, 15th, and 18th level.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Warmage House" supports="Warmage House" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ABILITYSCOREIMPROVEMENT_WARMAGE">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Warmage 4)" supports="Improvement Option,Warmage,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Warmage 8)" supports="Improvement Option,Warmage,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Warmage 12)" supports="Improvement Option,Warmage,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Warmage 16)" supports="Improvement Option,Warmage,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Warmage 19)" supports="Improvement Option,Warmage,19" level="19" />
+		</rules>
+	</element>
+	<element name="Arcane Surge" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_SURGE">
+		<description>
+			<p>Starting at 5th level, you learn to, for a moment, tap into a vast reservoir of magical power and unleash it upon your foes. On your turn, when you deal damage with a warmage cantrip, you can deal twice the number of damage dice dealt by the spell. You can't use this ability on a spell that has scored a critical hit.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest. Starting at 11th level, you can use this ability twice between rests.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description> When you deal damage with a warmage cantrip, you can deal twice the number of damage dice dealt by the spell. Can't use this ability on a spell's critical hit.</description>
+			<description level="11" usage="2/Short||Long Rest"> When you deal damage with a warmage cantrip, you can deal twice the number of damage dice dealt by the spell. Can't use this ability on a spell's critical hit.</description>
+		</sheet>	
+	</element>
+	<element name="Tactical Insight" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_TACTICAL_INSIGHT">
+		<description>
+			<p>At 6th level, you learn how to use ambient magical power to defend yourself from your foes' magical attacks. You can add your Intelligence modifier to saving throws you make against spells and magical effects that deal damage.</p>
+		</description>
+		<sheet>
+			<description> You can add your Intelligence modifier to saving throws you make against spells and magical effects that deal damage.</description>
+		</sheet>
+	</element>
+	<element name="Strategic Deflection" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_STRATEGIC_DEFLECTION">
+		<description>
+			<p>Starting at 14th level, as a reaction when a creature casts a spell that targets you or includes you in its area of effect and forces you to make a saving throw to avoid damage, you can use your reaction to attempt to redirect some of the spell's energy to a new target. If you succeed on your saving throw against the spell, choose another creature you can see within the spell's range or 30 feet, whichever is closer, to make a saving throw against the spell, using your spell save DC. The new target can be the original spellcaster. On a failed save, the creature suffers the effects of the spell as if you had cast the spell and they had been the original target or been within the area of the spell.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short||Long Rest">
+			<description> When a creature casts a spell that targets you or includes you in its area of effect and forces you to make a saving throw to avoid damage, and you succeed on it, choose another creature you can see within the spell's range or 30 feet, whichever is closer, to make a saving throw against it, using your spell save DC. The new target can be the original spellcaster. On a failed save, the creature suffers the effects of the spell as if you had cast it and they had been the original target or been within the area of effect.</description>
+		</sheet>
+	</element>
+	<element name="Master Warmage" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_MASTER_WARMAGE">
+		<description>
+			<p>At 20th level, you reach the pinnacle of your warmage prowess. If you cast a cantrip which deals 4 dice of damage to a target, it instead deals 5 dice of damage. If you cast a cantrip which makes 4 attacks, it instead makes 5 attacks.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description> If you cast a cantrip which deals 4 dice of damage to a target, it instead deals 5 dice of damage. If you cast a cantrip which makes 4 attacks, it instead makes 5 attacks.</description>
+		</sheet>
+	</element>
+
+	<!-- Arcane Initiation -->
+	<element name="Adventurer" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_ADVENTURER">
+		<supports>Arcane Initiation, Warmage</supports>
+		<description>
+			<p>You picked up your magic informally by travelling with a dozen different mages over the years. You learn the <i>mage hand</i> and <i>ray of frost</i> cantrips.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_MAGE_HAND" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_RAY_OF_FROST" />
+		</rules>
+	</element>
+	<element name="Circus Performer" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_CIRCUS_PERFORMER">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>You learned a few simple tricks to participate in a sideshow or circus act. You learn the <i>dancing lights</i> and <i>minor illusion</i> cantrips.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+		</rules>
+	</element>
+	<element name="Eldritch Event" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_ELDRITCH_EVENT">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>An influx of insidious magic left an imprint on you. You learn the <i>chill touch</i> and <i>message</i> cantrips.</p>
+		</description>
+		<sheet display="false" >
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_CHILL_TOUCH" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_MESSAGE" />
+		</rules>
+	</element>
+	<element name="Mercenary" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_MERCENARY">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>You mastered the fundamentals of war magic to engage in battle with similarly-armed arcanists. You learn the <i>arc blade</i> and <i>true strike</i> cantrips.</p>
+		</description>
+		<sheet display="false" >
+		<rules>
+			<grant type="Class Feature" id="ID_MHP_VSOS_SPELL_ARC_BLADE" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_TRUE_STRIKE" />
+		</rules>
+	</element>
+	<element name="Temple" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_TEMPLE">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>A monastery or temple educated you in the ways of gentle healing magic. You learn the <i>sacred flame</i> and <i>spare the dying</i> cantrips.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_SACRED_FLAME" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+		</rules>
+	</element>
+	<element name="Tower Apprentice" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_TOWER_APPRENTICE">
+		<supports>Arcane Initiation, Warmage</supports>
+		<description>
+			<p>You apprenticed under a spellcaster for some time, who taught you the fundamentals of arcana. You learn the <i>prestidigitation</i> and <i>shocking grasp</i> cantrips.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+		</rules>
+	</element>
+	<element name="Self Taught" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_SELF_TAUGHT">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>You taught yourself all the fundamentals of magic from a dusty old tome or abandoned scroll. You learn the <i>fire bolt</i> and <i>light cantrips</i>.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_FIRE_BOLT" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+	<element name="Survival" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_SURVIVAL">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>To survive in the wilderness, you taught yourself to cast simple spells. You learn the <i>druidcraft</i> and <i>shillelagh</i> cantrips.</p>
+		</description>
+		<sheet display="false" >
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Class Feature" id="ID_PHB_SPELL_SHILLELAGH" />
+		</rules>
+	</element>
+
+	<!-- Arcane Fighting Styles -->
+	<element name="Blaster" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE_ARCHERY">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>The spell save DC for your warmage cantrips increases by 1.</p>
+		</description>
+		<sheet>
+			<description>The spell save DC for your warmage cantrips increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Deflector" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE_DEFLECTOR">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>When you have one hand free and a creature hits you with a spell attack or a ranged weapon attack, you can use your reaction to add your proficiency bonus to your Armor Class, potentially causing the attack to miss.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description> While having one hand free and a creature hits you with a spell or a ranged weapon attack, you can use your reaction to add your PB to your AC, potentially causing the attack to miss.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="ac:misc" value="proficiency" bonus="fighting style" equipped="[primary:any],[secondary:none]" alt="Deflector (Arcane Fighting Style)" /> -->
+		</rules>
+	</element>
+	<element name="Resistive" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE_RESISTIVE">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>When you are wearing light armor or are under the effects of the <i>mage armor</i> spell, you gain a +1 bonus to your Armor Class.</p>
+		</description>
+		<sheet>
+			<description>When you are wearing light armor or are under the effects of the <i>mage armor</i> spell, you gain a +1 bonus to your Armor Class.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:light]" alt="Resistive (Arcane Fighting Style)" />
+		</rules>
+	</element>
+	<element name="Sniper" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE_SNIPER">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>When making a ranged spell attack, you gain a +1 bonus to the attack roll. Additionally, your ranged cantrips ignore half cover.</p>
+		</description>
+		<sheet>
+			<description>When making a ranged spell attack, you gain a +1 bonus to the attack roll. Additionally, your ranged cantrips ignore half cover.</description>
+		</sheet>
+	</element>
+	<element name="Striker" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE_STRIKER">
+		<supports>Arcane Fighting Style, Warmage</supports>
+		<description>
+			<p>When you hit with a cantrip requiring a melee attack and exceed the target’s AC by 5 or more or score a critical hit, you can add your proficiency modifier to the damage roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+		</sheet>
+	</element>
+	
+</elements>	
