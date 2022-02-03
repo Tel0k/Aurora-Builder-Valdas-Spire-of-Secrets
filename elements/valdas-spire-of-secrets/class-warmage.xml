@@ -55,7 +55,7 @@
 			<h5 class="caption">THE WARMAGE</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Cantrip Bonus Dice</td><td class="col-10">Tricks Known</td>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Cantrip Bonus Dice</td><td class="col-10">Tricks Known</td></tr>
 				</thead>
 				<tr><td> 1st</td><td class="left">Spellcasting, Arcane Initiation, Arcane Fighting Style</td><td>4</td><td>0</td><td>—</td></tr>
 				<tr><td> 2nd</td><td class="left">Warmage Edge, Warmage Tricks</td><td>4</td><td>0</td><td>2</td></tr>
@@ -296,7 +296,7 @@
 		</rules>
 	</element>
 	<element name="Circus Performer" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_CIRCUS_PERFORMER">
-		<supports>Arcane Fighting Style, Warmage</supports>
+		<supports>Arcane Initiation, Warmage</supports>
 		<description>
 			<p>You learned a few simple tricks to participate in a sideshow or circus act. You learn the <i>dancing lights</i> and <i>minor illusion</i> cantrips.</p>
 		</description>
@@ -307,29 +307,29 @@
 		</rules>
 	</element>
 	<element name="Eldritch Event" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_ELDRITCH_EVENT">
-		<supports>Arcane Fighting Style, Warmage</supports>
+		<supports>Arcane Initiation, Warmage</supports>
 		<description>
 			<p>An influx of insidious magic left an imprint on you. You learn the <i>chill touch</i> and <i>message</i> cantrips.</p>
 		</description>
-		<sheet display="false" >
+		<sheet display="false" />
 		<rules>
 			<grant type="Class Feature" id="ID_PHB_SPELL_CHILL_TOUCH" />
 			<grant type="Class Feature" id="ID_PHB_SPELL_MESSAGE" />
 		</rules>
 	</element>
 	<element name="Mercenary" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_MERCENARY">
-		<supports>Arcane Fighting Style, Warmage</supports>
+		<supports>Arcane Initiation, Warmage</supports>
 		<description>
 			<p>You mastered the fundamentals of war magic to engage in battle with similarly-armed arcanists. You learn the <i>arc blade</i> and <i>true strike</i> cantrips.</p>
 		</description>
-		<sheet display="false" >
+		<sheet display="false" />
 		<rules>
 			<grant type="Class Feature" id="ID_MHP_VSOS_SPELL_ARC_BLADE" />
 			<grant type="Class Feature" id="ID_PHB_SPELL_TRUE_STRIKE" />
 		</rules>
 	</element>
 	<element name="Temple" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_TEMPLE">
-		<supports>Arcane Fighting Style, Warmage</supports>
+		<supports>Arcane Initiation, Warmage</supports>
 		<description>
 			<p>A monastery or temple educated you in the ways of gentle healing magic. You learn the <i>sacred flame</i> and <i>spare the dying</i> cantrips.</p>
 		</description>
@@ -351,7 +351,7 @@
 		</rules>
 	</element>
 	<element name="Self Taught" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_SELF_TAUGHT">
-		<supports>Arcane Fighting Style, Warmage</supports>
+		<supports>Arcane Initiation, Warmage</supports>
 		<description>
 			<p>You taught yourself all the fundamentals of magic from a dusty old tome or abandoned scroll. You learn the <i>fire bolt</i> and <i>light cantrips</i>.</p>
 		</description>
@@ -362,11 +362,11 @@
 		</rules>
 	</element>
 	<element name="Survival" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION_SURVIVAL">
-		<supports>Arcane Fighting Style, Warmage</supports>
+		<supports>Arcane Initiation, Warmage</supports>
 		<description>
 			<p>To survive in the wilderness, you taught yourself to cast simple spells. You learn the <i>druidcraft</i> and <i>shillelagh</i> cantrips.</p>
 		</description>
-		<sheet display="false" >
+		<sheet display="false" />
 		<rules>
 			<grant type="Class Feature" id="ID_PHB_SPELL_DRUIDCRAFT" />
 			<grant type="Class Feature" id="ID_PHB_SPELL_SHILLELAGH" />
