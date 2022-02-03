@@ -17,14 +17,14 @@
 			<p>While other spellcasters aspire to grander and more complex spells, warmages refine and master the most fundamental magic: cantrips. Warmages wield their magic in the same way that a warrior uses a sword, bow, or axe: as weapons to be perfected and mastered, not as an unknowable force to be feared. In contrast to sorcerers and WARMAGEs, their magic is a trainable skill, one that can be mastered by almost anyone with discipline and aptitude. Therefore, warmages stand among the most fearsome of spellcasters, with only the most rudimentary of spells.</p>
 			<h4>STRATEGIC GENIUSES</h4>
 			<p>Warmages have a long and storied history as grand strategists and tacticians, both in grand battles and personal skirmishes. If a warmage is outgunned or outmanned, they'll try to outthink their foes, which works more often than not. They demonstrate an efficient kind of pragmatism, owing perhaps to their ability to solve many problems with a few magical tools.</p>
-            <h4>ALIGNED FREE AGENTS</h4>
+            		<h4>ALIGNED FREE AGENTS</h4>
 			<p>While some warmages are fully self-taught, the majority join a House, a loose confederation of warmages which practice together and share secrets of the trade. Houses teach invaluable battlefield strategy, but each individual Houses also touts their own brands of tactics and styles of magical tricks. The House of Knights, for example, emphasizes armor and martial prowess, whereas the House of Kings emphasizes battlefield strategy.</p>
 			<p class="indent">By way of metaphor, Houses which value honor and teamwork above all else brand themselves after games of strategy, whereas those who epitomize selfreliance name themselves for games of chance. This division in the warmage Houses is representative of a schism that dates back to the earliest warmage masters. Legend has it that the first two masters separated when one decided to found a college. The other, out of spite, built a casino outside its grounds.</p>
-            <h4>CREATING A WARMAGE </h4>
+            		<h4>CREATING A WARMAGE </h4>
 			<p>Warmages come from all walks of life, so as you build yours, consider where you first learned the fundamentals of magic, which you would go on to perfect. You might have picked up cantrips from a fellow adventurer or in the early stages of WARMAGEing training. You could even be self-taught. Choose an Arcane Initiation which best fits your character's history with magic.</p>
 			<p class="indent">Moreover, consider how you feel about magic as a whole. Are you envious of other spellcasters, or are you confident you could best them regardless? Did you once pine to be a WARMAGE, but found you could never muster enough true magic to form a spell slot? Did you choose warmagistry to hone your talents to their absolute peak, or did you choose it to wield power no warrior can equal?</p>
 			<p class="indent">Lastly, consider your prospective warmage house. Though you don't choose one until reaching third level, your aspirations might shape which house you favor the most. If you would like to dabble with greater arcane magic, the House of Bishops is the best fit. If the clashing of swords at the frontlines piques your interest, consider the House of Knights.</p>
-            <h5>QUICK BUILD</h5>
+            		<h5>QUICK BUILD</h5>
 			<p>You can make a Warmage quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution. Make Strength your third highest if you plan to take the House of Knights. Then choose the cantrips <i>chill touch</i>, <i>force weapon</i>, and <i>phantom grapnel</i>, and the Adventurer Arcane Initiation. Pick any background.</p>
 			<h3>CLASS FEATURES</h3>
 			<p>As a warmage, you gain the following class features.</p>
@@ -55,7 +55,7 @@
 			<h5 class="caption">THE WARMAGE</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Cantrip Bonus Dice</td><td class="col-10">Tricks Known</td></tr>
+				<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Cantrip Bonus Dice</td><td class="col-10">Tricks Known</td></tr>
 				</thead>
 				<tr><td> 1st</td><td class="left">Spellcasting, Arcane Initiation, Arcane Fighting Style</td><td>4</td><td>0</td><td>—</td></tr>
 				<tr><td> 2nd</td><td class="left">Warmage Edge, Warmage Tricks</td><td>4</td><td>0</td><td>2</td></tr>
@@ -102,7 +102,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
-			<select type="Proficiency" name="Skill Proficiency (WARMAGE)" supports="Skill,WARMAGE" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
+			<select type="Proficiency" name="Skill Proficiency (Warmage)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_WARMAGE"/>
 			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_SPELLCASTING_WARMAGE" level="1"/>
 			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_INITIATION" level="1" />
 			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_ARCANE_FIGHTING_STYLE" level="1" />
