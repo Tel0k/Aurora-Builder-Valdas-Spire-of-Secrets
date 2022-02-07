@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Extended Spells</name>
+		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+		<update version="0.0.3">
+			<file name="extended-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/extended-spells.xml" />
+		</update>
+	</info>
+
+    <!-- Cantrips -->
+    <append id="ID_PHB_SPELL_ACID_SPLASH">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHILL_TOUCH">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_BOLT">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHT">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGE_HAND">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MENDING">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MINOR_ILLUSION">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POISON_SPRAY">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PRESTIDIGITATION">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PRODUCE_FLAME">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_FROST">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHOCKING_GRASP">
+		<supports>Warmage</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_STRIKE">
+		<supports>Warmage</supports>
+	</append>
+
+    <!-- 1st Level Spells -->
+
+    <!-- 2nd Level Spells -->
+
+    <!-- 3rd Level Spells -->
+
+    <!-- 4th Level Spells -->
+
+    <!-- 5th Level Spells -->
+
+    <!-- 6th Level Spells -->
+
+    <!-- 7th Level Spells -->
+
+    <!-- 8th Level Spells -->
+
+    <!-- 9th Level Spells -->
+
+
+</elements>
