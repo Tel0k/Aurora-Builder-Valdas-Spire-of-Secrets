@@ -4,7 +4,7 @@
       <name>Corsair</name>
       <description>The Corsair from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.1">
+      <update version="0.0.2">
         <file name="fighter-corsair.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/fighter-corsair.xml" />
       </update>    
     </info>
@@ -82,11 +82,6 @@
       <sheet usage="1/Short||Long Rest" >
         <description> You can gain advantage on one ability check, attack roll, or saving throw that uses Dexterity or Charisma.</description>
       </sheet>
-      <rules>
-        <stat name="earthshaker:dc" value="8" />
-	<stat name="earthshaker:dc" value="proficiency" />
-	<stat name="earthshaker:dc" value="strength:modifier" />
-      </rules>
     </element>
     <element name="Slippery Positioning" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CORSAIR_SLIPPERY_POSITIONING">
       <description>
