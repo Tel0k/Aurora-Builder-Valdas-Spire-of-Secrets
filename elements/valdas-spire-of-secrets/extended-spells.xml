@@ -262,6 +262,96 @@
 	</append>
 
     <!-- 3rd Level Spells -->
+	<append id="ID_PHB_SPELL_ANIMATE_DEAD">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BESTOW_CURSE">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CALL_LIGHTNING">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CLAIRVOYANCE">
+		<supports>Investigator, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COUNTERSPELL">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DAYLIGHT">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
+		<supports>Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEAR">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLY">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GASEOUS_FORM">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLYPH_OF_WARDING">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HYPNOTIC_PATTERN">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+		<supports>Investigator, Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAJOR_IMAGE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MELD_INTO_STONE">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_NONDETECTION">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PHANTOM_STEED">
+		<supports>Investigator, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REMOVE_CURSE">
+		<supports>Investigator, Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REVIVIFY">
+		<supports>Martyr, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SENDING">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLOW">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPEAK_WITH_DEAD">
+		<supports>Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPEAK_WITH_PLANTS">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STINKING_CLOUD">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TONGUES">
+		<supports>Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WATER_BREATHING">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WATER_WALK">
+		<supports>Investigator</supports>
+	</append>
 
     <!-- 4th Level Spells -->
 
