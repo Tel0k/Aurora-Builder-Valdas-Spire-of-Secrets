@@ -234,7 +234,7 @@
 		<supports>Necromancer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
-		<supports>Investigator, Witch, Witch</supports>
+		<supports>Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SEE_INVISIBILITY">
 		<supports>Investigator, Witch</supports>
