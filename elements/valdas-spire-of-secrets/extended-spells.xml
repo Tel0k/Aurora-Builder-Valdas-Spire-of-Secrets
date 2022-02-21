@@ -10,7 +10,7 @@
 	</info>
 
     <!-- Cantrips -->
-    <append id="ID_PHB_SPELL_ACID_SPLASH">
+    	<append id="ID_PHB_SPELL_ACID_SPLASH">
 		<supports>Warmage, Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_CHILL_TOUCH">
@@ -354,6 +354,57 @@
 	</append>
 
     <!-- 4th Level Spells -->
+	<append id="ID_PHB_SPELL_ARCANE_EYE">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BANISHMENT">
+		<supports>Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLIGHT">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMPULSION">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONFUSION">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Martyr, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIMENSION_DOOR">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIVINATION">
+		<supports>Investigator, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DOMINATE_BEAST">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LOCATE_CREATURE">
+		<supports>Investigator, Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PHANTASMAL_KILLER">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POLYMORPH">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONESKIN">
+		<supports>Martyr</supports>
+	</append>
 
     <!-- 5th Level Spells -->
 
