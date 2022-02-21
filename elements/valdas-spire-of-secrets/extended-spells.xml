@@ -4,41 +4,53 @@
 		<name>Extended Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="extended-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/extended-spells.xml" />
 		</update>
 	</info>
 
     <!-- Cantrips -->
     <append id="ID_PHB_SPELL_ACID_SPLASH">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_CHILL_TOUCH">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DANCING_LIGHTS">
+		<supports>Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FIRE_BOLT">
 		<supports>Warmage</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LIGHT">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_MAGE_HAND">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_MENDING">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MESSAGE">
+		<supports>Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_MINOR_ILLUSION">
-		<supports>Warmage</supports>
+		<supports>Warmage, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_POISON_SPRAY">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PRESTIDIGITATION">
-		<supports>Warmage</supports>
+		<supports>Warmage, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PRODUCE_FLAME">
-		<supports>Warmage</supports>
+		<supports>Warmage, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RESISTANCE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPARE_THE_DYING">
+		<supports>Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_RAY_OF_FROST">
 		<supports>Warmage</supports>
@@ -47,12 +59,207 @@
 		<supports>Warmage</supports>
 	</append>
 	<append id="ID_PHB_SPELL_TRUE_STRIKE">
-		<supports>Warmage</supports>
+		<supports>Warmage, Necromancer, Witch</supports>
 	</append>
 
     <!-- 1st Level Spells -->
+	<append id="ID_PHB_SPELL_ALARM">
+		<supports>Investigator, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BANE">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLESS">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHARM_PERSON">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMMAND">
+		<supports>Necromancer, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CURE_WOUNDS">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD">
+		<supports>Investigator, Necromancer, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_MAGIC">
+		<supports>Necromancer, Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+		<supports>Investigator, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISGUISE_SELF">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FAERIE_FIRE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FOG_CLOUD">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREASE">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUIDING_BOLT">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEROISM">
+		<supports>Investigator, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_IDENTIFY">
+		<supports>Investigator, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ILLUSORY_SCRIPT">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+		<supports>Necromancer, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
+		<supports>Necromancer, Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK">
+		<supports>Investigator, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SANCTUARY">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHIELD_OF_FAITH">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SILENT_IMAGE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLEEP">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_THUNDERWAVE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_UNSEEN_SERVANT">
+		<supports>Investigator, Necromancer, Witch</supports>
+	</append>
 
     <!-- 2nd Level Spells -->
+	<append id="ID_PHB_SPELL_AID">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANIMAL_MESSENGER">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ARCANE_LOCK">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_AUGURY">
+		<supports>Investigator, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CALM_EMOTIONS">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DARKNESS">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DARKVISION">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_THOUGHTS">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ENTHRALL">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GENTLE_REPOSE">
+		<supports>Investigator, Necromancer, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_PERSON">
+		<supports>Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INVISIBILITY">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_KNOCK">
+		<supports>Investigator, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LESSER_RESTORATION">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LEVITATE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LOCATE_OBJECT">
+		<supports>Investigator, Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_MOUTH">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_WEAPON">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISTY_STEP">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PASS_WITHOUT_TRACE">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Investigator, Witch, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+		<supports>Investigator, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHATTER">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SILENCE">
+		<supports>Investigator, Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPIDER_CLIMB">
+		<supports>Investigator, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUGGESTION">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WARDING_BOND">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WEB">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ZONE_OF_TRUTH">
+		<supports>Investigator, Martyr</supports>
+	</append>
 
     <!-- 3rd Level Spells -->
 
