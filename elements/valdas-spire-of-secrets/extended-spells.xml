@@ -4,7 +4,7 @@
 		<name>Extended Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="extended-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/extended-spells.xml" />
 		</update>
 	</info>
@@ -407,6 +407,81 @@
 	</append>
 
     <!-- 5th Level Spells -->
+	<append id="ID_PHB_SPELL_ANTILIFE_SHELL">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CLOUDKILL">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMMUNE">
+		<supports>Investigator, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMMUNE_WITH_NATURE">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTAGION">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+		<supports>Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DOMINATE_PERSON">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DREAM">
+		<supports>Investigator, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLAME_STRIKE">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GEAS">
+		<supports>Martyr, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_RESTORATION">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HALLOW">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_MONSTER">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INSECT_PLAGUE">
+		<supports>Martyr, Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LEGEND_LORE">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MASS_CURE_WOUNDS">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISLEAD">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MODIFY_MEMORY">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PLANAR_BINDING">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAISE_DEAD">
+		<supports>Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SCRYING">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEEMING">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEKINESIS">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEPORTATION_CIRCLE">
+		<supports>Necromancer</supports>
+	</append>
 
     <!-- 6th Level Spells -->
 
