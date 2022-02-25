@@ -593,7 +593,7 @@
 	<element name="Field Medic" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_FIELD_MEDIC">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>House of Bishops</prerequisite>
-		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
+		<requirements>(ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION)</requirements>
 		<description>
 			<p><em>Prerequisite: House of Bishops</em></p>
 			<p>You learn the cantrip <i>spare the dying</i>, which does not count against your maximum number of cantrips known. Additionally, when you cast spare the dying on a creature which has 0 hit points, the target regains 1 hit point and gains temporary hit points equal to your level, which last for 1 minute. Once a creature regains hit points due to this ability, it can't do so again until it finishes a long rest.</p>
