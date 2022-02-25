@@ -4,7 +4,7 @@
       <name>Warmage</name>
       <description>The Warmage from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.5">
+      <update version="0.0.6">
         <file name="class-warmage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warmage.xml" />
       </update>    
     </info>
@@ -490,7 +490,7 @@
 			<p>You gain proficiency in the Insight and Persuasion skills. Additionally, you have advantage on ability checks you make to interact with nobility, and other creatures can always discern when you're telling the truth.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description> You gain proficiency in the Insight and Persuasion skills, and you have advantage on ability checks you make to interact with nobility, and other creatures can always discern when you're telling the truth.</description>
 		</sheet>
 	</element>
 	<element name="Cloak of Feathers" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_CLOAK_FEATHERS">
@@ -506,12 +506,12 @@
 		</sheet>
 		<rules>
 			<stat name="ac:unarmored:base" value="10" alt="Base" />
-            <stat name="ac:unarmored:dexterity" value="dexterity:modifier" alt="Dexterity Modifier" />
-            <stat name="ac:unarmored:intelligence" value="intelligence:modifier" alt="Intelligence Modifier" />
+            		<stat name="ac:unarmored:dexterity" value="dexterity:modifier" alt="Dexterity Modifier" />
+            		<stat name="ac:unarmored:intelligence" value="intelligence:modifier" alt="Intelligence Modifier" />
 			<stat name="ac:unarmored" value="ac:unarmored:base" alt="Initial" />
-            <stat name="ac:unarmored" value="ac:unarmored:dexterity" alt="Dexterity Modifier" />
+           		<stat name="ac:unarmored" value="ac:unarmored:dexterity" alt="Dexterity Modifier" />
 			<stat name="ac:unarmored" value="ac:unarmored:intelligence" alt="Intelligence Modifier" />
-            <stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none][shield:none]" alt="Unarmored" merge="true" />
+            		<stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none][shield:none]" alt="Unarmored" merge="true" />
 		</rules>
 	</element>
 	<element name="Commander's Steed" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_COMMANDERS_STEED">
