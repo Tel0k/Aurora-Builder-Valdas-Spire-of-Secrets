@@ -4,7 +4,7 @@
       <name>Warmage</name>
       <description>The Warmage from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.4">
+      <update version="0.0.5">
         <file name="class-warmage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warmage.xml" />
       </update>    
     </info>
@@ -438,7 +438,7 @@
 	<element name="Bishop's Manouver" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_BISHOPS_MANOUVER">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>10th level, House of Bishops</prerequisite>
-		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS</requirements>
+		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: 10th level, House of Bishops</em></p>
 			<p>You can take the Disengage action as a bonus action, and when you do so, your movement speed increases by 10 feet until the end of your turn.</p>
@@ -471,7 +471,7 @@
 	<element name="Castle" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_CASTLE">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>10th level, House of Rooks</prerequisite>
-		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_ROOKS</requirements>
+		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_ROOKS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: 10th level, House of Rooks</em></p>
 			<p>As an action, you can choose a willing Small or Medium creature you can see within 100 feet of you. You both teleport, switching places.</p>
@@ -484,7 +484,7 @@
 	<element name="Chivalrous Presence" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_CHIVALROUS_PRESENCE">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>House of Knights</prerequisite>
-		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_KNIGHTS</requirements>
+		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_KNIGHTS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: House of Knights</em></p>
 			<p>You gain proficiency in the Insight and Persuasion skills. Additionally, you have advantage on ability checks you make to interact with nobility, and other creatures can always discern when you're telling the truth.</p>
@@ -496,7 +496,7 @@
 	<element name="Cloak of Feathers" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_CLOAK_FEATHERS">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>House of Rooks</prerequisite>
-		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_ROOKS</requirements>
+		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_ROOKS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: House of Rooks</em></p>
 			<p>While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals 10 + your Dexterity modifier + your Intelligence modifier.</p>
@@ -517,7 +517,7 @@
 	<element name="Commander's Steed" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_COMMANDERS_STEED">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>House of Kings</prerequisite>
-		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_KINGS</requirements>
+		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_KINGS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: House of Kings</em></p>
 			<p>You learn the <i>find steed</i> spell and can cast it without using a spell slot. Your steed is more resilient than most, and has a number of additional hit points equal to your warmage level.</p>
@@ -593,7 +593,7 @@
 	<element name="Field Medic" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_FIELD_MEDIC">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>House of Bishops</prerequisite>
-		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS</requirements>
+		<requirements>ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: House of Bishops</em></p>
 			<p>You learn the cantrip <i>spare the dying</i>, which does not count against your maximum number of cantrips known. Additionally, when you cast spare the dying on a creature which has 0 hit points, the target regains 1 hit point and gains temporary hit points equal to your level, which last for 1 minute. Once a creature regains hit points due to this ability, it can't do so again until it finishes a long rest.</p>
@@ -661,7 +661,7 @@
 	<element name="Knight's Aegis" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_KNIGHTS_AEGIS">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>10th level, House of Knights, Force Buckler cantrip</prerequisite>
-		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_KNIGHTS,ID_MHP_VSOS_SPELL_FORCE_BUCKLER</requirements>
+		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_KNIGHTS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION,ID_MHP_VSOS_SPELL_FORCE_BUCKLER</requirements>
 		<description>
 			<p><em>Prerequisite: 10th level, House of Knights, Force Buckler cantrip</em></p>
 			<p>When you cast the <i>force buckler</i> cantrip, you can concentrate on it for up to 1 minute. The spell does not end early if you are hit by an attack.</p>
@@ -685,7 +685,7 @@
 	<element name="Liutenant's Demand" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_LIUTENANTS_DEMAND">
 		<supports>Warmage Trick, Warmage</supports>
 		<prerequisite>10th level, House of Kings</prerequisite>
-		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_KINGS</requirements>
+		<requirements>[level:10],ID_MHP_VSOS_ARCHETYPE_HOUSE_KINGS||ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION</requirements>
 		<description>
 			<p><em>Prerequisite: 10th level, House of Kings</em></p>
 			<p>You can cast the spell <i>command</i> at will without using a spell slot.</p>
