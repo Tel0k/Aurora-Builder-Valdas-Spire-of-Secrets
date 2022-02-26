@@ -511,7 +511,7 @@
 			<stat name="ac:unarmored" value="ac:unarmored:base" alt="Initial" />
            		<stat name="ac:unarmored" value="ac:unarmored:dexterity" alt="Dexterity Modifier" />
 			<stat name="ac:unarmored" value="ac:unarmored:intelligence" alt="Intelligence Modifier" />
-            		<stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none][shield:none]" alt="Unarmored" merge="true" />
+            		<stat name="ac:calculation" value="ac:unarmored" bonus="calculation" equipped="[armor:none][shield:none]" alt="Unarmored (Cloak of Feathers)" merge="true" />
 		</rules>
 	</element>
 	<element name="Commander's Steed" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_COMMANDERS_STEED">
@@ -527,7 +527,6 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED"/>
-			<stat />
 		</rules>
 	</element>
 	<element name="Corrosive Cantrip" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_CORROSIVE_CANTRIP">
