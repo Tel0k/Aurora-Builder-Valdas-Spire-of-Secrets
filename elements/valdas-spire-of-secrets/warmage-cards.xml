@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>House of Cards</name>
+		<description>The Warmage's House of Cards from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+		<update version="0.0.3">
+			<file name="warmage-cards.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-cards.xml" />
+		</update>
+	</info>
+    <element name="House of Cards" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_CARDS">
+        <supports>Warmage House</supports>
+        <description>
+            <p>Warmages who join the House of Cards approach combat the same way they do games of chance, with high stakes, calculated gambles. Each warmage of this house wields a special deck of cards tied to the very threads of fate, through which they can empower their magic with deft flurries of hands. However, while these warmages command incredible power, their magical surges are at the whims of the cards, and so they must make strategic, ingenious plays to master them.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_BLUFF" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_DECKOFFATE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_HIGH_STAKES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_DEALERS_CHOICE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_CARD_READING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_ACEINTHEHOLE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_BLUFF" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_DECKOFFATE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_HIGH_STAKES" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_DEALERS_CHOICE" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_CARD_READING" level="15" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_ACEINTHEHOLE" level="18" />
+        </rules>
+    </element>
+    <element name="Bluff" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_BLUFF">
+        <description>
+            <p>When you choose this house at 3rd level, your poker face carries you through practically any lie. You gain proficiency in the Deception skill and with gaming sets (playing cards), if you didn’t have it already. Additionally, you can use your Intelligence instead of Charisma for Charisma (Deception) checks you make.</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency in the Deception skill and with gaming sets (playing cards), if you didn’t have it already. You can use your Intelligence instead of Charisma for Charisma (Deception) checks you make.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+            <stat name="deception:proficiency" value="-charisma:modifier" />
+            <stat name="deception:proficiency:ability" value="charisma:modifier" bonus="ability" />
+            <stat name="deception:proficiency:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="deception:proficiency" value="deception:proficiency:ability" />
+        </rules>
+    </element>
+    <element name="Deck of Fate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_DECKOFFATE">
+        <description>
+            <p>Starting at 3rd level, you gain a deck of magical playing or tarot cards, called a Deck of Fate, through which you can enhance the power of your cantrips. Shuffle a standard 52-card playing card deck and draw a hand of 5 cards when you roll initiative.</p>
+            <p class="indent">Whenever you target a hostile creature with a warmage spell that deals damage, you can use your bonus action to play one or more cards from your hand to enhance the power of the spell. If the cards exactly match one of the results on the Hands table below, it deals additional damage or one additional effect according to the result to one of the spell’s targets of your choice. Playing cards which do not match a result has no effect. Aces count as ones for results. Once you play a card, place it on the bottom of the deck and draw back to five cards.</p>
+            <h5 class="caption">HANDS</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">NAME</td><td class="left">CARDS</td><td  class="col-5">BENEFIT</td></tr>
+				</thead>
+				<tr><td class="col-5"> Straight</td><td class="left">Any five sequential cards, regardless of house.</td><td class="col-5">You deal an additional 12 damage.</td></tr>
+				<tr><td class="col-5"> Flush</td><td class="left">Any five cards of the same suit, regardless of order.</td><td class="col-5">You deal an additional 10 damage.</td></tr>
+				<tr><td class="col-5"> Three of a Kind</td><td class="left">Any three of the same card.</td><td class="col-5">You deal an additional 6 damage.</td></tr>
+				<tr><td class="col-5"> Pair</td><td class="left">Any two of the same card.</td><td class="col-5">You deal an additional 2 damage.</td></tr>
+				<tr><td class="col-5"> Hearts</td><td class="left">Any two hearts.</td><td class="col-5">You gain temporary hit points equal to your Intelligence modifier.</td></tr>
+				<tr><td class="col-5"> Spades</td><td class="left">Any two spades.</td><td class="col-5">Your movement speed increases by 10 feet until the start of your next turn.</td></tr>
+				<tr><td class="col-5"> Diamonds</td><td class="left">Any two diamonds.</td><td class="col-5">You gain a +1 bonus to your AC until the start of your next turn.</td></tr>
+				<tr><td class="col-5"> Clubs</td><td class="left">Any two clubs.</td><td class="col-5">You gain a +1 bonus to saving throws until the start of your next turn.</td></tr>
+			</table>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You gain a deck of magical playing or tarot cards, called a Deck of Fate. Shuffle a standard 52-card playing card deck and draw a hand of 5 cards when you roll initiative. Whenever you target a hostile creature with a warmage spell that deals damage, you can play one or more cards, and if match one of the results on the Hands table, it deals additional damage or one additional effect according to the result to one of the spell’s targets of your choice.</description>
+        </sheet>
+    </element>
+    <element name="High Stakes" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_HIGH_STAKES">
+        <description>
+            <p>At 7th level, you’ve mastered a very risky card trick using your Deck of Fate. On your turn, you can choose to lose 2 hit points to play 1 card from your hand and draw back to 5 cards (no action required).</p>
+        </description>
+        <sheet>
+            <description> On your turn, you can choose to lose 2 hit points to play 1 card from your hand and draw back to 5 cards (no action required).</description>
+        </sheet>
+    </element>
+    <element name="Dealer's Choice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_DEALERS_CHOICE">
+        <description>
+            <p>At 10th level, you can use your bonus action to gain one of the following three abilities, selected by the GM:</p>
+            <ul>
+                <li>You gain resistance to all damage until the end of your next turn.</li>
+                <li>You teleport to a point you can see within 60 feet.</li>
+                <li>You vanish into a safe, endless demiplane until the beginning of your next turn, at which time you return at the same location from which you vanished.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Short||Long Rest">
+            <description> You gain one of the following three abilities, selected by the GM:
+            -You gain resistance to all damage until the end of your next turn.
+            -You teleport to a point you can see within 60 feet.
+            -You vanish into a safe, endless demiplane until the beginning of your next turn, at which time you return at the same location from which you vanished.</description>
+        </sheet>
+    </element>
+    <element name="Card Reading" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_CARD_READING">
+        <description>
+            <p>Beginning at 15th level, once on each of your turns when you draw a card from your deck as part of your Deck of Fate feature, you can declare a suit (Club, Diamonds, Hearts, or Spades) and check the top card of your deck. If you guessed the suit correctly, you can take the Dash, Disengage, or Use an Object action as part of the bonus action used for the feature.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you draw a card from your deck as part of your Deck of Fate feature, you can declare a suit (Club, Diamonds, Hearts, or Spades) and check the top card of your deck. If you guessed the suit correctly, you can take the Dash, Disengage, or Use an Object action as part of the bonus action used for the feature.</description>
+        </sheet>
+    </element>
+    <element name="Ace in the Hole" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_CARDS_ACEINTHEHOLE">
+        <description>
+            <p>Beginning at 18th level, you are a deckmaster. Whenever you would draw one or more cards from your deck, draw twice as many. Put half of the drawn cards on the bottom of your deck and the other cards in your hand.</p>
+        </description>
+        <sheet>
+            <description> Whenever you would draw one or more cards from your deck, draw twice as many. Put half of the drawn cards on the bottom of your deck and the other cards in your hand.</description>
+        </sheet>
+    </element>
+</elements>    

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>House of Lancers</name>
+		<description>The Warmage's House of Lancers from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+		<update version="0.0.3">
+			<file name="warmage-lancers.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-lancers.xml" />
+		</update>
+	</info>
+    <element name="House of Lancers" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_LANCERS">
+        <supports>Warmage House</supports>
+        <description>
+            <p>Warmages who join the House of Lancers are trained in fluid martial arts and meditative asceticism, melding the stoic discipline of monks with potent spellcasting. As such, they are unarmed elemental warriors, self-reliant and capable of feats no monk or warmage could hope to match. However, Lancers are notoriously neutral in almost all matters, and stand apart from the politics of the other Houses.</p>
+            <p class="indent">Lancers derive their name from an ancient precursor to the pawn, a piece remembered only in early variants of chess. Remote monasteries still play using this ancient set of rules: a smaller board, fewer pieces, and lancers replacing the dutiful pawns. It is a relic from a forgotten age, rife with symbolism.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_INTERCEPT_TECHNIQUE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_HANDTOHAND_ARCANA" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_SHOCK_TROOPER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_MYSTICAL_PHYSICALITY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_DEFLECT_ENERGY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_IMPROVED_SHOCK_TROOPER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_FLURRY_OF_SPELLS" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_INTERCEPT_TECHNIQUE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_HANDTOHAND_ARCANA" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_SHOCK_TROOPER" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_MYSTICAL_PHYSICALITY" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_DEFLECT_ENERGY" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_IMPROVED_SHOCK_TROOPER" level="15" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_FLURRY_OF_SPELLS" level="18" />
+        </rules>
+    </element>
+    <element name="Intercept Technique" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_INTERCEPT_TECHNIQUE">
+        <description>
+            <p>Starting when you choose this house at 3rd level, you adopt the monastic principle of offensive protection. While you are unarmored or are under the effects of <i>mage armor</i>, you can add your Intelligence, rather than your Dexterity, to your Armor Class.</p>
+        </description>
+        <sheet>
+            <description> While you are unarmored or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your AC.</description>
+        </sheet>
+        <rules>
+			<stat name="ac:unarmored lancer:base" value="10" alt="Base" />
+            <stat name="ac:unarmored lancer:ability" value="dexterity:modifier" bonus="ability" />
+            <stat name="ac:unarmored lancer:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="ac:unarmored lancer" value="ac:unarmored lancer:base" />
+            <stat name="ac:unarmored lancer" value="ac:unarmored lancer:ability" />
+            <stat name="ac:calculation" value="ac:unarmored lancer" bonus="calculation" equipped="[armor:none]" alt="Unarmored Lancer" />
+		</rules>
+    </element>
+    <element name="Hand-to-hand Arcana" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_HANDTOHAND_ARCANA">
+        <description>
+            <p>Also at 3rd level, you learn the Lancer's secret unarmed combat technique, granting you the following benefits:</p>
+            <ul>
+                <li>You can use Intelligence instead of Strength for the attack and damage rolls of your unarmed strikes.</li>
+                <li>Your unarmed strikes count as melee weapons for the purposes of warmage spells.</li>
+                <li>Your unarmed strikes deal 1d6 bludgeoning damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> Your unarmed strike does 1d6+{{martial arts:damage}} bludgeoning damage. You can use Strength or Intelligence for these attacks.</description>
+        </sheet>
+        <rules>
+			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:attack" value="intelligence:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="intelligence:modifier" bonus="martial arts" />
+		</rules>
+    </element>
+    <element name="Shock Trooper" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_SHOCK_TROOPER">
+        <description>
+            <p>Starting at 3rd level, can rapidly close the distance between you and your foes. Whenever you make melee attack on your turn against a creature you can see, you can lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you do not land on solid ground.</p>
+        </description>
+        <sheet>
+            <description> Whenever you make melee attack on your turn against a creature you can see, you can lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you do not land on solid ground.</description>
+        </sheet>
+    </element>
+    <element name="Mysical Physicality" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_MYSTICAL_PHYSICALITY">
+        <description>
+            <p>Starting at 7th level, whenever you make a Strength, Dexterity, or Constitution check, you can use your Intelligence modifier instead of the normal modifier.</p>
+            <p class="indent">In addition, moving through rough terrain no longer costs you additional movement.</p>
+        </description>
+        <sheet>
+            <description> Whenever you make a Strength, Dexterity, or Constitution check, you can use your Intelligence modifier instead of the normal modifier. Moving through rough terrain no longer costs you additional movement.</description>
+        </sheet>
+    </element>
+    <element name="Deflect Energy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_DEFLECT_ENERGY">
+        <description>
+            <p>By 10th level, you can deflect bolts of energy with your bare hands. As a reaction when you are hit by a ranged spell attack or a ranged weapon attack which deals cold, fire, force, lightning, necrotic, or radiant damage, you can use your reaction to deflect the bolt. The damage you take from the attack is reduced by 1d10 + your Intelligence modifier + half your warmage level (rounded down).</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When you are hit by a ranged spell attack or a ranged weapon attack which deals cold, fire, force, lightning, necrotic, or radiant damage, you can deflect the bolt. The damage you take from the attack is reduced by 1d10 + {{intelligence:modifier}} + {{level:warmage:half}}.</description>
+        </sheet>
+    </element>
+    <element name="Improved Shock Trooper" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_IMPROVED_SHOCK_TROOPER">
+        <description>
+            <p>Starting at 15th level, you can lunge up to 30 feet using your Shock Trooper ability. This movement causes you to teleport through creatures and objects, blinking to the target in an instant. You can't end your movement in an occupied space.</p>
+        </description>
+        <sheet>
+            <description> You can lunge up to 30 feet using your Shock Trooper ability. This movement causes you to teleport through creatures and objects, blinking to the target in an instant. You can't end your movement in an occupied space.</description>
+        </sheet>
+    </element>
+    <element name="Flurry of Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_FLURRY_OF_SPELLS">
+        <description>
+            <p>Starting at 18th level, you can cast spells with superhuman speed. As an action, you can expend a use of your Arcane Surge ability to cast three different cantrips which have a casting time of 1 action or 1 bonus action. You can't use your Arcane Surge feature on any of these cantrips.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> You can expend a use of your Arcane Surge ability to cast three different cantrips which have a casting time of 1 action or 1 bonus action. You can't use your Arcane Surge feature on any of these cantrips.</description>
+        </sheet>
+    </element>
+</elements>

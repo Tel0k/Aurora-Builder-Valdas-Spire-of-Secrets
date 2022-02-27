@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>House of Dice</name>
+		<description>The Warmage's House of Dice from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+		<update version="0.0.3">
+			<file name="warmage-dice.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-dice.xml" />
+		</update>
+	</info>
+    <element name="House of Dice" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_DICE">
+        <supports>Warmage House</supports>
+        <description>
+            <p>The House of Dice throws out the warmage convention of meticulous, deliberate spellcasting in favor of wild, chaotic magic that presses the odds. Everything, from their magical bursts to their enchanted sets of dice can fail horribly, so it’s auspicious that they often keep their fingers on the scales of fate. These warmages have mastered not only a repertoire of cantrips, but also techniques to manipulate fortune itself, allowing them to risk everything, and more than often come out on top.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_DICEOFFATE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_CHAOS_ROLL" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_LOADED_DICE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_TWISTED_FATE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_ROLLTHEBONES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_STEAL_LUCK" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_DICEOFFATE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_CHAOS_ROLL" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_LOADED_DICE" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_TWISTED_FATE" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_ROLLTHEBONES" level="15" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_STEAL_LUCK" level="18" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_BONUS_PROFICIENCIES">
+        <description>
+            <p>Starting when you choose this house at 3rd level, your light fingers and unscrupulous tactics help you win the day. You gain proficiency in the Sleight of Hand skill and with gaming sets (dice set), if you didn’t have it already.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET" />
+        </rules>
+    </element>
+    <element name="Dice of Fate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_DICEOFFATE">
+        <description>
+            <p>At 3rd level, you gain four Dice of Fate, which are d6s. Whenever you make an ability check, attack roll, saving throw, or damage roll, you can expend a Die of Fate and add it to the roll. Once you expend a Die of Fate, it goes to the GM, who can use it to add it to a roll made by an NPC or monster. Once the GM has used a die, it passes back to you, and so on. When you finish a long rest, you regain all of your expended Dice of Fate, whether or not the GM has used them.</p>
+            <p class="indent">Beginning at 7th level, you have an additional 2 Dice of Fate, and you can add two Dice of Fate to your damage rolls with warmage spells.</p>
+        </description>
+        <sheet>
+            <description level="3" usage="4/Long Rest"> You gain 4 Dice of Fate, which are d6s. Whenever you make an ability check, attack roll, saving throw, or damage roll, you can expend a Die of Fate and add it to the roll. Once expended, it goes to the GM, who can add it to a roll made by an NPC or monster. Once the GM has used a die, it passes back to you, and so on. When you finish a long rest, you regain all of your expended Dice of Fate.</description>
+            <description level="7" usage="6/Long Rest"> You have 6 Dice of Fate, which are d6s. Whenever you make an ability check, attack roll, saving throw, or damage roll, you can expend 1 Die of Fate and add it to the roll, or 2 Dice if it's your damage rolls with warmage spells. Once expended, it goes to the GM, who can add it to a roll made by an NPC or monster. Once the GM has used a die, it passes back to you, and so on. When you finish a long rest, you regain all of your expended Dice of Fate.</description>
+        </sheet>
+    </element>
+    <element name="Chaos Roll" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_CHAOS_ROLL">
+        <description>
+            <p>Also at 3rd level, you can expend two of your Dice of Fate as an action, rolling them on the table below to create a chaotic surge of energy.</p>
+            <table class="class-features">
+				<thead>
+				<tr><td class="col-10">2d6</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td> 2</td><td class="left">You cast fireball, centered on yourself.</td></tr>
+				<tr><td> 3</td><td class="left">Your AC is reduced by 2 until the start of your next turn.</td></tr>
+				<tr><td> 4</td><td class="left">You fall prone.</td></tr>
+				<tr><td> 5</td><td class="left">Each creature other than yourself within 60 feet of you can speak only in a babbling nonsense language for the next minute, and can’t perform the verbal components of spells.</td></tr>
+				<tr><td> 6</td><td class="left">A 5-foot radius sphere of butterflies, insects, or doves fills a location you can choose within range, heavily obscuring the area until the start of your next turn.</td></tr>
+				<tr><td> 7</td><td class="left">You gain 7 temporary hit points, and keep the Dice of Fate instead of giving them to the GM.</td></tr>
+				<tr><td> 8</td><td class="left">You become invisible until the end of your next turn, as per the spell <i>invisibility</i>.</td></tr>
+				<tr><td> 9</td><td class="left">A random object explodes nearby, dealing no damage to you or your allies, and dealing 3d6 fire damage to one creature caught in the blast chosen by the GM.</td></tr>
+				<tr><td> 10</td><td class="left">You teleport up to 60 feet to an unoccupied location you can see. Each creature within 5 feet of the destination must make a Dexterity saving throw against your spell save DC or take 2d6 force damage.</td></tr>
+				<tr><td>11</td><td class="left">Choose a creature you can see within 60 feet. That creature takes 4d6 necrotic damage, and you regain hit points equal to the necrotic damage dealt.</td></tr>
+				<tr><td>12</td><td class="left">You cast <i>lightning bolt</i> and can add the Dice of Fate to the damage roll.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description> You can expend two of your Dice of Fate as an action, rolling them on the Chaos Roll table to create a chaotic surge of energy.</description>
+        </sheet>
+    </element>
+    <element name="Loaded Dice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_LOADED_DICE">
+        <description>
+            <p>By 7th level, you can subtly cheat your dice. Once on each of your turns when you roll a d6, you can flip the die upside down. Note that on a balanced d6, the top and bottom numbers add up to 7, so you can determine the bottom number by subtracting the top from 7.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you roll a balanced d6, you can flip the die upside down.</description>
+        </sheet>
+    </element>
+    <element name="Twisted Fate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_TWISTED_FATE">
+        <description>
+            <p>Starting at 10th level, the winds of chance follow your die rolls, rather than vice-versa. When you make an attack roll or ability check with disadvantage on your turn, you can attempt to invert fate as a bonus action. Expend a Die of Fate and roll it; on a 5, you ignore disadvantage on the roll, on a 6, you instead have advantage on the attack roll or ability check.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you make an attack roll or ability check with disadvantage on your turn, you can attempt to invert fate. Expend a Die of Fate and roll it; on a 5, you ignore disadvantage on the roll, on a 6, you instead have advantage on the attack roll or ability check.</description>
+        </sheet>
+    </element>
+    <element name="Roll the Bones" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_ROLLTHEBONES">
+        <description>
+            <p>Beginning at 15th level, you can channel the chaotic energy of your dice in an instant. As a reaction when you take damage from a creature you can see, you can expend two Dice of Fate to make a Chaos Roll.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When you take damage from a creature you can see, you can expend two Dice of Fate to make a Chaos Roll.</description>
+        </sheet>
+    </element>
+    <element name="Steal Luck" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_DICE_STEAL_LUCK">
+        <description>
+            <p>Starting at 18th level, when you roll initiative, roll a d6. You steal that many Dice of Fate back from the GM.</p>
+        </description>
+        <sheet>
+            <description> When you roll initiative, roll a d6. You steal that many Dice of Fate back from the GM.</description>
+        </sheet>
+    </element>
+</elements>

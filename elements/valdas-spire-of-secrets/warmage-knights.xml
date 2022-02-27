@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>House of Knights</name>
+        <description>The Warmage's House of Knights from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="warmage-knights.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-knights.xml" />
+        </update>
+    </info>
+    <element name="House of Knights" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_KNIGHTS">
+        <supports>Warmage House</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FORCE_BREASTPLATE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_MYSTICAL_WEAPON" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FLURRY_OF_BLADES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_KNIGHTS_WARD" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_TACTICAL_MANEUVER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FIELD_OF_BLADES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FORCE_BREASTPLATE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_MYSTICAL_WEAPON" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FLURRY_OF_BLADES" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_KNIGHTS_WARD" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_TACTICAL_MANEUVER" level="15" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FIELD_OF_BLADES" level="18" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you choose this house at 3rd level, you gain proficiency with medium armor and martial weapons.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        </rules>
+    </element>
+    <element name="Force Breastplate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FORCE_BREASTPLATE">
+        <description>
+            <p>At 3rd level, plates of magical force reinforce your armor. While you are wearing light or medium armor or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your Armor Class.</p>
+        </description>
+        <sheet>
+            <description> While you are wearing light or medium armor or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your Armor Class.</description>
+        </sheet>
+        <rules>
+			<stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:light]" />
+			<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:armored:ability" value="intelligence:modifier" bonus="ability" />
+			<stat name="ac:armored" value="ac:armored:ability" equipped="[armor:light]" />
+            <stat name="ac:calculation" value="ac:armored" bonus="calculation" equipped="[armor:light]" alt="Armored" merge="true" />
+            <stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:medium]" maximum="ac:armored:dexterity:cap" />
+            <stat name="ac:armored:ability:cap" value="2" bonus="base" />
+			<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:armored:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="ac:armored" value="ac:armored:ability" equipped="[armor:medium]"  maximum="ac:armored:ability:cap" requirements="!ID_WOTC_CM_MAGIC_ITEM_SERPENT_SCALE_ARMOR" />
+            <stat name="ac:armored" value="ac:armored:ability" equipped="[armor:medium]"  requirements="ID_WOTC_CM_MAGIC_ITEM_SERPENT_SCALE_ARMOR" />
+            <stat name="ac:calculation" value="ac:armored" bonus="calculation" equipped="[armor:medium]" alt="Armored" merge="true" />
+        </rules>
+    </element>
+    <element name="Mystical Weapon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_MYSTICAL_WEAPON">
+        <description>
+            <p>Also at 3rd level, you learn the <i>force weapon</i> cantrip, which does not count against your total number of cantrips known. Additionally, on your turn when you would draw a weapon, you can summon a simple or martial weapon, made entirely of magical force, to your empty hand. This weapon counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage. This weapon vanishes if it leaves your hand.</p> 
+        </description>
+        <sheet>
+            <description> On your turn when you would draw a weapon, you can summon a simple or martial weapon, made entirely of magical force, to your empty hand. This weapon counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage. This weapon vanishes if it leaves your hand.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_FORCE_WEAPON" />
+        </rules>
+    </element>
+    <element name="Flurry of Blades" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FLURRY_OF_BLADES">
+        <description>
+            <p>Beginning at 7th level, when you cast a cantrip which allows you to make multiple spell attacks, such as <i>force weapon</i> or <i>magic daggers</i>, you can use your bonus action to make one additional spell attack.</p>
+        </description>
+        <sheet>
+            <description> When you cast a cantrip which allows you to make multiple spell attacks, such as force weapon or magic daggers, you can use your bonus action to make one additional spell attack.</description>
+        </sheet>
+    </element>
+    <element name="Knight's Ward" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_KNIGHTS_WARD">
+        <description>
+            <p>Starting 10th level, you learn to forge a hardened magical barrier between you and your foes. As a bonus action on your turn, you can gain a number of temporary hit points equal to twice your warmage level, which last for 1 minute.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short||Long Rest">
+            <description> You can gain {{temphp:calculation}} temporary hit points, which last for 1 minute.</description>
+        </sheet>
+        <rules>
+            <stat name="temphp" value="level:warmage" />
+            <stat name="temphp" value="level:warmage" />
+            <stat name="temphp:calculation" value="temphp" bonus="calculation" merge="true" />
+        </rules>
+    </element>
+    <element name="Tactical Maneuver" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_TACTICAL_MANEUVER">
+        <description>
+            <p>At 15th level, you can spend your entire movement to teleport up to half your movement speed to a location you can see.</p>
+        </description>
+        <sheet>
+            <description> You can spend your entire movement to teleport up to half your movement speed to a location you can see.</description>
+        </sheet>
+    </element>
+    <element name="Field of Blades" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FIELD_OF_BLADES">
+        <description>
+            <p>Starting at 18th level, you can summon a whirlwind of mystical weapons, striking at a legion of foes in a single swipe. As an action on your turn, you can choose up to 5 creatures you can see within 30 feet. Make a single melee spell attack against each target. On a hit, a target takes 2d10 + your Intelligence modifier force damage.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can choose up to 5 creatures you can see within 30 feet. Make a single melee spell attack against each target. On a hit, a target takes 2d10 + your Intelligence modifier force damage.</description>
+        </sheet>
+    </element>
+</elements>

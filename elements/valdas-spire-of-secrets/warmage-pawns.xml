@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>House of Pawns</name>
+		<description>The Warmage's House of Pawns from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
+		<update version="0.0.3">
+			<file name="warmage-pawns.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-pawns.xml" />
+		</update>
+	</info>
+    <element name="House of Pawns" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_PAWNS">
+        <supports>Warmage House</supports>
+        <description>
+            <p>By far the most prominent warmage House is that of the Pawns. Warmages which join the House of Pawns learn to stretch their skill with cantrips to its limits. Pawns can master any cantrip or trick known to the other warmage houses, for they embody the adaptability all warmages aspire to.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_ADAPTIVE_ARCANIST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PAWN_STORM" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_ADDITIONAL_ARCANE_FIGHTING_STYLE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_OPENING_MOVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_FUNDAMENTAL_MASTERY" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_ADAPTIVE_ARCANIST" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PAWN_STORM" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_ADDITIONAL_ARCANE_FIGHTING_STYLE" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_OPENING_MOVE" level="15" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_FUNDAMENTAL_MASTERY" level="18" />
+        </rules>
+    </element>
+    <element name="Promotion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PROMOTION">
+        <description>
+            <p>When you choose this house at 3rd level, you gain the adaptability of the quintessential warmage. You learn one warmage trick of your choice, which doesn’t count against your total number of warmage tricks known. Additionally, whenever you learn a warmage trick, you can learn tricks which have the House of Bishops, House of Kings, House of Knights, or House of Rooks as a prerequisite, so long as you meet all of the tricks other prerequisites.</p>
+        </description>
+        <sheet>
+            <description> Whenever you learn a warmage trick, you can learn tricks which have the House of Bishops, House of Kings, House of Knights, or House of Rooks as a prerequisite, so long as you meet all of the tricks other prerequisites.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Warmage Trick (Promotion)" supports="Warmage Trick" level="3" number="1" />
+        </rules>
+    </element>
+    <element name="Adaptive Arcanist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_ADAPTIVE_ARCANIST">
+        <description>
+            <p>Also at 3rd level, you learn to emulate the spellcasting prowess of other warmages. When you finish a short or long rest, choose one warmage cantrip. You learn this cantrip, which doesn’t count against the total number of warmage cantrips you can learn, until you choose a different one with this feature.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> Choose one warmage cantrip. You learn this cantrip, which doesn’t count against the total number of warmage cantrips you can learn, until you choose a different one with this feature.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip Warmage)" supports="$(spellcasting:list), 0" level="3" number="1" spellcasting="Warmage" />
+        </rules>
+    </element>
+    <element name="Pawn Storm" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_PAWN_STORM">
+        <description>
+            <p>Beginning at 7th level, when you cast a cantrip targeting a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you deal damage using the cantrip or not.</p>
+        </description>
+        <sheet>
+            <description> When you cast a cantrip targeting a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you deal damage using the cantrip or not.</description>
+        </sheet>
+    </element>
+    <element name="Additional Arcane Fighting Style" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_ADDITIONAL_ARCANE_FIGHTING_STYLE">
+        <description>
+            <p>At 10th level, you can choose a second option from the Arcane Fighting Style class feature.</p>
+        </description>
+        <sheet>
+            <description> You can choose a second option from the Arcane Fighting Style class feature.</description>
+        </sheet>
+        <rules>
+			<select type="Class Feature" name="Additional Arcane Fighting Style" supports="Arcane Fighting Style, Warmage" level="10" />
+		</rules>
+    </element>
+    <element name="Opening Move" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_OPENING_MOVE">
+        <description>
+            <p>Starting at 15th level, you can add your Intelligence modifier to your initiative rolls. Additionally, when you roll initiative and you are not surprised, you can move up to your movement speed.</p>
+        </description>
+        <sheet>
+            <description> When you roll initiative and you are not surprised, you can move up to your movement speed.</description>
+        </sheet>
+        <rules>
+            <stat name="initiative" value="intelligence:modifier" />
+        </rules>
+    </element>
+    <element name="Fundamental Mastery" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_FUNDAMENTAL_MASTERY">
+        <description>
+            <p>Starting at 18th level, your magic always finds its way to your foes most vulnerable spots. Once on each turn when you roll damage for a warmage cantrip, you can choose to replace one damage die roll with the maximum possible result.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you roll damage for a warmage cantrip, you can choose to replace one damage die roll with the maximum possible result.</description>
+        </sheet>
+    </element>
+</elements>
