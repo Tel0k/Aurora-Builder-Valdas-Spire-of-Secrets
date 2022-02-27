@@ -40,13 +40,13 @@
             <description> While you are unarmored or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your AC.</description>
         </sheet>
         <rules>
-			<stat name="ac:unarmored lancer:base" value="10" alt="Base" />
+	    <stat name="ac:unarmored lancer:base" value="10" alt="Base" />
             <stat name="ac:unarmored lancer:ability" value="dexterity:modifier" bonus="ability" />
             <stat name="ac:unarmored lancer:ability" value="intelligence:modifier" bonus="ability" />
             <stat name="ac:unarmored lancer" value="ac:unarmored lancer:base" />
             <stat name="ac:unarmored lancer" value="ac:unarmored lancer:ability" />
             <stat name="ac:calculation" value="ac:unarmored lancer" bonus="calculation" equipped="[armor:none]" alt="Unarmored Lancer" />
-		</rules>
+	</rules>
     </element>
     <element name="Hand-to-hand Arcana" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_HANDTOHAND_ARCANA">
         <description>
@@ -61,11 +61,11 @@
             <description> Your unarmed strike does 1d6+{{martial arts:damage}} bludgeoning damage. You can use Strength or Intelligence for these attacks.</description>
         </sheet>
         <rules>
-			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
-			<stat name="martial arts:attack" value="intelligence:modifier" bonus="martial arts" />
-			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
-			<stat name="martial arts:damage" value="intelligence:modifier" bonus="martial arts" />
-		</rules>
+	    <stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+	    <stat name="martial arts:attack" value="intelligence:modifier" bonus="martial arts" />
+	    <stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+	    <stat name="martial arts:damage" value="intelligence:modifier" bonus="martial arts" />
+	</rules>
     </element>
     <element name="Shock Trooper" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_SHOCK_TROOPER">
         <description>
