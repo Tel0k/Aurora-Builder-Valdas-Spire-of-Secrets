@@ -67,8 +67,8 @@
             <description> You can choose a second option from the Arcane Fighting Style class feature.</description>
         </sheet>
         <rules>
-			<select type="Class Feature" name="Additional Arcane Fighting Style" supports="Arcane Fighting Style, Warmage" level="10" />
-		</rules>
+	    <select type="Class Feature" name="Additional Arcane Fighting Style" supports="Arcane Fighting Style, Warmage" level="10" />
+	</rules>
     </element>
     <element name="Opening Move" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_PAWNS_OPENING_MOVE">
         <description>
