@@ -64,31 +64,31 @@
         </description>
         <sheet display="false"/>
         <rules>
-			<grant id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" type="Grants" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+	    <grant id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" type="Grants" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
             <stat name="warmage:spellcasting:slots:1" value="2" level="3" />
-			<stat name="warmage:spellcasting:slots:1" value="1" level="4" />
-			<stat name="warmage:spellcasting:slots:1" value="1" level="7" />
-			<stat name="warmage:spellcasting:slots:2" value="2" level="7" />
-			<stat name="warmage:spellcasting:slots:2" value="1" level="10" />
-			<stat name="warmage:spellcasting:slots:3" value="3" level="13" />
-			<stat name="warmage:spellcasting:slots:4" value="1" level="19" />
-			<select type="Spell" name="Spell (Warmage)" supports="Wizard, $(spellcasting:slots)" level="3" number="1" spellcasting="Warmage" />
+	    <stat name="warmage:spellcasting:slots:1" value="1" level="4" />
+	    <stat name="warmage:spellcasting:slots:1" value="1" level="7" />
+	    <stat name="warmage:spellcasting:slots:2" value="2" level="7" />
+	    <stat name="warmage:spellcasting:slots:2" value="1" level="10" />
+	    <stat name="warmage:spellcasting:slots:3" value="3" level="13" />
+	    <stat name="warmage:spellcasting:slots:4" value="1" level="19" />
+	    <select type="Spell" name="Spell (Warmage)" supports="Wizard, $(spellcasting:slots)" level="3" number="1" spellcasting="Warmage" />
             <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="3" number="2" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="4" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="7" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="Wizard, $(spellcasting:slots)" level="8" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="10" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="11" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="13" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="Wizard, $(spellcasting:slots)" level="14" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="16" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="19" spellcasting="Warmage" />
-			<select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="20" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="4" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="7" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="Wizard, $(spellcasting:slots)" level="8" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="10" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="11" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="13" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="Wizard, $(spellcasting:slots)" level="14" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="16" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="19" spellcasting="Warmage" />
+	    <select type="Spell" name="Spell (Warmage)" supports="(Wizard, (Conjuration||Evocation)), $(spellcasting:slots)" level="20" spellcasting="Warmage" />
         </rules>
     </element>
     <element name="Arcane Study" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS_ARCANE_STUDY">
         <description>
-                <p>At 3rd level, you become proficient in two of the following skills: Arcana, History, Medicine, Investigation, or Religion.</p>
+            <p>At 3rd level, you become proficient in two of the following skills: Arcana, History, Medicine, Investigation, or Religion.</p>
         </description>
         <sheet display="false"/>
         <rules>
@@ -104,7 +104,7 @@
             <description> You learn the find familiar spell and can cast it as a ritual. It doesn’t count against your number of spells known. You can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</description>
         </sheet>
         <rules>
-			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+	    <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
             <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
         </rules>
     </element>
