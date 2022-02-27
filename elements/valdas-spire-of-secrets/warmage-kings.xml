@@ -63,14 +63,14 @@
             <p class="indent"><strong>USING BATTLE DICE.</strong>Once per turn, you can expend a battle die to perform a stratagem of your choice. Your stratagem options are detailed at the end of the subclass description.</p>
             <p class="indent"><strong>SAVING THROWS.</strong>When a stratagem calls for a saving throw to resist its effects, use your spell save DC.</p>
         </description>
-       <sheet usage="1/Turn">
-			<description>You learn stratagems that are fueled by special dice called Battle Dice. You have {{battle dice:amount}} Battle dice which are d{{battle dice:size}}s. You regain all dice after a short or long rest, or when you roll initiative. Your stratagems DC is {{spellcasting:dc:int}}.</description>
-		</sheet>
-		<rules>
-			<stat name="battle dice:amount" value="2" />
-			<stat name="battle dice:amount" value="1" level="7" />
-			<stat name="battle dice:amount" value="1" level="19" />
-			<stat name="battle dice:size" value="8" bonus="size"/>
+        <sheet usage="1/Turn">
+	    <description>You learn stratagems that are fueled by special dice called Battle Dice. You have {{battle dice:amount}} Battle dice which are d{{battle dice:size}}s. You regain all dice after a short or long rest, or when you roll initiative. Your stratagems DC is {{spellcasting:dc:int}}.</description>
+	</sheet>
+	<rules>
+	    <stat name="battle dice:amount" value="2" />
+	    <stat name="battle dice:amount" value="1" level="7" />
+	    <stat name="battle dice:amount" value="1" level="19" />
+	    <stat name="battle dice:size" value="8" bonus="size"/>
             <stat name="battle dice:size" value="10" bonus="size" level="13" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KINGS_STRATAGEM_BLITZ" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KINGS_STRATAGEM_CHECK" />
@@ -78,7 +78,7 @@
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KINGS_STRATAGEM_GAMBIT" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KINGS_STRATAGEM_MYSTIC_COUNSEL" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KINGS_STRATAGEM_STALEMATE"  />
-		</rules>
+	</rules>
     </element>
     <element name="Lead from the Front" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KINGS_LEAD_FROM_THE_FRONT">
         <description>
