@@ -52,15 +52,15 @@
             <description> While you are wearing light or medium armor or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your Armor Class.</description>
         </sheet>
         <rules>
-			<stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:light]" />
-			<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
-			<stat name="ac:armored:ability" value="intelligence:modifier" bonus="ability" />
-			<stat name="ac:armored" value="ac:armored:ability" equipped="[armor:light]" />
+	    <stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:light]" />
+	    <stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
+	    <stat name="ac:armored:ability" value="intelligence:modifier" bonus="ability" />
+	    <stat name="ac:armored" value="ac:armored:ability" equipped="[armor:light]" />
             <stat name="ac:calculation" value="ac:armored" bonus="calculation" equipped="[armor:light]" alt="Armored" merge="true" />
             <stat name="ac:armored" value="-dexterity:modifier" equipped="[armor:medium]" maximum="ac:armored:dexterity:cap" />
             <stat name="ac:armored:ability:cap" value="2" bonus="base" />
-			<stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
-			<stat name="ac:armored:ability" value="intelligence:modifier" bonus="ability" />
+	    <stat name="ac:armored:ability" value="dexterity:modifier" bonus="ability" />
+	    <stat name="ac:armored:ability" value="intelligence:modifier" bonus="ability" />
             <stat name="ac:armored" value="ac:armored:ability" equipped="[armor:medium]"  maximum="ac:armored:ability:cap" requirements="!ID_WOTC_CM_MAGIC_ITEM_SERPENT_SCALE_ARMOR" />
             <stat name="ac:armored" value="ac:armored:ability" equipped="[armor:medium]"  requirements="ID_WOTC_CM_MAGIC_ITEM_SERPENT_SCALE_ARMOR" />
             <stat name="ac:calculation" value="ac:armored" bonus="calculation" equipped="[armor:medium]" alt="Armored" merge="true" />
