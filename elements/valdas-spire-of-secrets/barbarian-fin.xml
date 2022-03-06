@@ -4,7 +4,7 @@
 		<name>Path of the Fin</name>
         	<description>Path of the Fin from Valda's Spire of Secrets</description>
         	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-        	<update version="0.0.1">
+        	<update version="0.0.2">
 			<file name="barbarian-fin.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-fin.xml" />
         	</update>
 	</info>
@@ -43,9 +43,14 @@
 			<p>Unlike their land-locked brothers, fin barbarians undergo drastic physical transformations when they enter a rage. At 3rd level, while raging, you sprout rows of razor-sharp shark teeth and gain a melee bite attack. Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike.</p>
 			<p class="indent">When you hit a creature within 5 feet of you with a melee attack, you can use a bonus action to make a bite attack against that creature. This attack has advantage if the creature has half its hit points or fewer. You can use this feature a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{constitution:modifier}}/Long Rest">
+		<sheet action="Bonus Action" usage="{{number:calculation}}/Long Rest">
 			<description>While raging, you gain a melee bite attack,that deals 1d8+{{strength:modifier}}. This attack can be made as a bonus action after hitting a creature within 5ft with a melee attack. If the creature has half or less his original hp, you have advantage on the melee bite attack.</description>
 		</sheet>
+		<rules>
+        		<stat name="number:top" value="1" bonus="top" />
+        		<stat name="number:top" value="constitution:modifier" bonus="top" />
+        		<stat name="number:calculation" value="number:top" bonus="calculation" />
+      		</rules>
 	</element>
 	<element name="Blood Sense" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_FIN_BLOOD_SENSE">
 		<description>
