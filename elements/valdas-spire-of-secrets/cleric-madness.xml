@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Madness Domain</name>
+		<description>The Madness Domain from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="cleric-madness.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-madness.xml" />
+        </update>
+	</info>
+	<element name="Madness Domain" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MADNESS_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Your divine powers originate with the Madgod, a being of paranoia, mayhem, and psychosis. Every deranged thought or uncontrolled flight of fancy empowers the Madgod, who cares little for the logic of other godly domains. That is, of course, because the Madgod is a squirrel living outside the kingdom who once told you the secret of divine power is actually to collect enough fresh boysenberries, but never to eat them, and that it helps to have a good horse at your side. And lo, the rules of reality slipped away and you realized the wisdom of the Madgod's words. It all makes sense if you think diagonally and squint your ears the right way!</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_UNHINGED_INITIATE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_LUNATIC_INSIGHT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_CD_TEMPORARY_INSANITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_FRAGMENTED_MIND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_EMBRACE_UNREALITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_UNHINGED_INITIATE" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_LUNATIC_INSIGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_CD_TEMPORARY_INSANITY" level="2" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_FRAGMENTED_MIND" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_EMBRACE_UNREALITY" level="17" />
+		</rules>
+    </element>
+    <element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the name Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
+            <h5>name Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>hideous laughter, silent image</em></td></tr>
+                <tr><td>3rd</td><td><em>blindness/deafness, detect thoughts</em></td></tr>
+                <tr><td>5th</td><td><em>clairvoyance, hypnotic pattern</em></td></tr>
+                <tr><td>7th</td><td><em>confusion, hallucinatory terrain</em></td></tr>
+                <tr><td>9th</td><td><em>dream, modify memory</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Unhinged Initiate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_UNHINGED_INITIATE">
+        <description>
+            <p>Starting when you choose this domain at 1st level, you learn a random cantrip from the wizard spell list, chosen by the GM, which counts as a cleric spell for you and doesn't count against the total number of cantrips you know. Whenever you finish a long rest, your GM can change this cantrip.</p>
+        </description>
+        <sheet>
+            <description> You learn a random cantrip from the wizard spell list, chosen by the GM, which counts as a cleric spell for you and doesn't count against the total number of cantrips you know. Whenever you finish a long rest, your GM can change this cantrip.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Unhinged Initiate)" supports="Wizard, 0" number="1" spellcasting="Cleric" />
+        </rules>
+    </element>
+    <element name="Lunatic Insight" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_LUNATIC_INSIGHT">
+        <description>
+            <p>At 1st level, whenever you make an ability check that doesn't include your proficiency bonus, your unique insight allows you to make connections which may or may not exist. If the d20 roll for the ability check is even, you add your proficiency bonus to the check.</p>
+        </description>
+        <sheet>
+            <description> Whenever you make an ability check that doesn't include your proficiency bonus, if the d20 roll for the ability check is even, you add your proficiency bonus to the check.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Temporary Insanity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_CD_TEMPORARY_INSANITY">
+        <description>
+            <p>Starting at 2nd level, you can use your action to force a creature within 60 feet to make a Wisdom saving throw or fall prey to a random madness for up to 1 minute. Roll on the following table to determine the madness which afflicts the creature for up to 1 minute. A creature that is frenzied can repeat this saving throw whenever it takes damage, ending the effect on itself on a success.</p>
+            <table>
+                <thead>
+                    <tr><td>d20</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1-5</td><td><b>APHASIA.</b> The creature can't speak and is incapable of spellcasting or understanding others.</td></tr>
+                <tr><td>6-10</td><td><b>DELUSION.</b> The creature experiences vivid hallucinations. Whenever the creature makes an attack or targets a creature with a spell or effect, roll a d20. On an odd roll, the attack misses, or the spell or effect fails.</td></tr>
+                <tr><td>11-15</td><td><b>FRENZY.</b> The creature becomes frenzied. A frenzied creature loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While frenzied, the creature chooses the targets for its attacks, spells, and ability randomly from among the creatures it can see within range, and it must make an opportunity attack if any creature provokes one.</td></tr>
+                <tr><td>16-20</td><td><b>VERTIGO.</b> The creature falls prone at the end of each of its turns if it's not leaning against something.</td></tr>
+            </table>
+        </description>
+        <sheet action="Action">
+            <description> You force a creature within 60 feet to make a Wisdom saving throw or fall prey to a random madness for up to 1 minute. Roll on the given table to determine the madness. A creature that is frenzied can repeat this saving throw whenever it takes damage, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Fragmented Mind" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_FRAGMENTED_MIND">
+        <description>
+                <p>By 6th level, your damaged mind is difficult to influence. You have advantage on saving throws against being charmed or frightened, and on saving throws against any effect that would sense your emotions or read your thoughts. If you spend 10 minutes conversing with another creature, you can bestow this benefit on them as well for up to 1 hour, as they succumb to your twisted thought patterns.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on saving throws against being charmed or frightened, and on saving throws against any effect that would sense your emotions or read your thoughts. If you spend 10 minutes conversing with another creature, you can bestow this benefit on them as well for up to 1 hour.</description>
+        </sheet>
+    </element>
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_POTENT_SPELLCASTING">
+        <description>
+                <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+        </description>
+        <sheet>
+            <description> You add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Embrace Unreality" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_EMBRACE_UNREALITY">
+        <description>
+            <p>By 17th level, you can drag your distorted view of the world into reality, forcing others to play by your mad rules. As an action, you can change the rules of reality in a 120-foot radius centered on a point you choose within 60 feet for 1 minute. Choose one of the following rules:</p>
+            <p class="indent"><b>NO UP, NO DOWN.</b> Each creature and object within the area is weightless, as per the <i>levitate</i> spell.</p>
+            <p class="indent"><b>OPPOSITE DAY.</b> If a creature in the area would have advantage, it instead has disadvantage, and viceversa.</p>
+            <p class="indent"><b>RED LIGHT, GREEN LIGHT.</b> No creature can move on its turn. At the start of each round of combat, each creature simultaneously chooses where to move and moves to that space. If two or more creatures move into the same space, they collide and are knocked prone.</p>
+            <p class="indent"><b>THROUGH THE LOOKING GLASS.</b>At the beginning of each creature's turn, roll any die. On an even roll, the creature doubles in size, as per the Enlarge effect of the <i>enlarge/reduce</i> spell; on an odd roll, the creature halves in size, as per the Reduce effect of the <i>enlarge/reduce</i> spell.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> You can change the rules of reality in a 120-foot radius centered on a point you choose within 60 feet for 1 minute. Choose one of the following rules: &#13;
+            -NO UP, NO DOWN. Each creature and object within the area is weightless, as per the levitate spell. &#13;
+            -OPPOSITE DAY. If a creature in the area would have advantage, it instead has disadvantage, and viceversa. &#13;
+            -RED LIGHT, GREEN LIGHT. No creature can move on its turn. At the start of each round of combat, each creature simultaneously chooses where to move and moves to that space. If two or more creatures move into the same space, they collide and are knocked prone. &#13;
+            -THROUGH THE LOOKING GLASS. At the beginning of each creature's turn, roll any die. On an even roll, the creature doubles in size, as per the Enlarge effect ; on an odd roll, the creature halves in size, as per the Reduce effect.</description>
+        </sheet>
+    </element>
+</elements>

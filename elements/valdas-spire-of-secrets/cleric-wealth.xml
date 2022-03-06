@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wealth Domain</name>
+		<description>The Wealth Domain from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="cleric-wealth.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-wealth.xml" />
+        </update>
+	</info>
+	<element name="Wealth Domain" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WEALTH_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Being one of the most popular pursuits of humanoids the world over, it should not come as a surprise that the accumulation of material wealth is governed by its own deities. Sitting at the confluence of industry and fertility, gods of wealth are assiduous in demanding tribute, but pay back their most loyal followers generously, showering them with gold.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_APPRAISAL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_LEVERAGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_CD_RICHES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_BRIBE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_TYCOON" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_APPRAISAL" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_LEVERAGE" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_CD_RICHES" level="2" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_BRIBE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_TYCOON" level="17" />
+		</rules>
+    </element>
+    <element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the name Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
+            <h5>Wealth Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>identify, unseen servant</em></td></tr>
+                <tr><td>3rd</td><td><em>arcane lock, locate object</em></td></tr>
+                <tr><td>5th</td><td><em>glyph of warding, tongues</em></td></tr>
+                <tr><td>7th</td><td><em>fabricate, Leomund's secret chest</em></td></tr>
+                <tr><td>9th</td><td><em>creation, geas</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GLYPH_OF_WARDING" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CREATION" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GEAS" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Appraisal" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_APPRAISAL">
+        <description>
+            <p>When you choose this domain at 1st level, you are blessed with insights into the price of everything. As an action, you can accurately determine the market price of any object, and what it would be worth second-hand.</p>
+            <p class="indent">Additionally, you can use your Wisdom instead of Charisma for any Charisma check you make to buy, sell, or haggle.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can accurately determine the market price of any object, and what it would be worth second-hand. You can use your Wisdom instead of Charisma for any Charisma check you make to buy, sell, or haggle.</description>
+        </sheet>
+    </element>
+    <element name="Leverage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_LEVERAGE">
+        <description>
+            <p>Also at 1st level, when you cast a spell that requires material components with a specific cost, you require materials of only half of that value to cast the spell.</p>
+        </description>
+        <sheet>
+            <description> When you cast a spell that requires material components with a specific cost, you require materials of only half of that value to cast the spell.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Riches" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_CD_RICHES">
+        <description>
+            <p>Starting at 2nd level, when you reduce a hostile creature to 0 hit points, you can use your Channel Divinity to conjure an explosion of coins around the creature. The total number of coins equal the monster's XP value divided by 10, rounded down.</p>
+            <p class="indent">You can use this Channel Divinity option once, and regain the ability to do so when you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description> When you reduce a hostile creature to 0 hit points, you can use your Channel Divinity to conjure an explosion of coins around the creature. The total number of coins equal the monster's XP value divided by 10, rounded down.</description>
+        </sheet>
+    </element>
+    <element name="Bribe" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_BRIBE">
+        <description>
+            <p>When you reach 6th level, you can use your divine understanding to determine how to bribe almost any creature. As an action, you can choose a hostile creature you can see to make a Charisma saving throw against your spell save DC. If the creature fails its save, you can bribe it with rare or luxurious goods, or simply a bag of gold, which teleports into the creature's possession. The bribe costs an amount in gp equal to half the creature's XP value and, once completed, that creature cannot be hostile towards you for 24 hours. The effect ends early if the creature takes damage from you or your allies. You can't bribe any creature with an Intelligence of 3 or lower, or any creature the GM deems inappropriate.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can choose a hostile creature you can see to make a DC{{spellcasting:dc}} CHA saving throw. If the creature fails its save, you can bribe it with rare or luxurious goods, or a bag of gold, which teleports into the creature's possession. The bribe costs an amount in gp equal to half the creature's XP value and, once completed, that creature cannot be hostile towards you for 24H. The effect ends early if the creature takes damage from you or your allies. You can't bribe any creature with an Intelligence of 3 or lower, or any creature the GM deems inappropriate.</description>
+        </sheet>
+    </element>
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_POTENT_SPELLCASTING">
+        <description>
+            <p>At 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+        </description>
+        <sheet>
+            <description> You add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Tycoon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEALTH_DOMAIN_TYCOON">
+        <description>
+            <p>By 17th level, your deity showers you with vast riches. Whenever you would gain money, whether through selling goods and services, receiving gifts, conducting downtime activities, picking pockets or simply finding treasure in a dungeon, the amount of money you gain is doubled.</p>
+        </description>
+        <sheet>
+            <description> Whenever you would gain money, the amount of money you gain is doubled.</description>
+        </sheet>
+    </element>
+</elements>

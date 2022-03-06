@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pestilence Domain</name>
+		<description>The Pestilence Domain from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="cleric-pestilence.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-pestilence.xml" />
+        </update>
+	</info>
+	<element name="Pestilence Domain" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PESTILENCE_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>You worship gods who favor corruption and plague, the Domain of Pestilence, for, though you are ravaged by disease, it does not harm you. Like a virus, you move through the population, spreading your Festering Faith to all who will listen. Unlike a virus, there is no immune system from the Festering Faith, only complete acceptance.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_CARRIER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_BONUS_PROFICIENCY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_TUMOR" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_CD_INFECTION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_FESTER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_VIRAL_INFECTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_CARRIER" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_TUMOR" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_CD_INFECTION" level="2" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_FESTER" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_VIRAL_INFECTION" level="17" />
+		</rules>
+    </element>
+    <element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the name Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
+            <h5>name Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>bane, detect poison and disease</em></td></tr>
+                <tr><td>3rd</td><td><em>blindness/deafness, protection from poison</em></td></tr>
+                <tr><td>5th</td><td><em>bestow curse, remove curse</em></td></tr>
+                <tr><td>7th</td><td><em>blight, confusion</em></td></tr>
+                <tr><td>9th</td><td><em>contagion, insect plague</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Carrier" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_CARRIER">
+        <description>
+            <p>Starting at 1st level, you are immune to disease and being poisoned. Additionally, choose one or randomly determine a lingering symptom that afflicts you:</p>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Symptom</td></tr>
+                </thead>
+                <tr><td>1</td><td>A loud, sickening cough constantly accompanies you.</td></tr>
+                <tr><td>2</td><td>One of your limbs is black and withered, but completely functional.</td></tr>
+                <tr><td>3</td><td>The white and iris of one or both of your eyes are entirely blood red.</td></tr>
+                <tr><td>4</td><td>Intense shivers come at you in waves, alternating between mild trembles and great shudders.</td></tr>
+                <tr><td>5</td><td>A number of growths and tumors lump your body and hunch your back.</td></tr>
+                <tr><td>6</td><td>Your skin is riddled with boils and sores.</td></tr>
+                <tr><td>7</td><td>Your body is horrifically gaunt.</td></tr>
+                <tr><td>8</td><td>Constantly fevered, your skin is hot and covered in sweat.</td></tr>
+            </table>
+            <p><b>[Add your selection manually on Additional Features]</b></p>
+        </description>
+        <sheet>
+            <description> You are immune to disease and being poisoned, but a lingering symptom afflicts you. (see Additional Features)</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+            <select name="Symptom" type="List">
+                <item id="1">A loud, sickening cough constantly accompanies you.</item>
+                <item id="2">One of your limbs is black and withered, but completely functional.</item>
+                <item id="3">The white and iris of one or both of your eyes are entirely blood red.</item>
+                <item id="4">Intense shivers come at you in waves, alternating between mild trembles and great shudders.</item>
+                <item id="5">A number of growths and tumors lump your body and hunch your back.</item>
+                <item id="6">Your skin is riddled with boils and sores.</item>
+                <item id="7">Your body is horrifically gaunt.</item>
+                <item id="8">Constantly fevered, your skin is hot and covered in sweat.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_BONUS_PROFICIENCY">
+        <description>
+            <p>At 1st level, you have proficiency with heavy armor.</p>
+        </description>
+        <sheet display="false">
+            <description> You have proficiency with heavy armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        </rules>
+    </element>
+    <element name="Tumor" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_TUMOR">
+        <description>
+            <p>Also at 1st level, your body sequesters its toxins in a bulbous protrusion. When a creature within 5 feet hits you with an attack, you can use your reaction to try to poison the creature with the tumor. The creature must make a Constitution saving throw or be poisoned for 1 minute. The creature can reattempt this saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p class="indent">After using this ability, you must finish a short or long rest before using it again.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short||Long Rest">
+            <description> When a creature within 5 feet hits you with an attack, you can use your reaction to try to poison the creature with the tumor. The creature must make a Constitution saving throw or be poisoned for 1 minute. The creature can reattempt this saving throw at the end of each of its turns, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Infection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_CD_INFECTION">
+        <description>
+            <p>At 2nd level, your divinity carries disease. You can use your action to touch a creature within your reach, which must make a Constitution saving throw, and suffers one of the following diseases of your choice for 1 minute on a failed save. Since this ability induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.</p>
+            <p class="indent"><b>BLOODMORE.</b> The creature bleeds freely. Whenever the creature takes bludgeoning, piercing, or slashing damage, it loses an additional 1d6 hit points.</p>
+            <p class="indent"><b>JOINT LOCK.</b> The creature's legs stiffen and its movement slows. The creature can move a maximum of 15 feet or half its movement speed, whichever is lower, on its turn.</p>
+            <p class="indent"><b>RUBY EYE.</b> The creature can see normally up to 5 feet, but is blind beyond this radius.</p>
+        </description>
+        <sheet action="Action">
+            <description>You touch a creature within your reach, which must make a Constitution saving throw, and suffers one of the following diseases of your choice for 1 minute on a failed save. any effect that removes a disease or otherwise ameliorates a disease's effects apply to this ability.&#13;
+            -BLOODMORE. Whenever the creature takes bludgeoning, piercing, or slashing damage, it loses an additional 1d6 hit points. &#13;
+            -JOINT LOCK. The creature can move a maximum of 15 feet or half its movement speed, whichever is lower, on its turn. &#13;
+            -RUBY EYE. The creature can see normally up to 5 feet, but is blind beyond this radius.</description>
+        </sheet>
+    </element>
+    <element name="Fester" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_FESTER">
+        <description>
+            <p>Starting at 6th level, your infectious power festers and grows. You gain the following special abilities:</p>
+            <ul>
+             <li>Whenever you deal necrotic or radiant damage, you can change the damage type to poison.</li>
+             <li>You ignore damage resistance to poison damage.</li>
+             <li>Your cleric spells and abilities ignore immunity to the poisoned condition and being diseased. A creature that is immune to being poisoned or diseased makes its saving throws against your effect with advantage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You gain the following special abilities: &#13;
+            -Whenever you deal necrotic or radiant damage, you can change the damage type to poison. &#13;
+            -You ignore damage resistance to poison damage. &#13;
+            -Your cleric spells and abilities ignore immunity to the poisoned condition and being diseased. A creature that is immune to being poisoned or diseased makes its saving throws against your effect with advantage.</description>
+        </sheet>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with toxicity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description level="8"> When you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target.</description>
+            <description level="14"> When you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 poison damage to the target.</description>
+        </sheet>
+    </element>
+    <element name="Viral Infection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_VIRAL_INFECTION">
+        <description>
+            <p>At 17th level, when you use Infection, the target also has disadvantage on ability checks and saving throws using one ability score of your choice while it is diseased. Additionally, any time a target of Infection is within 5 feet of another creature, you can choose for the infection to jump to it. The creature must make a Constitution saving throw or be infected by the same disease as the target for 1 minute.</p>
+        </description>
+        <sheet>
+            <description> When you use Infection, the target also has disadvantage on ability checks and saving throws using one ability score of your choice while it is diseased. Additionally, any time a target of Infection is within 5 feet of another creature, you can choose for the infection to jump to it. The creature must make a Constitution saving throw or be infected by the same disease as the target for 1 minute.</description>
+        </sheet>
+    </element>
+</elements>

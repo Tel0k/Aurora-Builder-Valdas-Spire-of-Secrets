@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Travel Domain</name>
+		<description>The Travel Domain from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="cleric-travel.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-travel.xml" />
+        </update>
+	</info>
+	<element name="Travel Domain" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TRAVEL_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The realm of vagabonds, merchants, and adventurers, the gods of the travel domain are popular among any who frequent the roads or sail the seas. Evangelicals and the traveling priests of inhospitable regions also tend to represent the gods of travel.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_WELL_TRAVELED" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_JAUNT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_CD_DIVINE_TRANSPOSITION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_OVERLAND_EXPEDITION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_GODSPEED" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_WELL_TRAVELED" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_JAUNT" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_CD_DIVINE_TRANSPOSITION" level="2" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_OVERLAND_EXPEDITION" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_GODSPEED" level="17" />
+		</rules>
+    </element>
+    <element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the name Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
+            <h5>Travel Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>feather fall, longstrider</em></td></tr>
+                <tr><td>3rd</td><td><em>find steed, misty step</em></td></tr>
+                <tr><td>5th</td><td><em>fly, haste</em></td></tr>
+                <tr><td>7th</td><td><em>dimension door, freedom of movement</em></td></tr>
+                <tr><td>9th</td><td><em>passwall, teleportation circle</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Well-Traveled" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_WELL_TRAVELED">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency with four finesse or ranged weapons of your choice. Additionally, you learn two languages of your choice.</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency with four finesse or ranged weapons of your choice and you learn two languages.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency (Well-Traveled)" supports="(ID_INTERNAL_WEAPON_PROPERTY_FINESSE||(ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED))" number="4" />
+            <select type="Language" name="Language (Well-Traveled) " supports="Standard||Exotic" number="2" />
+        </rules>
+    </element>
+    <element name="Jaunt" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_JAUNT">
+        <description>
+            <p>From 1st level, your god hastens your feet and puts the wind at your back. You can use your bonus action to move 10 feet without provoking opportunity attacks.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{number:calculation}}/Long Rest">
+            <description> You can move 10 feet without provoking opportunity attacks.</description>
+        </sheet>
+        <rules>
+            <stat name="number:top" value="1" bonus="top" />
+            <stat name="number:top" value="wisdom:modifier" bonus="top" />
+            <stat name="number:calculation" value="number:top" bonus="calculation" />
+        </rules>
+    </element>
+    <element name="Channel Divinity: Divine Transposition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_CD_DIVINE_TRANSPOSITION">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to relocate your allies. As an action, choose up to three willing Small or Medium creatures (which can include yourself). Each of these creatures teleports into each other’s spaces, swapping places as you choose.</p>
+        </description>
+        <sheet action="Action" >
+            <description> Choose up to three willing Small or Medium creatures (which can include yourself). Each of these creatures teleports into each other’s spaces, swapping places as you choose.</description>
+        </sheet>
+    </element>
+    <element name="Overland Expedition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_OVERLAND_EXPEDITION">
+        <description>
+            <p>By 6th level, while traveling, you and up to 10 creatures traveling with you move with supernatural swiftness. You always travel at a fast pace and ignore delays caused by rough terrain, weather, and other nonmagical obstacles. You similarly ignore hazards caused by travelling on other planes of existence. Furthermore, you can travel for 12 hours, instead of 8, before making Constitution saving throws for a forced march.</p>
+            <p class="indent">Additionally, you are unaffected by difficult terrain.</p>
+        </description>
+        <sheet>
+            <description> You are unaffected by difficult terrain. While traveling, you and up to 10 creatures traveling with you move at a fast pace and ignore delays caused by rough terrain, weather, and other nonmagical obstacles. You similarly ignore hazards caused by travelling on other planes of existence. On a forced march, you can travel for 12 hours, instead of 8, before making Constitution saving throws.</description>
+        </sheet>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with extra kinetic energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description level="8"> When you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target.</description>
+            <description level="14"> When you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 force damage to the target.</description>
+        </sheet>
+    </element>
+    <element name="Godspeed" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TRAVEL_DOMAIN_GODSPEED">
+        <description>
+            <p>Starting at 17th level, your base movement speed doubles. If you make an attack while 30 feet or further away from where you began your turn, the extra damage of your Divine Strike increases to 4d8.</p>
+        </description>
+        <sheet>
+            <description> If you make an attack while 30 feet or further away from where you began your turn, the extra damage of your Divine Strike increases to 4d8.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:calculation" value="innate speed" merge="true" />    
+        </rules>
+    </element>
+</elements>
