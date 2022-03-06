@@ -4,7 +4,7 @@
       <name>Celestial Lancer</name>
       <description>The Celestial Lancer from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.1">
+      <update version="0.0.2">
         <file name="fighter-celestial-lancer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/fighter-celestial-lancer.xml" />
       </update>    
     </info>
@@ -79,13 +79,16 @@
         <p>Beginning at 10th level, at the end of a fall of 20 feet or higher, you can use a bonus action to strike the earth like a meteor. Each creature in contact with the ground within 10 feet of where you land must succeed a Dexterity saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</p>
         <p class="indent">You can use this feature a number of times equal to your Strength modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
       </description>
-      <sheet action="Bonus Action" usage="{{strength:modifier}}/Long Rest" >
+      <sheet action="Bonus Action" usage="{{number:calculation}}/Long Rest" >
         <description> At the end of a fall of 20 feet or higher, each creature in contact with the ground within 10 feet of where you land must succeed a DC{{earthshaker:dc}} Dexterity saving throw or be knocked prone.</description>
       </sheet>
       <rules>
         <stat name="earthshaker:dc" value="8" />
-		<stat name="earthshaker:dc" value="proficiency" />
-		<stat name="earthshaker:dc" value="strength:modifier" />
+	<stat name="earthshaker:dc" value="proficiency" />
+	<stat name="earthshaker:dc" value="strength:modifier" />
+	<stat name="number:top" value="1" bonus="top" />
+        <stat name="number:top" value="strength:modifier" bonus="top" />
+        <stat name="number:calculation" value="number:top" bonus="calculation" />
       </rules>
     </element>
     <element name="Celestial Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FIGHTER_CELESTIAL_LANCER_CELESTIAL_AURA">
