@@ -484,6 +484,123 @@
 	</append>
 
     <!-- 6th Level Spells -->
+	<append id="ID_PHB_SPELL_CIRCLE_OF_DEATH">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTINGENCY">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CREATE_UNDEAD">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DRAWMIJS_INSTANT_SUMMONS">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EYEBITE">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIND_THE_PATH">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLESH_TO_STONE">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FORBIDDANCE">
+		<supports>Investigator</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUARDS_AND_WARDS">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HARM">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_JAR">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MASS_SUGGESTION">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROGRAMMED_ILLUSION">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_SEEING">
+		<supports>Witch</supports>
+	</append>
+
+    <!-- 7th Level Spells -->
+	<append id="ID_PHB_SPELL_ETHEREALNESS">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FINGER_OF_DEATH">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIRAGE_ARCANE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PLANE_SHIFT">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROJECT_IMAGE">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEQUESTER">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SYMBOL">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEPORT">
+		<supports>Necromancer, Witch</supports>
+	</append>
+
+    <!-- 8th Level Spells -->
+	<append id="ID_PHB_SPELL_ANTIMAGIC_FIELD">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANTIPATHY_SYMPATHY">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CLONE">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DOMINATE_MONSTER">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEEBLEMIND">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLIBNESS">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIND_BLANK">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POWER_WORD_STUN">
+		<supports>Necromancer, Witch</supports>
+	</append>
+
+    <!-- 9th Level Spells -->
+	<append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FORESIGHT">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_IMPRISONMENT">
+		<supports>Necromancer, Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POWER_WORD_KILL">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STORM_OF_VENGEANCE">
+		<supports>Necromancer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_POLYMORPH">
+		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WEIRD">
+		<supports>Necromancer, Witch</supports>
+	</append>
 
     <!-- 7th Level Spells -->
 
