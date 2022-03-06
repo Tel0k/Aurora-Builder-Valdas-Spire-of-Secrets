@@ -4,7 +4,7 @@
 		<name>Extended Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="extended-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/extended-spells.xml" />
 		</update>
 	</info>
@@ -601,12 +601,5 @@
 	<append id="ID_PHB_SPELL_WEIRD">
 		<supports>Necromancer, Witch</supports>
 	</append>
-
-    <!-- 7th Level Spells -->
-
-    <!-- 8th Level Spells -->
-
-    <!-- 9th Level Spells -->
-
 
 </elements>
