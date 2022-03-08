@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Rum Domain</name>
-		<description>The Rum Domain from Valda’s Spire of Secrets</description>
+		<description>The Rum Domain from Valda's Spire of Secrets</description>
 		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
         <update version="0.0.1">
             <file name="cleric-rum.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-rum.xml" />
         </update>
 	</info>
-	<element name="Rum Domain" type="Archetype" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RUM_DOMAIN">
+	<element name="Rum Domain" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RUM_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
 			<p>Where rum flows easily, the gods of merriment abound. Clerics of the Rum Domain feel the fuzzy warmth of strong drink not as sinful excess, but as praise to the gods of good times, which they worship often and with abandon. They look to spread their merry religion and the good times with it, bringing all to RUM and happiness, a few nights of drunken revelry at a time.</p>
@@ -31,10 +31,10 @@
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_NEXT_ROUNDS_ON_ME" level="17" />
 		</rules>
 	</element>
-	<element name="Domain Spells" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_DOMAIN_SPELLS">
+	<element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_DOMAIN_SPELLS">
 		<description>
 			<p><em>1st-level Rum Domain feature</em></p>
-			<p>You gain domain spells at the cleric levels listed in the Rum Domain Spells table. See the Divine Domain class feature in the Player’s Handbook for how domain spells work.</p>
+			<p>You gain domain spells at the cleric levels listed in the Rum Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
 			<p>New spells are marked with an asterisk.</p>
             		<h5 class="caption">Rum Domain Spells</h5>
 			<table>
@@ -62,7 +62,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
-	<element name="Drunken Sway" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_DRUNKEN_SWAY">
+	<element name="Drunken Sway" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_DRUNKEN_SWAY">
 		<description>
 			<p><em>1st-level Rum Domain feature</em></p>
 			<p>Starting when you choose this domain at 1st level, you always seem off-balance, making you surprisingly difficult to hit. While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
@@ -82,20 +82,20 @@
             		<grant type="Proficiency" name="Weapon Proficiency (Martial Weapons)" />			
 		</rules>
 	</element>
-	<element name="Cup Floweth Over" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_CUP_FLOWETH_OVER">
+	<element name="Cup Floweth Over" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_CUP_FLOWETH_OVER">
 		<description>
 			<p><em>1st-level Rum Domain feature</em></p>
 			<p>At 1st level, you can use your action to fill your mug with beer or rum, a gift of good tidings from the gods. Only you can drink this liquor, but you suffer no ill-effect from drinking any amount of alcohol; though rosy-cheeked and slurred of speech, you are always steadfast on your feet and clear of thought.</p>
-			<p class="indent">Additionally, you learn the <em>legendary libation</em> cantrip, which counts as a cleric spell for you and doesn’t count against the number of cantrips you know.</p>
+			<p class="indent">Additionally, you learn the <em>legendary libation</em> cantrip, which counts as a cleric spell for you and doesn't count against the number of cantrips you know.</p>
 		</description>
 		<sheet>
-			<description action="Action"> You learn the legendary libation cantrip, which counts as a cleric spell for you and doesn’t count against the number of cantrips you know.</description>
+			<description action="Action"> You learn the legendary libation cantrip, which counts as a cleric spell for you and doesn't count against the number of cantrips you know.</description>
 		</sheet>
 		<rules>
 			<grant  type="Spell" id="ID_MHP_VSOS_LEGENDARY_LIBATION" level="1" spellcasting="Cleric" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Intoxicate" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_CD_INTOXICATE">
+	<element name="Channel Divinity: Intoxicate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_CD_INTOXICATE">
 		<description>
 			<p><em>2nd-level Rum Domain feature</em></p>
 			<p>At 2nd level, you can call upon the gods of merrymaking to inebriate an aggressor. When a creature you can see makes an attack, you can use your reaction to cause that creature to make a Constitution saving throw against your spell save DC. On a failed save, the creature is poisoned and has disadvantage on saving throws for up to 1 minute. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
@@ -104,16 +104,16 @@
 			<description>You can use your reaction to cause an attacking creature to make a Constitution saving throw against your spell save DC. On a failed save, the creature is poisoned and has disadvantage on saving throws for up to 1 minute. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success</description>
 		</sheet>
 	</element>
-	<element name="Rumrunner" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_RUMRUNNER">
+	<element name="Rumrunner" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_RUMRUNNER">
 		<description>
 			<p><em>6th-level Rum Domain feature</em></p>
-			<p>By 6th level, you’ve learned the finer art of moving when nobody’s paying attention. Whenever a hostile creature moves, you can use your reaction to move up to half your movement speed. This movement does not provoke opportunity attacks from the moving creature.</p>
+			<p>By 6th level, you've learned the finer art of moving when nobody's paying attention. Whenever a hostile creature moves, you can use your reaction to move up to half your movement speed. This movement does not provoke opportunity attacks from the moving creature.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>Whenever a hostile creature moves, you can use your reaction to move up to half your movement speed. This movement does not provoke opportunity attacks from the moving creature.</description>
 		</sheet>
 	</element>
-	<element name="Divine Strike" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_DIVINE_STRIKE">
+	<element name="Divine Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_DIVINE_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
 			<p><em>8th-level Rum Domain feature</em></p>
@@ -124,11 +124,11 @@
 			<description level="14"> +2d8 same type damage when you hit a creature with a weapon attack.</description>
 		</sheet>
 	</element>
-	<element name="Next Round's On Me" type="Archetype Feature" source="Valda’s Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_NEXT_ROUNDS_ON_ME">
+	<element name="Next Round's On Me" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_NEXT_ROUNDS_ON_ME">
 		<description>
 			<p><em>17th-level Rum Domain feature</em></p>
 			<p>At 17th level, you can call upon the gods of good times to bring your allies a round of shots. As an action, choose up to 6 friendly creatures you can see within 60 feet of you to gain a pleasant buzz. For the next minute, you and each of these creatures have advantage on Intelligence, Wisdom, and Charisma saving throws, and can subtract your Wisdom modifier from bludgeoning, piercing, or slashing damage they take.</p>
-			<p class="indent">Once you use this ability, you can’t use it again until you finish a short ot long rest.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short ot long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Short||Long Rest">
 			<description>Choose up to 6 friendly creatures you can see within 60 feet of you, for the next minute, you and each of these creatures have advantage on Intelligence, Wisdom, and Charisma saving throws, and can subtract your Wisdom modifier from bludgeoning, piercing, or slashing damage they take.</description>
