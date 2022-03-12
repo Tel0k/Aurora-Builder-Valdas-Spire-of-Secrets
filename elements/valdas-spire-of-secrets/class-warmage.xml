@@ -4,7 +4,7 @@
       <name>Warmage</name>
       <description>The Warmage from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.6">
+      <update version="0.0.7">
         <file name="class-warmage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warmage.xml" />
       </update>    
     </info>
@@ -502,7 +502,7 @@
 			<p>While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals 10 + your Dexterity modifier + your Intelligence modifier.</p>
 		</description>
 		<sheet>
-			<description>While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals {{cloak:calculation}}.</description>
+			<description>While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals {{cloak:unarmored}}.</description>
 		</sheet>
 		<rules>
 			<stat name="cloak:unarmored:base" value="10" alt="Base" />
