@@ -502,15 +502,16 @@
 			<p>While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals 10 + your Dexterity modifier + your Intelligence modifier.</p>
 		</description>
 		<sheet>
-			<description>While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals {{cloak:unarmored}}.</description>
+			<description> While not wearing armor, being under the effects of mage armor, or using a shield, your AC equals {{ac:calculation}}.</description>
 		</sheet>
 		<rules>
-			<stat name="cloak:unarmored:base" value="10" alt="Base" />
-            		<stat name="cloak:unarmored:dexterity" value="dexterity:modifier" />
-            		<stat name="cloak:unarmored:intelligence" value="intelligence:modifier" />
-			<stat name="cloak:unarmored" value="cloak:unarmored:base" />
-           		<stat name="cloak:unarmored" value="cloak:unarmored:dexterity" />
-			<stat name="cloak:unarmored" value="cloak:unarmored:intelligence" />
+			<stat name="ac:unarmored defense cloak:base" value="10" />
+			<stat name="ac:unarmored defense cloak:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense cloak:intelligence" value="intelligence:modifier" />
+			<stat name="ac:unarmored defense cloak" value="ac:unarmored defense cloak:base" />
+			<stat name="ac:unarmored defense cloak" value="ac:unarmored defense cloak:dexterity" />
+			<stat name="ac:unarmored defense cloak" value="ac:unarmored defense cloak:intelligence" />
+			<stat name="ac:calculation" value="ac:unarmored defense cloak" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Cloak of Feathers)" />
 		</rules>
 	</element>
 	<element name="Commander's Steed" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_COMMANDERS_STEED">
