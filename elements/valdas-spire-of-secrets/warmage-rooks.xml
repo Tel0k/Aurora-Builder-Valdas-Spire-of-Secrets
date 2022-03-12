@@ -4,7 +4,7 @@
 		<name>House of Rooks</name>
 		<description>The Warmage's House of Rooks from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="warmage-rooks.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-rooks.xml" />
 		</update>
 	</info>
@@ -29,7 +29,7 @@
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_FLASH_OF_FEATHERS" level="18" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_ROOK_STRIKE">
+    <element name="Rook Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_ROOK_STRIKE">
         <description>
             <p>Starting you choose this house at 3rd level, as a bonus action, you can gain advantage on the next spell attack roll you make on your turn. Alternatively, you can impose disadvantage on a saving throw a creature makes against a warmage spell you cast before the end of your turn.</p>
             <p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest, or you use a cantrip to reduce a creature to 0 hit points.</p>
@@ -38,7 +38,7 @@
             <description> You can gain advantage on the next spell attack roll you make on your turn. Alternatively, you can impose disadvantage on a saving throw a creature makes against a warmage spell you cast before the end of your turn.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_RASP">
+    <element name="Rasp" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_RASP">
         <description>
             <p>Starting at 3rd level, you can cast the <i>knock</i> spell at will without using a spell slot or spell components. When you cast the spell using this ability, the casting time is increased to 1 minute and the spell is completely silent.</p>
         </description>
@@ -49,7 +49,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_KNOCK" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_ARCANE_ACROBAT">
+    <element name="Arcane Acrobat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_ARCANE_ACROBAT">
         <description>
             <p>Beginning at 7th level, you can add your Intelligence modifier to all Dexterity checks you make. Additionally, while you are conscious, you ignore falling damage from falling any distance shorter than 60 feet. Subtract 60 feet from the distance fallen when calculating falling damage from further drops.</p>
         </description>
@@ -57,7 +57,7 @@
             <description> You can add your INT modifier to all DEX checks you make. While you are conscious, you take 0 damage from falling any distance shorter than 60 feet. Subtract 60 feet from the distance fallen when calculating falling damage from further drops.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_FLEETING_DECOY">
+    <element name="Fleeting Decoy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_FLEETING_DECOY">
         <description>
             <p>At 10th level, as a reaction when you take damage from a creature you can see, you raise a defensive illusion to protect you from further harm. Attacks made against you have disadvantage until the beginning of your next turn.</p>
         </description>
@@ -65,7 +65,7 @@
             <description> When you take damage from a creature you can see, you raise a defensive illusion to protect you from further harm. Attacks made against you have disadvantage until the beginning of your next turn.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_ELUSIVE_STEP">
+    <element name="Elusive Step" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_ELUSIVE_STEP">
         <description>
             <p>By 15th level, you’re extremely difficult to pin down. If you move more than 15 feet on your turn, any additional movement you make does not provoke opportunity attacks.</p>
         </description>
@@ -73,7 +73,7 @@
             <description> If you move more than 15 feet on your turn, any additional movement you make does not provoke opportunity attacks.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_FLASH_OF_FEATHERS">
+    <element name="Flash of Feathers" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_ROOKS_FLASH_OF_FEATHERS">
         <description>
             <p>Starting at 18th level, you can vanish without a trace, slip behind enemy lines, and dive in for the kill. You can cast the invisibility spell once, targeting yourself only, without using a spell slot or spell components. While you are invisible, your movement speed is doubled, and you can make one attack or cast one warmage cantrip without ending the spell.</p>
             <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
