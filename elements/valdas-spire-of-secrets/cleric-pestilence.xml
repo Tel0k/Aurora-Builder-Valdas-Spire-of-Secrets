@@ -36,7 +36,7 @@
     <element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PESTILENCE_DOMAIN_DOMAIN_SPELLS">
         <description>
             <p>You gain domain spells at the cleric levels listed in the name Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
-            <h5>name Domain Spells</h5>
+            <h5>Pestilence Domain Spells</h5>
             <table>
                 <thead>
                     <tr><td>Cleric Level</td><td>Spells</td></tr>
