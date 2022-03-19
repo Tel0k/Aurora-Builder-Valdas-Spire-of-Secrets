@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Enforcer</name>
+		<description>The Enforcer from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="rogue-enforcer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-enforcer.xml" />
+		</update>
+	</info>
+    <element name="Enforcer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_ENFORCER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>The backbones of any good Thieves' Guild, enforcers are ruthless thugs skilled at intimidation and violence. Usually charged with running protection rackets for the guild, enforcers also handle internal problems of the Guild, ensuring that no Guild member snitches to the authorities or takes more than his or her own share.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BRUTAL_ATTACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MASSIVE_SHOVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THREATENING_DEMEANOR" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DOUBLE_ATTACK" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BRUTAL_ATTACK" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MASSIVE_SHOVE" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THREATENING_DEMEANOR" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DOUBLE_ATTACK" level="17" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you choose this archetype at 3rd level, you gain proficiency with medium armor and martial weapons.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        </rules>
+    </element>
+    <element name="Brutal Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BRUTAL_ATTACK">
+        <description>
+            <p>Starting at 3rd level, you can make a Sneak Attack using any simple or martial melee weapon.</p>
+        </description>
+        <sheet>
+            <description> You can make a Sneak Attack using any simple or martial melee weapon.</description>
+        </sheet>
+    </element>
+    <element name="Massive Shove" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MASSIVE_SHOVE">
+        <description>
+            <p>At 9th level, when you make an attack, you can shove the target as a bonus action. If you succeed, you can push the creature up to 15 feet away from you, rather than 5 feet.</p>
+            <p class="indent">Additionally, if you make an attack with a reach weapon, you can use your bonus action to make a shove attempt in reverse, pulling the target towards you on a success.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you make an attack, you can shove the target. If you succeed, you can push the creature up to 15 feet away from you, rather than 5 feet. If you make an attack with a reach weapon, you can pull the target towards you on a success.</description>
+        </sheet>
+    </element>
+    <element name="Threatening Demeanor" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THREATENING_DEMEANOR">
+        <description>
+            <p>By 13th level, you are an expert in threatening postures and gestures. When you roll initiative, choose one creature within 60 feet that you can see to make a Wisdom saving throw. The DC equals to 8 + your proficiency bonus + your Strength or Charisma modifier (your choice). On a failed save, the target is frightened by you for up to 1 minute. While the creature is frightened of you, you can make attack rolls against it with advantage. The frighted creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description> When you roll initiative, choose one creature within 60 feet that you can see to make a DC{{threat:dc}} WIS saving throw. On a failed save, the target is frightened by you for up to 1 minute. While the creature is frightened of you, you can make attack rolls against it with advantage. The frighted creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+        <rules>
+            <stat name="threat:dc" value="8" />
+			<stat name="threat:dc" value="proficiency" />
+            <stat name="threat:dc:ability" value="strength:modifier"  bonus="ability"/>
+			<stat name="threat:dc:ability" value="charisma:modifier"  bonus="ability"/>
+			<stat name="threat:dc" value="threat:dc:ability" />
+        </rules>
+    </element>
+    <element name="Double Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DOUBLE_ATTACK">
+        <description>
+            <p>Starting at 17th level, when you reduce a creature to 0 hit points on your turn, you can use your bonus action to make another attack. This attack can be a Sneak Attack, even if you have already made one on your turn.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you reduce a creature to 0 hit points on your turn, you can make another attack. This attack can be a Sneak Attack, even if you have already made one on your turn.</description>
+        </sheet>
+    </element>
+</elements>

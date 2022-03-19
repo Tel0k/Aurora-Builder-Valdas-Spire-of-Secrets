@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Arachnoid Stalker</name>
+		<description>The Arachnoid Stalker from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="rogue-aracnoid-stalker.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-aracnoid-stalker.xml" />
+		</update>
+	</info>
+    <element name="Arachnoid Stalker" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_ARACNOID_STALKER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>A life-changing event, such as being cursed by a drider warlock or being bitten by a dangerously transmuted arachnid, has imbued you with the properties of a spider. This transformation might have left you physically unchanged, or you could have a half-dozen eyes, lanky, hairy limbs, or a set of inhuman mandibles. Whatever the transformation's side effects, you can now produce deadly poison and ropes of silken web from your palms, and eventually can scale the wall with your fingertips.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEBBING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMOUS_STRIKE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WALL_CRAWLING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEB_WALKER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PARALITIC_VENOM" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEBBING" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMOUS_STRIKE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WALL_CRAWLING" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEB_WALKER" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PARALITIC_VENOM" level="17" />
+        </rules>
+    </element>
+    <element name="Webbing" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEBBING">
+        <description>
+            <p>Starting when you choose this archetype at 3rd level, you can magically produce sticky, silken spider webs from your palms. You can project a line of web as a bonus action, allowing you to create a temporary rope, pull an unattended object, close doors, or snatch a small object weighing less than 10 pounds within 60 feet. This line of web dissolves after 1 minute.</p>
+            <p class="indent">If you project the line of web at a point you can see within 60 feet, you can pull yourself to that point in a straight line. This expends movement and provokes opportunity attacks normally.</p>
+            <p class="indent">You can use this ability as a reaction when you fall to pull yourself up to 10 feet in any direction or create a rope of web of up to 60 feet in length and anchor it to a point you choose.</p>
+        </description>
+        <sheet action="Bonus Action(1)|Reaction(2)" >
+            <description> (1)You can project a line of web, allowing you to create a temporary rope, pull an unattended object, close doors, or snatch a small object weighing less than 10 pounds within 60 feet. You can pull yourself to one point you can see within 60 feet in a straight line. This expends movement and provokes opportunity attacks normally.&#13;
+            (2)When you fall you can pull yourself up to 10 feet in any direction or create a rope of web of up to 60 feet in length and anchor it to a point you choose.</description>
+        </sheet>
+    </element>
+    <element name="Venomous Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMOUS_STRIKE">
+        <description>
+            <p>Also at 3rd level, you can produce an endless supply of deadly spider venom. When you deal Sneak Attack damage to a creature, you can choose to change the Sneak Attack damage dice to d8s and cause it to deal poison damage.</p>
+        </description>
+        <sheet>
+            <description> When you deal Sneak Attack damage to a creature, you can choose to change the Sneak Attack damage dice to d8s and cause it to deal poison damage.</description>
+        </sheet>
+    </element>
+    <element name="Wall Crawling" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WALL_CRAWLING">
+        <description>
+            <p>Starting at 9th level, you have the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also gain a climbing speed equal to your walking speed.</p>
+            <p class="indent">Additionally, if you are on a ceiling, you can hide from any creature that is at least 10 feet or more below you even if you otherwise lack appropriate cover.</p>
+        </description>
+        <sheet>
+            <description> Spider Climb everlasting effect on yourself. Additionally, if you are on a ceiling, you can hide from any creature that is at least 10 feet or more below you even if you otherwise lack appropriate cover.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Web Walker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WEB_WALKER">
+        <description>
+            <p>Beginning at 13th level, you can cast the spell <i>web</i> at will without using a spell slot or spell components. Your save DC for this spell equals 8 + your Dexterity modifier + your proficiency bonus. Additionally, you ignore movement restrictions caused by webbing.</p>
+        </description>
+        <sheet>
+            <description> You can cast the spell Web at will (DC{{web:dc}}) without using a spell slot or spell components. Also, you ignore movement restrictions caused by Webbing.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WEB" />
+            <stat name="web:dc" value="8" />
+			<stat name="web:dc" value="proficiency" />
+			<stat name="web:dc" value="dexterity:modifier" />
+        </rules>
+    </element>
+    <element name="Paralitic Venom" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PARALITIC_VENOM">
+        <description>
+            <p>Beginning at 17th level, when you use your Venomous Strike to deal poison Sneak Attack damage to a creature, you can force that target to make a Constitution saving throw (DC equals 8 + your Dexterity modifier + your proficiency bonus). If the target fails its saving throw, it is paralyzed for 1 minute. The paralyzed creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short or Long Rest">
+            <description> When you use your Venomous Strike to deal poison Sneak Attack damage to a creature, you can force that target to make a DC{{venom:dc}} CON saving throw. On a fail , it's paralyzed for 1 minute. The paralyzed creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+        <rules>
+            <stat name="venom:dc" value="8" />
+			<stat name="venom:dc" value="proficiency" />
+			<stat name="venom:dc" value="dexterity:modifier" />
+        </rules>
+    </element>
+</elements>

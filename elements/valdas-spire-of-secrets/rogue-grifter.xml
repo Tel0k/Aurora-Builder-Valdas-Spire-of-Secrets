@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Grifter</name>
+		<description>The Grifter from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="rogue-grifter.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-grifter.xml" />
+		</update>
+	</info>
+    <element name="Grifter" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_GRIFTER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Swindlers, cheats, and most of all, grifters hang around taverns where people might have a looser grasp on their coins. The archetypal grifter knows that, with the right words and the right scheme, you can part anyone from their money, and even make it seem fair. Grifters are masters of cons, big and small, from counting cards and rolling loaded dice, to pyramid schemes and fraud.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SWINDLE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DOUBLE_BLUFF" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CUTANDRUN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_LONG_CON" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HEIST_PLAN" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SWINDLE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DOUBLE_BLUFF" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CUTANDRUN" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_LONG_CON" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HEIST_PLAN" level="17" />
+        </rules>
+    </element>
+    <element name="Swindle" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SWINDLE">
+        <description>
+            <p>Starting when you choose this archetype at 3rd level, you gain proficiency in all gaming sets. Additionally, you learn the <i>cheat</i> cantrip. Charisma is your spellcasting ability for this spell.</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency in all gaming sets. Additionally, you learn the cheat cantrip. Charisma is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_CHEAT" />
+        </rules>
+    </element>
+    <element name="Double Bluff" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DOUBLE_BLUFF">
+        <description>
+            <p>At 3rd level, you can feint between two opponents, striking whichever one is least prepared. You gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it and also within 5 feet of another hostile creature.</p>
+        </description>
+        <sheet>
+            <description> You gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it and also within 5 feet of another hostile creature.</description>
+        </sheet>
+    </element>
+    <element name="Cut and Run" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CUTANDRUN">
+        <description>
+            <p>By 9th level, you know when you get out of dodge when a ruse goes south. Whenever you take the Dash action, creatures have disadvantage on opportunity attacks against you. When you take the Disengage action, you can move up to half your movement speed.</p>
+        </description>
+        <sheet>
+            <description> Whenever you take the Dash action, creatures have disadvantage on opportunity attacks against you. When you take the Disengage action, you can move up to half your movement speed.</description>
+        </sheet>
+    </element>
+    <element name="Long Con" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_LONG_CON">
+        <description>
+            <p>At 13th level, you can perfectly rehearse a lie. When you take a long rest, you can choose one falsehood to rehearse. This falsehood can be a single lie or an entire false history. You never need to make a Deception check for this falsehood. You can perfectly recite this falsehood until you use this ability to rehearse another one.</p>
+        </description>
+        <sheet>
+            <description> When you take a long rest, you can choose one falsehood to rehearse. This falsehood can be a single lie or an entire false history. You never need to make a Deception check for this falsehood. You can perfectly recite this falsehood until you use this ability to rehearse another one.</description>
+        </sheet>
+    </element>
+    <element name="Heist Plan" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HEIST_PLAN">
+        <description>
+            <p>Starting at 17th level, you always plot out your schemes several moves ahead of time. You can take the Ready action on your turn as a bonus action. Whatever action you choose, your trigger must be based on a hostile creature performing a specific type of action (such as "when the kobold attacks" or "when the mage casts a spell") and can't activate until after your turn ends.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can take the Ready action on your turn. Whatever action you choose, your trigger must be based on a hostile creature performing a specific type of action and can't activate until after your turn ends.</description>
+        </sheet>
+    </element>
+</elements>

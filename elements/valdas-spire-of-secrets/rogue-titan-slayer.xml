@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Titan Slayer</name>
+		<description>The Titan Slayer from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="rogue-titan-slayer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-titan-slayer.xml" />
+		</update>
+	</info>
+    <element name="Titan Slayer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_TITAN_SLAYER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Though titan slayers often adopt larger-thanlife names and perform immense feats, they are universally little folk, such as halflings and gnomes, which excel at battling foes larger than themselves.</p>
+            <p class="indent">As a titan slayer, you have learned a number of techniques to dumbfound larger creatures so that you can target their vital areas and bring them down swiftly. You use your foe's size against them, weaving between their limbs and striking when they least expect it. No challenge, no foe is too large for you, for as they say, “The bigger they are, the harder they fall.”</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNDERFOOT_COMBAT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_KNEE_STRIKER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CONFOUND_THE_BIG_FOLK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FEAR_NO_MONSTER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FELL_THE_GIANT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNDERFOOT_COMBAT" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_KNEE_STRIKER" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CONFOUND_THE_BIG_FOLK" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FEAR_NO_MONSTER" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FELL_THE_GIANT" level="17" />
+        </rules>
+    </element>
+    <element name="Underfoot Combat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNDERFOOT_COMBAT">
+        <description>
+            <p>Starting at 3rd level, while you are adjacent to a creature that is two or more size categories larger than you, you can use your bonus action to enter that creature's space. You remain in this creature's space until it moves, or until you use your bonus action to move to an unoccupied space adjacent to the creature.</p>
+            <p class="indent">While you are in a hostile creature's space, you can use Sneak Attack against that creature if you don't have disadvantage on the attack roll, even if you don't have advantage against it and no enemy of the target is within 5 feet of it. Additionally, while in this space, you have half cover if the creature is two size categories larger than you, and three-quarters cover if the creature is three or more size categories larger than you.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> While you are adjacent to a creature that is two or more size categories larger than you, you can enter that creature's space. You remain in this creature's space until it moves, or until you use your bonus action to move to an unoccupied space adjacent to the creature. While you are in a hostile creature's space, you can Sneak Attack that creature if you don't have disadvantage on the attack roll, even if Sneak Attack conditions aren't met. While in this space, you have half cover if the creature is two size larger than you, and three-quarters cover if the creature is three or more size larger than you.</description>
+        </sheet>
+    </element>
+    <element name="Knee Striker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_KNEE_STRIKER">
+        <description>
+            <p>At 3rd level, when you make a Sneak Attack against a creature that is of a size larger than yours, you can forego half your Sneak Attack dice (rounded down, to a minimum of 1) to knock that creature prone.</p>
+        </description>
+        <sheet>
+            <description> When you make a Sneak Attack against a creature that is of a size larger than yours, you can forego half your Sneak Attack dice (rounded down, to a minimum of 1) to knock that creature prone.</description>
+        </sheet>
+    </element>
+    <element name="Confound The Big Folks" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CONFOUND_THE_BIG_FOLK">
+        <description>
+            <p>By 9th level, you are an expert in the art of baffling the big folk, who are slow and unobservant by your standards. You have advantage on Dexterity (Stealth) checks made to hide from and sneak around creatures that are a larger size than you. Additionally, if you make a check to avoid, climb on, or confuse a creature that is at least one size larger than you, and the check doesn't already use your proficiency bonus, you can add half your proficiency bonus to that check.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on Dexterity (Stealth) checks made to hide from and sneak around creatures that are a larger size than you. Additionally, if you make a check to avoid, climb on, or confuse a creature that is at least one size larger than you, and the check doesn't already use your proficiency bonus, you can add half your proficiency bonus to that check.</description>
+        </sheet>
+    </element>
+    <element name="Fear No Monster" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FEAR_NO_MONSTER">
+        <description>
+            <p>By 13th level, you are fearless in the face of impossible odds. You can't be frightened. Additionally, whenever you roll initiative, you have advantage on ability checks and saving throws you make until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description> You can't be frightened. Whenever you roll initiative, you have advantage on ability checks and saving throws you make until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Fell The Giant" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FELL_THE_GIANT">
+        <description>
+            <p>At 17th level, your weapon attacks against creatures that are at least one size larger than you score a critical hit on a roll of 19 or 20. Your critical hits also knock the target creature prone.</p>
+        </description>
+        <sheet>
+            <description> Your weapon attacks against creatures at least one size larger than you score a critical hit on a roll of 19 or 20. Your critical hits also knock the target creature prone.</description>
+        </sheet>
+    </element>
+</elements>

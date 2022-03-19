@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Temporal Trickster</name>
+		<description>The Temporal Trickster from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="rogue-temporal-trickster.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-temporal-trickster.xml" />
+		</update>
+	</info>
+    <element name="Temporal Trickster" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_SHADOW_MASTER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Of the rogues who dabble in magic, only a few possess the aptitude to master chronomancy, the magic of time. These skillful dilettantes practice a variety of professions, for the ability to manipulate time is useful in all manner of roguish pursuits. With a flick of the fingers, a temporal trickster can freeze time, rearrange seconds, or leap into the future.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MOMENT_TO_ACT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CHRONO_MASTER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_IMPRESSIONS_OFTHE_FUTURE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TIME_DILATION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STOP_THE_CLOCK" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MOMENT_TO_ACT" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CHRONO_MASTER" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_IMPRESSIONS_OFTHE_FUTURE" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TIME_DILATION" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STOP_THE_CLOCK" level="17" />
+        </rules>
+    </element>
+    <element name="Moment to Act" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MOMENT_TO_ACT">
+        <description>
+            <p>Starting at 3rd level, you learn the <i>moment to think</i> cantrip. Intelligence is your spellcasting ability for this cantrip. When you cast this cantrip, you can move 10 feet without provoking opportunity attacks. Additionally, you can use your action while time is stopped to take the Hide action.</p>
+        </description>
+        <sheet>
+            <description> You learn the moment to think cantrip. Intelligence is your spellcasting ability for this cantrip. When you cast this cantrip, you can move 10 feet without provoking opportunity attacks. You can also use your action while time is stopped to take the Hide action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_MOMENT_TO_THINK" />
+        </rules>
+    </element>
+    <element name="Chrono-Master" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CHRONO_MASTER">
+        <description>
+            <p>Also at 3rd level, your time-bending tricks allow you to cast chronomancy spells to beguile your foes. The energy you use to accomplish this is represented by a pool of chronomancy points, equal to twice your proficiency bonus, which you spend to cast spells. You regain all expended chronomancy points when you finish a long rest.</p>
+            <p class="indent">The spells you have available and their cost in chronomancy points are given on the Time Magic table below. Additionally, when you reach 9th level and 13th level in this class, you gain the ability to cast more spells, as shown on the table.</p>
+            <p class="indent"></p>
+            <center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+			</center>
+            <h5 class="caption">TIME MAGIC</h5>
+            <table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Chronomancy Points</td><td class="col-10">Spells</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> action, instant replay</td></tr>
+				<tr><td> 4th</td><td>3</td><td> delay, recall</td></tr>
+				<tr><td> 5th</td><td>5</td><td> haste, slow</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description> You have a pool of {{chrono-points}} chronomancy points which you spend to cast spells. You regain all expended points after a long rest. The spells you have available and their cost in points are given on the Time Magic table.</description>
+        </sheet>
+        <rules>
+            <stat name="chrono-points" value="proficiency" bonus="proficiency" />
+            <stat name="chrono-points" value="proficiency" bonus="double" />
+            <stat name="spellcasting:dc:int" value="spellcasting:dc" />
+            <stat name="spellcasting:dc:int" value="intelligence:modifier" bonus="ability" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_ACTION" level="3" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_INSTANT_REPLAY" level="3" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_DELAY" level="4" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_RECALL" level="4" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" />
+        </rules>
+    </element>
+    <element name="Impressions Of The Future" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_IMPRESSIONS_OFTHE_FUTURE">
+        <description>
+            <p>Beginning at 9th level, you can perceive the fluctuating waves of time to anticipate how your actions might ripple forward. As a bonus action, you can glimpse a possible future. Describe to the GM what actions you will take on your turn. The GM will then tell you the likely immediate consequences that will happen before the start of your next turn. This glimpse of the future reveals anything you might see or hear in that time, but might be flawed; the prediction can’t take into account the actions of allies or unexpected failed rolls.</p>
+            <p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short||Long Rest">
+            <description> You can glimpse a possible future. Describe to the GM what actions you will take on your turn. The GM will then tell you the likely immediate consequences that will happen before the start of your next turn. This glimpse of the future reveals anything you might see or hear in that time, but might be flawed; the prediction can’t take into account the actions of allies or unexpected failed rolls.</description>
+        </sheet>
+    </element>
+    <element name="Time Dilation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TIME_DILATION">
+        <description>
+            <p>Beginning at 13th level, you can siphon excess temporal energy to enhance your reflexes. Whenever you cast a spell with the chronomancy tag (including <i>haste</i> and <i>slow</i>), you gain a +2 bonus to your Armor Class and Dexterity saving throws until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description> Whenever you cast a spell with the chronomancy tag (including haste and slow), you gain a +2 bonus to your Armor Class and Dexterity saving throws until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Stop The Clock" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STOP_THE_CLOCK">
+        <description>
+            <p>By 17th level, you have mastered the ultimate chronomantic ability, the power to stop time in its tracks. You can cast the spell <i>time stop</i> once without using a spell slot.</p>
+            <p class="indent">Once you use this ability, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description> You can cast the spell time stop once without using a spell slot.</description>
+        </sheet>
+    </element>
+</elements>    

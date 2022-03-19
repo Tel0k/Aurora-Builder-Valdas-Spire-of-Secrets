@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Shadow Master</name>
+        <description>The Shadow Master from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="ranger-shadow-master.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-shadow-master.xml" />
+        </update>    
+    </info>
+    <element name="Shadow Master" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_SHADOWMASTER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Rogues that wish to gain membership in the furtive Order of Shadow Masters must perform twelve trials, train relentlessly, and undergo the Umbral Rite, a ritual of profound darkness that severs their shadow from their heels. In return, they grow pale and gaunt with empty holes for eyes, but can manipulate the shadows as one does a marionette. They can summon inky blackness and see through impenetrable night, while their shadows skulk about the walls and floors, doing their every bidding.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ABYSSAL_EYES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RELEASE_SHADOW" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GLOAMING_BLACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SHADOW_PUPPET" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SHADOWDANCE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ABYSSAL_EYES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RELEASE_SHADOW" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GLOAMING_BLACK" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SHADOW_PUPPET" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SHADOWDANCE" level="17" />
+        </rules>
+    </element>
+    <element name="Abyssal Eyes" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ABYSSAL_EYES">
+        <description>
+            <p>When you choose this archetype at 3rd level, your eyes change to an inky black, granting you darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 60 feet.</p>
+        </description>
+        <sheet>
+            <description> Your eyes change to an inky black, granting you darkvision out to a range of 60ft. If you already have darkvision, its range increases by 60ft.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+    </element>
+    <element name="Release Shadow" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RELEASE_SHADOW">
+        <description>
+            <p>Starting at 3rd level, you can use a bonus action to magically detach your shadow from your body, allowing it to move independently. Your shadow is a flat, perfectly black silhouette of you that crawls along surfaces. It has AC 10, 1 hit point, and immunity to all conditions. It is the same size as you, albeit perfectly flat, and can occupy the same space as other creatures, and vice versa. If your shadow makes a saving throw or an ability check to interact with the environment, it uses your bonus for the roll.</p>
+            <p class="indent">In combat, your shadow acts on your turns and follows your commands. You can command your shadow on each of your turns to move up to 30 feet along the walls or floor (no action required). Your shadow doesn't attack, but can interact with objects and counts as an ally for the purposes of Sneak Attack.</p>
+            <p class="indent">Your shadow vanishes if it drops to 0 hit points, if it is within the area of light created by a spell of 1st level or higher, or if it is ever more than 60 feet from you. Once it vanishes, your shadow reappears at your heels at the end of your next turn.</p>
+            <p class="indent">If your shadow enters a heavily obscured area or one of magical darkness, it is effectively invisible. Your shadow can appear to be the shadow of other creatures and act convincingly using your Charisma (Performance) or Charisma (Deception) skill.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You detach your shadow from your body, it has AC 10, 1 hit point, and immunity to all conditions. It is the same size as you, can occupy the same space as other creatures, and vice versa. If your shadow makes a saving throw or an ability check to interact with the environment, it uses your bonus for the roll. In combat, it acts on your turns and follows your commands. You can command it on each of your turns to move up to 30ft along walls or floor (no action required).It doesn't attack, but can interact with objects and counts as an ally for the purposes of Sneak Attack. It vanishes if it drops to 0 hit points, if it is within the area of light created by a spell, or if it's more than 60 feet from you. Once it vanishes, it reappears at your heels at the end of your next turn. If it enters a heavily obscured area or one of magical darkness, it is effectively invisible. Your shadow can appear to be that of other creatures and act convincingly using your CHA(Performance) or CHA(Deception) skill.</description>
+        </sheet>
+    </element>
+    <element name="Gloaming Black" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GLOAMING_BLACK">
+        <description>
+            <p>At 9th level, you can cast the spell <i>darkness</i> without using a spell slot or spell components. When you use this feature, you can see through the darkness created by this spell. Additionally, when your shadow enters this area of darkness, you can choose for it to grow to fill the entire area.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> You can cast the spell darkness without using a spell slot or spell components. When you use this feature, you can see through the darkness created by this spell. Additionally, when your shadow enters this area of darkness, you can choose for it to grow to fill the entire area.</description>
+        </sheet>
+    </element>
+    <element name="Shadow Puppet" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SHADOW_PUPPET">
+        <description>
+            <p>Starting at 13th level, your shadow can reach out to the shadows of other creatures, interacting with them as if they were physical. If your shadow is within 5 feet of the shadow of another creature, you can use your bonus action to command it to use one of the following abilities: </p>
+            <ul>
+                <li>Your shadow makes an attack against the shadow of another creature. Your shadow uses Dexterity for its attack rolls and has proficiency with its shadowy weapons. On a hit against the creature's AC, the creature takes 2d6 damage. This damage counts as magical and its type matches the weapon you are carrying if it deals bludgeoning, piercing, or slashing damage, or deals bludgeoning damage otherwise.</li>
+                <li>Your shadow grapples the shadow of another creature. Your shadow can use your Dexterity (Acrobatics) check for its grapple check and the target makes its grapple check as normal. If your shadow succeeds, the creature is grappled until the end of its next turn.</li>
+                <li>Your shadow hooks onto the heels of another creature, becoming its second shadow until the end of its next turn. If you see the creature make an attack while your shadow is on its heels, you can use your reaction to cause the shadow to leap in the way, becoming the target of the attack.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description> If your shadow is within 5 feet of the shadow of another creature, you can command it to use one of the following abilities: &#13;
+            -Your shadow makes an attack against the shadow of another creature. Your shadow uses Dexterity for its attack rolls and has proficiency with its shadowy weapons. On a hit, the creature takes 2d6 damage. This damage counts as magical and its type matches the weapon you are carrying, otherwise it deals bludgeoning damage.&#13;
+            -Your shadow grapples the shadow of another creature. Your shadow can use your DEX (Acrobatics) check for its grapple and the target as normal. If your shadow succeeds, the creature is grappled until the end of its next turn.&#13;
+            -Your shadow becomes the second shadow of another creature, until the end of its next turn. If you see the creature make an attack while your shadow is on its heels, you can use your reaction to cause the shadow to leap in the way, becoming the target of the attack.</description>
+        </sheet>
+    </element>
+    <element name="Shadowdance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SHADOWDANCE">
+        <description>
+            <p>By 17th level, your body has absorbed much of the shadowstuff that prevails in the darkest planes of existence, allowing you to mingle with your shadow as if you were a creature of its kind. You can use your bonus action to swap places with your shadow, both of you teleporting in a dim haze. Once you use this ability, you can use it once more before the end of your turn without using a bonus action. If you teleport into an area of dim light or darkness, you have advantage on the first melee attack you make before the end of the turn while you are in that area.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can swap places with your shadow, both of you teleporting in a dim haze. Once you use this ability, you can use it once more before the end of your turn without using a bonus action. If you teleport into an area of dim light or darkness, you have advantage on the first melee attack you make before the end of the turn while you are in that area.</description>
+        </sheet>
+    </element>
+</elements>
