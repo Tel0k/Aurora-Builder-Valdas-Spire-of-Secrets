@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ram Banner</name>
+		<description>The Ram Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-ram.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-ram.xml" />
+		</update>
+	</info>
+    <element name="Ram Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>Captains who brandish the banner of the Ram seek to batter through their obstacles with overwhelming force. Whenever possible, these captains put their enemies on the back foot, literally hurling their foes to the floor or shoving them into unfavorable ground, from which position their cohorts can make swift work of any resistance. The Banner of the Ram sees such tactics as not only fair, but optimal, as validity in combat should be judged only by effectiveness.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_MANEUVER_BULL_RUSH" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_SUREFOOTED" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_LOCK_HORNS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_AND_STAY_DOWN" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_MANEUVER_BULL_RUSH" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_SUREFOOTED" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_LOCK_HORNS" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_AND_STAY_DOWN" level="17" />
+        </rules>
+    </element>
+    <element name="Maneuver: Bull Rush" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_MANEUVER_BULL_RUSH">
+        <description>
+            <p>Starting when you choose this banner at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</description>
+        </sheet>
+    </element>
+    <element name="Surefooted" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_SUREFOOTED">
+        <description>
+            <p>Beginning at 7th level, moving through nonmagical difficult terrain costs you no extra movement.</p>
+        </description>
+        <sheet>
+            <description> Moving through nonmagical difficult terrain costs you no extra movement.</description>
+        </sheet>
+    </element>
+    <element name="Lock Horns" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_LOCK_HORNS">
+        <description>
+            <p>At 13th level, you can buck your foes into harm's way. Whenever you shove a creature into one of your allies, that ally can use its reaction to make an attack against the shoved creature.</p>
+        </description>
+        <sheet>
+            <description> Whenever you shove a creature into one of your allies, that ally can use its reaction to make an attack against the shoved creature.</description>
+        </sheet>
+    </element>
+    <element name="And Stay Down" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAM_BANNER_AND_STAY_DOWN">
+        <description>
+            <p>Starting at 17th level, whenever a creature stands up from being prone while within your reach, you can make an opportunity attack against it.</p>
+        </description>
+        <sheet>
+            <description> Whenever a creature stands up from being prone while within your reach, you can make an opportunity attack against it.</description>
+        </sheet>
+    </element>
+</elements>    

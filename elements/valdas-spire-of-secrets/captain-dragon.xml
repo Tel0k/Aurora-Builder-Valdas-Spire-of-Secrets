@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragon Banner</name>
+		<description>The Dragon Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-dragon.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-dragon.xml" />
+		</update>
+	</info>
+    <element name="Dragon Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>Captains under the banner of the Dragon are among the most formidable warriors to grace the battlefield. Armed with an array of lethal maneuvers, these captains cut through lesser combatants with ease, turning the tides of battle on their own, if needed. The visage of the dragon banner inspires fear and loyalty in equal measure, for the carnage and bloodshed left in a dragon warrior's wake speaks volumes of their skill.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_BONUS_BATTLE_DIE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_CLEAVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_WADE_INTO_BATTLE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_FURY_ATTACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_VICIOUS_FOCUS" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_BONUS_BATTLE_DIE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_CLEAVE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_WADE_INTO_BATTLE" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_FURY_ATTACK" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_VICIOUS_FOCUS" level="17" />
+        </rules>
+    </element>
+    <element name="Bonus Battle Die" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_BONUS_BATTLE_DIE">
+        <description>
+            <p>Starting when you choose this banner at 3rd level, your total number of battle dice increases by 1.</p>
+        </description>
+        <sheet>
+            <description> Your total number of battle dice increases by 1.</description>
+        </sheet>
+        <rules>
+            <stat name="battle dice:amount" value="1" />
+        </rules>
+    </element>
+    <element name="Maneuver: Cleave" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_CLEAVE">
+        <description>
+            <p>Also at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">Once on each of your turns, when you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Maneuver: Wade Into Battle" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_WADE_INTO_BATTLE">
+        <description>
+            <p>At 7th level, you learn the following maneuver:</p>
+            <p class="indent">You can expend a battle die to take the Dash or Disengage action as a bonus action on your turn.</p>
+        </description>
+        <sheet>
+            <description> You can expend a battle die to take the Dash or Disengage action as a bonus action on your turn.</description>
+        </sheet>
+    </element>
+    <element name="Maneuver: Fury Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_MANEUVER_FURY_ATTACK">
+        <description>
+            <p>At 13th level, you learn the following maneuver:</p>
+            <p class="indent">When you take the Attack action on your turn, you can expend a battle die as a bonus action to unleash a barrage of strikes. Make up to three melee weapon attacks as part of the Attack action, instead of one. Each attack must target a different creature.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you take the Attack action on your turn, you can expend a battle die to unleash a barrage of strikes. Make up to three melee weapon attacks as part of the Attack action, instead of one. Each attack must target a different creature.</description>
+        </sheet>
+    </element>
+    <element name="Vicious Focus" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRAGON_BANNER_VICIOUS_FOCUS">
+        <description>
+            <p>Beginning at 17th level, whenever you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you enter a zen state of battle for 1 minute. For the duration, your weapon attacks score a critical hit on a roll of 19 or 20. Each time during the duration that you reduce another hostile creature to 0 hit points or score another critical hit, this critical hit range increases, first allowing your melee weapon attacks to score a critical hit on a roll of 18-20, then on a roll of 17-20, then on a roll of 16-20. If you fall unconscious, this effect ends early.</p>
+        </description>
+        <sheet>
+            <description> Whenever you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you enter a zen state of battle for 1 minute. For the duration, your weapon attacks score a critical hit on a roll of 19 or 20. Also, this critical hit range increases each time that you reduce another hostile creature to 0 hit points or score another critical hit while this state is still active, first allowing your melee weapon attacks to score a critical hit on a roll of 18-20, then on a roll of 17-20, then on a roll of 16-20. If you fall unconscious, this effect ends early.</description>
+        </sheet>
+    </element>
+</elements>

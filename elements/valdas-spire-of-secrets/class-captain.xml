@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Captain</name>
+      <description>The Captain from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="class-captain.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-captain.xml" />
+      </update>    
+    </info>
+    <element name="Captain" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_CAPTAIN">
+        <description>
+            <p>A half-elf, adorned in the ribbons and medals of a high-ranking commander, sits astride an armored warhorse. To her right, a powerfully built orcish man in more pedestrian attire sits atop his own horse, shouldering a hefty greataxe. They set down the road together, accompanied by blaring trumpets and banging drums, which announce their approach.</p>
+            <p class="indent">Puffing on a pipe and eyeing the room, a halfling   guildmaster in a fitted suit twirls a dagger between his fingers. A crowd of thieves, crooks, and bandits are arrayed before him, all studying blueprints laid out on a candlelit table. Tonight, their chapter of the Thieves' Guild becomes rich, and their guildmaster goes down in history.</p>
+            <p class="indent">Kobolds swarm left and right, scampering across piles of gold pieces, only to be met by the dwarf's greataxe. Arrow after arrow, a human archer looses shots that merely plink off the enraged dragon's crimson scales. A gnomish mage gathers crackling arcane might in his hands for a devastating magical blast. Across the chamber, amidst the chaos, a plan crystallizes in the adventuring company's leader. She begins shouting orders, and the party sets into motion.</p>
+            <p class="indent">Decisive leaders and brilliant strategists, captains inspire their allies to greatness. Invariably, they stand alongside their cohorts—their devoted lieutenants, whom they entrust with their lives. Captains outstrategize their enemies, ensuring that, while they rarely deal the killing blow, they're always on the winning side.</p>
+            <h4>FEARLESS LEADERS</h4>
+            <p>Many people aspire to command, but few inspire loyalty as a captain does. Captains rally allies to their side through confidence and determination, but gain long-term friends through wisdom and accountability.</p>
+            <p class="indent">A good captain thinks a little bigger than their compatriots, planning one step further and fitting their allies like puzzle pieces to the challenges ahead. To their eyes, there are few defeats; only setbacks, diversions, and detours. Success is always on the path ahead.</p>
+            <p class="indent">Moreover, captains lead by example. They stand shoulder-to-shoulder with knights, creep through the night alongside rogues, and study arcane texts with mages, even when they barely understand what they're reading. Captains are at the front line with their allies, not barking orders from afar.</p>
+            <h4>COHORT AND COMMANDER</h4>
+            <p>A captain is only as good as their second in command, their cohort, who stands by them at every step and safeguards their plan's success. Far more than a simple ally, a captain's cohort is a confidant, an advisor, and a trusted friend. Cohorts see their captain as a wellspring of information, and will follow them to the ends of the earth.</p>
+            <h4>CREATING A CAPTAIN</h4>
+            <p>The ideal captain—a consummate leader—can be realized in many different ways. Your captain could be a head of an adventuring company, an officer in an army, the president of a corporation, the chief of a tribe, the admiral of a fleet, or any other type of leader. The only commonalities amongst captains are their positions of authority and natural inclinations towards leadership.</p>
+            <p class="indent">You should consider how your captain chooses to lead: not simply what banner they fly, but how they treat their followers and how they give orders. Do you rally others to your side with a magnetic personality or a stoic facade? How would you deal with a dilemma that offers only losing strategies? How do you treat your opponents once you've secured victory?</p>
+            <p class="indent">You should also think of previous victories or defeats that have defined your captain in the past. Has your story been that of a meteoric rise or a disgraceful fall? What event first thrust you into leadership, and how did you first take to it? Which success or defeat led you to the life of an adventurer?</p>
+            <h5>QUICK BUILD</h5>
+            <p>You can make a captain quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, followed by Charisma. Next, select History and Persuasion as your skills, and take the Dueling Fighting Style. Lastly, choose a background reflecting your leadership experience.</p>
+            <h3>CLASS FEATURES</h3>
+            <p>As a captain, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per captain level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per captain level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Constitution, Charisma</li>
+				<li><strong>Skills:</strong> Choose two from Animal Handling, Athletics, Deception, History, Insight, Intimidation, Perception, and Persuasion</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+				<li>(a) scale mail, or (b) leather armor</li>
+				<li>A dagger and (a) a warhammer, (b) a longsword, or (c) any simple weapon</li>
+				<li>(a) a light crossbow and 20 bolts, (b) a shortbow and 20 arrows, or (c) 5 javelins</li>
+				<li>An embroidered standard and (a) a diplomat's pack or (b) an explorer's pack</li>
+			</ul>
+			<h5 class="caption">THE CAPTAIN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Battle Dice</td><td class="col-10">Cohort Feature</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Born Leader, Fighting Style</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Cohort</td><td>—</td><td>Cohort feature</td></tr>
+				<tr><td> 3rd</td><td class="left">Banner, War Tactics</td><td>2d8</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2d8</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Blitz</td><td>2d8</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">—</td><td>3d8</td><td>Cohort feature</td></tr>
+				<tr><td> 7th</td><td class="left">Banner feature</td><td>3d8</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3d8</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">Advanced Tactics</td><td>3d8</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">—</td><td>3d10</td><td>Cohort feature</td></tr>
+				<tr><td>11th</td><td class="left">Coordinated Strike</td><td>3d10</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3d10</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">Banner feature</td><td>3d10</td><td>-</td></tr>
+				<tr><td>14th</td><td class="left">—</td><td>4d10</td><td>Cohort feature</td></tr>
+				<tr><td>15th</td><td class="left">Lead by Example</td><td>4d10</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4d10</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">Banner feature</td><td>4d10</td><td>—</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>4d12</td><td>Cohort feature</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4d12</td><td>—</td></tr>
+				<tr><td>20th</td><td class="left">Legendary Commander</td><td>4d12</td><td>—</td></tr>
+			</table>
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BORN_LEADER" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_FIGHTING_STYLE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COHORT" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BANNER" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ABILITYSCOREIMPROVEMENT_CAPTAIN" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BLITZ" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COORDINATED_STRIKE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_LEAD_BY_EXAMPLE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_LEGENDARY_COMMANDER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+			<set name="short">Decisive leaders and brilliant strategists, captains inspire their allies to greatness.</set>
+			<set name="hd">d8</set>
+		</setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+            <select type="Proficiency" name="Skill Proficiency (Captain)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_CAPTAIN"/>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BORN_LEADER" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_FIGHTING_STYLE" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COHORT" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BANNER" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ABILITYSCOREIMPROVEMENT_CAPTAIN" level="4" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BLITZ" level="5" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS" level="9" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COORDINATED_STRIKE" level="11" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_LEAD_BY_EXAMPLE" level="15" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_LEGENDARY_COMMANDER" level="20" />
+        </rules>
+        <multiclass id="ID_MHP_VSOS_MULTICLASS_CAPTAIN">
+			<prerequisite>Strength 13 or Dexterity 13, and Charisma 13</prerequisite>
+			<requirements>([str:13]||[dex:13]),[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">—</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+    </element>
+    <element name="Born Leader" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BORN_LEADER">
+        <description>
+            <p>By 1st level, your competence and commanding personality lend you a knack for leadership. Common folk defer to your authority and influence, especially in times of crisis. As a result, you have advantage on any Charisma (Persuasion) check you make to convince someone to let you take charge of a situation or to give someone orders in a dangerous situation.</p>
+            <p class="indent">Additionally, you can use your Charisma modifier, instead of your Intelligence modifier, for any ability check you make related to planning, strategy, or tactics.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Fighting Style" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_FIGHTING_STYLE">
+        <description>
+            <p>At 1st level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+            <h5 class="caption">ARCHERY</h5>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Captain" level="1" />
+		</rules>
+    </element>
+    <element name="Cohort" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COHORT">
+        <description>
+            <p>Starting at 2nd level, you gain a loyal cohort who carries your banner and follows your lead.</p>
+            <h5>INITIATING A COHORT</h5>
+            <p>Select a abbot from the Cohort section; following an 8-hour initiation period, that creature becomes your cohort. You can have only one cohort at a time.</p>
+            <p class="indent">If your cohort is ever slain, you can raise them from the dead by the usual methods, such as the raise dead spell, or you can spend 8 hours initiating a new cohort. If you do so, your previous cohort loses all abilities granted by this ability, even if it is later returned to life.</p>
+            <p class="indent">Your cohort obeys your commands as best it can. Your cohort takes its turn immediately before or after your turn each round (your choice), and you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your abbot acts on its own.</p>
+            <h5>COHORT FEATURES</h5>
+            <p>At 2nd, 6th, 10th, 14th, and 18th levels, your cohort gains new abilities based on its archetype.</p>
+            <h5>HIT POINTS</h5>
+            <p>For each captain level you gain after 2nd, your cohort gains an additional Hit Die and increases its hit points accordingly.</p>
+            <h5>ABILITY SCORES</h5>
+            <p>Whenever you gain the Ability Score Improvement class feature, your cohort's abilities also improve. Your cohort can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your abbot can't increase an ability score above 20 using this feature, unless its description specifies otherwise.</p>
+            <p class="indent">When you improve a cohort's ability scores, remember to also increase other relevant statistics, such as skill bonuses, bonuses to hit and damage, and spell save DCs.</p>
+            <h5>PROFICIENCIES</h5>
+            <p>Your cohort gains proficiency in skills listed in its statistics. It also gains proficiency with simple weapons, martial weapons, light armor, medium armor, heavy armor, or shields if its statistics contain weapons or armor from that category.</p>
+            <p class="indent">Your cohort uses your proficiency bonus rather than its own. Because cohort statistics already include a +2 proficiency bonus, you need only adjust the attack bonus and skill proficiency bonus starting at 5th level.</p>
+            <h5>ALIGNMENT</h5>
+            <p>Your cohort's alignment is within one step of your own, and has a personality trait and flaw determined by the GM. Its bond is always, “I will follow my commander into any fray, and I will gladly fight by their side until my death.”</p>
+        </description>
+        <sheet>
+            <description> You gain a loyal cohort who carries your banner and follows your lead. Your cohort obeys your commands as best it can. Your cohort takes its turn immediately before or after your turn each round (your choice), and you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your abbot acts on its own. If your cohort is ever slain, you can raise them from the dead, or you can spend 8 hours initiating a new one. If you do so, your previous cohort loses all abilities granted by this feature, even if it is later returned to life.</description>
+        </sheet>
+    </element>
+    <element name="Banner" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BANNER">
+        <description>
+            <p>Starting at 3rd level, you adopt a banner which you fly in combat, emblazon on your armor, and fix to your seal. You can select from the banners which are detailed at the end of the class description. Your choice grants you features at 3rd level, and again at 7th, 13th, and 17th level.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+			<select type="Archetype" name="Banner" supports="Banner" />
+		</rules>
+    </element>
+    <element name="War Tactics" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS">
+        <description>
+            <p>Starting at 3rd level, you have a pool of battle dice that you can use to bolster your allies or perform special maneuvers in combat. You begin with 2 battle dice, which are d8s. You regain all expended battle dice when you finish a short or long rest, or when you roll initiative.</p>
+            <p class="indent">Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown in the Battle Dice column of the Captain table.</p>
+            <h5>SAVING THROWS</h5>
+            <p>If one of your maneuvers calls for a saving throw to resist its effects, the saving throw DC is calculated as follows:</p>
+            <center>
+				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+            </center>
+            <h5>MANEUVERS</h5>
+            <p>You can spend battle dice to use the following maneuvers:</p>
+            <p class="indent"><b>BRACE.</b> As a bonus action on your turn, you can expend a battle die to bolster your allies. Each allied creature within 30 feet of you that can see or hear you adds the battle die to all saving throws it makes until the end of your next turn.</p>
+            <p class="indent"><b>RALLY.</b> As a bonus action on your turn, you can expend a battle die to choose one allied creature other than yourself within 60 feet of you who can see or hear you. That creature regains hit points equal to the number rolled + your Charisma modifier. You can't use this ability to heal a creature who has 0 hit points.</p>
+            <p class="indent"><b>STAGGERING STRIKE.</b> As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description> You learn maneuvers that are fueled by special dice called battle dice. You have {{battle dice:amount}} battle dice which are d{{battle dice:size}}s. DC {{battle dice:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="battle dice:amount" value="2" />
+			<stat name="battle dice:amount" value="1" level="6" />
+			<stat name="battle dice:amount" value="1" level="15" />
+			<stat name="battle dice:size" value="8" bonus="size"/>
+            <stat name="battle dice:size" value="10" level="10" bonus="size"/>
+			<stat name="battle dice:size" value="12" level="18" bonus="size"/>
+			<stat name="battle dice:dc" value="8" />
+			<stat name="battle dice:dc" value="proficiency" />
+			<stat name="battle dice:dc:ability" value="charisma:modifier" />
+			<stat name="battle dice:dc" value="battle dice:dc:ability" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS_BRACE" requirements="!ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS_RALLY" requirements="!ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS_STAGGERING_STRIKE" requirements="!ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_BRACE" requirements="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_RALLY" requirements="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_STAGGERING_STRIKE" requirements="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS"/>
+		</rules>
+    </element>
+    <element name="Brace" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS_BRACE">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action on your turn, you can expend a battle die to bolster your allies. Each allied creature within 30 feet of you that can see or hear you adds the battle die to all saving throws it makes until the end of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You expend a battle die to bolster your allies. Each allied creature within 30 feet of you that can see or hear you adds the battle die to all saving throws it makes until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Rally" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS_RALLY">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action on your turn, you can expend a battle die to choose one allied creature other than yourself within 60 feet of you who can see or hear you. That creature regains hit points equal to the number rolled + your Charisma modifier. You can't use this ability to heal a creature who has 0 hit points.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You expend a battle die to choose one allied creature other than yourself within 60 feet of you who can see or hear you. That creature regains hit points equal to the number rolled + your Charisma modifier. You can't use this ability to heal a creature who has 0 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Staggering Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_WAR_TACTICS_STAGGERING_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> When you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a CON saving throw or be incapacitated until the start of your next turn.</description>
+		</sheet>
+	</element>
+    <element name="Ability Score Improvement" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ABILITYSCOREIMPROVEMENT_CAPTAIN">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Captain 4)" supports="Improvement Option,Captain,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Captain 8)" supports="Improvement Option,Captain,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Captain 12)" supports="Improvement Option,Captain,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Captain 16)" supports="Improvement Option,Captain,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Captain 19)" supports="Improvement Option,Captain,19" level="19" />
+		</rules>
+    </element>
+    <element name="Blitz" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_BLITZ">
+        <description>
+            <p>Starting at 5th level, as a bonus action on your turn, you can direct your cohort or a friendly creature within 60 feet of you that can see or hear you to fight alongside you. The chosen creature can use its reaction to move up to its speed or make a single weapon attack.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can direct your cohort or a friendly creature within 60 feet of you that can see or hear you to fight alongside you. The chosen creature can use its reaction to move up to its speed or make a single weapon attack.</description>
+        </sheet>
+    </element>
+    <element name="Advanced Tactics" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS">
+        <description>
+            <p>At 9th level, your maneuvers improve in the following ways:</p>
+            <p class="indent"><b>BRACE.</b> Allies can also add the battle die to their ability checks until the start of your next turn.</p>
+            <p class="indent"><b>RALLY.</b> Whenever you spend a battle die to cause a creature to regain hit points, that creature also gains temporary hit points equal to your captain level.</p>
+            <p class="indent"><b>STAGGERING STRIKE.</b> When you hit with a staggering strike, you add the battle die to the damage roll.</p>
+        </description>
+        <sheet display="false"/>
+    </element>
+    <element name="Brace" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_BRACE">
+		<supports>Maneuver, Captain</supports>
+        <compendium display="false" />
+		<description>
+			<p>As a bonus action on your turn, you can expend a battle die to bolster your allies. Each allied creature within 30 feet of you that can see or hear you adds the battle die to all saving throws it makes until the end of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You expend a battle die to bolster your allies. Each allied creature within 30 feet of you that can see or hear you adds the battle die to all saving throws it makes until the end of your next turn. Allies can also add the battle die to their ability checks until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Rally" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_RALLY">
+		<supports>Maneuver, Captain</supports>
+        <compendium display="false" />
+		<description>
+			<p>As a bonus action on your turn, you can expend a battle die to choose one allied creature other than yourself within 60 feet of you who can see or hear you. That creature regains hit points equal to the number rolled + your Charisma modifier. You can't use this ability to heal a creature who has 0 hit points.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You expend a battle die to choose one allied creature other than yourself within 60 feet of you who can see or hear you. That creature regains hit points equal to the number rolled + your Charisma modifier. You can't use this ability to heal a creature who has 0 hit points. Whenever you spend a battle die to cause a creature to regain hit points, that creature also gains temporary hit points equal to your captain level.</description>
+		</sheet>
+	</element>
+	<element name="Staggering Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_STAGGERING_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> When you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a CON saving throw or be incapacitated until the start of your next turn. When you hit with a staggering strike, you add the battle die to the damage roll.</description>
+		</sheet>
+	</element>
+    <element name="Coordinated Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COORDINATED_STRIKE">
+        <description>
+            <p>By 11th level, you and your cohort fight as a perfect fighting unit. Once on each of your turns, when you hit a creature with an attack, you can deal an extra 2d8 damage to the creature if your cohort has also hit that creature with an attack since the end of your last turn.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you hit a creature with an attack, you can deal an extra 2d8 damage to the creature if your cohort has also hit that creature with an attack since the end of your last turn.</description>
+        </sheet>
+    </element>
+    <element name="Lead by Example" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_LEAD_BY_EXAMPLE">
+        <description>
+            <p>Starting at 15th level, whenever you roll a 20 on an attack roll, ability check, or saving throw, each friendly creature within 30 feet of you has advantage when it makes the same type of roll (attack roll, ability check, or saving throw) before the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description> Whenever you roll a 20 on an attack roll, ability check, or saving throw, each friendly creature within 30 feet of you has advantage when it makes the same type of roll (attack roll, ability check, or saving throw) before the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Legendary Commander" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_LEGENDARY_COMMANDER">
+        <description>
+            <p>At 20th level, you have 3 legendary actions. At the end of another creature's turn, you can spend a legendary action to take an action of your choice, or allow a friendly creature that can hear or see you to take an action of their choice. If a creature takes the Attack action as a legendary action, it can attack more than once if it has a feature, like Extra Attack, that gives it extra attacks.</p>
+            <p class="indent">You regain all expended legendary actions when you finish a long rest.</p>
+        </description>
+        <sheet usage="3/Long Rest">
+            <description> At the end of another creature's turn, you can spend a legendary action to take an action of your choice, or allow a friendly creature that can hear or see you to take an action of their choice. If a creature takes the Attack action as a legendary action, it can attack more than once if it has a feature, like Extra Attack, that gives it extra attacks.</description>
+        </sheet>
+    </element>
+
+    <!-- Fighting Styles -->
+	<element name="Archery" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+		<supports>Fighting Style, Captain</supports>
+		<description>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" />
+		</rules>
+	</element>
+	<element name="Defense" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Fighting Style, Captain</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
+	</element>
+	<element name="Dueling" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Fighting Style, Captain</supports>
+		<description>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+		</rules>
+	</element>
+    <element name="Protection" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		<supports>Fighting Style, Captain</supports>
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+		</sheet>
+	</element>
+
+</elements>    

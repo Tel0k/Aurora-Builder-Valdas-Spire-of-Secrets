@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Turtle Banner</name>
+		<description>The Turtle Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-turtle.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-turtle.xml" />
+		</update>
+	</info>
+    <element name="Turtle Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>The fortified defenses of captains who fly the Turtle banner are legendary. Turtle tactics emphasize endurance and survival, as well-protected soldiers cannot only win battles, but entire wars. Thinking long term is key to any defensive strategy, as captains of the Turtle know the answer is never how they shall counterattack, but when.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_MANEUVER_IRON_SHELL" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_SLOW_AND_STEADY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_SHIELD_WALL" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_UNBREAKABLE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_MANEUVER_IRON_SHELL" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_SLOW_AND_STEADY" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_SHIELD_WALL" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_UNBREAKABLE" level="17" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you choose this banner at 3rd level, you gain proficiency with heavy armor.</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency with heavy armor.</description>
+        </sheet>
+    </element>
+    <element name="Maneuver: Iron Shell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_MANEUVER_IRON_SHELL">
+        <description>
+            <p>Also at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">As a bonus action, you can spend a battle die to fortify an ally you can see within 60 feet of you. The ally gains a bonus to its Armor Class equal to half the number rolled on the battle die, rounded down (minimum of +1) against the next attack made against it within the next minute.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can spend a battle die to fortify an ally you can see within 60 feet of you. The ally gains a bonus to its Armor Class equal to half the number rolled on the battle die, rounded down (minimum of +1) against the next attack made against it within the next minute.</description>
+        </sheet>
+    </element>
+    <element name="Slow And Steady" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_SLOW_AND_STEADY">
+        <description>
+            <p>Beginning at 7th level, your speed can't be removed and you can't be knocked prone or moved against your will.</p>
+        </description>
+        <sheet>
+            <description> Your speed can't be removed and you can't be knocked prone or moved against your will.</description>
+        </sheet>
+    </element>
+    <element name="Shield Wall" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_SHIELD_WALL">
+        <description>
+            <p>By 13th level, you can shelter others behind your armor. You count as half cover for effects passing through your space for allied creatures of your size and smaller within 5 feet of you.</p>
+        </description>
+        <sheet>
+            <description> You count as half cover for effects passing through your space for allied creatures of your size and smaller within 5 feet of you.</description>
+        </sheet>
+    </element>
+    <element name="Unbreakable" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_UNBREAKABLE">
+        <description>
+            <p>Starting at 17th level, you can shrug off attacks that would otherwise hit you. You have a pool of 20 armor points. As a reaction when you're hit by a melee weapon attack, you can expend any number of armor points and add them to your Armor Class against that attack, potentially causing the attack to miss. You regain all expended armor points when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description> You can shrug off attacks that would otherwise hit you. You have a pool of 20 armor points. As a reaction when you're hit by a melee weapon attack, you can expend any number of armor points and add them to your Armor Class against that attack, potentially causing the attack to miss. You regain all expended armor points when you finish a long rest.</description>
+        </sheet>
+    </element>
+</elements>    

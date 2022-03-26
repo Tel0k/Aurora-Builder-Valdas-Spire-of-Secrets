@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eagle Banner</name>
+		<description>The Eagle Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-eagle.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-eagle.xml" />
+		</update>
+	</info>
+    <element name="Eagle Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>With sharp eyes and even sharper arrows, captains of the Eagle seek to be lords of speed and ranged combat, mastering bow, sling, and ballista alike. Such captains are just as dangerous in close range as they are perched on the horizon, for they can accurately deliver an arrow or a crossbow bolt at point blank range.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_MANEUVER_EAGLE_SHOT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_VANTAGE_POINT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_CLOSE_QUARTERS_SHOOTING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_SCATTER_SHOT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_MANEUVER_EAGLE_SHOT" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_VANTAGE_POINT" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_CLOSE_QUARTERS_SHOOTING" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_SCATTER_SHOT" level="17" />
+        </rules>
+    </element>
+    <element name="Maneuver: Eagle Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_MANEUVER_EAGLE_SHOT">
+        <description>
+            <p>Starting when you choose this banner at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">When you make a ranged weapon attack roll against a creature, you can use your bonus action and expend a battle die to add it to the roll. You can use this ability before or after making the attack roll, but before the GM says whether the attack hits or misses.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you make a ranged weapon attack roll against a creature, you can expend a battle die to add it to the roll. You can use this ability before or after making the attack roll, but before the GM says whether the attack hits or misses.</description>
+        </sheet>
+    </element>
+    <element name="Vantage Point" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_VANTAGE_POINT">
+        <description>
+            <p>By 7th level, you can quickly scale walls to gain a perch above your foes. You have a climbing speed equal to your walking speed. In addition, by climbing at half speed, you can climb up difficult surfaces (such as slippery vertical walls) without making an ability check.</p>
+        </description>
+        <sheet>
+            <description>You have a climbing speed equal to your walking speed. In addition, by climbing at half speed, you can climb up difficult surfaces without making an ability check.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Close-Quarters Shooting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_CLOSE_QUARTERS_SHOOTING">
+        <description>
+            <p>Starting at 13th level, being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls or the ranged attack rolls of friendly creatures within 15 feet of you.</p>
+        </description>
+        <sheet>
+            <description>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls or the ranged attack rolls of friendly creatures within 15 feet of you.</description>
+        </sheet>
+    </element>
+    <element name="Scatter Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_EAGLE_BANNER_SCATTER_SHOT">
+        <description>
+            <p>Starting at 17th level, you can use your action to launch a volley of projectiles. Make a ranged weapon attack against any number of creatures you choose within a 15-foot cone, making a separate attack roll for each target. If you target only one creature in this cone, your attack deals one additional weapon damage die on a hit.</p>
+        </description>
+        <sheet action="Action">
+            <description>Make a ranged weapon attack against any number of creatures you choose within a 15-foot cone, making a separate attack roll for each target. If you target only one creature in this cone, your attack deals one additional weapon damage die on a hit.</description>
+        </sheet>
+    </element>
+</elements>    

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Raven Banner</name>
+		<description>The Raven Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-raven.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-raven.xml" />
+		</update>
+	</info>
+    <element name="Raven Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>The Banner of the Raven signifies a clandestine captain who prefers stealth to action and ambushes to open fights. If pressed, a captain of the Raven might be drawn into a direct confrontation, but they can never be expected to play fair. These captains might have more in common with rogues, and might even hold a position of leadership within a thieves' guild. More than one guild master and bandit leader has flown the Raven Banner while on a raid.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_MANEUVER_FLANKING_STRIKE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_MANEUVER_EFFORTLESS_DODGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_COVERT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_STRIKE_FIRST_STRIKE_LAST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_GUERRILLA_WARFARE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_MANEUVER_FLANKING_STRIKE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_MANEUVER_EFFORTLESS_DODGE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_COVERT" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_STRIKE_FIRST_STRIKE_LAST" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_GUERRILLA_WARFARE" level="17" />
+        </rules>
+    </element>
+    <element name="Maneuver: Flanking Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_MANEUVER_FLANKING_STRIKE">
+        <description>
+            <p>Starting when you choose this banner at 3rd level, you are trained in ambush tactics. You learn the following maneuver:</p>
+            <p class="indent">If you hit a creature with a weapon attack while one of your allies is within 5 feet of the target, you can expend a battle die to aim for the creature's most vital areas. Add the battle die and half your level (rounded down) to the attack's damage roll. This attack must use a finesse weapon or a light weapon.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>If you hit a creature with a weapon attack while one of your allies is within 5 feet of the target, you can expend a battle die to aim for the creature's most vital areas. Add the battle die and half your level (rounded down) to the attack's damage roll. This attack must use a finesse weapon or a light weapon.</description>
+        </sheet>
+    </element>
+    <element name="Maneuver: Effortless Dodge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_MANEUVER_EFFORTLESS_DODGE">
+        <description>
+            <p>Also at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">As a bonus action, you can spend a battle die to take the Dodge action. You can't use this maneuver while wearing medium or heavy armor.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can spend a battle die to take the Dodge action. You can't use this maneuver while wearing medium or heavy armor.</description>
+        </sheet>
+    </element>
+    <element name="Covert" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_COVERT">
+        <description>
+            <p>At 7th level, when you are hidden and a creature discovers you with a successful Wisdom (Perception) check, you can reattempt your Dexterity (Stealth) check to hide. On a success, you silently reposition yourself and the creature doesn't notice you. Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> When you are hidden and a creature discovers you with a successful Wisdom (Perception) check, you can reattempt your Dexterity (Stealth) check to hide. On a success, you silently reposition yourself and the creature doesn't notice you.</description>
+        </sheet>
+    </element>
+    <element name="Strike First, Strike Last" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_STRIKE_FIRST_STRIKE_LAST">
+        <description>
+            <p>Beginning at 13th level, you can intercede moments before an enemy strikes. As a reaction when a hostile creature you can see attacks, you can move up to your speed without provoking opportunity attacks toward the creature and make one attack targeting it. Resolve your attack before the creature makes any attacks.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description> When a hostile creature you can see attacks, you can move up to your speed without provoking opportunity attacks toward the creature and make one attack targeting it. Resolve your attack before the creature makes any attacks.</description>
+        </sheet>
+    </element>
+    <element name="Guerilla Warfare" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RAVEN_BANNER_GUERRILLA_WARFARE">
+        <description>
+            <p>Starting at 17th level, you are a master of unconventional combat. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, the first time you hit a creature with an attack during the first round of combat, you can add two battle dice to the attack's damage roll without expending them.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, the first time you hit a creature with an attack during the first round of combat, you can add two battle dice to the attack's damage roll without expending them.</description>
+        </sheet>
+    </element>
+</elements>    

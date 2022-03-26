@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jolly Roger Banner</name>
+		<description>The Jolly Roger Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-jolly-roger.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-jolly-roger.xml" />
+		</update>
+	</info>
+    <element name="Jolly Roger Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>The skulls and crossbones adorning the Banner of the Jolly Roger need no introduction: it means thieves, brigands, treasure, and adventure on the high seas. Moreover, it means the strong backs of a crew working in unison, piloting a ship from horizon to horizon, under the command of a fierce captain and their first mate.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_MANEUVER_DOUBLE_THRUST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_TRICKY_FOOTWORK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_UNFAIR_PLAY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_ALL_HANDS_ON_DECK" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_MANEUVER_DOUBLE_THRUST" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_TRICKY_FOOTWORK" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_UNFAIR_PLAY" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_ALL_HANDS_ON_DECK" level="17" />
+        </rules>
+    </element>
+    <element name="Maneuver: DOUBLE THRUST" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_MANEUVER_DOUBLE_THRUST">
+        <description>
+            <p>Starting when you choose this banner at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">When you make an attack with a finesse weapon as part of the Attack action on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you make an attack with a finesse weapon on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Tricky Footwork" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_TRICKY_FOOTWORK">
+        <description>
+            <p>By 7th level, your elegant swordplay lets you place enemies where you want them. Whenever you hit a creature of your size or smaller with a melee attack on your turn, you can switch places with the target. This movement doesn't provoke opportunity attacks.</p>
+        </description>
+        <sheet>
+            <description>Whenever you hit a creature of your size or smaller with a melee attack on your turn, you can switch places with the target. This movement doesn't provoke opportunity attacks.</description>
+        </sheet>
+    </element>
+    <element name="Unfair Play" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_UNFAIR_PLAY">
+        <description>
+            <p>Beginning at 13th level, both you and your cohort can use a bonus action to take the Hide or Use an Object action, or to attempt to shove a creature. You have advantage on Strength (Athletics) checks you make to push another creature out of a boat or other waterborne vessel.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Both you and your cohort can take the Hide or Use an Object action, or attempt to shove a creature. You have advantage on Strength (Athletics) checks you make to push another creature out of a boat or other waterborne vessel.</description>
+        </sheet>
+    </element>
+    <element name="All Hands On Deck" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_ALL_HANDS_ON_DECK">
+        <description>
+            <p>By 17th level, your crew works in perfect unison at your directive. You can use your action on your turn to direct each friendly creature within 60 feet of you that can see or hear you to take an action of your choice; this action can't be the Attack, Cast a Spell, Dodge, or Use a Magic Item action. A creature can immediately use its reaction to take this action.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can direct each friendly creature within 60 feet of you that can see or hear you to take an action of your choice; this action can't be the Attack, Cast a Spell, Dodge, or Use a Magic Item action. A creature can immediately use its reaction to take this action.</description>
+        </sheet>
+    </element>
+</elements>    

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lion Banner</name>
+		<description>The Lion Banner from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="captain-lion.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-lion.xml" />
+		</update>
+	</info>
+    <element name="Lion Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER">
+        <supports>Banner</supports>
+        <description>
+            <p>The skulls and crossbones adorning the Banner of the Jolly Roger need no introduction: it means thieves, brigands, treasure, and adventure on the high seas. Moreover, it means the strong backs of a crew working in unison, piloting a ship from horizon to horizon, under the command of a fierce captain and their first mate.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_MANEUVER_LIONS_CHALLENGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_SADDLE_SURE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_REPOSITION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_LIONS_GAMBIT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_MANEUVER_LIONS_CHALLENGE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_SADDLE_SURE" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_REPOSITION" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_LIONS_GAMBIT" level="17" />
+        </rules>
+    </element>
+    <element name="Maneuver: DOUBLE THRUST" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_MANEUVER_LIONS_CHALLENGE">
+        <description>
+            <p>Starting when you choose this banner at 3rd level, you learn the following maneuver:</p>
+            <p class="indent">When you make an attack with a finesse weapon as part of the Attack action on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you make an attack with a finesse weapon on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Tricky Footwork" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_SADDLE_SURE">
+        <description>
+            <p>By 7th level, your elegant swordplay lets you place enemies where you want them. Whenever you hit a creature of your size or smaller with a melee attack on your turn, you can switch places with the target. This movement doesn't provoke opportunity attacks.</p>
+        </description>
+        <sheet>
+            <description>Whenever you hit a creature of your size or smaller with a melee attack on your turn, you can switch places with the target. This movement doesn't provoke opportunity attacks.</description>
+        </sheet>
+    </element>
+    <element name="Unfair Play" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_REPOSITION">
+        <description>
+            <p>Beginning at 13th level, both you and your cohort can use a bonus action to take the Hide or Use an Object action, or to attempt to shove a creature. You have advantage on Strength (Athletics) checks you make to push another creature out of a boat or other waterborne vessel.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Both you and your cohort can take the Hide or Use an Object action, or attempt to shove a creature. You have advantage on Strength (Athletics) checks you make to push another creature out of a boat or other waterborne vessel.</description>
+        </sheet>
+    </element>
+    <element name="All Hands On Deck" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_LIONS_GAMBIT">
+        <description>
+            <p>Starting at 17th level, when you take damage from acreature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature, and if you hit, you can add half your level to the damage roll.</p>
+            <p class="indent">You can make this attack three times, and you regain all expended uses of it when you finish a short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="3/Short||Long Rest">
+            <description>When you take damage from a creature that is within 5 feet of you, you can make a melee weapon attack against that creature, and if you hit, you can add half your level to the damage roll.</description>
+        </sheet>
+    </element>
+</elements>    
