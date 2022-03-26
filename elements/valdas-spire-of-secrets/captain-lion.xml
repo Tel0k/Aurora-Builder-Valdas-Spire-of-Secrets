@@ -4,7 +4,7 @@
 		<name>Lion Banner</name>
 		<description>The Lion Banner from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="captain-lion.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-lion.xml" />
 		</update>
 	</info>
@@ -25,32 +25,33 @@
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_LIONS_GAMBIT" level="17" />
         </rules>
     </element>
-    <element name="Maneuver: DOUBLE THRUST" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_MANEUVER_LIONS_CHALLENGE">
+    <element name="Maneuver: Lion's Challenge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_MANEUVER_LIONS_CHALLENGE">
         <description>
             <p>Starting when you choose this banner at 3rd level, you learn the following maneuver:</p>
-            <p class="indent">When you make an attack with a finesse weapon as part of the Attack action on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</p>
+            <p class="indent">When you hit a creature with a weapon attack on your turn, you can expend one battle die as a bonus action to challenge the target to a duel. Until the end of your next turn, that target has disadvantage on any attack roll that isn't against you.</p>
         </description>
         <sheet action="Bonus Action">
-            <description>When you make an attack with a finesse weapon on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</description>
+            <description>When you hit a creature with a weapon attack on your turn, you can expend one battle die to challenge the target to a duel. Until the end of your next turn, that target has disadvantage on any attack roll that isn't against you.</description>
         </sheet>
     </element>
-    <element name="Tricky Footwork" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_SADDLE_SURE">
+    <element name="Saddle Sure" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_SADDLE_SURE">
         <description>
-            <p>By 7th level, your elegant swordplay lets you place enemies where you want them. Whenever you hit a creature of your size or smaller with a melee attack on your turn, you can switch places with the target. This movement doesn't provoke opportunity attacks.</p>
+            <p>Starting at 7th level, you have advantage on saving throws made to avoid falling off your mount, and if you fall off your mount, you always land on your feet unless you're incapacitated. In addition, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</p>
+	     <p class="indent">Finally, you can force an attack targeted at your mount to target you instead.</p>
         </description>
         <sheet>
-            <description>Whenever you hit a creature of your size or smaller with a melee attack on your turn, you can switch places with the target. This movement doesn't provoke opportunity attacks.</description>
+            <description> You have advantage on saving throws made to avoid falling off your mount, and if you fall off your mount, you always land on your feet unless you're incapacitated. In addition, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed. Finally, you can force an attack targeted at your mount to target you instead.</description>
         </sheet>
     </element>
-    <element name="Unfair Play" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_REPOSITION">
+    <element name="Reposition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_REPOSITION">
         <description>
-            <p>Beginning at 13th level, both you and your cohort can use a bonus action to take the Hide or Use an Object action, or to attempt to shove a creature. You have advantage on Strength (Athletics) checks you make to push another creature out of a boat or other waterborne vessel.</p>
+            <p>Beginning at 13th level, you and up to three friendly creatures of your choice that you can see can each move up to 20 feet when you roll initiative. A creature can't benefit from this feature if its speed is 0.</p>
         </description>
-        <sheet action="Bonus Action">
-            <description>Both you and your cohort can take the Hide or Use an Object action, or attempt to shove a creature. You have advantage on Strength (Athletics) checks you make to push another creature out of a boat or other waterborne vessel.</description>
+        <sheet>
+            <description> You and up to three friendly creatures of your choice that you can see can each move up to 20 feet when you roll initiative. A creature can't benefit from this feature if its speed is 0.</description>
         </sheet>
     </element>
-    <element name="All Hands On Deck" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_LIONS_GAMBIT">
+    <element name="Lion's Gambit" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_LIONS_GAMBIT">
         <description>
             <p>Starting at 17th level, when you take damage from acreature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature, and if you hit, you can add half your level to the damage roll.</p>
             <p class="indent">You can make this attack three times, and you regain all expended uses of it when you finish a short or long rest.</p>
