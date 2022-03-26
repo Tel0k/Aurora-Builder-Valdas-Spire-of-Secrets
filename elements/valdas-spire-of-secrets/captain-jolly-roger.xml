@@ -25,7 +25,7 @@
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_ALL_HANDS_ON_DECK" level="17" />
         </rules>
     </element>
-    <element name="Maneuver: DOUBLE THRUST" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_MANEUVER_DOUBLE_THRUST">
+    <element name="Maneuver: Double Thrust" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_JOLLY_ROGER_BANNER_MANEUVER_DOUBLE_THRUST">
         <description>
             <p>Starting when you choose this banner at 3rd level, you learn the following maneuver:</p>
             <p class="indent">When you make an attack with a finesse weapon as part of the Attack action on your turn, you can spend one battle die as a bonus action to make an additional attack with that weapon. This attack adds the battle die, instead of your ability modifier, to the weapon's damage roll.</p>
