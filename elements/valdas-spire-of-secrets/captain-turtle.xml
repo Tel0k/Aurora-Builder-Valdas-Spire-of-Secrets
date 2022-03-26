@@ -4,7 +4,7 @@
 		<name>Turtle Banner</name>
 		<description>The Turtle Banner from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="captain-turtle.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/captain-turtle.xml" />
 		</update>
 	</info>
@@ -34,6 +34,9 @@
         <sheet>
             <description> You gain proficiency with heavy armor.</description>
         </sheet>
+	<rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        </rules>
     </element>
     <element name="Maneuver: Iron Shell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TURTLE_BANNER_MANEUVER_IRON_SHELL">
         <description>
