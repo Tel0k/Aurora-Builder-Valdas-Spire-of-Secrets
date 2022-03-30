@@ -4,11 +4,11 @@
 		<name>Arachnoid Stalker</name>
 		<description>The Arachnoid Stalker from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
-			<file name="rogue-aracnoid-stalker.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-aracnoid-stalker.xml" />
+		<update version="0.0.2">
+			<file name="rogue-arachnoid-stalker.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-arachnoid-stalker.xml" />
 		</update>
 	</info>
-    <element name="Arachnoid Stalker" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_ARACNOID_STALKER">
+    <element name="Arachnoid Stalker" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ROGUE_ARACHNOID_STALKER">
         <supports>Roguish Archetype</supports>
         <description>
             <p>A life-changing event, such as being cursed by a drider warlock or being bitten by a dangerously transmuted arachnid, has imbued you with the properties of a spider. This transformation might have left you physically unchanged, or you could have a half-dozen eyes, lanky, hairy limbs, or a set of inhuman mandibles. Whatever the transformation's side effects, you can now produce deadly poison and ropes of silken web from your palms, and eventually can scale the wall with your fingertips.</p>
