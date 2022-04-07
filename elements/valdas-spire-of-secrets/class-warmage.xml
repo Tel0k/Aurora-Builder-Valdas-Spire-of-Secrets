@@ -4,7 +4,7 @@
       <name>Warmage</name>
       <description>The Warmage from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.7">
+      <update version="0.0.8">
         <file name="class-warmage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warmage.xml" />
       </update>    
     </info>
