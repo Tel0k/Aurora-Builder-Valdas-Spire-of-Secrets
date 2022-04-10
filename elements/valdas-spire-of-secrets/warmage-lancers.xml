@@ -4,7 +4,7 @@
 		<name>House of Lancers</name>
 		<description>The Warmage's House of Lancers from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="warmage-lancers.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-lancers.xml" />
 		</update>
 	</info>
@@ -75,7 +75,7 @@
             <description> Whenever you make melee attack on your turn against a creature you can see, you can lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you do not land on solid ground.</description>
         </sheet>
     </element>
-    <element name="Mysical Physicality" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_MYSTICAL_PHYSICALITY">
+    <element name="Mystical Physicality" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_MYSTICAL_PHYSICALITY">
         <description>
             <p>Starting at 7th level, whenever you make a Strength, Dexterity, or Constitution check, you can use your Intelligence modifier instead of the normal modifier.</p>
             <p class="indent">In addition, moving through rough terrain no longer costs you additional movement.</p>
