@@ -3,7 +3,7 @@
 	<info>
 		<name>Spirithost</name>
 		<description>The Spirithost Race from Valda’s Spire of Secrets</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-spirithost.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-spirithost.xml" />
 		</update>
 	</info>
