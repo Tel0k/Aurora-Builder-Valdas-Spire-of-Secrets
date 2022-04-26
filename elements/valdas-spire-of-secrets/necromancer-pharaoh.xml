@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pharaoh</name>
+		<description>The Pharaoh from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-pharaoh.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-pharaoh.xml" />
+		</update>
+	</info>
+    <element name="Pharaoh" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>The god-kings of ancient kingdoms practiced a unique style of necromancy, forgotten to time. Through the extraction of organs, the desiccation of flesh, and innumerable enchantments, those ancient kings were able to rule their subjects as divine, undead beings, long past their mortal deaths. While those kingdoms have been lost to the shifting sands and wild jungles of the world, their methods have been preserved in the carvings of colossal temples and revived by modern necromancers, who take on the guise of the erstwhile pharaohs. Their magic is a hybrid of divine and arcane influences, the legacy of god-kings from a forgotten age.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_PHARAOH_PHARAOH_SPELLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PHARAOH_HOLY_SYMBOL" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PHARAOH_CHANNEL_DIVINITY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PHARAOH_MOCK_DIVINITY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PHARAOH_CD_SCARAB_OF_JUDGMDENT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_PHARAOH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_HOLY_SYMBOL" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_MOCK_DIVINITY" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_CD_SCARAB_OF_JUDGMDENT" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING" level="20" />
+        </rules>
+    </element>
+    <element name="Pharaoh Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_PHARAOH_SPELLS">
+        <description>
+            <p>You learn additional spells when you reach certain levels in this class, as shown in the table below. Each of these spells counts as a necromancer spell for you, but it doesn't count against the number of necromancer spells you know. New spells are marked with an asterisk.</p>
+            <p class="indent">Additionally, you learn the <i>thaumaturgy</i> cantrip, which is a necromancer spell for you and doesn't count against your number of cantrips known.</p>
+            <h5 class="caption">PHARAOH SPELLS</h5>
+            <table>
+				<thead>
+					<tr><td>Necromancer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>halo of flame*, lesser restoration</em></td></tr>
+				<tr><td>5th</td><td><em>revivify, snakestaff*</em></td></tr>
+				<tr><td>7th</td><td><em>death ward, divination</em></td></tr>
+				<tr><td>9th</td><td><em>insect plague, greater restoration</em></td></tr>
+			</table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_HALO_OF_FLAME" level="3" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_SNAKESTAFF" level="5" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="7" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Necromancer" />
+		</rules>
+    </element>
+    <element name="Holy Symbol" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_HOLY_SYMBOL">
+        <description>
+            <p>Starting at 3rd level, you can use a holy symbol as a spellcasting focus for your necromancer spells. </p>
+        </description>
+        <sheet>
+            <description> You can use a holy symbol as a spellcasting focus for your necromancer spells. </description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_CHANNEL_DIVINITY">
+        <description>
+            <p>Also at 3rd level, you can channel your pseudo-divinity to fuel magical effects. You start with one effect: Ankh of Radiance. When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again. Additionally, if you expend 15 Charnel Touch points as an action, you can regain your expended use of your Channel Divinity.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Ankh of Radiance.</em></strong> As an action, you can brandish your holy symbol and wreath each creature you choose within 60 feet of you in a holy radiance, which lasts for 1 minute. Whenever a creature wreathed in this holy radiance makes an attack roll or saving throw, it can roll a d4 and add the number rolled to the attack roll or saving throw. The first time a creature wreathed in this holy radiance takes damage, it has resistance to that damage. The holy radiance then ends for that creature.</p>
+        </description>
+        <sheet alt="Ankh of Radiance" action="Action" usage="Channel Divinity">
+            <description> You can brandish your holy symbol and wreath each creature you choose within 60 feet of you in a holy radiance, which lasts for 1 minute. Whenever a creature wreathed in this holy radiance makes an attack roll or saving throw, it can roll a d4 and add its result to it. The first time a creature wreathed in this holy radiance takes damage, it has resistance to that damage. The holy radiance then ends for that creature. </description>
+        </sheet>
+    </element>
+    <element name="Mock Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_MOCK_DIVINITY">
+        <description>
+            <p>Beginning at 6th level, you can convincingly reflect the trappings of a demigod walking the earth. You can create the following additional effects when using the <i>thaumaturgy</i> cantrip:</p>
+            <ul>
+                <li>You can brighten or darken the sun or moon, affecting the area within 120 feet of you for up to 1 minute. You can change darkness to dim light and dim light to bright light, or vice versa. Additionally, you can heighten bright light to a blazing radiance, which causes disadvantage on Wisdom (Perception) checks which rely on sight, or you can deepen darkness to a pitch black, which limits darkvision to a 30-foot radius. This deeper darkness has no effect on creatures that can see in magical darkness.</li>
+                <li>At a point you can see within 120 feet of you, you manifest a Huge illusory avatar of a deity, which mimics your movements and projects your speech in a booming voice for 1 minute.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You can create the following additional effects when using the thaumaturgy cantrip:&#13;
+            • Brighten or darken the sun or moon, affecting the area within 120 feet of you for up to 1 minute. Change darkness to dim light and dim light to bright light, or vice versa. Heighten bright light to a blazing radiance, which causes disadvantage on WIS(Perception) checks which rely on sight, or deepen darkness to a pitch black, which limits darkvision to a 30-foot radius. This deeper darkness has no effect on creatures that can see in magical darkness. &#13;
+            • At a point you can see within 120 feet of you, you manifest a Huge illusory avatar of a deity, which mimics your movements and projects your speech in a booming voice for 1 minute. </description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Scarab of Judgement" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_CD_SCARAB_OF_JUDGMDENT">
+        <description>
+            <p>Starting at 10th level, you can use your Channel Divinity to transfer life from the undead to the living. As an action, you can touch an undead creature you control and choose a willing humanoid you can see within 60 feet of you. The undead is destroyed and reduced to dust, and the humanoid regains hit points equal to the undead's hit points. Once a creature regains hit points in this way, it can't do so again until it finishes a short or long rest.</p>
+        </description>
+        <sheet alt="Scarab of Judgement" action="Action" usage="Channel Divinity">
+            <description> You can touch an undead creature you control and choose a willing humanoid you can see within 60 feet of you. The undead is destroyed and reduced to dust, and the humanoid regains hit points equal to the undead's hit points. Once a creature regains hit points in this way, it can't do so again until it finishes a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: God-King" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING">
+        <description>
+            <p>At 20th level, you undergo the ancient funeral rites of the pharaohs, removing your organs and entombing your body in a sarcophagus amongst your worldly possessions. You become the oldest and most exalted type of lich: a god-king. You gain the following features in addition to the Lichdom feature:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Canopic Phylacteries.</em></strong> Your phylactery has also changed with your transformation. Your stomach, lungs, intestines, and liver have been removed and placed into canopic jars. Each one has a specific weakness, which you will need to discuss with your GM, and your regeneration is only stopped when all four canopic jars are destroyed. When you are destroyed, you reform at your sarcophagus.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Mummy Rot.</em></strong> When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 3d6 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Whirlwind of Sand.</em></strong> As an action, you can magically transform into a whirlwind of sand, move up to 60 feet, and revert to your normal form. While in whirlwind form, you are immune to all damage, and you can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment you are wearing or carrying remains in your possession.</p>
+        </description>
+        <sheet>
+            <description> You undergo the ancient funeral rites of the pharaohs, removing your organs and entombing your body in a sarcophagus amongst your worldly possessions. You become the oldest and most exalted type of lich: a god-king. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING_CANOPIC_PHYLACTERIES" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING_MUMMY_ROT" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING_WHIRLWIND_OF_SAND" level="20" />
+        </rules>
+    </element>
+    <element name="Canopic Phylacteries" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING_CANOPIC_PHYLACTERIES">
+        <compendium display="false" />
+        <description>
+            <p>Your phylactery has also changed with your transformation. Your stomach, lungs, intestines, and liver have been removed and placed into canopic jars. Each one has a specific weakness, which you will need to discuss with your GM, and your regeneration is only stopped when all four canopic jars are destroyed. When you are destroyed, you reform at your sarcophagus.</p>
+        </description>
+        <sheet>
+            <description>Your phylactery changed into canopic jars. Each one has a specific weakness (discuss with your GM), and your regeneration is only stopped when all four jars are destroyed. When you are destroyed, you reform at your sarcophagus.</description>
+        </sheet>
+    </element>
+    <element name="Mummy Rot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING_MUMMY_ROT">
+        <compendium display="false" />
+        <description>
+            <p>When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 3d6 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.</p>
+        </description>
+        <sheet>
+            <description> When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a DC{{spellcasting:dc:int}} CON saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 3d6 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.</description>
+        </sheet>
+    </element>
+    <element name="Whirlwind of Sand" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PHARAOH_LICHDOM_GOD_KING_WHIRLWIND_OF_SAND">
+        <compendium display="false" />
+        <description>
+            <p>As an action, you can magically transform into a whirlwind of sand, move up to 60 feet, and revert to your normal form. While in whirlwind form, you are immune to all damage, and you can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment you are wearing or carrying remains in your possession.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can magically transform into a whirlwind of sand, move up to 60 feet, and revert to your normal form. While in whirlwind form, you are immune to all damage, and you can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment you are wearing or carrying remains in your possession.</description>
+        </sheet>
+    </element>
+</elements>

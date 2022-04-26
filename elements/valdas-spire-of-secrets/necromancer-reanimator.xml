@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Reanimator</name>
+		<description>The Reanimator from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-reanimator.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-reanimator.xml" />
+		</update>
+	</info>
+    <element name="Reanimator" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>Some necromancers are content to sit in dusty tombs with moldering tomes, occasionally picking apart a battlefield for fresh ingredients and new company. By contrast, death knights are a predators among scavengers, seizing their goals through a melding of magic and traditional combat. Bolstered with dark energies and sturdy armor, the death knight wields a weapons edged with death itself. They are simultaneously the vanguard and general of their undead forces, unafraid of getting their hands dirty when necessary.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_SKILLED_SURGEON" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_MAD_SCIENCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_CHARNEL_VOLTAGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LAZARUS_BOLT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_ARCANE_STITCHING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_SKILLED_SURGEON" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_MAD_SCIENCE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_CHARNEL_VOLTAGE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LAZARUS_BOLT" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_ARCANE_STITCHING" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM" level="20" />
+        </rules>
+    </element>
+    <element name="Skilled Surgeon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_SKILLED_SURGEON">
+        <description>
+            <p>Beginning when you choose this ambition at 3rd level, you gain proficiency in the Medicine skill, if you did not already have it. You can use your Intelligence, instead of Wisdom, for Wisdom (Medicine) checks.</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency in the Medicine skill, if you did not already have it. You can use your Intelligence, instead of Wisdom, for Wisdom (Medicine) checks.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" requirements="!ID_PROFICIENCY_SKILL_MEDICINE" />
+            <stat name="medicine:proficiency" value="-wisdom:modifier" />
+            <stat name="medicine:proficiency:ability" value="wisdom:modifier" bonus="ability" />
+            <stat name="medicine:proficiency:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="medicine:proficiency" value="medicine:proficiency:ability" />
+        </rules>
+    </element>
+    <element name="Mad Science" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_MAD_SCIENCE">
+        <description>
+            <p>At 3rd level, you can spend 10 minutes installing a monstrous graft on one of your thralls that doesn't have the Incorporeal Movement trait. Additionally, your thralls don't lose hit points or Hit Dice from installing or removing grafts, and it takes them no time to recover after the attachment of a new graft. See Compendium for monstrous grafts.</p>
+        </description>
+        <sheet>
+            <description> You can spend 10 minutes installing a monstrous graft on one of your thralls that doesn't have the Incorporeal Movement trait. Your thralls don't lose hit points or Hit Dice from installing or removing grafts, and it takes them no time to recover after the attachment of a new graft.</description>
+        </sheet>
+    </element>
+    <element name="Charnel Voltage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_CHARNEL_VOLTAGE">
+        <description>
+            <p>At 3rd level, you supplement your necromantic energies with arcing bolts of electricity. You can choose to deal lightning damage with your Charnel Touch. When you expend 5 or more points when making a Charnel Touch attack and deal lightning damage, you can cause the energy to arc to a second creature within 5 feet of the target. The creature must make a Dexterity saving throw against your spell save DC, taking lightning damage equal to half the number of Charnel Touch points expended on a failed save.</p>
+        </description>
+        <sheet>
+            <description>  You can choose to deal lightning damage with your Charnel Touch. When you expend 5 or more points when making a Charnel Touch attack and deal lightning damage, you can cause the energy to arc to a second creature within 5 feet of the target. The creature must make a DC{{spellcasting:dc:int}} DEX saving throw, taking lightning damage equal to half the number of Charnel Touch points expended on a failed save.</description>
+        </sheet>
+    </element>
+    <element name="Lazarus Bolt" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LAZARUS_BOLT">
+        <description>
+            <p>Starting at 6th level, as an action, you can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature returns to life with 1 hit point. This feature can't return a creature to life if it lacks a heart, died of old age, or is missing vital organs. Once this creature returns to life, you can restore hit points to it using your Charnel Touch for 1 minute, as if the creature were one of your thralls.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> You can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature returns to life with 1 hit point. It doesn't work if creature lacks a heart, died of old age, or is missing vital organs. Once this creature returns to life, you can restore hit points to it using your Charnel Touch for 1 minute, as if the creature were one of your thralls.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Stitching" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_ARCANE_STITCHING">
+        <description>
+            <p>Starting at 10th level, you've learned how to inscribe magical effects on your thralls using gruesome arcane stitches. You can expend 10 points from your Charnel Touch pool to apply an arcane stitch to one of your thralls in a process requiring 1 minute of work with a needle and thread. The arcane stitch lasts until your thrall uses it, your thrall is killed, or you use this feature again. You can apply any of the following arcane stitches:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Augmented Incision.</em></strong> The thrall gains advantage on attack rolls and ability checks until the end of its turn (no action required).</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Bulwark Backstitch.</em></strong> The thrall casts shieldwhen an attack would hit it.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Fleet Threads.</em></strong> The thrall's speed is tripled until the end of its turn (no action required).</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Searing Suture.</em></strong> On a hit, the thrall deals an extra 3d6 lightning or necrotic damage (your choice).</p>
+        </description>
+        <sheet>
+            <description> You can expend 10 points from your Charnel Touch pool to apply an arcane stitch to one of your thralls in a process requiring 1 minute of work with a needle and thread. The arcane stitch lasts until your thrall uses it, your thrall is killed, or you use this feature again. You can apply any of the following arcane stitches:&#13;
+            - AUGMENTED INCISION. The thrall gains advantage on attack rolls and ability checks until the end of its turn (no action required). &#13;
+            - BULWARK BACKSTITCH. The thrall casts shield when an attack would hit it. &#13;
+            - FLEET THREADS. The thrall's speed is tripled until the end of its turn (no action required). &#13;
+            - SEARING SUTURE. On a hit, the thrall deals an extra 3d6 lightning or necrotic damage (your choice).</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: Patchwork Golem" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM">
+        <description>
+            <p>At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Through abominable works of alchemy and surgery, you have constructed yourself an artificial body to act as the vessel for your soul.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Golem Form.</em></strong> Your Strength, Dexterity, and Constitution scores become 20 if they weren't already higher, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't adamantine. Additionally, you don't lose hit points or Hit Dice from installing or removing grafts, and it takes you no time to recover after the attachment of a new graft.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Magic Resistance.</em></strong> You have advantage on saving throws against spells and other magical effects.</p>
+        </description>
+        <sheet>
+            <description> You have reached the pinnacle of necromancy and transformed yourself into a lich. Through abominable works of alchemy and surgery, you have constructed yourself an artificial body as a vessel for your soul. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM_GOLEM_FORM" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM_MAGIC_RESISTANCE" level="20" />
+        </rules>	
+    </element>
+    <element name="Golem Form" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM_GOLEM_FORM">
+        <compendium display="false" />
+        <description>
+            <p>Your Strength, Dexterity, and Constitution scores become 20 if they weren't already higher, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't adamantine. Additionally, you don't lose hit points or Hit Dice from installing or removing grafts, and it takes you no time to recover after the attachment of a new graft.</p>
+        </description>
+        <sheet>
+            <description> STR, DEX, CON scores become 20. Resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't adamantine. You don't lose hit points or Hit Dice from installing or removing grafts, and it takes you no time to recover after the attachment of a new graft. </description>
+        </sheet>
+        <rules>
+            <stat name="strength:score:set" value="20" bonus="base" />
+            <stat name="dexterity:score:set" value="20" bonus="base" />
+            <stat name="constitution:score:set" value="20" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+    </element>
+    <element name="Magic Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REANIMATOR_LICHDOM_PATCHWORK_GOLEM_MAGIC_RESISTANCE">
+        <compendium display="false" />
+        <description>
+            <p>You have advantage on saving throws against spells and other magical effects.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against spells and other magical effects.</description>
+        </sheet>
+    </element>
+</elements>

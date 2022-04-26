@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Blood Ascendant</name>
+		<description>The Blood Ascendant from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-blood-ascendant.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-blood-ascendant.xml" />
+		</update>
+	</info>
+    <element name="Blood Ascendant" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>Necromantic might comes in many forms, but a singular, ancient source is the blood curse of vampirism. Though it promises much—immortality, agility, charm—it comes paired with insidious drawbacks, from the stinging burn of sunlight to a perpetual thirst for blood. Necromancers that wish to capture a measure of this power without suffering its myriad weaknesses perform a special ritual with vampiric blood in order to become Blood Ascendants. In doing so, they fall deathly pale and lose their reflection within mirrors, but learn to slowly pry out vampiric powers without fully succumbing to the all-devouring curse.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_ENTHRALL_HUMANOID" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_CHARNEL_DRAIN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_CHILDREN_OFTHE_NIGHT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_ENTHRALL_HUMANOID" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_CHARNEL_DRAIN" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_CHILDREN_OFTHE_NIGHT" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU" level="20" />
+        </rules>
+    </element>
+    <element name="Enthrall Humanoid" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_ENTHRALL_HUMANOID">
+        <description>
+            <p>Starting when you choose this ambition at 3rd level, you can use your action to touch an incapacitated humanoid, attempting to bring them under your necromantic control. The creature must make a Charisma saving throw against your spell save DC. On a failed save, it becomes enthralled by you. On a success, you can't use this feature against the creature for 24 hours. While enthralled, the creature is charmed by you and follows your commands. It remains enthralled until a remove curse spell is cast on it, the charmed condition is removed from it, you use this feature again, or you release the creature as an action.</p>
+            <p class="indent">An enthralled creature counts against the total number of thralls under your control and the total CR of thralls you can control. If the creature is of a higher CR than the total CR of thralls you control, you can't enthrall it. You can release thralls under your control as a part of the action used to enthrall a creature.</p>
+        </description>
+        <sheet action="Action">
+            <description> You touch an incapacitated humanoid. The creature must make a DC{{spellcasting:dc:cha}} CHA saving throw. On a failed save, it becomes enthralled by you. On a success, you can't use this feature against the creature for 24 hours. While enthralled, the creature is charmed by you and follows your commands. It remains enthralled until a remove curse spell is cast on it, the charmed condition is removed from it, you use this feature again, or you release the creature as an action.</description>
+        </sheet>
+    </element>
+    <element name="Charnel Drain" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_CHARNEL_DRAIN">
+        <description>
+            <p>At 3rd level, you drain the essence of those you slay. When you reduce a hostile creature or an enthralled humanoid to 0 hit points with your Charnel Touch, you regain hit points equal to your Intelligence modifier + your necromancer level (minimum 3). Additionally, you can choose to knock the target unconscious instead of killing it.</p>
+        </description>
+        <sheet>
+            <description> When you reduce a hostile creature or an enthralled humanoid to 0 hit points with your Charnel Touch, you regain {{charnel-drain}} HP (minimum 3). Additionally, you can choose to knock the target unconscious instead of killing it.</description>
+        </sheet>
+        <rules>
+            <stat name="charnel-drain" value="intelligence:modifier" />
+            <stat name="charnel-drain" value="level:necromancer" />
+        </rules>
+    </element>
+    <element name="Vampiric Transformation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION">
+        <description>
+            <p>Starting at 6th level, you can use your action and expend 15 Charnel Touch points to transform for up to 1 hour, or until you drop to 0 hit points or revert on your turn as an action. Anything you are wearing transforms with you, but objects you are carrying fall to the ground in your space. Choose one of the following transformations: </p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Bat.</em></strong> You transform into a Tiny bat. While in bat form, you can't speak, your walking speed is 5 feet, and you have a flying speed of 30 feet. Your statistics, other than your size and speed, are unchanged.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Mist.</em></strong> You transform into a Medium cloud of mist. While in mist form, you can't take any actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, you can do so without squeezing, and you can't pass through water. You have advantage on Strength, Dexterity, and Constitution saving throws, and you have resistance to bludgeoning, piercing, and slashing damage.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can expend 15 CTP to transform for up to 1 hour, or until you drop to 0 hit points or revert on your turn as an action. Anything you are wearing transforms with you, but objects you are carrying fall to the ground in your space. Choose one of the following transformations:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION_BAT" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION_MIST" />
+        </rules>
+    </element>
+    <element name="Bat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION_BAT">
+		<compendium display="false" />
+		<description>
+			<p>You transform into a Tiny bat. While in bat form, you can't speak, your walking speed is 5 feet, and you have a flying speed of 30 feet. Your statistics, other than your size and speed, are unchanged.</p>
+		</description>
+		<sheet>
+			<description> You transform into a Tiny bat. While in bat form, you can't speak, your walking speed is 5 feet, and you have a flying speed of 30 feet. Your statistics, other than your size and speed, are unchanged.</description>
+		</sheet>
+	</element>
+    <element name="Mist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_VAMPIRIC_TRANSFORMATION_MIST">
+		<compendium display="false" />
+		<description>
+			<p>You transform into a Medium cloud of mist. While in mist form, you can't take any actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, you can do so without squeezing, and you can't pass through water. You have advantage on Strength, Dexterity, and Constitution saving throws, and you have resistance to bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<sheet>
+			<description> You transform into a Medium cloud of mist. While in mist form, you can't take any actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, you can do so without squeezing, and you can't pass through water. You have advantage on Strength, Dexterity, and Constitution saving throws, and you have resistance to bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+	</element>
+    <element name="Children of the Night" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_CHILDREN_OFTHE_NIGHT">
+        <description>
+            <p>By 10th level, the hordes of the night answer to your beck and call. When you perform your Animate Thralls ritual, you can summon one or more wolves, swarms of bats, or swarms of rats to serve as your thralls. You command these creatures as your thralls. When one of these creatures is reduced to 0 hit points or released by you, it vanishes in a cloud of mist.</p>
+        </description>
+        <sheet>
+            <description> When you perform your Animate Thralls ritual, you can summon one or more wolves, swarms of bats, or swarms of rats to serve as your thralls. You command these creatures as your thralls. When one of these creatures is reduced to 0 hit points or released by you, it vanishes in a cloud of mist.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: Nosferatu" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU">
+        <description>
+            <p>At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. You have embraced the blood curse of vampirism to become a vampire lord in all but name: a nosferatu.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Coffin Phylactery.</em></strong> Your phylactery is a coffin filled with grave dirt. When you drop to 0 hit points, you reform in your coffin after 1 hour. You are permanently weakened until you spend 24 hours resting in the coffin. During this time, your hit point maximum is reduced to 1, and you drop to 0 hit points if you begin your turn in sunlight.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Regeneration.</em></strong> At the start of each of your turns, you regain 10 hit points. You don't gain this benefit if you have 0 hit points or you are in direct sunlight.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Vampiric Agility.</em></strong> Your speed is doubled. Additionally, you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description> You have embraced the blood curse of vampirism to become a vampire lord in all but name: a nosferatu. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU_COFFIN_PHYLACTERY" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU_REGENERATION" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU_VAMPIRIC_AGILITY" level="20" />
+        </rules>	
+    </element>
+    <element name="Coffin Phylactery" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU_COFFIN_PHYLACTERY">
+        <compendium display="false" />
+        <description>
+            <p>Your phylactery is a coffin filled with grave dirt. When you drop to 0 hit points, you reform in your coffin after 1 hour. You are permanently weakened until you spend 24 hours resting in the coffin. During this time, your hit point maximum is reduced to 1, and you drop to 0 hit points if you begin your turn in sunlight.</p>
+        </description>
+        <sheet>
+            <description> Your phylactery is a coffin filled with grave dirt. When you drop to 0 hit points, you reform in your coffin after 1 hour. You are permanently weakened until you spend 24 hours resting in the coffin. During this time, your hit point maximum is reduced to 1, and you drop to 0 hit points if you begin your turn in sunlight.</description>
+        </sheet>
+    </element>
+    <element name="Regeneration" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU_REGENERATION">
+        <compendium display="false" />
+        <description>
+            <p>At the start of each of your turns, you regain 10 hit points. You don't gain this benefit if you have 0 hit points or you are in direct sunlight.</p>
+        </description>
+        <sheet>
+            <description> At the start of each of your turns, you regain 10 hit points. You don't gain this benefit if you have 0 hit points or you are in direct sunlight.</description>
+        </sheet>   
+    </element>
+    <element name="Vampiric Agility" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_ASCENDANT_LICHDOM_NOSFERATU_VAMPIRIC_AGILITY">
+        <compendium display="false" />
+        <description>
+            <p>Your speed is doubled. Additionally, you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description> Your speed is doubled. Additionally, you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+        <rules>
+            <stat name="speed" value="innate speed:calculation" bonus="double" />
+            <stat name="innate speed:climb" value="innate speed:calculation" bonus="base" />
+        </rules>
+    </element>
+</elements>

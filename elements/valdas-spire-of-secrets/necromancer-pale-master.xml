@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pale Master</name>
+		<description>The Pale Master from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-pale-master.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-pale-master.xml" />
+		</update>
+	</info>
+    <element name="Pale Master" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>Some necromancers wish to conquer, and others to control, but all utilize their necromantic powers as a means to an end, a way to pave the way to their true ambitions. Pale masters are no different, but few have grand plans to compete with the overlords nor dedicate themselves to the art of war as the death knights do. Rather, pale masters dedicate themselves to self-improvement and the growth of their powers. Pale masters range from the curious mage's college student to the power-hungry spellcaster harassing the local hamlets. With the ability to embolden their spells, communicate with the undead, reduce the bravest souls to quibbling cowards, and effortlessly command their thralls in the thick of battle, these seemingly aimless spellcasters are no less a threat than any other necromancer.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_CHARNEL_EMPOWER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_UNDEAD_EMPATY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_FRIGHTENING_GAZE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_THRALL_RUSH" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_CHARNEL_EMPOWER" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_UNDEAD_EMPATY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_FRIGHTENING_GAZE" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_THRALL_RUSH" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT" level="20" />
+        </rules>
+    </element>
+    <element name="Charnel Empower" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_CHARNEL_EMPOWER">
+        <description>
+            <p>Starting when you choose this ambition at 3rd level, you can empower your spells with necromantic energy from your own well of magic. When you cast a necromancy spell of 1st level or higher that deals damage, you can expend a number of points up to your level + your Intelligence modifier from your Charnel Touch pool. When you do so, one of the spell's targets of your choice takes extra necrotic damage equal to the number of points expended.</p>
+        </description>
+        <sheet>
+            <description> When you cast a necromancy spell of 1st level or higher that deals damage, you can expend up to {{empower}} points from your Charnel Touch pool. When you do so, one of the spell's targets of your choice takes extra necrotic damage equal to the number of points expended.</description>
+        </sheet>
+        <rules>
+            <stat name="empower" value="level" />
+            <stat name="empower" value="intelligence:modifier" />
+        </rules>
+    </element>
+    <element name="Undead Empaty" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_UNDEAD_EMPATY">
+        <description>
+            <p>Also at 3rd level, your command of the undead affects the will of those who aren't under your control. Whenever an undead creature targets you with an attack, it must first make a Wisdom saving throw against your spell save DC. On a failed save, its attack misses and, if its Intelligence is 4 or lower, it becomes friendly to you and your allies for 1 minute.</p>
+            <p class="indent">Additionally, you have advantage on Charisma checks you make against undead with Intelligence of 5 or higher.</p>
+        </description>
+        <sheet>
+            <description> Whenever an undead creature targets you with an attack, it must first make a DC{{spellcasting:dc:int}} WIS saving throw. On a failed save, its attack misses and, if its Intelligence is 4 or lower, it becomes friendly to you and your allies for 1 minute. You have advantage on Charisma checks you make against undead with Intelligence of 5 or higher.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Gaze" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_FRIGHTENING_GAZE">
+        <description>
+            <p>Beginning at 6th level, you gain proficiency in the Intimidation skill, if you didn't have it already.</p>
+            <p class="indent">Additionally, you can expend 10 Charnel Touch points as a bonus action to fix your horrific gaze on a creature you can see within 60 feet of you. The target must make a Wisdom saving throw against your spell save DC or be frightened of you for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can expend 10 Charnel Touch points to fix your horrific gaze on a creature you can see within 60 feet of you. The target must make a DC{{spellcasting:dc:int}} WIS saving throw or be frightened of you for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+    </element>
+    <element name="Thrall Rush" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_THRALL_RUSH">
+        <description>
+            <p>Beginning at 10th level, whenever you roll initiative and aren't surprised, you can command each of your thralls to either move up to their speed or attack once.</p>
+        </description>
+        <sheet>
+            <description> Whenever you roll initiative and aren't surprised, you can command each of your thralls to either move up to their speed or attack once.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: Pale Ascendant" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT">
+        <description>
+            <p>At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Your skin clings tightly to your bones, your muscles wither, and your eyes turn milky and dull. Yet, through the veil of weakness, your body exudes unbelievable arcane power. You gain the following features in addition to the Lichdom feature:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Devour Soul.</em></strong> When you reduce a hostile creature to 0 hit points, you can immediately devour the creature's soul to refuel your horrific powers (no action required). Roll a d8 and regain expended spell slots of your choice whose combined level is no greater than the number rolled. You can't use this feature again until you finish a long rest.</p>
+            <p class="indent"> A creature whose soul is devoured can't be restored to life by any means short of a <i>true resurrection</i> or <i>wish</i> spell.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Paralyzing Touch.</em></strong> When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description> Your skin clings tightly to your bones, your muscles wither, and your eyes turn milky and dull. Yet, through the veil of weakness, your body exudes unbelievable arcane power. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT_DEVOUR_SOUL" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT_PARALYZING_TOUCH" level="20" />
+        </rules>
+    </element>
+    <element name="Devour Soul" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT_DEVOUR_SOUL">
+        <compendium display="false" />
+        <description>
+            <p>When you reduce a hostile creature to 0 hit points, you can immediately devour the creature's soul to refuel your horrific powers (no action required). Roll a d8 and regain expended spell slots of your choice whose combined level is no greater than the number rolled. You can't use this feature again until you finish a long rest.</p>
+            <p class="indent"> A creature whose soul is devoured can't be restored to life by any means short of a <i>true resurrection</i> or <i>wish</i> spell.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you reduce a hostile creature to 0 hit points, you can immediately devour the creature's soul to refuel your horrific powers (no action required). Roll a d8 and regain expended spell slots of your choice whose combined level is no greater than the number rolled.</description>
+        </sheet>
+    </element>
+    <element name="Paralyzing Touch" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALE_MASTER_LICHDOM_PALE_ASCENDANT_PARALYZING_TOUCH">
+        <compendium display="false" />
+        <description>
+            <p>When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description> When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a DC{{spellcasting:dc:int}} CON saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+</elements>

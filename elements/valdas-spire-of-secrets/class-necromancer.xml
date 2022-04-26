@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Necromancer</name>
+      <description>The Necromancer from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="class-necromancer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-necromancer.xml" />
+      </update>    
+    </info>
+    <element name="Necromancer" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_NECROMANCER">
+        <description>
+    <p>A withered, old woman reaches out and grasps a battle-hardened knight by the arm. The knight laughs at the crone's gesture before collapsing in mere seconds, desiccated and dead.</p>
+    <p class="indent">A scarred and grizzled warrior in breastplate leads a charge through a detachment of soldiers, swinging a glaive, shrouded in dark energies, at her foes. A shambling, undead vanguard follows her path, and her slain foes rise to join their ranks.</p>
+    <p class="indent">A grim, robed figure presides before his court, all arranged in a marble hall of gothic construction. Shambling corpses, abominations of flesh and bone, and dead-eyed, charmed nobles wait in attendance, forming perfect lines in silent obedience.</p>
+    <p class="indent">Necromancers are spellcasters that hold sway over the forces of life and death, twisting them to serve their own ambitions, and commanding small armies of lifeless, animated thralls.</p>
+    <h4>MORBID CURIOSITY</h4>
+    <p>Necromancers must match their grand intellects with an equal lack of scruples—the willingness to turn to forbidden knowledge and unquestionably evil methods. No matter their means, every necromancer is driven by a deep fascination with the dark arts and the power necromancy can afford them. Most see themselves as outcast members of the academic elite, braving new territories of magic that other spellcasters are too cowardly to explore.</p>
+    <p class="indent">However, collecting knowledge expanding their understanding is merely a means to an end for most necromancers; they are almost always driven by a deeper, darker impulse, a goal that pushes them to the utter brink. This might be the distorted ideal of a “greater good” or a goal to right the wrong of mortality; in every case, necromancy is a grim implement for their life's work.</p>
+    <h4>MASTERS OF UNDEATH</h4>
+    <p>Necromancers have learned through trial and error how to puppet the flesh, bone, and spirits of the dead, binding them to their will. Through their terrible magic, they command the forms of lesser undead, and demand respect from those powerful enough to resist their thrall. All necromancers share the capability of simply animating corpses, along with the knowledge and foresight to create new and terrible undead abominations to further their goals.</p>
+    <p class="indent">Beyond the basic command over the undead, each necromancer specializes in a method to impart their will upon the world. Some dive deeply into the necromantic arts, and some focus on their ability to assert control over the weak, while others still master the art of both martial and magical combat. While their skills might seem specialized, properly prepared necromancers can dominate both on the battlefield and at the round table.</p>
+    <h4>CREATING A NECROMANCER</h4>
+    <p>As you create your necromancer, the most important piece of information to consider is your character's ambition. What is your goal? How do you intend to achieve it? How does necromancy fit into the picture? Once you've decided on your ambition, consider why you turned to necromancy to accomplish it. Were you scorned by your previous spellcasting master? Did you come across an old, rotting tome filled with forgotten knowledge? Were you the survivor of some great attack by another necromancer?</p>
+    <p class="indent">Work with your GM to determine how necromancy is viewed in the world. Is it just another method of spellcasting, or is it an abominable tool, used only by the most abhorred spellcasters? How do commoners react when they see you? Must you hide your thralls from public scrutiny, and if so, how? Furthermore, do the other player characters know of your sinister magic, and if so, how have they reacted to seeing your puppeteered corpses? Work with other players, especially those with cleric and paladin characters, to find suitable reasons you might work together.</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make a necromancer quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution, and then Strength or Dexterity if you plan to choose the Death Knight ambition. Second, choose a background of your choice, preferably one that ties into your ambition. Third, choose <i>chill touch</i>, <i>hocuspocus</i>, <i>light</i>, and <i>spark of life</i> for your cantrips, and then choose <i>detect magic</i>, <i>expeditious retreat</i>, <i>Gahoul's shrieking skull</i>, and <i>inflict wounds</i> as your 4-level spells.</p>
+    <h2>CLASS FEATURES</h2>
+    <p>As an Necromancer, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d6 per Necromancer level</li>
+        <li><strong>Hit Points at 4 Level:</strong> 6 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per Necromancer level after 4</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> None</li>
+        <li><strong>Weapons:</strong> Simple weapons</li>
+        <li><strong>Tools:</strong> None</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Constitution, Intelligence</li>
+        <li><strong>Skills:</strong> Choose two from Arcana, Deception, History, Intimidation, Investigation, Medicine, Persuasion, and Religion</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>A dagger and any simple weapon</li>
+        <li>(a) a component pouch or (b) an arcane focus</li>
+        <li>A shovel and (a) a dungeoneer's pack or (b) a scholar's pack</li>
+    </ul>
+        <h5 class="caption">THE NECROMANCER</h5>
+        <table class="class-features">
+            <thead>
+                <tr><td class="col-5">Level</td><td class="col-5">Total Thrall CR</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+            </thead>
+            <tr><td> 1st</td><td>—</td><td class="left">Spellcasting, Charnel Touch</td><td>4</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 2nd</td><td>1/4</td><td class="left">Thralls, Bag of Bones</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 3rd</td><td>1/2</td><td class="left">Grave Ambition, Black Arcana</td><td>4</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 4th</td><td>1/2</td><td class="left">Ability Score Improvement</td><td>5</td><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 5th</td><td>1</td><td class="left">Critical Spellcasting</td><td>5</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 6th</td><td>1</td><td class="left">Grave Ambition feature</td><td>5</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 7th</td><td>1</td><td class="left">Enthralling Presence</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 8th</td><td>1</td><td class="left">Ability Score Improvement</td><td>5</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 9th</td><td>2</td><td class="left">—</td><td>5</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>10th</td><td>2</td><td class="left">Grave Ambition feature</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>11th</td><td>2</td><td class="left">—</td><td>6</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>12th</td><td>2</td><td class="left">Ability Score Improvement</td><td>6</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>13th</td><td>3</td><td class="left">—</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+            <tr><td>14th</td><td>3</td><td class="left">Critical Spellcasting improvement</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+            <tr><td>15th</td><td>3</td><td class="left">—</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>1</td><td>1</td><td>—</td></tr>
+            <tr><td>16th</td><td>3</td><td class="left">Ability Score Improvement</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+            <tr><td>17th</td><td>4</td><td class="left">—</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>18th</td><td>4</td><td class="left">Undying Servitude</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>19th</td><td>4</td><td class="left">Ability Score Improvement</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>20th</td><td>4</td><td class="left">Lichdom</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+        </table>
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_SPELLCASTING" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_CHARNEL_TOUCH" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_THRALLS" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_BAG_OF_BONES" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_GRAVE_AMBITION" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_BLACK_ARCANA" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_ABILITYSCOREIMPROVEMENT_NECROMANCER" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_CRITICAL_SPELLCASTING" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_ENTHRALLING_PRESENCE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_UNDYING_SERVITUDE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM" />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="short">Necromancers are spellcasters that hold sway over the forces of life and death, twisting them to serve their own ambitions, and commanding small armies of lifeless, animated thralls.</set>
+            <set name="hd">d6</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_NECROMANCER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MHP_VSOS_MULTICLASS_NECROMANCER"/>
+			<select type="Proficiency" name="Skill Proficiency (Necromancer)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_NECROMANCER"/>
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_CHARNEL_TOUCH" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_THRALLS" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_BAG_OF_BONES" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_GRAVE_AMBITION" level="3" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_BLACK_ARCANA" level="3" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_ABILITYSCOREIMPROVEMENT_NECROMANCER" level="4" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_CRITICAL_SPELLCASTING" level="5" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_ENTHRALLING_PRESENCE" level="7" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_UNDYING_SERVITUDE" level="18" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM" level="20" />
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_SPELLCASTING">
+        <description>
+            <p>Your connection to the realm of negative energy allows you to cast powerful necromantic spells.</p>
+            <h5 class="caption">CANTRIPS</h5>
+            <p>At 1st level, you know four cantrips of your choice from the necromancer spell list. You learn additional necromancer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Necromancer table.</p>
+            <h5 class="caption">SPELL SLOTS</h5>
+            <p>The Necromancer table shows how many spell slots you have to cast spells of the 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all spell slots when you finish a long rest.</p>
+            <h5 class="caption">SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+            <p>You know two 1st-level spells of your choice from the necromancer spell list.</p>
+            <p class="index">You learn an additional necromancer spell of your choice at each level except 12th, 14th, 16th, 18th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
+            <p class="index">Additionally, when you gain a level in this class, you can choose one of the necromancer spells you know and replace it with another spell from the necromancer spell list, which also must be of a level for which you have spell slots.</p>
+            <h5 class="caption">SPELLCASTING ABILITY</h5>
+            <p>Intelligence is your spellcasting ability for your necromancer spells, since your power is rooted in the fine manipulation of negative energy and research into magical secrets. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a necromancer spell you cast and when making an attack roll with one.</p>
+            <center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+            <h5 class="caption">RITUAL CASTING</h5>
+            <p>You can cast a necromancer spell you know as a ritual if that spell has the ritual tag.</p>
+            <h5 class="caption">SPELLCASTING FOCUS</h5>
+            <p>You can use an arcane focus as a spellcasting focus for your necromancer spells. For a necromancer, these are typically objects with sentimental value, such as a locket, childhood toy, prison shackle, or wedding ring, that are altered with magically conductive materials.</p>
+        </description>
+        <sheet display="false">
+			<description>You have the ability to cast spells.</description>
+		</sheet>
+		<spellcasting name="Necromancer" ability="Intelligence" allowReplace="true">
+			<list>Necromancer</list>
+		</spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="necromancer:spellcasting:slots:1" value="2" level="1" />
+			<stat name="necromancer:spellcasting:slots:1" value="1" level="2" />
+			<stat name="necromancer:spellcasting:slots:1" value="1" level="3" />
+			<stat name="necromancer:spellcasting:slots:2" value="2" level="3" />
+			<stat name="necromancer:spellcasting:slots:2" value="1" level="4" />
+			<stat name="necromancer:spellcasting:slots:3" value="2" level="5" />
+			<stat name="necromancer:spellcasting:slots:3" value="1" level="6" />
+			<stat name="necromancer:spellcasting:slots:4" value="1" level="7" />
+			<stat name="necromancer:spellcasting:slots:4" value="1" level="8" />
+			<stat name="necromancer:spellcasting:slots:4" value="1" level="9" />
+			<stat name="necromancer:spellcasting:slots:5" value="1" level="9" />
+			<stat name="necromancer:spellcasting:slots:5" value="1" level="10" />
+			<stat name="necromancer:spellcasting:slots:5" value="1" level="18" />
+			<stat name="necromancer:spellcasting:slots:6" value="1" level="11" />
+			<stat name="necromancer:spellcasting:slots:6" value="1" level="19" />
+			<stat name="necromancer:spellcasting:slots:7" value="1" level="13" />
+			<stat name="necromancer:spellcasting:slots:7" value="1" level="20" />
+			<stat name="necromancer:spellcasting:slots:8" value="1" level="15" />
+			<stat name="necromancer:spellcasting:slots:9" value="1" level="17" />
+            
+            <select type="Spell" name="Cantrip (Necromancer)" supports="$(spellcasting:list),0" level="1" number="4" spellcasting="Necromancer" />
+			<select type="Spell" name="Cantrip (Necromancer)" supports="$(spellcasting:list),0" level="4" spellcasting="Necromancer"/>
+			<select type="Spell" name="Cantrip (Necromancer)" supports="$(spellcasting:list),0" level="10" spellcasting="Necromancer"/>
+
+            <select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Necromancer"/>
+			<select type="Spell" name="Spell (Necromancer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Necromancer"/>
+        </rules>
+    </element>
+    <element name="Charnel Touch" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_CHARNEL_TOUCH">
+        <description>
+            <p>Your connection to the negative energy realm grants you an inner nexus of dangerous power, ready to be unleashed at a moment's notice. Starting at 1st level, you have a pool of Charnel Touch points equal to your necromancer level x 5 that replenishes when you finish a long rest.</p>
+            <p class="index">As an action, declare the number of points you wish to expend, up to a maximum of 5 x your proficiency bonus, and make a melee spell attack against one target within your reach. On a hit, you expend the declared amount of points and deal necrotic damage equal to the points expended. If you miss the attack, you don't expend any points. The damage dealt by your Charnel Touch is doubled when you score a critical hit, expending no additional points.</p>
+            <p class="index">This attack deals no damage to constructs and instead heals undead for the amount of points expended. You can target a willing creature with this ability without making a spell attack roll.</p>
+        </description>
+        <sheet usage="{{charnel-points}} Points/Long Rest">
+            <description>You have a pool of Charnel Touch Points (CTP) that you can expend, as an action, up to a maximum of {{max-points-usable}} CTP, and make a melee spell attack against one target within your reach. On a hit, you deal necrotic damage equal to the points expended. If you miss, you don't expend any points. The damage dealt by your Charnel Touch is doubled when you score a critical hit, expending no additional points. This attack deals no damage to constructs and instead heals undead for the amount of points expended. You can target a willing creature with this ability without making a spell attack roll.</description>
+        </sheet>
+        <rules>
+			<stat name="charnel-points" value="level:necromancer" />
+            <stat name="charnel-points" value="level:necromancer" />
+            <stat name="charnel-points" value="level:necromancer" />
+            <stat name="charnel-points" value="level:necromancer" />
+            <stat name="charnel-points" value="level:necromancer" />
+            <stat name="max-points-usable" value="proficiency" />
+            <stat name="max-points-usable" value="proficiency" />
+            <stat name="max-points-usable" value="proficiency" />
+            <stat name="max-points-usable" value="proficiency" />
+            <stat name="max-points-usable" value="proficiency" />
+		</rules>
+    </element>
+    <element name="Thralls" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_THRALLS">
+        <description>
+            <h5>DUE TO MISSING IMPLEMENTATIONS IN THE APP SOME THINGS AREN'T AVAILABLE</h5>
+            <p>While lesser spellcasters can only animate flesh and bone in a rudimentary fashion, and must expend valuable energy to maintain their undead's loyalty, true necromancers can provide their undead with a portion of their own life force, ensuring long-term obedience. Beginning at 2nd level, you learn an ancient and powerful ritual that allows you to raise and command your own army of the undead.</p>
+            <h5 class="caption">ANIMATE THRALLS</h5>
+            <p>By spending 10 uninterrupted minutes performing this ritual with a spellcasting focus or component pouch,you can raise the remains of one or more Small or Medium humanoids within 30 feet of you into undead creatures. Undead created in this way become your thralls. You maintain control over your thralls indefinitely. Stat blocks for skeletons, zombies, and other thralls can be found in the Undead Thralls section at the end of the class description.</p>
+            <h5 class="caption">COMMANDING THRALLS</h5>
+            <p>If you are conscious, you can mentally control all of your thralls, without using any actions. If you are unconscious, your thralls will move to protect your body from harm, but will not attack.</p>
+            <p class="index">In combat, your thralls take their turns immediately before or after your turn each round (your choice) All thralls collectively share one reaction and bonus action, which a single thrall can use each round.</p>
+            <p class="index">Thralls use your spell attack bonus to make their attacks.</p>
+            <h5 class="caption">MAXIMUM THRALLS</h5>
+            <p>You can animate and control one thrall of challenge rating (CR) 1/4. As you gain levels in this class, you can animate more thralls. The combined CR of all your thralls can't exceed the number shown in the Thrall CR Total column of the Necromancer table, and the total number of thralls under your control can never exceed your proficiency bonus.</p>
+            <p class="index">At any time, you can use your action to sever your connection to one or more thralls, releasing them. Corporeal undead crumple into a heap and incorporeal undead flee to the Ethereal Plane.</p>
+            <h5 class="caption">ANIMATE DEAD</h5>
+            <p>Beginning at 5th level, a necromancer can learn the <i>animate dead</i> spell, a staple of the school of necromancy. Necromancers can cast this spell as an action, instead of over the course of 1 minute. All undead created by the <i>animate dead</i> spell (as well as any other magic, such as the <i>create undead</i> spell, that allows you to control undead) count as your thralls and can be commanded as such. If your new thralls granted to you by a spell cause you to exceed your total CR or number of thralls, you can immediately sever your connection to any of your existing thralls so as to stay within these limits. Your thralls can never command or create other undead.</p>
+            <p class="index">As always, you can't reanimate your undead that have been reduced to 0 hit points. Your Animate Thralls ritual, the animate dead spell, and similar magic only affects humanoid corpses, whereas your thralls are undead creatures.</p>
+        </description>
+        <sheet>
+            <description> You learn an ancient and powerful ritual (10 minutes) that allows you to raise and command your own army of the undead (needs a spellcasting focus or component pouch). You can raise the remains of one or more Small or Medium humanoids within 30 feet of you into undead creatures. At start you can animate and control one thrall of challenge rating (CR) 1/4. As you gain levels in this class, you can animate more thralls. The combined CR of all your thralls can't exceed {{thrall:cr}}, and the total number of thralls under your control can never exceed {{proficiency}}. You can't reanimate your undead that have been reduced to 0 hit points.</description>
+            <description level="5"> You learn an ancient and powerful ritual (10 minutes) that allows you to raise and command your own army of the undead (needs a spellcasting focus or component pouch). You can raise the remains of one or more Small or Medium humanoids within 30 feet of you into undead creatures. At start you can animate and control one thrall of challenge rating (CR) 1/4. As you gain levels in this class, you can animate more thralls. The combined CR of all your thralls can't exceed {{thrall:cr}}, and the total number of thralls under your control can never exceed {{proficiency}}. You also learn the animate dead spell and can cast it as an action. All undead created by this and other spells count as your thralls and can be commanded as such. You can't reanimate your undead that have been reduced to 0 hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="thrall:cr" value="1/4" level="2" inline="true" />
+            <stat name="thrall:cr" value="1/2" level="3" inline="true" />
+            <stat name="thrall:cr" value="1" level="5" />
+            <stat name="thrall:cr" value="1" level="9" />
+            <stat name="thrall:cr" value="1" level="13" />
+            <stat name="thrall:cr" value="1" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="3" spellcasting="Necromancer" />
+            <select type="Companion" name="Thrall" supports="Thrall" level="2" />
+			<!--
+			<select type="Companion" name="Thrall 2" supports="Thrall" level="3" />
+			<select type="Companion" name="Thrall 3" supports="Thrall" level="5" />
+			<select type="Companion" name="Thrall 4" supports="Thrall" level="9" />
+			<select type="Companion" name="Thrall 5" supports="Thrall" level="13" />
+			<select type="Companion" name="Thrall 6" supports="Thrall" level="17" /> -->
+        </rules>
+    </element>
+    <element name="Bag of Bones" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_BAG_OF_BONES">
+        <description>
+            <p>Also at 2nd level, you learn how to create a necromantic magic item, a <i>bag of bones</i>. The bag connects to a vast extradimensional space that can only hold Medium or smaller corpses, bones, and undead creatures; it violently expels anything else placed within it. You can use an action to place a corpse or willing undead creature into the bag, up to a maximum of 10 corpses or undead creatures, or use your action to dump the contents of the bag, which land in spaces within 5 feet of you.</p>
+            <p class="index">You can transform any container you can carry into a <i>bag of bones</i> by performing a special ritual over the course of 1 hour while you hold it. This container ceases to be magical if you perform this ritual again to create a new <i>bag of bones</i>. The container always connects to the same extradimensional space. If the bag is placed inside an extradimensional space, such as that created by a <i>bag of holding</i>, it is destroyed. Its contents remain in the same extradimensional space until you create a new bag.</p>
+        </description>
+        <sheet>
+            <description>You learn how to create a necromantic magic item, a bag of bones. The bag connects to an extradimensional space that can hold up to a maximum of 10 Medium or smaller corpses, bones, and undead creatures; it violently expels anything else placed within it.</description>
+        </sheet>
+    </element>
+    <element name="Bag of Bones" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BAG_OF_BONES">
+        <compendium display="false" />
+        <description>
+            <p>This bag connects to a vast extradimensional space. The bag can hold up to a maximum of 10 corpses or undead creatures, it violently expels anything else placed within it.</p>
+            <p class="indent">You can use an action to place corpses or willing undead creatures into the bag, or use your action to dump the contents of the bag, which land in spaces within 5 feet of you.</p>
+            <p class="indent">You can transform any container you can carry into a <i>bag of bones</i> by performing a special ritual over the course of 1 hour while you hold it. This container ceases to be magical if you perform this ritual again to create a new <i>bag of bones</i>. The container always connects to the same extradimensional space. If the bag is placed inside an extradimensional space, such as that created by a <i>bag of holding</i>, it is destroyed. Its contents remain in the same extradimensional space until you create a new bag.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Grave Ambition" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_GRAVE_AMBITION">
+        <description>
+            <p>When you reach 3rd level, you decide on a proper path of research into the dark arts in order to carve a path leading toward your ultimate goal. Choose a Grave Ambition, detailed at the end of the class. Your choice grants you features at 3rd level, and again at 6th, 10th, and 20th level.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+			<select type="Archetype" name="Grave Ambition" supports="Grave Ambition" level="3" />
+		</rules>
+    </element>
+    <element name="Black Arcana" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_BLACK_ARCANA">
+        <description>
+            <p>Also beginning at 3rd level, as a bonus action, you can expend a spell slot to replenish your Charnel Touch pool. Your pool regains 1d8 expended points, plus 1d8 for each level of the spell slot expended, up to a maximum of your pool's total.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can expend a spell slot to replenish your Charnel Touch pool. Your pool regains 1d8 expended points, plus 1d8 for each level of the spell slot expended, up to a maximum of your pool's total.</description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_ABILITYSCOREIMPROVEMENT_NECROMANCER">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Necromancer 4)" supports="Improvement Option,Necromancer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Necromancer 8)" supports="Improvement Option,Necromancer,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Necromancer 12)" supports="Improvement Option,Necromancer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Necromancer 16)" supports="Improvement Option,Necromancer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Necromancer 19)" supports="Improvement Option,Necromancer,19" level="19" />
+		</rules>
+    </element>
+    <element name="Critical Spellcasting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_CRITICAL_SPELLCASTING">
+        <description>
+            <p>At 5th level, your potent necrotic powers punish your enemy at the first sign of weakness. When a creature rolls a 1 on a saving throw against one of your spells, it automatically fails the save, and you can roll all the spell's damage dice a second time, adding the total to the spell's damage against that creature. The additional damage only applies to the creature that rolled a 1.</p>
+            <p class="index">Additionally, your spell attacks score a critical hit on a roll of 19 or 20.</p>
+            <p class="index">Starting at 14th level, a creature automatically fails its saving throw against your spells and takes additional damage when it rolls a 1 or a 2. Additionally, your spell attacks score a critical hit on a roll of 18-20.</p>
+        </description>
+        <sheet>
+            <description> Your spell attacks score a critical hit on a roll of 19 or 20. Also when a creature rolls a 1 on a saving throw against one of your spells, it automatically fails it, and you can roll all the spell's damage dice a second time, adding the total to the spell's damage against that creature. The additional damage only applies to the creature that rolled a 1.</description>
+            <description level="14"> Your spell attacks score a critical hit on a roll of 18 or 20. Also when a creature rolls a 1 or 2 on a saving throw against one of your spells, it automatically fails it, and you can roll all the spell's damage dice a second time, adding the total to the spell's damage against that creature. The additional damage only applies to the creature that rolled a 1 or 2.</description>
+        </sheet>
+    </element>
+    <element name="Enthralling Presence" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_ENTHRALLING_PRESENCE">
+        <description>
+            <p>At 7th level, the negative energy that flows through you reinforces your thralls against those who would seek to destroy or control your servants. Your thralls and other undead you control are immune to effects that turn undead and can't be forcefully controlled by another creature while you are conscious.</p>
+        </description>
+        <sheet>
+            <description> Your thralls and other undead you control are immune to effects that turn undead and can't be forcefully controlled by another creature while you are conscious.</description>
+        </sheet>
+    </element>
+    <element name="Undying Servitude" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_UNDYING_SERVITUDE">
+        <description>
+            <p>When you reach 18th level, your connection to your thralls can pull them back from the brink of destruction. When a thrall under your control is reduced to 0 hit points but not destroyed outright, you can use your reaction to restore it to half of its maximum hit points. Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description> When a thrall under your control is reduced to 0 hit points but not destroyed outright, you can restore it to half of its maximum hit points.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM">
+        <description>
+            <p>By 20th level, you have unlocked the pinnacle of necromantic prowess, through which you will conquer death itself: The Rite of Lichdom. When you reach this level, you have completed your phylactery and are ready to undergo the rite. To do so, you shut yourself away for 30 days in an isolated location of your choice, and emerge as an immortal lich, an undead of unsurpassed power. Once the rite is complete, you gain the following benefits as well as those dictated by your choice of Grave Ambition.</p>
+            <h5 class="caption">PHYLACTERY</h5>
+            <p>A phylactery is a small object that houses a lich's soul, safeguarding its immortality. If you drop to 0 hit points, your body crumbles to dust, but your will and mind escape to the phylactery. After 1d4 + 1 days, a new body coalesces as near to your phylactery as possible and you return to life (or rather, unlife). When your body reforms, you gain the benefits of a long rest. The new body is identical in every way to the one that was destroyed.</p>
+            <h5 class="caption">UNDEAD RESILIENCE</h5>
+            <p>You gain immunity to necrotic and poison damage.</p>
+            <h5 class="caption">UNDEAD TRAITS</h5>
+            You are immune to the effects of exhaustion and you don't need to eat, drink, sleep, or breathe. You must still rest for 4 hours a day to gain the benefits of a long rest. Though your type is humanoid, spells and effects that specifically affect undead affect you as well. You are immune to any effect that turns undead.
+        </description>
+        <sheet>
+            <description> When you reach 20th level you have completed your phylactery and are ready to undergo The Rite of Lichdom. To do so, you shut yourself away for 30 days in an isolated location of your choice, and emerge as an immortal lich. You gain the following features:</description>
+        </sheet>
+		<rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM_PHYLACTERY" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM_UNDEAD_RESILIENCE" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM_UNDEAD_TRAITS" level="20" />
+        </rules>
+    </element>
+	<element name="Phylactery" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM_PHYLACTERY">
+        <compendium display="false" />
+        <description>
+            <p>A phylactery is a small object that houses a lich's soul, safeguarding its immortality. If you drop to 0 hit points, your body crumbles to dust, but your will and mind escape to the phylactery. After 1d4 + 1 days, a new body coalesces as near to your phylactery as possible and you return to life (or rather, unlife). When your body reforms, you gain the benefits of a long rest. The new body is identical in every way to the one that was destroyed.</p>
+        </description>
+        <sheet>
+            <description> A phylactery is a small object that houses a lich's soul, safeguarding its immortality. If you drop to 0 hit points, your body crumbles to dust, but your will and mind escape to the phylactery. After 1d4 + 1 days, a new body coalesces as near to your phylactery as possible and you return to life (or rather, unlife). When your body reforms, you gain the benefits of a long rest. The new body is identical in every way to the one that was destroyed.</description>
+        </sheet>   
+    </element>
+	<element name="Undead Resilience" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM_UNDEAD_RESILIENCE">
+        <compendium display="false" />
+        <description>
+            <p>You gain immunity to necrotic and poison damage.</p>
+        </description>
+        <sheet>
+            <description> You gain immunity to necrotic and poison damage.</description>
+        </sheet>	
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        </rules>   
+    </element>
+	<element name="Undead Traits" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM_UNDEAD_TRAITS">
+        <compendium display="false" />
+        <description>
+            <p>You are immune to the effects of exhaustion and you don't need to eat, drink, sleep, or breathe. You must still rest for 4 hours a day to gain the benefits of a long rest. Though your type is humanoid, spells and effects that specifically affect undead affect you as well. You are immune to any effect that turns undead.</p>
+        </description>
+        <sheet>
+            <description> You are immune to the effects of exhaustion and you don't need to eat, drink, sleep, or breathe. You must still rest for 4 hours a day to gain the benefits of a long rest. Though your type is humanoid, spells and effects that specifically affect undead affect you as well. You are immune to any effect that turns undead.</description>
+        </sheet>   
+    </element>
+
+    <!-- Thralls -->
+    <element name="Bonebeast" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_BONEBEAST">
+		<supports>Thrall</supports>
+        <description>Constructed of haphazardly assembled humanoid bones, a bonebeast looks nothing like a man. Lumbering about on four legs with great boney fangs, the beast can run as fast as a bear and strike as viciously as a lion.</description>
+		<setters>
+			<set name="strength">12</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">5</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">5</set>
+			<set name="ac">14 (natural armor)</set>
+			<set name="hp">27 (5d8+5)</set>
+			<set name="speed">40 ft.</set>
+            <set name="damage immunities">poison</set>
+            <set name="condition immunities">poisoned</set>
+            <set name="senses">darkvision 60 ft., passive Perception 10</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">1</set>
+            <set name="traits">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_BONEBEAST_KEEN_SMELL, ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_BONEBEAST_PACK_TACTICS</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_ACTION_BONEBEAST_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="27" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+		</rules>
+	</element>
+    <element name="Keen Smell" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_BONEBEAST_KEEN_SMELL">
+		<description>
+			<p>The bonebeast has advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>The bonebeast has advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+    <element name="Pack Tactics" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_BONEBEAST_PACK_TACTICS">
+		<description>
+			<p>The bonebeast has advantage on attack rolls against a creature if at least one of the bonebeast's allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>The bonebeast has advantage on attack rolls against a creature if at least one of the bonebeast's allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_BONEBEAST_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Gorger" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_GORGER">
+		<supports>Thrall</supports>
+        <description>An unholy tangling of flesh, the gorger still vaguely resembles a humanoid in profile, except for the gaping, toothed maw in its chest. Its colossal teeth are little more than sharpened ribs, but its monstrous bite can easily decapitate.</description>
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">7</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">7</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">6</set>
+			<set name="ac">8</set>
+			<set name="hp">36 (8d8)</set>
+			<set name="speed">30 ft.</set>
+            <set name="damage immunities">poison</set>
+            <set name="condition immunities">charmed, exhaustion, poisoned</set>
+            <set name="senses">blindsight 10 ft., darkvision 60 ft., passive Perception 10</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">1</set>
+            <set name="traits">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_GORGER_REGENERATION</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_ACTION_GORGER_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="8" />
+			<stat name="companion:hp:max" value="36" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+    <element name="Echolocation" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_GORGER_ECHOLOCATION">
+		<description>
+			<p>The gorger can't use its blindsight while deafened.</p>
+		</description>
+		<sheet>
+			<description>The gorger can't use its blindsight while deafened.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_GORGER_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit:  12 (2d8 + 3) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit:  12 (2d8 + 3) piercing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Gravetouched Ghoul" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_GRAVETOUCHED_GHOUL">
+		<supports>Thrall</supports>
+        <description>Gravetouched ghouls, which are suffused with terrible necromantic energies, manifest various deformities on their undead bodies. Despite being undead, their flesh knits itself back together nearly as quick as a troll's, with strength to match.</description>
+		<setters>
+			<set name="strength">18</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">9</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">8</set>
+			<set name="ac">12</set>
+			<set name="hp">63 (14d8)</set>
+			<set name="speed">30 ft.</set>
+            <set name="damage immunities">poison</set>
+            <set name="condition immunities">charmed, exhaustion, poisoned</set>
+            <set name="senses">blindsight 60 ft., passive Perception 10</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">2</set>
+            <set name="traits">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_GRAVETOUCHED_GHOUL_REGENERATION</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_ACTION_GRAVETOUCHED_GHOUL_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="63" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+    <element name="Regeneration" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_GRAVETOUCHED_GHOUL_REGENERATION">
+		<description>
+			<p>The gravetouched ghoul regains 5 hit points at the start of its turn. If the gravetouched ghoul takes fire or radiant damage, this trait doesn't function at the start of the gravetouched ghoul's next turn. The gravetouched ghoul dies only if it starts its turn with 0 hit points and doesn't regenerate.</p>
+		</description>
+		<sheet>
+			<description>The gravetouched ghoul regains 5 hit points at the start of its turn. If the gravetouched ghoul takes fire or radiant damage, this trait doesn't function at the start of the gravetouched ghoul's next turn. The gravetouched ghoul dies only if it starts its turn with 0 hit points and doesn't regenerate.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_GRAVETOUCHED_GHOUL_BITE">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) slashing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Skeleton" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_SKELETON">
+		<supports>Thrall</supports>
+        <description>The renanimated remains of humanoids long since dead, skeletons are puppets of bone held aloft by strings of magic. </description>
+		<setters>
+			<set name="strength">10</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">8</set>
+			<set name="charisma">5</set>
+			<set name="ac">13 (armor scraps)</set>
+			<set name="hp">13 (2d8 + 4)</set>
+			<set name="speed">30 ft.</set>
+            <set name="damage vulnerabilities">bludgeoning</set>
+            <set name="damage immunities">poison</set>
+            <set name="condition immunities">exhaustion, poisoned</set>
+            <set name="senses">darkvision 60 ft., passive Perception 9</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">1/4</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_SKELETON_SHORTSWORD, ID_MHP_VSOS_UNDEAD_THRALL_ACTION_SKELETON_SHORTBOW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="13" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+    <element name="Shortsword" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_SKELETON_SHORTSWORD">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Shortbow" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_SKELETON_SHORTBOW">
+		<description>
+			<p>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Spirit" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_SPIRIT">
+		<supports>Thrall</supports>
+        <description>A spirit is the scarcely tangible echo of a humanoid, a soul bound to the mortal realm by necromantic magic.</description>
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">9</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">11</set>
+			<set name="ac">15 (natural armor)</set>
+			<set name="hp">7 (2d8 - 2)</set>
+			<set name="speed">25 ft., fly 25 ft. (hover)</set>
+            <set name="damage vulnerabilities">radiant</set>
+            <set name="damage immunities">cold, poison, necrotic</set>
+            <set name="condition immunities">poisoned</set>
+            <set name="senses">darkvision 120 ft., passive Perception 10</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">1/4</set>
+            <set name="traits">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_SPIRIT_INCORPOREAL_MOVEMENT</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_ACTION_SPIRIT_GRAVE_TOUCH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="7" bonus="base" />
+			<stat name="companion:speed" value="25" bonus="base" />
+            <stat name="companion:speed:fly" value="25" bonus="base" />
+		</rules>
+	</element>
+    <element name="Incorporeal Movement" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_SPIRIT_INCORPOREAL_MOVEMENT">
+		<description>
+			<p>The spirit can move through other creatures and objects as if they were difficult terrain. The spirit takes 5 (1d10) force damage if it ends its turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>The spirit can move through other creatures and objects as if they were difficult terrain. The spirit takes 5 (1d10) force damage if it ends its turn inside an object.</description>
+		</sheet>
+	</element>
+	<element name="Grave Touch" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_SPIRIT_GRAVE_TOUCH">
+		<description>
+			<p>Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) necrotic damage and the target’s hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>
+		</description>
+		<sheet>
+			<description>Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) necrotic damage and the target’s hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</description>
+		</sheet>
+	</element>
+
+    <element name="Visage" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_VISAGE">
+		<supports>Thrall</supports>
+        <description>Mournfully longing for the world of the living, a visage is the lingering soul of a departed humanoid. Their yearning for a life once lived binds them to the mortal realm, and drives mad those who see their terrible countenance.</description>
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">11</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">40 (9d8)</set>
+			<set name="speed">25 ft., fly 25 ft. (hover)</set>
+            <set name="damage immunities">cold, poison, necrotic</set>
+            <set name="condition immunities">poisoned</set>
+            <set name="senses">darkvision 120 ft., passive Perception 10</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">2</set>
+            <set name="traits">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_VISAGE_INCORPOREAL_MOVEMENT, ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_VISAGE_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_ACTION_VISAGE_HORRIFY, ID_MHP_VSOS_UNDEAD_THRALL_ACTION_VISAGE_INVISIBILITY</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" />
+			<stat name="companion:hp:max" value="40" bonus="base" />
+			<stat name="companion:speed" value="25" bonus="base" />
+            <stat name="companion:speed:fly" value="25" bonus="base" />
+		</rules>
+	</element>
+    <element name="Incorporeal Movement" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_SPIRIT_INCORPOREAL_MOVEMENT">
+		<description>
+			<p>The spirit can move through other creatures and objects as if they were difficult terrain. The spirit takes 5 (1d10) force damage if it ends its turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>The spirit can move through other creatures and objects as if they were difficult terrain. The spirit takes 5 (1d10) force damage if it ends its turn inside an object.</description>
+		</sheet>
+	</element>
+    <element name="Magic Resistance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_VISAGE_MAGIC_RESISTANCE">
+		<description>
+			<p> The visage has advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description> The visage has advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+	<element name="Horrify" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_VISAGE_HORRIFY">
+		<description>
+			<p>Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 15 (5d4 + 3) psychic damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 15 (5d4 + 3) psychic damage.</description>
+		</sheet>
+	</element>
+    <element name="Invisibility" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_VISAGE_INVISIBILITY">
+		<description>
+			<p>The visage magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the visage wears or carries is invisible with it.</p>
+		</description>
+		<sheet>
+			<description>The visage magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the visage wears or carries is invisible with it.</description>
+		</sheet>
+	</element>
+
+    <element name="Zombie" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ZOMBIE">
+		<supports>Thrall</supports>
+        <description>A zombie is the rotting remains of the once living, held together and driven by dark magic.</description>
+		<setters>
+			<set name="strength">13</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">6</set>
+			<set name="charisma">5</set>
+			<set name="ac">8</set>
+			<set name="hp">22 (3d8 + 9)</set>
+			<set name="speed">20 ft.</set>
+            <set name="damage immunities">poison</set>
+            <set name="condition immunities">poisoned</set>
+            <set name="senses">darkvision 60 ft., passive Perception 8</set>
+			<set name="languages">understands all languages it knew in life, as well as the languages of its creator, but can't speak</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">any evil alignment</set>
+			<set name="challenge">1/4</set>
+            <set name="traits">ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_ZOMBIE_UNDEAD_FORTITUDE</set>
+			<set name="actions">ID_MHP_VSOS_UNDEAD_THRALL_ACTION_ZOMBIE_SLAM</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="8" />
+			<stat name="companion:hp:max" value="22" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+		</rules>
+	</element>
+    <element name="Undead Fortitude" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_TRAIT_ZOMBIE_UNDEAD_FORTITUDE">
+		<description>
+			<p>If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.</p>
+		</description>
+		<sheet>
+			<description>If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.</description>
+		</sheet>
+	</element>
+	<element name="Slam" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_UNDEAD_THRALL_ACTION_ZOMBIE_SLAM">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+</elements>    

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Reaper</name>
+		<description>The Reaper from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-reaper.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-reaper.xml" />
+		</update>
+	</info>
+    <element name="Reaper" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>The oblivion of death is the sure wellspring of all necromancy, a dark abyss into which all necromancers stare, and which sometimes stares back. Those rare necromancers that gamble with their own souls might become intertwined with death, becoming reapers, figures of shadow and demise that beckon others to the afterlife. For performing this deed, they strengthen their connection to the distant oblivion, until they are but tenebrous shadows: harbingers of an inevitable end.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_REAPER_SHROUD_OF_DEATH" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REAPER_CHARNEL_VEIL" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REAPER_UMBRAL_FORM" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REAPER_WRAITH_FLIGHT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_SHROUD_OF_DEATH" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_CHARNEL_VEIL" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_UMBRAL_FORM" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_WRAITH_FLIGHT" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER" level="20" />
+        </rules>
+    </element>
+    <element name="Shroud of Death" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_SHROUD_OF_DEATH">
+        <description>
+            <p>Starting when you choose this ambition at 3rd level, you manifest a wispy cloak of darkness about your person, which you can hide or reveal as a bonus action. While cloaked, you levitate one inch off the ground and nonmagical difficult terrain costs you no extra movement. Additionally, you can walk across fluid surfaces, such as water and quicksand, as if they were solid ground.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description level="6">You manifest a wispy cloak of darkness about your person. While cloaked, you levitate one inch off the ground and nonmagical difficult terrain costs you no extra movement. You can walk across fluid surfaces as if they were solid ground.</description>
+        </sheet>
+    </element>
+    <element name="Charnel Veil" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_CHARNEL_VEIL">
+        <description>
+            <p>At 3rd level, you can fade from view like a specter of death. Whenever you make a Charnel Touch attack, you can become invisible until the end of your turn, whether you hit or miss. This effect ends early if you move further than 10 feet.</p>
+        </description>
+        <sheet>
+            <description> Whenever you make a Charnel Touch attack, you can become invisible until the end of your turn, whether you hit or miss. This effect ends early if you move further than 10 feet.</description>
+        </sheet>
+    </element>
+    <element name="Umbral Form" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_UMBRAL_FORM">
+        <description>
+            <p>Beginning at 6th level, as an action, you can sink into a surface, flattening until only a shadow remains. As a shadow, you can only move along the surfaces to which you are attached, but you gain a climbing speed equal to your walking speed.</p>
+            <p class="indent">Additionally, while in the form of a shadow, you can move across difficult surfaces, including ceilings, without needing to make an ability check. You can't talk or manipulate objects, and any objects you are carrying or holding can't be dropped, used, or otherwise interacted with. You can't attack or cast spells, and opportunity attacks against you are made with disadvantage while you are in the form of a shadow.</p>
+            <p class="indent">If you are in darkness as a shadow, you are effectively invisible to creatures without darkvision or the ability to see in darkness.</p>
+            <p class="indent">You can end this ability as a bonus action on your turn. You then have advantage on the first melee attack you make before the end of the turn.</p>
+        </description>
+        <sheet action="Action/Activate - Bonus Action/End">
+            <description> You can sink into a surface, flattening until only a shadow remains. As shadow, you can only move along the surfaces to which you are attached, but you gain a climbing speed = walking speed. You can move across difficult surfaces, including ceilings, without needing to make an ability check. You can't talk or manipulate your surrounding, use, pick or drop objects you are carrying. You can't attack or cast spells, and opportunity attacks against you are made with disadvantage. If you are in darkness as a shadow, you are effectively invisible to creatures without darkvision or the ability to see in darkness. 
+            When you end this ability you have advantage on the first melee attack you make before the end of the turn.</description>
+        </sheet>
+    </element>
+    <element name="Wraith Flight" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_WRAITH_FLIGHT">
+        <description>
+            <p>Beginning at 10th level, spirits you command move with an unearthly speed. The flying speeds of your thralls are doubled. Additionally, when one of your thralls flies out of an enemy's reach, opportunity attacks against it are made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description> The flying speeds of your thralls are doubled. Additionally, when one of your thralls flies out of an enemy's reach, opportunity attacks against it are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: Harbinger" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER">
+        <description>
+            <p>At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. You have become an embodiment of death itself, a harbinger of the ultimate end. Clad in shadows, you seem little more than a grim skeletal presence in a foreboding robe, a sight which all men fear to behold.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Death's Touch.</em></strong> When you use your Charnel Touch against a creature you can see and roll an 11 or higher on the d20 for the attack roll, you hit the target, regardless of its AC.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Fell Flight.</em></strong> You gain a flying speed of 50 feet.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Grim Harvest.</em></strong> When you kill a humanoid using Charnel Touch, you rip their soul from their body, which animates as a visage under your control.</p>
+        </description>
+        <sheet>
+            <description> You have become an embodiment of death itself, a harbinger of the ultimate end. Clad in shadows, you seem little more than a grim skeletal presence in a foreboding robe. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER_DEATHS_TOUCH" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER_FELL_FLIGHT" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER_GRIM_HARVEST" level="20" />
+        </rules>	
+    </element>
+    <element name="Death's Touch" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER_DEATHS_TOUCH">
+        <compendium display="false" />
+        <description>
+            <p>When you use your Charnel Touch against a creature you can see and roll an 11 or higher on the d20 for the attack roll, you hit the target, regardless of its AC.</p>
+        </description>
+        <sheet>
+            <description> When you use your Charnel Touch against a creature you can see and roll an 11 or higher on the d20 for the attack roll, you hit the target, regardless of its AC.</description>
+        </sheet>
+    </element>
+    <element name="Fell Flight" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER_FELL_FLIGHT">
+        <compendium display="false" />
+        <description>
+            <p>You gain a flying speed of 50 feet.</p>
+        </description>
+        <sheet>
+            <description> You gain a flying speed of 50 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly" value="50" />
+        </rules> 
+    </element>
+    <element name="Grim Harvest" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_REAPER_LICHDOM_HARBINGER_GRIM_HARVEST">
+        <compendium display="false" />
+        <description>
+            <p>When you kill a humanoid using Charnel Touch, you rip their soul from their body, which animates as a visage under your control.</p>
+        </description>
+        <sheet>
+            <description> When you kill a humanoid using Charnel Touch, you rip their soul from their body, which animates as a visage under your control.</description>
+        </sheet>
+    </element>
+</elements>

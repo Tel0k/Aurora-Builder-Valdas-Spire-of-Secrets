@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Overlord</name>
+		<description>The Overlord from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-overlord.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-overlord.xml" />
+		</update>
+	</info>
+    <element name="Overlord" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>Necromantic might comes in many forms, but a singular, ancient source is the blood curse of vampirism. Though it promises much—immortality, agility, charm—it comes paired with insidious drawbacks, from the stinging burn of sunlight to a perpetual thirst for blood. Necromancers that wish to capture a measure of this power without suffering its myriad weaknesses perform a special ritual with DESPOTIC blood in order to become Overlords. In doing so, they fall deathly pale and lose their reflection within mirrors, but learn to slowly pry out DESPOTIC powers without fully succumbing to the all-devouring curse.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_OVERLORD_OVERLORD_SPELLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_OVERLORD_CHARNEL_BOON" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_OVERLORD_DESPOTIC_DISCOURSE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_OVERLORD_SACRIFICIAL_THRALLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_OVERLORD_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_CHARNEL_BOON" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_DESPOTIC_DISCOURSE" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_SACRIFICIAL_THRALLS" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT" level="20" />
+        </rules>
+    </element>
+    <element name="Overlord Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_OVERLORD_SPELLS">
+        <description>
+            <p>You learn additional spells when you reach certain levels in this class, as shown in the table below. Each of these spells counts as a necromancer spell for you, but it doesn't count against the number of necromancer spells you know.</p>
+            <h5 class="caption">OVERLORD SPELLS</h5>
+            <table>
+				<thead>
+					<tr><td>Necromancer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>hold person, suggestion</em></td></tr>
+				<tr><td>5th</td><td><em>haste, slow</em></td></tr>
+				<tr><td>7th</td><td><em>compulsion, confusion</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, geas</em></td></tr>
+			</table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="7" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Necromancer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="9" spellcasting="Necromancer" />
+		</rules>
+    </element>
+    <element name="Charnel Boon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_CHARNEL_BOON">
+        <description>
+            <p>At 3rd level, you can grant a boon to minions by empowering them with your own potency. As a bonus action on your turn, you can expend any number of points from your Charnel Touch pool to empower each of your thralls within 30 feet of you. Until the start of your next turn, those thralls gain a +1 bonus to their attack rolls, damage rolls, and AC for every 5 points expended, up to a maximum of +3.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can expend any number of points from your Charnel Touch pool to empower each of your thralls within 30 feet of you. Until the start of your next turn, those thralls gain a +1 bonus to their attack rolls, damage rolls, and AC for every 5 points expended, up to a maximum of +3.</description>
+        </sheet>
+    </element>
+    <element name="Despotic Discourse" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_DESPOTIC_DISCOURSE">
+        <description>
+            <p>When you reach 6th level, your black magic has granted you a silver tongue, which you can use to manipulate those around you. You gain proficiency in one of the following skills of your choice: Deception, Intimidation, or Persuasion.</p>
+            <p class="indent">Additionally, you can use your Intelligence, instead of Charisma, for Charisma (Deception), Charisma (Intimidation), and Charisma (Persuasion) checks.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<select type="Proficiency" name="Despotic Discourse" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION" />
+            <stat name="deception:proficiency" value="-charisma:modifier" />
+            <stat name="intimidation:proficiency" value="-charisma:modifier" />
+            <stat name="persuasion:proficiency" value="-charisma:modifier" />
+            <stat name="deception:proficiency:ability" value="charisma:modifier" bonus="ability" />
+            <stat name="deception:proficiency:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="deception:proficiency" value="deception:proficiency:ability" />
+            <stat name="intimidation:proficiency:ability" value="charisma:modifier" bonus="ability" />
+            <stat name="intimidation:proficiency:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="intimidation:proficiency" value="intimidation:proficiency:ability" />
+            <stat name="persuasion:proficiency:ability" value="charisma:modifier" bonus="ability" />
+            <stat name="persuasion:proficiency:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="persuasion:proficiency" value="persuasion:proficiency:ability" />
+		</rules>
+    </element>
+    <element name="Sacrificial Thralls" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_SACRIFICIAL_THRALLS">
+        <description>
+            <p>At 10th level, you can force your thralls to sacrifice themselves to ensure your own safety. When you are targeted by an attack, you can use your reaction to force a thrall within 5 feet of you to become the new target of the attack.</p>
+            <p class="indent">Once you use this feature, you can't do so until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short||Long Rest">
+            <description> When you are targeted by an attack, you can force a thrall within 5 feet of you to become the new target of the attack.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: Tyrant" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT">
+        <description>
+            <p>At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Your desire for control has warped your transformation, turning you into a tyrant lich. Your flesh and bone rapidly decay, reducing your features to nothing more than two glowing dots beneath your hood. You gain the following features in addition to the Lichdom feature:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Immortal Rule.</em></strong>  If you drop to 0 hit points, you can choose to possess a nearby body, instead of beginning the process of reforming at your phylactery. When you do so, choose an unconscious humanoid or the corpse of one that has died within the last minute that is within 120 feet of you to possess (a creature warded by a <i>protection from evil and good</i> or <i>magic circle</i> spell can't be possessed).</p>
+            <p class="indent"> Once you possess a body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. If the body has 0 hit points when you possess it, its type becomes undead and it regains 50 hit points, up to its hit point maximum. You retain the benefit of your own class features. If the target has any class levels, you can't use any of its class features.</p>
+            <p class="indent"> If you possess the body of an unconscious creature, the creature makes a Charisma saving throw against your spell save DC after 8 hours, and it repeats the save every 8 hours thereafter until the effect ends. On a success, you are ejected from the body and begin the process of reforming at your phylactery. You are also ejected if the body dies or you choose to leave it as an action. Once you've possessed a creature in this way, you can't possess it again using this feature.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Tyrant's Influence.</em></strong> You can expend 25 points from your Charnel Touch pool to cast the <i>dominate beast</i> spell without expending a spell slot. You can also expend 30 points to cast the <i>dominate person</i> spell, or 60 points to cast the <i>dominate monster</i> spell without expending a spell slot.</p>
+        </description>
+        <sheet>
+            <description> Your desire for control has warped your transformation, turning you into a tyrant lich. Your flesh and bone rapidly decay, reducing your features to nothing more than two glowing dots beneath your hood. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT_IMMORTAL_RULE" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT_TYRANT_INFLUENCE" level="20" />
+        </rules>
+    </element>
+    <element name="Immortal Rule" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT_IMMORTAL_RULE">
+        <compendium display="false" />
+        <description>
+            <p>If you drop to 0 hit points, you can choose to possess a nearby body, instead of beginning the process of reforming at your phylactery. When you do so, choose an unconscious humanoid or the corpse of one that has died within the last minute that is within 120 feet of you to possess (a creature warded by a <i>protection from evil and good</i> or <i>magic circle</i> spell can't be possessed).</p>
+            <p class="indent"> Once you possess a body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. If the body has 0 hit points when you possess it, its type becomes undead and it regains 50 hit points, up to its hit point maximum. You retain the benefit of your own class features. If the target has any class levels, you can't use any of its class features.</p>
+            <p class="indent"> If you possess the body of an unconscious creature, the creature makes a Charisma saving throw against your spell save DC after 8 hours, and it repeats the save every 8 hours thereafter until the effect ends. On a success, you are ejected from the body and begin the process of reforming at your phylactery. You are also ejected if the body dies or you choose to leave it as an action. Once you've possessed a creature in this way, you can't possess it again using this feature.</p>
+        </description>
+        <sheet>
+            <description> If you drop to 0 hit points, you can choose to possess a nearby body, instead of beginning the process of reforming at your phylactery. When you do so, choose an unconscious humanoid or the corpse of one that has died within the last minute that is within 120 feet of you to possess (a creature warded by a protection from evil and good or magic circle spell can't be possessed).&#13;
+            If you possess the body of an unconscious creature, the creature makes a DC{{spellcasting:dc:int}} CHA saving throw after 8 hours, and it repeats the save every 8 hours thereafter until the effect ends. On a success, you are ejected from the body and begin the process of reforming at your phylactery. You are also ejected if the body dies or you choose to leave it as an action. Once you've possessed a creature in this way, you can't possess it again using this feature.</description>
+        </sheet>
+    </element>
+    <element name="Tyrant's Influence" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OVERLORD_LICHDOM_TYRANT_TYRANT_INFLUENCE">
+        <compendium display="false" />
+        <description>
+            <p>You can expend 25 points from your Charnel Touch pool to cast the dominate beast spell without expending a spell slot. You can also expend 30 points to cast the dominate person spell, or 60 points to cast the dominate monster spell without expending a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can expend CTP to cast the following spells without expending a spell slot:&#13;
+            - DOMINATE BEAST. 25 Points. &#13;
+            - DOMINATE PERSON. 30 Points. &#13;
+            - DOMINATE MONSTER. 60 Points.</description>
+        </sheet>
+    </element>
+</elements>

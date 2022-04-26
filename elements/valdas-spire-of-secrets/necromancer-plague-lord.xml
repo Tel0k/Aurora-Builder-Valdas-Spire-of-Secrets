@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Plague Lord</name>
+		<description>The Plague Lord from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.2">
+			<file name="necromancer-plague-lord.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/necromancer-plague-lord.xml" />
+		</update>
+	</info>
+    <element name="Plague Lord" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD">
+        <supports>Grave Ambition</supports>
+        <description>
+            <p>The power of plagues can't be denied. A single disease can single-handedly overwhelm a nation, or even an empire. Necromancers that realize the potential within sickness will often seek to wield that power themselves. These are known as plague lords, commanders of vermin and disease alike. A plague lord's touch is toxic, and vermin protect them from harm, can transfer their spells through unconventional means, and spread their filth to their thralls. </p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_CHARNEL_TOXIN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_VILE_CONGREGATION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_PROJECTILE_SPEW" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_BLOATED_THRALLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_CHARNEL_TOXIN" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_VILE_CONGREGATION" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_PROJECTILE_SPEW" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_BLOATED_THRALLS" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH" level="20" />
+        </rules>
+    </element>
+    <element name="Charnel Toxin" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_CHARNEL_TOXIN">
+        <description>
+            <p>At 3rd level, even your touch can cause sickness. When you expend 10 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be poisoned until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description> When you expend 10 or more points when making a Charnel Touch attack, the target must succeed on a on a DC{{spellcasting:dc:int}} CON saving throw or be poisoned until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Vile Congregation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_VILE_CONGREGATION">
+        <description>
+            <p>Starting at 3rd level, leagues of vermin cling to your skin and swarm over others nearby. Whenever a creature within 5 feet of you makes an attack roll or saving throw, you can roll a d4 and subtract the result from its attack roll or saving throw. This ability has no effect on constructs and undead.</p>
+        </description>
+        <sheet>
+            <description> Whenever a creature within 5 feet of you makes an attack roll or saving throw, you can roll a d4 and subtract the result from its attack roll or saving throw. This ability has no effect on constructs and undead.</description>
+        </sheet>
+    </element>
+    <element name="Projectile Spew" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_PROJECTILE_SPEW">
+        <description>
+            <p>Beginning at 6th level, your own inner nexus of power has become a volatile cocktail of disease, allowing your spells to have a far greater reach. You can reach creatures up to 15 feet away from you with your Charnel Touch feature and spells with a range of touch, as you use magically imbued projectile vomit to deliver your payload.</p>
+        </description>
+        <sheet>
+            <description> You can reach creatures up to 15 feet away from you with your Charnel Touch feature and spells with a range of touch, as you use magically imbued projectile vomit to deliver your payload.</description>
+        </sheet>
+    </element>
+    <element name="Bloathed Thralls" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_BLOATED_THRALLS">
+        <description>
+            <p>At 10th level, your thralls have become hives of vermin and disease, ready to burst at any moment. When a thrall drops to 0 hit points or you release it, you can choose to cause it to explode in a shower of poison, gore, and vermin. Each creature within 5 feet of the thrall, other than yourself and your other thralls, must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 4d6 poison damage and is poisoned until the start of your next turn. On a successful save, a creature takes half as much damage and isn't poisoned.</p>
+        </description>
+        <sheet>
+            <description> When a thrall drops to 0 hit points or you release it, you can choose to cause it to explode. Each creature within 5 feet of the thrall, other than yourself and your other thralls, must make a DC{{spellcasting:dc:int}} DEX saving throw. On a failed save, a creature takes 4d6 poison damage and is poisoned until the start of your next turn. On a successful save, a creature takes half as much damage and isn't poisoned.</description>
+        </sheet>
+    </element>
+    <element name="Lichdom: Corpulent Lich" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH">
+        <description>
+            <p>At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Your skin clings tightly to your bones, your muscles wither, and your eyes turn milky and dull. Yet, through the veil of weakness, your body exudes unbelievable arcane power. You gain the following features in addition to the Lichdom feature:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Gore Burst.</em></strong> When you drop to 0 hit points, your body explodes in a shower of plague and necromantic energy. Each creature within 20 feet of you must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 5d10 necrotic damage and 5d10 poison damage and is poisoned until the start of your next turn. On a successful save, a creature takes half as much damage and isn't poisoned.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Master of Disease.</em></strong> When you use your Charnel Toxin ability and expend 25 or more points from your Charnel Touch pool, the target creature is poisoned for up to 1 minute on a failed save. Additionally, you can also apply two of the following effects of your choice, which affect the creature while it is poisoned:</p>
+            <ul>
+                <li>Choose one ability score. The target has disadvantage on ability checks and saving throws made with that ability score.</li>
+                <li>The creature can only see out to a radius of 10 feet.</li>
+                <li>The creature falls prone at the end of each of its turns.</li>
+                <li>The creature loses an additional 1d6 hit points whenever it takes damage.</li>
+                <li>The creature can speak only in a babbling nonsense language, and can't perform the verbal components of spells.</li>
+            </ul>
+            <p class="indent"> At the end of each of its turns, the creature can make a Constitution saving throw against your spell save DC, ending this effect on a success.</p>
+        </description>
+        <sheet>
+            <description> Your skin clings tightly to your bones, your muscles wither, and your eyes turn milky and dull. Yet, through the veil of weakness, your body exudes unbelievable arcane power. You gain the following features:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH_GORE_BURST" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH_MASTER_OF_DISEASE" level="20" />
+        </rules>
+    </element>
+    <element name="Gore Burst" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH_GORE_BURST">
+        <compendium display="false" />
+        <description>
+            <p>When you drop to 0 hit points, your body explodes in a shower of plague and necromantic energy. Each creature within 20 feet of you must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 5d10 necrotic damage and 5d10 poison damage and is poisoned until the start of your next turn. On a successful save, a creature takes half as much damage and isn't poisoned.</p>
+        </description>
+        <sheet>
+            <description>When you drop to 0 hit points, your body explodes. Each creature within 20 feet of you must make DC{{spellcasting:dc:int}} DEX saving throw. On a failed save, a creature takes 5d10 necrotic + 5d10 poison damage and is poisoned until the start of your next turn. On a successful save, it takes half as much damage and isn't poisoned.</description>
+        </sheet>
+    </element>
+    <element name="Master of Disease" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PLAGUE_LORD_LICHDOM_CORPULENT_LICH_MASTER_OF_DISEASE">
+        <compendium display="false" />
+        <description>
+            <p>When you use your Charnel Toxin ability and expend 25 or more points from your Charnel Touch pool, the target creature is poisoned for up to 1 minute on a failed save. Additionally, you can also apply two of the following effects of your choice, which affect the creature while it is poisoned:</p>
+            <ul>
+                <li>Choose one ability score. The target has disadvantage on ability checks and saving throws made with that ability score.</li>
+                <li>The creature can only see out to a radius of 10 feet.</li>
+                <li>The creature falls prone at the end of each of its turns.</li>
+                <li>The creature loses an additional 1d6 hit points whenever it takes damage.</li>
+                <li>The creature can speak only in a babbling nonsense language, and can't perform the verbal components of spells.</li>
+            </ul>
+            <p class="indent"> At the end of each of its turns, the creature can make a Constitution saving throw against your spell save DC, ending this effect on a success.</p>
+        </description>
+        <sheet>
+            <description> When you expend 25 or more points when using your Charnel Toxin ability, the target is poisoned for up to 1 minute on a failed save. You can also apply two of the following effects:&#13;
+            •Choose one ability score. The target has disadvantage on ability checks and saving throws made with that ability score.&#13;
+            •The creature can only see out to a radius of 10 feet.&#13;
+            •The creature falls prone at the end of each of its turns.&#13;
+            •The creature loses an additional 1d6 hit points whenever it takes damage.&#13;
+            •The creature can speak only in a babbling nonsense language, and can't perform the verbal components of spells.&#13;
+            The target can make a CON saving throw at the end of each of its turns, ending the effects on itself on a success.</description>
+        </sheet>
+    </element>
+</elements>
