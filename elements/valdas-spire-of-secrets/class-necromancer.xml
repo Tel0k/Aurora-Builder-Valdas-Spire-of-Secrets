@@ -4,7 +4,7 @@
       <name>Necromancer</name>
       <description>The Necromancer from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.1">
+      <update version="0.0.2">
         <file name="class-necromancer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-necromancer.xml" />
       </update>    
     </info>
@@ -111,6 +111,17 @@
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_LICHDOM" level="20" />
         </rules>
     </element>
+    <multiclass id="ID_MHP_VSOS_MULTICLASS_NECROMANCER">
+	<prerequisite>Intelligence 13</prerequisite>
+	<requirements>[int:13]</requirements>
+	<setters>
+		<set name="multiclass proficiencies">—</set>
+	</setters>
+	<rules>
+		<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+		<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+	</rules>
+    </multiclass>
     <element name="Spellcasting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_SPELLCASTING">
         <description>
             <p>Your connection to the realm of negative energy allows you to cast powerful necromantic spells.</p>
