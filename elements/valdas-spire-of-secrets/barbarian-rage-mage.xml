@@ -70,8 +70,8 @@
 			<stat name="rage-mage:spellcasting:slots:3" value="3" level="13" />
 			<stat name="rage-mage:spellcasting:slots:4" value="1" level="19" />
 			<stat name="rage-mage:spellcasting:slots:4" value="1" level="20" />
-			<select type="Spell" name="Cantrip (Rage Mage)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Rage Mage" />
-			<select type="Spell" name="Cantrip (Rage Mage)" supports="$(spellcasting:list),0" level="10" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Cantrip (Rage Mage)" supports="Sorcerer,0" level="3" number="2" spellcasting="Rage Mage" />
+			<select type="Spell" name="Cantrip (Rage Mage)" supports="Sorcerer,0" level="10" spellcasting="Rage Mage"/>
 			<select type="Spell" name="Spell (Rage Mage)" supports="Sorcerer, $(spellcasting:slots)" level="3" number="1" spellcasting="Rage Mage" />
             		<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="3" number="2" spellcasting="Rage Mage" />
 			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="4" spellcasting="Rage Mage"/>
