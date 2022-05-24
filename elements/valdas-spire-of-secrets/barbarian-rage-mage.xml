@@ -4,7 +4,7 @@
 		<name>Path of the Rage Mage</name>
 		<description>The Path of the Rage Mage from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="barbarian-rage-mage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-rage-mage.xml" />
 		</update>
 	</info>
@@ -61,28 +61,29 @@
 			<list>Sorcerer</list>
 		</spellcasting>
 		<rules>
-			<!-- <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" /> -->
-			<stat name="sorcerer:spellcasting:slots:1" value="2" level="3" />
-			<stat name="sorcerer:spellcasting:slots:1" value="1" level="4" />
-			<stat name="sorcerer:spellcasting:slots:1" value="1" level="7" />
-			<stat name="sorcerer:spellcasting:slots:2" value="2" level="7" />
-			<stat name="sorcerer:spellcasting:slots:2" value="1" level="10" />
-			<stat name="sorcerer:spellcasting:slots:3" value="3" level="13" />
-			<stat name="sorcerer:spellcasting:slots:4" value="1" level="19" />
-			<stat name="sorcerer:spellcasting:slots:4" value="1" level="20" />
-			<select type="Spell" name="Cantrip (Sorcerer)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Sorcerer" />
-			<select type="Spell" name="Cantrip (Sorcerer)" supports="$(spellcasting:list),0" level="10" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="3" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="rage-mage:spellcasting:slots:1" value="2" level="3" />
+			<stat name="rage-mage:spellcasting:slots:1" value="1" level="4" />
+			<stat name="rage-mage:spellcasting:slots:1" value="1" level="7" />
+			<stat name="rage-mage:spellcasting:slots:2" value="2" level="7" />
+			<stat name="rage-mage:spellcasting:slots:2" value="1" level="10" />
+			<stat name="rage-mage:spellcasting:slots:3" value="3" level="13" />
+			<stat name="rage-mage:spellcasting:slots:4" value="1" level="19" />
+			<stat name="rage-mage:spellcasting:slots:4" value="1" level="20" />
+			<select type="Spell" name="Cantrip (Rage Mage)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Rage Mage" />
+			<select type="Spell" name="Cantrip (Rage Mage)" supports="$(spellcasting:list),0" level="10" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="Sorcerer, $(spellcasting:slots)" level="3" number="1" spellcasting="Rage Mage" />
+            		<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="3" number="2" spellcasting="Rage Mage" />
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="4" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="7" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="Sorcerer, $(spellcasting:slots)" level="8" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="10" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="11" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="13" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="Sorcerer, $(spellcasting:slots)" level="14" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="16" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="(Sorcerer, (Evocation||Transmutation)), $(spellcasting:slots)" level="19" spellcasting="Rage Mage"/>
+			<select type="Spell" name="Spell (Rage Mage)" supports="Sorcerer, $(spellcasting:slots)" level="20" spellcasting="Rage Mage"/>
 		</rules>
 	</element>
 	<element name="Arcane Rampage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_ARCANE_RAMPAGE">
