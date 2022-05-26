@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Stoneheart Defender</name>
+      <description>The Stoneheart Defender from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-stoneheart-defender.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-stoneheart-defender.xml" />
+      </update>    
+    </info>
+    <element name="Stoneheart Defender" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER">
+        <supports>Call</supports>
+        <description>
+            <p>You draw your strength from the trees of the forest and the loamy earth beneath your feet. As a STONEHEART DEFENDER, you are the champion of the green things in nature, and defend them against those who would despoil the wilds. You easily find allies among druids and others that understand the forest's sacred trees and ancient spirits.</p>
+            <p class="indent">At your command, the plants of the earth sprout up to assist you in your duty. At the pinnacle of your power, you can assume the form of an elder tree guardian, which looks much like a treant, with tough, bark skin, and long, branchlike arms.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_ROOTS_OF_ROCK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_EARTHSHATTER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_METTLE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_IMMORTAL_MOUNTAIN" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_ROOTS_OF_ROCK" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_EARTHSHATTER" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_METTLE" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_IMMORTAL_MOUNTAIN" level="20" />
+        </rules>
+    </element>
+    <element name="Roots of Rock" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_ROOTS_OF_ROCK">
+        <description>
+            <p>Starting when you hear this call at 3rd level, when you use your Warden's Grasp ability, rocky roots sprout from your feet, anchoring you securely. Until the start of your next turn, you have a +2 bonus to your Armor Class.</p>
+            <p class="indent">Additionally, until you move, you can't be shoved or pushed from wherever you are standing by hostile actions, spells, or effects, unless you choose to be. You have advantage on Strength saving throws against being knocked prone, can't slip or fall from ledges, and are immune to the <i>fly</i>, <i>levitate</i>, and <i>telekinesis</i> spells.</p>
+        </description>
+        <sheet>
+            <description>When you use your Warden's Grasp ability, rocky roots sprout from your feet, anchoring you securely. Until the start of your next turn, you have a +2 bonus to your Armor Class. Until you move, you can't be shoved or pushed from your position by hostile actions, spells, or effects, unless you choose to be. You have advantage on STR saving throws against being knocked prone, can't slip or fall from ledges, and are immune to the fly, levitate, and telekinesis spells.</description>
+        </sheet>
+    </element>
+    <element name="Earthshatter" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_EARTHSHATTER">
+        <description>
+            <p>Starting at 6th level, you can choose to use Warden's Grasp as an action, rather than a bonus action. When you do so, each creature affected must make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</p>
+            <p class="indent">You can use this feature a number of times equal to your Strength modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="{{earthshatter:usage}}/Long Rest">
+            <description>You can choose to use Warden's Grasp as an action, rather than a bonus action. When you do so, each creature affected must make a Strength saving throw (DC{{earthshatter:dc}}) or be knocked prone.</description>
+        </sheet>
+        <rules>
+            <stat name="earthshatter:usage" value="1" bonus="earthshatter" />
+			<stat name="earthshatter:usage" value="strength:modifier" bonus="earthshatter" />
+            <stat name="earthshatter:dc" value="8" />
+			<stat name="earthshatter:dc" value="strength:modifier" />
+			<stat name="earthshatter:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Mettle" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_METTLE">
+        <description>
+            <p>At 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a CON saving throw to take only half damage, you instead take no damage if you succeed, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Immortal Mountain" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STONEHEART_DEFENDER_IMMORTAL_MOUNTAIN">
+        <description>
+            <p>By 20th level, you can summon the power of true earth as an action, protecting yourself in an encasement of stone. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>Bludgeoning, piercing, and slashing damage you take is reduced by 5.</li>
+                <li>You gain the effects of your Roots of Rock feature for the entire duration.</li>
+                <li>As you move, you can choose to upend the earth at your feet, leaving behind a 5-foot-wide trail of difficult terrain behind you wherever you move.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You can summon the power of true earth, for 1 minute, you gain the following benefits: &#13;
+            •Bludgeoning, piercing, and slashing damage you take is reduced by 5.&#13;
+            •You gain the effects of your Roots of Rock feature for the entire duration..&#13;
+            •As you move, you can choose to leave behind you a 5-foot-wide trail of difficult terrain wherever you move.</description>
+        </sheet>
+    </element>
+</elements>

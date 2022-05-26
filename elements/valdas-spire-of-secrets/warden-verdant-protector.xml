@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Verdant Protector</name>
+      <description>The Verdant Protector from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-verdant-protector.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-verdant-protector.xml" />
+      </update>    
+    </info>
+    <element name="Verdant Protector" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR">
+        <supports>Call</supports>
+        <description>
+            <p>You draw your strength from the trees of the forest and the loamy earth beneath your feet. As a Verdant Protector, you are the champion of the green things in nature, and defend them against those who would despoil the wilds. You easily find allies among druids and others that understand the forest's sacred trees and ancient spirits.</p>
+            <p class="indent">At your command, the plants of the earth sprout up to assist you in your duty. At the pinnacle of your power, you can assume the form of an elder tree guardian, which looks much like a treant, with tough, bark skin, and long, branchlike arms.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_GREEN_MARK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_VERDANT_SKIN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_METTLE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_FORM_OF_THE_OAK_SENTINEL" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_GREEN_MARK" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_VERDANT_SKIN" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_METTLE" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_FORM_OF_THE_OAK_SENTINEL" level="20" />
+        </rules>
+    </element>
+    <element name="Green Mark" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_GREEN_MARK">
+        <description>
+            <p>Starting when you hear this call at 3rd level, when you mark a creature, the plants of the earth come alive to hinder its progress. While this creature is within 30 feet of you, the ground it walks on is difficult terrain.</p>
+        </description>
+        <sheet>
+            <description>When you mark a creature, the plants of the earth come alive to hinder its progress. While this creature is within 30 feet of you, the ground it walks on is difficult terrain.</description>
+        </sheet>
+    </element>
+    <element name="Verdant Skin" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_VERDANT_SKIN">
+        <description>
+            <p>At 6th level, you gain proficiency in the Stealth skill, if you didn't have it already. Additionally, you can use your action to draw a thick mass of vines and leaves to conceal you. Until you move, you have advantage on Dexterity (Stealth) checks you make to hide among vegetation.</p>
+        </description>
+        <sheet action="Action">
+            <description>You gain proficiency in the Stealth skill, if you didn't have it already. You can use your action to draw a thick mass of vines and leaves to conceal you. Until you move, you have advantage on DEX (Stealth) checks you make to hide among vegetation.</description>
+        </sheet>
+    </element>
+    <element name="Mettle" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_METTLE">
+        <description>
+            <p>At 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a CON saving throw to take only half damage, you instead take no damage if you succeed, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Form of the Oak Sentinel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_VERDANT_PROTECTOR_FORM_OF_THE_OAK_SENTINEL">
+        <description>
+            <p>Starting at 20th level, you can use your action to transform into an oak sentinel, a bark-covered titan of the forest. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>Your AC becomes 20, if it was lower.</li>
+                <li>Your melee attacks have a reach of 10 feet.</li>
+                <li>You can use Warden's Grasp as an action, rather than a bonus action. When you do so, you can make an attack against each creature affected, with a separate attack roll for each target.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You transform into an oak sentinel, for 1 minute, you gain the following benefits: &#13;
+            •Your AC becomes 20, if it was lower.&#13;
+            •Your melee attacks have a reach of 10 feet.&#13;
+            •You can use Warden's Grasp as an action, rather than a bonus action. When you do so, you can make an attack against each creature affected, with a separate attack roll for each target.</description>
+        </sheet>
+    </element>
+</elements>

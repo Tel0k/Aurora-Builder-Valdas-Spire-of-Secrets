@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Soulblood Shaman</name>
+      <description>The Soulblood Shaman from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-soulblood-shaman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-soulblood-shaman.xml" />
+      </update>    
+    </info>
+    <element name="Soulblood Shaman" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN">
+        <supports>Call</supports>
+        <description>
+            <p>The ancestral spirits called you by starlight to enact their will on the world, to protect their descendants, and to safeguard their resting places. You are a Soulblood Shaman, a manipulator of soul and ascetic of primal magic. Your community looks to you as a leader as well as a vital connection to the afterlife, for if you play your role, they too will join their ancestors in the great beyond.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SOULBLOOD" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SOULBLOOD" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER" level="20" />
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING">
+        <description>
+            <p>Starting when you hear this call at 3rd level, you can channel your ancient insights into magic.</p>
+		    <h5>CANTRIPS</h5>
+		    <p>You learn two cantrips of your choice from the druid spell list. You learn an additional druid cantrip of your choice at 10th level.</p>
+		    <h5>SPELL SLOTS</h5>
+		    <p>The Soulblood Shaman Spellcasting table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+		    <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+		    <p>You know three 1st-level druid spells of your choice, two of which you must choose from the evocation or transmutation spells on the druid spell list.</p>
+		    <p class="indent">The Spells Known column of the Soulblood Shaman Spellcasting table shows when you learn more druid spells of 1st level or higher. Each of these spells must be an evocation or transmutation spell of your choice, and must be of a level for which you have spell slots.</p>
+		    <p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+		    <p class="indent">Whenever you gain a level in this class, you can replace one of the druid spells you know with another spell of your choice from the druid spell list. The new spell must be of a level for which you have spell slots, and it must be an evocation or transmutation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+		    <h5>SPELLCASTING ABILITY</h5>
+		    <p>Wisdom is your spellcasting ability for your druid spells, since you channel your magic through a connection to the great beyond. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+		    <center>
+			    <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			    <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+		    </center>
+            <h5 class="caption">SOULBLOOD SHAMAN SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Warden Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+    	</description>
+		<sheet display="false"/>
+        <spellcasting name="Soulblood Shaman" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Druid,(Evocation||Transmutation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="soulblood-shaman:spellcasting:slots:1" value="2" level="3" />
+			<stat name="soulblood-shaman:spellcasting:slots:1" value="1" level="4" />
+			<stat name="soulblood-shaman:spellcasting:slots:1" value="1" level="7" />
+			<stat name="soulblood-shaman:spellcasting:slots:2" value="2" level="7" />
+			<stat name="soulblood-shaman:spellcasting:slots:2" value="1" level="10" />
+			<stat name="soulblood-shaman:spellcasting:slots:3" value="3" level="13" />
+			<stat name="soulblood-shaman:spellcasting:slots:4" value="1" level="19" />
+			<stat name="soulblood-shaman:spellcasting:slots:4" value="1" level="20" />
+			<select type="Spell" name="Cantrip (Soulblood Shaman)" supports="Druid,0" level="3" number="2" spellcasting="Soulblood Shaman" />
+			<select type="Spell" name="Cantrip (Soulblood Shaman)" supports="Druid,0" level="10" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="Druid, $(spellcasting:slots)" level="3" number="1" spellcasting="Soulblood Shaman" />
+            <select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="3" number="2" spellcasting="Soulblood Shaman" />
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="4" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="7" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="Druid, $(spellcasting:slots)" level="8" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="10" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="11" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="13" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="Druid, $(spellcasting:slots)" level="14" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="16" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="(Druid, (Evocation||Transmutation)), $(spellcasting:slots)" level="19" spellcasting="Soulblood Shaman"/>
+			<select type="Spell" name="Spell (Soulblood Shaman)" supports="Druid, $(spellcasting:slots)" level="20" spellcasting="Soulblood Shaman"/>
+		</rules>
+    </element>
+    <element name="Soulblood" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SOULBLOOD">
+        <description>
+            <p>Also at 3rd level, as a reaction when a creature within 5 feet of you deals damage to you, you can mark that creature.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature within 5 feet of you deals damage to you, you can mark that creature.</description>
+        </sheet>
+    </element>
+    <element name="Whispers of Beyond" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND">
+        <description>
+            <p>At 6th level, you can hear the small voices of ancient spirits when you need guidance. If you spend 1 minute in contemplation when you make an Intelligence or Wisdom check, you can consult a host of ancestor spirits to gain advantage on the roll. You can't use this ability when your ancestors wouldn't have appropriate knowledge or guidance, such as if you try to understand cutting-edge alchemy.</p>
+        </description>
+        <sheet>
+            <description>If you spend 1 minute in contemplation when you make an INT or WIS check, you can consult a host of ancestor spirits to gain advantage on the roll. You can't use this ability when your ancestors wouldn't have appropriate knowledge or guidance.</description>
+        </sheet>
+    </element>
+    <element name="Spell Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE">
+        <description>
+            <p>Beginning at 13th level, you have advantage on saving throws you make against spells.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws you make against spells.</description>
+        </sheet>
+    </element>
+    <element name="Ethereal Watcher" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER">
+        <description>
+            <p>At 20th level, as an action, you can shrug off your mortal form for a short time to become something spiritual and immaterial, an ethereal watcher. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>As a bonus action on your turn, you can become ethereal, as per the <i>etherealness</i> spell.</li>
+                <li>You can use your bonus action to return from being ethereal when you use your Warden's Mark or your Warden's Grasp feature. You can use your bonus action to return from being ethereal when you cast a spell on your turn.</li>
+                <li>When you return from being ethereal, each creature you choose within 10 feet of you takes 4d6 force damage, as they are pulled partially between the planes.</li>
+                <li>You can cast 1st and 2nd-level druid spells you know without expending spell slots.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action/Bonus Action" usage="1/Long Rest">
+            <description>As an action, you become something spiritual and immaterial, for 1 minute, you gain the following benefits: &#13;
+            •As a bonus action, you can become ethereal, as per the <i>etherealness</i> spell. &#13;
+            •As a bonus action, you can return from being ethereal when you use your Warden's Mark or your Warden's Grasp feature, or when you cast a spell on your turn. When you cast the spell in this way, you can call a bolt of lightning on subsequent turns as a bonus action. &#13;
+            •When you return from being ethereal, each creature you choose within 10 feet of you takes 4d6 force damage. &#13;
+            •You can cast 1st and 2nd-level druid spells you know without expending spell slots.</description>
+        </sheet>
+    </element>
+</elements>

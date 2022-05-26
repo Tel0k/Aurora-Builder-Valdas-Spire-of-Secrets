@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Warden</name>
+      <description>The Warden from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="class-warden.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warden.xml" />
+      </update>    
+    </info>
+    <element name="Warden" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_WARDEN">
+        <description>
+            <p>An immense goblinoid army stretches from the horizon to the castle walls. In the breach, a single knight holds back the horde, eviscerating all comers, and allowing none to pass.</p>
+            <p class="indent">Blood dripping from his blade, a scarred half-orc gets down on all fours and breaks into a sprint, his eyes alight with bestial fury.</p>
+            <p class="indent">Advancing slowly, an elf brandishing a green scimitar emerges from the foliage before two poachers. Startled, they turn to run, but find their feet bound fast by leaves and vines.</p>
+            <p class="indent">Wardens are vigilant guardians who adopt a charge — be it a kingdom, a forest, or an individual — and safeguard it from harm. Through both their fortitude and shields, they are immovable bulwarks on the field of battle.</p>
+            <h4>Guardian's Call</h4>
+            <p>Every warden feels a gravitational pull to defend the helpless. Sometimes, they are directly called, such as when a village or tribe selects their mightiest member to defend them, or when the spirits of a sacred grove beckon a new champion to protect their forest. Other times, the warden is compelled by more subtle means, such as witnessing uncontested injustice, or feeling the weight of responsibility when tragedy occurs. The result is the same: wardens who conclude their minds and pick up their shields to answer the call.</p>
+            <p class="indent">Wherever wardens travel, new calls make themselves evident. There is never a shortage of those in need, whereas those with strength and conscience are perpetually in short supply.</p>
+            <h4>Primal Strength</h4>
+            <p>Wardens are like mighty trees in a gale storm, or the rocks along the shore, constantly battered by waves. They demonstrate almost supernatural resilience to hardship, and can't be easily broken or slain.</p>
+            <p class="indent">Most wardens draw their might to the wild—the strength of the earth beneath their feet and the vitality of the air in their lungs—though some attribute their resiliency to an inward resolve or the absolute belief in a deity. Regardless of its source, a warden's power is intuitive and forceful, allowing them to stop foes dead in their tracks, mark those standing in their way, and shug off otherwise deadly conditions. Only those wardens who choose to defend an obviously magical charge appear to be supernatural; others simply possess a daunting force of will and bottomless tolerance for punishment.</p>
+            <h4>CREATING A WARDEN</h4>
+            <p>When creating a warden, consider what drives your character. What brought you to raise up your shield for others? Do you fight to protect anyone or anywhere in particular? A threat to your homeland or loved ones might have been your catalyst, but you also might have risen to combat a menace to the natural world. What was your call, and how do you honor it? What motivates you to keep fighting, even when you're at death's door?</p>
+            <p class="indent">Most wardens have been recognized as exemplary defenders. Perhaps, you are known as a wandering knight of the northern provinces, or perhaps you were beckoned by spirits of the forest to protect them from invaders. Who has called you, and how did you respond?</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can build a warden quickly with these suggestions. First, make Constitution your highest ability score, followed by Strength and Dexterity. Then, choose the Primal Toughness option for Sentinel's Stand. Finally, choose any background, preferably one that sheds light on your history of guardianship.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an warden, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d10 per warden level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per warden level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong>Light armor, medium armor, shields</li>
+                <li><strong>Weapons:</strong>Simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong>None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong>Strength, Constitution</li>
+                <li><strong>Skills:</strong>Choose two from Animal Handling, Athletics, Nature, Perception, and Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>A shield and any martial weapon</li>
+                <li>(a) chain shirt, (b) leather armor and a spear, or (c) chain mail (if proficient)</li>
+                <li>(a) two light hammers or (b) any simple melee weapon</li>
+                <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+            </ul>
+            <h5 class="caption">THE WARDEN</h5>
+		    <table class="class-features">
+			    <thead>
+				    <tr><td class="col-5">Level</td><td class="left">Features</td></tr>
+			    </thead>
+			    <tr><td> 1st</td><td class="left">Sentinel's Stand, Warden's Grasp</td></tr>
+			    <tr><td> 2nd</td><td class="left">Fighting Style, Warden's Mark</td></tr>
+			    <tr><td> 3rd</td><td class="left">Champion's Call, Warden's Resolve</td></tr>
+			    <tr><td> 4th</td><td class="left">Ability Score Improvement, Font of Life</td></tr>
+			    <tr><td> 5th</td><td class="left">Extra Attack</td></tr>
+			    <tr><td> 6th</td><td class="left">Call feature</td></tr>
+			    <tr><td> 7th</td><td class="left">Sentinel's Step</td></tr>
+			    <tr><td> 8th</td><td class="left">Ability Score Improvement</td></tr>
+			    <tr><td> 9th</td><td class="left">Undying</td></tr>
+			    <tr><td>10th</td><td class="left">Interrupt</td></tr>
+			    <tr><td>11th</td><td class="left">Mark improvement</td></tr>
+			    <tr><td>12th</td><td class="left">Ability Score Improvement</td></tr>
+			    <tr><td>13th</td><td class="left">Call feature</td></tr>
+			    <tr><td>14th</td><td class="left">Grasp improvement</td></tr>
+			    <tr><td>15th</td><td class="left">Font of Life improvement</td></tr>
+			    <tr><td>16th</td><td class="left">Ability Score Improvement</td></tr>
+			    <tr><td>17th</td><td class="left">Warden's Resolve improvement</td></tr>
+			    <tr><td>18th</td><td class="left">Sentinel's Soul</td></tr>
+			    <tr><td>19th</td><td class="left">Ability Score Improvement</td></tr>
+			    <tr><td>20th</td><td class="left">Call feature</td></tr>
+            </table>
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_GRASP" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FIGHTING_STYLE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_MARK" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_CHAMPIONS_CALL" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_RESOLVE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_ABILITYSCOREIMPROVEMENT_WARDEN" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FONT_OF_LIFE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_EXTRA_ATTACK" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STEP" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_UNDYING" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_INTERRUPT" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL" />
+        </description>
+        <setters>
+            <set name="short">Wardens are vigilant guardians who adopt a charge and safeguard it from harm.</set>
+            <set name="hd">d10</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+			<select type="Proficiency" name="Skill Proficiency (Warden)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_GRASP" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FIGHTING_STYLE" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_MARK" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_CHAMPIONS_CALL" level="3" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_RESOLVE" level="3" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_ABILITYSCOREIMPROVEMENT_WARDEN" level="4" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FONT_OF_LIFE" level="4" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STEP" level="7" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_UNDYING" level="9" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_INTERRUPT" level="10" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL" level="18" />
+        </rules>
+    </element>
+    <multiclass id="ID_MHP_VSOS_MULTICLASS_WARDEN">
+		<prerequisite>Strength 13</prerequisite>
+		<requirements>[str:13]</requirements>
+		<setters>
+			<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</multiclass>
+
+    <element name="Sentinel's Stand" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND">
+        <description>
+            <p>Wardens are towers that cannot easily be felled. At 1st level, choose one of the following features.</p>
+            <h5 class="caption">ARMOR PROFICIENCY</h5>
+			<p>You gain proficiency with heavy armor.</p>
+			<h5 class="caption">PRIMAL TOUGHNESS</h5>
+			<p>Your hit point maximum increases by 1 + your Constitution modifier, and it increases by 1 every time you gain a level in this class.</p>
+			<h5 class="caption">STALWART SPIRIT</h5>
+			<p>You gain proficiency in one saving throw of your choice.</p>
+        </description>
+        <rules>
+			<select type="Class Feature" name="Sentinel's Stand" supports="Sentinel Stand, Warden" level="1"/>
+		</rules>
+    </element>
+    <element name="Armor Proficiency" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND_ARMOR_PROFICIENCY">
+		<supports>Sentinel Stand, Warden</supports>
+		<description>
+			<p>You gain proficiency with heavy armor.</p>
+		</description>
+	    <sheet>
+		    <description>You gain proficiency with heavy armor.</description>
+		</sheet>
+		<rules>
+		   <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+    <element name="Primal Toughness" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND_PRIMAL_TOUGHNESS">
+		<supports>Sentinel Stand, Warden</supports>
+		<description>
+			<p>Your hit point maximum increases by 1 + your Constitution modifier, and it increases by 1 every time you gain a level in this class.</p>
+		</description>
+		<sheet>
+		    <description>Your hit point maximum increases by 1 + your Constitution modifier, and it increases by 1 every time you gain a level in this class.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="level" />
+            <stat name="hp" value="constitution:modifier" />
+		</rules>
+	</element>
+    <element name="Stalwart Spirit" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND_STALWART_SPIRIT">
+		<supports>Sentinel Stand, Warden</supports>
+		<description>
+			<p>You gain proficiency in one saving throw of your choice.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in one saving throw of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Stalwart Spirit" supports="Saving Throw" />
+		</rules>
+	</element>
+
+    <element name="Warden's Grasp" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_GRASP">
+        <description>
+            <p>At 1st level, as a bonus action, you can use the force of your daunting presence to ensnare nearby enemies into combat. Until the start of your next turn, you can't move, and each Large or smaller creature you choose within 5 feet of you can't willingly move away from you unless it first takes the Disengage action.</p>
+            <p class="indent">At 14th level, the range of this ability increases to 10 feet.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Until the start of your next turn, you can't move, and each Large or smaller creature you choose within 5ft of you can't willingly move away from you unless it first takes the Disengage action.</description>
+            <description level="14">Until the start of your next turn, you can't move, and each Large or smaller creature you choose within 10ft of you can't willingly move away from you unless it first takes the Disengage action.</description>
+        </sheet>
+    </element>
+
+    <element name="Fighting Style" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FIGHTING_STYLE">
+        <description>
+            <p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+            <h5 class="caption">CRIPPLING</h5>
+			<p>When you hit a creature with a melee weapon attack, its speed is reduced by 10 feet, to a minimum of 0, until the end of its next turn, and it can't take the Dash action until the end of its turn.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+            <h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a weapon or shield.</p>
+			<h5 class="caption">TITAN FIGHTING</h5>
+			<p>You gain a +2 bonus to melee weapon attack rolls you make against Large or larger creatures.</p>
+        </description>
+        <rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Warden" level="2"/>
+		</rules>
+    </element>
+        <element name="Crippling" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_CRIPPLING">
+		    <supports>Fighting Style, Warden</supports>
+		    <description>
+			    <p>When you hit a creature with a melee weapon attack, its speed is reduced by 10 feet, to a minimum of 0, until the end of its next turn, and it can't take the Dash action until the end of its turn.</p>
+		    </description>
+		    <sheet>
+			    <description>When you hit a creature with a melee weapon attack, its speed is reduced by 10 feet, to a minimum of 0, until the end of its next turn, and it can't take the Dash action until the end of its turn.</description>
+		    </sheet>
+	    </element>
+	    <element name="Great Weapon Fighting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		    <supports>Fighting Style, Warden</supports>
+		    <description>
+			    <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+		    </description>
+		    <sheet>
+			    <description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
+		    </sheet>
+	    </element>
+        <element name="Protection" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		    <supports>Fighting Style, Warden</supports>
+		    <description>
+			    <p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a weapon or shield.</p>
+		    </description>
+		    <sheet action="Reaction">
+			    <description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a weapon or shield.</description>
+		    </sheet>
+	    </element>
+	    <element name="Titan Fighting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_TITAN_FIGHTING">
+		    <supports>Fighting Style, Warden</supports>
+		    <description>
+			    <p>You gain a +2 bonus to melee weapon attack rolls you make against Large or larger creatures.</p>
+		    </description>
+		    <sheet>
+			    <description>You gain a +2 bonus to melee weapon attack rolls you make against Large or larger creatures.</description>
+		    </sheet>
+	    </element>
+
+    <element name="Warden's Mark" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_MARK">
+        <description>
+            <p>At 2nd level, you can use your bonus action to mark a creature you can see within 30 feet of you. While a marked creature is within 5 feet of you, it has disadvantage on any attack roll that doesn't target you. The mark lasts for 1 minute, or until you mark another creature, become incapacitated, or die.</p>
+            <p class="indent">At 11th level, whenever you take the Attack action on your turn, you can make one additional attack as part of that action against a creature you have marked.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can mark a creature you can see within 30ft of you. Within 5 feet of you, it has disadvantage on any attack roll that doesn't target you. The mark lasts for 1 minute, or until you mark another creature, become incapacitated, or die.</description>
+            <description level="11">You can mark a creature you can see within 30ft of you. Within 5 feet of you, it has disadvantage on any attack roll that doesn't target you. The mark lasts for 1 minute, or until you mark another creature, become incapacitated, or die. Whenever you take the Attack action on your turn, you can make one additional attack as part of that action against a creature you have marked.</description>
+        </sheet>
+    </element>
+    <element name="Champion's Call" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_CHAMPIONS_CALL">
+        <description>
+            <p>By the time you reach 3rd level, you feel the inexorable pull of an important duty or task that you assume as your own. No outside force compels your choice or enforces your conduct; if you fail in your charge, you alone are responsible.</p>
+            <p class="indent">Your choice grants you features at 3rd level and again at 6th, 13th, and 20th level.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+			<select type="Archetype" name="Champion's Call" supports="Call" level="3" />
+		</rules>
+    </element>
+    <element name="Warden's Resolve" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_RESOLVE">
+        <description>
+            <p>Starting at 3rd level, whenever your hit points are less than half your maximum, you have resistance to bludgeoning, piercing, and slashing damage.</p>
+            <p class="indent">Starting at 17th level, when your hit points are less than half your maximum, you have resistance to all damage except psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever your hit points are less than half your maximum, you have resistance to bludgeoning, piercing, and slashing damage.</description>
+            <description level="17">When your hit points are less than half your maximum, you have resistance to all damage except psychic damage.</description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_ABILITYSCOREIMPROVEMENT_WARDEN">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Warden 4)" supports="Improvement Option,Warden,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Warden 8)" supports="Improvement Option,Warden,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Warden 12)" supports="Improvement Option,Warden,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Warden 16)" supports="Improvement Option,Warden,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Warden 19)" supports="Improvement Option,Warden,19" level="19" />
+		</rules>
+    </element>
+    <element name="Font of Life" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FONT_OF_LIFE">
+        <description>
+            <p>By 4th level, you can use your action to end either one disease or one condition afflicting you. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. You can use this action even if the condition you end would otherwise prevent it. Once you use this ability, you must finish a short or long rest before you can use it again.</p>
+            <p class="indent">Starting at 15th level, when you use this feature, you can choose to restore your hit points to half your maximum, if they were lower. Once you restore your hit points in this way, you can't do so again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="[A]Short Rest">
+            <description>[A] You can end either one disease or one condition afflicting you. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. You can use this action even if the condition you end would otherwise prevent it. </description>
+            <description level="15" usage="[A]Short Rest||[B]Long Rest">[A] You can end either one disease or one condition afflicting you. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. You can use this action even if the condition you end would otherwise prevent it.&#13;
+            [B] You can choose to restore your hit points to half your maximum, if they were lower.</description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="2" level="5" />
+		</rules>
+    </element>
+
+    <element name="Sentinel's Step" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STEP">
+        <description>
+            <p>Wardens are faultless trackers who can navigate hazardous terrain with ease. At 7th level, select one of the following features.</p>
+            <h5 class="caption">EARTHSTRENGTH</h5>
+			<p>You possess the might of the earth itself. Your carrying capacity doubles, and you have advantage on ability checks and saving throws against being pushed against your will or knocked prone.</p>
+			<h5 class="caption">THUNDERING CHARGE</h5>
+			<p>In the first round of combat, your speed increases by 30 feet and you have advantage on the first melee weapon attack you make.</p>
+			<h5 class="caption">WILDBLOOD</h5>
+			<p>Your reflexes have been honed by the perils of nature. You can't be surprised while you are conscious. Additionally, you have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.</p>
+        </description>
+        <rules>
+			<select type="Class Feature" name="Sentinel's Step" supports="Sentinel Step, Warden" level="7"/>
+		</rules>
+    </element>
+    <element name="Earthstrength" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STEP_EARTHSTRENGTH">
+		<supports>Sentinel Step, Warden</supports>
+		<description>
+		    <p>You possess the might of the earth itself. Your carrying capacity doubles, and you have advantage on ability checks and saving throws against being pushed against your will or knocked prone.</p>
+		</description>
+		<sheet>
+		    <description>Your carrying capacity doubles, and you have advantage on ability checks and saving throws against being pushed against your will or knocked prone.</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+        </rules>
+	</element>
+    <element name="Thundering Charge" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STEP_THUNDERING_CHARGE">
+		<supports>Sentinel Step, Warden</supports>
+		<description>
+		    <p>In the first round of combat, your speed increases by 30 feet and you have advantage on the first melee weapon attack you make.</p>
+		</description>
+		<sheet>
+		    <description>In the first round of combat, your speed increases by 30ft and you have advantage on the first melee weapon attack you make.</description>
+		</sheet>
+	</element>
+    <element name="Wildblood" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STEP_WILDBLOOD">
+		<supports>Sentinel Step, Warden</supports>
+		<description>
+		    <p>Your reflexes have been honed by the perils of nature. You can't be surprised while you are conscious. Additionally, you have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.</p>
+		</description>
+		<sheet>
+		    <description>You can't be surprised while conscious. You have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.</description>
+		</sheet>
+		<rules>
+		    <stat name="perception:passive" value="5" />
+		    <stat name="investigation:passive" value="5" />
+		</rules>
+	</element>
+
+    <element name="Undying" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_UNDYING">
+        <requirements>!ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_GRAVELORD</requirements>
+        <description>
+            <p>At 9th level, when you are reduced to 0 hit points and aren't killed outright, you can choose to drop to 1 hit point instead. Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you are reduced to 0 hit points and aren't killed outright, you can choose to drop to 1 hit point instead.</description>
+        </sheet>
+    </element>
+    <element name="Undying" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_UNDYING2">
+        <requirements>ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_GRAVELORD</requirements>
+        <description>
+            <p>At 9th level, when you are reduced to 0 hit points and aren't killed outright, you can choose to drop to 1 hit point instead. Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="3/Long Rest">
+            <description>When you are reduced to 0 hit points and aren't killed outright, you can choose to drop to 1 hit point instead.</description>
+        </sheet>
+    </element>
+    <element name="Interrupt" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_INTERRUPT">
+        <description>
+            <p>Starting at 10th level, when a creature hits you with an attack, you can use your reaction to prevent one of its subsequent strikes. If the creature could make additional attacks before the end of the turn, it can make one fewer than normal.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature hits you with an attack, you can prevent one of its subsequent strikes. If the creature could make additional attacks before the end of the turn, it can make one fewer than normal.</description>
+        </sheet>
+    </element>
+
+    <element name="Sentinel's Soul" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL">
+        <description>
+            <p>Wardens are unshakable guardians that cannot be bowed. At 18th level, choose one of the following features:</p>
+            <h5 class="caption">AGELESS GUARDIAN</h5>
+			<p>You are immune to poison and disease, no longer need food or water, suffer none of the frailty of old age, and can't be aged magically. You can still die of old age, however.</p>
+            <p class="indent">Additionally, you have advantage on Constitution saving throws.</p>
+			<h5 class="caption">EYES OF THE MOUNTAIN</h5>
+			<p>You gain tremorsense with a range of 15 feet, and you can detect the presence of hidden or invisible creatures within 30 feet of you.</p>
+            <p class="indent">Additionally, you have advantage on Dexterity saving throws.</p>
+			<h5 class="caption">IMPENETRABLE MIND</h5>
+			<p>Your thoughts can't be read, and you can't be charmed or frightened.</p>
+            <p class="indent">Additionally, you have advantage on Wisdom saving throws.</p>
+        </description>
+        <rules>
+			<select type="Class Feature" name="Sentinel's Soul" supports="Sentinel Soul, Warden" level="18"/>
+		</rules>
+    </element>
+    <element name="Ageless Guardian" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL_AGELESS_GUARDIAN">
+		<supports>Sentinel Soul, Warden</supports>
+		<description>
+			<p>You are immune to poison and disease, no longer need food or water, suffer none of the frailty of old age, and can't be aged magically. You can still die of old age, however.</p>
+            <p class="indent">Additionally, you have advantage on Constitution saving throws.</p>
+		</description>
+		<sheet>
+		    <description>Immunity to poison and disease. No need for food/water. Can't be aged magically and old age doesn't make you frail, but can still die from it. you have advantage on CON saving throws.</description>
+		</sheet>
+		<rules>
+		    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+    <element name="Eyes of the Mountain" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL_EYES_OFTHE_MOUNTAIN">
+		<supports>Sentinel Soul, Warden</supports>
+		<description>
+		    <p>You gain tremorsense with a range of 15 feet, and you can detect the presence of hidden or invisible creatures within 30 feet of you.</p>
+            <p class="indent">Additionally, you have advantage on Dexterity saving throws.</p>
+		</description>
+		<sheet>
+		    <description>You gain tremorsense within 15ft, and can detect the presence of hidden/invisible creatures within 30ft of you. You have advantage on DEX saving throws.</description>
+		</sheet>
+		<rules>
+		    <grant type="Vision" id="ID_VISION_TREMORSENSE" />
+            <stat name="tremorsense:range" value="15" />
+		</rules>
+	    </element>
+    <element name="Impenetrable Mind" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL_IMPENETRABLE_MIND">
+		<supports>Sentinel Soul, Warden</supports>
+		<description>
+		    <p>Your thoughts can't be read, and you can't be charmed or frightened.</p>
+            <p class="indent">Additionally, you have advantage on Wisdom saving throws.</p>
+		</description>
+		<sheet>
+		    <description>Your thoughts can't be read, you can't be charmed or frightened. You have advantage on WIS saving throws.</description>
+		</sheet>
+	</element>
+</elements>

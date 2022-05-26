@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Storm Sentinel</name>
+      <description>The Storm Sentinel from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-storm-sentinel.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-storm-sentinel.xml" />
+      </update>    
+    </info>
+    <element name="Storm Sentinel" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL">
+        <supports>Call</supports>
+        <description>
+            <p>Your strength originates among furious storm clouds and flashes of lightning. As a storm sentinel, you are called to protect wayward sailors and coastal villages from the wrath of the tempests and the arrival of great waves that threaten them. You despise pirates and other enemies of coastal peoples, and will oppose them wherever they strike.</p>
+            <p class="indent">From your fingertips, you can deliver the awe of lightning and the roar of thunder to devastate your foes. With practice and patience, you can harness the power of the storm itself to fly and rain thunderbolts from above.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_FLASH_FROM_ABOVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_THUNDERBLAST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_STATIC_BURST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_EVASION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_STORMLORD" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_FLASH_FROM_ABOVE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_THUNDERBLAST" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_STATIC_BURST" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_EVASION" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_STORMLORD" level="20" />
+        </rules>
+    </element>
+    <element name="Flash from Above" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_FLASH_FROM_ABOVE">
+        <description>
+            <p>Starting when you hear this call at 3rd level, whenever you are standing under the open sky, you can use your action to conjure a harmless, but impressive, bolt of lightning or peal of thunder. You can use this ability even when there are no clouds above you.</p>
+        </description>
+        <sheet action="Action">
+            <description>Whenever you are standing under the open sky, you can conjure a harmless, but impressive, bolt of lightning or peal of thunder. You can use this ability even when there are no clouds above you.</description>
+        </sheet>
+    </element>
+    <element name="Thunderblast" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_THUNDERBLAST">
+        <description>
+            <p>At 3rd level, whenever you hit a creature you have marked with a melee weapon attack, each creature you choose within 5 feet of the target takes 1d8 lightning damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever you hit a creature you have marked with a melee weapon attack, each creature you choose within 5 feet of the target takes 1d8 lightning damage.</description>
+        </sheet>
+    </element>
+    <element name="Static Burst" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_STATIC_BURST">
+        <description>
+            <p>Starting at 6th level, when you use Warden's Grasp as a bonus action, each creature affected can't take reactions until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you use Warden's Grasp as a bonus action, each creature affected can't take reactions until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Evasion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_EVASION">
+        <description>
+            <p>Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm</i> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Stormlord" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STORM_SENTINEL_STORMLORD">
+        <description>
+            <p>Starting at 20th level, you have a flying speed equal to your walking speed.</p>
+            <p class="indent">Additionally, you can use your action to summon a bolt of lightning to strike you, imbuing your body with the storm's fury. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>Your flying speed is doubled.</li>
+                <li>You can cast the <i>call lightning</i> spell as a bonus action (DC equals 8 + your proficiency bonus + your Constitution modifier) without expending a spell slot. When you cast the spell in this way, you can call a bolt of lightning on subsequent turns as a bonus action.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Flying speed equal to your walking speed. You can summon a bolt of lightning to strike you, for 1 minute, you gain the following benefits:&#13;
+            •Your flying speed is doubled.&#13;
+            •You can cast the call lightning spell as a bonus action (DC{{spell:dc}}) without expending a spell slot. When you cast the spell in this way, you can call a bolt of lightning on subsequent turns as a bonus action.</description>
+        </sheet>
+        <rules>
+            <stat name="spell:dc" value="8" />
+			<stat name="spell:dc" value="constitution:modifier" />
+			<stat name="spell:dc" value="proficiency" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" />
+        </rules>
+    </element>
+</elements>

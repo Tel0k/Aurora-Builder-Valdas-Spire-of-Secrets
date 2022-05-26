@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Bloodwrath Guardian</name>
+      <description>The Bloodwrath Guardian from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-bloodwrath-guardian.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-bloodwrath-guardian.xml" />
+      </update>    
+    </info>
+    <element name="Bloodwrath Guardian" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN">
+        <supports>Call</supports>
+        <description>
+            <p>You draw your strength from the trees of the forest and the loamy earth beneath your feet. As a Bloodwrath Guardian, you are the champion of the green things in nature, and defend them against those who would despoil the wilds. You easily find allies among druids and others that understand the forest's sacred trees and ancient spirits.</p>
+            <p class="indent">At your command, the plants of the earth sprout up to assist you in your duty. At the pinnacle of your power, you can assume the form of an elder tree guardian, which looks much like a treant, with tough, bark skin, and long, branchlike arms.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_FERAL_TRANCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_PREDATORS_SCENT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_EVASION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_FORM_OF_THE_PRIMAL_BEAST" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_FERAL_TRANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_PREDATORS_SCENT" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_EVASION" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_FORM_OF_THE_PRIMAL_BEAST" level="20" />
+        </rules>
+    </element>
+    <element name="Feral Trance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_FERAL_TRANCE">
+        <description>
+            <p>Starting when you hear this call at 3rd level, you can fall into a primal battle trance as a bonus action. While in your trance, you gain the following benefits:</p>
+            <ul>
+                <li>You have advantage on Strength checks and Strength saving throws.</li>
+                <li>Your walking speed increases by 10 feet.</li>
+                <li>You have advantage on all melee weapon attack rolls using Strength against a creature you have marked.</li>
+                <li>Attacks against you have advantage.</li>
+            </ul>
+            <p class="index">Your trance lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your trance on your turn as a bonus action.</p>
+            <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short||Long Rest">
+            <description>You fall into a primal battle trance, for 1 minute, you gain the following benefits: &#13;
+            •You have advantage on STR checks and STR saving throws.&#13;
+            •Your walking speed increases by 10 feet.&#13;
+            •You have advantage on all melee weapon attack rolls using STR against a marked creature.&#13;
+            •Attacks against you have advantage.&#13;
+            Your trance ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your trance on your turn as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Predator's Scent" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_PREDATORS_SCENT">
+        <description>
+            <p>By 6th level, you hunt like an animal. A creature you have marked can remain marked for up to 24 hours. Additionally, while this creature is marked, you can track it effortlessly; you know the direction and distance to the creature while it remains on the same plane of existence.</p>
+        </description>
+        <sheet>
+            <description>A creature you have marked can remain marked for up to 24 hours. Additionally, while this creature is marked, you can track it effortlessly; you know the direction and distance to the creature while it remains on the same plane of existence.</description>
+        </sheet>
+    </element>
+    <element name="Evasion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_EVASION">
+        <description>
+            <p>Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm</i> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Form of the Primal Beast" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOODWRATH_GUARDIAN_FORM_OF_THE_PRIMAL_BEAST">
+        <description>
+            <p>At 20th level, as an action, you can transform into a hunched thing of fur and shadow, an echo of the Primal Beast. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>You gain all the benefits of Feral Trance.</li>
+                <li>You gain 40 temporary hit points.</li>
+                <li>When you hit a creature with a melee weapon attack, you can give the target a bleeding wound. Constructs, oozes, and undead can't get bleeding wounds. A creature loses 1d8 hit points at the start of each of its turns for each of its bleeding wounds, unless it uses an action to staunch the bleeding of all of its wounds. While a target is bleeding, it can't regain lost hit points. A creature can have a number of bleeding wounds up to your proficiency bonus.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You transform into a hunched thing of fur and shadow, for 1 minute, you gain the following benefits: &#13;
+            •You gain all the benefits of Feral Trance.&#13;
+            •You gain 40 temporary hit points.&#13;
+            •When you hit a creature other than constructs, oozes, and undead, with a melee weapon attack, you can give the target a bleeding wound. A creature loses 1d8 hit points at the start of each of its turns for each of its bleeding wounds, unless it uses an action to staunch the bleeding of all of its wounds. While bleeding, it can't regain lost hit points. A creature can have up to {{proficiency}} bleeding wounds.</description>
+        </sheet>
+    </element>
+</elements>

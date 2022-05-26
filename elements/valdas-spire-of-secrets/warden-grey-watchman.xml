@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Grey Watchman</name>
+      <description>The Grey Watchman from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-grey-watchman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-grey-watchman.xml" />
+      </update>    
+    </info>
+    <element name="Grey Watchman" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN">
+        <supports>Call</supports>
+        <description>
+            <p>Your strength originates among furious storm clouds and flashes of lightning. As a GREY_WATCHMAN, you are called to protect wayward sailors and coastal villages from the wrath of the tempests and the arrival of great waves that threaten them. You despise pirates and other enemies of coastal peoples, and will oppose them wherever they strike.</p>
+            <p class="indent">From your fingertips, you can deliver the awe of lightning and the roar of thunder to devastate your foes. With practice and patience, you can harness the power of the storm itself to fly and rain thunderbolts from above.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_HOLD_THE_LINE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_FORTIFICATION_EXPERT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_METTLE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_UNBREAKABLE_SENTINEL" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_HOLD_THE_LINE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_FORTIFICATION_EXPERT" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_METTLE" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_UNBREAKABLE_SENTINEL" level="20" />
+        </rules>
+    </element>
+    <element name="Battle Tactics" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS">
+        <description>
+            <p>When you  hear this call at 3rd level, you learn maneuvers that are fueled by special dice called battle dice.</p>
+			<p class="indent"><strong><em>Battle Dice.</em></strong> You have two battle dice, which are d8s. A battle die is expended when you use it. You regain all of your expended battle dice when you finish a short or long rest, or when you roll initiative.</p>
+            <p class="indent">Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown on the table below.</p>
+			<table>
+                <thead>
+                    <tr><td>Warden Level</td><td>Battle Dice</td></tr>
+                </thead>
+                <tr><td>3rd</td><td><em>2d8</em></td></tr>
+                <tr><td>5rd</td><td><em>3d8</em></td></tr>
+                <tr><td>11th</td><td><em>3d10</em></td></tr>
+                <tr><td>15th</td><td><em>4d10</em></td></tr>
+            </table>
+			<p class="indent"><strong><em>Using Battle Dice.</em></strong> Once per turn, you can expend a battle die to perform a maneuver of your choice.</p>
+            <h5>MANEUVERS</h5>
+            <p>The maneuvers are presented in alphabetical order.</p>
+            <p class="indent"><b>BULL RUSH.</b> When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</p>
+            <p class="indent"><b>BULWARK.</b> When you hit a creature with a melee attack, you can expend a battle die as a bonus action to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</p>
+            <p class="indent"><b>CLEAVE.</b> Once on each of your turns, when you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</p>
+            <p class="indent"><b>HEEL-CUTTER.</b> When you make an opportunity attack against a creature, you can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</p>
+            <p class="indent"><b>RECKLESS ASSAULT.</b> When you make an attack against a creature, you can expend a battle die to make a wild, desperate strike, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</p>
+            <p class="indent"><b>STAGGERING STRIKE.</b> As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
+            <p class="indent"><strong><em>Saving Throws.</em></strong> Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+			</center>
+		</description>
+		<sheet>
+			<description>You learn maneuvers that are fueled by special dice called battle dice. You have {{battle-dice:amount}} battle dice which are d{{battle-dice:size}}s. DC{{battle-dice:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="battle-dice:amount" value="2" />
+			<stat name="battle-dice:amount" value="1" level="7" />
+			<stat name="battle-dice:amount" value="1" level="19" />
+			<stat name="battle-dice:size" value="8" bonus="size" />
+            <stat name="battle-dice:size" value="10" level="13" bonus="size" />
+			<stat name="battle-dice:dc" value="8" />
+			<stat name="battle-dice:dc" value="proficiency" />
+			<stat name="battle-dice:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="battle-dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+			<stat name="battle-dice:dc" value="battle-dice:dc:ability" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_STAGGERING_STRIKE" />
+		</rules>
+    </element>
+
+    <element name="Bull Rush" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH">
+		<supports>Maneuver, Grey Watchman</supports>
+		<description>
+			<p>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</description>
+		</sheet>
+	</element>
+    <element name="Bulwark" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK">
+		<supports>Maneuver, Grey Watchman</supports>
+		<description>
+			<p>When you hit a creature with a melee attack, you can expend a battle die as a bonus action to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit a creature with a melee attack, you can expend a battle die to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</description>
+		</sheet>
+	</element>
+    <element name="Cleave" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE">
+		<supports>Maneuver, Grey Watchman</supports>
+		<description>
+			<p>Once on each of your turns, when you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</description>
+		</sheet>
+	</element>
+    <element name="Heel-Cutter" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER">
+		<supports>Maneuver, Grey Watchman</supports>
+		<description>
+			<p>When you make an opportunity attack against a creature, you can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</p>
+		</description>
+		<sheet action="Opportunity Attack">
+			<description>You can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</description>
+		</sheet>
+	</element>
+    <element name="Reckless Assault" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT">
+		<supports>Maneuver, Grey Watchman</supports>
+		<description>
+			<p>When you make an attack against a creature, you can expend a battle die to make a wild, desperate strike, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</p>
+		</description>
+		<sheet action="Attack">
+			<description>You can expend a battle die to make a wild, desperate strike against a creature, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</description>
+		</sheet>
+	</element>
+    <element name="Staggering Strike" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_STAGGERING_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> When you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a CON saving throw or be incapacitated until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+    <element name="Hold the Line" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_HOLD_THE_LINE">
+        <description>
+            <p>At 3rd level, when you use your Warden's Grasp, one creature you choose, other than yourself, within the effect's area gains a +1 bonus to its Armor Class and saving throws until the start of your next turn while it remains in the effect's area.</p>
+        </description>
+        <sheet>
+            <description>When you use your Warden's Grasp, one creature you choose, other than yourself, within the effect's area gains a +1 bonus to its Armor Class and saving throws until the start of your next turn while it remains in the effect's area.</description>
+        </sheet>
+    </element>
+    <element name="Fortification Expert" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_FORTIFICATION_EXPERT">
+        <description>
+            <p>By 6th level, your experience manning battlements and blockades has given you insight into how to raise and reinforce them. You have advantage on any ability check you make to erect defensive fortifications, examine walls and other defenses for weak points and entryways, or climb constructed walls. Additionally, whenever you have three-quarters cover, you are treated as having total cover.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on any ability check you make to erect defensive fortifications, examine walls and other defenses for weak points and entryways, or climb constructed walls. Whenever you have three-quarters cover, you are treated as having total cover.</description>
+        </sheet>
+    </element>
+    <element name="Mettle" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_METTLE">
+        <description>
+            <p>At 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a CON saving throw to take only half damage, you instead take no damage if you succeed, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Unbreakable Sentinel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_UNBREAKABLE_SENTINEL">
+        <description>
+            <p>Starting at 20th level, you can use your action to transform into a paragon of battle, an unstoppable sentinel, channeling the strength of every man, woman, and child under your charge. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>You have a +2 bonus to your Armor Class.</li>
+                <li>Whenever you hit a creature you have marked, you regain an expended battle die.</li>
+                <li>You can take one additional reaction during each round of combat. You can't take more than one reaction during a single turn.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>As an action, you tap into the strength of everyone under your charge, for 1 minute, you gain the following benefits:&#13;
+            •+2 bonus to your AC.&#13;
+            •Whenever you hit a creature you have marked, you regain an expended battle die.&#13;
+            •You can take one additional reaction during each round of combat. You can't take more than one reaction during a single turn.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Nightgaunt</name>
+      <description>The Nightgaunt from Valda's Spire of Secrets</description>
+      <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+      <update version="0.0.1">
+        <file name="warden-nightgaunt.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-nightgaunt.xml" />
+      </update>    
+    </info>
+    <element name="Nightgaunt" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT">
+        <supports>Call</supports>
+        <description>
+            <p>Your strength originates among furious storm clouds and flashes of lightning. As a Nightgaunt, you are called to protect wayward sailors and coastal villages from the wrath of the tempests and the arrival of great waves that threaten them. You despise pirates and other enemies of coastal peoples, and will oppose them wherever they strike.</p>
+            <p class="indent">From your fingertips, you can deliver the awe of lightning and the roar of thunder to devastate your foes. With practice and patience, you can harness the power of the storm itself to fly and rain thunderbolts from above.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_DARKVISION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_MARKED_FOR_DEATH" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_UNDEAD_EMPATHY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_EVASION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_GRAVELORD" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_DARKVISION" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_MARKED_FOR_DEATH" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_UNDEAD_EMPATHY" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_EVASION" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_GRAVELORD" level="20" />
+        </rules>
+    </element>
+    <element name="Darkvision" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_DARKVISION">
+        <description>
+            <p>Starting when you hear this call at 3rd level, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. If you already have darkvision, its range increases by 30 feet.Starting at 13th level, you can see through magical, as well as nonmagical, darkness.</p>
+        </description>
+        <sheet>
+            <description>You gain darkvision up to 60ft, if you already have darkvision, its range increases by 30 feet.</description>
+            <description level="13">You gain darkvision up to 60ft, if you already have darkvision, its range increases by 30 feet. You can see through magical, as well as nonmagical, darkness.</description>
+        </sheet>
+    </element>
+    <element name="Marked For Death" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_MARKED_FOR_DEATH">
+        <description>
+            <p>At 3rd level, your mark leaves a shadow of undeath on your target, beckoning it to die. If you deal damage to a creature you have marked with a melee weapon attack and its remaining hit points are lower than the damage you dealt to it with that attack, the marked creature instead drops to 0 hit points.</p>
+        </description>
+        <sheet>
+            <description>If you deal damage to a creature you have marked with a melee weapon attack and its remaining hit points are lower than the damage you dealt to it with that attack, the marked creature instead drops to 0 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Undead Empathy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_UNDEAD_EMPATHY">
+        <description>
+            <p>By 6th level, you are a friend even to mindless undead. Whenever an undead creature targets you with an attack, it must first make a Wisdom saving throw (DC equals 8 + your proficiency bonus + your Constitution modifier). On a failed save, its attack misses and, if its Intelligence is 4 or lower, it becomes friendly to you and your allies for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>Whenever an undead creature targets you with an attack, it must first make a DC{{empathy:dc}} WIS saving throw. On a failed save, its attack misses and, if its Intelligence is 4 or lower, it becomes friendly to you and your allies for 1 minute.</description>
+        </sheet>
+        <rules>
+            <stat name="empathy:dc" value="8" />
+			<stat name="empathy:dc" value="constitution:modifier" />
+			<stat name="empathy:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Evasion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_EVASION">
+        <description>
+            <p>Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm</i> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Gravelord" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_NIGHTGAUNT_GRAVELORD">
+        <description>
+            <p>At 20th level, you can use your action to invite the necromantic energies of true undead into your body, divorcing yourself from life for 1 minute and gaining the following benefits:</p>
+            <ul>
+                <li>You are immune to poison damage and you can't be poisoned.</li>
+                <li>You can use your Undying feature up to three times, instead of once, and you regain all expended uses when finish a long rest.</li>
+                <li>Once per turn, when you deal damage to a hostile creature with a melee weapon attack, you can deal an extra 4d6 necrotic damage and gain temporary hit points equal to the necrotic damage dealt, which last until the start of your next turn.</li>
+            </ul>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>As an action, your body is imbued by necromantic energies, for 1 minute, you gain the following benefits:&#13;
+            •Immunity to poison damage and poisoned condition.&#13;
+            •You can use your Undying feature up to three times, instead of once.&#13;
+            •1/turn, when you deal damage to a hostile creature with a melee weapon attack, you can deal an extra 4d6 necrotic damage and gain temporary hit points equal to the necrotic damage dealt, which last until the start of your next turn.</description>
+        </sheet>
+    </element>
+</elements>
