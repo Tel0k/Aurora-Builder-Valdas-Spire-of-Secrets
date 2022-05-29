@@ -4,7 +4,7 @@
 		<name>Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="vsos-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-spells.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 		</setters>
 	</element>
 	<element name="Accelerate/Decelerate" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE">
-		<supports>Bard, Sorcerer, Wizard</supports>
+		<supports>Bard, Sorcerer, Wizard, Chronomancy</supports>
 		<description>
 			<p>This spell speeds up or slows down an attack the instant before it strikes, lessening or multiplying its force.</p>
 			<p class="indent">This spell speeds up or slows down an attack the instant before it strikes, lessening or multiplying its force.</p>
@@ -86,7 +86,7 @@
 		</setters>
 	</element>
 	<element name="Action" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_ACTION">
-		<supports>Witch, Bard, Paladin, Sorcerer, Wizard</supports>
+		<supports>Witch, Bard, Paladin, Sorcerer, Wizard, Chronomancy</supports>
 		<description>
 			<p>Choose a willing creature that you can see within range. During its next turn, the target gains an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
 		</description>
@@ -656,7 +656,7 @@
 		</setters>
 	</element>
 	<element name="Delay" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_DELAY">
-		<supports>Necromancer, Witch, Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<supports>Necromancer, Witch, Bard, Sorcerer, Wizard, Spell Saving Throw, Chronomancy</supports>
 		<description>
 			<p>You briefly slow time for a creature of your choice that you can see within range. The target must succeed on a Wisdom saving throw or be moved to last place in the initiative order from the beginning of the next round onwards.</p>
 		</description>
@@ -711,7 +711,7 @@
 		</setters>
 	</element>
 	<element name="Dire Warning" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_DIRE_WARNING">
-		<supports>Investigator, Necromancer, Cleric, Wizard, Spell Saving Throw</supports>
+		<supports>Investigator, Necromancer, Cleric, Wizard, Spell Saving Throw, Chronomancy</supports>
 		<description>
 			<p>You receive a message of up to 6 words from your future self, warning you of a critical threat or pointing you toward a fruitful avenue. At some point in the future, once you have learned why you sent the message, you must perform a 10-minute long ritual to deliver the message back in time to your past self. Once you cast this spell, you can’t cast it again until you perform this ritual, or one week later, if you don’t discover this information. If you cast this spell and receive no message, it indicates that you never complete the ritual in the future, possibly owing to your death or some other hindrance.</p>
 		</description>
@@ -782,7 +782,7 @@
 		</setters>
 	</element>
 	<element name="Evasiveness" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_EVASIVENESS">
-		<supports> Sorcerer, Wizard</supports>
+		<supports> Sorcerer, Wizard, Chronomancy</supports>
 		<description>
 			<p>You touch a willing creature. Until the spell ends, the target gains a superhuman ability to dodge attacks. The target’s AC becomes 20, if it were lower, regardless of what kind of armor it is wearing and it has advantage on Dexterity saving throws.</p>
 		</description>
@@ -1400,7 +1400,7 @@
 		</setters>	
 	</element>
     <element name="Impressions of the Past" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST">
-		<supports>Cleric, Wizard, Spell Saving Throw</supports>
+		<supports>Cleric, Wizard, Spell Saving Throw, Chronomancy</supports>
 		<description>
 			<p>You cast your senses back in time to perceive your current location as it was at some point in the past, including any events that were happening at that time. You must specify the exact time you wish to see, which cannot be more than 100 years ago. When viewing the past, it appears dreamlike and shadowy, but you are able to discern detail and hear conversation as normal, and any special senses you possess (such as darkvision) also work as normal.</p>
 			<p class="indent"> While perceiving the past, you can look in any direction, but you cannot move or speak and are unable to sense your present surroundings.</p>
@@ -1480,7 +1480,7 @@
 		</setters>	
 	</element>
 	<element name="Instant Replay" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_INSTANT_REPLAY">
-		<supports>Martyr, Bard, Paladin, Ranger</supports>
+		<supports>Martyr, Bard, Paladin, Ranger, Chronomancy</supports>
 		<description>
 			<p>The next time you miss a creature with an attack before this spell ends, you can instantly reset yourself to the moment before the attack and repeat it against the same target.</p>
 		</description>
@@ -1825,7 +1825,7 @@
 		</setters>	
 	</element>
 	<element name="Paradox" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_PARADOX">
-		<supports>Sorcerer, Warlock, Wizard</supports>
+		<supports>Sorcerer, Warlock, Wizard, Chronomancy</supports>
 		<description>
 			<p>By twisting the flow of time into knots, you cause one action of your choice taken within range within the last round to be undone. Reality then reasserts itself, recoiling from the damage caused by removing an event from time. The direct effects of that action, such as damage dealt by an attack or spell, are undone, but the indirect effects, such as creatures choosing to move to different locations, are not. The creature that took the action takes 10d8 psychic damage, as it copes with its history being modified.</p>
 		</description>
@@ -2051,7 +2051,7 @@
 		</setters>	
 	</element>
 	<element name="Recall" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_RECALL">
-		<supports>Investogator, Sorcerer, Wizard</supports>
+		<supports>Investogator, Sorcerer, Wizard, Chronomancy</supports>
 		<description>
 			<p>Record where you are when you cast this spell. Until the end of your next turn, you can use your reaction to teleport back to that location, or to the nearest unoccupied space. If you use this reaction in response to an attack, spell, magical effect, or any other damaging effect, resolve the triggering effect before teleporting.</p>
 		</description>
@@ -2345,7 +2345,7 @@
 		</setters>	
 	</element>
 	<element name="Time's Arrow" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_TIMES_ARROW">
-		<supports>Ranger, Wizard</supports>
+		<supports>Ranger, Wizard, Chronomancy</supports>
 		<description>
 			<p>This spell enchants a missile so that it freezes in time and space. You may reposition the missile as part of the action to cast the spell.</p>
 			<p class="indent">The missile remains frozen in place until either a creature passes within 120 feet in front of it, something touches it, a strong wind blows upon it, the enchantment is dispelled or the duration ends. At that point, the missile moves suddenly, as if it was just fired or thrown with a range of 120 feet. If a creature is in the line of fire, the missile makes an attack which adds your spell attack bonus to the attack roll, and does the basic damage of whatever missile type was used (missiles that vary by launcher use the highest possible damage dice).</p>
@@ -2363,7 +2363,7 @@
 		</setters>	
 	</element>
 	<element name="Time Hop" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_TIME_HOP">
-		<supports>Sorcerer, Wizard</supports>
+		<supports>Sorcerer, Wizard, Chronomancy</supports>
 		<description>
 			<p>You shunt yourself a few seconds into the future. Choose a duration: 1 round, 2 round, or 3 rounds. You vanish, reappearing after the duration at the beginning of your turn in the nearest unoccupied space to where you disappeared. While vanished, you are outside time; you can’t take actions or reactions, time doesn’t pass for you, and you can’t be affected by attacks or effects.</p>
 			<p class="indent"><strong>At Higher Levels</strong> When you cast this spell using a spell slot of 3rd level or higher, you can choose a duration of 1 minute. If you cast this spell using a spell slot of 5th level or higher, you can choose a duration of 1 hour.</p>
