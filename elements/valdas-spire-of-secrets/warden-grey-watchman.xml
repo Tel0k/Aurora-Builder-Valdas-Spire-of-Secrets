@@ -4,7 +4,7 @@
       <name>Grey Watchman</name>
       <description>The Grey Watchman from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.1">
+      <update version="0.0.2">
         <file name="warden-grey-watchman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-grey-watchman.xml" />
       </update>    
     </info>
@@ -79,7 +79,7 @@
 		</rules>
     </element>
 
-    <element name="Bull Rush" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH">
+    <element name="Bull Rush" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH">
 		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</p>
@@ -88,7 +88,7 @@
 			<description>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</description>
 		</sheet>
 	</element>
-    <element name="Bulwark" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK">
+    <element name="Bulwark" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK">
 		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you hit a creature with a melee attack, you can expend a battle die as a bonus action to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</p>
@@ -97,7 +97,7 @@
 			<description>When you hit a creature with a melee attack, you can expend a battle die to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</description>
 		</sheet>
 	</element>
-    <element name="Cleave" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE">
+    <element name="Cleave" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE">
 		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>Once on each of your turns, when you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</p>
@@ -106,7 +106,7 @@
 			<description>When you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</description>
 		</sheet>
 	</element>
-    <element name="Heel-Cutter" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER">
+    <element name="Heel-Cutter" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER">
 		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you make an opportunity attack against a creature, you can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</p>
@@ -115,7 +115,7 @@
 			<description>You can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</description>
 		</sheet>
 	</element>
-    <element name="Reckless Assault" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT">
+    <element name="Reckless Assault" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT">
 		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you make an attack against a creature, you can expend a battle die to make a wild, desperate strike, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</p>
@@ -124,7 +124,7 @@
 			<description>You can expend a battle die to make a wild, desperate strike against a creature, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</description>
 		</sheet>
 	</element>
-    <element name="Staggering Strike" type="Archetype Feature" source="Player's Handbook" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_STAGGERING_STRIKE">
+    <element name="Staggering Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_STAGGERING_STRIKE">
 		<compendium display="false" />
 		<description>
 			<p>As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
