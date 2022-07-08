@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Purple Magic</name>
+		<description>The Purple Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-purple-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-purple-magic.xml" />
+        </update>
+	</info>
+	<element name="Purple Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PURPLE_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Purple magic holds sway over the domains of illusions and enchantments that take hold over people's minds, as well as anything that is not quite as it seems. Practitioners of this craft are puppet masters, shaping the apparent reality of those around them to their advantage.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_CRAFT_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_HEX_HALLUCINATION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_FALSE_AUTHORITY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_DECEITFUL_TRANSPOSITION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_WAKING_NIGHTMARE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_HEX_HALLUCINATION" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_FALSE_AUTHORITY" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_DECEITFUL_TRANSPOSITION" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_WAKING_NIGHTMARE" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Purple Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>charm person, silent image</em></td></tr>
+                <tr><td>2nd</td><td><em>enthrall, invisibility</em></td></tr>
+                <tr><td>3rd</td><td><em>hypnotic pattern, major image</em></td></tr>
+                <tr><td>4th</td><td><em>confusion, private sanctum</em></td></tr>
+                <tr><td>5th</td><td><em>modify memory, seeming</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Hallucination" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_HEX_HALLUCINATION">
+        <description>
+            <p>Starting at 3rd level, you can infect the minds of other creatures. As an action, choose one creature you can see within 60 feet of you to make a Wisdom saving throw. A creature that is immune to being charmed automatically succeeds on this saving throw. On a failed save, the target's perspective of the world distorts into a horrific and alien place. The creature takes a -1 penalty to all attack rolls and ability checks it makes. At the start of each of the creature's turns while affected by this hex, this penalty increases by 1, up to a maximum penalty of -5. This effect lasts until the end of your next turn.</p>
+        </description>
+        <sheet action="Action">
+            <description> Choose one creature you can see within 60ft of you to make a WIS saving throw. A creature that is immune to being charmed automatically succeeds it. On a failed save, the target's perspective of the world distorts into a horrific and alien place. The creature takes a -1 penalty to all attack rolls and ability checks it makes. At the start of each of the creature's turns while affected by this hex, this penalty increases by 1, up to a maximum penalty of -5. This effect lasts until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="False Authority" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_FALSE_AUTHORITY">
+        <description>
+            <p>By 6th level, as an action, you can wrap yourself in an illusory air of expectation. Any creature that can see you perceives you as a figure of authority. A blacksmith might see you as a guild master, whereas a soldier might see you as a captain. The changes perceived by a viewer fail to hold up to physical inspection. This illusion lasts for 1 hour or until you end it on your turn (no action required).</p>
+            <p class="indent">To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short||Long Rest">
+            <description> Any creature that can see you perceives you as a figure of authority. A blacksmith might see you as a guild master, whereas a soldier might see you as a captain. The changes perceived by a viewer fail to hold up to physical inspection. This illusion lasts for 1 hour or until you end it on your turn (no action required). To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on a DC{{spellcasting:dc:cha}} INT(Investigation) check.</description>
+        </sheet>
+    </element>
+    <element name="Deceitful Transposition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_DECEITFUL_TRANSPOSITION">
+        <description>
+            <p>Starting at 10th level, you can use your bonus action to create an illusory disguise over two creatures within 60 feet of you, making it seem as if they have teleported and switched places. The disguise makes it seem that the creatures are in one another's spaces, moving all sounds, smells, and other effects caused by each creature to their appropriate points of origin. Creatures under the effect of this disguise don't perceive any part of the illusion.</p>
+            <p class="indent">A creature can use its action to examine a magically disguised creature and make an Intelligence (Investigation) check against your spell save DC. On a success, the creature can see both illusory creatures for what they are.</p>
+            <p class="indent">This illusion lasts for 1 minute, and it ends early if one of the illusory creatures takes damage, or if one of the creatures performs any physical interaction that reveals itself to be an illusion.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short||Long Rest">
+            <description> You can create an illusory disguise over two creatures within 60ft of you, making it seem as if they have teleported and switched places. The disguise makes it seem that the creatures are in one another's spaces, moving all sounds, smells, and other effects caused by each creature to their appropriate points of origin. Creatures under the effect of this disguise don't perceive any part of the illusion. A creature can use its action to examine a magically disguised creature and make a DC{{spellcasting:dc:cha}} INT(Investigation) check. On a success, the creature can see both illusory creatures for what they are. This illusion lasts for 1 minute, and it ends early if one of the illusory creatures takes damage, or if one of the creatures performs any physical interaction that reveals itself to be an illusion.</description>
+        </sheet>
+    </element>
+    <element name="Waking Nightmare" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PURPLE_MAGIC_WAKING_NIGHTMARE">
+        <description>
+            <p>By 14th level, you can warp everything a creature sees into a hellscape, full of terrible creatures that wish them harm. When a creature fails its saving throw against your Hallucination hex, you can further distort its mind, causing it to lose the ability to distinguish friend from foe, regarding all creatures it sees as enemies until the hex ends. Whenever the hexed creature chooses a target for an attack, spell, or other effect, it must choose the target at random from among the creatures it can see within range. The hexed creature must always use its reaction to make an opportunity attack, if a creature provokes one.</p>
+            <p class="indent">This effect ends after 1 minute. Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> When a creature fails its saving throw against your Hallucination hex, you can further distort its mind, causing it to lose the ability to distinguish friend from foe, regarding all creatures it sees as enemies until the hex ends. Whenever the hexed creature chooses a target for an attack, spell, or other effect, it must choose the target at random from among the creatures it can see within range. The hexed creature must always use its reaction to make an opportunity attack, if a creature provokes one. This effect ends after 1 minute.</description>
+        </sheet>
+    </element>
+</elements>

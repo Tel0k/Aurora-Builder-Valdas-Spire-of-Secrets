@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Steel Magic</name>
+		<description>The Steel Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-steel-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-steel-magic.xml" />
+        </update>
+	</info>
+	<element name="Steel Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_STEEL_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Secret covens throughout the Material Plane practice their magic by drawing spells into their blades. Maniacally cackling and whirling their way across the battlefield, these witches weave their curses into a bloody tapestry whenever they bring their steel to bear.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_CRAFT_SPELLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_BONUS_PROFICIENCIES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_HEX_MALEVOLENCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_CACKLING_KILLER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_SOULSWORD_FAMILIAR" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_SHRIEKING_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_CRAFT_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_HEX_MALEVOLENCE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_CACKLING_KILLER" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_SOULSWORD_FAMILIAR" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_SHRIEKING_STRIKE" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Steel Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>heroism, shield</em></td></tr>
+                <tr><td>2nd</td><td><em>heat metal, magic weapon</em></td></tr>
+                <tr><td>3rd</td><td><em>blink, haste</em></td></tr>
+                <tr><td>4th</td><td><em>death ward, freedom of movement</em></td></tr>
+                <tr><td>5th</td><td><em>flame strike, telekinesis</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_BONUS_PROFICIENCIES">
+        <description>
+            <p>Beginning when you choose this craft at 3rd level, you gain proficiency with all martial melee weapons that lack the Heavy or Special property</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency with all martial melee weapons that lack the Heavy or Special property</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BAYONET" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CUTLASS" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ESTOC" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KATANA" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KHOPESH" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU" />
+        </rules>
+    </element>
+    <element name="Hex: Malevolence" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_HEX_MALEVOLENCE">
+        <description>
+            <p>Also at 3rd level, you have learned a secret hex associated with the profane rites of long-forgotten covens. You can use your bonus action to shroud yourself with an evil smog until the end of your next turn. Your concentration on this hex can’t be broken as a result of taking damage. You gain the following benefits:</p>
+            <ul>
+                <li>Your Armor Class equals 12 + your Dexterity modifier + your Charisma modifier, as long as you aren’t wielding a shield.</li>
+                <li>When you make an attack with a melee weapon that lacks the Heavy or Special property, you can use your Charisma modifier, instead of Strength or Dexterity, for its attack and damage rolls.</li>
+                <li>Whenever you take damage from a creature you can see that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description> Your Armor Class equals {{malevolence}}, as long as you aren’t wielding a shield. You can shroud yourself with an evil smog until the end of your next turn. Your concentration on this hex can’t be broken as a result of taking damage. When you make an attack with a melee weapon that lacks the Heavy or Special property, you can use your Charisma modifier, instead of Strength or Dexterity, for its attack and damage rolls. Whenever you take damage from a creature you can see that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</description>
+        </sheet>
+        <rules>
+            <stat name="malevolence" value="12" />
+            <stat name="malevolence" value="dexterity:modifier" />
+            <stat name="malevolence" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Cackling Killer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_CACKLING_KILLER">
+        <description>
+            <p>At 6th level, when you use your Cackle feature, you can attack twice, instead of once, if you take the Attack action on that turn.</p>
+        </description>
+        <sheet>
+            <description> When you use your Cackle feature, you can attack twice, instead of once, if you take the Attack action on that turn.</description>
+        </sheet>
+    </element>
+    <element name="Soulsword Familiar" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_SOULSWORD_FAMILIAR">
+        <description>
+            <p>Starting at 10th level, as a bonus action, you can draw the essence of your familiar into your weapon, manifesting in a cloak of green flame. Your familiar is dismissed, and can’t be resummoned until you finish a short or long rest. Until your familiar is resummoned, this weapon deals an extra 1d8 fire damage on a hit.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can draw the essence of your familiar into your weapon, manifesting in a cloak of green flame. Your familiar is dismissed, and can’t be resummoned until you finish a short or long rest. Until your familiar is resummoned, this weapon deals an extra 1d8 fire damage on a hit.</description>
+        </sheet>
+    </element>
+    <element name="Shrieking Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STEEL_MAGIC_SHRIEKING_STRIKE">
+        <description>
+            <p>Starting at 14th level, your accursed magic has seeped into your weapon. Once per turn, when you hit a creature with a melee weapon attack, you can perform a shrieking strike. The target must succeed a Wisdom saving throw against your spell save DC or be frightened of you for up to 1 minute. The target can repeat this saving throw at the end of its turn, ending the effect on itself on a success.</p>
+            <p class="indent">You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Turn,{{strike:count}}/Long Rest">
+            <description> When you hit a creature with a melee weapon attack, you can perform a shrieking strike. The target must succeed a DC{{spellcasting:dc:cha}} WIS saving throw or be frightened of you for up to 1 minute. The target can repeat this saving throw at the end of its turn, ending the effect on itself on a success.</description>
+        </sheet>
+        <rules>
+			<stat name="strike:count" value="1" bonus="base"/>
+			<stat name="strike:count" value="charisma:modifier" bonus="base"/>
+		</rules>
+    </element>
+</elements>

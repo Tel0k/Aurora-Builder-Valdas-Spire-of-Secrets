@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Blood Magic</name>
+		<description>The Blood Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-blood-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-blood-magic.xml" />
+        </update>
+	</info>
+	<element name="Blood Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLOOD_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Forbidden by most witch covens, blood magic centers on the use of dark spells and mortal hexes that draw from the spellcaster’s very essence. It is fundamentally more perilous than other witch crafts, but its many risks come with copious rewards.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_CRAFT_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_HEX_BLOOD_CURSE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_NOVICE_HEMOMANCY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_ARCANE_BLOODLETTING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_DEATHSEEKER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_HEMOMANTIC_RECOVERY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_HEX_BLOOD_CURSE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_NOVICE_HEMOMANCY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_ARCANE_BLOODLETTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_DEATHSEEKER" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_HEMOMANTIC_RECOVERY" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Blood Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>hellish rebuke, hollowing curse*</em></td></tr>
+                <tr><td>2nd</td><td><em>acid arrow, hold person</em></td></tr>
+                <tr><td>3rd</td><td><em>ruby-eye curse*, vampiric touch</em></td></tr>
+                <tr><td>4th</td><td><em>blight, dominate beast</em></td></tr>
+                <tr><td>5th</td><td><em>cloudkill, dominate person</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_HOLLOWING_CURSE" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_RUBYEYE_CURSE" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Blood Curse" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_HEX_BLOOD_CURSE">
+        <description>
+            <p>Starting when you choose this craft at 3rd level, you can mark a creature with a sinister blood curse. As an action, choose one creature you can see within 60 feet of you to make a Constitution saving throw. On a failed save, this creature is on the brink of death until the end of your next turn. If the creature at any point in this duration is missing any of its hit points and has fewer hit points than twice your witch level, it immediately drops to 0 hit points.</p>
+        </description>
+        <sheet action="Action">
+            <description> Choose one creature you can see within 60ft of you to make a CON saving throw. On a failed save, this creature is on the brink of death until the end of your next turn. If the creature at any point in this duration is missing any of its hit points and has fewer hit points than twice your witch level, it immediately drops to 0 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Novice Hemomancy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_NOVICE_HEMOMANCY">
+        <description>
+            <p>Also at 3rd level, when you cast a spell that requires material components that don’t have a cost indicated, you can replace the material components with a drop of blood.</p>
+        </description>
+        <sheet>
+            <description> When you cast a spell that requires material components that don’t have a cost indicated, you can replace the material components with a drop of blood.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Bloodletting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_ARCANE_BLOODLETTING">
+        <description>
+            <p>Lastly at 3rd level, you can impel your magic with a measure of your own blood. When you cast a spell that has a casting time of 1 action, you can choose to lose 5 hit points to change the casting time to 1 bonus action for this casting.</p>
+            <p class="indent">You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{bloodletting:count}}/Long Rest">
+            <description> When you cast a spell that has a casting time of 1 action, you can choose to lose 5 hit points to change the casting time to 1 bonus action for this casting.</description>
+        </sheet>
+        <rules>
+			<stat name="bloodletting:count" value="1" bonus="base"/>
+			<stat name="bloodletting:count" value="charisma:modifier" bonus="base"/>
+		</rules>
+    </element>
+    <element name="Deathseeker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_DEATHSEEKER">
+        <description>
+            <p>At 6th level, you can see those near death shrouded in a crimson aura. Even in heavily obscured conditions, you can detect the location of creatures within 60 feet of you that are missing any of their hit points. This sense can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. Additionally, you have advantage on ability checks you make to track a creature you or your familiar has damaged within the last 24 hours.</p>
+        </description>
+        <sheet>
+            <description> Even in heavily obscured conditions, you can detect the location of creatures within 60ft of you that are missing any of their hp. This sense can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. Additionally, you have advantage on ability checks you make to track a creature you or your familiar has damaged within the last 24 hours.</description>
+        </sheet>
+    </element>
+    <element name="Hemomantic Recovery" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_HEMOMANTIC_RECOVERY">
+        <description>
+            <p>Beginning at 10th level, you can perform a blood ritual to bolster your magic. Once per day when you finish a short rest, you can spend Hit Dice to recover expended spell slots. The cost for each spell slot is given on the table below. You can’t use this ability to recover spell slots of 6th level or higher.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Hit Dice</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>2</em></td></tr>
+                <tr><td>2nd</td><td><em>3</em></td></tr>
+                <tr><td>3rd</td><td><em>5</em></td></tr>
+                <tr><td>4th</td><td><em>6</em></td></tr>
+                <tr><td>5th</td><td><em>7</em></td></tr>
+            </table>
+        </description>
+        <sheet usage="1/Day">
+            <description> When you finish a short rest, you can spend Hit Dice to recover expended spell slots. The cost for each spell slot is given on the table. You can’t use this ability to recover spell slots of 6th level or higher.</description>
+        </sheet>
+    </element>
+    <element name="Sanguine" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE">
+        <description>
+            <p>By 14th level, you can wield your own blood like a vicious lash. Once per round, when you cast a spell that deals damage to a creature that is under the effect of your hex, you can choose to lose hit points to increase the amount of damage dealt. For every 5 hit points you lose, you can deal an extra 2d8 necrotic damage to the creature, to a maximum of 6d8 damage. This feature only applies to a hostile creature that is the sole target of your hex.</p>
+        </description>
+        <sheet action="Action" usage="1/Round">
+            <description> When you cast a spell that deals damage to a creature that is under the effect of your hex, you can choose to lose hp to increase the amount of damage dealt. For every 5 hp you lose, you can deal an extra 2d8 necrotic damage to the creature, to a maximum of 6d8 damage. This feature only applies to a hostile creature that is the sole target of your hex.</description>
+        </sheet>
+    </element>
+</elements>

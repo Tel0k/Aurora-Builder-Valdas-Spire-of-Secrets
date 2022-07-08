@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>White Magic</name>
+		<description>The White Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-white-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-white-magic.xml" />
+        </update>
+	</info>
+	<element name="White Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WHITE_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>White magic is fundamentally good and benevolent for all living things. Witches that adopt this craft, in spite of the hateful curse that infects them, often dedicate themselves to healing and caretaking, with the intent of bettering the world</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_CRAFT_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_HEX_REMEDY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_TALISMAN_OF_PROTECTION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_BENEVOLENT_SURGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_WITCHS_GIFT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_HEX_REMEDY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_TALISMAN_OF_PROTECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_BENEVOLENT_SURGE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_WITCHS_GIFT" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>White Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>bless, cure wounds</em></td></tr>
+                <tr><td>2nd</td><td><em>lesser restoration, prayer of healing</em></td></tr>
+                <tr><td>3rd</td><td><em>beacon of hope, revivify</em></td></tr>
+                <tr><td>4th</td><td><em>death ward, guardian of faith</em></td></tr>
+                <tr><td>5th</td><td><em>mass cure wounds, raise dead</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Remedy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_HEX_REMEDY">
+        <description>
+            <p>At 3rd level, you learn a hex that closes wounds and eases pain. As an action, choose one creature you can see within 60 feet of you. This creature regains a number of hit points equal to 1d10 + your witch level. A creature that regains hit points from this hex can't be affected by it again until it finishes a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="Each target: 1/Short||Long Rest">
+            <description> Choose one creature you can see within 60 feet of you. This creature regains 1d10+{{level:witch}}hp.</description>
+        </sheet>
+    </element>
+    <element name="Talisman of Protection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_TALISMAN_OF_PROTECTION">
+        <description>
+            <p>At 6th level, you can craft a magical talisman that wards off harm. Creating a talisman takes 1 hour of work, which can be performed over the course of a short rest. You can only have one of these talismans at a time; crafting a new talisman causes the previous one to become mundane. Any creature wearing the talisman can add a d4 to all saving throws it makes.</p>
+        </description>
+        <sheet>
+            <description> You can craft a magical talisman that wards off harm. It takes 1 hour of work, which can be performed during a short rest. You can only have one of these talismans at a time; crafting a new talisman causes the previous one to become mundane. Any creature wearing the talisman can add a d4 to all saving throws it makes.</description>
+        </sheet>
+    </element>
+    <element name="Benevolent Surge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_BENEVOLENT_SURGE">
+        <description>
+            <p>At 10th level, when you, your familiar, or one of your allies you can see within 30 feet of you takes damage, you can use your reaction to cause that creature to regain hit points equal to 1d10 + your Charisma modifier.</p>
+            <p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short||Long Rest">
+            <description> When you, your familiar, or one of your allies you can see within 30ft of you takes damage, you can use your reaction to cause that creature to regain 1d10+{{charisma:modifier}}hp.</description>
+        </sheet>
+    </element>
+    <element name="Witch's Gift" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHITE_MAGIC_WITCHS_GIFT">
+        <description>
+            <p>Starting at 14th level, when you cast a spell or hex that restores a creature's hit points, that creature gains a +3 bonus to its Armor Class until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description> When you cast a spell or hex that restores a creature's hp, that creature gains a +3 bonus to its AC until the end of your next turn.</description>
+        </sheet>
+    </element>
+</elements>

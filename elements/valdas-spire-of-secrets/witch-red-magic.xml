@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Red Magic</name>
+		<description>The Red Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-red-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-red-magic.xml" />
+        </update>
+	</info>
+	<element name="Red Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_RED_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Arcane magic tied to channeling the elements is deemed red magic, and is extremely hazardous when used. Witches that specialize in this craft are among the deadliest spellcasters in existence, channeling their curse into unhindered arcane wrath.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_CRAFT_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_HEX_IMPERIL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_CONVOLUTE_ENERGY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_INVULNERABILITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_ELEMENTAL_ANNIHILATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_HEX_IMPERIL" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_CONVOLUTE_ENERGY" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_INVULNERABILITY" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_ELEMENTAL_ANNIHILATION" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Red Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands, magic missile</em></td></tr>
+                <tr><td>2nd</td><td><em>acid arrow, scorching ray</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball, protection from energy</em></td></tr>
+                <tr><td>4th</td><td><em>ice storm, wall of fire</em></td></tr>
+                <tr><td>5th</td><td><em>cone of cold, telekinesis</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Imperil" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_HEX_IMPERIL">
+        <description>
+            <p>Starting at 3rd level, you know how to strip away your foes’ magical defenses. As an action, choose one creature you can see within 60 feet of you to make a Constitution saving throw, and choose any one damage type. On a failed save, the creature loses resistance to the chosen damage type until the end of your next turn, or is treated as only having resistance, if it has immunity to that damage type.</p>
+        </description>
+        <sheet action="Action">
+            <description> Choose one creature you can see within 60ft of you to make a CON saving throw, and choose any one damage type. On a failed save, the creature loses resistance to the chosen damage type until the end of your next turn, or is treated as only having resistance, if it has immunity to that damage type.</description>
+        </sheet>
+    </element>
+    <element name="Convolute Energy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_CONVOLUTE_ENERGY">
+        <description>
+            <p>At 6th level, whenever you cast a spell that deals acid, cold, fire, lightning, or thunder damage, you can gain resistance to that damage type until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description> Whenever you cast a spell that deals acid, cold, fire, lightning, or thunder damage, you can gain resistance to that damage type until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Invulnerability" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_INVULNERABILITY">
+        <description>
+            <p>Beginning at 10th level, when an attacker that you can see hits you with an attack, you can use your reaction to briefly become all but invulnerable. The damage you take from the attack is reduced by 50.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description> When an attacker that you can see hits you with an attack, you can use your reaction to briefly become all but invulnerable. The damage you take from the attack is reduced by 50.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Annihilation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RED_MAGIC_ELEMENTAL_ANNIHILATION">
+        <description>
+            <p>Starting at 14th level, when you cast a witch spell that deals acid, cold, fire, lightning, or thunder damage, you can expend another spell slot of equal or higher level to maximize the damage dealt.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description> When you cast a witch spell that deals acid, cold, fire, lightning, or thunder damage, you can expend another spell slot of equal or higher level to maximize the damage dealt.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tea Magic</name>
+		<description>The Tea Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-tea-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-tea-magic.xml" />
+        </update>
+	</info>
+	<element name="Tea Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TEA_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Tea witches are among the calmest and friendliest of witches, radiating warmth and contentment despite their hideous faces and hollow souls. At their very worst, they can be cranky (if forced to drink their tea in a hurry), or twitchy (after too much tea), but even then, they are likely to look for peaceful solutions to their problems.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_CRAFT_SPELLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_TEA_CEREMONY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_HEX_TASSEOGRAPHY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_SHAPES_AND_OMENS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_HERBAL_REMEDY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_INVIGORATE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_HEX_TASSEOGRAPHY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_TEA_CEREMONY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_SHAPES_AND_OMENS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_HERBAL_REMEDY" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_INVIGORATE" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Tea Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>hideous laughter, sanctuary</em></td></tr>
+                <tr><td>2nd</td><td><em>augury, calm emotions</em></td></tr>
+                <tr><td>3rd</td><td><em>clairvoyance, sending</em></td></tr>
+                <tr><td>4th</td><td><em>divination, private sanctum</em></td></tr>
+                <tr><td>5th</td><td><em>legend lore, scrying</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SENDING" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Tasseography" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_HEX_TASSEOGRAPHY">
+        <description>
+            <p>Starting when you choose this craft at 3rd level, you can see glimpses of the future in your tea leaves. As an action, choose a friendly creature you can see within 60 feet of you, roll a d20, and record the number rolled. Until the end of your next turn, you can replace any attack roll, saving throw, or ability check made by the creature with this foretelling roll. You must choose to do so before the roll. Once you replace a roll in this way, this hex ends.</p>
+        </description>
+        <sheet action="Action">
+            <description> Choose a friendly creature you can see within 60ft of you, roll a d20, and record the number rolled. Until the end of your next turn, you can replace any attack roll, saving throw, or ability check made by the creature with this foretelling roll. You must choose to do so before the roll. Once you replace a roll in this way, this hex ends.</description>
+        </sheet>
+    </element>
+    <element name="Tea Ceremony" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_TEA_CEREMONY">
+        <description>
+            <p>Also at 3rd level, you can magically conjure enough tea for you and your allies whenever you take a short or long rest. A creature who drinks this tea loses one additional level of exhaustion during that rest.</p>
+        </description>
+        <sheet>
+            <description> You can magically conjure enough tea for you and your allies whenever you take a short or long rest. A creature who drinks this tea loses one additional level of exhaustion during that rest.</description>
+        </sheet>
+    </element>
+    <element name="Shapes and Omens" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_SHAPES_AND_OMENS">
+        <description>
+            <p>By 6th level, you can see deeper glimpses into the future through your tea leaves. When you finish a long rest, you can examine the shape of your tea leaves. The GM tells you a shape that hints at future events. For example, if you see a tower in your tea leaves, you might encounter a wizard on the following day. If you see a serpent, you might encounter a lair or a monster.</p>
+        </description>
+        <sheet>
+            <description> When you finish a long rest, you can examine the shape of your tea leaves. The GM tells you a shape that hints at future events. For example, if you see a tower in your tea leaves, you might encounter a wizard on the following day. If you see a serpent, you might encounter a lair or a monster.</description>
+        </sheet>
+    </element>
+    <element name="Herbal Remedy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_HERBAL_REMEDY">
+        <description>
+            <p>At 10th level, you can cast the <i>greater restoration</i> spell without using a spell slot or material components. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> You can cast the greater restoration spell without using a spell slot or material components.</description>
+        </sheet>
+    </element>
+    <element name="Invigorate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TEA_MAGIC_INVIGORATE">
+        <description>
+            <p>By 14th level, as a bonus action, you can give yourself or a friendly creature you can see within 5 feet of you a temporary rush of energy by drinking an energizing cup of tea. On the target’s next turn, the target can take one additional action.</p>
+            <p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description> You can give yourself or a friendly creature you can see within 5ft of you a temporary rush of energy by drinking an energizing cup of tea. On the target's next turn, the target can take one additional action.</description>
+        </sheet>
+    </element>
+</elements>

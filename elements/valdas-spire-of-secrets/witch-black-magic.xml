@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Black Magic</name>
+		<description>The Black Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-black-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-black-magic.xml" />
+        </update>
+	</info>
+	<element name="Black Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLACK_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Black magic is associated with hexes that cause pain and suffering, and spells that give rise to undeath. Harnessing such a craft can lend you great power, but inevitably carries a cost. Darkness cannot be contained, after all; it merely seeps forth from wherever it is kept.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_CRAFT_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_HEX_DECAY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_UNDEATH_COMMAND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_LIFE_TETHER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_BLACK_SACRIFICE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_HEX_DECAY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_UNDEATH_COMMAND" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_LIFE_TETHER" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_BLACK_SACRIFICE" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Black Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>exhume*, inflict wounds</em></td></tr>
+                <tr><td>2nd</td><td><em>gentle repose, magic weapon</em></td></tr>
+                <tr><td>3rd</td><td><em>animate dead, vampiric touch</em></td></tr>
+                <tr><td>4th</td><td><em>blight, death ward</em></td></tr>
+                <tr><td>5th</td><td><em>cloudkill, contagion</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_EXHUME" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Decay" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_HEX_DECAY">
+        <description>
+            <p>When you adopt this craft at 3rd level, you learn to drain the vitality from a living being. As an action, choose one creature you can see within 60 feet of you to make a Constitution saving throw. On a failed save, the creature takes 1d4 necrotic damage at the start of its next turn, and its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the hex ends. The target dies if this effect reduces its hit point maximum to 0. This hex ends at the end of your next turn.</p>
+        </description>
+        <sheet action="Action">
+            <description> Choose one creature you can see within 60ft of you to make a CON saving throw. On a failed save, the creature takes 1d4 necrotic damage at the start of its next turn, and its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the hex ends. The target dies if this effect reduces its hit point maximum to 0. This hex ends at the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Undeath Command" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_UNDEATH_COMMAND">
+        <description>
+            <p>Starting at 6th level, you have intertwined the magic of your familiar with the magic you use to animate the dead. When you use your bonus action to command your familiar, you can use the same bonus action to issue a command to any undead you control via the <i>animate dead</i> spell or similar magic.</p>
+        </description>
+        <sheet>
+            <description> When you use your bonus action to command your familiar, you can use the same bonus action to issue a command to any undead you control via the animate dead spell or similar magic.</description>
+        </sheet>
+    </element>
+    <element name="Life Tether" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_LIFE_TETHER">
+        <description>
+            <p>At 10th level, as a reaction when you take damage from a creature you can see, you can transfer some of that damage to a creature that is the sole target of your hex. You take half the damage (rounded down) and the hexed creature takes the remaining damage. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description> When you take damage from a creature you can see, you can transfer some of that damage to a creature that is the sole target of your hex. You take half the damage (rounded down) and the hexed creature takes the remaining damage.</description>
+        </sheet>
+    </element>
+    <element name="Black Sacrifice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BLACK_MAGIC_BLACK_SACRIFICE">
+        <description>
+            <p>Beginning at 14th level, if your familiar is within 10 feet of you, you can use your action to command it to dissolve its magical bond to this plane, which unleashes a torrent of necromantic energy. Each creature you choose within 20 feet of your familiar must make a Dexterity saving throw against your spell save DC. A creature takes 8d10 necrotic damage on a failed save, or half as much damage on a successful one, and its hit point maximum is reduced by an amount equal to the necrotic damage taken. A target dies if this effect reduces its hit point maximum to 0. Once you use this feature, you can't summon your familiar again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> If your familiar is within 10ft of you, you can command it to dissolve its magical bond to this plane, which unleashes a torrent of necromantic energy. Each creature you choose within 20ft of your familiar must make a DC{{spellcasting:dc:cha}} DEX saving throw. A creature takes 8d10 necrotic damage on a failed save, or half as much damage on a successful one, and its hit point maximum is reduced by an amount equal to the necrotic damage taken. A target dies if this effect reduces its hit point maximum to 0.</description>
+        </sheet>
+    </element>
+</elements>

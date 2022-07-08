@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Green Magic</name>
+		<description>The Green Magic from Valda's Spire of Secrets</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="witch-green-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-green-magic.xml" />
+        </update>
+	</info>
+	<element name="Green Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREEN_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Forbidden by most witch covens, Green magic centers on the use of dark spells and mortal hexes that draw from the spellcaster's very essence. It is fundamentally more perilous than other witch crafts, but its many risks come with copious rewards.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_CRAFT_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_HEX_ELDER_TONGUE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_PRIMAL_ALLY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_TWIN_FAMILIAR" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_VITAL_NOURISHMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_SACRIFICIAL_FAMILIAR" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_CRAFT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_HEX_ELDER_TONGUE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_PRIMAL_ALLY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_TWIN_FAMILIAR" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_VITAL_NOURISHMENT" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_SACRIFICIAL_FAMILIAR" level="14" />
+		</rules>
+	</element>
+    <element name="Craft Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_CRAFT_SPELLS">
+        <description>
+            <p>You gain a number of Craft Spells. New spells are marked with an asterisk.</p>
+            <h5>Green Magic Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>entangle, goodberry</em></td></tr>
+                <tr><td>2nd</td><td><em>barkskin, locate animals or plants</em></td></tr>
+                <tr><td>3rd</td><td><em>conjure animals, plant growth</em></td></tr>
+                <tr><td>4th</td><td><em>conjure woodland beings, stoneskin</em></td></tr>
+                <tr><td>5th</td><td><em>awaken, tree stride</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="9" spellcasting="Witch" />
+            <grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Witch" />
+        </rules>
+    </element>
+    <element name="Hex: Elder Tongue" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_HEX_ELDER_TONGUE">
+        <description>
+            <p>Starting when you choose this craft at 3rd level, you know the speech of the forest. As a bonus action, you can attune yourself to the forest, granting you the ability to speak with beasts and plants in a limited manner until the end of your next turn. Most beasts and plants lack the intelligence to convey or understand sophisticated concepts, but could relay what they have seen or heard in the recent past. While you can speak with them, you have advantage on all Charisma checks you make to influence beasts and plants.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can attune yourself to the forest, granting you the ability to speak with beasts and plants in a limited manner until the end of your next turn. Most beasts and plants lack the intelligence to convey or understand sophisticated concepts, but could relay what they have seen or heard in the recent past. While you can speak with them, you have advantage on all CHA checks you make to influence beasts and plants.</description>
+        </sheet>
+    </element>
+    <element name="Primal Ally" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_PRIMAL_ALLY">
+        <description>
+            <p>Also at 3rd level, whenever you summon your familiar, you conjure one that is hardier than normal. Add three times your witch level, instead of twice your witch level, to your familiar's hit point maximum.</p>
+        </description>
+        <sheet>
+            <description> Whenever you summon your familiar, you add three times your witch level, instead of twice your witch level, to your familiar's hit point maximum.</description>
+        </sheet>
+    </element>
+    <element name="Twin Familiar" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_TWIN_FAMILIAR">
+        <description>
+            <p>By 6th level, when you summon your familiar, you can divide its spirit into two bodies. When summoned in this way, your familiar is two identical creatures that share a single pool of hit points. Your twin familiars act on subsequent turns. You can use your bonus action to command one twin to attack and your action to command the other to attack. A spell or feature that targets or dismisses your familiar affects both twins.</p>
+        </description>
+        <sheet>
+            <description> When you summon your familiar, you can divide its spirit into two bodies. When summoned in this way, your familiar is two identical creatures that share a single pool of hp. Your twin familiars act on subsequent turns. You can use your bonus action to command one twin to attack and your action to command the other to attack. A spell or feature that targets or dismisses your familiar affects both twins.</description>
+        </sheet>
+    </element>
+    <element name="Vital Nourishment" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_VITAL_NOURISHMENT">
+        <description>
+            <p>By 10th level, you exude an aura of Green Magic that restores and reinvigorates life around you. When you finish a long rest, plant life within 120 feet of where you finished your long rest grows as if a month had passed with abundant food, water, and other necessities. If the plants would produce fruits, berries, or vegetables, the plants grow enough food to feed six creatures for one day. </p>
+            <p class="indent">Additionally, choose up to six creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your witch level + your Charisma modifier. You can also end one disease affecting each creature, or end one of the following conditions: blinded, deafened, paralyzed, or poisoned.</p>
+        </description>
+        <sheet>
+            <description> When you finish a long rest, plant life within 120 feet of where you finished your long rest grows as if a month had passed with abundant food, water, and other necessities. If the plants would produce fruits, berries, or vegetables, the plants grow enough food to feed six creatures for one day.
+            Also, choose up to six creatures you can see at the end of the rest. Those creatures each gain {{nourishment}} temporary hp. You can also end one disease affecting each creature, or end one of the following conditions: blinded, deafened, paralyzed, or poisoned.</description>
+        </sheet>
+        <rules>
+            <stat name="nourishment" value="level:witch:half" />
+            <stat name="nourishment" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Sacrificial Familiar" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_SACRIFICIAL_FAMILIAR">
+        <description>
+            <p>At 14th level, whenever you are targeted by a melee attack while your familiar is within 5 feet of you, you can use your reaction to command it to dive in the way of the attack, causing the attack to target your familiar instead.</p>
+            <p class="indent">You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{sacrifice:count}}/Long Rest">
+            <description> Whenever you are targeted by a melee attack while your familiar is within 5 feet of you, you can command it to dive in the way of the attack, causing the attack to target your familiar instead.</description>
+        </sheet>
+        <rules>
+			<stat name="sacrifice:count" value="1" bonus="base"/>
+			<stat name="sacrifice:count" value="charisma:modifier" bonus="base"/>
+		</rules>
+    </element>
+</elements>
