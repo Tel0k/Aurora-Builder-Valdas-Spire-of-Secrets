@@ -4,7 +4,7 @@
         <name>Beastborne</name>
         <description>The Beastborne from Valda's Spire of Secrets</description>
         <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-beastborne.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-beastborne.xml" />
         </update>    
     </info>
@@ -18,7 +18,9 @@
             <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_BEAST_HOWLING_CARNAGE" />
             <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_BEAST_RELENTLESS_BLOODLUST" />
         </description>
-        <sheet display="false" />
+        <sheet>
+            <description>A new form, a primal, bestial self lies just beneath your skin, awaiting the allure of blood and the thrill of a hunt to emerge in a terrible spectacle.</description>
+        </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_BEAST_SHAPECHANGER" level="3" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_BEAST_BESTIAL_ASPECT" level="3" />
