@@ -4,7 +4,7 @@
 		<name>Path of the Rage Mage</name>
 		<description>The Path of the Rage Mage from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="barbarian-rage-mage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/barbarian-rage-mage.xml" />
 		</update>
 	</info>
@@ -67,7 +67,8 @@
 			<stat name="rage-mage:spellcasting:slots:1" value="1" level="7" />
 			<stat name="rage-mage:spellcasting:slots:2" value="2" level="7" />
 			<stat name="rage-mage:spellcasting:slots:2" value="1" level="10" />
-			<stat name="rage-mage:spellcasting:slots:3" value="3" level="13" />
+			<stat name="rage-mage:spellcasting:slots:3" value="2" level="13" />
+			<stat name="rage-mage:spellcasting:slots:3" value="1" level="16" />
 			<stat name="rage-mage:spellcasting:slots:4" value="1" level="19" />
 			<stat name="rage-mage:spellcasting:slots:4" value="1" level="20" />
 			<select type="Spell" name="Cantrip (Rage Mage)" supports="Sorcerer,0" level="3" number="2" spellcasting="Rage Mage" />
