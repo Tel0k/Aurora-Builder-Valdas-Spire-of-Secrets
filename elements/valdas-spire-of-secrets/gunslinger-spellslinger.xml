@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spellslinger</name>
+        <description>The Spellslinger from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-spellslinger.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-spellslinger.xml" />
+        </update>    
+    </info>
+    <element name="Spellslinger" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_SPELLSLINGER">
+        <supports>Creed</supports>
+        <description>
+            <p>Magic and guns aren’t so different. If arcane power is like gunpowder and a spell is like a bullet, you are like a gun, directing your spells with precision at unfortunate targets. You mix the disciplines of gun and spell, sometimes loading arcane charges with your shots and firing streaks of lighting, frost, or flame in the wake of your bullet.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLSHOT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_RUNECARVED_CARTRIDGES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_IMPROVED_SPELLSHOT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLSHOT" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_RUNECARVED_CARTRIDGES" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_IMPROVED_SPELLSHOT" level="14" />
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING">
+        <description>
+            <p>When you reach 3rd level, you complement your bullets with the ability to cast spells.</p>
+			<h5>CANTRIPS</h5>
+			<p> You learn finger guns and two other cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Spellslinger Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Spellslinger Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your wizard spells. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description> You complement your bullets with the ability to cast spells.</description>
+		</sheet>
+		<spellcasting name="Spellslinger" ability="Intelligence" allowReplace="true">
+			<list>Wizard,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="spellslinger:spellcasting:slots:1" value="2" level="3" />
+			<stat name="spellslinger:spellcasting:slots:1" value="1" level="4" />
+			<stat name="spellslinger:spellcasting:slots:1" value="1" level="7" />
+			<stat name="spellslinger:spellcasting:slots:2" value="2" level="7" />
+			<stat name="spellslinger:spellcasting:slots:2" value="1" level="10" />
+			<stat name="spellslinger:spellcasting:slots:3" value="2" level="13" />
+			<stat name="spellslinger:spellcasting:slots:3" value="1" level="16" />
+			<stat name="spellslinger:spellcasting:slots:4" value="1" level="19" />
+			<stat name="spellslinger:spellcasting:slots:4" value="1" level="20" />
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_FINGER_GUNS" level="3" />
+            <select type="Spell" name="Cantrip (Spellslinger)" supports="Wizard,0" level="3" number="2" spellcasting="Spellslinger" />
+			<select type="Spell" name="Cantrip (Spellslinger)" supports="Wizard,0" level="10" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="Wizard, $(spellcasting:slots)" level="3" number="1" spellcasting="Spellslinger" />
+            <select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="3" number="2" spellcasting="Spellslinger" />
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="4" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="7" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="Wizard, $(spellcasting:slots)" level="8" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="10" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="11" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="13" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="Wizard, $(spellcasting:slots)" level="14" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="16" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="(Wizard, (Abjuration||Evocation)), $(spellcasting:slots)" level="19" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="Spellslinger"/>
+		</rules>
+    </element>
+    <element name="Bang, You're Dead!" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD">
+        <description>
+            <p>At 3rd level, you can use Deeds with finger guns spell attacks. Additionally, when you hit a target with a finger guns attack, you can spend a risk die as a bonus action to deal an extra 1d8 force damage to the target.</p>
+        </description>
+        <sheet>
+            <description> You can use Deeds with finger guns spell attacks. Additionally, when you hit a target with a finger guns attack, you can spend a risk die as a bonus action to deal an extra 1d8 force damage to the target.</description>
+        </sheet>
+    </element>
+    <element name="Spellshot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLSHOT">
+        <description>
+            <p>Beginning at 7th level, you can load an entire cantrip into your gun. When you use your action to cast a cantrip, you can use your bonus action to make one ranged attack with a firearm or make a ranged spell attack using the <i>finger guns</i> cantrip.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you use your action to cast a cantrip, you can make one ranged attack with a firearm or make a ranged spell attack using the finger guns cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Rune-Carved Cartridges" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_RUNECARVED_CARTRIDGES">
+        <description>
+            <p>Also at 7th level, firearms you use count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description> Firearms you use count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name="Magic Bullet" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET">
+        <description>
+            <p>Starting at 10th level, you can use your action to fire a bullet wreathed in the evocation of a <i>magic missile</i> spell. The attack must use a firearm and the target must be within the firearm’s normal range. Do not roll this attack; it automatically hits its target and deals force damage.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> You can fire a bullet wreathed in the evocation of a magic missile spell. The attack must use a firearm and the target must be within the firearm’s normal range. Do not roll this attack; it automatically hits its target and deals force damage.</description>
+        </sheet>
+    </element>
+    <element name="Improved Spellshot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_IMPROVED_SPELLSHOT">
+        <description>
+            <p>At 14th level, when you use your action to cast a spell, you can expend one risk die as a bonus action to make one ranged attack with a firearm or make a ranged spell attack using the finger guns cantrip.</p>
+            <p class="indent">If the spell requires a spell attack roll, you can choose to substitute the spell attack with a ranged attack using a firearm. Add the risk die to the firearm attack roll. On a hit, the attack deals its normal damage, in addition to the effects of the spell.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you use your action to cast a spell, you can expend one risk die to make one ranged attack with a firearm or make a ranged spell attack using the finger guns cantrip. If the spell requires a spell attack roll, you can choose to substitute the spell attack with a ranged attack using a firearm. Add the risk die to the firearm attack roll. On a hit, the attack deals its normal damage, in addition to the effects of the spell.</description>
+        </sheet>
+    </element>
+</elements>

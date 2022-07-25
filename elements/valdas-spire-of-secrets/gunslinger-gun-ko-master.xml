@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gun-Ko Master</name>
+        <description>The Gun-Ko Master from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-gun-ko-master.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-gun-ko-master.xml" />
+        </update>    
+    </info>
+    <element name="Gun-Ko Master" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_GUN_KO_MASTER">
+        <supports>Creed</supports>
+        <description>
+            <p>The ancient art of gun-ko is passed through generations of gunslingers who study the gun as a perfect weapon and meditate on its intricacies. This path is not for the impatient or the faint of heart, but those who practice it diligently make their guns an extension of themselves, learning to strike with the speed of a rifle and catch bullets out of the air.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_POINTBLANK_SHOT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_GUNKO" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_LIGHTNING_DISARM" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_BULLETCATCH" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_PREDICTIVE_DODGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_GATLING_STRIKES" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_POINTBLANK_SHOT" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_GUNKO" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_LIGHTNING_DISARM" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_BULLETCATCH" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_PREDICTIVE_DODGE" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_GATLING_STRIKES" level="14" />
+        </rules>
+    </element>
+    <element name="Point-Blank Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_POINTBLANK_SHOT">
+        <description>
+            <p>Starting at 3rd level, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged weapon attack rolls made with firearms.</p>
+        </description>
+        <sheet>
+            <description> Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged weapon attack rolls made with firearms.</description>
+        </sheet>
+    </element>
+    <element name="Gun-Ko" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_GUNKO">
+        <description>
+            <p>Also at 3rd level, you learn the immortal art of gun-ko, which sees the gun as a total weapon, as devastating used as a melee weapon in close quarters as it is fired at range. You can treat firearms as melee weapons with the Finesse property that deal 1d6 bludgeoning damage on a hit, or 1d8 damage if the firearm has the Two-Handed property.</p>
+            <p class="indent">Additionally, when you make a ranged weapon attack with a firearm against a creature within 5 feet of you, you can make a melee weapon attack using that firearm as a bonus action.</p>
+        </description>
+        <sheet>
+            <description> You can treat firearms as melee weapons with the Finesse property that deal 1d6 bludgeoning damage on a hit, or 1d8 damage if the firearm has the Two-Handed property. When you make a ranged weapon attack with a firearm against a creature within 5ft of you, you can make a melee weapon attack using that firearm as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Lightning Disarm" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_LIGHTNING_DISARM">
+        <description>
+            <p>Starting at 7th level, if a creature within 5 feet of you is holding a firearm, you can use your bonus action and expend a risk die to attempt to disarm that creature. The target must make a Dexterity saving throw against your Deed save DC. On a failed save, you take the firearm from the creature’s hands after a series of rapid movements. You must have at least one empty hand to use this ability.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> If a creature within 5ft of you is holding a firearm, you can expend a risk die to attempt to disarm that creature. The target must make a DC{{risk dice:dc}} DEX saving throw. On a failed save, you take the firearm from the creature’s hands after a series of rapid movements. You must have at least one empty hand to use this ability.</description>
+        </sheet>
+    </element>
+    <element name="Bullet-Catch" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_BULLETCATCH">
+        <description>
+            <p>Also at 7th level, you can use your reaction to deflect or catch the projectile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + proficiency bonus.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> You can deflect or catch the projectile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10+{{bulletcatch}}.</description>
+        </sheet>
+        <rules>
+            <stat name="bulletcatch" value="dexterity:modifier" />
+			<stat name="bulletcatch" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Predictive Dodge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_PREDICTIVE_DODGE">
+        <description>
+            <p>At 10th level, your reflexes are so honed that you can dodge incoming bullets. You can use your bonus action to choose one creature that you can see within 30 feet of you. You gain the benefits of the Dodge action against the target’s ranged attacks and effects until the start of your next turn. You lose this benefit if you take damage from the target.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can choose one creature that you can see within 30ft of you. You gain the benefits of the Dodge action against the target’s ranged attacks and effects until the start of your next turn. You lose this benefit if you take damage from the target.</description>
+        </sheet>
+    </element>
+    <element name="Gatling Strikes" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_KO_MASTER_GATLING_STRIKES">
+        <description>
+            <p>By 14th level, you have mastered the most advanced techniques of gun-ko. You can use your bonus action to make two melee weapon attacks and one ranged weapon attack with a firearm against targets within 15 feet of you. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short||Long Rest">
+            <description>You can make two melee weapon attacks and one ranged weapon attack with a firearm against targets within 15ft of you.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gunslinger</name>
+		<description>The Gunslinger from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+        <file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-gunslinger.xml" />
+      </update>
+	</info>
+    <element name="Gunslinger" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_GUNSLINGER">
+        <prerequisite>Firearms Character Option</prerequisite>
+        <description>
+        <p><em>Prerequisite: Firearms Character Option</em></p>
+        <p>A glass falls, clattering to the floor, and the tavern grows silent. A dwarf with a deep scowl, dripping with freshly spilled beer, leers at a drunken nearby orc and fingers for a pair of revolvers at his waist.</p>
+        <p class="indent">High on a hillside, carefully concealed beneath foliage and stones, a rifleman steadies her breathing and adjusts her scope, acquiring her target and patiently awaiting the moment to strike.</p>
+        <p class="indent">Risk is in a gunslinger's blood. They are bold renegades, bucking tradition and forging a new path with dangerous and inelegant firearms. Gunslingers are infamous for surviving by their wits, relying on split-second timing and a considerable amount of luck to survive.</p>
+        <h4>GUTS AND GUNPOWDER</h4>
+        <p>Black powder is not for the faint of heart. Its thunderous applause is volatile and imprecise—a barely controlled explosion directed at an enemy. Only the truly fearless seek to master it, for one must be mad or have nerves of steel to weather the risk of its use. But those who call themselves gunslingers are fearless combatants, hurling death from their guns in a roaring cacophony. Adapted for shootouts, gunslingers are mobile and daring, knowing that life or death hangs on snap decision-making and one's own mettle.</p>
+        <h4>DANGEROUS OUTSIDERS</h4>
+        <p>A gunslinger's explosive lifestyle lends well to wandering and adventuring. Gunslingers will often shoot first and ask questions later, an attitude which earns them few friends and bountiful enemies. In their travels, most gunslingers are secretive and take great lengths to go unnoticed, lest they be spotted by old foes with scores to settle.</p>
+        <p class="indent">Yet, their skills are not unneeded. Anyone requiring protection or revenge of their own can count on a gunslinger to be in need of an odd job when they roll into town. After all, skill with a gun is always in demand somewhere.</p>
+        <h4>CREATING A GUNSLINGER</h4>
+        <p>When creating your gunslinger, consider where firearms fit in the campaign's world and what the common perceptions are of those who use them. If firearms are the norm, your gunslinger might be a mercenary or militia fighter. If firearms are rare, your gunslinger might be one of a kind, a trailblazer in new types of warfare.</p>
+        <p class="indent">It's also not unusual for a gunslinger to be haunted by their past. Did some event drive you to the gun and motivate you to travel? Is there a bounty on your head in one or more areas? Do you have any old enemies that seek you for revenge?</p>
+        <h5>QUICK BUILD</h5>
+        <p>To make a gunslinger quickly, follow these suggestions. Make Dexterity and Constitution your highest ability scores. If you plan to choose the Gun Tank creed, instead make Strength your highest ability score. Lastly, choose any background, preferably one that emphasizes your familiarity with firearms and penchant for risk-taking.</p>
+        <h2>CLASS FEATURES</h2>
+        <p>As an Gunslinger, you gain the following class features.</p>
+        <h5 class="caption">HIT POINTS</h5>
+        <ul class="unstyled">
+            <li><strong>Hit Dice:</strong> 1d8 per Gunslinger level</li>
+            <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+            <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Gunslinger level after 1st</li>
+        </ul>
+        <h5 class="caption">PROFICIENCIES</h5>
+        <ul class="unstyled mb">
+            <li><strong>Armor:</strong> Light armor</li>
+            <li><strong>Weapons:</strong> Simple weapons, simple firearms, martial firearms</li>
+            <li><strong>Tools:</strong> One type of gaming set</li>
+        </ul>
+        <ul class="unstyled">
+            <li><strong>Saving Throws:</strong> Dexterity, Charisma</li>
+            <li><strong>Skills:</strong> Choose two from: Acrobatics, Animal Handling, Athletics, Deception, Insight, Intimidation, Perception, Persuasion, and Sleight of Hand</li>
+        </ul>
+        <h5 class="caption">EQUIPMENT</h5>
+        <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+        <ul>
+            <li>Leather armor with a longcoat</li>
+            <li>A dagger and (a) a handgun and 20 bullets or (b) a revolver and 10 bullets</li>
+            <li>Any two-handed firearm that isn't heavy and 30 bullets or shells</li>
+            <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+        </ul>
+        <h5 class="caption">THE GUNSLINGER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Risk Dice</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>—</td><td class="left">Fighting Style, Quick Draw</td></tr>
+				<tr><td> 2nd</td><td>4d8</td><td class="left">Critical Shot, Poker Face, Risk</td></tr>
+				<tr><td> 3rd</td><td>4d8</td><td class="left">Gunslinger's Creed</td></tr>
+				<tr><td> 4th</td><td>4d8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>4d8</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td>5d8</td><td class="left">Gut Shot</td></tr>
+				<tr><td> 7th</td><td>5d8</td><td class="left">Creed feature, Evasion</td></tr>
+				<tr><td> 8th</td><td>5d8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>5d8</td><td class="left">Critical Shot improvement</td></tr>
+				<tr><td>10th</td><td>5d10</td><td class="left">Creed feature</td></tr>
+				<tr><td>11th</td><td>5d10</td><td class="left">Mankiller</td></tr>
+				<tr><td>12th</td><td>5d10</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>5d10</td><td class="left">Dire Gambit</td></tr>
+				<tr><td>14th</td><td>6d10</td><td class="left">Creed feature</td></tr>
+				<tr><td>15th</td><td>6d10</td><td class="left">Cheat Death</td></tr>
+				<tr><td>16th</td><td>6d10</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>6d10</td><td class="left">Critical Shot improvement</td></tr>
+				<tr><td>18th</td><td>6d12</td><td class="left">Maverick</td></tr>
+				<tr><td>19th</td><td>6d12</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>6d12</td><td class="left">Head Shot</td></tr>
+			</table>
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_QUICK_DRAW" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_CRITICAL_SHOT" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_POKER_FACE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_RISK" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_GUNSLINGERS_CREED" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_GUT_SHOT" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_EVASION" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MANKILLER" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DIRE_GAMBIT" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_CHEAT_DEATH" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MAVERICK" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_HEAD_SHOT" />
+        </description>
+        <setters>
+            <set name="short">Risk is in a gunslinger's blood. They are bold renegades, bucking tradition and forging a new path with dangerous and inelegant firearms.</set>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="ranged:damage" value="-dexterity:modifier" equipped="([primary:shotgun]||[primary:pistol]||[primary:laser pistol]||[primary:pump shotgun]||[primary:magnum]||[primary:harpoon gun]||[primary:blunderbuss]||[primary:submachine gun]||[primary:handgun]||[primary:revolver]||[primary:parlor gun]||[primary:double-barrel shotgun]||[primary:flintlock]||[primary:musket]||[primary:rocket launcher]||[primary:hunting rifle]||[primary:gatling gun]||[primary:light cannon]||[primary:assault rifle]||[primary:grenade launcher]||[primary:sniper rifle]||[primary:rifle]||[primary:antimatter rifle]||[primary:laser rifle])" requirements="!ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MANKILLER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <select type="Proficiency" name="Tool Proficiency, Gaming set" supports="Gaming Set" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_GUNSLINGER"/>
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_QUICK_DRAW" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_CRITICAL_SHOT" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_POKER_FACE" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_RISK" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_GUNSLINGERS_CREED" level="3" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="4" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_GUT_SHOT" level="6" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_EVASION" level="7" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MANKILLER" level="11" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DIRE_GAMBIT" level="13" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_CHEAT_DEATH" level="15" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MAVERICK" level="18" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_HEAD_SHOT" level="20" />
+        </rules>
+        <multiclass id="ID_MHP_VSOS_MULTICLASS_GUNSLINGER">
+			<prerequisite>Dexterity 13</prerequisite>
+			<requirements>[dex:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">—</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" />
+				<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" />
+			</rules>
+		</multiclass>
+    </element>
+    <element name="Fighting Style" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE">
+        <description>
+            <p>You adopt a particular style of gunfighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+            <h5 class="caption">AKIMBO</h5>
+			<p>When you engage in two-weapon fighting with firearms, you don't take a penalty to the damage of the second attack.</p>
+			<h5 class="caption">BULLSEYE</h5>
+			<p>You gain a +2 bonus to ranged attack rolls you make with firearms. The weapon must have the Sighted property or have a normal range of 80 feet or longer to gain this benefit. This benefit doesn't stack with the Archery fighting style.</p>
+			<h5 class="caption">DUELIST</h5>
+			<p>While you are wielding a firearm in one hand and nothing in the other, if you make a ranged weapon attack and exceed the target's AC by 5 or more, you deal one extra die of weapon damage. You can only use this ability once per round.</p>
+			<h5 class="caption">SHOTGUNNER</h5>
+			<p>When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is worse than the original.</p>
+        </description>
+        <sheet />
+        <rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Gunslinger" level="1"/>
+		</rules>
+    </element>
+    <element name="Quick Draw" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_QUICK_DRAW">
+        <description>
+            <p>Gunslingers have twitch reflexes and can pull a gun in the blink of an eye. You have advantage on initiative rolls. Additionally, you can draw or stow up to two weapons when you roll initiative and whenever you take an action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on initiative rolls. Additionally, you can draw or stow up to two weapons when you roll initiative and whenever you take an action on your turn.</description>
+        </sheet>
+    </element>
+    <element name="Critical Shot" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_CRITICAL_SHOT">
+        <description>
+            <p>At 2nd level, your ranged firearm attacks score a critical hit on a roll of 19 or 20.</p>
+            <p class="indent">Starting at 9th level, your ranged firearm attacks score a critical hit on a roll of 18-20, and at 17th level your ranged firearm attacks score a critical hit on a roll of 17-20.</p>
+        </description>
+        <sheet>
+            <description level="2">Your ranged firearm attacks score a crit on a roll of 19-20.</description>
+            <description level="9">Your ranged firearm attacks score a crit on a roll of 18-20.</description>
+            <description level="17">Your ranged firearm attacks score a crit on a roll of 17-20.</description>
+        </sheet>
+    </element>
+    <element name="Poker Face" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_POKER_FACE">
+        <description>
+            <p>Starting at 2nd level, you have advantage on ability checks and saving throws made to prevent others from sensing your motives, perceiving your emotions, or reading your thoughts.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on ability checks and saving throws made to prevent others from sensing your motives, perceiving your emotions, or reading your thoughts.</description>
+        </sheet>
+    </element>
+    <element name="Risk" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_RISK">
+        <description>
+            <p>By 2nd level, you can perform incredible feats of daring that are fueled by special dice called risk dice.</p>
+			<h5>RISK DICE</h5>
+            <p>You have four risk dice, which are d8s. You gain additional risk dice, and your risk dice change as you gain levels in this class, as shown in the Risk Dice column of the Gunslinger table. You regain all expended risk dice when you finish a long rest.</p>
+			<h5>USING RISK DICE</h5>
+            <p>Once per turn, you can expend a risk die to perform a deed of your choice. Your deed options are detailed at the end of the class description.</p>
+			<h5>SAVING THROWS</h5>
+            <p>Some of your deeds require your target to make a saving throw to resist the deed's effects. The saving throw DC is calculated as follows:</p>
+            <center>
+				<p><strong>Deed save DC</strong> = 8 + your proficiency bonus + your Dexterity modifier</p>
+			</center>
+        </description>
+        <sheet usage="1/Turn, {{risk dice:amount}}/Long Rest">
+            <description> You can perform incredible feats of daring that are fueled by special dice called risk dice. You have {{risk dice:amount}} risk dice which are d{{risk dice:size}}s. DC {{risk dice:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="risk dice:amount" value="4" />
+			<stat name="risk dice:amount" value="1" level="6" />
+			<stat name="risk dice:amount" value="1" level="14" />
+			<stat name="risk dice:size" value="8" bonus="size" level="2"/>
+            <stat name="risk dice:size" value="10" bonus="size" level="10"/>
+            <stat name="risk dice:size" value="12" bonus="size" level="18"/>
+			<stat name="risk dice:dc" value="8" />
+			<stat name="risk dice:dc" value="proficiency" />
+			<stat name="risk dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+			<stat name="risk dice:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="risk dice:dc" value="risk dice:dc:ability" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_HEAVY_GUNNER"/>
+			<stat name="risk dice:dc" value="dexterity:modifier" requirements="!ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_HEAVY_GUNNER"/>
+           <!-- <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_BITETHEBULLET" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_COVERING_FIRE" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_DODGE_ROLL" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_LIMB_SHOT" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_SKINOFYOURTEETH" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_STEADY_AIM" level="2" />-->
+            <select type="Class Feature" name="Deeds" supports="Deed" number="6" />
+        </rules>
+    </element>
+    <!---->
+    <element name="Bite the Bullet" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_BITETHEBULLET">
+        <supports>Deed</supports>
+        <description>
+            <p>As a bonus action on your turn, you can expend one risk die to gain temporary hit points equal the number rolled on the die + your Constitution modifier.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can expend one risk die to gain temporary hp equal the number rolled on the die + {{constitution:modifier}}.</description>
+        </sheet>
+    </element>
+    <element name="Covering Fire" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_COVERING_FIRE">
+        <supports>Deed</supports>
+        <description>
+            <p>When you hit a creature with a ranged weapon attack, you can expend one risk die as a bonus action to cow the creature. Roll the risk die and subtract it from the next attack roll the creature makes before the start of your next turn.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you hit a creature with a ranged weapon attack, you can expend one risk die to cow the creature. Roll the risk die and subtract it from the next attack roll the creature makes before the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Dodge Roll" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_DODGE_ROLL">
+        <supports>Deed</supports>
+        <description>
+            <p>You can expend one risk die as a bonus action to move up to 15 feet and reload any firearm you are holding. This movement doesn't provoke opportunity attacks, ignores difficult terrain, and allows you to move through a hostile creature's space, as long as you don't end your movement there.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You expend one risk die to reload any firearm you hold and move up to 15ft without provoking opportunity attacks, ignoring difficult terrain, and moving through a hostile creature's space, as long as you don't end your movement there.</description>
+        </sheet>
+    </element>
+    <element name="Limb Shot" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_LIMB_SHOT">
+        <supports>Deed</supports>
+        <description>
+            <p>When you hit a creature with a ranged weapon attack, you can expend one risk die as a bonus action and aim for one of its limbs, attempting to force it to drop one item of your choice that it's holding. The target must make a Constitution saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you hit a creature with a ranged weapon attack, you can expend one risk die and aim for one of its limbs, to force it to drop one item of your choice that it's holding. The target must make a CON saving throw. On a failed save, it drops the object you choose and it lands at its feet.</description>
+        </sheet>
+    </element>
+    <element name="Skin of your Teeth" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_SKINOFYOURTEETH">
+        <supports>Deed</supports>
+        <description>
+            <p>When an attacker you can see makes an attack against you, you can expend a risk die as a reaction to dodge out of harm's way at the last second. You add the risk die to your AC against this attack, potentially causing it to miss.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When an attacker you can see makes an attack roll against you, you can expend a risk die to dodge out of harm's way at the last second. You add the risk die to your AC against this attack, potentially causing it to miss.</description>
+        </sheet>
+    </element>
+    <element name="Steady Aim" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DEEDS_STEADY_AIM">
+        <supports>Deed</supports>
+        <description>
+            <p>On your turn, you can use a bonus action and expend one risk die to double the normal and maximum range for the next ranged weapon attack you make.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> On your turn, you can expend one risk die to double the normal and maximum range for the next ranged weapon attack you make.</description>
+        </sheet>
+    </element>
+    <!---->
+    <element name="Gunslinger's Creed" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_GUNSLINGERS_CREED">
+        <description>
+            <p>By the time gunslingers reach 3rd level, they embrace a way of living, known as their creed, which guides their judgments and their unique brand of gunslinging. Your choice grants you features at 3rd level and again at 7th, 10th, and 14th level.</p>
+        </description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Gunslinger's Creed" supports="Creed" level="3"/>
+		</rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<select type="Class Feature" name="Improvement Option (Gunslinger 4)" supports="Improvement Option,Gunslinger,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 8)" supports="Improvement Option,Gunslinger,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 12)" supports="Improvement Option,Gunslinger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 16)" supports="Improvement Option,Gunslinger,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 19)" supports="Improvement Option,Gunslinger,19" level="19" />           
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description> You can attack twice whenever you take the Attack action on your turn</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+        </rules>
+    </element>
+    <element name="Gut Shot" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_GUT_SHOT">
+        <description>
+            <p>Starting at 6th level, whenever you score a critical hit against a Large or smaller creature with a firearm, the bullet lodges itself in the target. Until the creature uses its action to dislodge the bullet, it moves at half speed and has disadvantage on attack rolls and ability checks. Elementals, oozes, and undead are immune to this effect.</p>
+        </description>
+        <sheet>
+            <description> Whenever you score a crit hit against a Large or smaller creature with a firearm, the bullet lodges itself in the target. Until the creature uses its action to dislodge the bullet, it moves at half speed and has disadvantage on attack rolls and ability checks. Elementals, oozes, and undead are immune to this effect.</description>
+        </sheet>
+    </element>
+    <element name="Evasion" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_EVASION">
+        <description>
+            <p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description> When you are subjected to an effect that allows you to make a DEX saving throw to take only half damage, you instead take no damage on succeeding, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Mankiller" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MANKILLER">
+        <description>
+            <p>Starting at 11th level, when you make one or more firearm attacks as part of an action, you can add your ability modifier to the firearm's damage rolls. Note that firearms do not normally add your ability modifier to their damage rolls.</p>
+        </description>
+        <sheet>
+            <description> When you make one or more firearm attacks as part of an action, you can add your ability mod to the firearm's damage rolls.</description>
+        </sheet>
+    </element>
+    <element name="Dire Gambit" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_DIRE_GAMBIT">
+        <description>
+            <p>Beginning at 13th level, whenever you score a critical hit, you regain one expended risk die.</p>
+        </description>
+        <sheet>
+            <description> Whenever you score a crit, you regain one expended risk die.</description>
+        </sheet>
+    </element>
+    <element name="Cheat Death" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_CHEAT_DEATH">
+        <description>
+            <p>By 15th level, you have a knack for evading the grave. When you drop to 0 hit points and don't die outright, you can use your reaction and expend one risk die to remain standing. You instead drop to a number of hit points equal to the number rolled on the die.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short||Long Rest">
+            <description> When you drop to 0 hit points and don't die outright, you can expend one risk die to remain standing. You instead drop to a number of hp equal to the number rolled on the die.</description>
+        </sheet>
+    </element>
+    <element name="Maverick" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_MAVERICK">
+        <description>
+            <p>By 18th level, you have become unshakable. You have advantage on Constitution checks and saving throws.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on CON checks and saving throws.</description>
+        </sheet>
+    </element>
+    <element name="Head Shot" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GUNSLINGER_HEAD_SHOT">
+        <description>
+            <p>At 20th level, when you score a critical hit against a creature with a firearm, you can choose for the shot to be a head shot. If the creature has less than 100 hit points, it dies. Otherwise, it takes an extra 10d10 damage from the hit. Elementals, oozes, undead, and creatures that lack nervous systems or vital organs take no extra damage from this feature.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+       </description>
+        <sheet usage="1/Short||Long Rest">
+            <description> When you score a crit against a creature with a firearm, you can choose for it to be a head shot. If the creature has less than 100 hp, it dies. Otherwise, it takes an extra 10d10 damage from the hit, unless it's an elemental, ooze or undead.</description>
+        </sheet>
+    </element>
+    <!-- Fighting Styles -->
+	<element name="Akimbo" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_AKIMBO">
+		<supports>Fighting Style, Gunslinger</supports>
+		<description>
+			<p>When you engage in two-weapon fighting with firearms, you don't take a penalty to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting with firearms, you don't take a penalty to the damage of the second attack.</description>
+		</sheet>
+	</element>
+    <element name="Bullseye" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_BULLSEYE">
+		<supports>Fighting Style, Gunslinger</supports>
+		<description>
+			<p>You gain a +2 bonus to ranged attack rolls you make with firearms. The weapon must have the Sighted property or have a normal range of 80 feet or longer to gain this benefit. This benefit doesn't stack with the Archery fighting style.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to ranged firearms attack rolls. The weapon must have the Sighted property or have a normal range of 80 feet or longer to gain this benefit. This benefit doesn't stack with the Archery fighting style.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" equipped="([primary:musket]||[primary:rocket launcher]||[primary:hunting rifle]||[primary:gatling gun]||[primary:light cannon]||[primary:assault rifle]||[primary:grenade launcher]||[primary:sniper rifle]||[primary:rifle]||[primary:antimatter rifle]||[primary:laser rifle])" requirements="!ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY"/>
+		</rules>
+	</element>
+    <element name="Duelist" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_DUELIST">
+		<supports>Fighting Style, Gunslinger</supports>
+		<description>
+			<p>While you are wielding a firearm in one hand and nothing in the other, if you make a ranged weapon attack and exceed the target's AC by 5 or more, you deal one extra die of weapon damage. You can only use this ability once per round.</p>
+		</description>
+		<sheet usage="1/Round">
+			<description>While you are wielding a firearm in one hand and nothing in the other, if you make a ranged weapon attack and exceed the target's AC by 5 or more, you deal one extra die of weapon damage.</description>
+		</sheet>
+	</element>
+    <element name="Shotgunner" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIGHTINGSTYLE_SHOTGUNNER">
+		<supports>Fighting Style, Gunslinger</supports>
+		<description>
+			<p>When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is worse than the original.</p>
+		</description>
+		<sheet>
+			<description>When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is worse than the original.</description>
+		</sheet>
+	</element>
+</elements>

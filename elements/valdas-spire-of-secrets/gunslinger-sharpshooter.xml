@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Sharpshooter</name>
+        <description>The Sharpshooter from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-sharpshooter.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-sharpshooter.xml" />
+        </update>    
+    </info>
+    <element name="Sharpshooter" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_SHARPSHOOTER">
+        <supports>Creed</supports>
+        <description>
+            <p>A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots need to be delivered perfectly, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_EAGLE_EYE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_SNIPERS_STANCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_CAMOUFLAGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_EYE_FOR_MOVEMENT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_FOCUSED_SHOT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_EAGLE_EYE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_SNIPERS_STANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_CAMOUFLAGE" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_EYE_FOR_MOVEMENT" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_FOCUSED_SHOT" level="14" />
+        </rules>
+    </element>
+    <element name="Eagle Eye" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_EAGLE_EYE">
+        <description>
+            <p>Starting when you choose this creed at 3rd level, when you make an attack with a firearm you are holding in two hands, you can use a bonus action to expend a risk die and add it to the attack roll. This attack doesn't have disadvantage due to being at long range.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you make an attack with a firearm you are holding in two hands, you can use expend a risk die and add it to the attack roll. This attack doesn't have disadvantage due to being at long range.</description>
+        </sheet>
+    </element>
+    <element name="Sniper's Stance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_SNIPERS_STANCE">
+        <description>
+            <p>At 3rd level, you don't have disadvantage on ranged firearm attacks as a result of being prone. Additionally, when you're prone, you can stand up by spending 5 feet of movement, rather than half your speed.</p>
+        </description>
+        <sheet>
+            <description> You don't have disadvantage on ranged firearm attacks as a result of being prone. Additionally, when you're prone, you can stand up by spending 5ft of movement, rather than half your speed.</description>
+        </sheet>
+    </element>
+    <element name="Camouflage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_CAMOUFLAGE">
+        <description>
+            <p>By 7th level, you've learned to expertly conceal yourself in a sniper's nest. You can spend 1 minute preparing camouflage for yourself. Until you move, you gain the following benefits:</p>
+            <ul>
+                <li>You have advantage on Dexterity (Stealth) checks you make to hide</li>
+                <li>Attacks you make while hidden don't automatically reveal your location</li>
+                <li>Creatures have disadvantage on ability checks they make to discern the origin of your firearm attacks.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You can spend 1 minute preparing camouflage for yourself. Until you move, you gain the following benefits: advantage on DEX (Stealth) checks you make to hide; attacks you make while hidden don't automatically reveal your location; creatures have disadvantage on ability checks they make to discern the origin of your firearm attacks.</description>
+        </sheet>
+    </element>
+    <element name="Eye for Movement" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_EYE_FOR_MOVEMENT">
+        <description>
+            <p>By 10th level, your vision is keen enough to place invisible targets in your sights. As a bonus action, you can gain darkvision and the effects of the <i>see invisibility</i> spell against targets that are 30 feet or further from you until the end of your next turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can gain darkvision and the effects of the see invisibility spell against targets that are 30ft or further from you until the end of your next turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</description>
+        </sheet>
+    </element>
+    <element name="Focused Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SHARPSHOOTER_FOCUSED_SHOT">
+        <description>
+            <p>Starting at 14th level, when you use your Attack action to make only one ranged attack with a firearm and do not have disadvantage, you can gain advantage on the attack roll and deal damage on a hit as if you scored a critical hit.</p>
+        </description>
+        <sheet>
+            <description> When you use your Attack action to make only one ranged attack with a firearm and do not have disadvantage, you can gain advantage on the attack roll and deal damage on a hit as if you scored a critical hit.</description>
+        </sheet>
+    </element>
+</elements>

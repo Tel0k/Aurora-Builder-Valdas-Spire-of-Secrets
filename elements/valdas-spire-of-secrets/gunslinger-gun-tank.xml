@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gun Tank</name>
+        <description>The Gun Tank from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-gun-tank.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-gun-tank.xml" />
+        </update>    
+    </info>
+    <element name="Gun Tank" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_GUN_TANK">
+        <prerequisite>Strength 15 or higher</prerequisite>
+        <supports>Creed</supports>
+        <description>
+            <p><em>Prerequisite: Strength score 15 or higher</em></p>
+            <p>Be bigger, be badder, and be tougher, and no man will stand in your way. You are a living siege engine, a titan of muscle, brandishing weapons most men are incapable of lifting. Armed with these devastating firearms, you wade into the field of battle, bombarding and destroying those foolish enough to approach you.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_HEAVY_GUNNER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_TOUGHASNAILS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_THICKHEADED" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_STRONGASANOX" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_GUN_RAGE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_HEAVY_GUNNER" level="3" requirements="[str:15]"/>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_TOUGHASNAILS" level="3" requirements="[str:15]"/>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_THICKHEADED" level="7" requirements="[str:15]"/>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_STRONGASANOX" level="10" requirements="[str:15]"/>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_GUN_RAGE" level="14" requirements="[str:15]"/>
+        </rules>
+    </element>
+    <element name="Heavy Gunner" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_HEAVY_GUNNER">
+        <description>
+            <p>When you choose this creed at 3rd level, you can also carry heavy firearms regardless of their weight. Additionally, you can use Strength, rather than Dexterity, for attack and damage rolls using heavy firearms, and you can use your Strength, instead of your Dexterity, when calculating your Deed save DC.</p>
+        </description>
+        <sheet>
+            <description> You can carry heavy firearms regardless of their weight. Additionally, you can use STR, rather than DEX, for attack and damage rolls using heavy firearms, and you can use your STR, instead of your DEX, when calculating your Deed save DC.</description>
+        </sheet>
+    </element>
+    <element name="Tough As Nails" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_TOUGHASNAILS">
+        <description>
+            <p>Also at 3rd level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p>
+            <p class="indent">You also gain proficiency with medium and heavy armor.</p>
+        </description>
+        <sheet>
+            <description> Your maximum hp increases by {{toughnails:hp}}. You also gain proficiency with medium and heavy armor.</description>
+        </sheet>
+        <rules>
+            <stat name="toughnails:hp" value="1" />
+		    <stat name="toughnails:hp" value="level:gunslinger" />
+		    <stat name="hp" value="toughnails:hp" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        </rules>
+    </element>
+    <element name="Thick-Headed" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_THICKHEADED">
+        <description>
+            <p>At 7th level, you have advantage on saving throws made against being charmed.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on saving throws made against being charmed.</description>
+        </sheet>
+    </element>
+    <element name="Strong As An Ox" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_STRONGASANOX">
+        <description>
+            <p>Starting at 10th level, your carrying capacity and the weight you can push, drag, and lift are doubled, and you have advantage on Strength checks and Strength saving throws. Additionally, you can ignore the Two-Handed property on firearms with which you are proficient.</p>
+        </description>
+        <sheet>
+            <description> Your carrying capacity and the weight you can push, drag, and lift are doubled, and you have advantage on Strength checks and Strength saving throws. Additionally, you can ignore the Two-Handed property on firearms which you are proficient.</description>
+        </sheet>
+    </element>
+    <element name="Gun Rage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_GUN_TANK_GUN_RAGE">
+        <description>
+            <p>At 14th level, as a bonus action, you can explode into a fury to destroy lesser men. For the next minute, you have resistance to bludgeoning, piercing, and slashing damage and can make one additional attack whenever you take the Attack action on your turn. However, for the duration, your speed is halved and you have disadvantage on Dexterity checks and saving throws.</p>
+            <p class="indent">Your gun rage ends if you take cover, finish your turn without attacking, or use your bonus action to end it early.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short||Long Rest">
+            <description>For the next minute, you have resistance to bludgeoning, piercing, and slashing damage and can make one additional attack whenever you take the Attack action on your turn. However, for the duration, your speed is halved and you have disadvantage on Dexterity checks and saving throws. Your gun rage ends if you take cover, finish your turn without attacking, or use your bonus action to end it early.</description>
+        </sheet>
+    </element>
+</elements>

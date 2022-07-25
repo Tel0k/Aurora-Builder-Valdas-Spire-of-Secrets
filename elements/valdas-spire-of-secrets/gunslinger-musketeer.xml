@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Musketeer</name>
+        <description>The Musketeer from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-musketeer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-musketeer.xml" />
+        </update>    
+    </info>
+    <element name="Musketeer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_MUSKETEER">
+        <supports>Creed</supports>
+        <description>
+            <p>You believe that camaraderie and glory go hand-in-hand, that you and your allies are undefeatable as long as you stand together. As such, you have trained with blades and halberds, so that you battle up-close. Your place is not supporting them from afar, but launching a single volley of shot before charging in, bayonet or cutlass in hand, that you might all succeed or fail as one.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_HEAVY_SHOT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_LOCK_STOCK_AND_BARREL" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_BAYONET_CHARGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_ALL_FOR_ONE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_HEAVY_SHOT" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_LOCK_STOCK_AND_BARREL" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_BAYONET_CHARGE" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_ALL_FOR_ONE" level="14" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_BONUS_PROFICIENCIES">
+        <description>
+            <p>Starting when you choose this creed at 3rd level, you gain proficiency with the bayonet, cutlass, halberd, rapier, and shortsword.</p>
+        </description>
+        <sheet display="false">
+            <description> You gain proficiency with the bayonet, cutlass, halberd, rapier, and shortsword.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BAYONET" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CUTLASS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+        </rules>
+    </element>
+    <element name="Heavy Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_HEAVY_SHOT">
+        <description>
+            <p>At 3rd level, you can load and fire especially dense bullets. Whenever you hit a target with a blunderbuss, flintlock, or musket, you deal extra damage equal to the number of damage dice rolled for the attack.</p>
+        </description>
+        <sheet>
+            <description> Whenever you hit a target with a blunderbuss, flintlock, or musket, you deal extra damage equal to the number of damage dice rolled for the attack.</description>
+        </sheet>
+    </element>
+    <element name="Lock, Stock and Barrel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_LOCK_STOCK_AND_BARREL">
+        <description>
+            <p>At 7th level, you ignore the Loading and Misfire properties of the blunderbuss, flintlock, and musket.</p>
+        </description>
+        <sheet>
+            <description> You ignore the Loading and Misfire properties of the blunderbuss, flintlock, and musket.</description>
+        </sheet>
+    </element>
+    <element name="Bayonet Charge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_BAYONET_CHARGE">
+        <description>
+            <p>Starting at 10th level, when you move 15 feet or more in a straight line on your turn, you can use your bonus action to make one attack with a bayonet or a melee weapon.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you move 15 feet or more in a straight line on your turn, you can make one attack with a bayonet or a melee weapon.</description>
+        </sheet>
+    </element>
+    <element name="All for One" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_MUSKETEER_ALL_FOR_ONE">
+        <description>
+            <p>By 14th level, whenever a friendly creature within 5 feet of you is targeted by an attack, you can use your reaction to make a firearm attack against the attacker.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> Whenever a friendly creature within 5ft of you is targeted by an attack, you can make a firearm attack against the attacker.</description>
+        </sheet>
+    </element>
+</elements>

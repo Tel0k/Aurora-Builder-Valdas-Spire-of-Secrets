@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Trick Shot</name>
+        <description>The Trick Shot from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-trick-shot.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-trick-shot.xml" />
+        </update>    
+    </info>
+    <element name="Trick Shot" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_TRICK_SHOT">
+        <supports>Creed</supports>
+        <description>
+            <p>Accuracy means different things to different people. For you, true accuracy isn't necessarily in hitting a target on the first shot, but might include hitting the mark after the bullet bounces around a dozen times. Your attacks are just as dangerous if they miss, or even after hitting their mark, as others' are while they're still in the air.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_CREATIVE_TRAJECTORY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_RICOCHET" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_LIGHTFOOTED" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_DEFT_DEFLECTIONIST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_PINBALL_SHOT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_CREATIVE_TRAJECTORY" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_RICOCHET" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_LIGHTFOOTED" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_DEFT_DEFLECTIONIST" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_PINBALL_SHOT" level="14" />
+        </rules>
+    </element>
+    <element name="Creative Trajectory" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_CREATIVE_TRAJECTORY">
+        <description>
+            <p>Starting at 3rd level, you begin to learn how to make your bullets travel in unexpected ways. Your firearm attacks ignore half cover.</p>
+        </description>
+        <sheet>
+            <description> Your firearm attacks ignore half cover.</description>
+        </sheet>
+    </element>
+    <element name="Ricochet" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_RICOCHET">
+        <description>
+            <p>At 3rd level, when you miss with an attack using a firearm and you don't have disadvantage on the roll, you can use your bonus action to reroll the attack roll and you must use the new roll. If this causes the attack to hit, the attack deals only half damage.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> When you miss with an attack using a firearm and you don't have disadvantage on the roll, you can reroll the attack and you must use the new roll. If this causes the attack to hit, the attack deals only half damage.</description>
+        </sheet>
+    </element>
+    <element name="Light-Footed" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_LIGHTFOOTED">
+        <description>
+            <p>By 7th level, you're just as good at escaping from trouble as you are at getting into it. Difficult terrain costs you no extra movement.</p>
+        </description>
+        <sheet>
+            <description> Difficult terrain costs you no extra movement.</description>
+        </sheet>
+    </element>
+    <element name="Deft_Deflectionist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_DEFT_DEFLECTIONIST">
+        <description>
+            <p>Starting at 10th level, as a reaction when an attacker you can see makes a ranged weapon attack against you, you can make an attack with a firearm you are holding to attempt to deflect the projectile. If your attack roll is higher than the attacker's, the attack targeting you has disadvantage. You must use this feature before you know the outcome of the attacker's attack roll.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When an attacker you can see makes a ranged weapon attack against you, you can make an attack with a firearm you are holding to attempt to deflect the projectile. If your attack roll is higher than the attacker's, the attack targeting you has disadvantage. You must use this feature before you know the outcome of the attacker's attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Pinball Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_PINBALL_SHOT">
+        <description>
+            <p>Starting at 14th level, once per turn when you hit a creature with a ranged firearm attack, you can ricochet the bullet to hit an additional target. The second target must be within half the firearm's range of the first target. Make a separate attack roll for the second target. You can use this feature a number of times equal to your Dexterity modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Turn, {{pinball}}/Long Rest">
+            <description> When you use your Attack action to make only one ranged attack with a firearm and do not have disadvantage, you can gain advantage on the attack roll and deal damage on a hit as if you scored a critical hit.</description>
+        </sheet>
+        <rules>
+            <stat name="pinball" value="1" bonus="base" />
+			<stat name="pinball" value="dexterity:modifier" bonus="base" />
+        </rules>
+    </element>
+</elements>

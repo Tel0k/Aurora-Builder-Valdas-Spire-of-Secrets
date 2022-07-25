@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>High Roller</name>
+        <description>The High Roller from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-high-roller.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-high-roller.xml" />
+        </update>    
+    </info>
+    <element name="High Roller" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_HIGH_ROLLER">
+        <supports>Creed</supports>
+        <description>
+            <p>The ancient art of gun-ko is passed through generations of gunslingers who study the gun as a perfect weapon and meditate on its intricacies. This path is not for the impatient or the faint of heart, but those who practice it diligently make their guns an extension of themselves, learning to strike with the speed of a rifle and catch bullets out of the air.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_ALL_IN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_BOOM_AND_BUST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_ALL_IN" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_BOOM_AND_BUST" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING" level="14" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you choose this creed at 3rd level, you gain proficiency with all gaming sets and in your choice of one of the following skills: Deception, Insight, or Perception.</p>
+        </description>
+        <sheet display="false">
+            <description> You gain proficiency with all gaming sets and in one of the following skills: Deception, Insight, or Perception.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET" />
+            <select type="Proficiency" name="Skill Proficiency, Bonus" supports="(ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION)" />
+        </rules>
+    </element>
+    <element name="All In" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_ALL_IN">
+        <description>
+            <p>Also at 3rd level, you can use your bonus action when you make an ability check or attack roll, or your reaction when you make a saving throw to expend and roll one of your risk dice. You choose to do this after you roll the d20 but before the GM says whether the roll succeeds or fails.</p>
+            <p class="indent">If you roll a 1 on your risk die, you fail the ability check, attack roll, or saving throw, regardless of the result. Otherwise, you add the number rolled on your risk die to the result.</p>
+        </description>
+        <sheet action="(1)Bonus Action||(2)Reaction">
+            <description> You can expend and roll one of your risk dice using either (1) when you make an ability check or attack roll, or (2) when you make a saving throw. You choose to do this after you roll the d20 but before the GM says whether the roll succeeds or fails. If you roll a 1 on your risk die, you fail the ability check, attack roll, or saving throw, regardless of the result. Otherwise, you add the number rolled on your risk die to the result.</description>
+        </sheet>
+    </element>
+    <element name="Liar's Dice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE">
+        <description>
+            <p>Also at 3rd level, when you make an ability check, attack roll, or saving throw, you can roll the d20 in secret and declare any result you wish. If the GM chooses to call your bluff, reveal the number rolled on the d20. If you were telling the truth, treat the result as if you rolled a 20. If you were telling a lie, roll the d20 again and use the lower of the two rolls. If the GM chooses not to call your bluff, you use the result you declared regardless of what you rolled.</p>
+            <p class="indent">You can choose to roll in secret a number of times equal to 1 + your Charisma modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{lies}}/Long Rest">
+            <description> When you make an ability check, attack roll, or saving throw, you can roll the d20 in secret and declare any result you wish. If the GM chooses to call your bluff, reveal the number rolled on the d20. If you were telling the truth, treat the result as if you rolled a 20. If you were telling a lie, roll the d20 again and use the lower of the two rolls. If the GM chooses not to call your bluff, you use the result you declared regardless of what you rolled.</description>
+        </sheet>
+        <rules>
+            <stat name="lies" value="1" bonus="base" />
+			<stat name="lies" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+    <element name="Risky Business" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS">
+        <description>
+            <p>At 7th level, when you make an attack roll against a hostile creature or a hostile creature forces you to make a saving throw, you can choose to make the roll with disadvantage. When you do, you regain an expended risk die.</p>
+        </description>
+        <sheet>
+            <description> When you make an attack roll against a hostile creature or a hostile creature forces you to make a saving throw, you can choose to make the roll with disadvantage. When you do, you regain an expended risk die.</description>
+        </sheet>
+    </element>
+    <element name="Boom And Bust" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_BOOM_AND_BUST">
+        <description>
+            <p>Starting at 10th level, when you score a critical hit on a ranged firearm attack, you can roll the damage twice and use the higher of the two results. When you roll a 1 on a ranged firearm attack roll, you can choose to take psychic damage equal to your proficiency bonus or lose this feature's critical hit benefit for the next minute.</p>
+        </description>
+        <sheet>
+            <description> When you score a critical hit on a ranged firearm attack, you can roll the damage twice and use the higher of the two results. When you roll a 1 on a ranged firearm attack roll, you can choose to take {{proficiency}} psychic damage or lose this feature's critical hit benefit for the next minute.</description>
+        </sheet>
+    </element>
+    <element name="Double or Nothing" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING">
+        <description>
+            <p>At 14th level, when you score a critical hit with a firearm, you can roll two additional d20s. Treat these d20s as if they were ranged attack rolls you made against the target with a firearm. If they both miss, your critical hit becomes a normal hit. If either of these d20s would score a critical hit, roll all of the attack's damage dice three times and add them together, instead of only two times as normal for a critical hit. Otherwise, the critical hit happens as normal.</p>
+        </description>
+        <sheet>
+            <description> When you score a critical hit with a firearm, you can roll two additional d20s as if they were ranged attack rolls. If they both miss, your critical hit becomes a normal hit. If either of these d20s would score a critical hit, roll all of the attack's damage dice three times and add them together. Otherwise, the critical hit happens as normal.</description>
+        </sheet>
+    </element>
+</elements>

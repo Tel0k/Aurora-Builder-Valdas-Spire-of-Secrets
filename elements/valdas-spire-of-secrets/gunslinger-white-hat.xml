@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>White Hat</name>
+        <description>The White Hat from Valda's Spire of Secrets</description>
+        <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="gunslinger-white-hat.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/gunslinger-white-hat.xml" />
+        </update>    
+    </info>
+    <element name="White Hat" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GUNSLINGER_WHITE_HAT">
+        <supports>Creed</supports>
+        <description>
+            <p>Some gunslingers live by a code and expect others to do the same. These gunslingers, known as white hats, sometimes serve as agents of local or regional law but never hesitate to do what’s right no matter what the rules say. Despite their affinity for deadly weapons, white hats prefer to keep their friends safe and take their enemies in unharmed — a preference they find their enemies aren’t often inclined to oblige.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAYDOWNTHELAW" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_STEELYEYED_AURA" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_REACHFORTHESKIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LONGARMOFTHELAW" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAYDOWNTHELAW" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_STEELYEYED_AURA" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_REACHFORTHESKIES" level="7" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LONGARMOFTHELAW" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO" level="14" />
+        </rules>
+    </element>
+    <element name="Lay Down The Law" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAYDOWNTHELAW">
+        <description>
+            <p>Starting at 3rd level, you can use a bonus action and expend one risk die to keep a keen eye out for dangers that threaten your companions. When you do, roll the risk die and gain a pool of temporary hit points equal to the number rolled + your level in this class. This pool of temporary hit points is immediately divided as you choose among any number of creatures that you can see (other than you) within range of a firearm you are holding. You must give at least 1 temporary hit point to each chosen creature.</p>
+            <p class="indent">When a creature loses temporary hit points granted by this feature as the result of an attack, you can use your reaction to make one ranged weapon attack with a firearm against the attacker. Any remaining temporary hit points granted by this feature are lost at the start of your next turn.</p>
+            <p class="indent">At 10th level, this feature improves: your pool of temporary hit points equals the number rolled on the risk die + twice your level in this class.</p>
+        </description>
+        <sheet action="(1)Bonus Action, (2)Reaction">
+            <description> (1)You can expend one risk die to keep a keen eye out for dangers that threaten your companions. When you do, roll the risk die and gain a pool of temp hp equal to the number rolled + your level in this class. This pool of temp hp is immediately divided as you choose among any number of creatures that you can see (other than you) within range of a firearm you are holding. You must give at least 1 temp hp to each chosen creature. &#13;
+            (2)When a creature loses temp hp granted by this feature as the result of an attack, you can make one ranged weapon attack with a firearm against the attacker. Any remaining temp hp points granted by this feature are lost at the start of your next turn.</description>
+            <description level="10"> (1)You can expend one risk die to keep a keen eye out for dangers that threaten your companions. When you do, roll the risk die and gain a pool of temp hp equal to the number rolled + twice your level in this class. This pool of temp hp is immediately divided as you choose among any number of creatures that you can see (other than you) within range of a firearm you are holding. You must give at least 1 temp hp to each chosen creature. &#13;
+            (2)When a creature loses temp hp granted by this feature as the result of an attack, you can make one ranged weapon attack with a firearm against the attacker. Any remaining temp hp granted by this feature are lost at the start of your next turn.</description>
+            <description level="14"> (1)You can expend one risk die to keep a keen eye out for dangers that threaten your companions. When you do, roll the risk die and gain a pool of temp hp equal to the number rolled + twice your level in this class. This pool of temp hp is immediately divided as you choose among any number of creatures that you can see (other than you) within range of a firearm you are holding. You must give at least 1 temp hp to each chosen creature. Everyone who receives temp hp, also has resistance to bludgeoning, piercing, and slashing damage. &#13;
+            (2)When a creature loses temp hp granted by this feature as the result of an attack, you can make one ranged weapon attack with a firearm against the attacker. Any remaining temp hp granted by this feature are lost at the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Steely-Eyed Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_STEELYEYED_AURA">
+        <description>
+            <p>Also at 3rd level, you and friendly creatures within 10 feet of you have advantage on saving throws made to avoid or end the frightened condition while you are conscious.</p>
+        </description>
+        <sheet>
+            <description> You and friendly creatures within 10ft of you have advantage on saving throws made to avoid or end the frightened condition while you are conscious.</description>
+            <description level="14"> You and friendly creatures within 30ft of you have advantage on saving throws made to avoid or end the frightened condition while you are conscious.</description>
+        </sheet>
+    </element>
+    <element name="Reach For The Skies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_REACHFORTHESKIES">
+        <description>
+            <p>At 7th level, you can use your action to call for your enemy’s surrender. When you do, a creature of your choice within 30 feet who can see or hear you must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). Creatures that are immune to being frightened automatically succeed on this saving throw. If the creature’s current hit points are equal to or greater than half of its hit point maximum, it has advantage on this saving throw.</p>
+            <p class="indent">On a failed save, the creature is incapacitated and its speed is 0 for 1 minute or until it takes any damage. A creature can repeat the saving throw at the end of each of its turns, ending this effect on a success.</p>
+            <p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> You can call for your enemy’s surrender. When you do, a creature of your choice within 30ft who can see or hear you must make a DC{{reach:dc}} WIS saving throw (DC 8 + your proficiency bonus + your Charisma modifier). Creatures that are immune to being frightened automatically succeed on this saving throw. If the creature’s current hit points are equal to or greater than half of its hit point maximum, it has advantage on this saving throw.</description>
+            <description usage="1/Short||Long Rest" level="14"> You can call for your enemy’s surrender. When you do, a creature of your choice within 30ft who can see or hear you must make a DC{{reach:dc}} WIS saving throw (DC 8 + your proficiency bonus + your Charisma modifier). Creatures that are immune to being frightened automatically succeed on this saving throw. If the creature’s current hit points are equal to or greater than half of its hit point maximum, it has advantage on this saving throw.</description>
+        </sheet>
+        <rules>
+            <stat name="reach:dc" value="8" />
+			<stat name="reach:dc" value="proficiency" />
+			<stat name="reach:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Long Arm Of The Law" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LONGARMOFTHELAW">
+        <description>
+            <p>At 10th level, once per turn when you hit a Large or smaller creature with a firearm attack, you can choose to deal half as much damage to hobble the target. The creature can’t move on its next turn unless it first takes the Disengage action.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you hit a Large or smaller creature with a firearm attack, you can choose to deal half as much damage to hobble the target. The creature can’t move on its next turn unless it first takes the Disengage action.</description>
+        </sheet>
+    </element>
+    <element name="Gold Star Hero" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO">
+        <description>
+            <p>At 14th level, your capacity for heroism increases. Your features from this archetype gain the following benefits:</p>
+            <ul>
+                <li>While a creature has temporary hit points granted by your Lay Down the Law feature, it has resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li>The range of your Steely-Eyed Aura feature increases to 30 feet.</li>
+                <li>You regain the use of your Reach for the Skies feature when you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> Lay Down the Law, Steely-Eyed Aura and Reach for the Skies get updated.</description>
+        </sheet>
+    </element>
+</elements>
