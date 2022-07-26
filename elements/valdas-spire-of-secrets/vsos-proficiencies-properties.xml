@@ -733,7 +733,7 @@
 	</element>
 
     <!-- ARMOR -->
-	<element name="Exotic Armor" type="Armor Group" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_GROUP_EXOTIC" />
+   <!-- <element name="Exotic Armor" type="Armor Group" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_GROUP_EXOTIC" /> doesn't seem to work -->
 
     <element name="Armor Proficiency (Exotic)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR">
 		<description>
