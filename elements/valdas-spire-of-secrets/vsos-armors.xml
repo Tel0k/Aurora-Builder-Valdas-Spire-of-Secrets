@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armors</name>
+		<description>The new armors from Valda's Spire of Secrets.</description>
+		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+        <file name="vsos-armors.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-armors.xml" />
+      	</update>
+	</info>
+
+	<element name="Brigandine Armor - Exotic" type="Armor" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_EXOTIC_BRIGANDINE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+<!-- 	<supports>ID_MHP_VSOS_ARMOR_GROUP_EXOTIC</supports> does not work.. needs either light medium or heavy armor groups to even show up in the equipment category-->
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">95</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">body</set>
+	    	<set name="armor">Light</set>
+			<set name="armorClass">13 + Dex modifier</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BRIGANDINE</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+
+	<element name="Banded Plate - Exotic" type="Armor" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_EXOTIC_BANDED_PLATE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="slot">body</set>
+	   		<set name="armor">Medium</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BANDED_PLATE</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="15" />
+		</rules>
+	</element>
+
+	<element name="Hero Plate - Exotic" type="Armor" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_EXOTIC_HERO_PLATE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Though not substantially heavier or more cumbersome than half plate, hero plate is certainly more impressive: large pauldrons, a winged helmet, anddecorative flair adds to the armor’s prominence, as well as its protection.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="weight" lb="45">45 lb.</set>
+			<set name="slot">body</set>
+	    	<set name="armor">Medium</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">16 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_HERO_PLATE</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="16" />
+		</rules>
+	</element>
+
+	<element name="Lamellar Armor - Exotic" type="Armor" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_EXOTIC_LAMELLAR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="weight" lb="65">65 lb.</set>
+			<set name="slot">body</set>
+	    	<set name="armor">Heavy</set>
+			<set name="strength">13</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">17</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_LAMELLAR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="17" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:13]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element>
+
+	<element name="Mountain Plate - Exotic" type="Armor" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_EXOTIC_MOUNTAIN_PLATE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Almost too heavy and cumbersome to wear, even for the mightiest warriors, mountain plate consists of inch-thick plate armor with a bolted-on helmet, gauntlets, and boots. Donning this armor takes nearly 15 minutes and requires latching several heavy-duty clamps and latches. Mountain plate requires an 15 Strength to wear, cannot be worn by creatures smaller than Medium size, and reduces your walking speed by 10 feet, regardless of your Strength score.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="75">75 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">15</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">19</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_MOUNTAIN_PLATE</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="19" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:15]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element> 
+
+</elements>
