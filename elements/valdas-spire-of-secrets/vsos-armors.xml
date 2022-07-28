@@ -20,7 +20,7 @@
 			<set name="cost" currency="gp">95</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">body</set>
-	    	<set name="armor">Light</set>
+	    		<set name="armor">Light</set>
 			<set name="armorClass">13 + Dex modifier</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BRIGANDINE</set>
 		</setters>
@@ -58,7 +58,7 @@
 			<set name="cost" currency="gp">800</set>
 			<set name="weight" lb="45">45 lb.</set>
 			<set name="slot">body</set>
-	    	<set name="armor">Medium</set>
+	    		<set name="armor">Medium</set>
 			<set name="stealth">Disadvantage</set>
 			<set name="armorClass">16 + Dex modifier (max 2)</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_HERO_PLATE</set>
@@ -79,7 +79,7 @@
 			<set name="cost" currency="gp">125</set>
 			<set name="weight" lb="65">65 lb.</set>
 			<set name="slot">body</set>
-	    	<set name="armor">Heavy</set>
+	    		<set name="armor">Heavy</set>
 			<set name="strength">13</set>
 			<set name="stealth">Disadvantage</set>
 			<set name="armorClass">17</set>
