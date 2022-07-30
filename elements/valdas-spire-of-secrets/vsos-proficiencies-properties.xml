@@ -4,7 +4,7 @@
 		<name>Proficiencies and Properties</name>
 		<description>The new proficiencies and properties from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
         <file name="vsos-proficiencies-properties.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-proficiencies-properties.xml" />
       	</update>
 	</info>
@@ -270,7 +270,7 @@
             <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOOMERANG" />
         </rules>
     </append>
-    <element name="Weapon Proficiency (Chackram)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
+    <element name="Weapon Proficiency (Chakram)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
         <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_MHP_VSOS_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
         <sheet alt="Chackram" />
     </element>
