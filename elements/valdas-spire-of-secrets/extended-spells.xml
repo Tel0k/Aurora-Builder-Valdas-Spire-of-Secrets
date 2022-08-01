@@ -4,7 +4,7 @@
 		<name>Extended Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="extended-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/extended-spells.xml" />
 		</update>
 	</info>
@@ -91,7 +91,7 @@
 		<supports>Investigator, Necromancer, Martyr</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DETECT_MAGIC">
-		<supports>Necromancer, Martyr, Witch</supports>
+		<supports>Investigator, Necromancer, Martyr, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
 		<supports>Investigator, Martyr</supports>
@@ -104,6 +104,9 @@
 	</append>
 	<append id="ID_PHB_SPELL_FAERIE_FIRE">
 		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIND_FAMILIAR">
+		<supports>Investigator</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FOG_CLOUD">
 		<supports>Necromancer</supports>
@@ -149,6 +152,9 @@
 	</append>
 	<append id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER">
 		<supports>Witch</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TENSERS_FLOATING_DISK">
+		<supports>Investigator</supports>
 	</append>
 	<append id="ID_PHB_SPELL_THUNDERWAVE">
 		<supports>Witch</supports>
@@ -405,7 +411,7 @@
 	<append id="ID_PHB_SPELL_STONESKIN">
 		<supports>Martyr</supports>
 	</append>
-
+	
     <!-- 5th Level Spells -->
 	<append id="ID_PHB_SPELL_ANTILIFE_SHELL">
 		<supports>Necromancer</supports>
