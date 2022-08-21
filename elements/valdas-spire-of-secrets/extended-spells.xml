@@ -4,7 +4,7 @@
 		<name>Extended Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="extended-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/extended-spells.xml" />
 		</update>
 	</info>
@@ -41,7 +41,7 @@
 		<supports>Warmage, Necromancer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PRESTIDIGITATION">
-		<supports>Warmage, Witch</supports>
+		<supports>Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PRODUCE_FLAME">
 		<supports>Warmage, Witch</supports>
