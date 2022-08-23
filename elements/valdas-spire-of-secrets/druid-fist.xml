@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Circle of the Fist</name>
+		<description>The Circle of the Fist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="druid-fist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/druid-fist.xml" />
+		</update>
+	</info>
+    <element name="Circle of the Fist" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRUID_FIST">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>The defenders of the forests and champions of the trees, druids who join the Circle of the Fist take their charge as natural protectors seriously. Traditionally, all druid circles strive to protect the natural realm and maintain the world's balance, but only druids of this circle guard the woodlands with the vigilance and fervor of a territorial beast. Fists of the Forest, as they are called, stave off intruders to their realms with flurries of bare-fisted strikes, empowered by the natural world, before disappearing into the treetops. At the height of their expertise, these druids fight more like beasts of the forests than men, and are twice as deadly.</p>
+            <p class="indent">Often, this druidic order safeguards sacred groves and permanent fey bridges, but sometimes its members adopt quests of vengeance for misdeeds done to the forest, or quests of intervention to ensure that a prophesied disaster doesn't come to pass.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNTAMED_FURY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRIMAL_INFUSION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTRA_ATTACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SAVAGE_INSTINCT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_NATURES_WRATH" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNTAMED_FURY" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRIMAL_INFUSION" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTRA_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SAVAGE_INSTINCT" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_NATURES_WRATH" level="14" />
+        </rules>
+    </element>
+    <element name="Untamed Fury" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNTAMED_FURY">
+        <description>
+            <p>At 2nd level, you fight with the might of a feral beast. While you are unarmed and you aren't wearing armor or wielding a shield, you gain the following benefits:</p>
+            <ul>
+                <li>Your AC equals 10 + your Dexterity modifier + your Wisdom modifier</li>
+                <li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes.</li>
+                <li>You can roll a d4 in place of the normal damage of your unarmed strike. This die changes as you gain druid levels, as shown in the Untamed Strike table below. If the weapon die of your Beast form is less than your Untamed Strike die, you can use this die instead while in your Beast form.</li>
+                <li>When you use the Attack action with an unarmed strike on your turn, you can make one unarmed strike as a bonus action. If you also expend a spell slot of 1st level or higher, you can make 2 unarmed strikes as a bonus action. If you expend a spell slot of 5th level or higher, you make 3 unarmed strikes.</li>
+            </ul>
+            <p>Starting at 6th level, your unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+            <h5 class="caption">UNTAMED STRIKE</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Damage</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>1d4</em></td></tr>
+				<tr><td>5th</td><td><em>1d6</em></td></tr>
+				<tr><td>11th</td><td><em>1d8</em></td></tr>
+			</table>
+        </description>
+        <sheet>
+            <description> While you are unarmed and you aren't wearing armor or wielding a shield, you gain the following benefits: your unarmed strike does 1d{{untamed strike:dice}}+{{untamed strike:damage}} damage. You can use Strength or Dexterity for these attacks; you can use this die while in your Beast form if your Beast form weapon die is less than your Untamed Strike die. When you make an unarmed strike with the Attack action on your turn, you can make another one as a bonus action. If you also expend a spell slot of 1st level or higher, you can make 2 unarmed strikes as a bonus action. If you expend a spell slot of 5th level or higher, you make 3 unarmed strikes.</description>
+        </sheet>
+        <rules>
+            <stat name="untamed strike:attack" value="strength:modifier" bonus="untamed strike" />
+			<stat name="untamed strike:attack" value="dexterity:modifier" bonus="untamed strike" />
+			<stat name="untamed strike:damage" value="strength:modifier" bonus="untamed strike" />
+			<stat name="untamed strike:damage" value="dexterity:modifier" bonus="untamed strike" />
+			<stat name="untamed strike:dice" value="4" bonus="untamed strike" />
+			<stat name="untamed strike:dice" value="6" bonus="untamed strike" level="5" />
+			<stat name="untamed strike:dice" value="8" bonus="untamed strike" level="11" />
+            <stat name="ac:unarmored defense fist:base" value="10" />
+			<stat name="ac:unarmored defense fist:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense fist:wisdom" value="wisdom:modifier" />
+			<stat name="ac:unarmored defense fist" value="ac:unarmored defense fist:base" />
+			<stat name="ac:unarmored defense fist" value="ac:unarmored defense fist:dexterity" />
+			<stat name="ac:unarmored defense fist" value="ac:unarmored defense fist:wisdom" />
+			<stat name="ac:calculation" value="ac:unarmored defense fist" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Druid)" />
+		</rules>
+    </element>
+    <element name="Primal Infusion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRIMAL_INFUSION">
+        <description>
+            <p>Also at 2nd level, you can use your bonus action and expend a use of your Wild Shape feature to draw the raw power of nature into your body. You gain temporary hit points equal to 4 x your druid level + your Wisdom modifier. While you have these temporary hit points, your walking speed increases by 10 feet.</p>
+        </description>
+        <sheet action="Bonus Action + Wild Shape">
+            <description> You gain {{primalinfusion}}temp hp. While you have these temp hp, your walking speed increases by 10ft.</description>
+        </sheet>
+        <rules>
+            <stat name="primalinfusion" value="level:druid"/>
+            <stat name="primalinfusion" value="level:druid"/>
+            <stat name="primalinfusion" value="level:druid"/>
+            <stat name="primalinfusion" value="level:druid"/>
+            <stat name="primalinfusion" value="wisdom:modifier"/>
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn with an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description> You can attack twice, instead of once, whenever you take the Attack action on your turn with an unarmed strike.</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />            
+        </rules>
+    </element>
+    <element name="Savage Instinct" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SAVAGE_INSTINCT">
+        <description>
+            <p>Starting at 10th level, you can muster the power of nature in an instant. Whenever you roll initiative, you can choose to immediately expend a use of your Wild Shape feature to use your Primal Infusion ability. If you do so, you also gain one of the following benefits of your choice for up to 1 minute, while the hit points from your Primal Infusion ability remain:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Feral Agility.</em></strong> Whenever you hit a creature with an unarmed strike, you can move 10 feet without provoking opportunity attacks.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Mountain's Might.</em></strong> You have advantage on Strength checks and saving throws, and you have advantage on attack rolls against a creature you are grappling.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Trees' Resilience.</em></strong> When an attacker that you can see hits you with an attack, you can use your reaction to reduce the damage taken by your Wisdom modifier.</p>
+        </description>
+        <sheet usage="Primal Infusion">
+            <description> Whenever you roll initiative, you can choose to immediately use your Primal Infusion ability. If you do so, you also gain one of the following benefits of your choice for up to 1 minute:</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Savage Instinct 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_FERAL_AGILITY" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_FERAL_AGILITY" />
+            <select type="Archetype Feature" name="Savage Instinct 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_MOUNTAINS_MIGHT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_MOUNTAINS_MIGHT" />
+            <select type="Archetype Feature" name="Savage Instinct 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_TREES_RESILIENCE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_TREES_RESILIENCE" />
+        </rules>
+    </element>
+    <element name="Feral Agility" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_FERAL_AGILITY">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_FERAL_AGILITY</supports>
+        <compendium display="false" />
+		<description>
+			<p>Whenever you hit a creature with an unarmed strike, you can move 10 feet without provoking opportunity attacks.</p>
+		</description>
+		<sheet>
+			<description> Whenever you hit a creature with an unarmed strike, you can move 10 feet without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+    <element name="Mountain's Might" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_MOUNTAINS_MIGHT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_MOUNTAINS_MIGHT</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on Strength checks and saving throws, and you have advantage on attack rolls against a creature you are grappling.</p>
+		</description>
+		<sheet>
+			<description> You have advantage on STR checks and saving throws, and you have advantage on attack rolls against a creature you are grappling.</description>
+		</sheet>
+	</element>
+    <element name="Trees' Resilience" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_TREES_RESILIENCE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_FIST_TREES_RESILIENCE</supports>
+		<compendium display="false" />
+		<description>
+			<p>When an attacker that you can see hits you with an attack, you can use your reaction to reduce the damage taken by your Wisdom modifier.</p>
+		</description>
+		<sheet action="Reaction">
+			<description> When an attacker that you can see hits you with an attack, you can reduce the damage taken by {{wisdom:modifier}}.</description>
+		</sheet>
+	</element>
+    <element name="Nature's Wrath" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_NATURES_WRATH">
+        <description>
+            <p>By 14th level, you can use your reaction when you lose all your temporary hit points from your Primal Infusion feature to either make two unarmed strikes against a creature you can see within your reach, or expend a use of your Wild Shape feature to use your Primal Infusion ability again.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When you lose all your temp hp from your Primal Infusion feature you can either make two unarmed strikes against a creature you can see within your reach, or expend a use of your Wild Shape feature to use your Primal Infusion ability again.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Circle of the City</name>
+		<description>The Circle of the City from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="druid-city.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/druid-city.xml" />
+		</update>
+	</info>
+    <element name="Circle of the City" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRUID_CITY">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>The city lives; it has a pulse. Its skin is of walls and towering stone structures, its breath of chimneys and rivers. While the city exists, it lives in harmony with its people, a delicate balance mediated by the urban druids. These urban druids belong to the Circle of the City and are a direct antithesis to the conventional idea of a druid; whereas a normal druid lives among majestic forests or breathtaking mountains and dresses in the greenery of the forest, an urban druid wears unassuming clothes and wanders the back alleys of a well-trodden city. But their powers are not to be underestimated. Druids of this circle can channel their natural powers to twist the streets into knots, uproot towers, and animate the cobblestones. Their charge might be unorthodox, but their authority over the cityscape matches any other druid's power over the forest.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_URBAN_ARCANA" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_STREETTALK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHISPERS_OF_WALLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BREATH_OF_SMOG" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TWISTING_ARCHITECTURE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_URBAN_ARCANA" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STREETTALK" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHISPERS_OF_WALLS" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BREATH_OF_SMOG" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TWISTING_ARCHITECTURE" level="14" />
+        </rules>
+    </element>
+    <element name="Urban Arcana" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_URBAN_ARCANA">
+        <description>
+            <p>Beginning when you choose this circle at 2nd level, your druid spells lose the aesthetic trappings of nature and instead appear inspired by the jungles of buildings, columns, and cobblestones. For example, entangle and spike growth might cause growths of metal wires and twisting pipes. Barkskin might grant you the appearance of pitted iron or brick.</p>
+            <p class="indent">Additionally, you can wear armor and wield shields made of metal.</p>
+        </description>
+        <sheet>
+            <description> Your druid spells lose the aesthetic trappings of nature and instead appear inspired by the jungles of buildings, columns, and cobblestones. You can wear armor and wield shields made of metal.</description>
+        </sheet>
+    </element>
+    <element name="Streettalk" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_STREETTALK">
+        <description>
+            <p>At 2nd level, you have advantage on Intelligence (Investigation) checks to gather rumors or find a creature or location within an urban environment.</p>
+            <p class="indent">Additionally, you learn thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on INT (Investigation) checks to gather rumors or find a creature or location within an urban environment; you learn thieves' cant.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+        </rules>
+    </element>
+    <element name="City Shape" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE">
+        <description>
+            <p>Starting at 2nd level, as an action, you can expend a use of your Wild Shape feature to warp the city around you. Choose one of the following effects: </p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Cobbleshift.</em></strong> You magically manipulate the components of a constructed floor—bricks, cobblestones, planks, and similar objects—within 60 feet. Each component can move up to 1 foot and doesn't cause instabilities in their structures. When you use this effect, you can cause any sections of floor that you choose within the area to become difficult terrain, and can cause any creature standing in one of those sections to make a Dexterity saving throw against your spell save DC or fall prone. You are unaffected by this difficult terrain.</p>
+            <p class="indent">Additionally, you can use your action on each of your turns to raise up to three low walls from the floor, each 2 and 1/2 feet high, 5 feet wide, and 1 foot deep. Such a wall can generally provide half cover for a Medium creature. These walls provide no instability in surrounding structures.</p>
+            <p class="indent">This ability lasts for 1 minute. After this time, all components and walls magically revert to their original positions.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Passwall.</em></strong> You cast the spell passwall without expending a spell slot or material components.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Wall Warp.</em></strong> A wall that you can see within 30 feet magically shifts, grows, shrinks, or rotates. This wall must be a contiguous surface without corners, at most 1 foot thick, and must be either made out of wood, plaster, or stone, or not be naturally occurring. The wall must remain vertical, but you can move it into any position you choose within a 60-foot radius of its previous position. Its new position can't include spaces occoupied by creatures or objects. If you cause the wall to grow or shrink, you can only change its dimensions vertically. These changes to the wall create no instability in their structures. After 1 minute, the wall reverts to its original size and position.</p>
+        </description>
+        <sheet>
+            <description> You can expend a use of your Wild Shape feature to warp the city around you. Choose one of the following effects:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_COBBLESHIFT" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_PASSWALL" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_WALL_WARP" />
+        </rules>
+    </element>
+    <element name="Cobbleshift" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_COBBLESHIFT">
+		<compendium display="false" />
+		<description>
+			<p>You magically manipulate the components of a constructed floor —bricks, cobblestones, planks, and similar objects— within 60 feet. Each component can move up to 1 foot and doesn't cause instabilities in their structures. When you use this effect, you can cause any sections of floor that you choose within the area to become difficult terrain, and can cause any creature standing in one of those sections to make a Dexterity saving throw against your spell save DC or fall prone. You are unaffected by this difficult terrain.</p>
+            <p>Additionally, you can use your action on each of your turns to raise up to three low walls from the floor, each 2 and 1/2 feet high, 5 feet wide, and 1 foot deep. Such a wall can generally provide half cover for a Medium creature. These walls provide no instability in surrounding structures.</p>
+		</description>
+		<sheet action="Action (2)">
+			<description> (1)You magically manipulate the components of a constructed floor within 60ft. Each component can move up to 1Ft and doesn't cause instabilities in their structures. When you use this effect, you can cause any sections of floor that you choose within the area to become difficult terrain, and can cause any creature standing in one of those sections to make a DC{{spellcasting:dc}} DEX saving throw or fall prone. You are unaffected by this difficult terrain. (2)On each of your turns you can raise up to 3 low walls from the floor, each 2 and 1/2ft high, 5ft wide, and 1ft deep. Such a wall can generally provide half cover for a Medium creature. These walls provide no instability in surrounding structures.</description>
+		</sheet>
+	</element>
+    <element name="Passwall" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_PASSWALL">
+		<compendium display="false" />
+		<description>
+			<p>You cast the spell passwall without expending a spell slot or material components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You cast the spell passwall without expending a spell slot or material components.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PASSWALL" />    
+        </rules>
+	</element>
+    <element name="Wall Warp" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_WALL_WARP">
+		<compendium display="false" />
+		<description>
+			<p>A wall that you can see within 30 feet magically shifts, grows, shrinks, or rotates. This wall must be a contiguous surface without corners, at most 1 foot thick, and must be either made out of wood, plaster, or stone, or not be naturally occurring. The wall must remain vertical, but you can move it into any position you choose within a 60-foot radius of its previous position. Its new position can't include spaces occoupied by creatures or objects. If you cause the wall to grow or shrink, you can only change its dimensions vertically. These changes to the wall create no instability in their structures. After 1 minute, the wall reverts to its original size and position.</p>
+		</description>
+		<sheet>
+			<description> A wall that you can see within 30ft magically shifts, grows, shrinks, or rotates. This wall must be a contiguous surface without corners, at most 1ft thick, and must be either made out of wood, plaster, or stone, or not be naturally occurring. The wall must remain vertical, but can be moved into any position within a 60-foot radius of its previous position, but not spaces occoupied by creatures or objects. It grow or shrink, but only change its dimensions vertically. These changes create no instability in their structures. After 1 minute, the wall reverts to its original size and position.</description>
+		</sheet>
+	</element>
+    <element name="Whispers of Walls" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHISPERS_OF_WALLS">
+        <description>
+            <p>Beginning at 6th level, the walls speak to you in a quiet tremor. You can use your action to touch a constructed part of a building, such as a wall, pillar, ceiling, or floor. You learn how many Humanoid creatures are within that building and how many are within each room. If there are more than fifty Humanoids in a building, you only detect the closest fifty.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can touch a constructed part of a building, such as a wall, pillar, ceiling, or floor. You learn how many Humanoid creatures are within that building and how many are within each room. If there are more than 50 Humanoids in a building, you only detect the closest 50.</description>
+        </sheet>
+    </element>
+    <element name="Breath of Smog" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BREATH_OF_SMOG">
+        <description>
+            <p>Starting at 10th level, you can exhale a 10-foot-radius sphere of toxic smoke, centered on yourself, as a reaction whenever you take damage. This area is heavily obscured. If a creature other than you is completely within the smog at the start of its turn, it must make a Constitution saving throw against your spell save DC or be poisoned until the start of its next turn, as it coughs uncontrollably.</p>
+            <p class="indent">This smog dissipates after 1 minute. A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you use your City Shape feature or you finish a short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/(Short||Long Rest||City Shape)">
+            <description> Whenever you take damage, you can exhale a 10-foot-radius sphere of toxic smoke, centered on yourself. This area is heavily obscured. If a creature other than you is completely within the smog at the start of its turn, it must make a DC{{spellcasting:dc}} CON saving throw or be poisoned until the start of its next turn, as it coughs uncontrollably. This smog dissipates after 1 minute. A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.</description>
+        </sheet>
+    </element>
+    <element name="Twisting Architecture" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TWISTING_ARCHITECTURE">
+        <description>
+            <p>By 14th level, you command total mastery of the city's architecture, warping it to any shape you might imagine. You can expend two uses of your Wild Shape feature to activate any and all effects of your City Shape ability at one time.</p>
+            <p class="indent">Additionally, when you use your City Shape feature, you can warp the gravity along any surfaces you choose within a 60-foot radius. For the next minute, creatures and objects within 15 feet of one of these surfaces fall toward it as if it were the ground. A creature can walk on this surface as if it were level ground, even if the surface is perpendicular to the ground or upside down. At the end of this duration, all creatures and objects fall from the affected surfaces.</p>
+        </description>
+        <sheet>
+            <description> You can expend two uses of your Wild Shape feature to activate any and all effects of your City Shape ability at one time. When you use your City Shape feature, you can warp the gravity along any surfaces you choose within a 60ft radius. For the next minute, creatures and objects within 15ft of one of these surfaces fall toward it as if it were the ground. A creature can walk on this surface as if it were level ground, even if the surface is perpendicular to the ground or upside down. At the end of this duration, all creatures and objects fall from the affected surfaces.</description>
+        </sheet>
+    </element>
+</elements>

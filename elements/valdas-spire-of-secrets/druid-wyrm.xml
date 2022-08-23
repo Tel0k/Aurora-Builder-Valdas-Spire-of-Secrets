@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Circle of the Wyrm</name>
+		<description>The Circle of the Wyrm from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="druid-wyrm.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/druid-wyrm.xml" />
+		</update>
+	</info>
+    <element name="Circle of the Wyrm" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRUID_WYRM">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Druids who join the Circle of the Wyrm hold dragons in higher esteem than all other works of creation. These druids believe, as many dragons do, that wyrms are perfect creatures: the pinnacle of all life brought into existence by the antediluvian gods. Likewise, these druids aspire to perfect wyrmhood, and gradually become like dragonkind.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DRAGONKIN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DRACONIC_WILD_SHAPE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_FANGS_AND_FLIGHT" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRIMORDIAL_AURA" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_PERFECTION" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DRAGONKIN" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DRACONIC_WILD_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FANGS_AND_FLIGHT" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRIMORDIAL_AURA" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_PERFECTION" level="14" />
+        </rules>
+    </element>
+    <element name="Dragonkin" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DRAGONKIN">
+        <description>
+            <p>Starting when you choose this circle at 2nd level, you learn Draconic. Additionally, you have advantage on saving throws against the spells and effects of Dragons.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on saving throws against the spells and effects of Dragons.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+        </rules>
+    </element>
+    <!---->
+    <element name="Draconic Wild Shape" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DRACONIC_WILD_SHAPE">
+        <description>
+            <p>At 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, instead of as an action. Furthermore, your beast shapes resemble dragon hybrids, replete with scales and fangs, and gain the following traits while you are transformed:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Breath Weapon.</em></strong> You can use your action and expend one spell slot to exhale draconic energy from your mouth. Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in a 15-foot cone must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 2d10 damage of the chosen type, plus 1d10 for each spell level higher than 1st. On a successful save, a creature takes half as much damage.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Resistance.</em></strong> You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
+        </description>
+        <sheet>
+            <description> You gain the ability to use Wild Shape on your turn as a bonus action, instead of as an action. Your beast shapes resemble dragon hybrids and gain the following traits while transformed:</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Draconic Wild Shape 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_BREATH_WEAPON" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_BREATH_WEAPON" />
+            <select type="Archetype Feature" name="Draconic Wild Shape 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_RESISTANCE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_RESISTANCE" />
+        </rules>
+    </element>
+    <element name="Breath Weapon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_BREATH_WEAPON">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_BREATH_WEAPON</supports>
+        <compendium display="false" />
+		<description>
+			<p>You can use your action and expend one spell slot to exhale draconic energy from your mouth. Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in a 15-foot cone must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 2d10 damage of the chosen type, plus 1d10 for each spell level higher than 1st. On a successful save, a creature takes half as much damage.</p>
+		</description>
+		<sheet action="Action">
+			<description> You can expend one spell slot to exhale draconic energy from your mouth. Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in a 15ft cone must make a DC{{spellcasting:dc:wis}} DEX saving throw. On a failed save, a creature takes 2d10 damage of the chosen type, + 1d10 for each spell level higher than 1st. On a successful save, a creature takes half as much damage.</description>
+		</sheet>
+	</element>
+    <element name="Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_RESISTANCE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_RESISTANCE</supports>
+        <compendium display="false" />
+		<description>
+			<p>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
+		</description>
+		<sheet>
+			<description> You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</description>
+		</sheet>
+	</element>
+    <!---->
+    <element name="Fangs and Flight" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FANGS_AND_FLIGHT">
+        <description>
+            <p>Starting at 6th level, your Beast form sprouts scaled wings, and its attacks carry the energetic fury of a dragon’s swipes. You gain the following traits while transformed:</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Dragon Wings.</em></strong> You have a flying speed equal to your walking speed, if you don’t already have a flying speed that would be higher.</p>
+            <p style="text-indent: -1em; margin-left: 1em"><strong><em>Infused Strikes.</em></strong> When you transform using your Wild Shape, choose a damage type: acid, cold, fire, lightning, or poison. On a hit with a melee attack, you deal an extra 1d6 damage of the chosen type.</p>
+        </description>
+        <sheet>
+            <description> Your Beast form gains the following traits while transformed:</description>
+        </sheet>
+        <rules>
+			<select type="Archetype Feature" name="Fangs and Flight 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_DRAGON_WINGS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_DRAGON_WINGS" />
+            <select type="Archetype Feature" name="Fangs and Flight 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_INFUSED_STRIKES" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_INFUSED_STRIKES" />            
+        </rules>
+    </element>
+    <element name="Dragon Wings" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_DRAGON_WINGS">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_DRAGON_WINGS</supports>
+        <compendium display="false" />
+		<description>
+			<p>You have a flying speed equal to your walking speed, if you don’t already have a flying speed that would be higher.</p>
+		</description>
+		<sheet>
+			<description> You have a flying speed equal to your walking speed, if you don’t already have an higher one.</description>
+		</sheet>
+	</element>
+    <element name="Infused Strikes" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_INFUSED_STRIKES">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_INFUSED_STRIKES</supports>
+        <compendium display="false" />
+		<description>
+			<p>When you transform using your Wild Shape, choose a damage type: acid, cold, fire, lightning, or poison. On a hit with a melee attack, you deal an extra 1d6 damage of the chosen type.</p>
+		</description>
+		<sheet>
+			<description> When you transform using your Wild Shape, choose a damage type: acid, cold, fire, lightning, or poison. On a hit with a melee attack, you deal an extra 1d6 damage of the chosen type.</description>
+		</sheet>
+	</element>
+    <!---->
+    <element name="Primordial Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRIMORDIAL_AURA">
+        <description>
+            <p>At 10th level, you can use your bonus action to create a 30-foot aura of elemental magic. Choose a damage type: acid, cold, fire, lightning, or poison. For the next minute, you and each creature you choose within the aura have resistance against the chosen damage type. Additionally, once on each of your turns for the duration, when you deal damage of the chosen type to a hostile creature, you can choose a creature within the aura to regain hit points equal to 1d10 plus your Wisdom modifier.</p>
+            <p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action (1)" usage="1/Short||Long Rest (1)">
+            <description> (1)You can create a 30ft aura of elemental magic. Choose a damage type: acid, cold, fire, lightning, or poison. For the next minute, you and each creature you choose within the aura have resistance against the chosen damage type. (2)Once on each of your turns for the duration, when you deal damage of the chosen type to a hostile creature, you can choose a creature within the aura to regain equal to 1d10+{{wisdom:modifier}}hp.</description>
+        </sheet>
+    </element>
+    <element name="Wyrm Perfection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WYRM_PERFECTION">
+        <description>
+            <p>By 14th level, you have achieved the majesty of a dragon. Even when not transformed, you gain the Breath Weapon and Dragon Wings traits.</p>
+        </description>
+        <sheet>
+            <description> Even when not transformed, you gain the Breath Weapon and Dragon Wings traits.</description>
+        </sheet>
+    </element>
+</elements>

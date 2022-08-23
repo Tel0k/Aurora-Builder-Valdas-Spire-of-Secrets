@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Circle of the Deep</name>
+		<description>The Circle of the Deep from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="druid-deep.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/druid-deep.xml" />
+		</update>
+	</info>
+    <element name="Circle of the Deep" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRUID_DEEP">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>The druids that maintain and protect the land are deluded to think that they keep dominion over the natural world, for they stand guard over only a small fraction of it; far greater, and far wilder, is the deep. Druids of the Deep are fewer in number, but greater in task, vowing to stand guard over the world’s oceans, seas, lakes, and rivers, and to safeguard their inhabitants from the fools that walk the surface.</p>
+            <p class="indent">The crushing depths have hardened these druids, and taught them to battle with every weapon underneath the waves. After all, the ocean is an unforgiving place; you can’t survive by just talking to fish.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_AQUATIC" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VORTEX_ATTACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCEANS_ALLY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DAVY_JONES_LOCKER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AQUATIC" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VORTEX_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCEANS_ALLY" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DAVY_JONES_LOCKER" level="14" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES">
+        <description>
+            <p>To join the Circle of the Deep, you must learn the weapons of underwater combat. When you choose this circle at 2nd level, you gain proficiency in the use of fishhooks, harpoons, nets, spears, and tridents.</p>
+            <p class="indent">In addition, while druids of the deep won’t use weapons made of metal, they will use coral weapons, just as merfolk do. Coral weapons function as regular weapons, but cost twice as much if purchased on land.</p>
+        </description>
+        <sheet display="false">
+            <description> Druids of the deep won’t use metal weapons, they will use coral ones, just as merfolk do. Coral weapons function as regular weapons, but cost twice as much if purchased on land.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_FISHHOOK" />
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_HARPOON" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+        </rules>
+    </element>
+    <element name="Aquatic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AQUATIC">
+        <description>
+            <p>By 2nd level, you are permanently adapted to life underwater. You can breathe water as well as air and have a swim speed equal to your walking speed. These benefits also apply while you’re transformed using Wild Shape: if you transform into a creature that doesn’t have a swim speed, your form gains a swim speed equal to the form’s speed.</p>
+        </description>
+        <sheet>
+            <description> You can breathe water as well as air and have a swim speed equal to your walking speed. These benefits also apply while you’re using Wild Shape: if you transform into a creature that doesn’t have a swim speed, your form gains a swim speed equal to the form’s speed.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Vortex Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VORTEX_ATTACK">
+        <description>
+            <p>At 6th level, you’ve mastered the omnidirectional fighting style of deep sea creatures. You can attack twice, instead of once, whenever you take the Attack action on your turn with a weapon you are holding. If you are in water, or have fewer than half your maximum hit points, you can use your action to make a melee attack against any number of creatures within 5 feet of you, making a separate attack roll for each target.</p>
+        </description>
+        <sheet action="Action (2)">
+            <description> (1)You can attack twice, instead of once, whenever you take the Attack action on your turn with a weapon you are holding. (2)If you are in water, or have fewer than half your maximum hit points, you can make a melee attack against any number of creatures within 5ft of you, making a separate attack roll for each target.</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />            
+        </rules>
+    </element>
+    <element name="Ocean's Ally" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCEANS_ALLY">
+        <description>
+            <p>Beginning at 10th level, the beasts of the deep mark you as one of their own. You can speak to fish and other aquatic creatures at will, as per the <i>speak with animals</i> spell.</p>
+            <p class="indent">Additionally, if you are underwater, you can use your action to call a Beast of CR 3 or lower that has a swimming speed from the environment to your aid, which arrives at the start of your next turn. The Beast rolls its own initiative and acts on its own turn, but is friendly to you and your companions and follows your commands. After 1 hour passes, or if you or one of your companions harms the Beast, the effect ends and the Beast returns to the wild.</p>
+            <p class="indent">Once you use this ability to call an aquatic Beast, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Action (2)" usage="1/Short||Long Rest">
+            <description> (1)You can speak to fish and other aquatic creatures at will, as per the speak with animals spell. (2)If you are underwater, you can call a Beast of CR3 or lower that has a swimming speed from the environment to your aid, which arrives at the start of your next turn. The Beast rolls its own initiative and acts on its own turn, but is friendly to you and your companions and follows your commands. After 1hr passes, or if you or one of your companions harms the Beast, the effect ends and it returns to the wild.</description>
+        </sheet>
+    </element>
+    <element name="Davy Jones' Locker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DAVY_JONES_LOCKER">
+        <description>
+            <p>At 14th level, you consign your enemies to a watery grave. When you hit a creature with a melee weapon attack, you can deal an extra 1d8 damage to the target. Additionally, your attacks ignore resistance to nonmagical bludgeoning, piercing, and slashing damage, ignore the damage threshold of ships, and deal double damage to ships.</p>
+        </description>
+        <sheet>
+            <description> When you hit a creature with a melee weapon attack, you can deal an extra 1d8 damage to the target. Additionally, your attacks ignore resistance to nonmagical bludgeoning, piercing, and slashing damage, ignore the damage threshold of ships, and deal double damage to ships.</description>
+        </sheet>
+    </element>
+</elements>

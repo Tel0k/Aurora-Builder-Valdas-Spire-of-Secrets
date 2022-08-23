@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Circle of Vermin</name>
+		<description>The Circle of Vermin from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="druid-vermin.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/druid-vermin.xml" />
+		</update>
+	</info>
+    <element name="Circle of Vermin" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRUID_VERMIN">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Druids of the Circle of Vermin, sometimes known as Vermin Lords, find their source of power in the lowliest of creatures: insects, rats, spiders, and other pests. Unmistakably, your coming is signaled by the scrambling of little claws and the cawing of the crows. You hold legions of these creatures at your command, ready to swarm, bite, and claw, and you can become one of them, to walk among your innumerable children.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_LORD_OFTHE_LOW" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INFESTED" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TREMORSENSE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_PLAGUE_CARRIER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SWARM_MASTER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_LORD_OFTHE_LOW" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INFESTED" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TREMORSENSE" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PLAGUE_CARRIER" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SWARM_MASTER" level="14" />
+        </rules>
+    </element>
+    <element name="Lord of the Low" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_LORD_OFTHE_LOW">
+        <description>
+            <p>Starting when you choose this circle at 2nd level, you can expend a use of your Wild Shape feature as an action to magically summon a swarm of rats in your space. The swarm vanishes after a number of hours equal to half your druid level (rounded down), if it drops to 0 hit points, or if you use this ability to summon a new swarm.</p>
+            <p class="indent">The summoned swarm is friendly to you and your companions. Roll initiative for the summoned swarm, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, it defends itself from hostile creatures, but otherwise takes no actions.</p>
+            <p class="indent">While the swarm is in your space, you have a +2 bonus to AC and, when you take damage, you can choose for the swarm to take damage instead of you.</p>
+            <p class="indent">Starting at 6th level, you can summon a swarm of bats, swarm of insects, or swarm of ravens, and starting at 14th level, you can summon a swarm of poisonous snakes.</p>
+        </description>
+        <sheet action="Wild Shape">
+            <description> You can magically summon a swarm of rats in your space. The swarm vanishes after {{level:druid:half}}hrs, if it drops to 0 hp, or if you use this ability to summon a new swarm. It's friendly to you and your companions. Roll initiative for the summoned swarm, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), otherwise it defends itself from hostile creatures, but takes no actions. While the swarm is in your space, you have a +2 bonus to AC and, when you take damage, you can choose for the swarm to take damage instead of you.</description>
+            <description level="6"> You can magically summon a swarm of rats, bats, insects or ravens in your space. The swarm vanishes after {{level:druid:half}}hrs, if it drops to 0 hp, or if you use this ability to summon a new swarm. It's friendly to you and your companions. Roll initiative for the summoned swarm, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), otherwise it defends itself from hostile creatures, but takes no actions. While the swarm is in your space, you have a +2 bonus to AC and, when you take damage, you can choose for the swarm to take damage instead of you.</description>
+            <description level="14"> You can magically summon a swarm of rats, bats, insects, ravens or poisonous snakes in your space. The swarm vanishes after {{level:druid:half}}hrs, if it drops to 0 hp, or if you use this ability to summon a new swarm. It's friendly to you and your companions. Roll initiative for the summoned swarm, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), otherwise it defends itself from hostile creatures, but takes no actions. While the swarm is in your space, you have a +2 bonus to AC and, when you take damage, you can choose for the swarm to take damage instead of you.</description>
+        </sheet>
+    </element>
+    <element name="Infested" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INFESTED">
+        <description>
+            <p>At 2nd level, insects and rodents inhabit every nook and cranny of your clothes and gear. Whenever a creature within 5 feet of you hits you with an attack, these vermin retaliate, dealing 1d4 piercing damage to the attacker. Additionally, the creature subtracts the piercing damage dealt from the next attack roll it makes before the end of its turn.</p>
+        </description>
+        <sheet>
+            <description> Insects and rodents inhabit every nook and cranny of your clothes and gear.Whenever a creature within 5ft of you hits you with an attack, these vermin retaliate, dealing 1d4 piercing damage to the attacker. Additionally, the creature subtracts the piercing damage dealt from the next attack roll it makes before the end of its turn.</description>
+        </sheet>
+    </element>
+    <element name="Tremorsense" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TREMORSENSE">
+        <description>
+            <p>By 6th level, vibrations in the ground echo through its ants and earthworms, and by extension, you can sense them. You gain tremorsense, the ability to detect and pinpoint vibrations, with a range of 10 feet. To use this sense, you and the source of the vibrations must be in contact with the same ground or substance. This sense can’t be used to detect flying or incorporeal creatures.</p>
+        </description>
+        <sheet>
+            <description> You gain tremorsense, with a 10ft range.</description>
+        </sheet>
+        <rules>
+			<grant type="Vision" id="ID_VISION_TREMORSENSE" /> 
+			<stat name="tremorsense:range" value="10" />
+        </rules>
+    </element>
+    <element name="Plague Carrier" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PLAGUE_CARRIER">
+        <description>
+            <p>Beginning at 10th level, your constant close proximity to disease-carrying creatures has not only inoculated you to their diseases, but also allowed you to act as a vector of plague. You are immune to diseases and being poisoned. Whenever you would normally make a Constitution saving throw to resist contracting a disease or being poisoned, you can instead become a carrier of that disease or poison. You can only be a carrier of one disease or poison at a time, and you can only carry it for up to seven days.</p>
+            <p class="indent">As a reaction when you take damage from a creature you can see within 5 feet of you, you can transfer a disease or poison you are carrying to that creature, which must make a Constitution saving throw against your spell save DC. On a failure, the creature contracts the disease or poison, and you are no longer a carrier of it.</p>
+        </description>
+        <sheet action="Reaction (2)">
+            <description> (1)You are immune to diseases and being poisoned. Whenever you would normally make a CON saving throw to resist contracting a disease or being poisoned, you can instead become a carrier of that disease or poison. You can only be a carrier of one disease or poison at a time, and you can only carry it for up to 7 days. (2)When you take damage from a creature you can see within 5ft of you, you can transfer a disease or poison you are carrying to that creature, which must make a DC{{spellcasting:dc}} CON saving throw. On a failure, the creature contracts the disease or poison, and you are no longer a carrier of it.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        </rules>
+    </element>
+    <element name="Swarm Master" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SWARM_MASTER">
+        <description>
+            <p>Starting at 14th level, whenever you use your Lord of the Low feature to summon a swarm, you can summon two swarms instead of one.</p>
+        </description>
+        <sheet>
+            <description> Whenever you use your Lord of the Low feature to summon a swarm, you can summon two swarms instead of one.</description>
+        </sheet>
+    </element>
+</elements>

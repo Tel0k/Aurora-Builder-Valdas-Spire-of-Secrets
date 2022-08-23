@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Circle of Stones</name>
+		<description>The Circle of Stones from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="druid-stones.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/druid-stones.xml" />
+		</update>
+	</info>
+    <element name="Circle of Stones" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DRUID_STONES">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Age-old monuments crafted in forgotten times attest to a simple truth: there is power in stones. Druids who join the ancient Circle of Stones carry on the tradition of raising stone henges in places of great power, where leylines intersect and magic strengthens. Such locations are marked as nexuses of power, where the Forgotten Laws of the Old Gods are still heeded—but such things are known only to a few druids today. Others merely see the looming stone monuments as enigmatic circles, grim reminders of the enormity of time.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_RAISE_HENGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WARDING_STONES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_LEY_PASSAGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREAT_HENGE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RAISE_HENGE" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WARDING_STONES" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_LEY_PASSAGE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREAT_HENGE" level="14" />
+        </rules>
+    </element>
+    <element name="Raise Henge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RAISE_HENGE">
+        <description>
+            <p>When you select this circle at 2nd level, you learn to create patterns of stones which strengthen magic. You can expend a use of your Wild Shape as an action to magically create a henge, a set of standing stones, around a point you can see within 60 feet. A henge is composed of six stones, each 5 feet high, 3 feet wide, and 1 foot deep, arranged evenly in a 10-foot-radius circle. Such a stone can generally grant three-quarters cover from ranged attacks for a Medium creature. You can only create a henge in a location which can support the stones' weight.</p>
+            <p class="indent">When you begin your turn in your henge, you gain temporary hit points equal to your Wisdom modifier + half your druid level (rounded down). Additionally, you can choose any number of allies to also be affected by the henge. A creature you choose gains temporary hit points equal to your Wisdom modifier when it begins its turn within the henge. Temporary hit points granted by the henge last only while the creature is within the henge.</p>
+            <p class="indent">Your henge maintains its magical properties for 8 hours. After this duration, you can expend another use of your Wild Shape ability to render the stones permanent, though they no longer grant temporary hit points; otherwise, they vanish.</p>
+            <p class="indent">As you gain higher levels in this class, you can raise larger henges. At 10th-level, you can create a 15-foot-radius henge consisting of 10 stones, and at 14th-level, you can create a 20-foot-radius henge consisting of 20 stones. You choose the henge's radius when you create it.</p>
+        </description>
+        <sheet action="Wild Shape">
+            <description> You can magically create a henge, a set of standing stones, around a point you can see within 60ft. A henge is composed of {{rocks:henge}} stones, each 5ft high, 3ft wide, and 1ft deep, arranged evenly in a {{radius:henge}}ft-radius circle. Such a stone can generally grant three-quarters cover from ranged attacks for a Medium creature. You can only create a henge in a location which can support the stones' weight. &#13;
+            When you begin your turn in your henge, you gain {{hengehp}} temp hp. Additionally, any number of allies you choose gains {{hengehp:wisdom}} temp hp when it begins its turn within the henge. Temp hp granted by the henge last only while the creature is within the henge. &#13;
+            Your henge maintains its magical properties for 8 hours. After this duration, you can expend another use of your Wild Shape ability to render the stones permanent, though they no longer grant temporary hit points; otherwise, they vanish.</description>
+        </sheet>
+        <rules>
+            <stat name="radius:henge" value="10" bonus="radius" />
+			<stat name="radius:henge" value="15" bonus="radius" level="10" />
+			<stat name="radius:henge" value="20" bonus="radius" level="14" />
+            <stat name="rocks:henge" value="6" bonus="rocks" />
+			<stat name="rocks:henge" value="10" bonus="rocks" level="10" />
+			<stat name="rocks:henge" value="20" bonus="rocks" level="14" />
+            <stat name="hengehp" value="level:druid:half" />
+            <stat name="hengehp" value="hengehp:wisdom" />
+			<stat name="hengehp:wisdom" value="wisdom:modifier" />
+			<stat name="ac:calculation" value="ac:unarmored defense fist" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Druid)" />
+        </rules>
+    </element>
+    <element name="Warding Stones" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WARDING_STONES">
+        <description>
+            <p>At 6th level, your henges can hold great threats at bay. While within a henge, you can cast the <i>magic circle</i> spell as an action, without expending a spell slot or material components. The spell is centered on the henge and its radius and height matches that of the henge. Once you cast this spell in this way, you can't do so again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> While within a henge, you can cast the magic circle spell without expending a spell slot or material components. The spell is centered on the henge and its radius and height matches that of the henge. Once you cast this spell in this way, you can't do so again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_CIRCLE" />    
+        </rules>
+    </element>
+    <element name="Ley Passage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_LEY_PASSAGE">
+        <description>
+            <p>By 10th level, you can use your henges to travel through the leylines that connect the world. By spending 1 minute concentrating while within a henge, you can create a magical link between that henge and another henge on the same plane of existence, as per the spell teleportation circle. You must have seen or touched the destination henge at least once before. For the next minute, any creature can use an action to step into the target henge and exit from the destination henge.</p>
+        </description>
+        <sheet>
+            <description> By spending 1 minute concentrating while within a henge, you can create a magical link between that henge and another henge on the same plane of existence, as per the spell teleportation circle. You must have seen or touched the destination henge at least once before. For the next minute, any creature can use an action to step into the target henge and exit from the destination henge.</description>
+        </sheet>
+    </element>
+    <element name="Great Henge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREAT_HENGE">
+        <description>
+            <p>Beginning at 14th level, when you cast a druid spell that requires concentration while you are within a henge, you can transfer the spell to the henge, which manifests as a series of burning runes on the stones. You can only use this ability on a spell of 5th level or lower whose effect is entirely contained within the henge. If the spell's area of effect would be larger than the area of the henge, you can limit the spell's area to the henge's boundary. The henge maintains concentration on the spell instead of you for the spell's duration, allowing you to maintain two spells which require concentration at once. The spell ends early if any part of its effect leaves the area of the henge.</p>
+        </description>
+        <sheet>
+            <description> When you cast a druid spell that requires concentration while you are within a henge, you can transfer it to the henge. You can only use this ability on a spell of 5th level or lower whose effect is entirely contained within the henge. If the spell's area of effect would be larger than the area of the henge, you can limit it to the henge's boundary. The henge maintains concentration on the spell instead of you for the spell's duration, allowing you to maintain two concentration spells at once. The spell ends early if any part of its effect leaves the area of the henge.</description>
+        </sheet>
+    </element>
+</elements>
