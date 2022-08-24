@@ -147,5 +147,5 @@
         <sheet action="Reaction">
             <description> When you lose all your temp hp from your Primal Infusion feature you can either make two unarmed strikes against a creature you can see within your reach, or expend a use of your Wild Shape feature to use your Primal Infusion ability again.</description>
         </sheet>
-    </element>
+	</element>
 </elements>
