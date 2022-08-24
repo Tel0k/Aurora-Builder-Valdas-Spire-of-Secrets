@@ -26,7 +26,7 @@
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE" level="2" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WHISPERS_OF_WALLS" level="6" />
             <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BREATH_OF_SMOG" level="10" />
-			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TWISTING_ARCHITECTURE" level="14" />
+	    	<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TWISTING_ARCHITECTURE" level="14" />
         </rules>
     </element>
     <element name="Urban Arcana" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_URBAN_ARCANA">
@@ -63,16 +63,16 @@
             <description> You can expend a use of your Wild Shape feature to warp the city around you. Choose one of the following effects:</description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_COBBLESHIFT" />
-			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_PASSWALL" />
-			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_WALL_WARP" />
+            <select type="Archetype Feature" name="City Shape 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_COBBLESHIFT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_COBBLESHIFT" />
+            <select type="Archetype Feature" name="City Shape 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_PASSWALL" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_PASSWALL" />
+            <select type="Archetype Feature" name="City Shape 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_WALL_WARP" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_WALL_WARP" />
         </rules>
     </element>
     <element name="Cobbleshift" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CITY_SHAPE_COBBLESHIFT">
-		<compendium display="false" />
-		<description>
-			<p>You magically manipulate the components of a constructed floor —bricks, cobblestones, planks, and similar objects— within 60 feet. Each component can move up to 1 foot and doesn't cause instabilities in their structures. When you use this effect, you can cause any sections of floor that you choose within the area to become difficult terrain, and can cause any creature standing in one of those sections to make a Dexterity saving throw against your spell save DC or fall prone. You are unaffected by this difficult terrain.</p>
-            <p>Additionally, you can use your action on each of your turns to raise up to three low walls from the floor, each 2 and 1/2 feet high, 5 feet wide, and 1 foot deep. Such a wall can generally provide half cover for a Medium creature. These walls provide no instability in surrounding structures.</p>
+	<compendium display="false" />
+	<description>
+		<p>You magically manipulate the components of a constructed floor —bricks, cobblestones, planks, and similar objects— within 60 feet. Each component can move up to 1 foot and doesn't cause instabilities in their structures. When you use this effect, you can cause any sections of floor that you choose within the area to become difficult terrain, and can cause any creature standing in one of those sections to make a Dexterity saving throw against your spell save DC or fall prone. You are unaffected by this difficult terrain.</p>
+		<p>Additionally, you can use your action on each of your turns to raise up to three low walls from the floor, each 2 and 1/2 feet high, 5 feet wide, and 1 foot deep. Such a wall can generally provide half cover for a Medium creature. These walls provide no instability in surrounding structures.</p>
 		</description>
 		<sheet action="Action (2)">
 			<description> (1)You magically manipulate the components of a constructed floor within 60ft. Each component can move up to 1Ft and doesn't cause instabilities in their structures. When you use this effect, you can cause any sections of floor that you choose within the area to become difficult terrain, and can cause any creature standing in one of those sections to make a DC{{spellcasting:dc}} DEX saving throw or fall prone. You are unaffected by this difficult terrain. (2)On each of your turns you can raise up to 3 low walls from the floor, each 2 and 1/2ft high, 5ft wide, and 1ft deep. Such a wall can generally provide half cover for a Medium creature. These walls provide no instability in surrounding structures.</description>
