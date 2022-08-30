@@ -3,7 +3,7 @@
 	<info>
 		<name>Way of the Bow</name>
 		<description>The Way of the Bow monastic tradition from Valda's Spire of Secrets</description>
-    	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+    		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
 		<update version="0.0.1">
 			<file name="monk-bow.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-bow.xml" />
 		</update>
