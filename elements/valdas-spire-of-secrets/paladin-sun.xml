@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Sun</name>
+		<description>The Oath of the Sun from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="paladin-sun.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-sun.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Sun" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_THE_SUN">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who swear the Oath of the Sun make a solemn vow to party day and night until their hearts give out. The antithesis of stuffy, lawful crusaders, these emissaries of carousal travel the land, crashing parties and raising hell wherever they raise a glass. Authorities bristle at their arrival, but the youth cheer, for a Party Paladin is always accompanied by a good time.</p>
+			<h5 class="caption">TENETS OF THE SUN</h5>
+			<p>Many paladins who swear the Oath of the Sun choose to abide by the Codicus Brodicus, a doctrine of moral judgments, both foul and fair, about the way one should conduct life and party. In general, paladins who take this oath abide by the following principles: </p>
+			<p class="indent"><b><i>The Party Don't Stop.</i></b> Every occasion deserves celebration, and everyone should be invited.</p>
+			<p class="indent"><b><i>Work Hard, Party Hard.</i></b> Without planning and effort, a good bacchanal has no momentousness. Bring your “A” game to events.</p>
+			<p class="indent"><b><i>Fight for Your Right to Party.</i></b> Those who would stand in your way need to be reminded what it's like to have a good time, or failing that, be circumvented.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_OATH_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_SUNS_WARMTH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_INCANDESCENT_FURY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_ZENITH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_SUNS_WARMTH" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_INCANDESCENT_FURY" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_ZENITH" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5 class="caption">OATH OF THE SUN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>burning hands, guiding bolt</em></td></tr>
+				<tr><td>5th</td><td><em>darkvision, scorching ray</em></td></tr>
+				<tr><td>9th</td><td><em>daylight, spirit guardians</em></td></tr>
+				<tr><td>13th</td><td><em>fire shield, wall of fire</em></td></tr>
+				<tr><td>17th</td><td><em>flame strike, hallow</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKVISION" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Glorious Radiance.</i></b> As an action, you can use your Channel Divinity to radiate sunlight. While this effect is active, you shed bright light out to a radius of 30 feet. Additionally, you gain a number of temporary hit points equal to your paladin level + your Charisma modifier. If a creature hits you with a melee attack while you have these hit points, you can use your reaction to deal 5 points of radiant damage to it. This effect lasts for 1 hour, ending early if the hit points are expended or you dismiss it on your turn (no action required). When you reach 11th level, the effect deals 10 points of radiant damage, and at 17th level, it deals 15 points of radiant damage.</p>
+			<p class="indent"><b><i>Solar Flare.</i></b> As an action, you can emit a blinding flash of light using your Channel Divinity. When you do so, each creature you choose within 20 feet of you must make a Constitution saving throw or be blinded for 1 minute. A blinded creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY_GLORIOUS_RADIANCE" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY_SOLAR_FLARE" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Glorious Radiance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY_GLORIOUS_RADIANCE">
+		<description>
+			<p>As an action, you can use your Channel Divinity to radiate sunlight. While this effect is active, you shed bright light out to a radius of 30 feet. Additionally, you gain {{radiance}} temporary hp. If a creature hits you with a melee attack while you have these hp, you can use your reaction to deal 5 points of radiant damage to it. This effect lasts for 1 hour, ending early if the hp are expended or you dismiss it on your turn (no action required). When you reach 11th level, the effect deals 10 points of radiant damage, and at 17th level, it deals 15 points of radiant damage.</p>
+		</description>
+		<sheet alt="Glorious Radiance" action="Action" usage="Channel Divinity">
+			<description>While this effect is active, you shed bright light out to a radius of 30ft. Additionally, you gain {{radiance}} temporary hp. If a creature hits you with a melee attack while you have these hp, you can use your reaction to deal {{damage}} points of radiant damage to it. This effect lasts for 1 hour, ending early if the hp are expended or you dismiss it on your turn (no action required).</description>
+		</sheet>
+        <rules>
+            <stat name="radiance" value="level:paladin" />
+            <stat name="radiance" value="charisma:modifier" />
+            <stat name="damage" value="5" />
+			<stat name="damage" value="10" level="11" />
+			<stat name="damage" value="15" level="17" />
+        </rules>
+	</element>
+	<element name="Channel Divinity: Solar Flare." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY_SOLAR_FLARE">
+		<description>
+			<p>As an action, you can emit a blinding flash of light using your Channel Divinity. When you do so, each creature you choose within 20 feet of you must make a Constitution saving throw or be blinded for 1 minute. A blinded creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet alt="Solar Flare" action="Action" usage="Channel Divinity">
+			<description>You emit a blinding flash of light. When you do so, each creature you choose within 20Ft of you must make a CON saving throw or be blinded for 1 minute. A blinded creature can make a CON saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Sun's Warmth" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_SUNS_WARMTH">
+		<description>
+			<p>At 7th level, you and all friendly creatures within 10 feet of you have resistance to cold and fire damage, and can tolerate temperatures as low as -50 degrees Fahrenheit and as high as 300 degrees Fahrenheit. Additionally, when you deal fire damage, you can choose to deal radiant damage instead, or vice versa.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You and all friendly creatures within {{shadows:range}}ft of you have resistance to cold and fire damage, and can tolerate temperatures between -50°F(-45°C) and 300°F(149°C). Additionally, when you deal fire damage, you can choose to deal radiant damage instead, or vice versa.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <stat name="shadows:range" value="10" bonus="range" />
+			<stat name="shadows:range" value="30" level="18" bonus="range" />
+		</rules>
+	</element>
+	<element name="Incandescent Fury" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_INCANDESCENT_FURY">
+		<description>
+			<p>At 15th level, the damage die for your Improved Divine Smite becomes a d10.</p>
+		</description>
+		<sheet>
+			<description> The damage die for your Improved Divine Smite becomes a d10.</description>
+		</sheet>
+	</element>
+	<element name="Zenith" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_ZENITH">
+		<description>
+			<p>At 20th level, as an action on your turn, you can fill yourself with the sun's brilliant wrath. You can cast the spell <i>sunbeam</i> without using a spell slot. Additionally, at the start of each of your turns during this spell's duration, you regain hit points equal to your Charisma modifier if you have no more than half your hit points left. Once you use this ability, you must finish a long rest before you can do so again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description> You can cast the spell sunbeam without using a spell slot. Additionally, at the start of each of your turns during this spell's duration, you regain {{charisma:modifier}}hp if you have no more than half your hp left.</description>
+		</sheet>
+	</element>
+</elements>

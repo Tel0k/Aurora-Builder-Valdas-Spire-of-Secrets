@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Winter</name>
+		<description>The Oath of Winter from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="paladin-winter.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-winter.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Winter" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_WINTER">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Winter was originally a concord between a paladin and an ancient being of ice, Father Winter. With this treatise, the paladin swears to stand vanguard against the cold, protecting the innocent from the ravages of winter's ice and the horrors of the bitter north. Even as Father Winter has faded into obscurity with the march of centuries, the order of paladins sworn to this oath has remained, their concord and duty neverending. </p>
+			<h5 class="caption">TENETS OF WINTER</h5>
+			<p>Your concord with Father Winter, enumerated in your oath, is based on the following principles:</p>
+			<p class="indent"><b><i>Winter's Snow.</i></b> Though the winter is long and harsh, it is not altogether evil. Your concord with Father Winter himself is proof of that.</p>
+			<p class="indent"><b><i>Winter's Wind.</i></b> With the coming of winter frosts are harsh dangers and frigid creatures not found in the summer. It is your duty to protect the innocent from this peril.</p>
+			<p class="indent"><b><i>Winter's Throne.</i></b> Seeking to unseat Father Winter from his throne of ice is to break your vow. No matter the evils of his reign, never break your concord. Seasons change, but your oath does not.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_OATH_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_FRIGID_AURA" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_ICEFLESH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_FATHER_WINTER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_FRIGID_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_ICEFLESH" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_FATHER_WINTER" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5 class="caption">OATH OF ETERNAL NIGHT</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>create or destroy water, fog cloud</em></td></tr>
+				<tr><td>5th</td><td><em>hold person, shatter</em></td></tr>
+				<tr><td>9th</td><td><em>sleet storm, slow</em></td></tr>
+				<tr><td>13th</td><td><em>fire shield, ice storm</em></td></tr>
+				<tr><td>17th</td><td><em>cone of cold, hold monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Ice Armor.</i></b> As a bonus action, you can use your Channel Divinity to wreath your armor in a thick layer of protective ice. You gain a number of temporary hit points equal to twice your paladin level + your Charisma modifier. You subtract fire damage from your temporary hit points as if you were vulnerable to it, but if fire damage reduces your temporary hit points to zero, you don't subtract the remaining fire damage from your hit points, as your melting ice neutralizes the excess heat.</p>
+			<p class="indent"><b><i>North Wind.</i></b> You can use your Channel Divinity as an action to breathe a hoary wind. Each creature within a 30-foot cone must make a Constitution saving throw. On a failed save, a creature takes 2d6 cold damage for each point of your proficiency bonus, and its speed is halved until the start of your next turn. On a successful save, a creature takes half as much cold damage and its speed is not halved. A creature killed by this ability becomes a frozen statue until it thaws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY_ICE_ARMOR" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY_NORTH_WIND" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Ice Armor" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY_ICE_ARMOR">
+		<description>
+			<p>As a bonus action, you can use your Channel Divinity to wreath your armor in a thick layer of protective ice. You gain a number of temporary hit points equal to twice your paladin level + your Charisma modifier. You subtract fire damage from your temporary hit points as if you were vulnerable to it, but if fire damage reduces your temporary hit points to zero, you don't subtract the remaining fire damage from your hit points, as your melting ice neutralizes the excess heat.</p>
+		</description>
+		<sheet alt="Ice Armor" action="Bonus Action" usage="Channel Divinity">
+			<description> You wreath your armor in a thick layer of protective ice. You gain {{ice}} temporary hp. You subtract fire damage from your temporary hp as if you were vulnerable to it, but if fire damage reduces your temporary hp to zero, you don't subtract the remaining fire damage from your hp, as your melting ice neutralizes the excess heat.</description>
+		</sheet>
+        <rules>
+            <stat name="ice" value="level:paladin" />
+			<stat name="ice" value="level:paladin" />
+            <stat name="ice" value="charisma:modifier" />
+        </rules>
+	</element>
+	<element name="Channel Divinity: North Wind." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_CHANNEL_DIVINITY_NORTH_WIND">
+		<description>
+			<p>You can use your Channel Divinity as an action to breathe a hoary wind. Each creature within a 30-foot cone must make a Constitution saving throw. On a failed save, a creature takes 2d6 cold damage for each point of your proficiency bonus, and its speed is halved until the start of your next turn. On a successful save, a creature takes half as much cold damage and its speed is not halved. A creature killed by this ability becomes a frozen statue until it thaws.</p>
+		</description>
+		<sheet alt="North Wind" action="Action" usage="Channel Divinity">
+			<description>Each creature within a 30ft cone must make a CON saving throw. On a failed save, a creature takes {{proficiency}}x2d6 cold damage, and its speed is halved until the start of your next turn. On a successful save, a creature takes half as much cold damage and its speed is not halved. A creature killed by this ability becomes a frozen statue until it thaws.</description>
+		</sheet>
+	</element>
+	<element name="Frigid Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_FRIGID_AURA">
+		<description>
+			<p>Beginning at 7th level, you emanate bitter cold and draw heat from the room. You and friendly creatures within 10 feet of you have resistance to cold and fire damage.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You emanate bitter cold and draw heat from the room. You and friendly creatures within {{shadows:range}}ft of you have resistance to cold and fire damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat name="shadows:range" value="10" bonus="range" />
+			<stat name="shadows:range" value="30" level="18" bonus="range" />
+		</rules>
+	</element>
+	<element name="Iceflesh" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_ICEFLESH">
+		<description>
+			<p>By 15th level, when you take damage or are blinded, deafened, paralyzed, petrified, or poisoned, you can use your reaction to freeze the blood in your veins, delaying the effect. The damage or condition is suspended for 1 minute, after which it resumes and affects you normally. This ability pauses the duration of spells that affect only you to impose a condition, and the spellcaster doesn't need to maintain concentration on such a spell until the effect resumes. You can only freeze one condition or instance of damage at a time. Once you use this ability, you can't use it again for 1 minute.</p>
+		</description>
+		<sheet action="Reaction" >
+			<description>When you take damage or are blinded, deafened, paralyzed, petrified, or poisoned, you can freeze the blood in your veins, delaying the effect. The damage or condition is suspended for 1 minute, after which it resumes and affects you normally. This ability pauses the duration of spells that affect only you to impose a condition, and the spellcaster doesn't need to maintain concentration on such a spell until the effect resumes. You can only freeze one condition or instance of damage at a time.</description>
+		</sheet>
+	</element>
+	<element name="Father Winter" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOW_FATHER_WINTER">
+		<description>
+			<p>Starting at 20th level, you can invite the purest cold upon yourself as an action, becoming an effigy of Father Winter. For the next hour, you gain the following benefits: </p>
+			<ul>
+				<li>You are immune to cold damage.</li>
+				<li>When a creature within 5 feet of you deals damage to you while you aren't incapacitated, it takes 2d10 cold damage.</li>
+				<li>You emit a frigid 10-foot-radius aura that freezes the ground around you. The area of this aura is difficult terrain. You can choose for creatures to be unaffected by it.</li>
+				<li>On your turn, you can draw the heat from the room, extinguishing any nonmagical fires you can see within 30 feet (no action required).</li>
+			</ul>
+			<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You become an effigy of Father Winter. For the next hour, you gain the following benefits: &#13;
+			You are immune to cold damage. When a creature within 5ft of you deals damage to you while you aren't incapacitated, it takes 2d10 cold damage. You emit a frigid 10ft-radius aura that freezes the ground around you. This area is difficult terrain. You can choose for creatures to be unaffected by it. On your turn, you can draw the heat from the room, extinguishing any nonmagical fires you can see within 30ft (no action required).</description>
+		</sheet>
+	</element>
+</elements>

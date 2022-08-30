@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Eternal Night</name>
+		<description>The Oath of Eternal Night from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="paladin-eternal-night.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-eternal-night.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Eternal Night" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_ETERNAL_NIGHT">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who swear the Oath of Eternal Night forgo the lofty standards of conduct and shining armor of their compatriots: instead, they don blackened armor and carry out assassinations, conduct subterfuge, and mete out vigilante justice under cover of night. Such paladins, often called ravens, bind themselves to higher ideals of justice, transcending law and allegiances, so that they can right the wrongs that go unpunished. Every foul action has its consequence, and when no others rise to the challenge, the blade of a raven is not far behind.</p>
+			<h5 class="caption">TENETS OF ETERNAL NIGHT</h5>
+			<p>Paladins who swear the Oath of Eternal Night share a sense of moral absolutism and tend to believe in the following core tenets:</p>
+			<p class="indent"><b><i>None are Exempt.</i></b> Even kings and magistrates that write the laws must be held accountable to them.</p>
+			<p class="indent"><b><i>Good of the Many.</i></b> The needs of the many always outweigh the needs of the few. It is your charge to protect the weak when the powerful seek to oppress.</p>
+			<p class="indent"><b><i>Knight of Night.</i></b> When justice is not done in the light of day, it must be restored in darkness.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_OATH_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_SLIP_INTO_THE_SHADOWS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CLOAK_OF_NIGHT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_SHADOW_FORM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_SLIP_INTO_THE_SHADOWS" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CLOAK_OF_NIGHT" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_SHADOW_FORM" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5 class="caption">OATH OF ETERNAL NIGHT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>feather fall, longstrider</em></td></tr>
+				<tr><td>5th</td><td><em>misty step, pass without trace</em></td></tr>
+				<tr><td>9th</td><td><em>fly, haste</em></td></tr>
+				<tr><td>13th</td><td><em>dimension door, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>passwall, teleportation circle</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Cover of Darkness.</i></b> As a bonus action using your Channel Divinity, you can create a 15-foot-radius sphere of magical darkness centered on a point you can see within 30 feet of you. This sphere spreads around corners and lasts for one minute. You can see through darkness you create in this way.</p>
+			<p class="indent"><b><i>Shrouded Armor.</i></b> As an action using your Channel Divinity, you can draw shadowstuff from the Plane of Shadow and imbue it upon a suit of armor you are wearing. This armor is cloaked in a tenebrous swirl and reflects no light. You can add your Charisma modifier to Dexterity (Stealth) checks you make while wearing the armor, and the armor doesn't impose disadvantage on your Stealth checks.</p>
+			<p class="indent">This effect ends after 8 hours, or if you end the effect on your turn (no action required). The effect ends early if you remove your armor or fall unconscious.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY_COVER_OF_DARKNESS" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY_SHROUDED_ARMOR" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Cover of Darkness" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY_COVER_OF_DARKNESS">
+		<description>
+			<p>As a bonus action using your Channel Divinity, you can create a 15-foot-radius sphere of magical darkness centered on a point you can see within 30 feet of you. This sphere spreads around corners and lasts for one minute. You can see through darkness you create in this way.</p>
+		</description>
+		<sheet alt="Cover of Darkness" action="Bonus Action" usage="Channel Divinity">
+			<description>You can create a 15ft radius sphere of magical darkness centered on a point you can see within 30ft of you. This sphere spreads around corners and lasts for one minute. You can see through darkness you create in this way.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Shrouded Armor." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CHANNEL_DIVINITY_SHROUDED_ARMOR">
+		<description>
+			<p>As an action using your Channel Divinity, you can draw shadowstuff from the Plane of Shadow and imbue it upon a suit of armor you are wearing. This armor is cloaked in a tenebrous swirl and reflects no light. You can add your Charisma modifier to Dexterity (Stealth) checks you make while wearing the armor, and the armor doesn't impose disadvantage on your Stealth checks.</p>
+			<p class="indent">This effect ends after 8 hours, or if you end the effect on your turn (no action required). The effect ends early if you remove your armor or fall unconscious.</p>
+		</description>
+		<sheet alt="Shrouded Armor" action="Action" usage="Channel Divinity">
+			<description>You can draw shadowstuff and imbue it upon a suit of armor you are wearing. This armor is cloaked in a tenebrous swirl and reflects no light. You can add your Charisma modifier to Dexterity (Stealth) the armor, and the armor doesn't impose disadvantage on your Stealth checks. &#13;
+			This effect ends after 8 hours, or if you end the effect on your turn (no action required). The effect ends early if you remove your armor or fall unconscious.</description>
+		</sheet>
+	</element>
+	<element name="Slip Into The Shadows" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_SLIP_INTO_THE_SHADOWS">
+		<description>
+			<p>At 7th level, you and friendly creatures within 10 feet of you can take the Hide action as a bonus action.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You and friendly creatures within {{shadows:range}}ft of you can take the Hide action as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="shadows:range" value="10" bonus="range" />
+			<stat name="shadows:range" value="30" level="18" bonus="range" />
+		</rules>
+	</element>
+	<element name="Cloack Of Night" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_CLOAK_OF_NIGHT">
+		<description>
+			<p>At 15th level, as a reaction when you take damage, you can shed small flakes of darkness which briefly whirl around you before disappearing. The next attack roll made against you before the start of your next turn has disadvantage.</p>
+		</description>
+		<sheet action="Reaction" >
+			<description>When you take damage, the next attack roll made against you before the start of your next turn has disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Shadow Form" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOEN_SHADOW_FORM">
+		<description>
+			<p>At 20th level, you can assume the form of a tenebrous stalker, drawing incredible power from the darkness around you. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits while you are within dim light or darkness: </p>
+			<ul>
+				<li>You have advantage on Strength, Dexterity, and Constitution checks.</li>
+				<li>As a bonus action, you can teleport up to 60 feet to an unoccupied space you can see that is also within dim light or darkness.</li>
+				<li>Once on each of your turns when you hit a creature with a melee weapon attack, you can deal an extra 3d6 necrotic damage to the target.</li>
+			</ul>
+			<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>. For 1 hour, you gain the following benefits while you are within dim light or darkness: &#13;
+			You have advantage on STR, DEX, and CON checks. &#13;
+			As a bonus action, you can teleport up to 60ft to an unoccupied space you can see that is also within dim light or darkness. &#13;
+			Once on each of your turns when you hit a creature with a melee weapon attack, you can deal an extra 3d6 necrotic damage to the target.</description>
+		</sheet>
+	</element>
+</elements>

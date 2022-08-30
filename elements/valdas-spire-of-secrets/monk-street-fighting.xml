@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of Street Fighting</name>
+		<description>The Way of Street Fighting monastic tradition from Valda's Spire of Secrets</description>
+    	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="monk-street-fighting.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-street-fighting.xml" />
+		</update>
+	</info>
+	<element name="Way of Street Fighting" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MONK_WAY_OF_STREET_FIGHTING" >
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>The Way of Street Fighting is an urban discipline founded on necessity, whose blindingly fast, unique brand of martial arts has been honed and perfected in back-alley brawls and tournaments alike. Monks who adopt this relatively new technique place comparatively little value on spiritual enlightenment and karmic balance; the thrill of split-second timing, rapid combos, and decisive knock-outs drive them to become the best combatants in the world.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_COMBO" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_IRON_FIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_SPECIAL_MOVES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_COMBO" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_IRON_FIST" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_SPECIAL_MOVES" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KO" level="17" />
+		</rules>
+	</element>
+	<element name="Combo" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_COMBO">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you gain bonuses for successful consecutive hits on a single target. On your turn, you gain a +2 bonus to the attack rolls of your unarmed strikes for each hit that you have made on that target on your turn, to a maximum of +6. This bonus resets to 0 if you take damage on your turn.</p>
+		</description>
+		<sheet>
+			<description> On your turn, you gain a +2 bonus to the attack rolls of your unarmed strikes for each hit that you have made on that target on your turn, to a maximum of +6. This bonus resets to 0 if you take damage on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Iron Fist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_IRON_FIST">
+		<description>
+			<p>By 6th level, your unarmed strikes and monk weapons ignore the damage threshold of objects and deal maximum damage to them.</p>
+		</description>
+		<sheet >
+			<description> Your unarmed strikes and monk weapons ignore the damage threshold of objects and deal maximum damage to them.</description>
+		</sheet>
+	</element>
+	<element name="Special Moves" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_SPECIAL_MOVES">
+		<description>
+			<p>At 11th level, you have memorized and mastered patterns of discrete movements that unlock your ki, allowing you to use the following special moves:</p>
+			<p class="indent"><strong>Ki Blast.</strong> You can channel your ki into a blast of energy. As an action, you can expend 2 ki points to make a ranged spell attack (using your Wisdom modifier + your proficiency bonus) against a creature you can see within 120 feet of you. On a hit, the target takes force damage equal to 6d8 + half your monk level.</p>
+			<p class="indent"><strong>Uppercut.</strong> Immediately after you take the Attack action on your turn, you can spend 1 ki point to perform an uppercut. Make an unarmed strike as a bonus action. On a hit, if the target is Large or smaller and doesn't have all of its hit points, it takes damage as normal and is then knocked off its feet and falls prone.</p>
+			<p class="indent"><strong>Whirlwind Strike.</strong> Whenever you make a melee attack on your turn against a creature you can see, you can spend 1 ki point to lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you do not land on solid ground.</p>
+		</description>
+		<sheet>
+			<description> You have memorized and mastered patterns of discrete movements that unlock your ki, allowing you to use the following special moves:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Special Move 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KI_BLAST" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KI_BLAST" />
+			<select type="Archetype Feature" name="Special Move 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_UPPERCUT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_UPPERCUT" />
+			<select type="Archetype Feature" name="Special Move 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_WHIRLWIND_STRIKE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_WHIRLWIND_STRIKE" />
+		</rules>
+	</element>
+	<element name="Ki Blast" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KI_BLAST">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KI_BLAST</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can channel your ki into a blast of energy. As an action, you can expend 2 ki points to make a ranged spell attack (using your Wisdom modifier + your proficiency bonus) against a creature you can see within 120 feet of you. On a hit, the target takes force damage equal to 6d8 + half your monk level.</p>
+		</description>
+		<sheet action="Action" usage="2 Ki">
+			<description>You can make a ranged spell attack (using your Wisdom modifier + your proficiency bonus) against a creature you can see within 120ft of you. On a hit, the target takes 6d8+{{level:monk:half}} force damage.</description>
+		</sheet>
+	</element>
+	<element name="Uppercut" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_UPPERCUT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_UPPERCUT</supports>
+		<compendium display="false" />
+		<description>
+			<p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to perform an uppercut. Make an unarmed strike as a bonus action. On a hit, if the target is Large or smaller and doesn't have all of its hit points, it takes damage as normal and is then knocked off its feet and falls prone.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>Immediately after you take the Attack action on your turn, you can make an unarmed strike. On a hit, if the target is Large or smaller and doesn't have all of its hit points, it takes damage as normal and is then knocked off its feet and falls prone.</description>
+		</sheet>
+	</element>
+	<element name="Whirlwind Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_WHIRLWIND_STRIKE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_WHIRLWIND_STRIKE</supports>
+		<compendium display="false" />
+		<description>
+			<p>Whenever you make a melee attack on your turn against a creature you can see, you can spend 1 ki point to lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you do not land on solid ground.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Whenever you make a melee attack on your turn against a creature you can see, you can lunge up to 15ft toward your target before making the attack. This movement doesn't provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you do not land on solid ground.</description>
+		</sheet>
+	</element>
+	<element name="K.O." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_STREET_FIGHTING_KO">
+		<description>
+			<p>Beginning at 17th level, you can spend 3 ki points to channel your ki into a single strike, knocking a foe unconscious. As an action, make an unarmed strike against a creature within your reach. On a hit, the target takes damage as normal. If the creature has 100 or fewer hit points after you deal damage, it is reduced to 0 hit points, is knocked unconscious, and becomes stable.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="3 Ki - 1/Long Rest">
+			<description> You channel your ki into a single strike. Make an unarmed strike against a creature within your reach. On a hit, the target takes damage as normal. If the creature has 100 or fewer hit points after you deal damage, it is reduced to 0 hit points, is knocked unconscious, and becomes stable.</description>
+		</sheet>
+	</element>
+</elements>

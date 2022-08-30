@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Mask</name>
+		<description>The Way of the Mask monastic tradition from Valda's Spire of Secrets</description>
+    	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="monk-mask.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-mask.xml" />
+		</update>
+	</info>
+	<element name="Way of the Mask" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MONK_WAY_OF_THE_MASK" >
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>When you put on your mask, you're not an ordinary (albeit impossibly handsome) commoner anymore; you're the greatest wrestler the world has ever known. You'll wrestle anyone—or anything—that comes within arm's reach. Sometimes you wrestle inanimate objects just to prove that you can. That one time you wrestled an owlbear? Totally happened. For real.</p>
+            <p class="indent">People come from all around to get a shot against you, to unmask you and take your championship belt. Everyone wants to beat the champ; too bad no one ever will.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_CROWD_FAVORITE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_HEAVYWEIGHT_CHAMPION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_SIGNATURE_MOVE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_OFF_THE_TOP_ROPE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_CHOKED_OUT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_CROWD_FAVORITE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_HEAVYWEIGHT_CHAMPION" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_SIGNATURE_MOVE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_OFF_THE_TOP_ROPE" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_CHOKED_OUT" level="17" />
+		</rules>
+	</element>
+	<element name="Crowd Favorite" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_CROWD_FAVORITE">
+    	<description>
+  			<p>The roar of the crowd lives inside you. Starting when you choose this tradition at 3rd level, you can choose to add your Charisma modifier, instead of your Wisdom modifier, to your ki save DC. Additionally, your Unarmored Defense is calculated as follows: while you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength modifier + your Charisma modifier.</p>
+    	</description>
+    	<sheet>
+  			<description> You can choose to add your CHA mod, instead of your WIS mod, to your ki save DC. Additionally, your Unarmored Defense is {{ac:unarmored defense monk}}</description>
+    	</sheet>
+		<rules>
+			<stat name="ki:dc" value="-wisdom:modifier" />
+			<stat name="ki:dc:ability" value="wisdom:modifier" bonus="modifier"/>
+			<stat name="ki:dc:ability" value="charisma:modifier" bonus="modifier"/>
+			<stat name="ki:dc" value="ki:dc:ability" />
+			<stat name="ac:unarmored defense monk:charisma" value="charisma:modifier" />
+			<stat name="ac:unarmored defense monk:strength" value="strength:modifier" />
+			<stat name="ac:unarmored defense monk" value="-ac:unarmored defense monk:dexterity" />
+			<stat name="ac:unarmored defense monk" value="-ac:unarmored defense monk:wisdom" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:charisma" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:strength" />
+		</rules>
+	</element>
+	<element name="Heavyweight Champion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_HEAVYWEIGHT_CHAMPION">
+    	<description>
+  			<p>When presented with an obstacle, your first instinct is to wrestle it, even if the obstacle in question is not conventionally wrestle-able, like a dragon, an ooze, or an awkward conversation. At 3rd level, you gain the following features:</p>
+			<ul>
+				<li>You can attempt to grapple any creature, regardless of its size.</li>
+				<li>You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends.</li>
+				<li>If you have the Grappler feat, you can choose whether a target grappled by you must make a Strength (Athletics) or Dexterity (Acrobatics) check to escape.</li>
+			</ul>
+    	</description>
+    	<sheet >
+  			<description> You gain the following features: &#13;
+			You can attempt to grapple any creature, regardless of its size. You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends. If you have the Grappler feat, you can choose whether a target grappled by you must make a STR (Athletics) or DEX (Acrobatics) check to escape.</description>
+    	</sheet>
+	</element>
+	<element name="Signature Move" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_SIGNATURE_MOVE">
+    	<description>
+  			<p>At 6th level, you master a signature move, which soon becomes synonymous with your exploits. Choose one of the following features of your choice. Each of these features has a suggested name, but you can choose any name for your signature move, preferably one that sounds good being chanted by a crowd and yelled by you while you perform it.</p>
+			<p class="indent"><strong>Foreign Object.</strong> You are proficient with improvised weapons, which count as monk weapons for you. Once on each of your turns, you can spend 1 ki point to add half your monk level to the damage of an improvised weapon.</p>
+			<p class="indent"><strong>Headbutt of Justice.</strong> Once on each of your turns when you miss with an unarmed strike, you can spend 1 ki point to follow it up with a quick headbutt. Make a second unarmed strike against the same target. The damage die of this unarmed strike is 1d8.</p>
+			<p class="indent"><strong>Infinity Suplex.</strong> While you are grappling another creature, you can use your bonus action and spend 1 ki point to end the grapple early by hurling your opponent over your shoulder and slamming them into the ground. Make an attack roll against the creature you are grappling. On a hit, the creature takes bludgeoning damage equal to 2d10 + your Strength modifier and is knocked prone. The grapple then ends.</p>
+    	</description>
+    	<sheet>
+  			<description> You master the following signature move:</description>
+    	</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Signature Move" supports="Signature Move" />
+		</rules>
+	</element>
+	<element name="Foreign Object" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_FOREIGN_OBJECT">
+		<supports>Signature Move</supports>
+		<compendium display="false" />
+		<description>
+			<p>You are proficient with improvised weapons, which count as monk weapons for you. Once on each of your turns, you can spend 1 ki point to add half your monk level to the damage of an improvised weapon.</p>
+		</description>
+		<sheet usage="Ki - 1/Turn">
+			<description>You are proficient with improvised weapons, which count as monk weapons for you. You can add {{level:monk:half}} to the damage of an improvised weapon.</description>
+		</sheet><!--
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_improvised_weapon" />
+		</rules>-->
+	</element>
+	<element name="Headbutt of Justice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_HEADBUTT_OF_JUSTICE">
+		<supports>Signature Move</supports>
+		<compendium display="false" />
+		<description>
+			<p>Once on each of your turns when you miss with an unarmed strike, you can spend 1 ki point to follow it up with a quick headbutt. Make a second unarmed strike against the same target. The damage die of this unarmed strike is 1d8.</p>
+		</description>
+		<sheet usage="Ki - 1/Turn">
+			<description>When you miss with an unarmed strike, you can follow it up with a quick headbutt. Make a second unarmed strike against the same target. The damage die of this unarmed strike is 1d8.</description>
+		</sheet>
+	</element>
+	<element name="Infinity Suplex" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_INFINITY_SUPPLEX">
+		<supports>Signature Move</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you are grappling another creature, you can use your bonus action and spend 1 ki point to end the grapple early by hurling your opponent over your shoulder and slamming them into the ground. Make an attack roll against the creature you are grappling. On a hit, the creature takes bludgeoning damage equal to 2d10 + your Strength modifier and is knocked prone. The grapple then ends.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>While you are grappling another creature, you can end the grapple early by hurling your opponent over your shoulder and slamming them into the ground. Make an attack roll against the creature you are grappling. On a hit, the creature takes 2d10 + STR mod bludgeoning damage and is knocked prone. The grapple then ends.</description>
+		</sheet>
+	</element>
+	<element name="Off The Top Rope" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_OFF_THE_TOP_ROPE">
+    	<description>
+  			<p>At 11th level, once per turn whenever you fall 5 feet or more immediately before making an unarmed strike, you can choose to either make a stunning strike without expending ki or to knock the target prone and automatically grapple the target on a hit.</p>
+    	</description>
+    	<sheet usage="1/Turn">
+  			<description> Whenever you fall 5ft or more immediately before making an unarmed strike, you can choose to either make a stunning strike without expending ki or to knock the target prone and automatically grapple the target on a hit.</description>
+    	</sheet>
+	</element>
+	<element name="Choked Out" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_MASK_CHOKED_OUT">
+    	<description>
+  			<p>By 17th level, your chokeholds can knock out dragons. When you pin a creature grappled by you, you can spend 2 ki points to attempt to choke the creature out. The creature must make a Constitution saving throw against your ki save DC. On a failure, the creature is knocked unconscious, rather than restrained, until the start of your next turn.</p>
+    	</description>
+    	<sheet usage="2 Ki">
+  			<description> When you pin a creature grappled by you, you can attempt to choke the creature out. The creature must make a DC{{ki:dc}} CON saving throw. On a failure, the creature is knocked unconscious, rather than restrained, until the start of your next turn.</description>
+    	</sheet>
+	</element>
+</elements>

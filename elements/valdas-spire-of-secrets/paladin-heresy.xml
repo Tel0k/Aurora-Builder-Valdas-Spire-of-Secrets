@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Heresy</name>
+		<description>The Oath of Heresy from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="paladin-heresy.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-heresy.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Heresy" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_HERESY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Heretics come in all forms, but those who swear an Oath of Heresy have borne witness to a great revelation: the prophets of history are false and their clerics have been misled, for the gods have deceived the entire world. Heretics vow to spread their truth to whoever will listen, rebuffing holy men and inquisitors that lack the sense to share in their revolution. Naturally, heretics end their crusades in one of two ways: canonized for revolutionizing the faith, or burned at the stake for their transgressions.</p>
+			<p class="indent">Heretics might embrace any fundamental truth that goes unrecognized. Many believe the gods are fundamentally false—a trick wrought by celestials or high priests—while others simply profess the nonnecessity of deities to gain entry to an afterlife. Others attack fundamental pillars of faith that are erected on prejudicial beliefs, such as priestly orders that disallow people of different races or genders to their own. No matter what truth they embrace, these paladins are empowered by their belief and their oaths (as all paladins are), and so can crusade in active rebellion against the gods.</p>
+			<h5 class="caption">TENETS OF HERESY</h5>
+			<p>By swearing your oath, you vow to spread truth far and wide according to the following tenets.</p>
+			<p class="indent"><b><i>Spread the Revolution.</i></b> Share the truth with everyone. Where truth itself does not dispel the lies, your sword might dispense truth of its own.</p>
+			<p class="indent"><b><i>Defy Convention.</i></b> You stand to shatter the laws that seek to contain the truth. Don't dwell on tradition as you seek to remake it.</p>
+			<p class="indent"><b><i>Speak Truth to Power.</i></b> Confront the powerful with your truth, and don't let them turn away. Only by embracing the truth can they enact change.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_OATH_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_GODLESS_AURA" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_IMPLACABLE_WILL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_APOSTATE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_GODLESS_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_IMPLACABLE_WILL" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_APOSTATE" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5 class="caption">OATH OF HERESY SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>illusory script, protection from evil and good</em></td></tr>
+				<tr><td>5th</td><td><em>magic weapon, zone of truth</em></td></tr>
+				<tr><td>9th</td><td><em>dispel magic, speak with dead</em></td></tr>
+				<tr><td>13th</td><td><em>banishment, private sanctum</em></td></tr>
+				<tr><td>17th</td><td><em>dispel evil and good, legend lore</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Blaspheme.</i></b> As an action using your Channel Divinity, you speak profound, heretical words which shake the room. Each creature you choose within 30 feet must make a Wisdom saving throw. On a failed save, a creature takes 2d6 psychic damage for each point of your proficiency bonus and is deafened for 1 minute. On a success, a creature takes half as much damage and is not deafened.</p>
+			<p class="indent"><b><i>Turn the Holy.</i></b> As an action using your Channel Divinity, you censure Celestials and holy men. Each Celestial that can see or hear you within 30 feet of you must make a Wisdom saving throw. Each Humanoid within range that can cast 1st-level spells or higher using Wisdom as their spellcasting ability score must also make a Wisdom saving throw. If a creature fails its saving throw, it is turned for 1 minute or until it takes damage..</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY_BLASPHEME" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY_TURN_THE_HOLY" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Blaspheme" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY_BLASPHEME">
+		<description>
+			<p>As an action using your Channel Divinity, you speak profound, heretical words which shake the room. Each creature you choose within 30 feet must make a Wisdom saving throw. On a failed save, a creature takes 2d6 psychic damage for each point of your proficiency bonus and is deafened for 1 minute. On a success, a creature takes half as much damage and is not deafened.</p>
+		</description>
+		<sheet alt="Blaspheme" action="Action" usage="Channel Divinity">
+			<description> Each creature you choose within 30ft must make a WIS saving throw. On a failed save, it takes 2d6 psychic damage for each point of your proficiency bonus and is deafened for 1 minute. On a success, it takes half as much damage and is not deafened.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Turn the Holy." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_CHANNEL_DIVINITY_TURN_THE_HOLY">
+		<description>
+			<p>As an action using your Channel Divinity, you censure Celestials and holy men. Each Celestial that can see or hear you within 30 feet of you must make a Wisdom saving throw. Each Humanoid within range that can cast 1st-level spells or higher using Wisdom as their spellcasting ability score must also make a Wisdom saving throw. If a creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet alt="Turn the Holy" action="Action" usage="Channel Divinity">
+			<description>Each Celestial that can see or hear you within 30ft of you must make a Wisdom saving throw. Each Humanoid within range that can cast 1st-level spells or higher using WIS as their spellcasting ability score must also make a WIS saving throw. If a creature fails its saving throw, it is turned for 1 minute or until it takes damage. &#13;
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30ft of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action</description>
+		</sheet>
+	</element>
+	<element name="Godless Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_GODLESS_AURA">
+		<description>
+			<p>Beginning at 7th level, your aura divorces the area around you from divine powers. When a creature other than yourself within 10 feet of you regains hit points, you can choose for that healing to fail and have no effect. Furthermore, you can use your reaction to cast <i>counterspell</i>, without using a spell slot or spell components, to interrupt any spellcaster using Wisdom as their spellcasting ability score to cast a spell of 1st level or higher within 10 feet of you.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When a creature other than yourself within {{shadows:range}}ft of you regains hp, you can choose for that healing to fail and have no effect. Furthermore, you can use your reaction to cast counterspell, without using a spell slot or spell components, to interrupt any spellcaster using WIS as their spellcasting ability to cast a spell of 1st lv or higher within {{shadows:range}}ft of you.</description>
+		</sheet>
+		<rules>
+			<stat name="shadows:range" value="10" bonus="range" />
+			<stat name="shadows:range" value="30" level="18" bonus="range" />
+		</rules>
+	</element>
+	<element name="Implacable Will" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_IMPLACABLE_WILL">
+		<description>
+			<p>By 15th level, you can reroll with advantage a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" >
+			<description>You can reroll with advantage a saving throw that you fail. If you do so, you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Apostate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOH_APOSTATE">
+		<description>
+			<p>At 20th level, fully divorced from the will of the gods, you can use your action to assume a form empowered by the influence of your blasphemy, an anti-apotheosis. You gain the following benefits for 1 minute: </p>
+			<ul>
+				<li>You can use your Blaspheme Channel Divinity as a bonus action without using your Channel Divinity. When you use this ability this way, it deals 4d6 psychic damage on a failed save, and half as much on a success.</li>
+				<li>You gain 20 temporary hit points at the start of each of your turns.</li>
+			</ul>
+			<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You assume a form empowered by the influence of your blasphemy, an anti-apotheosis. You gain the following benefits for 1 minute: &#13;
+			You can use your Blaspheme Channel Divinity as a bonus action without using your Channel Divinity. When you use this ability this way, it deals 4d6 psychic damage on a failed save, and half as much on a success. &#13;
+			You gain 20 temporary hp at the start of each of your turns.</description>
+		</sheet>
+	</element>
+</elements>

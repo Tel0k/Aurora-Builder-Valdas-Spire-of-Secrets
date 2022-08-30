@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Bow</name>
+		<description>The Way of the Bow monastic tradition from Valda's Spire of Secrets</description>
+    	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="monk-bow.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-bow.xml" />
+		</update>
+	</info>
+	<element name="Way of the Bow" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MONK_WAY_OF_THE_BOW" >
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks that follow the Way of the Bow find serenity in the perfect, precise arc of an arrow's flight. You have been trained in archery on horseback, to fire a bow while blindfolded, and to pinpoint the wings of an insect in flight. As you attain peace and oneness with your arrow, no feat of archery will prove to be beyond your grasp.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_ARCHERY_FIGHTING_STYLE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_BOW_ARTS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_INTERCEPTING_SHOT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SERENITY_OF_THE_WIND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_ZEN_ARCHERY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_ARCHERY_FIGHTING_STYLE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_BOW_ARTS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_INTERCEPTING_SHOT" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SERENITY_OF_THE_WIND" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_ZEN_ARCHERY" level="17" />
+		</rules>
+	</element>
+	<element name="Archery Fighting Style" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_ARCHERY_FIGHTING_STYLE">
+    	<description>
+  			<p>Starting when you choose this tradition at 3rd level, you gain a +2 bonus to attack rolls you make with ranged weapons. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+    	</description>
+    	<sheet>
+  			<description> You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
+    	</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" />
+		</rules>
+	</element>
+	<element name="Bow Arts" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_BOW_ARTS">
+    	<description>
+  			<p>At 3rd level, you gain proficiency in the longbow and shortbow, which are considered monk weapons for you. Any ranged weapon attacks you make while within 5 feet of a hostile creature do not have disadvantage. Also, you can spend ki points to use the Flurry of Arrows and Soul Arrow features.</p>
+			<p class="indent">At 6th level, you can make a ranged weapon attack to deliver a Stunning Strike.</p>
+			<p class="indent"><strong>Flurry of Arrows.</strong> Immediately after you take the Attack action on your turn to make a ranged weapon attack or an unarmed strike, you can spend 1 ki point to make an additional ranged weapon attack as a bonus action.</p>
+			<p class="indent"><strong>Soul Arrow.</strong> When you take the Attack action on your turn to make a ranged weapon attack, you can spend 1 ki point to fire a soul arrow for the first attack. A soul arrow is a normal arrow of its type which ignores partial cover and deals extra damage equal to your Wisdom modifier on a hit. Firing a soul arrow doesn't consume ammunition.</p>
+    	</description>
+    	<sheet >
+  			<description> You gain proficiency in the longbow and shortbow, which counts as monk weapons for you and any ranged weapon attacks you make while within 5ft of a hostile creature do not have disadvantage. Also, you can spend ki points to use the Flurry of Arrows and Soul Arrow features.</description>
+			<description level="6"> You gain proficiency in the longbow and shortbow, which counts as monk weapons for you and any ranged weapon attacks you make while within 5ft of a hostile creature do not have disadvantage. You can spend ki points to use the Flurry of Arrows and Soul Arrow features. Also, you can make a ranged weapon attack to deliver a Stunning Strike.</description>
+    	</sheet>
+    	<rules>
+  			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+  			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+			<select type="Archetype Feature" name="Bow Arts 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_FLURRY_OF_ARROWS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_FLURRY_OF_ARROWS" />
+			<select type="Archetype Feature" name="Bow Arts 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SOUL_ARROW" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SOUL_ARROW" />
+		</rules>
+	</element>
+	<element name="Flurry of Arrows" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_FLURRY_OF_ARROWS">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_FLURRY_OF_ARROWS</supports>
+		<compendium display="false" />
+		<description>
+			<p>Immediately after you take the Attack action on your turn to make a ranged weapon attack or an unarmed strike, you can spend 1 ki point to make an additional ranged weapon attack as a bonus action.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Immediately after you take the Attack action on your turn to make a ranged weapon attack or an unarmed strike, you can spend 1 ki point to make an additional ranged weapon attack as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Soul Arrow" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SOUL_ARROW">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SOUL_ARROW</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn to make a ranged weapon attack, you can spend 1 ki point to fire a soul arrow for the first attack. A soul arrow is a normal arrow of its type which ignores partial cover and deals extra damage equal to your Wisdom modifier on a hit. Firing a soul arrow doesn't consume ammunition.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>When you take the Attack action on your turn to make a ranged weapon attack, you can spend 1 ki point to fire a soul arrow for the first attack. A soul arrow ignores partial cover and deals {{wisdom:modifier}} extra damage on a hit. Firing a soul arrow doesn't consume ammunition.</description>
+		</sheet>
+	</element>
+	<element name="Intercepting Shot" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_INTERCEPTING_SHOT">
+    	<description>
+  			<p>Starting at 6th level, when an attacker you can see makes an attack against you, you can make a ranged attack roll as a reaction to interrupt the attack. If the result of your roll is greater than the result of the attacker, you can reduce the attack roll targeting you by 5, to a minimum of 1.</p>
+    	</description>
+    	<sheet action="Reaction">
+  			<description> When an attacker you can see makes an attack against you, you can make a ranged attack roll to interrupt the attack. If the result of your roll is greater than the result of the attacker, you can reduce the attacker's roll by 5, to a minimum of 1.</description>
+    	</sheet>
+	</element>
+	<element name="Serenity of the Wind" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_SERENITY_OF_THE_WIND">
+    	<description>
+  			<p>By 11th level, you can listen to the wind to see the otherwise invisible. As a bonus action, you can spend 1 ki point to gain blindsight with a range of 120 feet until the end of your next turn.</p>
+			<p class="indent">At 17th level, you always have blindsight out to 30 feet.</p>
+    	</description>
+    	<sheet action="Bonus Action" usage="Ki">
+  			<description> You gain blindsight with a range of 120 feet until the end of your next turn.</description>
+    	</sheet>
+    	<rules>
+  			<grant type="Vision" id="ID_VISION_BLINDSIGHT" level="17"/>
+			<stat name="blindsight:range" value="30" bonus="base" level="17"/>
+		</rules>
+	</element>
+	<element name="Zen Archery" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_BOW_ZEN_ARCHERY">
+    	<description>
+  			<p>At 17th level, if you make a ranged weapon attack on your turn and miss, you can immediately make another ranged weapon attack against the same target. You can only gain one additional attack during your turn with this ability.</p>
+    	</description>
+    	<sheet usage="1/Turn">
+  			<description> If you make a ranged weapon attack on your turn and miss, you can immediately make another ranged weapon attack against the same target.</description>
+    	</sheet>
+	</element>
+</elements>

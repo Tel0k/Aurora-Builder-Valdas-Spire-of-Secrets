@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Revelry</name>
+		<description>The Oath of Revelry from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="paladin-revelry.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-revelry.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Revelry" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_REVELRY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who swear the Oath of Revelry make a solemn vow to party day and night until their hearts give out. The antithesis of stuffy, lawful crusaders, these emissaries of carousal travel the land, crashing parties and raising hell wherever they raise a glass. Authorities bristle at their arrival, but the youth cheer, for a Party Paladin is always accompanied by a good time.</p>
+			<h5 class="caption">TENETS OF REVELRY</h5>
+			<p>Many paladins who swear the Oath of Revelry choose to abide by the Codicus Brodicus, a doctrine of moral judgments, both foul and fair, about the way one should conduct life and party. In general, paladins who take this oath abide by the following principles: </p>
+			<p class="indent"><b><i>The Party Don't Stop.</i></b> Every occasion deserves celebration, and everyone should be invited.</p>
+			<p class="indent"><b><i>Work Hard, Party Hard.</i></b> Without planning and effort, a good bacchanal has no momentousness. Bring your “A” game to events.</p>
+			<p class="indent"><b><i>Fight for Your Right to Party.</i></b> Those who would stand in your way need to be reminded what it's like to have a good time, or failing that, be circumvented.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_OATH_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_AURA_OF_FRATERNITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_MERRYMAKER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_PARTY_ANIMAL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_AURA_OF_FRATERNITY" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_MERRYMAKER" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_PARTY_ANIMAL" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5 class="caption">OATH OF REVELRY SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>charm person, hideous laughter</em></td></tr>
+				<tr><td>5th</td><td><em>calm emotions, enhance ability</em></td></tr>
+				<tr><td>9th</td><td><em>create food and water, hypnotic pattern</em></td></tr>
+				<tr><td>13th</td><td><em>compulsion, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>geas, telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Conjure Drink.</i></b> When you finish a long rest, you can use your Channel Divinity to summon to your flask a frothy ale from the heavens itself. Up to three creatures can drink from this flask, and each has advantage on the next saving throw it makes before it takes a long rest, after which the buzz wears off. When you take a short rest, any remaining ale becomes nonmagical.</p>
+			<p class="indent"><b><i>Song and Dance.</i></b> You can use your Channel Divinity as an action to dance a catchy jig. Each creature you choose within 15 feet must make a Wisdom saving throw or join in. Creatures continue to dance as long as you do.</p>
+			<p class="indent">Creatures that can't be charmed are immune to this effect. This effect ends for a creature if you choose to end it on your turn (no action required), or if the creature reattempts the Wisdom saving throw at the end of its turn and succeeds.</p>
+			<p class="indent">A creature that is dancing spends all its movement tapping its feet and shuffling about without leaving its space. It also has disadvantage on Dexterity saving throws and attack rolls that rely on Dexterity.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY_CONJURE_DRINK" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY_SONG_AND_DANCE" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Conjure Drink" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY_CONJURE_DRINK">
+		<description>
+			<p>When you finish a long rest, you can use your Channel Divinity to summon to your flask a frothy ale from the heavens itself. Up to three creatures can drink from this flask, and each has advantage on the next saving throw it makes before it takes a long rest, after which the buzz wears off. When you take a short rest, any remaining ale becomes nonmagical.</p>
+		</description>
+		<sheet alt="Conjure Drink" usage="Channel Divinity">
+			<description>When you finish a long rest, you can summon to your flask a frothy ale from the heavens itself. Up to three creatures can drink from this flask, and each has advantage on the next saving throw it makes before it takes a long rest, after which the buzz wears off. When you take a short rest, any remaining ale becomes nonmagical.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Song and Dance." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_CHANNEL_DIVINITY_SONG_AND_DANCE">
+		<description>
+			<p>You can use your Channel Divinity as an action to dance a catchy jig. Each creature you choose within 15 feet must make a Wisdom saving throw or join in. Creatures continue to dance as long as you do.</p>
+			<p class="indent">Creatures that can't be charmed are immune to this effect. This effect ends for a creature if you choose to end it on your turn (no action required), or if the creature reattempts the Wisdom saving throw at the end of its turn and succeeds.</p>
+			<p class="indent">A creature that is dancing spends all its movement tapping its feet and shuffling about without leaving its space. It also has disadvantage on Dexterity saving throws and attack rolls that rely on Dexterity.</p>
+		</description>
+		<sheet alt="Song and Dance" action="Action" usage="Channel Divinity">
+			<description>You dance a catchy jig. Each creature you choose within 15ft must make a WIS saving throw or join in. Creatures continue to dance as long as you do. Creatures that can't be charmed are immune to this effect. This effect ends if you choose to end it on your turn (no action required), or if the creature reattempts the WIS saving throw at the end of its turn and succeeds. A creature that is dancing spends all its movement tapping its feet and shuffling about without leaving its space. It also has disadvantage on DEX saving throws and attack rolls that rely on DEX.</description>
+		</sheet>
+	</element>
+	<element name="Aura of Fraternity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_AURA_OF_FRATERNITY">
+		<description>
+			<p>At 7th level, you and your allies fight better together. While you have one or more ally adjacent to you, you and each of your allies within 5 feet deal an extra 1d4 damage on melee attacks.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 15 feet.</p>
+		</description>
+		<sheet>
+			<description>While you have one or more ally adjacent to you, you and each of your allies within {{shadows:range}} feet deal an extra 1d4 damage on melee attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="shadows:range" value="5" bonus="range" />
+			<stat name="shadows:range" value="15" level="18" bonus="range" />
+		</rules>
+	</element>
+	<element name="Merrymaker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_MERRYMAKER">
+		<description>
+			<p>At 15th level, when you or a friendly creature within 30 feet of you makes an ability check or saving throw that doesn't have disadvantage, you can cause it to be made with advantage.</p>
+			<p class="indent">You can use this ability three times, and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="3/Long Rest" >
+			<description>When you or a friendly creature within 30ft of you makes an ability check or saving throw that doesn't have disadvantage, you can cause it to be made with advantage.</description>
+		</sheet>
+	</element>
+	<element name="Party Animal" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOR_PARTY_ANIMAL">
+		<description>
+			<p>Starting at 20th level, you can use your action to transform into an embodiment of partying. You sprout horns like a satyr and emanate a 30-foot aura of gaiety. For the next minute, you and friendly creatures within the aura can't be blinded, deafened, exhausted, or poisoned. Additionally, at the start of each of your turns, you and each friendly creature that isn't incapacitated within the aura regains 10 hit points. </p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You transform into an embodiment of partying. You sprout horns like a satyr and emanate a 30ft aura of gaiety. For the next minute, you and friendly creatures within the aura can't be blinded, deafened, exhausted, or poisoned. Additionally, at the start of each of your turns, you and each friendly creature that isn't incapacitated within the aura regains 10hp. </description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Rose</name>
+		<description>The Way of the Rose monastic tradition from Valda's Spire of Secrets</description>
+    	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="monk-rose.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-rose.xml" />
+		</update>
+	</info>
+	<element name="Way of the Rose" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MONK_WAY_OF_THE_ROSE" >
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>One of several flower-themed monastic traditions practiced in the Feywild, the Way of the Rose emphasizes the importance of love and compassion in all things. Although the monastery is closely associated with the Rose Court, all are welcome to join, including human visitors from the Material Plane.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_SWEET_AROMA" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_BLOSSOM_BURST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_FALLING_PETAL_FLURRY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_OF_LOVE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_WREATHED_IN_THORNS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_SWEET_AROMA" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_BLOSSOM_BURST" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_FALLING_PETAL_FLURRY" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_OF_LOVE" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_WREATHED_IN_THORNS" level="17" />
+		</rules>
+	</element>
+	<element name="Sweet Aroma" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_SWEET_AROMA">
+        <description>
+  		    <p>Starting when you choose this tradition at 3rd level, your spirit has taken on a floral aspect, causing you to smell of roses at all times. You have advantage on Charisma (Persuasion) checks relating to love or romance. Furthermore, creatures with the Keen Smell trait (or similar abilities) have disadvantage on ability checks made to track you.</p>
+    	</description>
+    	<sheet>
+  			<description> You have advantage on CHA (Persuasion) checks relating to love or romance. Furthermore, creatures with the Keen Smell trait (or similar abilities) have disadvantage on ability checks made to track you.</description>
+    	</sheet>
+	</element>
+	<element name="Blossom Burst" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_BLOSSOM_BURST">
+    	<description>
+  			<p>At 3rd level, once on each of your turns when you hit a creature with an unarmed strike, you can spend 1 ki point to produce a vibrant eruption of flower petals which obscures the target's vision. Until the end of the target's next turn, it can see out to 5 feet but is blind beyond this radius. The flower petals follow the creature when it moves unless the creature takes the Dash action or moves more than 40 feet on its turn.</p>
+    	</description>
+    	<sheet usage="Ki - 1/Turn">
+  			<description> When you hit a creature with an unarmed strike, you can obscure the target's vision. Until the end of the target's next turn, it can see out to 5 feet but is blind beyond this radius. The flower petals follow the creature when it moves unless the creature takes the Dash action or moves more than 40ft on its turn.</description>
+    	</sheet>
+	</element>
+	<element name="Falling Petal Flurry" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_FALLING_PETAL_FLURRY">
+    	<description>
+  			<p>At 6th level, you can perform a special technique that allows you to disappear in a blizzard of rose petals. Whenever you use your Flurry of Blows, you can teleport up to 10 feet in any direction. This movement can take place before, during, or after the attacks, but can't be split into two moves.</p>
+    	</description>
+    	<sheet>
+  			<description> Whenever you use your Flurry of Blows, you can teleport up to 10ft in any direction. This movement can take place before, during, or after the attacks, but can't be split into two moves.</description>
+    	</sheet>
+	</element>
+	<element name="Colors of Love" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_OF_LOVE">
+    	<description>
+  			<p>By 11th level, you can manifest the love represented by the rose in a faintly glowing aura. When you finish a long rest, choose one of the following auras, which lasts until you use this feature to choose a different one. The aura radiates 5 feet from you.</p>
+			<p class="indent"><strong>Pink.</strong> The color of gratitude, attuning to the pink rose turns a good deed into its own reward. You can use the Help action as a bonus action to assist an ally within your aura.</p>
+			<p class="indent"><strong>Red.</strong> The color of desire, attuning to the red rose fills you with burning passion. A friendly creature other than you within the aura can use its bonus action when it hits with an attack to deal an extra 1d6 damage.</p>
+			<p class="indent"><strong>White.</strong> The color of purity, attuning to the white rose aligns your ki with the heavens. When a friendly creature other than you ends its turn within your aura, it gains temporary hit points equal to your Wisdom modifier.</p>
+		</description>
+    	<sheet usage="1/Long Rest">
+  			<description> Choose one of the following auras, which lasts until you use this feature again. The aura radiates 5ft from you.</description>
+    	</sheet>
+    	<rules>
+			<select type="Archetype Feature" name="Color 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_PINK" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_PINK" />
+            <select type="Archetype Feature" name="Color 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_RED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_RED" />
+            <select type="Archetype Feature" name="Color 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_WHITE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_WHITE" />
+		</rules>
+	</element>
+	<element name="Pink" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_PINK">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_PINK</supports>
+		<compendium display="false" />
+		<description>
+			<p>The color of gratitude, attuning to the pink rose turns a good deed into its own reward. You can use the Help action as a bonus action to assist an ally within your aura.</p>
+		</description>
+		<sheet>
+			<description>You can use the Help action as a bonus action to assist an ally within your aura.</description>
+		</sheet>
+	</element>
+	<element name="Red" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_RED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_RED</supports>
+		<compendium display="false" />
+		<description>
+			<p>The color of desire, attuning to the red rose fills you with burning passion. A friendly creature other than you within the aura can use its bonus action when it hits with an attack to deal an extra 1d6 damage.</p>
+		</description>
+		<sheet>
+			<description>A friendly creature other than you within the aura can use its bonus action when it hits with an attack to deal an extra 1d6 damage.</description>
+		</sheet>
+	</element>
+	<element name="White" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_WHITE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_COLORS_WHITE</supports>
+    	<description>
+  			<p>The color of purity, attuning to the white rose aligns your ki with the heavens. When a friendly creature other than you ends its turn within your aura, it gains temporary hit points equal to your Wisdom modifier.</p>
+    	</description>
+    	<sheet>
+  			<description> When a friendly creature other than you ends its turn within your aura, it gains {{wisdom:modifier}} temporary hp.</description>
+    	</sheet>
+	</element>
+	<element name="Wreathed in Thorns" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_ROSE_WREATHED_IN_THORNS">
+    	<description>
+  			<p>Once you reach 17th level, you distract your foes with your stunning beauty and bouquets of flowers, opening them up to lightning-quick counterattacks. When you take damage from a creature you can see within 5 feet of you, you can spend 1 ki point as a reaction to make an unarmed strike against that creature.</p>
+    	</description>
+    	<sheet action="Reaction" usage="Ki">
+  			<description> When you take damage from a creature you can see within 5ft of you, you can make an unarmed strike against that creature.</description>
+    	</sheet>
+	</element>
+</elements>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Storms</name>
+		<description>The Oath of Storms from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="paladin-storms.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-storms.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Storms" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_STORMS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Storms calls paladins to the salty brine and choppy seas, the altar of the raging storm. Paladins who swear this oath embrace the sea’s dispassionate neutrality and uphold few core tenets. With rare exceptions, these paladins are directionless crusaders, guided by the winds and tide, and might maintain distant lighthouses, hunt down vicious pirates, or seek undiscovered lands, as the gales dictate. However, storm knights, as they are often called, have a long memory for vengeance and deep penchants for superstition. Always listen to the wisdom of a storm knight, lest the winds turn foul and the ocean tempestuous.</p>
+			<h5 class="caption">TENETS OF THE STORM</h5>
+			<p>Storm knights swear their oaths on sailing superstitions and unspoken laws of the sea, often containing the following principles:</p>
+			<p class="indent"><b><i>Safe Harbor.</i></b> Protect sailors and wise captains that respect the laws of the ocean. No gale should break their masts while you are aboard.</p>
+			<p class="indent"><b><i>Howling Gales.</i></b> The winds should steer your journey, wherever they might take you. Furthermore, it is proper that the winds should often guide you into storms.</p>
+			<p class="indent"><b><i>Thunderous Castigation.</i></b> The fury of the storm demands equal reprisal for all slights, major and minor. Doing otherwise is bad luck.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_OATH_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_VORTEX_AURA" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_STORM_SOUL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_THUNDER_GOD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_VORTEX_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_STORM_SOUL" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_THUNDER_GOD" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5 class="caption">OATH OF STORMS SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>fog cloud, thunderwave</em></td></tr>
+				<tr><td>5th</td><td><em>gust of wind, hold person</em></td></tr>
+				<tr><td>9th</td><td><em>call lightning, wind wall</em></td></tr>
+				<tr><td>13th</td><td><em>control water, ice storm</em></td></tr>
+				<tr><td>17th</td><td><em>commune with nature, hold monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY">
+		<compendium display="false" />
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><b><i>Thunderous Revenge.</i></b> You can use your Channel Divinity to strike back with the fury of a storm. Immediately after a creature you can see within 30 feet of you deals damage to you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes lightning damage equal to the damage it just dealt. On a successful save, it takes half as much damage.</p>
+			<p class="indent"><b><i>Walk on Waves.</i></b> As a bonus action, you can use your Channel Divinity to befriend the sea. For the next hour, you gain the benefits of the water walkspell, and your speed doubles while you are walking on water.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_THUNDEROUS_REVENGE" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_WALK_ON_WAVES" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Thunderous Revenge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_THUNDEROUS_REVENGE">
+		<description>
+			<p>You can use your Channel Divinity to strike back with the fury of a storm. Immediately after a creature you can see within 30 feet of you deals damage to you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes lightning damage equal to the damage it just dealt. On a successful save, it takes half as much damage.</p>
+		</description>
+		<sheet alt="Thunderous Revenge" action="Reaction" usage="Channel Divinity">
+			<description> Immediately after a creature you can see within 30ft of you deals damage to you with an attack, you can force the attacker to make a WIS saving throw. On a failed save, the attacker takes lightning damage equal to the damage it just dealt. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Walk on Waves." type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_WALK_ON_WAVES">
+		<description>
+			<p>As a bonus action, you can use your Channel Divinity to befriend the sea. For the next hour, you gain the benefits of the <i>water walk</i> spell, and your speed doubles while you are walking on water.</p>
+		</description>
+		<sheet alt="Walk on Waves" action="Bonus Action" usage="Channel Divinity">
+			<description> For the next hour, you gain the benefits of the water walk spell, and your speed doubles while you are walking on water.</description>
+		</sheet>
+	</element>
+	<element name="Vortex Aura" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_VORTEX_AURA">
+		<description>
+			<p>Starting at 7th level, you can use your bonus action to summon a strong wind to whirl around you in a 10-foot radius until you dismiss it on your turn (no action required). While your vortex is active, its area counts as difficult terrain for creatures that you choose. The wind extinguishes unprotected flames, such as candles and torches, and disperses gases and vapors within its area.</p>
+			<p class="indent">At 18th level, the range of this aura extends to 30 feet.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You can summon a strong wind to whirl around you in a {{shadows:range}}ft radius until you dismiss it on your turn (no action required). While your vortex is active, its area counts as difficult terrain for creatures that you choose. The wind extinguishes unprotected flames, such as candles and torches, and disperses gases and vapors within its area.</description>
+		</sheet>
+		<rules>
+			<stat name="shadows:range" value="10" bonus="range" />
+			<stat name="shadows:range" value="30" level="18" bonus="range" />
+		</rules>
+	</element>
+	<element name="Storm Soul" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_STORM_SOUL">
+		<description>
+			<p>Starting at 15th level, you have resistance to lightning damage. Additionally, when a creature within 5 feet of you attacks you while you aren’t incapacitated, it takes lightning damage equal to your Charisma modifier.</p>
+		</description>
+		<sheet usage="1/Long Rest" >
+			<description>You have resistance to lightning damage. When a creature within 5ft of you attacks you while you aren’t incapacitated, it takes {{charisma:modifier}} lightning damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Thunder God" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOS_THUNDER_GOD">
+		<description>
+			<p>At 20th level, as an action, you can mantle yourself in the powers of a tempest deity. For 1 minute, your body crackles with thunder and lightning and your eyes glow blue, revealing a raging storm within. You gain the following benefits: </p>
+			<ul>
+				<li>You are immune to lightning and thunder damage.</li>
+				<li>You gain a flying speed of 60 feet.</li>
+				<li>You can cast the spell call lightning as a bonus action on your turn as a 5th level spell without using a spell slot or spell components, and can use your bonus action to call down lightning using the spell on subsequent turns.</li>
+			</ul>
+			<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can mantle yourself in the powers of a tempest deity. You gain the following benefits for 1 minute: &#13;
+			You are immune to lightning and thunder damage. You gain a flying speed of 60 feet. You can cast the spell call lightning as a bonus action on your turn as a 5th level spell without using a spell slot or spell components, and can use your bonus action to call down lightning using the spell on subsequent turns.</description>
+		</sheet>
+	</element>
+</elements>

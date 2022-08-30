@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Four Fists</name>
+		<description>The Way of the Four Fists monastic tradition from Valda's Spire of Secrets</description>
+    	<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="monk-four-fist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-four-fist.xml" />
+		</update>
+	</info>
+	<element name="Way of the Four Fists" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MONK_WAY_OF_THE_FOUR_FIST" >
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Through the careful manipulation of their ki, monks of the Way of the Four Fists strive to emulate the unusual fighting style of the legendary Monkey King. As they progress in their training, these monks undergo a magical transformation, slowly gaining more simian features. In combat, a master of this monastic tradition is a whirling, leaping blur of elbows, fur, and fists.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_GRASP_OF_THE_MONKEY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_SIMIAN_SWIFT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_NIMBUS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_UNCANNY_DODGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_FLURRY_OF_LIMBS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_GRASP_OF_THE_MONKEY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_SIMIAN_SWIFT" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_NIMBUS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_UNCANNY_DODGE" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_FLURRY_OF_LIMBS" level="17" />
+		</rules>
+	</element>
+	<element name="Grasp of the Monkey" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_GRASP_OF_THE_MONKEY">
+        <description>
+  		    <p>When you choose this tradition at 3rd level, you undergo a permanent magical transformation, lengthening your fingers and toes, strengthening your arms and legs, and sprouting a tail. You gain a climbing speed equal to your walking speed, your jumping distance is doubled, and you have advantage on ability checks and saving throws made to climb, maintain your balance, and grip objects such as ledges or ropes. You can hold and manipulate objects and weapons with your hands, feet, and tail, but you can't make attacks with weapons held by your tail.</p>
+        </description>
+        <sheet>
+  		    <description> You gain a climbing speed equal to your walking speed, your jumping distance is doubled, and you have advantage on ability checks and saving throws made to climb, maintain your balance, and grip objects such as ledges or ropes. You can hold and manipulate objects and weapons with your hands, feet, and tail, but you can't make attacks with weapons held by your tail.</description>
+    	</sheet>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Simian Swift" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_SIMIAN_SWIFT">
+    	<description>
+  			<p>Also at 3rd level, whenever you roll initiative and aren't surprised, you can spend 1 ki point to move up to half your speed or jump into the air, and then make one unarmed strike.</p>
+    	</description>
+    	<sheet usage="Ki">
+  			<description> Whenever you roll initiative and aren't surprised, you can move up to half your speed or jump into the air, and then make one unarmed strike.</description>
+    	</sheet>
+	</element>
+	<element name="Nimbus" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_NIMBUS">
+    	<description>
+  			<p>At 6th level, you can use your bonus action to summon a cloud to ride upon. Until the start of your next turn, you have a flying speed equal to your walking speed. When you begin your turn, you can maintain this effect by spending 1 ki point. Otherwise, if you begin your turn and have nothing holding you aloft, you fall.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+  			<description> You can summon a cloud to ride upon. Until the start of your next turn, you have a flying speed equal to your walking speed. When you begin your turn, you can maintain this effect by spending 1 ki point. Otherwise, if you begin your turn and have nothing holding you aloft, you fall.</description>
+    	</sheet>
+	</element>
+	<element name="Uncanny Dodge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_UNCANNY_DODGE">
+    	<description>
+  			<p>Starting at 11th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+    	</description>
+    	<sheet action="Reaction">
+  			<description> When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
+    	</sheet>
+	</element>
+	<element name="Flurry of Limbs" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_FIST_FLURRY_OF_LIMBS">
+    	<description>
+  			<p>At 17th level, by walking on your hands and twirling erratically, you can fight with your feet as nimbly as you do with your fists. You make three unarmed strikes, rather than two, when you use Flurry of Blows on your turn.</p>
+    	</description>
+    	<sheet>
+  			<description> You make three unarmed strikes, rather than two, when you use Flurry of Blows on your turn.</description>
+    	</sheet>
+	</element>
+</elements>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Flagellant</name>
+		<description>The Way of the Flagellant monastic tradition from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="monk-flagellant.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monk-flagellant.xml" />
+		</update>
+	</info>
+	<element name="Way of the Flagellant" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MONK_WAY_OF_THE_FLAGELLANT" >
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>The Way of the Flagellant teaches an extreme, sometimes heretical, view of asceticism: peace comes through suffering, purity through pain. Its practitioners shun all indulgences and embrace pain to harness their ki, isolating themselves further from the material world. As such, these monks often carry their eponymous flails and whips to use on both themselves and their foes. Their pain is a mortal penitence and an act of focusing, letting them block out all else and manipulate their ki with expert intent.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ASCETIC_IMPLEMENTS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_PENITENT_LASH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ART_OF_PUNISHMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_PURITY_THROUGH_PAIN" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_EXSANGUINATE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ASCETIC_IMPLEMENTS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_PENITENT_LASH" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ART_OF_PUNISHMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_PURITY_THROUGH_PAIN" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_EXSANGUINATE" level="17" />
+		</rules>
+	</element>
+	<element name="Ascetic Implements" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ASCETIC_IMPLEMENTS">
+		<description>
+			<p>When you choose this tradition at 3rd level, you learn the techniques of the Way of the Flagellant, including their signature weapons. You gain proficiency with flails and whips, which count as monk weapons for you.</p>
+			<p class="indent">Additionally, you can choose to deal slashing instead of bludgeoning damage with your unarmed strikes.</p>
+		</description>
+		<sheet>
+			<description> You gain proficiency with flails and whips, which count as monk weapons for you. You can choose to deal slashing instead of bludgeoning damage with your unarmed strikes.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+		</rules>
+	</element>
+	<element name="Penitent Lash" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_PENITENT_LASH">
+		<description>
+			<p>At 3rd level, when you start your turn, you can sharpen your focus by spending 1 ki point and striking yourself with a ritualistic flail. You take 2d4 slashing damage and gain advantage on the first attack you make with a monk weapon or unarmed strike on your turn. If you instead choose to take 4d4 slashing damage, you instead gain advantage on all attack rolls you make on your turn. This ability has no effect if you reduce or avoid taking the slashing damage.</p>
+		</description>
+		<sheet usage="Ki">
+			<description> Start your turn, you can take 2d4 slashing damage and gain advantage on the 1st attack you make with a monk weapon or unarmed strike. If you choose to take 4d4 slashing damage, you gain advantage on all attack rolls you make on your turn. This ability has no effect if you reduce or avoid taking the slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Art of Punishment" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ART_OF_PUNISHMENT">
+		<description>
+			<p>By 6th level, your expertise in the purifying discipline of pain has granted you new ways to share agony. You gain the following abilities:</p>
+			<p class="indent"><strong>Branding Palm.</strong> When you hit a creature with an unarmed strike, you can spend 1 ki point as a bonus action to brand the creature. The next attack that hits a branded creature within the next minute deals an extra 2d8 fire damage. At 11th level, this damage increases to 3d8, and at 17th level, this damage increases to 4d8.</p>
+			<p class="indent"><strong>Electroshock Strike.</strong> Immediately after you take the Attack action on your turn, you can spend 1 ki point to cast the <i>shocking grasp</i> cantrip as a bonus action. Wisdom is your spellcasting ability for this spell.</p>
+			<p class="indent"><strong>Scissorhand Technique.</strong> If you deal slashing damage to a creature with a monk weapon or unarmed strike, you can spend 1 ki point to give the target a bleeding wound. Constructs, Oozes, and Undead can't get bleeding wounds. A creature loses 1d6 hit points at the start of each of its turns for each of its bleeding wounds unless it uses an action to staunch the bleeding of all of its wounds. While a target is bleeding, it can't regain lost hit points. A creature can have a number of bleeding wounds up to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description> You gain the following abilities:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Art of Punishment 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_BRANDING_PALM" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_BRANDING_PALM" />
+			<select type="Archetype Feature" name="Art of Punishment 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ELECTROSHOCK_STRIKE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ELECTROSHOCK_STRIKE" />
+			<select type="Archetype Feature" name="Art of Punishment 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_SCISSORHAND_TECHNIQUE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_SCISSORHAND_TECHNIQUE" />
+		</rules>
+	</element>
+	<element name="Branding Palm" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_BRANDING_PALM">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_BRANDING_PALM</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an unarmed strike, you can spend 1 ki point as a bonus action to brand the creature. The next attack that hits a branded creature within the next minute deals an extra 2d8 fire damage. At 11th level, this damage increases to 3d8, and at 17th level, this damage increases to 4d8.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description level="6"> When you hit a creature with an unarmed strike, you can brand the it. The next attack that hits a branded creature within the next minute deals an extra 2d8 fire damage.</description>
+			<description level="11"> When you hit a creature with an unarmed strike, you can brand the it. The next attack that hits a branded creature within the next minute deals an extra 3d8 fire damage.</description>
+			<description level="17"> When you hit a creature with an unarmed strike, you can brand the it. The next attack that hits a branded creature within the next minute deals an extra 4d8 fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Electroshock Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ELECTROSHOCK_STRIKE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_ELECTROSHOCK_STRIKE</supports>
+		<compendium display="false" />
+		<description>
+			<p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to cast the <i>shocking grasp</i> cantrip as a bonus action. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description> Immediately after you take the Attack action on your turn, you can cast the shocking grasp cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Scissorhand Technique" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_SCISSORHAND_TECHNIQUE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_SCISSORHAND_TECHNIQUE</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you deal slashing damage to a creature with a monk weapon or unarmed strike, you can spend 1 ki point to give the target a bleeding wound. Constructs, Oozes, and Undead can't get bleeding wounds. A creature loses 1d6 hit points at the start of each of its turns for each of its bleeding wounds unless it uses an action to staunch the bleeding of all of its wounds. While a target is bleeding, it can't regain lost hit points. A creature can have a number of bleeding wounds up to your proficiency bonus.</p>
+		</description>
+		<sheet usage="Ki">
+			<description> If you deal slashing damage to a creature with a monk weapon or unarmed strike, you can give the target a bleeding wound. Constructs, Oozes, and Undead can't get bleeding wounds. A creature loses 1d6hp x n° of wounds at the start of each of its turns, unless it uses an action to staunch all of them.</description>
+		</sheet>
+	</element>
+	<element name="Purity Through Pain" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_PURITY_THROUGH_PAIN">
+		<description>
+			<p>Beginning at 11th level, you enter a rapturous frenzy when wounded. Whenever you take damage in excess of your character level, you can use your reaction to regain 1d4 ki points. You can use this ability a number of times equal to your Wisdom modifier (minimum once) and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{purity:usage}}/Long Rest">
+			<description> Whenever you take damage in excess of {{level}}, you can regain 1d4 ki points.</description>
+		</sheet>
+		<rules>
+			<stat name="purity:usage" value="1" bonus="base"/>
+			<stat name="purity:usage" value="wisdom:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Exsanguinate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WAY_OF_THE_FLAGELLANT_EXSANGUINATE">
+		<description>
+			<p>Beginning at 17th level, when you use your Penitent Lash feature, you can choose to increase the slashing damage taken to 6d4. When you do so, you gain all the benefits of that feature, and your unarmed strikes deal an extra 1d4 slashing damage on a hit until the end of your turn.</p>
+		</description>
+		<sheet usage="Penitent Lash">
+			<description> You can choose to increase the slashing damage taken to 6d4. You gain all the benefits of that feature, and your unarmed strikes deal an extra 1d4 slashing damage on a hit until the end of your turn.</description>
+		</sheet>
+	</element>
+</elements>
