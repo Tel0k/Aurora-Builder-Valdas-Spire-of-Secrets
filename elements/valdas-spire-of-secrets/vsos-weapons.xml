@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>The new weapons from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
         <file name="vsos-weapons.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-weapons.xml" />
       	</update>
 	</info>
@@ -189,7 +189,7 @@
 			<set name="cost" currency="sp">1</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="damage">-</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOLAS</set>
 		</setters>
 	</element>
@@ -203,7 +203,7 @@
 			<set name="cost" currency="sp">1</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="damage" type="slashing">1d4</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SHURIKEN</set>
 		</setters>
 	</element>
@@ -289,7 +289,7 @@
 			<set name="cost" currency="gp">50</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="damage" type="piercing">1d8</set>
+			<set name="damage" type="slashing">1d8</set>
             		<set name="versatile">1d10</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KATANA</set>
 		</setters>
@@ -304,7 +304,7 @@
 			<set name="cost" currency="gp">5</set>
 			<set name="weight" lb="4">4 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="damage" type="piercing">1d8</set>
+			<set name="damage" type="slashing">1d8</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KHOPESH</set>
 		</setters>
 	</element>
