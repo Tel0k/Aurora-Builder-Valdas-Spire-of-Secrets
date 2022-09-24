@@ -4,7 +4,7 @@
 		<name>Craftsman</name>
 		<description>The Craftsman from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-craftsman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-craftsman.xml" />
 		</update>
 	</info>
@@ -182,15 +182,20 @@
 			<h5>MASTERWORK PROPERTIES</h5>
 			<p>Masterwork weapons and armor can be modified with masterwork properties, advanced modifications that transform them into truly unique weapons and armor. Masterwork properties are separated into 4 levels: Apprentice, Journeyman, Master, and Legendary. You can apply any number of Apprentice properties to a masterwork weapon, or up to three Apprentice properties to a masterwork suit of armor. Additionally, you can apply one Journeyman, one Master, and one Legendary property to each masterwork item.</p>
 			<p class="indent">If you add a Master or Legendary property to an item, only you can use it.</p>
-            <div class="sidebar">
+			<div class="sidebar">
 				<h5>Damage Steps</h5>
-                <p>If a masterwork property increases or decreases a weapon's damage, it is moved up or down one step on the following scale, down to a minimum of 1d4:</p>
-                <br />
-                <p class="indent">1d4 → 1d6 → 1d8 → 1d10 → 1d12 or 2d6</p>
-                <br />
-                <p>Further increases add a +1 bonus to the weapon's damage roll.</p>
-                <p class="indent">If the weapon being modified has 2 damage dice (such as a greatsword or a firearm), the scale is instead:</p>
-                <p class="indent">2d4 → 2d4 + 1 → 2d6 → 2d6 + 1 → 2d8 → 2d8 + 1 → 2d10 → 2d10 + 1 → 2d12</p>
+                		<p>If a masterwork property increases or decreases a weapon's damage, it is moved up or down one step on the following scale, down to a minimum of 1d4:</p>
+                		<br />
+                		<p class="indent">1d4 → 1d6 → 1d8 → 1d10 → 1d12 or 2d6</p>
+                		<br />
+                		<p>Further increases add a +1 bonus to the weapon's damage roll.</p>
+                		<p class="indent">If the weapon being modified has 2 damage dice (such as a greatsword or a firearm), the scale is instead:</p>
+                		<p class="indent">2d4 → 2d4 + 1 → 2d6 → 2d6 + 1 → 2d8 → 2d8 + 1 → 2d10 → 2d10 + 1 → 2d12</p>
+			</div>
+			<div class="sidebar">
+				<h5>Changing Weapon Ranges</h5>
+                <p>A ranged weapon’s long range is either three times its normal range or four times its normal range, depending on the type of projectile it fires. When a masterwork property changes a weapon’s normal range, change the long range by three or four times the amount, as appropriate to the weapon.</p>
+                <p class="indent">You can’t apply a weapon property if it would reduce a ranged weapon’s normal range to 0 feet, and you can’t remove the Ammunition or Thrown property of a ranged weapon.</p>
 			</div>
             <h5>MODIFYING EQUIPMENT</h5>
 			<p>Using the Active Crafting feature, you can modify a weapon or suit of armor when you take a long rest. This allows you to do the following:</p>
