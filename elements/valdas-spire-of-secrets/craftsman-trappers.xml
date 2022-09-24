@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Trappers’ Guild</name>
+		<description>The Trappers’ Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-trappers.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-trappers.xml" />
+		</update>
+	</info>
+
+	<element name="Trappers’ Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_TRAPPERS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>Craftsmen are no strangers to turrets, bombs, and clockwork mechanisms, but the craftsmen of the Trappers’ Guild raise this to a level of artistry. Given enough time and resources, a trapsmith can veritably blanket a room in dangerous implements, setting the stage to slay an intruder in a half-dozen unique ways. While the traps do the dirty work, the trapsmith is free to lounge about some distance away, enjoying a cold beverage and dreaming up new, dangerous designs.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_DANGER_SENSE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRAPS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_BOOBY_TRAP" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_AMBUSH_MODIFICATION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAPID_SETUP" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_DANGER_SENSE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRAPS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_BOOBY_TRAP" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_AMBUSH_MODIFICATION" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAPID_SETUP" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Danger Senses" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_DANGER_SENSE">
+		<description>
+			<p>Starting when you join this guild at 3rd level, your experience with traps gives you an edge when escaping danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Traps" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRAPS">
+		<compendium display="false" />
+		<description>
+			<p>You are an expert in designing ingenious and lethal traps. Starting at 3rd level, you can craft traps designed for quick deployment, which are detailed in the Traps section below.</p>
+			<p class="indent">When you take the Attack action, you can forgo one or more of your attacks to deploy a trap. You can deploy a number of traps equal to your Intelligence modifier (minimum of 1), and you regain all expended deployments when you finish a short or long rest. You can use an action to disarm and recover one of your traps that hasn’t been triggered, which also restores one use of your trap deployments.</p>
+			<p>Craftsmen of the Trappers’ Guild can build the following traps:</p>
+		</description>
+		<sheet>
+			<description> When you take the Attack action, you can forgo one or more of your attacks to deploy a trap. You can deploy {{traps}} traps. You can use an action to disarm and recover one of your traps that hasn’t been triggered, which also restores one use of your trap deployments. Craftsmen of the Trappers’ Guild can build the following traps:</description>
+		</sheet>
+		<rules>
+			<stat name="traps" value="1" bonus="traps" />
+			<stat name="traps" value="intelligenge:modifier" bonus="traps" />
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BALLISTA_TRAP" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_BALLISTA_TRAP" />
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MANTRAP" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MANTRAP" />
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAZOR_WIRE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAZOR_WIRE" />
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRIGGER_BOMB" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRIGGER_BOMB" />
+		</rules>
+	</element>
+    <element name="Ballista Trap" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_BALLISTA_TRAP">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_BALLISTA_TRAP</supports>
+		<description>
+			<p>You load this compact, ballista-like device in an unoccupied space within 5 feet of you and aim it in a direction you choose. The trap triggers when a creature enters the area within a 5-foot-wide, 30-foot-long line extending from the front of the trap. When it triggers, the ballista fires automatically, making a ranged attack against the creature. This attack roll uses your Intelligence modifier and proficiency bonus. On a hit, the target takes 2d8 piercing damage.</p>
+		</description>
+		<sheet>
+			<description> You load this compact, ballista-like device in an unoccupied space within 5ft of you and aim it in a direction you choose. The trap triggers when a creature enters the area within a 5ft-wide, 30ft-long line extending from the front of the trap. When it triggers, the ballista fires automatically, making a ranged attack against the creature. This attack roll uses your INT modifier and PB. On a hit, the target takes 2d8 piercing damage.</description>
+		</sheet>
+	</element>
+    <element name="Man-Trap" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MANTRAP">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MANTRAP</supports>
+		<description>
+			<p>You affix this oversized hunting trap to the ground in an unoccupied 5-foot-square area within 5 feet of you. When a Small or larger creature moves within the trap’s area, the trap clamps down on the creature. The creature must make a Dexterity saving throw against your Masterwork save DC. On a failed save, the creature takes 2d8 slashing damage, and if it is Large or smaller, it becomes trapped, making it unable to move. On a successful save, the creature takes half as much damage and isn’t trapped. The trapped creature or another creature within 5 feet of it can use its action to make a Strength check against your Masterwork save DC, freein the trapped creature on a success. A Huge or larger creature that failed its saving throw rips the trap from its mounting the next time it moves.</p>
+		</description>
+		<sheet>
+			<description> You affix this oversized hunting trap to the ground in an unoccupied 5ft-square area within 5ft of you. When a Small or larger creature moves within the trap’s area, the trap clamps down on the creature. The creature must make a DC{{masterwork:dc}} DEX saving throw. On a failed save, the creature takes 2d8 slashing damage, and if it is Large or smaller, it becomes trapped, making it unable to move. On a successful save, the creature takes half as much damage and isn’t trapped. The trapped creature or another creature within 5ft of it can use its action to make a DC{{masterwork:dc}} STR check, freein the trapped creature on a success. A Huge or larger creature that failed its saving throw rips the trap from its mounting the next time it moves.</description>
+		</sheet>
+	</element>
+    <element name="Rasor Wire" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAZOR_WIRE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAZOR_WIRE</supports>
+		<description>
+			<p>You deploy a tangle of razor-sharp wire in up to four unoccupied, contiguous, 5-foot-square areas you choose within 10 feet of you. Each of these areas becomes difficult terrain. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels. Once deployed, the razor wire can’t be recovered.</p>
+		</description>
+		<sheet>
+			<description> You deploy a tangle of razor-sharp wire in up to four unoccupied, contiguous, 5ft-square areas you choose within 10ft of you. Each of these areas becomes difficult terrain. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5ft it travels. Once deployed, the razor wire can’t be recovered.</description>
+		</sheet>
+	</element>
+    <element name="Trigger Bomb" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRIGGER_BOMB">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_TRIGGER_BOMB</supports>
+		<description>
+			<p>You toss this explosive device into an unoccupied space within 30 feet of you. As a reaction when a creature you can see or hear moves within 5 feet of the bomb, you can press the detonator, causing the bomb to explode. Each creature within 5 feet of the bomb must make a Dexterity saving throw against your Masterwork save DC, taking 2d6 fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in the area that aren’t being worn or carried.</p>
+		</description>
+		<sheet>
+			<description> You toss this explosive device into an unoccupied space within 30ft of you. As a reaction when a creature you can see or hear moves within 5ft of the bomb, you can press the detonator, causing the bomb to explode. Each creature within 5ft of the bomb must make a DC{{masterwork:dc}} DEX saving throw, taking 2d6 fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in the area that aren’t being worn or carried.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Booby Trap" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_BOOBY_TRAP">
+		<description>
+			<p>Starting at 7th level, you can take 1 minute to conceal one of your traps from an unsuspecting target. A creature can detect a concealed trap by using its action to make an Intelligence (Investigation) or Wisdom (Perception) check against your Masterwork save DC, or by having a passive Perception score higher than that DC. The next time this trap activates before being disarmed, it deals twice as many damage dice.</p>
+		</description>
+		<sheet>
+			<description> You can take 1 minute to conceal one of your traps from an unsuspecting target. A creature can detect a concealed trap by using its action to make a DC{{masterwork:dc}} INT(Investigation) or WIS(Perception) check, or by having a passive Perception score higher than that DC. The next time this trap activates before being disarmed, it deals twice as many damage dice.</description>
+		</sheet>
+	</element>
+    <element name="Ambush Modification" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_AMBUSH_MODIFICATION">
+		<description>
+			<p>Starting at 10th level, you can spend 10 minutes to modify a ranged weapon, or you can modify up to 6 ranged weapons during a short or long rest, each of which gains the following property:</p>
+            <p class="indent"><b>Hair-Trigger.</b> This weapon has advantage on the first attack it makes using the Ready action.</p>
+		</description>
+		<sheet>
+			<description> You can spend 10 minutes to modify a ranged weapon, or you can modify up to 6 ranged weapons during a short or long rest, each of which gains the following property:</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Ambush Modification" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_HAIR_TRIGGER" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_HAIR_TRIGGER" />
+        </rules>
+	</element>
+    <element name="Hair-Trigger" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_HAIR_TRIGGER">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_HAIR_TRIGGER</supports>
+		<compendium display="false" />
+		<description>
+			<p>This weapon has advantage on the first attack it makes using the Ready action.</p>
+		</description>
+		<sheet>
+			<description> This weapon has advantage on the first attack it makes using the Ready action.</description>
+		</sheet>
+    </element>
+    <!---->
+	<element name="Rapid Setup" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_RAPID_SETUP">
+		<description>
+			<p>At 14th level, as an action, you can deploy up to four traps simultaneously. Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description> You can deploy up to four traps simultaneously.</description>
+		</sheet>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_NET" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_NET" />
+		</rules>
+	</element>
+	<element name="Net" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_NET">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TG_NET</supports>
+		<description>
+			<h5>NET</h5>
+			<p><em>Legendary weapon property</em></p>
+			<p><b>Components:</b>  Masterwork exotic ranged weapon that doesn’t have the Firearm property</p>
+			<p>When you hit a Large or smaller creature with this weapon’s projectile, it also deploys a net that automatically hits the creature.</p>
+		</description>
+		<sheet>
+			<description>Components:  Masterwork exotic ranged weapon that doesn’t have the Firearm property &#13;
+			When you hit a Large or smaller creature with this weapon’s projectile, it also deploys a net that automatically hits the creature.</description>
+		</sheet>
+	</element>
+</elements>

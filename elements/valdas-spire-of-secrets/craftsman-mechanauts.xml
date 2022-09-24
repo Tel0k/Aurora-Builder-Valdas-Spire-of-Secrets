@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mechanauts' Guild</name>
+		<description>The Mechanauts' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-mechanauts.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-mechanauts.xml" />
+		</update>
+	</info>
+
+	<element name="Mechanauts' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MECHANAUTS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>For centuries, the pinnacle of mechanized vehicles was the apparatus of the crab, a singular device capable of exploring inhospitable environments, from the sea floor to lava-strewn volcanic fields. However, ambitious craftsmen from the Mechanauts' Guild have drawn up designs for a new vehicle, mightier and more customizable than the old apparatus. This device is a walking tank, equipped with savage fists, scuttling legs, and climate control enhancements—a vehicle to dwarf all others, a true feat of engineering.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_MECHANAUTS_APPARATUS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_COCKPIT_UPGRADE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_LIMB_UPGRADE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PASSENGER_SEAT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_ATTACHMENT_UPGRADE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_MECHANAUTS_APPARATUS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_COCKPIT_UPGRADE" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_LIMB_UPGRADE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PASSENGER_SEAT" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_ATTACHMENT_UPGRADE" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Mechanaut's Apparatus" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_MECHANAUTS_APPARATUS">
+		<description>
+			<p>At 3rd level, you complete the frame of a Mechanaut's Apparatus, with ample room for upgrades and improvements. Its blueprints are based on the <i>apparatus of the crab</i>* , but you can model your apparatus after any beast or as a humanoid figure. (*A. of Kwalish)</p>
+			<p class="indent"><b>Apparatus Statistics.</b> The statistics of your apparatus are given in the Mechanaut's Apparatus stat block. The apparatus's Armor Class is based on your Intelligence modifier and its hit points are based on your craftsman level.</p>
+            <p class="indent"><b>Customizing the Apparatus.</b> Your apparatus comes with two installed masterwork weapons, which you can modify with masterwork properties or replace with different weapons when you finish a long rest. Only one installed weapon can be ranged. Furthermore, you can only load or reload an installed ranged weapon by using your action while you are inside the apparatus (or two actions if the weapon has the Mounted property). Your apparatus is always proficient with its installed weapons, and can use masterwork weapons with Master and Legendary properties.</p>
+            <p class="indent"><b>Repairing the Apparatus.</b> When your apparatus drops to 0 hit points, it can't move or act, but can be repaired. You can spend 1 minute restoring the apparatus's ability to move at half speed, which it loses if it takes damage again before it is repaired. </p>
+            <p class="indent">You can repair your apparatus at the end of a short rest by spending your Hit Dice, causing it to regain hit points as if it had taken a short rest. When you finish a long rest, you can repair your apparatus, causing it to regain all its hit points. You are always considered to have enough materials to repair your apparatus. If your apparatus is lost, you can build a new one for 400 gp</p>
+			<p class="indent"><b>Entering and Exiting the Apparatus.</b> A creature can enter or exit the apparatus by using half its movement. While within the apparatus, a creature has total cover from effects originating outside of it. Your armor properties have no effect while you are within the apparatus. Only one Medium or Small creature can be in the apparatus at a time.</p>
+			<p class="indent"><b>Piloting the Apparatus.</b> A creature that is inside the apparatus can pilot it; the apparatus acts on its pilot's turn. Any creature piloting the apparatus can command it to move on its turn (no action required). When you pilot the apparatus, you can use your action to command it to take the Attack, Dash, Disengage, Hide, or Use an Object action. You can also command it to use a reaction, using your own reaction to do so. </p>
+            <p>Only one creature can pilot the apparatus at a time. The pilot takes half the damage the apparatus takes.</p>
+            <p class="indent">While you are outside the apparatus, you can command the apparatus to wait or follow you. While following, it moves on its turn to remain within 30 feet of you.</p>
+			<p class="indent"><b>Attacking with the Apparatus.</b> When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is lower than the original.</p>
+		</description>
+		<sheet>
+            <description> [See Compendium or book for detailed description]</description>
+        </sheet>
+	</element>
+    <!---->
+    <element name="Mechanaut's Apparatus" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_CRAFTSMAN_MG_MECHANAUTS_APPARATUS">
+		<requirements>ID_MHP_VSOS_ARCHETYPE_MECHANAUTS_GUILD,ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_MECHANAUTS_APPARATUS</requirements>
+        <supports>Mechanaut's Apparatus</supports>
+		<description>
+			<p>You complete the frame of a Mechanaut's Apparatus, with ample room for upgrades and improvements. Its blueprints are based on the <i>apparatus of the crab</i>* , but you can model your apparatus after any beast or as a humanoid figure.</p>
+			<p>Armor Class is based on your Intelligence modifier and its hit points are based on your craftsman level. PB +2</p>
+		</description>
+		<setters>
+			<set name="strength">17</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">18</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">3</set>
+			<set name="charisma">1</set>
+			<set name="ac">13 + its creator's Intelligence modifier</set>
+			<set name="hp"> 30 (10 x its creator's craftsman level)</set>
+			<set name="speed">35 ft.</set>
+			<set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</set>			
+			<set name="senses">blindsight 120 ft. (blind beyond this radius), passive Perception 6</set>
+			<set name="languages">-</set>
+			<set name="type">Construct</set>
+			<set name="size">Large</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">-</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_COCKPIT_COVER,ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_DOUBLE_TWOHANDED</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_MECHANAUTS_APPARATUS_MAUL_RHAND,ID_MHP_VSOS_COMPANION_ACTION_MECHANAUTS_APPARATUS_MAUL_LHAND</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+            <stat name="companion:ac" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+            <stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:hp:max" value="level:craftsman" />
+			<stat name="companion:speed" value="35" bonus="base" />	
+			<stat name="companion:proficiency" value="2" bonus="base" />
+		</rules>
+	</element>
+	<element name="Cockpit Cover" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_COCKPIT_COVER">
+		<description>
+			<p>Any creature inside the apparatus is granted total cover from outside effects, but takes half the damage taken by the apparatus.</p>
+		</description>
+		<sheet>
+			<description>Any creature inside the apparatus is granted total cover from outside effects, but takes half the damage taken by the apparatus.</description>
+		</sheet>
+	</element>
+    <element name="Double Two-Handed" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_DOUBLE_TWOHANDED">
+		<description>
+			<p>The apparatus has two mechanical arms, each of which can hold one installed weapon. Each mechanical arm is powerful enough to wield weapons as if with two hands.</p>
+		</description>
+		<sheet>
+			<description>Each mechanical arm is powerful enough to wield weapons as if with two hands.</description>
+		</sheet>
+	</element>
+	<element name="Maul (right hand)" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_MECHANAUTS_APPARATUS_MAUL_RHAND">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage</description>
+		</sheet>
+	</element>
+	<element name="Maul (left hand)." type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_MECHANAUTS_APPARATUS_MAUL_LHAND">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Cockpit Upgrade" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_COCKPIT_UPGRADE">
+		<description>
+			<p>At 3rd level, you can customize your apparatus by upgrading its piloting compartment. Choose one of the following upgrades:</p>
+            <p class="indent"><b>Comfortable Amenities.</b> The interior of the apparatus is particularly cozy, perhaps even including a warm blanket and pillow. You can sleep while within the apparatus without ill effect.</p>
+            <p class="indent"><b>Ejector Seat.</b> This apparatus comes equipped with an emergency ejection system, allowing for quick escape. Exiting this apparatus costs no movement.</p>
+            <p class="indent"><b>Loudspeaker.</b> The apparatus comes equipped with a system that magnifies your voice up to three times as loud as normal.</p>
+		</description>
+		<sheet>
+			<description> You can customize your apparatus by upgrading its piloting compartment.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Cockpit Upgrade" supports="Cockpit Upgrade" />
+		</rules>
+	</element>
+	<element name="Comfortable Amenities" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_CONFORTABLE_AMENITIES">
+		<supports>Cockpit Upgrade</supports>
+		<description>
+			<p>The interior of the apparatus is particularly cozy, perhaps even including a warm blanket and pillow. You can sleep while within the apparatus without ill effect.</p>
+		</description>
+		<sheet usage="Companion">
+			<description> The interior of the apparatus is particularly cozy, perhaps even including a warm blanket and pillow. You can sleep while within the apparatus without ill effect.</description>
+		</sheet>            
+	</element>
+    <element name="Ejector Seat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_EJECTOR_SEAT">
+		<supports>Cockpit Upgrade</supports>
+		<description>
+			<p>This apparatus comes equipped with an emergency ejection system, allowing for quick escape. Exiting this apparatus costs no movement.</p>
+		</description>
+		<sheet usage="Companion">
+			<description> This apparatus comes equipped with an emergency ejection system, allowing for quick escape. Exiting this apparatus costs no movement.</description>
+		</sheet>
+	</element>
+    <element name="Loudspeaker" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_LOUDSPEAKER">
+		<supports>Cockpit Upgrade</supports>
+    	<description>
+			<p>The apparatus comes equipped with a system that magnifies your voice up to three times as loud as normal.</p>
+		</description>
+		<sheet usage="Companion">
+			<description> The apparatus comes equipped with a system that magnifies your voice up to three times as loud as normal.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Limb Upgrade" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_LIMB_UPGRADE">
+		<description>
+			<p>By 7th level, you have redesigned your apparatus's legs to achieve better mobility. Choose one of the following upgrades:</p>
+			<p class="indent"><b>Arachnotron Legs.</b> The apparatus can move up, down, and across vertical surfaces and ceilings, and it gains a climbing speed equal to its walking speed.</p>
+            <p class="indent"><b>Heavy Suspension.</b> The apparatus's jump distance triples, and it takes no damage from falling a distance of less than 100 feet.</p>
+            <p class="indent"><b>Telescopic Frame.</b> While no one is inside the apparatus, you can use your bonus action to command it to collapse down to Medium size or return to Large size. While collapsed in this way, the apparatus can't be entered.</p>
+		</description>
+		<sheet>
+			<description> You have redesigned your apparatus's legs to achieve better mobility.</description>
+		</sheet>
+        <rules>
+			<select type="Archetype Feature" name="Limb Upgrade" supports="Limb Upgrade" />
+		</rules>
+	</element>
+    <element name="Arachnotron Legs" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_ARACHNOTRON_LEGS">
+		<supports>Limb Upgrade</supports>
+		<description>
+			<p>The apparatus can move up, down, and across vertical surfaces and ceilings, and it gains a climbing speed equal to its walking speed.</p>
+		</description>
+		<sheet usage="Companion">
+			<description> The apparatus can move up, down, and across vertical surfaces and ceilings, and it gains a climbing speed equal to its walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="companion:speed:climb" value="companion:speed" bonus="base" />
+		</rules>
+	</element>
+    <element name="Heavy Suspension" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_HEAVY_SUSPENSION">
+		<supports>Limb Upgrade</supports>
+		<description>
+			<p>The apparatus's jump distance triples, and it takes no damage from falling a distance of less than 100 feet.</p>
+		</description>
+		<sheet usage="Companion">
+			<description> The apparatus's jump distance triples, and it takes no damage from falling a distance of less than 100 feet.</description>
+		</sheet>
+	</element>
+    <element name="Telescopic Frame" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_TELESCOPIC_FRAME">
+		<supports>Limb Upgrade</supports>
+    	<description>
+			<p>While no one is inside the apparatus, you can use your bonus action to command it to collapse down to Medium size or return to Large size. While collapsed in this way, the apparatus can't be entered.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Companion">
+			<description> While no one is inside the apparatus, you can command it to collapse down to Medium size or return to Large size. While collapsed in this way, the apparatus can't be entered.</description>
+		</sheet>
+	</element>
+    <!---->
+	<element name="Passenger Seat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PASSENGER_SEAT">
+		<description>
+			<p>Starting at 10th level, you have installed a second seat inside the cockpit, which takes an action to enter and exit. A creature can't pilot the apparatus from this seat, but it does have total cover from outside effects.</p>
+		</description>
+		<sheet>
+			<description> You have installed a second seat inside the cockpit, which takes an action to enter and exit. A creature can't pilot the apparatus from this seat, but it does have total cover from outside effects.</description>
+		</sheet>
+	</element>
+	<element name="Attachment Upgrade" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_ATTACHMENT_UPGRADE">
+		<description>
+			<p>Beginning at 14th level, you have installed an external attachment to your apparatus. Choose one of the upgrades below. Once you use the installed upgrade, you must finish a short or long rest before you can use it again.</p>
+            <p class="indent"><b>Ballista Cannon.</b> You can fire the apparatus's integrated heavy ballista in a 5-foot-wide, 60-foot long line. Each creature in the line must make a Dexterity saving throw against your Masterwork save DC, taking 5d10 piercing damage on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent"><b>Gyro Module.</b> You can use your action to rapidly rotate your apparatus, allowing you to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target. You can't move between these attacks.</p>
+            <p class="indent"><b>Rocket Engine.</b> You can use your bonus action to light the apparatus's installed rocket engine, propelling you up to 30 feet in a straight line in any direction you choose. If you make a melee attack immediately after this movement, the attack is made with advantage. On a hit, this attack knocks thetarget prone or pushes it up to 10 feet away from you (your choice).</p>
+		</description>
+		<sheet>
+			<description> You have installed an external attachment to your apparatus. Once you use the installed upgrade, you must finish a short or long rest before you can use it again.</description>
+		</sheet>
+	    <rules>
+			<select type="Archetype Feature" name="Attachment Upgrade" supports="Attachment Upgrade" />
+		</rules>
+	</element>
+    <element name="Ballista Cannon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_BALLISTA_CANNON">
+		<supports>Attachment Upgrade</supports>
+		<description>
+			<p>You can fire the apparatus's integrated heavy ballista in a 5-foot-wide, 60-foot long line. Each creature in the line must make a Dexterity saving throw against your Masterwork save DC, taking 5d10 piercing damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Companion">
+			<description> You can fire the apparatus's integrated heavy ballista in a 5-foot-wide, 60-foot long line. Each creature in the line must make a DC{{masterwork:dc}} DEX saving throw, taking 5d10 piercing damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+    <element name="Gyro Module" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_GYRO_MODULE">
+		<supports>Attachment Upgrade</supports>
+		<description>
+			<p>You can use your action to rapidly rotate your apparatus, allowing you to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target. You can't move between these attacks.</p>
+		</description>
+		<sheet action="Action" usage="Companion">
+			<description> You can rapidly rotate your apparatus, allowing you to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target. You can't move between these attacks.</description>
+		</sheet>
+	</element>
+    <element name="Rocket Engine" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MECHANAUTS_APPARATUS_ROCKET_ENGINE">
+		<supports>Attachment Upgrade</supports>
+    	<description>
+			<p>You can use your bonus action to light the apparatus's installed rocket engine, propelling you up to 30 feet in a straight line in any direction you choose. If you make a melee attack immediately after this movement, the attack is made with advantage. On a hit, this attack knocks the target prone or pushes it up to 10 feet away from you (your choice).</p>
+		</description>
+		<sheet action="Bonus Action" usage="Companion">
+			<description> You can light the apparatus's installed rocket engine, propelling you up to 30 feet in a straight line in any direction you choose. If you make a melee attack immediately after this movement, the attack is made with advantage. On a hit, this attack knocks the target prone or pushes it up to 10 feet away from you (your choice).</description>
+		</sheet>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PNEUMATIC" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PNEUMATIC" />
+		</rules>
+	</element>
+	<element name="Pneumatic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PNEUMATIC">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_MG_PNEUMATIC</supports>
+		<description>
+			<h5>PNEUMATIC</h5>
+			<p><em>Legendary weapon property</em></p>
+			<p><b>Components:</b> Masterwork exotic melee weapon</p>
+			<p>If this weapon is installed in a mechanaut's apparatus and it deals more than one die of damage on a hit, whenever you roll damage, you can maximize one of the weapon's damage dice instead of rolling it.</p>
+		</description>
+		<sheet>
+			<description>Components: Masterwork exotic melee weapon &#13;
+			If this weapon is installed in a mechanaut's apparatus and it deals more than one die of damage on a hit, whenever you roll damage, you can maximize one of the weapon's damage dice instead of rolling it.</description>
+		</sheet>
+	</element>
+</elements>

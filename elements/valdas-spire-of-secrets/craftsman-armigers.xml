@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armigers' Guild</name>
+		<description>The Armigers' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-armigers.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-armigers.xml" />
+		</update>
+	</info>
+
+	<element name="Armigers' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ARMIGERS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>While most seasoned spellcasters will enchant a handful of magic items over the course of their careers, artisans belonging to the Guild of Arcane Maesters seek to become true masters of magic item creation. They rightly take seriously the forging of such powerful relics: each creation must be a masterwork in its own right to contain the potent magic woven into them. Despite laboring for months or even years to perfect their creations, seasoned maesters are always seen to be laden with dozens of magic items, attuned to a handful of rings, and carrying a wand of magic missiles, just in case.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FIGHTING_STYLE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_SHINING_STEEL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ARMOR_REINFORCEMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FORTIFY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FIGHTING_STYLE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_SHINING_STEEL" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ARMOR_REINFORCEMENT" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FORTIFY" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FIGHTING_STYLE">
+		<description>
+			<p>Beginning at 3rd level, you not only learn to forge powerful armor, but can wear it with skill. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p class="indent"><b>Defense.</b> While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<p class="indent"><b>Protection.</b> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<sheet />
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Armiger" level="3"/>
+		</rules>
+	</element>
+	<element name="Defense" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FIGHTING_STYLE_DEFENSE">
+		<compendium display="false" />
+		<supports>Fighting Style, Armiger</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
+	</element>
+	<element name="Protection" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FIGHTING_STYLE_PROTECTION">
+		<compendium display="false" />
+		<supports>Fighting Style, Armiger</supports>
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<sheet>
+			<description> When a creature you can see attacks a target other than you that is within 5ft of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+		</sheet>
+	</element>
+	<element name="Shining Steel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_SHINING_STEEL">
+		<description>
+			<p>Starting at 7th level, your imposing, shining armor makes you a clear target for your foes. When you roll initiative and aren't surprised, you can challenge any number of creatures within 60 feet of you that can see you to battle. Each affected creature must succeed on a Wisdom saving throw against your Masterwork save DC or have disadvantage on any attack roll that doesn't target you on the first round of combat. A creature with an Intelligence of 3 or less automatically succeeds on this saving throw.</p>
+		</description>
+		<sheet>
+			<description> When you roll initiative and aren't surprised, you can challenge any number of creatures within 60ft of you that can see you to battle. Each affected creature must succeed on a DC{{masterwork:dc}} WIS saving throw or have disadvantage on any attack roll that doesn't target you on the first round of combat. A creature with an INT of 3 or less automatically succeeds on this saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Armor Reinforcement" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ARMOR_REINFORCEMENT">
+		<description>
+			<p>Starting at 10th level, you can spend 10 minutes to reinforce a suit of armor, or you can reinforce up to 6 suits of armor during a short or long rest. This armor retains its reinforcement until the creature wearing it is hit, after which it is no longer fortified. Reinforced armor gains one of the following properties of your choice:</p>
+			<p class="indent"><b>Adamant.</b> When a creature wearing this armor takes damage, it reduces the amount it takes by 1d8.</p>
+			<p class="indent"><b>Banded.</b> A creature wearing this armor has a +1 bonus to Armor Class.</p>
+		</description>
+		<sheet>
+			<description> You can spend 10 minutes to reinforce a suit of armor, or you can reinforce up to 6 suits of armor during a short or long rest. This armor retains its reinforcement until the creature wearing it is hit, after which it is no longer fortified. Reinforced armor gains one of the following properties of your of your choice: </description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Armor Reinforcement 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ADAMANT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ADAMANT" />
+			<select type="Archetype Feature" name="Armor Reinforcement 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_BANDED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_BANDED" />
+		</rules>
+	</element>
+	<element name="Adamant" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ADAMANT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_ADAMANT</supports>
+		<compendium display="false" />
+		<description>
+			<p>When a creature wearing this armor takes damage, it reduces the amount it takes by 1d8.</p>
+		</description>
+		<sheet>
+			<description> When a creature wearing this armor takes damage, it reduces the amount it takes by 1d8.</description>
+		</sheet>
+	</element>
+	<element name="Banded" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_BANDED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_BANDED</supports>
+		<compendium display="false" />
+		<description>
+			<p>A creature wearing this armor has a +1 bonus to Armor Class.</p>
+		</description>
+		<sheet>
+			<description> A creature wearing this armor has a +1 bonus to Armor Class.</description>
+		</sheet>
+	</element>
+	<element name="Fortify" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_FORTIFY">
+		<description>
+			<p>Starting at 14th level, as a bonus action, you can gain resistance to all damage until the end of your next turn. Once you use this feature, you can't use it again until you finish a short or long rest. </p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description> You can gain resistance to all damage until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a suit of masterwork armor:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a suit of masterwork armor:</description>
+		</sheet>
+        <rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_INVINCIBLE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_INVINCIBLE" />
+		</rules>
+	</element>
+	<element name="Invincible" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_INVINCIBLE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AG_INVINCIBLE</supports>
+		<description>
+			<h5>INVINCIBLE</h5>
+			<p><em>Legendary armor property</em></p>
+			<p><b>Components:</b> Masterwork suit of exotic armor</p>
+			<p>While you are wearing this armor, bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 5.</p>
+		</description>
+		<sheet>
+			<description> Legendary armor property &#13;
+			Components: Masterwork suit of exotic armor &#13;
+			While you are wearing this armor, bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 5.</description>
+		</sheet>
+	</element>
+</elements>

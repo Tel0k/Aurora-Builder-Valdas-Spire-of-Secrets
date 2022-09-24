@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Calibarons' Guild</name>
+		<description>The Calibarons' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-calibarons.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-calibarons.xml" />
+		</update>
+	</info>
+
+	<element name="Calibarons' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_CALIBARONS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>The Calibarons know, better than most, that gunpowder is the single greatest invention ever created by mortals. A sword may let a skilled wielder lay a giant low and magic may let the savvy and the blessed stand up to the gods, but only a gun will let a common man put a dragon in its place.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_APPRENTICE_PROPERTY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC_CALIBRATION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_UNDERBARREL_GRENADE_LAUNCHER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_APPRENTICE_PROPERTY" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC_CALIBRATION" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_UNDERBARREL_GRENADE_LAUNCHER" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE">
+		<description>
+			<p>Starting at 3rd level, you adopt a particular style of gunfighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p class="indent"><b>Akimbo.</b> When you engage in two-weapon fighting with firearms, you do not take a penalty to the damage of the second attack.</p>
+			<p class="indent"><b>Bullseye.</b> You gain a +2 bonus to ranged attack rolls you make using firearms. The weapon must have the Sighted property or have a normal range of 80 feet or longer to gain this effect. This effect does not stack with the Archery fighting style.</p>
+			<p class="indent"><b>Duelist.</b> While you are wielding a firearm in one hand and nothing in the other, if you make a ranged weapon attack and exceed the target's AC by 5 or more, you deal an extra die of weapon damage. You can only use this ability once per round.</p>
+			<p class="indent"><b>Shotgunner.</b> When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is lower than the original.</p>
+		</description>
+		<sheet />
+		<rules>
+			<select type="Archetype Feature" name="Fighting Style" supports="Fighting Style, Calibaron" level="3"/>
+		</rules>
+	</element>
+	<element name="Akimbo" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE_AKIMBO">
+		<compendium display="false" />
+		<supports>Fighting Style, Calibaron</supports>
+		<description>
+			<p>When you engage in two-weapon fighting with firearms, you do not take a penalty to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting with firearms, you do not take a penalty to the damage of the second attack.</description>
+		</sheet>
+	</element>
+	<element name="Bullseye" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE_BULLSEYE">
+		<compendium display="false" />
+		<supports>Fighting Style, Calibaron</supports>
+		<description>
+			<p>You gain a +2 bonus to ranged attack rolls you make using firearms. The weapon must have the Sighted property or have a normal range of 80 feet or longer to gain this effect. This effect does not stack with the Archery fighting style.</p>
+		</description>
+		<sheet>
+			<description> You gain a +2 bonus to ranged attack rolls you make using firearms. The weapon must have the Sighted property or have a normal range of 80 feet or longer to gain this effect. This effect does not stack with the Archery fighting style.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" equipped="([primary:musket]||[primary:rocket launcher]||[primary:hunting rifle]||[primary:gatling gun]||[primary:light cannon]||[primary:assault rifle]||[primary:grenade launcher]||[primary:sniper rifle]||[primary:rifle]||[primary:antimatter rifle]||[primary:laser rifle])" requirements="!ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY"/>
+		</rules>
+	</element>
+	<element name="Duelist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE_DUELIST">
+		<supports>Fighting Style, Calibaron</supports>
+		<description>
+			<p>While you are wielding a firearm in one hand and nothing in the other, if you make a ranged weapon attack and exceed the target's AC by 5 or more, you deal an extra die of weapon damage. You can only use this ability once per round.</p>
+		</description>
+		<sheet>
+			<description>While you are wielding a firearm in one hand and nothing in the other, if you make a ranged weapon attack and exceed the target's AC by 5 or more, you deal an extra die of weapon damage. You can only use this ability once per round.</description>
+		</sheet>
+	</element>
+	<element name="Shotgunner" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_FIGHTING_STYLE_SHOTGUNNER">
+		<compendium display="false" />
+		<supports>Fighting Style, Calibaron</supports>
+		<description>
+			<p>When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is lower than the original.</p>
+		</description>
+		<sheet>
+			<description> When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is lower than the original.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Apprentice Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_APPRENTICE_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>Starting at 7th level, you can add the following special property to your firearms:</p>
+		</description>
+		<sheet>
+			<description> You can add the following special property to your firearms:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Apprentice Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_SUPPRESSOR" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_SUPPRESSOR" />
+		</rules>
+	</element>
+	<element name="Suppressor" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_SUPPRESSOR">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_SUPPRESSOR</supports>
+		<description>
+			<h5>SUPPRESSOR</h5>
+			<p><em>Apprentice weapon property</em></p>
+			<p><b>Components:</b> Masterwork martial ranged weapon with the Firearm property</p>
+			<p>Attacks with this weapon make only a low thud or a quiet clink, audible out to 10 feet, and release a puff of smoke to mask the light given off by the blast.</p>
+		</description>
+		<sheet>
+			<description> Apprentice weapon property &#13;
+			Components: Masterwork martial ranged weapon with the Firearm property &#13;
+			Attacks with this weapon make only a low thud or a quiet clink, audible out to 10 feet, and release a puff of smoke to mask the light given off by the blast.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Ballistic Calibration" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC_CALIBRATION">
+		<description>
+			<p>Starting at 10th level, you can spend 10 minutes to calibrate and reinforce a ranged weapon, or you can calibrate up to 6 ranged weapons during a short or long rest. This weapon retains its calibration until it hits a target, after which it is no longer calibrated. A calibrated ranged weapon gains one of the following properties of your choice:</p>
+			<p class="indent"><b>Ballistic.</b> This weapon deals an extra die of damage on a hit.</p>
+			<p class="indent"><b>Calibrated.</b> This weapon scores a critical hit on a roll of 18-20.</p>
+		</description>
+		<sheet>
+			<description> You can spend 10 minutes to calibrate and reinforce a ranged weapon, or you can calibrate up to 6 ranged weapons during a short or long rest. This weapon retains its calibration until it hits a target, after which it is no longer calibrated. A calibrated ranged weapon gains one of the following properties of your choice: </description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Ballistic Calibration 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC" />
+			<select type="Archetype Feature" name="Ballistic Calibration 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_CALIBRATED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_CALIBRATED" />
+        </rules>
+	</element>
+    <element name="Ballistic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BALLISTIC</supports>
+		<compendium display="false" />
+		<description>
+			<p>This weapon deals an extra die of damage on a hit.</p>
+		</description>
+		<sheet>
+			<description> This weapon deals an extra die of damage on a hit.</description>
+		</sheet>
+	</element>
+    <element name="Calibrated" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_CALIBRATED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_CALIBRATED</supports>
+		<compendium display="false" />
+		<description>
+			<p>This weapon scores a critical hit on a roll of 18-20.</p>
+		</description>
+		<sheet>
+			<description> This weapon scores a critical hit on a roll of 18-20.</description>
+		</sheet>
+	</element>
+    <!---->
+	<element name="Underbarrel Grenade Launcher" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_UNDERBARREL_GRENADE_LAUNCHER">
+		<description>
+			<p>Beginning at 14th level, you have learned to construct the ultimate firearm attachment: an underbarrel grenade launcher. You can use your action to attach this launcher to a two-handed ranged weapon with the Firearm property or remove it from one. If the launcher is ever lost or stolen, you can construct a new one over the course of a long rest with 100 gp in materials.</p>
+            <p class="indent">You can use your action to fire the launcher at a point you can see within 60 feet of you. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw against your Masterwork save DC, taking 8d6 fire damage on a failed save, or half as much on a successful save.</p>
+            <p class="indent">Once you fire the launcher, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="(1)||(2) Action" usage="(2) 1/Short||Long Rest">
+			<description> You have learned to construct an underbarrel grenade launcher. &#13;
+            (1)You can attach this launcher to a two-handed ranged weapon with the Firearm property or remove it from one. If the launcher is ever lost or stolen, you can construct a new one over the course of a long rest with 100 gp in materials. &#13;
+            (2)You can fire the launcher at a point you can see within 60ft of you. Each creature in a 10ft-radius sphere centered on that point must make a DC{{masterwork:dc}} DEX saving throw, taking 8d6 fire damage on a failed save, or half as much on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BURST_FIRE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BURST_FIRE" />
+		</rules>
+	</element>
+	<element name="Burst Fire" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BURST_FIRE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_BURST_FIRE</supports>
+		<description>
+			<h5>BURST FIRE</h5>
+			<p><em>Legendary weapon property</em></p>
+			<p><b>Components:</b> Masterwork exotic firearm with the Automatic property</p>
+			<p>When you take the Attack action to make an attack with this firearm, you can use your bonus action to make one additional attack with it.</p>
+		</description>
+		<sheet>
+			<description>Components: Masterwork exotic firearm with the Automatic property &#13;
+			When you take the Attack action to make an attack with this firearm, you can use your bonus action to make one additional attack with it.</description>
+		</sheet>
+	</element>
+</elements>

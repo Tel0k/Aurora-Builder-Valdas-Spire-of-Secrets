@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arcane Maesters' Guild</name>
+		<description>The Arcane Maesters' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-arcane-maesters.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-arcane-maesters.xml" />
+		</update>
+	</info>
+
+	<element name="Arcane Maesters' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ARCANE_MAESTERS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>While most seasoned spellcasters will enchant a handful of magic items over the course of their careers, artisans belonging to the Guild of Arcane Maesters seek to become true masters of magic item creation. They rightly take seriously the forging of such powerful relics: each creation must be a masterwork in its own right to contain the potent magic woven into them. Despite laboring for months or even years to perfect their creations, seasoned maesters are always seen to be laden with dozens of magic items, attuned to a handful of rings, and carrying a wand of magic missiles, just in case.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_MAGIC_ITEM_CRAFTING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_APPRENTICE_PROPERTY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_INSTANT_ATTUNEMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_EPHEMERAL_ENCHANTMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_SEVER_CONNECTION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_MAGIC_ITEM_CRAFTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_APPRENTICE_PROPERTY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_INSTANT_ATTUNEMENT" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_EPHEMERAL_ENCHANTMENT" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_SEVER_CONNECTION" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Magic Item Crafting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_MAGIC_ITEM_CRAFTING">
+		<description>
+			<p>When you join this guild at 3rd level, you unlock the secrets of crafting items infused with magical energy. The Magic Item Crafting sidebar details the magic items you can create, specifies the level you must reach in this class to create each magic item, and shows the cost in materials an item will require. You can craft a magic item by spending multiple days working on it, as per the Active Crafting feature.</p>
+			<div class="sidebar">
+				<h5>ENCHANTED</h5>
+					<p>The following lists show which magic items you can create, the craftsman level you must reach and the cost in materials each item requires.</p>
+					<p><b>3rd level — 100 gp</b></p>
+					<ul class="unstyled">
+						<li>Bag of holding</li>
+						<li>Decanter of endless water</li>
+						<li>Eyes of minute seeing</li>
+						<li>Folding boat</li>
+						<li>Goggles of night</li>
+						<li>Handy haversack</li>
+						<li>Helm of comprehending languages</li>
+						<li>Immovable rod</li>
+						<li>Lantern of revealing</li>
+						<li>Periapt of health</li>
+						<li>Rope of climbing</li>
+						<li>Wand of secrets</li>
+					</ul>
+                    <p />
+					<p><b>7th level — 250 gp</b></p>
+					<ul class="unstyled">
+						<li>Boots of elvenkind</li>
+						<li>Circlet of blasting</li>
+						<li>Cloak of elvenkind</li>
+						<li>Efficient quiver</li>
+						<li>Eyes of charming</li>
+						<li>Pipes of haunting</li>
+						<li>Portable hole</li>
+						<li>Ring of jumping</li>
+						<li>Ring of water walking</li>
+						<li>Wand of magic missiles</li>
+						<li>Wind fan</li>
+					</ul>
+                    <p />
+					<p><b>10th level — 500 gp</b></p>
+					<ul class="unstyled">
+						<li>Boots of striding and springing</li>
+						<li>Eversmoking bottle</li>
+						<li>Eyes of the eagle</li>
+						<li>Gloves of missile snaring</li>
+						<li>Hat of disguise</li>
+						<li>Helm of telepathy</li>
+						<li>Periapt of proof against poison</li>
+						<li>Periapt of wound closure</li>
+						<li>Ring of feather falling</li>
+						<li>Ring of mind shielding</li>
+						<li>Slippers of spider climbing</li>
+						<li>Winged boots</li>
+					</ul>
+					<p />
+                    <p><b>14th level — 1,000 gp</b></p>
+					<ul class="unstyled">
+						<li>Belt of dwarvenkind</li>
+						<li>Boots of levitation</li>
+						<li>Boots of speed</li>
+						<li>Cape of the mountebank</li>
+						<li>Cloak of the bat</li>
+						<li>Gem of seeing</li>
+						<li>Horn of blasting</li>
+						<li>Instant fortress</li>
+						<li>Iron bands of binding</li>
+						<li>Ring of free action</li>
+						<li>Ring of the ram</li>
+						<li>Ring of X-ray vision</li>
+						<li>Wand of enemy detection</li>
+						<li>Wand of fear</li>
+					</ul>
+			</div>
+		</description>
+		<sheet>
+			<description> You unlock the secrets of crafting items infused with magical energy. You can craft a magic item by spending multiple days working on it, as per the Active Crafting feature. (for items and requirements check compendium or book)</description>
+		</sheet>
+	</element>
+	<element name="Apprentice Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_APPRENTICE_PROPERTY">
+		<description>
+			<p>Also at 3rd level, you learn to apply the following masterwork property to your equipment:</p>
+		</description>
+		<sheet>
+			<description>You learn to apply the following masterwork property to your equipment:</description>
+		</sheet>
+        <rules>
+			<select type="Archetype Feature" name="Apprentice Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_ENCHANTED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_ENCHANTED" />
+		</rules>
+	</element>
+	<element name="Enchanted" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_ENCHANTED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_CG_ENCHANTED, Apprentice Weapon Property</supports>
+		<description>
+			<h5>ENCHANTED</h5>
+			<p><em>Apprentice weapon property</em></p>
+			<p><b>Components:</b> Masterwork weapon</p>
+			<p>This weapon is interwoven with strong magical enchantments. You can use your Intelligence, instead of Strength or Dexterity, for this weapon's attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description> Apprentice weapon property &#13;
+			Components: Masterwork weapon &#13;
+			This weapon is interwoven with strong magical enchantments. You can use your Intelligence, instead of Strength or Dexterity, for this weapon's attack and damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="Instant Attunement" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_INSTANT_ATTUNEMENT">
+		<description>
+			<p>Beginning at 7th level, your experience in creating magic items allows you to quickly bond with them. You can use your action to attune to a magic item, and you can end your attunement to an item as part of the same action. You can use this ability a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Short||Long Rest">
+			<description> You can use your action to attune to a magic item, and you can end your attunement to an item as part of the same action.</description>
+		</sheet>
+	</element>
+	<element name="Ephemereal Enchantment" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_EPHEMERAL_ENCHANTMENT">
+		<description>
+			<p>Starting at 10th level, you can spend 10 minutes to lay an enchantment on a nonmagical weapon, enchanting up to 6 nonmagical weapons during a short or long rest. For the next 8 hours, each enchanted weapon counts as magical for the purpose of overcoming damage resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description> You can spend 10 minutes to lay an enchantment on a nonmagical weapon, enchanting up to 6 nonmagical weapons during a short or long rest. For the next 8 hours, each enchanted weapon counts as magical for the purpose of overcoming damage resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+	<element name="Sever Connection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_SEVER_CONNECTION">
+		<description>
+			<p>By 14th level, you can break the connection that binds you to your magic items and repurpose that magic to protect yourself. As a reaction when a creature you can see targets you with an attack, or when you make a saving throw, you can end your attunement to one magic item. Until the start of your next turn, you gain a bonus to your Armor Class and saving throws equal to your Intelligence modifier. The total number of magic items you can attune to is reduced by 1 until you finish a short or long rest.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short||Long Rest">
+			<description> When a creature you can see targets you with an attack, or when you make a saving throw, you can end your attunement to one magic item. Until the start of your next turn, you gain a bonus to your AC and saving throws equal to your INT mod. The total number of magic items you can attune to is reduced by 1 until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_LEGENDARY_PROPERTY">
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a suit of masterwork armor:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a suit of masterwork armor:</description>
+		</sheet>
+        <rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_RESONANT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_RESONANT" />
+		</rules>
+	</element>
+	<element name="Invincible" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_RESONANT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_AMG_RESONANT</supports>
+		<description>
+			<h5>RESONANT</h5>
+			<p><em>Legendary armor property</em></p>
+			<p><b>Components:</b> Masterwork suit of exotic armor</p>
+			<p>By spending a short rest focusing on a magic item while wearing this armor, you can attune the item directly to the armor. You can use the magic item as though you were attuned to it while you are wearing the armor. You can attune up to two items to the armor, and can end an item's attunement to the armor by spending another short rest focused on the item.</p>
+		</description>
+		<sheet>
+			<description> Legendary armor property &#13;
+			Components: Masterwork suit of exotic armor &#13;
+			By spending a short rest focusing on a magic item while wearing this armor, you can attune the item directly to the armor. You can use the magic item as though you were attuned to it while you are wearing the armor. You can attune up to two items to the armor, and can end an item's attunement to the armor by spending another short rest focused on the item.</description>
+		</sheet>
+	</element>
+</elements>

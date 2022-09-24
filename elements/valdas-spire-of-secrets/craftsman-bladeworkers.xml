@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bladeworkers' Guild</name>
+		<description>The Bladeworkers' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-bladeworkers.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-bladeworkers.xml" />
+		</update>
+	</info>
+
+	<element name="Bladeworkers' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_BLADEWORKERS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>Blade and bow, axe and mace: these are the tools with which the Bladeworkers try to change the world. They believe that the right blade, in the right hand can make a warrior unstoppable.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SABOTAGING_STRIKE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED_WEAPONS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_VERSATILE_WEAPON_MASTER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SABOTAGING_STRIKE" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED_WEAPONS" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_VERSATILE_WEAPON_MASTER" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE">
+		<description>
+			<p>Starting when you choose this guild at 3rd level, you not only learn to forge great weapons, you fight with them as well. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p class="indent"><b>Dueling.</b> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<p class="indent"><b>Great Weapon Fighting.</b> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the Two-Handed or Versatile property for you to gain this benefit.</p>
+			<p class="indent"><b>Hand-and-a-Half.</b> While wielding a versatile weapon in two hands, you gain a +1 bonus to attack and damage rolls with that weapon.</p>
+			<p class="indent"><b>Two-Weapon Fighting.</b> When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet />
+		<rules>
+			<select type="Archetype Feature" name="Fighting Style" supports="Fighting Style, Bladeworker" level="3"/>
+		</rules>
+	</element>
+	<element name="Dueling" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE_DUELING">
+		<compendium display="false" />
+		<supports>Fighting Style, Bladeworker</supports>
+		<description>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+		</rules>
+	</element>
+	<element name="Great Weapon Fighting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE_GREAT_WEAPON_FIGHTING">
+		<compendium display="false" />
+		<supports>Fighting Style, Bladeworker</supports>
+		<description>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the Two-Handed or Versatile property for you to gain this benefit.</p>
+		</description>
+		<sheet>
+			<description> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the Two-Handed or Versatile property for you to gain this benefit.</description>
+		</sheet>
+	</element>
+	<element name="Hand-and-a-Half" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE_DEFENSE">
+		<supports>Fighting Style, Bladeworker</supports>
+		<description>
+			<p>While wielding a versatile weapon in two hands, you gain a +1 bonus to attack and damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>While wielding a versatile weapon in two hands, you gain a +1 bonus to attack and damage rolls with that weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="melee:attack" value="1" equipped="[primary:versatile]"/>
+			<stat name="melee:damage" value="1" equipped="[primary:versatile]"/>
+		</rules>
+	</element>
+	<element name="Two-Weapon Fighting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_FIGHTING_STYLE_TWOWEAPON_FIGHTING">
+		<compendium display="false" />
+		<supports>Fighting Style, Bladeworker</supports>
+		<description>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description> When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Sabotaging Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SABOTAGING_STRIKE">
+		<description>
+			<p>Beginning at 7th level, you can use your knowledge of armament construction to disarm your foes and crush their armor. Once on each of your turns, when you take the Attack action, you can replace one of your attacks with one of the following special melee attacks.</p>
+			<p class="indent"><b>Disarm.</b> You attempt to disarm a target within your reach. The target makes a Strength saving throw against your Masterwork save DC. On a failed save, it drops one item of your choice that it is holding or carrying. The object lands at its feet.</p>
+			<p class="indent"><b>Sunder.</b> You attempt to shatter the defenses of a target within your reach that is wearing armor or carrying a shield. The target must make a Dexterity saving throw against your Masterwork save DC. On a failed save, the target's armor or shield takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If a creature's armor or shield is damaged but not destroyed, it can repair it over the course of a short or long rest.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description> When you take the Attack action, you can replace one of your attacks with one of the following special melee attacks.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Sabotaging Strike 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DISARM" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DISARM" />
+			<select type="Archetype Feature" name="Sabotaging Strike 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SUNDER" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SUNDER" />
+		</rules>
+	</element>
+	<element name="Disarm" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DISARM">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DISARM</supports>
+		<compendium display="false" />
+		<description>
+			<p>You attempt to disarm a target within your reach. The target makes a Strength saving throw against your Masterwork save DC. On a failed save, it drops one item of your choice that it is holding or carrying. The object lands at its feet.</p>
+		</description>
+		<sheet>
+			<description> The target makes a DC{{masterwork:dc}} STR saving throw. On a failed save, it drops one item of your choice that it is holding or carrying. The object lands at its feet.</description>
+		</sheet>
+	</element>
+	<element name="Sunder" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SUNDER">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SUNDER</supports>
+		<compendium display="false" />
+		<description>
+			<p>You attempt to shatter the defenses of a target within your reach that is wearing armor or carrying a shield. The target must make a Dexterity saving throw against your Masterwork save DC. On a failed save, the target's armor or shield takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If a creature's armor or shield is damaged but not destroyed, it can repair it over the course of a short or long rest.</p>
+		</description>
+		<sheet>
+			<description> The target must make a DC{{masterwork:dc}} DEX saving throw. On a failed save, the target's armor or shield takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If a creature's armor or shield is damaged but not destroyed, it can repair it over the course of a short or long rest.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Honed Weapons" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED_WEAPONS">
+		<description>
+			<p>Starting at 10th level, you can spend 10 minutes to fortify a weapon, or fortify up to 6 weapons during a short or long rest. This weapon retains its fortification until it hits a target, after which it is no longer fortified. A fortified weapon gains one of the following properties of your choice:</p>
+			<p class="indent"><b>Honed.</b> This weapon has a +2 bonus to attack rolls.</p>
+			<p class="indent"><b>Sharpened.</b> This weapon deals an extra 1d8 damage on a hit.</p>
+		</description>
+		<sheet>
+			<description> You can spend 10 minutes to fortify a weapon, or fortify up to 6 weapons during a short or long rest. This weapon retains its fortification until it hits a target, after which it is no longer fortified. A fortified weapon gains one of the following properties of your choice: </description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Honed Weapons 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED" />
+			<select type="Archetype Feature" name="Honed Weapons 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SHARPENED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SHARPENED" />
+		</rules>
+	</element>
+	<element name="Honed" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_HONED</supports>
+		<compendium display="false" />
+		<description>
+			<p>This weapon has a +2 bonus to attack rolls.</p>
+		</description>
+		<sheet>
+			<description> This weapon has a +2 bonus to attack rolls.</description>
+		</sheet>
+	</element>
+	<element name="Sharpened" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SHARPENED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_SHARPENED</supports>
+		<compendium display="false" />
+		<description>
+			<p>This weapon deals an extra 1d8 damage on a hit.</p>
+		</description>
+		<sheet>
+			<description> This weapon deals an extra 1d8 damage on a hit.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Versatile Weapon Master" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_VERSATILE_WEAPON_MASTER">
+		<description>
+			<p>By 14th level, you can wield all manner of weapons in rapid succession. Once on each of your turns when you attack with a weapon, you can gain advantage on the attack roll. You can use this ability four times: once to make a ranged weapon attack with a weapon that has the Ammunition property, once to make a melee weapon attack with a two-handed weapon, once to make a melee weapon attack with a one-handed weapon, and once to make a ranged weapon attack with a thrown weapon. Each use must be with a different weapon, and you regain each use of this ability after one minute. You can't use this ability if you have disadvantage on the attack roll, or if you can't see the target.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> Once on each of your turns when you attack with a weapon, you can gain advantage on the attack roll. You can use this ability four times: once to make a ranged weapon attack with a weapon that has the Ammunition property, once to make a melee weapon attack with a two-handed weapon, once to make a melee weapon attack with a one-handed weapon, and once to make a ranged weapon attack with a thrown weapon. Each use must be with a different weapon, and you regain each use of this ability after one minute. You can't use this ability if you have disadvantage on the attack roll, or if you can't see the target.</description>
+		</sheet>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DEVASTATING" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DEVASTATING" />
+		</rules>
+	</element>
+	<element name="Devastating" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DEVASTATING">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_BG_DEVASTATING</supports>
+		<description>
+			<h5>DEVASTATING</h5>
+			<p><em>Legendary weapon property</em></p>
+			<p><b>Components:</b> Masterwork exotic weapon</p>
+			<p>This weapon scores a critical hit on a roll of 18-20.</p>
+		</description>
+		<sheet>
+			<description> Legendary weapon property &#13;
+			Components: Masterwork exotic weapon &#13;
+			This weapon scores a critical hit on a roll of 18-20.</description>
+		</sheet>
+	</element>
+</elements>

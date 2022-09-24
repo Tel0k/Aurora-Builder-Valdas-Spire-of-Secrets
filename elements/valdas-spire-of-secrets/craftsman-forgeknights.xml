@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Forgeknights' Guild</name>
+		<description>The Forgeknights' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-forgeknights.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-forgeknights.xml" />
+		</update>
+	</info>
+
+	<element name="Forgeknights' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FORGEKNIGHTS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>To a Forgeknight, heat is not merely integral to forging, curing, and welding gear, it is a weapon in its own right, for the swing of a white-hot blade bites not only with steel, but with flame. A Forgeknight carries the intensity of a forge with them, storing it in their armor and building it up in their weapons, before unleashing it in a scorching blast.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_PORTABLE_FORGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGEFIRED_ARMORY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_SUPERHEATED_WEAPONS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FIRE_BURST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_PORTABLE_FORGE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGEFIRED_ARMORY" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_SUPERHEATED_WEAPONS" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FIRE_BURST" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+	<element name="Portable Forge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_PORTABLE_FORGE">
+		<description>
+			<p>When you join this guild at 3rd level, you construct a portable forge which allows you to heat objects you are forging without a specially constructed shop or foundry. When you gain this forge, you are assumed to have been working on it in your spare time, only bringing it to full functionality when you take this subclass. If your forge is ever lost or damaged, you can repair or replace it over the course of a long rest with 100 gp of materials.</p>
+			<p class="indent">While you are carrying your forge, you gain the following benefits:</p>
+			<ul>
+				<li>Weapons you wield can deal fire damage instead of their normal damage type.</li>
+				<li>You have resistance to fire damage.</li>
+				<li>You can cast the cantrips <i>mending</i> and <i>produce flame</i>. Intelligence is your spellcasting ability for each of these spells. </li>
+			</ul>
+		</description>
+		<sheet>
+            <description>While you are carrying your forge, you gain the following benefits: &#13;
+            Weapons you wield can deal fire damage instead of their normal damage type. &#13;
+            You have resistance to fire damage. You can cast the cantrips Mending and Produce Flame. Intelligence is your spellcasting ability.</description>
+        </sheet>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Spell" id="ID_PHB_SPELL_MENDING" spellcasting="intelligence" />
+            <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" spellcasting="intelligence" />
+		</rules>
+	</element>
+	<!---->
+	<element name="Forgefired Armory" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGEFIRED_ARMORY">
+		<description>
+			<p>Starting at 7th level, you can add the Explosive and Heat properties to your exotic melee weapons. You can add the Heat property to any melee weapon, even if it already has another Journeyman property. When you hit a target with an explosive melee weapon, it creates an explosion at the point of impact, as per the Explosive property, which doesn't harm you or the weapon.</p>
+		</description>
+		<sheet>
+			<description> You can add the Explosive and Heat properties to your exotic melee weapons. You can add the Heat property to any melee weapon, even if it already has another Journeyman property. When you hit a target with an explosive melee weapon, it creates an explosion at the point of impact, as per the Explosive property, which doesn't harm you or the weapon.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Superheated Weapons" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_SUPERHEATED_WEAPONS">
+		<description>
+			<p>Starting at 10th level, you can plunge a number of melee weapons or pieces of ammunition into an active forge or your portable forge, heating them to white-hot temperatures. Weapons and ammunition placed in the forge must be made of metal, and remain heated for 10 minutes. You can heat one weapon or 2 pieces of ammunition in the forge as an action, or up to 10 weapons or 20 pieces of ammunition over the course of 1 minute.</p>
+			<p class="indent">The first time a heated weapon or piece of ammunition hits a target, it deals an extra 1d6 fire damage and is no longer heated.</p>
+		</description>
+		<sheet>
+			<description> You can heat one weapon or 2 pieces of ammunition in the forge as an action, or up to 10 weapons or 20 pieces of ammunition over the course of 1 minute. Weapons and ammunition placed in the forge must be made of metal, and remain heated for 10 minutes. The first time a heated weapon or piece of ammunition hits a target, it deals an extra 1d6 fire damage and is no longer heated.</description>
+		</sheet>
+	</element>
+    <!---->
+	<element name="Fire Burst" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FIRE_BURST">
+		<description>
+			<p>Beginning at 14th level, you can release the heat of your portable forge in a colossal burst. While holding your forge, you can cast the <i>fireball</i> spell, centered on yourself, without using a spell slot or material components, using your Masterwork save DC. You take no damage from this spell.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest. </p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description> While holding your forge, you can cast the fireball spell, centered on yourself, without using a spell slot or material components, DC{{masterwork:dc}} save. You take no damage from this spell.  </description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+        </rules>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGE_PLATE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGE_PLATE" />
+		</rules>
+	</element>
+	<element name="Forge Plate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGE_PLATE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_FG_FORGE_PLATE</supports>
+		<description>
+			<h5>FORGE PLATE</h5>
+			<p><em>Legendary armor property</em></p>
+			<p><b>Components:</b> Masterwork suit of exotic heavy armor</p>
+			<p>You build a miniature furnace into this suit of armor, as well as layers of heat-dispersing materials. While wearing this armor, you have immunity to fire damage.</p>
+            <p class="indent">Additionally, when you take the Dash action, you can choose to cast the <i>wall of fire</i> spell without using a spell slot or spell components as part of that action. The wall appears at the end of your turn. Instead of creating a straight or ringed wall of fire, the wall follows the path along the ground over which you moved on your turn, up to a distance of 60 feet. Once you use this property, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Components: Masterwork suit of exotic heavy armor &#13;
+			You build a miniature furnace into this suit of armor, as well as layers of heat-dispersing materials. While wearing this armor, you have immunity to fire damage. &#13;
+            Additionally, when you take the Dash action, you can choose to cast the wall of fire spell without using a spell slot or spell components as part of that action. The wall appears at the end of your turn. Instead of creating a straight or ringed wall of fire, the wall follows the path along the ground over which you moved on your turn, up to a distance of 60 feet. Once you use this property, you can't use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+</elements>

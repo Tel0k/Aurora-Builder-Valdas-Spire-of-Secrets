@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Craftsman</name>
+		<description>The Craftsman from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="class-craftsman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-craftsman.xml" />
+		</update>
+	</info>
+
+	<element name="Craftsman" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_CRAFTSMAN">
+		<description>
+			<p>A burly dwarf brings her hammer down on a glowing hunk of steel, launching a shower of sparks into the air. The room resonates with the sound of metal impacting metal, while the bright, hot piece of steel in her tongs begins to take shape.</p>
+			<p class="indent">An elf threads a needle with an impossibly thin metallic wire, preparing to set the stitches into what looks to be leather armor, but made of dragon's hide. Once satisfied with the measurements, he proceeds with a flurry of dexterous needlework.</p>
+			<p class="indent">A gnome with an intricate set of goggles examines the stock for her latest work: a portable ballista. She examines the gearing and loading crank, ensures the tension on the bowstring, and scans the bolt rail for imperfections. She smiles, for she knows her work is without flaw.</p>
+			<p class="indent">Craftsmen are virtuoso artisans and genius inventors. Not content merely creating masterwork pieces of weapons and armor, they invent and engineer ingenious devices and singularly deadly weapons.</p>
+			<h4>Master of Craft</h4>
+			<p>Artisans of all types are an integral part of every culture: buildings must be erected, pots must be sent to the kiln, tools must be forged. Despite their pervasiveness, master craftsmen are still as rare as they are prized. These artisans, creators, and inventors can smith items of mythic quality, and can solve most any problem simply by using the right tool and the appropriate amount of force.</p>
+			<h4>Secret of Steel</h4>
+			<p>Adventuring craftsmen come in many varieties, but nearly all leverage their advanced knowledge of metallurgy, smelting, and construction to forge arms and armor rarely seen, even by other adventurers. The smiths test their schematics and designs themselves, building prototypes and experimental gear that can later be refined into mass-produced items.</p>
+			<h4>CREATING A CRAFTSMAN</h4>
+			<p>When you create your craftsman, the most important thing to consider is your crafting expertise. Though all craftsmen of adventuring stock can stitch leather armor, forge weapons, and tinker with magic items, only those who dedicate themselves to a single craft can attain legendary works. Each type of craftsman, from the practical to the wildly eccentric, have their place, but no craftsman can specialize in everything.</p>
+			<p class="indent">Moreover, few craftsmen are self-taught. Most learn the finer points of their craft under the tutelage of a master artisan (whether or not their master was a craftsman, in the conventional sense). Did you study under a master, and if so, what drove you to apprentice underneath them?</p>
+			<p class="indent">Lastly, consider how you view your work. Are you pragmatic, viewing your creations as tools to serve a purpose? Are you artistic, striving to craft pieces of unrivaled beauty and perfection? Or are you experimental, tinkering and building with wild abandon to break new ground and innovate on established norms?</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can make a craftsman quickly by following these suggestions. Make Strength or Dexterity your highest ability score, followed by Intelligence. Next, select Athletics and Investigation as your skills. Finally, choose a background befitting of your history of craftsmanship.</p>
+			<h2>CLASS FEATURES</h2>
+			<p>As an Craftsman, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per Craftsman level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Craftsman level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> All armor, shields</li>
+				<li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+				<li><strong>Tools:</strong> All artisan's tools</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Constitution, Intelligence</li>
+				<li><strong>Skills:</strong> Choose two from: Arcana, Athletics, History, Investigation, Medicine, Perception, and Persuasion</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>A set of craftman's tools</li>
+				<li>A shield and (a) chain mail, (b) leather armor, or (c) scale mail</li>
+				<li>A dagger and (a) a warhammer or (b) any simple weapon</li>
+				<li>(a) a light crossbow and 20 bolts or (b) a shortbow and 20 arrows</li>
+				<li>A dungeoneer's pack</li>
+			</ul>
+			<h5 class="caption">THE CRAFTSMAN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-60 left">Features</td><td class="col-10">Active Crafting</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Exotic Proficiencies, Active Crafting</td><td>25 gp</td></tr>
+				<tr><td> 2nd</td><td class="left">Masterwork (Apprentice properties), Tool Belt</td><td>25 gp</td></tr>
+				<tr><td> 3rd</td><td class="left">Artisans' Guild</td><td>50 gp</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>75 gp</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack, Masterwork (Journeyman properties)</td><td>100 gp</td></tr>
+				<tr><td> 6th</td><td class="left">Folded Steel</td><td>125 gp</td></tr>
+				<tr><td> 7th</td><td class="left">Artisans' Guild feature</td><td>150 gp</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>175 gp</td></tr>
+				<tr><td> 9th</td><td class="left">Eye for Quality</td><td>200 gp</td></tr>
+				<tr><td>10th</td><td class="left">Artisans' Guild feature</td><td>225 gp</td></tr>
+				<tr><td>11th</td><td class="left">Masterwork (Master properties)</td><td>250 gp</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>275 gp</td></tr>
+				<tr><td>13th</td><td class="left">Flawless Construction</td><td>300 gp</td></tr>
+				<tr><td>14th</td><td class="left">Artisans' Guild feature</td><td>325 gp</td></tr>
+				<tr><td>15th</td><td class="left">Uncanny Tool Belt</td><td>350 gp</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>375 gp</td></tr>
+				<tr><td>17th</td><td class="left">Masterwork (Legendary properties)</td><td>400 gp</td></tr>
+				<tr><td>18th</td><td class="left">Artisans' Guild feature</td><td>425 gp</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>450 gp</td></tr>
+				<tr><td>20th</td><td class="left">Magnum Opus</td><td>500 gp</td></tr>
+			</table>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXOTIC_PROFICIENCIES" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ACTIVE_CRAFTING" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MASTERWORK" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_TOOL_BELT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ARTISANS_GUILD" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXTRA_ATTACK" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_FOLDED_STEEL" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EYE_FOR_QUALITY" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_FLAWLESS_CONSTRUCTION" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_UNCANNY_TOOL_BELT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MAGNUM_OPUS" />
+		</description>
+		<setters>
+			<set name="short">Decisive leaders and brilliant strategists, captains inspire their allies to greatness.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Craftsman)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXOTIC_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ACTIVE_CRAFTING" level="1" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MASTERWORK" level="2" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_TOOL_BELT" level="2" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ARTISANS_GUILD" level="3" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_FOLDED_STEEL" level="6" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EYE_FOR_QUALITY" level="9" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_FLAWLESS_CONSTRUCTION" level="13" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_UNCANNY_TOOL_BELT" level="15" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MAGNUM_OPUS" level="20" />
+		</rules>
+	</element>
+	<element name="Exotic Proficiencies" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXOTIC_PROFICIENCIES">
+		<description>
+			<p>Starting at 1st level, you gain proficiency with exotic weapons and exotic armor, which are unconventional, yet effective items with which no other class is proficient. If a feature or effect grants proficiency with a weapon or suit of armor, it doesn't grant proficiency with exotic weapons or exotic armor, unless otherwise stated.</p>
+		</description>
+		<sheet>
+			<description> You gain proficiency with exotic weapons and exotic armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_WEAPONS" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR" />
+		</rules>
+	</element>
+	<element name="Active Crafting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ACTIVE_CRAFTING">
+		<description>
+			<p>Also at 1st level, you can craft one nonmagical item each day when you take a long rest, without losing the benefits of a long rest. You pay half the item's gold piece cost in materials, up to 25 gp. If an item costs more than 25 gp in materials, you can finish the item by working on it for multiple days, spending 25 gp each day until the item is completed.</p>
+			<p class="indent">As you gain levels in this class, your crafting speed increases, allowing you to spend more on materials for each day of crafting, as shown in the Active Crafting column of the Craftsman table. </p>
+			<p class="indent">Items you craft using this feature are worth half their gold piece cost when sold. This means that you can sell an item to refund its cost in materials, but not to make a profit.</p>
+		</description>
+		<sheet>
+			<description> You can craft one nonmagical item each day when you take a long rest, without losing the benefits of a long rest. You pay half the item's gold piece cost in materials, up to {{crafting:value}}gp. If an item costs more than {{crafting:value}}gp in materials, you can finish the item by working on it for multiple days, spending {{crafting:value}}gp each day until the item is completed. Items crafted this way, are worth half their gold piece cost when sold. This means that you can sell an item to refund its cost in materials, but not to make a profit.</description>
+		</sheet>
+		<rules>
+			<stat name="crafting:value" value="25" bonus="crafting" level="1" />
+			<stat name="crafting:value" value="50" bonus="crafting" level="3" />
+			<stat name="crafting:value" value="75" bonus="crafting" level="4" />
+			<stat name="crafting:value" value="100" bonus="crafting" level="5" />
+			<stat name="crafting:value" value="125" bonus="crafting" level="6" />
+			<stat name="crafting:value" value="150" bonus="crafting" level="7" />
+			<stat name="crafting:value" value="175" bonus="crafting" level="8" />
+			<stat name="crafting:value" value="200" bonus="crafting" level="9" />
+			<stat name="crafting:value" value="225" bonus="crafting" level="10" />
+			<stat name="crafting:value" value="250" bonus="crafting" level="11" />
+			<stat name="crafting:value" value="275" bonus="crafting" level="12" />
+			<stat name="crafting:value" value="300" bonus="crafting" level="13" />
+			<stat name="crafting:value" value="325" bonus="crafting" level="14" />
+			<stat name="crafting:value" value="350" bonus="crafting" level="15" />
+			<stat name="crafting:value" value="375" bonus="crafting" level="16" />
+			<stat name="crafting:value" value="400" bonus="crafting" level="17" />
+			<stat name="crafting:value" value="425" bonus="crafting" level="18" />
+			<stat name="crafting:value" value="450" bonus="crafting" level="19" />
+			<stat name="crafting:value" value="500" bonus="crafting" level="20" />
+		</rules>
+	</element>
+	<element name="Masterwork" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MASTERWORK">
+		<description>
+			<p>At 2nd level, you begin to learn the deeper intricacies of weapon and armor craftsmanship.</p>
+			<h5>MASTERWORK EQUIPMENT</h5>
+			<p>As a craftsman, you are capable of creating weapons and armor of the utmost quality; such creations are known as masterwork items. To create a masterwork version of an item, add 50 gp to the cost in materials you pay to craft the item. Masterwork weapons you create have a +1 bonus to attack rolls. A magic weapon that adds a bonus to your attack and damage rolls doesn't add this bonus to attack rolls.</p>
+			<h5>MASTERWORK PROPERTIES</h5>
+			<table>
+				<thead>
+					<tr><td>Properties</td><td>Craftsman Level</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>Apprentice</td><td>2nd</td><td>—</td></tr>
+				<tr><td>Journeyman</td><td>5th</td><td>100 gp</td></tr>
+				<tr><td>Master</td><td>11th</td><td>250 gp</td></tr>
+				<tr><td>Legendary</td><td>17th</td><td>400 gp</td></tr>
+			</table>
+			<h5>MASTERWORK PROPERTIES</h5>
+			<p>Masterwork weapons and armor can be modified with masterwork properties, advanced modifications that transform them into truly unique weapons and armor. Masterwork properties are separated into 4 levels: Apprentice, Journeyman, Master, and Legendary. You can apply any number of Apprentice properties to a masterwork weapon, or up to three Apprentice properties to a masterwork suit of armor. Additionally, you can apply one Journeyman, one Master, and one Legendary property to each masterwork item.</p>
+			<p class="indent">If you add a Master or Legendary property to an item, only you can use it.</p>
+            <div class="sidebar">
+				<h5>Damage Steps</h5>
+                <p>If a masterwork property increases or decreases a weapon's damage, it is moved up or down one step on the following scale, down to a minimum of 1d4:</p>
+                <br />
+                <p class="indent">1d4 → 1d6 → 1d8 → 1d10 → 1d12 or 2d6</p>
+                <br />
+                <p>Further increases add a +1 bonus to the weapon's damage roll.</p>
+                <p class="indent">If the weapon being modified has 2 damage dice (such as a greatsword or a firearm), the scale is instead:</p>
+                <p class="indent">2d4 → 2d4 + 1 → 2d6 → 2d6 + 1 → 2d8 → 2d8 + 1 → 2d10 → 2d10 + 1 → 2d12</p>
+			</div>
+            <h5>MODIFYING EQUIPMENT</h5>
+			<p>Using the Active Crafting feature, you can modify a weapon or suit of armor when you take a long rest. This allows you to do the following:</p>
+			<p class="indent"><strong>Improving Equipment.</strong>You can make any nonmagical weapon or suit of armor masterwork for a cost of 50 gp in materials.</p>
+			<p class="indent"><strong>Adding Masterwork Properties.</strong>Adding masterwork properties of Journeyman level or higher requires a cost in gold pieces and also requires you to be of a high enough level in this class, as shown in the Masterwork Properties table. When you learn a new level of masterwork properties, you can apply a property from that level to a masterwork item at no cost.</p>
+			<p class="indent">Check the Weapons Exceptions sidebar later in this chapter before adding masterwork properties to a weapon.</p>
+			<p class="indent">Whenever you modify the properties of a masterwork weapon, you can change its damage type to bludgeoning, piercing, or slashing damage, if its damage was already one of these types.</p>
+			<div class="sidebar">
+				<h5>WEAPON EXCEPTIONS</h5>
+				<p>Some weapons, in the name of verisimilitude, have unusual balancing that makes them slightly stronger or weaker compared to weapons a craftsman might usually craft. If you modify one of these weapons as a craftsman, first remove any of the weapon's Special properties, then check following rules:</p>
+				<p class="indent"><strong>Assault Rifle.</strong> Increase the weapon's damage to 2d6 + 1 and decrease its reload to 10.</p>
+				<p class="indent"><strong>Handaxe.</strong> Decrease the weapon's damage to 1d4.</p>
+				<p class="indent"><strong>Hunting Rifle.</strong> Increase the weapon's damage to 2d6 + 1.</p>
+				<p class="indent"><strong>Bayonet, Whip.</strong> Increase the weapon's damage to 1d6.</p>
+				<p class="indent"><strong>Blowgun, Bolas, Bomb, Net.</strong> This weapon can't be modified by masterwork properties.</p>
+				<p class="indent"><strong>Boomerang, Doomerang, Throwing Dagger.</strong>  Add the Aerodynamic masterwork property.</p>
+				<p class="indent"><strong>Catchpole, Trident.</strong> Increase the weapon's damage to 1d8.</p>
+				<p class="indent"><strong>Gatling Gun.</strong> Increase the weapon's damage to 2d8 + 1, and decrease its reload to 10.</p>
+				<p class="indent"><strong>Handgun, Revolver.</strong> Decrease the weapon's range to 50/200 ft.</p>
+				<p class="indent"><strong>Javelin.</strong> Decrease the weapon's range to 20/60 ft.</p>
+				<p class="indent"><strong>Lance.</strong> Add the Two-Handed property and decrease the weapon's damage to 1d8.</p>
+				<p class="indent"><strong>Light Cannon.</strong> Increase the weapon's damage to 2d12 + 1.</p>
+				<p class="indent"><strong>Longbow.</strong> Decrease the weapon's range to 100/400 ft.</p>
+				<p class="indent"><strong>Magnum, Explosive Magnum.</strong> Add the Two-Handed property and increase the weapon's range to 100/400 ft.</p>
+				<p class="indent"><strong>Musket, Volley Gun.</strong>. Increase the weapon's damage to 2d8 + 1.</p>
+				<p class="indent"><strong>Parlor Gun.</strong> Increase the weapon's damage to 2d4 + 1.</p>
+				<p class="indent"><strong>Rocket Launcher.</strong> Increase the weapon's damage to 2d12 + 1 and add the Mounted property.</p>
+			</div>
+			<p class="indent"><strong>Removing Properties.</strong> You can remove any properties of a masterwork item, including those a weapon had when you first created it. You can't remove a property from an item that is a prerequisite for another of the item's properties. If you replace a property of Journeyman level or higher with a property of the same level over the same long rest, you can do so without an additional cost in materials.</p>
+			<div class="sidebar">
+				<h5>CHANGING WEAPON RANGES</h5>
+				<p>A ranged weapon's long range is either three times its normal range or four times its normal range, depending on the type of projectile it fires. When a masterwork property changes a weapon's normal range, change the long range by three or four times the amount, as appropriate to the weapon.</p>
+				<p class="indent">You can't apply a weapon property if it would reduce a ranged weapon's normal range to 0 feet, and you can't remove the Ammunition or Thrown property of a ranged weapon.</p>
+			</div>
+			<h5>CRAFTING ABILITY</h5>
+			<p>Intelligence is the primary ability you use when crafting items. You use your Intelligence modifier when setting the saving throw DC for items that you craft.</p>
+			<center>
+				<p><strong>Masterwork save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description> You are capable of creating weapons and armor of the utmost quality; such creations are known as masterwork items. You can improve weapons and armor, add or remove masterwork properties. DC={{masterwork:dc}}
+			[See Compendium entry or the book for a detailed description.]</description>
+		</sheet>
+		<rules>
+			<stat name="masterwork:dc" value="8" />
+			<stat name="masterwork:dc" value="proficiency" />
+			<stat name="masterwork:dc" value="intelligence:modifier"/>
+		</rules>
+	</element>
+    <!---->
+	<element name="Tool Belt" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_TOOL_BELT">
+		<description>
+			<p>By 2nd level, you always have the right tool at hand. You can use your action to retrieve a piece of nonmagical gear from your belt, pack, cart, or wherever you keep your tools, even if you didn't have it in your inventory before. The item's gold piece cost can be up to 50 gp. You can't use this feature to produce a weapon, suit of armor, shield, or potion. An item retrieved in this way becomes lost in your inventory and vanishes when you finish a long rest.</p>
+			<p class="indent">You can use this ability a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{number:calculation}}/Long Rest">
+			<description>You can retrieve a piece of nonmagical gear from wherever you keep your tools, even if you didn't have it in your inventory before. The item's gp cost can be up to 50 gp. You can't use this feature to produce a weapon, suit of armor, shield, or potion. An item retrieved in this way becomes lost in your inventory and vanishes when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="number:top" value="1" bonus="top" />
+			<stat name="number:top" value="intelligence:modifier" bonus="top" />
+			<stat name="number:calculation" value="number:top" bonus="calculation" />
+	  	</rules>
+	</element>
+	<element name="Artisans' Guild" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ARTISANS_GUILD">
+		<description>
+			<p>At 3rd level, you join an Artisans' Guild. Select one of the Guilds from those listed below; you gain the 3rd level feature of that guild. You gain an additional Guild feature at 7th, 10th, 14th and 18th level.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Artisans' Guild" supports="Guild" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ABILITY_SCORE_IMPROVEMENT">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Craftsman 4)" supports="Improvement Option,Craftsman,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Craftsman 8)" supports="Improvement Option,Craftsman,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Craftsman 12)" supports="Improvement Option,Craftsman,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Craftsman 16)" supports="Improvement Option,Craftsman,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Craftsman 19)" supports="Improvement Option,Craftsman,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description> You can attack twice whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Folded Steel" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_FOLDED_STEEL">
+		<description>
+			<p>At 6th level, you discover or create new processes for making your masterwork gear even stronger than before. Masterwork weapons crafted or modified by you count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>Masterwork weapons crafted or modified by you count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+	<element name="Eye for Quality" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EYE_FOR_QUALITY">
+		<description>
+			<p>Starting at 9th level, you can cast the <i>identify</i> spell at will, without using a spell slot or spell components. Additionally, when you cast the spell, you also appraise the target item, learning its market value in gold pieces.</p>
+		</description>
+		<sheet>
+			<description> You can cast the identify spell at will, without using a spell slot or spell components. Additionally, when you cast the spell, you also appraise the target item, learning its market value in gold pieces.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+		</rules>
+	</element>
+	<element name="Flawless Construction" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_FLAWLESS_CONSTRUCTION">
+		<description>
+			<p>Beginning at 13th level, masterwork items you create don't rust, pit, fray at the edges, or otherwise show signs of aging. Additionally, they have resistance to all damage. Items you create can only be destroyed by effects that can destroy magic items.</p>
+		</description>
+		<sheet>
+			<description> Masterwork items you create don't show signs of aging. They have resistance to all damage. Items you create can only be destroyed by effects that can destroy magic items.</description>
+		</sheet>
+	</element>
+	<element name="Uncanny Tool Belt" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_UNCANNY_TOOL_BELT">
+		<description>
+			<p>By 15th level, you have a knack for finding the most useful things buried away in your cart. You can produce a single common or uncommon magic item from your tool belt. The item becomes lost in your inventory and vanishes when you finish a long rest. Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can produce a single common or uncommon magic item from your tool belt. The item becomes lost in your inventory and vanishes when you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Magnum Opus" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MAGNUM_OPUS">
+		<description>
+			<p>At 20th level, you complete an object of unparalleled majesty. You work feverishly for a period of 30 days to create a single magic item of very rare or legendary rarity. This item is tied to your very soul: regardless of type, you are always considered attuned to it, and no other creature can attune to it while you are alive. This item doesn't count against your maximum number of attuned items, and you ignore all attunement requirements for the item. As long as you are on the same plane of existence as your item, you can use a bonus action to call it to your hand or onto your body (as appropriate). You can only craft a Magnum Opus once.</p>
+		</description>
+		<sheet>
+			<description>You work feverishly for a period of 30 days to create a single magic item of very rare or legendary rarity. You are always considered attuned to it, and no other creature can attune to it while you are alive. This item doesn't count against your maximum number of attuned items, and you ignore all attunement requirements for the item. As long as you are on the same plane of existence as your item, you can use a bonus action to call it to your hand or onto your body (as appropriate). You can only craft a Magnum Opus once.</description>
+		</sheet>
+	</element>
+</elements>

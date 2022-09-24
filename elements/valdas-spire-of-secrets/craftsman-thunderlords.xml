@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Thunderlords' Guild</name>
+		<description>The Thunderlords' Guild from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-thunderlords.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-thunderlords.xml" />
+		</update>
+	</info>
+
+	<element name="Thunderlords' Guild" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_THUNDERLORDS_GUILD">
+		<supports>Guild</supports>
+		<description>
+			<p>From the earliest days of life, storms (and particularly lightning) have struck the creatures caught in them with awe and terror. The Thunderlords, by contrast, draw wild inspiration from the majesty of nature, and seek to, quite literally, capture lightning in a bottle.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_POWER_CELL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_SHOCK" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_LIGHTNING_ROD" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_STATIC_CHARGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_HIGH_VOLTAGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_LEGENDARY_PROPERTY" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_POWER_CELL" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_SHOCK" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_LIGHTNING_ROD" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_STATIC_CHARGE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_HIGH_VOLTAGE" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_LEGENDARY_PROPERTY" level="18" />
+		</rules>
+	</element>
+    <element name="Power Cell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_POWER_CELL">
+		<description>
+			<p>Starting when you join this guild at 3rd level, you construct a lightning-generating power cell, which comes connected to a set of conduit gauntlets. When you gain these items, you are assumed to have been working on them in your spare time, only bringing them to full functionality when you choose this subclass. If these pieces of equipment are lost or damaged, you can replace them over the course of a long rest with 100 gp worth of materials.</p>
+			<p class="indent"><b>Charge Points.</b> Your power cell gives you a number of charge points, which represent the electrical energy stored within your power cell. Your maximum number of charge points is equal to half your craftsman level, rounded up. You can spend these points to generate various electrical effects through your power cell. You regain all expended charge points when you finish a short or long rest.</p>
+			<p class="indent"><b>Using Charge Points.</b> Once per turn when you hit a creature with an attack that deals lightning damage, you can spend 1 or more charge points, up to a maximum number equal to your proficiency bonus, to enhance the power of the attack. When you do so, choose one of the following effects:</p>
+            <h6>ARC</h6>
+            <p>Lightning arcs to nearby targets. Choose a number of creatures equal to the number of charge points you spend that are within 15 feet of the target of your attack. Each of the chosen creatures must make a Dexterity saving throw against your Masterwork save DC. On a failed save, a creature takes lightning damage equal to 1d6 + your Intelligence modifier.</p>
+            <h6>DISCHARGE</h6>
+			<p>The creature you hit takes an extra 1d6 lightning damage for each charge point you spend.</p>
+            <h6>JOLT</h6>
+			<p>The creature you hit can't take reactions until the start of your next turn.</p>
+		</description>
+		<sheet>
+            <description>You construct a power cell connected to a set of conduit gauntlets. If these pieces of equipment are lost or damaged, you can replace them over the course of a long rest with 100 gp worth of materials. Your power cell gives you {{charge-points}} Charge Points. Once per turn when you hit a creature with an attack that deals lightning damage, you can spend 1 or more charge points, up to a maximum of {{proficiency}}. You regain all expended charge points when you finish a short or long rest. When you do so, choose one of the following effects: </description>
+        </sheet>
+		<rules>
+			<stat name="charge-points" value="level:craftsman:half:up" />
+            <select type="Archetype Feature" name="Power Cell 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ARC" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ARC" />
+			<select type="Archetype Feature" name="Power Cell 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_DISCHARGE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_DISCHARGE" />
+            <select type="Archetype Feature" name="Power Cell 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_JOLT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_JOLT" />
+        </rules>
+	</element>
+    <element name="Arc" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ARC">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ARC</supports>
+		<compendium display="false" />
+		<description>
+			<p>Lightning arcs to nearby targets. Choose a number of creatures equal to the number of charge points you spend that are within 15 feet of the target of your attack. Each of the chosen creatures must make a Dexterity saving throw against your Masterwork save DC. On a failed save, a creature takes lightning damage equal to 1d6 + your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description> Lightning arcs to nearby targets. Choose a number of creatures equal to the number of charge points you spend that are within 15ft of the target of your attack. Each of the chosen creatures must make a Dexterity saving throw against your Masterwork save DC. On a failed save, a creature takes lightning damage equal to 1d6 + your Intelligence modifier.</description>
+		</sheet>
+	</element>
+    <element name="Discharge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_DISCHARGE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_DISCHARGE</supports>
+		<compendium display="false" />
+		<description>
+			<p>The creature you hit takes an extra 1d6 lightning damage for each charge point you spend.</p>
+		</description>
+		<sheet>
+			<description> The creature you hit takes an extra 1d6 lightning damage for each charge point you spend.</description>
+		</sheet>
+	</element>
+    <element name="Jolt" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_JOLT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_JOLT</supports>
+		<compendium display="false" />
+		<description>
+			<p>The creature you hit can't take reactions until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description> The creature you hit can't take reactions until the start of your next turn.</description>
+		</sheet>
+	</element>
+    <!---->
+	<element name="Shock" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_SHOCK">
+		<description>
+			<p>At 3rd level, while you are carrying your power cell and it has at least 1 unspent charge point, you gain the following benefits:</p>
+            <ul>
+                <li>Weapons you wield can deal lightning damage instead of their normal damage type.</li>
+                <li>You know the shocking grasp and spare the dying cantrips. Intelligence is your spellcasting ability for these spells.</li>
+            </ul>
+		</description>
+		<sheet>
+            <description> While you are carrying your power cell and it has at least 1 unspent charge point, you gain the following benefits: &#13;
+            Weapons you wield can deal lightning damage instead of their normal damage type. &#13;
+            You know the shocking grasp and spare the dying cantrips. Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="intelligence" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" spellcasting="intelligence" />
+        </rules>
+	</element>
+	<element name="Lightning Rod" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_LIGHTNING_ROD">
+		<description>
+			<p>Starting at 7th level, while you're carrying your power cell, you have resistance to lightning damage. Additionally, whenever you take lightning damage from a hostile creature while wearing your gauntlets, you can regain 2 expended charge points as a reaction.</p>
+		</description>
+		<sheet>
+			<description> While you're carrying your power cell, you have resistance to lightning damage. Additionally, whenever you take lightning damage from a hostile creature while wearing your gauntlets, you can regain 2 expended charge points as a reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<!---->
+	<element name="Static Charge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_STATIC_CHARGE">
+		<description>
+			<p>Starting at 10th level, you can spend 10 minutes to store an electric charge in a weapon or suit of armor, or you can store an electric charge in up to 6 different weapons or suits of armor during a short or long rest. Unexpended charges dissipate after 1 hour. A charged weapon or suit of armor gains the following appropriate property:</p>
+			<p class="indent"><b>Charged Armor.</b> When you take damage from a melee attack, you can use your reaction to expend the charge, dealing 1d8 lightning damage to the creature that hit you.</p>
+			<p class="indent"><b>Charged Weapon.</b> When you hit a creature with an attack using this weapon, you can expend the charge to deal an extra 1d6 lightning damage to the target.</p>
+		</description>
+		<sheet>
+			<description> You can spend 10 minutes to store an electric charge in a weapon or suit of armor, or you can store an electric charge in up to 6 different weapons or suits of armor during a short or long rest. Unexpended charges dissipate after 1 hour. A charged weapon or suit of armor gains the following appropriate property:</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Static Charge 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_ARMOR" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_ARMOR" />
+			<select type="Archetype Feature" name="Static Charge 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_WEAPON" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_WEAPON" />
+        </rules>
+	</element>
+    <element name="Charged Armor" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_ARMOR">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_ARMOR</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take damage from a melee attack, you can use your reaction to expend the charge, dealing 1d8 lightning damage to the creature that hit you.</p>
+		</description>
+		<sheet>
+			<description> When you take damage from a melee attack, you can use your reaction to expend the charge, dealing 1d8 lightning damage to the creature that hit you.</description>
+		</sheet>
+	</element>
+    <element name="Charged Weapon" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_WEAPON">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_CHARGED_WEAPON</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an attack using this weapon, you can expend the charge to deal an extra 1d6 lightning damage to the target.</p>
+		</description>
+		<sheet>
+			<description> When you hit a creature with an attack using this weapon, you can expend the charge to deal an extra 1d6 lightning damage to the target.</description>
+		</sheet>
+	</element>
+    <!---->
+	<element name="High Voltage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_HIGH_VOLTAGE">
+		<description>
+			<p>Starting at 14th level, while carrying your power cell, you can spend 5 charge points to cast the <i>lightning bolt</i> spell without using a spell slot or material components. This spell uses your Masterwork save DC.</p>
+		</description>
+		<sheet usage="5 Charge points">
+			<description> While carrying your power cell, you can spend 5 charge points to cast the lightning bolt spell without using a spell slot or material components. DC{{masterwork:dc}} </description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
+        </rules>
+	</element>
+	<element name="Legendary Property" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_LEGENDARY_PROPERTY">
+		<compendium display="false" />
+		<description>
+			<p>At 18th level, you achieve the peak of your craft. You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</p>
+		</description>
+		<sheet>
+			<description> You learn the following Legendary masterwork property, which you can immediately apply to a masterwork weapon:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Legendary Property" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ELECTROSHOCK" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ELECTROSHOCK" />
+		</rules>
+	</element>
+	<element name="Electroshock" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ELECTROSHOCK">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_CRAFTSMAN_TLG_ELECTROSHOCK</supports>
+		<description>
+			<h5>ELECTROSHOCK</h5>
+			<p><em>Legendary weapon property</em></p>
+			<p><b>Components:</b> Masterwork exotic weapon</p>
+			<p>When you hit a creature with this weapon, you can expend the weapon's built-in power cell to shock the target. The target must succeed on a Constitution saving throw against your Masterwork save DC or become stunned until the end of your next turn.</p>
+            <p class="indent">Once you use this property, you can't use it again with this weapon until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Components: Masterwork exotic weapon &#13;
+			When you hit a creature with this weapon, you can expend the weapon's built-in power cell to shock the target. The target must succeed on a DC{{masterwork:dc}} CON saving throw or become stunned until the end of your next turn. &#13;
+            Once you use this property, you can't use it again with this weapon until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+</elements>
