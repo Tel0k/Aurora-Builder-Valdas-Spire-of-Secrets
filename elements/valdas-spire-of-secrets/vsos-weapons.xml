@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>The new weapons from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
         <file name="vsos-weapons.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-weapons.xml" />
       	</update>
 	</info>
@@ -413,7 +413,488 @@
 		</setters>
 	</element>
     <!-- exotic -->
-
+	<element name="Assassin's Blade" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_ASSASSINS_BLADE">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_MHP_VSOS_WEAPON_PROPERTY_CONCEALABLE, ID_MHP_VSOS_WEAPON_PROPERTY_ELEGANT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ASSASSINS_BLADE</set>
+		</setters>
+	</element>
+	<element name="Bastard Sword" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BASTARD_SWORD">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d10</set>
+            <set name="versatile">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BASTARD_SWORD</set>
+		</setters>
+	</element>
+	<element name="Boomeraxe" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BOOMERAXE">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_MHP_VSOS_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOOMERAXE</set>
+		</setters>
+	</element>
+	<element name="Chain Whip" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CHAIN_WHIP">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CHAIN_WHIP</set>
+		</setters>
+	</element>
+	<element name="Dervish" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DERVISH">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">175</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DERVISH</set>
+		</setters>
+	</element>
+	<element name="Dire Flail" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DIRE_FLAIL">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DIRE_FLAIL</set>
+		</setters>
+	</element>
+	<element name="Double Sword" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DOUBLE_SWORD">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_MHP_VSOS_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">165</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_SWORD</set>
+		</setters>
+	</element>
+	<element name="Dwarven Waraxe" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DWARVEN_WARAXE">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_MHP_VSOS_WEAPON_PROPERTY_SUPERHEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DWARVEN_WARAXE</set>
+		</setters>
+	</element>
+	<element name="Elven Foil" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_ELVEN_FOIL">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_PARRYING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ELVEN_FOIL</set>
+		</setters>
+	</element>
+	<element name="Gnomish Hooked Hammer" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_GNOMISH_HOOKED_HAMMER">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_MHP_VSOS_WEAPON_PROPERTY_TRIP, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d10</set>
+            <set name="versatile">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GNOMISH_HOOKED_HAMMER</set>
+		</setters>
+	</element>
+	<element name="Greatspear" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_GREATSPEAR">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR</set>
+		</setters>
+	</element>
+	<element name="Grim Scythe" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_GRIM_SCYTE">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d10</set>
+            <set name="versatile">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GRIM_SCYTE</set>
+		</setters>
+	</element>
+	<element name="Hook Sword" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_HOOK_SWORD">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_MHP_VSOS_WEAPON_PROPERTY_TRIP, ID_MHP_VSOS_WEAPON_PROPERTY_ELEGANT, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_HOOK_SWORD</set>
+		</setters>
+	</element>
+	<element name="Meteor Chain" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_METEOR_CHAIN">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_TRIP</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_CHAIN</set>
+		</setters>
+	</element>
+	<element name="Mountain Cleaver" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_MOUNTAIN_CLEAVER">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_MHP_VSOS_WEAPON_PROPERTY_MASSIVE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_SUPERHEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="50">50 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_MOUNTAIN_CLEAVER</set>
+		</setters>
+	</element>
+	<element name="Parrying Dagger" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_PARRYING_DAGGER">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_PARRYING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_PARRYING_DAGGER</set>
+		</setters>
+	</element>
+	<element name="Rocket Fist" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_ROCKET_FIST">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_MHP_VSOS_WEAPON_PROPERTY_FIST, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_MHP_VSOS_WEAPON_PROPERTY_RETURNING, ID_MHP_VSOS_WEAPON_PROPERTY_ROCKET</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ROCKET_FIST</set>
+		</setters>
+	</element>
+	<element name="Spiked Chain" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_SPIKED_CHAIN">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_MHP_VSOS_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_TRIP</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">160</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SPIKED_CHAIN</set>
+		</setters>
+	</element>
+	<element name="Spring Glove" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_SPRING_GLOVE">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_MHP_VSOS_WEAPON_PROPERTY_FIST</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SPRING_GLOVE</set>
+		</setters>
+	</element>
+	<element name="Zweihander" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_ZWEIHANDER">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_SUPERHEAVY, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="16">16 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ZWEIHANDER</set>
+		</setters>
+	</element>
+    <element name="Bomb" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BOMB">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_MHP_VSOS_WEAPON_PROPERTY_SPECIAL_BOMB, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="fire">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB</set>
+		</setters>
+	</element>
+    <element name="Crossbow, Automatic" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CROSSBOW_AUTOMATIC">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_VSOS_WEAPON_PROPERTY_AUTOMATIC, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_10_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">60/240</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_AUTOMATIC</set>
+            <set name="reload">10</set>
+		</setters>
+	</element>
+    <element name="Crossbow, Sniper" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CROSSBOW_SNIPER">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_SIGHTED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">110</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/600</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_SNIPER</set>
+		</setters>
+	</element>
+	<element name="Crossbow, Wrist" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CROSSBOW_WRIST">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_MHP_VSOS_WEAPON_PROPERTY_CONCEALABLE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_WRIST</set>
+		</setters>
+	</element>
+	<element name="Demolition Bow" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DEMOLITION_BOW">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="fire">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DEMOLITION_BOW</set>
+		</setters>
+	</element>
+	<element name="Doomerang" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DOOMERANG">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">155</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="fire">1d6</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DOOMERANG</set>
+		</setters>
+	</element>
+	<element name="Edged Card" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_EDGED_CARD">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_MHP_VSOS_WEAPON_PROPERTY_ELEGANT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">-</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EDGED_CARD</set>
+		</setters>
+	</element>
+	<element name="Elven Longbow" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_EDGED_CARD">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ELVEN_LONGBOW</set>
+		</setters>
+	</element>
+	<element name="Goliath Sling" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_GOLIATH_SLING">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_TENSION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">155</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="bludgeoning">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GOLIATH_SLING</set>
+		</setters>
+	</element>
+	<element name="Greatbow" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_GREATBOW">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_TENSION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GREATBOW</set>
+		</setters>
+	</element>
+	<element name="Portable Ballista" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_PORTABLE_BALLISTA">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_MOUNTED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_PORTABLE_BALLISTA</set>
+		</setters>
+	</element>
+	<element name="Shotbow" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_SHOTBOW">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">115</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">1d8</set>
+            <set name="scatter">1d12</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SHOTBOW</set>
+		</setters>
+	</element>
+	<element name="Twinbow" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_TWINBOW">
+		<supports>ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_TWINSHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_TWINBOW</set>
+		</setters>
+	</element>
 
     <!-- FIREARMS -->
     <!-- simple -->
@@ -706,5 +1187,179 @@
 		</setters>
 	</element>
     <!-- exotic -->
-
+	<element name="Duck's Foot" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DUCKS_FOOT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_MHP_VSOS_WEAPON_PROPERTY_DRY, ID_MHP_VSOS_WEAPON_PROPERTY_TWINSHOT, ID_MHP_VSOS_WEAPON_PROPERTY_MISFIRE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">225</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_DUCKS_FOOT</set>
+            		<set name="reload">4</set>
+		</setters>
+	</element>
+	<element name="Volley Gun" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_VOLLEY_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_10_SHOTS_2_ACTIONS, ID_MHP_VSOS_WEAPON_PROPERTY_DRY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_MISFIRE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_VOLLEY_GUN</set>
+            		<set name="reload">10 (2 actions)</set>
+		</setters>
+	</element>
+	<element name="Double Handgun" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DOUBLE_HANDGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_MHP_VSOS_WEAPON_PROPERTY_TWINSHOT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DOUBLE_HANDGUN</set>
+            		<set name="reload">6</set>
+		</setters>
+	</element>
+	<element name="Dragon Rifle" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_DRAGON_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_MHP_VSOS_WEAPON_PROPERTY_DRY, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">225</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="fire">2d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DRAGON_RIFLE</set>
+		</setters>
+	</element>
+	<element name="Quadruple-Barrel Shotgun" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_QUADRUPLE_BARREL_SHOTGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="16">16 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">2d8</set>
+            		<set name="scatter">2d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_QUADRUPLE_BARREL_SHOTGUN</set>
+            		<set name="reload">4</set>
+		</setters>
+	</element>
+	<element name="Anti-Material Rifle" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_ANTI_MATERIAL_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_SIGHTED, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">2d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ANTI_MATERIAL_RIFLE</set>
+		</setters>
+	</element>
+	<element name="Assault Shotgun" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_ASSAULT_SHOTGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_AUTOMATIC, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_8_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_MHP_VSOS_WEAPON_PROPERTY_HEAT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">10/30</set>
+			<set name="damage" type="piercing">2d8</set>
+            		<set name="scatter">2d10</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ASSAULT_SHOTGUN</set>
+            		<set name="reload">8</set>
+		</setters>
+	</element>
+	<element name="Briefcase Gun" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BRIEFCASE_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_CONCEALABLE, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_10_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_BRIEFCASE_GUN</set>
+            		<set name="reload">8</set>
+		</setters>
+	</element>
+	<element name="Magnum, Explosive" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BRIEFCASE_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1250</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">50/200</set>
+			<set name="damage" type="fire">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MAGNUM_EXPLOSIVE</set>
+            		<set name="reload">4</set>
+		</setters>
+	</element>
+	<element name="Multi-Rocket Launcher" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_MULTI_ROCKET_LAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1750</set>
+			<set name="weight" lb="22">22 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="fire">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MULTI_ROCKET_LAUNCHER</set>
+		</setters>
+	</element>
+	<element name="Revolving Grenade Launcher" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_GRENADE_LAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1250</set>
+			<set name="weight" lb="16">16 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="fire">2d8</set>
+			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_REVOLVING_GRENADE_LAUNCHER</set>
+            		<set name="reload">6</set>
+		</setters>
+	</element>
 </elements>
