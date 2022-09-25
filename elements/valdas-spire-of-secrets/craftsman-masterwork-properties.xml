@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Masterwork Properties</name>
+		<description>The Masterwork Properties from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="craftsman-masterwork-properties.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-masterwork-properties.xml" />
+		</update>
+	</info>
+<!-- WEAPON PROPERTIES -->
+<!-- Apprentice Weapon Properties -->
+	<element name="Apprentice Weapon Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_APPRENTICE_WEAPON_PROPERTIES">
+		<description>
+			<p>You can apply any number of Apprentice properties to a masterwork weapon.</p>
+				<div class="sidebar">
+				<h5>AERODYNAMIC</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork weapon with the Thrown property</p>
+				<p>This weapon's normal range increases by 40 feet and its long range increases accordingly (see "Changing Weapon Ranges" sidebar in "Masterwork" feature).</p>
+			</div>
+			<div class="sidebar">
+				<h5>AUTOMATIC</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork ranged weapon with the Reload property</p>
+				<p>This weapon gains the Automatic property and its damage decreases by one step. The weapon's normal range decreases by 20 feet and its long range decreases accordingly.</p>
+				<p class="indent"><b>Automatic.</b> When you make an attack with this weapon on your turn, you can choose to make two attacks instead. These attacks are always made with disadvantage, regardless of circumstance. These attacks use twice the normal amount of ammunition.</p>
+			</div>
+			<div class="sidebar">
+				<h5>BALANCED</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon with the Heavy property</p>
+				<p>Small creatures wielding this weapon don't have disadvantage on attack rolls with it as a result of its Heavy property.</p>
+			</div>
+			<div class="sidebar">
+				<h5>CONCEALABLE</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork weapon with the Light property</p>
+				<p>This weapon gains the Concealable property.</p>
+				<p class="indent"><b>Concealable.</b> While stowed, you have advantage on Dexterity (Stealth) checks made to conceal this weapon.</p>
+			</div>
+			<div class="sidebar">
+				<h5>ELEGANT</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Light property or a masterwork exotic ranged weapon with the Light and Thrown properties</p>
+				<p>This weapon gains the Elegant property and its damage die increases by one step.</p>
+				<p class="indent"><b>Elegant.</b> This weapon requires exceptional skill to use. You must have a Dexterity score of 16 or higher to wield an elegant weapon.</p>
+			</div>
+			<div class="sidebar">
+				<h5>EXOTIC</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial weapon</p>
+				<p>This weapon becomes an exotic weapon and its damage die increases by one step.</p>
+				<p class="indent">No class, other than the craftsman, gains proficiency with exotic weapons.</p>
+			</div>
+			<div class="sidebar">
+				<h5>EXTENDED MAGAZINE</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic weapon with the Reload property</p>
+				<p>The Reload capacity of this weapon is doubled.</p>
+			</div>
+			<div class="sidebar">
+				<h5>FINESSE</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork melee weapon that doesn't have the Two-Handed property or a masterwork ranged weapon that has the Thrown property</p>
+				<p>This weapon gains the Finesse property.</p>
+			</div>
+			<div class="sidebar">
+				<h5>FIREARM</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork ranged weapon with the Loading or Reload property that doesn't have the Tension property</p>
+				<p>This weapon becomes a firearm and gains the Firearm property. Its damage die increases by four steps and moves to two damage dice, if possible.</p>
+				<p class="indent"><b>Firearm.</b> You don't add your ability modifier to this weapon's damage rolls. Firearm ammunition can't be recovered once used.</p>
+			</div>
+			<div class="sidebar">
+				<h5>FIST</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork melee weapon with the Light property</p>
+				<p>This weapon gains the Fist property.</p>
+				<p class="indent"><b>Fist.</b> Attacks made with this weapon are treated as unarmed strikes.</p>
+			</div>
+			<div class="sidebar">
+				<h5>FOREGRIP</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork ranged weapon with the Ammunition property that doesn't have the Two-Handed property.</p>
+				<p>This weapon gains the Foregrip property.</p>
+				<p class="indent"><b>Foregrip.</b> This weapon can be used with one or two hands. If used in two hands, its normal range increases by 50 feet and its long range increases accordingly.</p>
+			</div>
+			<div class="sidebar">
+				<h5>HEAVY</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic weapon with the Two-Handed property that doesn't have the Double property</p>
+				<p>This weapon gains the Heavy property. If it is a melee weapon, its damage die increases by one step.</p>
+				<p class="indent">If it is ranged, its normal range increases by 20 feet and its long range increases accordingly.</p>
+			</div>
+			<div class="sidebar">
+				<h5>LIGHT</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork weapon that doesn't have the Two-Handed or Versatile properties</p>
+				<p>This weapon gains the Light property, and its damage die decreases by one step.</p>
+			</div>
+			<div class="sidebar">
+				<h5>LOADING</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork ranged weapon with the Ammunition property that doesn't have the Reload property</p>
+				<p>This weapon gains the Loading property, and its damage die increases by one step.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MARTIAL</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork simple weapon</p>
+				<p>This weapon becomes a martial weapon, and its damage die increases by one step.</p>
+			</div>
+			<div class="sidebar">
+				<h5>PARRYING</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Finesse or Light property</p>
+				<p>This weapon gains the Parrying property and its damage die decreases by one step</p>
+				<p class="indent"><b>Parrying.</b> While wielding this weapon and not wielding a shield, you gain a +1 bonus to your AC against melee attacks.</p>
+			</div>
+			<div class="sidebar">
+				<h5>REACH</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic melee weapon with the Finesse or Two-Handed property</p>
+				<p>This weapon gains the Reach property, and its damage die decreases by one step.</p>
+			</div>
+			<div class="sidebar">
+				<h5>RELOAD</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork ranged weapon with the Ammunition property that doesn't have the Loading property</p>
+				<p>This weapon gains the Reload (5) property. If you apply the Reload property to a martial or exotic weapon with the Mounted property, you can choose to give it the Reload (1, 2 actions) property, and increase its damage by three steps.</p>
+				<p class="indent"><b>Reload.</b> This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes a bonus action; otherwise, reloading it takes an action. Some weapons require an action or longer to reload, even if you have proficiency, which is specified in the Reload property. If reloading a weapon requires longer than one action, the weapon can't be used to make attacks until reloading is finished.</p>
+			</div>
+			<div class="sidebar">
+				<h5>RETURNING</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic weapon with the Light and Thrown properties</p>
+				<p>This weapon gains the Returning property.</p>
+				<p class="indent"><b>Reload.</b> After being thrown, this weapon returns to your hand at the end of your turn.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SCATTER</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork ranged weapon with the Ammunition and Two-Handed properties that doesn't have the Sighted property</p>
+				<p>This weapon gains the Scatter property and its damage die decreases by one step. The weapon's damage die increases by two steps when an attack with it is made against a target within half of its normal range.</p>
+				<p class="indent">The weapon's long range becomes three times the weapon's normal range. The weapon's normal range decreases by 70 feet and its long range decreases accordingly.</p>
+				<p class="indent"><b>Scatter.</b> If you make an attack against a target that is within half this weapon's normal range, you deal the damage value listed in parentheses instead of the weapon's normal damage dice.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SIGHTED</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic ranged weapon with the Ammunition property that doesn't have the Scatter property</p>
+				<p>This weapon gains the Sighted property. Additionally, its normal range increases by 50 feet and its long range increases accordingly.</p>
+				<p class="indent"><b>Sighted.</b> This weapon has disadvantage on attack rolls made against targets within 20 feet of you.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SUPERHEAVY</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Heavy property</p>
+				<p>This weapon gains the Superheavy property and its damage die increases by one step.</p>
+				<p class="indent"><b>Superheavy.</b> This weapon is unusually large for its type. You must have a Strength score of 16 or higher to wield a superheavy weapon.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SWITCH</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Two masterwork exotic weapons</p>
+				<p>This weapon gains the Switch property and its damage die decreases by one step. You can integrate two weapons together with the Switch property, forming a single unit in which each weapon is one of the unit's two forms. You can choose to use two identical weapons with the Light property for one of the weapon's forms.</p>
+				<p class="indent"><b>Switch.</b> This weapon has two forms. You can swap between which weapon is being used at any time, even between attacks.</p>
+			</div>
+			<div class="sidebar">
+				<h5>THROWN</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork melee weapon that doesn't have the Two-Handed property</p>
+				<p>This weapon gains the Thrown property with a normal range of 20 feet and a long range of 60 feet.</p>
+			</div>
+			<div class="sidebar">
+				<h5>TRIP</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic melee weapon</p>
+				<p>This weapon gains the Trip property.</p>
+				<p class="indent"><b>Trip.</b> You can make a shove attempt against any creature within this weapon's reach. Furthermore, you have advantage on ability checks you make to shove a creature using this weapon.</p>
+			</div>
+			<div class="sidebar">
+				<h5>TWO-HANDED</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork weapon that doesn't have the Finesse, Foregrip, Light, Thrown, or Versatile properties</p>
+				<p>This weapon gains the Two-Handed property and its damage die increases by one step. Additionally, if it is a ranged weapon, its normal range increases by 50 feet and its long range increases accordingly.</p>
+			</div>
+			<div class="sidebar">
+				<h5>VERSATILE</h5>
+				<p><em>Apprentice weapon property</em></p>
+				<p><b>Components:</b> Masterwork melee weapon that doesn't have the Light or Two-Handed properties</p>
+				<p>This weapon gains the Versatile property. While being wielded in two hands, its damage die increases by one step.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- Journeyman Weapon Properties -->
+	<element name="Journeyman Weapon Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_JOURNEYMAN_WEAPON_PROPERTIES">
+		<description>
+			<p>You can apply only one Journeyman property to a weapon at a time. You can't apply a Journeyman property to a weapon that already has one.</p>
+			<div class="sidebar">
+				<h5>COUNTERWEIGHTED</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon with the Two-Handed property</p>
+				<p>You can wield this weapon in one hand, as long as you don't have a weapon in your other hand.</p>
+			</div>
+			<div class="sidebar">
+				<h5>DOUBLE</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon that doesn't have the Heavy property</p>
+				<p>This weapon gains the Double property and its damage die decreases by one step.</p>
+				<p class="indent"><b>Double.</b> This weapon has two damage-dealing ends. When you use the Attack action and make an attack with this weapon, you can use your bonus action to make an additional attack with it; you don't add your ability modifier to the damage roll of this additional attack.</p>
+			</div>
+			<div class="sidebar">
+				<h5>EXPLOSIVE</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic ranged weapon</p>
+				<p>This weapon gains the Explosive property and its damage die decreases by one step. If this weapon dealt bludgeoning, piercing, or slashing damage, its deals fire damage instead.</p>
+				<p class="indent"><b>Explosive.</b> When this weapon's projectile hits a target, it explodes in a 15-foot diameter sphere. The projectile can target an unoccupied space within its range. Each creature other than the target within the blast radius (for a Medium or smaller target, each creature within 5 feet of it) must make a Dexterity saving throw, taking half the damage rolled on a failed save or no damage on a successful one.</p>
+			</div>
+			<div class="sidebar">
+				<h5>HEAT</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic ranged weapon with the Firearm property</p>
+				<p>This weapon gains the Heat property and its damage die increases by one step</p>
+				<p class="indent"><b>Heat.</b> This weapon gains a heat point whenever an attack is made with it and loses one heat point whenever you begin your turn. If the weapon gains 3 heat points, it overheats and loses all heat points. An overheated weapon can't be used to make an attack again until the end of your next turn.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MAGICAL</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon becomes magical and gains a +1 bonus to its attack and damage rolls. This benefit stacks if you apply the Magical property at different levels.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MASSIVE</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Superheavy property</p>
+				<p>This weapon gains the Massive property and its damage die increases by two steps.</p>
+				<p class="indent"><b>Massive.</b> You can only make an attack with this weapon when you take the Attack action, and only as the first attack you make on your turn. Once you make an attack with this weapon, you can't make any attacks until the start of your next turn. If you would be able to attack more than once when you take the Attack action on your turn, you deal an extra two dice of damage for each attack you forgo when using this weapon.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MOUNTED</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork martial or exotic ranged weapon with the Heavy property</p>
+				<p>This weapon gains the Mounted property and its damage die increases by two steps.</p>
+				<p class="indent"><b>Mounted.</b> This weapon is normally used while attached to a tripod, vehicle, or other bracing mount. You can mount or unmount this weapon as an action. While it is mounted, it can't be moved. It can only be used to make an attack while unmounted if held by a Medium or larger creature with a Strength score of at least 15.</p>
+			</div>
+			<div class="sidebar">
+				<h5>PRECISION</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Elegant property</p>
+				<p>This weapon gains the Precision property.</p>
+				<p class="indent"><b>Precision.</b> Once per turn, you can deal an extra 1d6 damage to one creature you hit with this weapon if you have advantage on the attack roll.</p>
+			</div>
+			<div class="sidebar">
+				<h5>ROCKET</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon gains the Rocket property and its damage die decreases by one step.</p>
+				<p class="indent"><b>Rocket.</b> This weapon has a small propulsive engine attached to it or its projectiles. Once per turn, when you hit a creature with this weapon, you can deal an extra 1d4 damage to the target.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SNIPER</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic ranged weapon with the Ammunition property that doesn't have the Scatter property</p>
+				<p>This weapon's long range becomes eight times the weapon's normal range.</p>
+			</div>
+			<div class="sidebar">
+				<h5>TENSION</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic ranged weapon that doesn't have the Firearm property</p>
+				<p>This weapon gains the Tension property.</p>
+				<p class="indent"><b>Tension.</b> When making a ranged weapon attack with a tension weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.</p>
+			</div>
+			<div class="sidebar">
+				<h5>TWINSHOT</h5>
+				<p><em>Journeyman weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic ranged weapon</p>
+				<p>This weapon gains the Twinshot property.</p>
+				<p class="indent"><b>Twinshot.</b> Once on each of your turns when you make an attack with this weapon, you can make another attack with it against a different creature that is within 5 feet of the original target and within range of this weapon.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- Master Weapon Properties -->
+	<element name="Master Weapon Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MASTER_WEAPON_PROPERTIES">
+		<description>
+			<p>You can apply only one Master property to a weapon at a time.</p>
+			<div class="sidebar">
+				<h5>ADAMANTINE</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Heavy or Versatile property</p>
+				<p>This weapon's damage die increases by two steps, and it deals double damage to objects and structures.</p>
+			</div>
+			<div class="sidebar">
+				<h5>BLESSED</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon deals an extra 1d4 radiant damage on a hit. This extra damage increases to 1d10 radiant damage if the target is a Fiend or Undead.</p>
+			</div>
+			<div class="sidebar">
+				<h5>EARTHSHATTER</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon with the Massive property</p>
+				<p>This weapon's damage die increases by two steps. On a hit with this weapon, the target must make a Strength saving throw. On a failed save, the target is knocked prone or pushed 10 feet away from you (your choice).</p>
+			</div>
+			<div class="sidebar">
+				<h5>ELEMENTAL</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>When you apply this property, choose acid, cold, fire, lightning, or thunder damage. This weapon deals an extra 1d6 damage of the chosen type on a hit</p>
+			</div>
+			<div class="sidebar">
+				<h5>KEEN</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Finesse or Versatile property</p>
+				<p>This weapon scores a critical hit on a roll of 19 or 20.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MAGICAL</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon becomes magical and gains a +1 bonus to its attack and damage rolls. This benefit stacks if you apply the Magical property at different levels.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MITHRAL</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> This weapon's damage die increases by two steps, and its weight is halved.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SERRATED</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon that deals slashing damage</p>
+				<p>When a creature takes damage from serrated weapons twice or more in a single turn, it takes an extra 1d8 slashing damage.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SLAYING</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>When you apply this property, choose one creature type other than Humanoids. This weapon deals an extra 1d12 damage to creatures of the chosen type.</p>
+			</div>
+			<div class="sidebar">
+				<h5>VAMPIRIC</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon deals an extra 1d4 necrotic damage on a hit. When you hit a hostile creature with this weapon, you regain hit points equal to the extra necrotic damage dealt by this property.</p>
+			</div>
+			<div class="sidebar">
+				<h5>VENOM</h5>
+				<p><em>Master weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon deals an extra 1d8 poison damage on a hit.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- Legendary Weapon Properties -->
+	<element name="Legendary Weapon Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_LEGENDARY_WEAPON_PROPERTIES">
+		<description>
+			<p>You can apply only one Legendary property to a weapon at a time.</p>
+			<div class="sidebar">
+				<h5>CRUSHING</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon that deals bludgeoning damage</p>
+				<p>When you hit a creature that has natural armor or is wearing armor, the target takes a cumulative -1 penalty to the AC its armor offers. Armor reduced to an AC of 10 in this way is destroyed. A creature can repair its armor or heal the damage dealt to its natural armor over the course of a long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>DEADLY</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic ranged weapon with the Firearm property</p>
+				<p>When you make an attack with this weapon as part of an action, you can add your ability modifier to its attack and damage rolls, instead of just to its attack rolls.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MAGICAL</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon</p>
+				<p>This weapon becomes magical and gains a +1 bonus to its attack and damage rolls. This benefit stacks if you apply the Magical property at different levels.</p>
+			</div>
+			<div class="sidebar">
+				<h5>PENETRATING</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon with the Ammunition or Thrown property that deals piercing damage</p>
+				<p>This weapon pierces through its targets. When you make a ranged attack with this weapon and do not have disadvantage, you can target all creatures in a straight line within this weapon's normal range. You don't make an attack roll for this attack. Instead, each creature in the line must succeed on a Dexterity saving throw or take damage as if it were hit by the weapon.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SEEKING</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic ranged weapon</p>
+				<p>When you make an attack roll that doesn't have disadvantage with this weapon and miss, you instead hit the target and deal 5 damage of the weapon's type. This damage can't be increased in any way, and no other effects can be applied to the hit.</p>
+			</div>
+			<div class="sidebar">
+				<h5>THREATENING</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon</p>
+				<p>When a creature provokes an opportunity attack from you, you can use this weapon to make an opportunity attack against it without using your reaction.</p>
+			</div>
+			<div class="sidebar">
+				<h5>VORPAL</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic weapon that deals slashing damage</p>
+				<p>When you make an attack against a creature with this weapon and score a critical hit, that target takes an extra 4d8 slashing damage. Then roll another d20. If you roll a 20 on the second roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.</p>
+			</div>
+			<div class="sidebar">
+				<h5>WHIRLWIND</h5>
+				<p><em>Legendary weapon property</em></p>
+				<p><b>Components:</b> Masterwork exotic melee weapon with the Elegant property</p>
+				<p>When you engage in two-weapon fighting using two weapons with this property, you can make a bonus attack against any number of creatures within 5 feet of you, with a separate attack roll against each target. You can't move between these bonus attacks.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- ARMOR PROPERTIES -->
+<!-- Apprentice Armor Properties -->
+	<element name="Apprentice Armor Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_APPRENTICE_ARMOR_PROPERTIES">
+		<description>
+			<p>You can apply a maximum of three Apprentice properties to a suit of armor.</p>
+			<div class="sidebar">
+				<h5>CLEATED</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of medium or heavy armor</p>
+				<p>While wearing this armor, when you would be moved by an effect against your will, reduce that movement by 10 feet.</p>
+			</div>
+			<div class="sidebar">
+				<h5>CLIMBING</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light armor</p>
+				<p>This armor is outfitted with integrated climbing gear. While wearing this armor, as long as you have one hand free, you gain a climbing speed equal to your walking speed.</p>
+			</div>
+			<div class="sidebar">
+				<h5>COMFORTABLE</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of armor</p>
+				<p>You can sleep in this suit of armor with no ill effect.</p>
+			</div>
+			<div class="sidebar">
+				<h5>ENVIRONMENTAL</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of armor</p>
+				<p>While wearing this suit of armor, you can tolerate temperatures as cold as -100 degrees Fahrenheit or as warm as 300 degrees Fahrenheit.</p>
+			</div>
+			<div class="sidebar">
+				<h5>EXOTIC</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of armor that isn't exotic</p>
+				<p>This armor becomes exotic armor, and you have a +1 bonus to AC while wearing it.</p>
+				<p class="indent">No class, other than the craftsman, gains proficiency with exotic armor.</p>
+			</div>
+			<div class="sidebar">
+				<h5>INTEGRATED</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic armor</p>
+				<p>You can integrate a weapon directly into your armor, or you can integrate two weapons (one into each arm) if neither has the Two-Handed property. When you draw an integrated weapon, it snaps to your hand and you can't be disarmed of it. When you stow it, it retracts back into your armor. You can switch which weapons are integrated over the course of a long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>QUICK-CHANGE</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of armor</p>
+				<p>You can don or doff this suit of armor as an action.</p>
+			</div>
+			<div class="sidebar">
+				<h5>RETRACTABLE</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic medium or heavy armor</p>
+				<p>One of the gauntlets on this suit of armor has a retractable shield set into it. While wearing this armor, you can don or doff this shield as a bonus action.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SCALED</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light armor</p>
+				<p>This armor is covered in heavy, hardened scales. The AC provided by this armor increases by 3. However, you only add your Dexterity modifier to a maximum of +2 when determining your Armor Class while wearing it.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SPIKED</h5>
+				<p><em>Apprentice armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of heavy armor</p>
+				<p>This suit of armor is bristling with spikes. While wearing this armor, creatures who are in contact with you (either by grappling you, being grappled by you, or having swallowed you whole) take piercing damage equal to 1d4 + your Strength modifier at the start of your turn.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- Journeyman Armor Properties -->
+	<element name="Journeyman Armor Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_JOURNEYMAN_ARMOR_PROPERTIES">
+		<description>
+			<p>You can apply only one Journeyman property to a suit of armor at a time.</p>
+			<div class="sidebar">
+				<h5>ADAMANTINE</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic heavy armor </p>
+				<p>This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While wearing it, any critical hit against you becomes a normal hit.</p>
+			</div>
+			<div class="sidebar">
+				<h5>ARCANE</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic armor</p>
+				<p>This armor is covered in arcane etchings. When you apply this property to a suit of armor, choose two cantrips from the wizard spell list. While wearing this armor, you can cast those cantrips. Intelligence is your spellcasting ability for these cantrips. </p>
+			</div>
+			<div class="sidebar">
+				<h5>ARROW-CATCHING</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic medium or heavy armor</p>
+				<p>Whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead.</p>
+			</div>
+			<div class="sidebar">
+				<h5>DIVING</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic armor</p>
+				<p>This suit of armor is equipped with webbed fins, a mask, and an air bladder containing 8 hours of breathable air. While wearing it, you gain a swimming speed equal to your walking speed. Additionally, while breathing from the air bladder, you can breathe normally underwater or in a vacuum, and you ignore the effects of inhaled poisons. The suit's air supply can be refilled over the course of a long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>JUGGERNAUT</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic heavy armor</p>
+				<p>This suit of armor is fitted with massive plates and a heavy, reinforced helmet. While wearing this armor, you count as an obstacle providing three-quarters cover, instead of half cover. You must have a Strength score of 16 or higher to proficiently wear this armor. </p>
+			</div>
+			<div class="sidebar">
+				<h5>MANEUVERING</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light or medium armor</p>
+				<p>This armor contains a set of spring-loaded, automatically retracting grappling hooks, allowing you an incredible amount of maneuverability. As a reaction when you fall, or as a bonus action on your turn, you can project a grappling hook at a target location you can see that is no farther away than walking speed. If the target location can hold your weight, you are pulled there, expending movement as normal. This movement doesn't provoke opportunity attacks. You must have a Dexterity score of 16 or higher to use this ability.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MITHRAL</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of medium or heavy armor</p>
+				<p>This suit of armor is made of mithral, a light and flexible metal that is as strong as steel. Armor made of mithral weighs half as much as normal, has no Strength requirement, and doesn't impose disadvantage on Dexterity (Stealth) checks. If the armor is medium armor, the maximum Dexterity modifier you can apply to your Armor Class increases to 3, instead of 2, and the armor can easily be worn hidden under normal clothing.</p>
+			</div>
+			<div class="sidebar">
+				<h5>RESISTANCE</h5>
+				<p><em>Journeyman armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of armor</p>
+				<p>When you apply this property to a suit of armor, choose any damage type other than psychic. While wearing this armor, you have resistance to that damage type.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- Master Armor Properties -->
+	<element name="Master Armor Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MASTER_ARMOR_PROPERTIES">
+		<description>
+			<p>You can apply only one Master property to a suit of armor at a time.</p>
+			<div class="sidebar">
+				<h5>ANIMATED</h5>
+				<p><em>Master armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic heavy armor </p>
+				<p>This armor is enchanted with powerful transmutation magic. As an action, you can doff the armor, which animates, becoming a Medium animated object, as per the <i>animate objects</i> spell.</p>
+				<p class="indent">The armor's AC equals your own while you wore it. The armor uses your own melee attack bonus instead of its own. If you were holding a weapon when the armor became animated, it can make one attack with that weapon instead of its normal slam attack.</p>
+				<p class="indent">The armor remains animated for 1 minute or until it is reduced to 0 hit points, after which time it becomes inanimate. If your animated armor is within 30 feet of you, you can end this effect early by using your action to command your animated armor to return to you and be donned as inanimate armor as part of the action.</p>
+				<p class="indent">Once you use this ability, you can't do so again until you finish a long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>CLOAKING</h5>
+				<p><em>Master armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light armor </p>
+				<p>This armor can easily hide the wearer when needed. While wearing this armor, you can cast the <i>invisibility</i> spell without expending a spell slot or material components. Once you cast the spell in this way, you can't do so again until you finish a short or long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>CLOCKWORK</h5>
+				<p><em>Master armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic heavy armor </p>
+				<p>This suit of armor has dozens of clockwork mechanisms integrated into it, granting you a number of benefits. While wearing this armor, your jump distance is tripled, and you have advantage on Strength (Athletics) checks (other than grapple checks). Additionally, your armor locks down when you take the Dodge action, causing your AC to become 22, if it was lower. </p>
+			</div>
+			<div class="sidebar">
+				<h5>GLAMOURED</h5>
+				<p><em>Master armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic armor </p>
+				<p>This armor doesn't impose disadvantage on Dexterity (Stealth) checks. You can also use a bonus action to cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this ability again or remove the armor.</p>
+			</div>
+			<div class="sidebar">
+				<h5>TROLLSKIN</h5>
+				<p><em>Master armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic medium armor </p>
+				<p>This suit of armor is made of or lined with troll skin. While wearing this armor, you can use a bonus action to regain hit points equal to 1d10 + your craftsman level. Once you use this ability, you can't do so again until you finish a short or long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>WINGED</h5>
+				<p><em>Master armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light armor </p>
+				<p>This armor has a set of wings that you can extend from it or fold back into it as a bonus action. While wearing this armor with the wings extended, you have a flying speed equal to your walking speed.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+<!-- Legendary Armor Properties -->
+	<element name="Legendary Armor Properties (Craftsman)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_LEGENDARY_ARMOR_PROPERTIES">
+		<description>
+			<p>You can apply only one Legendary property to a suit of armor at a time.</p>
+			<div class="sidebar">
+				<h5>COLOSSAL</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic heavy armor </p>
+				<p>This suit of armor doubles in size when donned. While wearing this armor, you gain the effect of the “Enlarge” option of the <i>enlarge/reduce</i> spell.</p>
+			</div>
+			<div class="sidebar">
+				<h5>ETHEREALNESS</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic armor </p>
+				<p>This suit of armor is infused with ectoplasm. While wearing this armor, you can use your action to gain the effect of the <i>etherealness</i> spell, which lasts for 10 minutes or until you use an action to end it. Once you use this ability, you can't do so again until you finish a long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>FLEET</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light armor </p>
+				<p>This armor is designed to maximize the wearer's speed. While wearing this armor, your speed increases by 10 feet, you have advantage on initiative rolls, and opportunity attacks against you are made with disadvantage.</p>
+			</div>
+			<div class="sidebar">
+				<h5>IMMORTAL</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic medium or heavy armor </p>
+				<p>Whenever you drop to 0 hit points and don't die outright, you can make a DC 13 Constitution saving throw. If you succeed, you drop to 1 hit point instead. You can use this ability three times, and you regain all expended uses of it when you finish a long rest.</p>
+				<p class="indent">Additionally, you have advantage on death saving throws.</p>
+			</div>
+			<div class="sidebar">
+				<h5>MIRRORED</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic light armor </p>
+				<p>While wearing this armor, you can cast the <i>mirror image</i> spell without expending a spell slot. Once you cast the spell in this way, you can't do so again until you finish a short or long rest.</p>
+			</div>
+			<div class="sidebar">
+				<h5>SPELLGUARD</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic armor </p>
+				<p>This armor is covered in protective sigils and charms. While wearing this armor, you have advantage on saving throws against spells.</p>
+			</div>
+			<div class="sidebar">
+				<h5>WARDING</h5>
+				<p><em>Legendary armor property</em></p>
+				<p><b>Components:</b> Masterwork suit of exotic medium armor </p>
+				<p>This suit of armor generates a field of force, protecting its wearer from harm. As a bonus action on your turn, you can gain temporary hit points equal to half your craftsman level.</p>
+			</div>
+		</description>
+		<sheet />
+	</element>
+</elements>
