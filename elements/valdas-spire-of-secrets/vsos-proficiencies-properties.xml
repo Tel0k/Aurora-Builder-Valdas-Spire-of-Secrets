@@ -4,7 +4,7 @@
 		<name>Proficiencies and Properties</name>
 		<description>The new proficiencies and properties from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
         <file name="vsos-proficiencies-properties.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-proficiencies-properties.xml" />
       	</update>
 	</info>
@@ -396,7 +396,7 @@
 		<sheet alt="Greatspear" />
 	</element>
     <element name="Weapon Proficiency (Grim Scyte)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GRIM_SCYTE">
-		<supports>Weapon, Exotic, Melee, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<supports>Weapon, Exotic, Melee, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
 		<sheet alt="Grim Scyte" />
 	</element>
     <element name="Weapon Proficiency (Hook Sword)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_HOOK_SWORD">
@@ -467,7 +467,7 @@
         <sheet alt="Edged Card" />
     </element>
     <element name="Weapon Proficiency (Elven Longbow)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ELVEN_LONGBOW">
-        <supports>Weapon, Martial, Ranged, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <supports>Weapon, Martial, Ranged, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <sheet alt="Elven Longbow" />
     </element>
     <element name="Weapon Proficiency (Goliath Sling)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GOLIATH_SLING">
@@ -479,7 +479,7 @@
         <sheet alt="Greatbow" />
     </element>
     <element name="Weapon Proficiency (Portable Ballista)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_PORTABLE_BALLISTA">
-        <supports>Weapon, Martial, Ranged, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_TENSION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <supports>Weapon, Martial, Ranged, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_MOUNTED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <sheet alt="Portable Ballista" />
     </element>
     <element name="Weapon Proficiency (Shotbow)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SHOTBOW">
@@ -726,16 +726,45 @@
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Dragon Rifle" />
 	</element>
-    <element name="Weapon Proficiency (Quadruple-Barrel Shotgun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_QUADRUPLE_BARREL_SHOTGUN">
+	<element name="Weapon Proficiency (Quadruple-Barrel Shotgun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_QUADRUPLE_BARREL_SHOTGUN">
 		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Quadruple-Barrel Shotgun" />
 	</element>
-
+	<element name="Weapon Proficiency (Anti-Material Rifle)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ANTI_MATERIAL_RIFLE">
+		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_SIGHTED, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Anti-Material Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Assault Shotgun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ASSAULT_SHOTGUN">
+		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_AUTOMATIC, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_8_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_HEAT</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Assault Shotgun" />
+	</element>
+	<element name="Weapon Proficiency (Briefcase Gun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_BRIEFCASE_GUN">
+		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MHP_VSOS_WEAPON_PROPERTY_CONCEALABLE, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_10_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Briefcase Gun" />
+	</element>
+	<element name="Weapon Proficiency (Magnum, Explosive)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MAGNUM_EXPLOSIVE">
+		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Magnum, Explosive" />
+	</element>
+	<element name="Weapon Proficiency (Multi-Rocket Launcher)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MULTI_ROCKET_LAUNCHER">
+		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_MHP_VSOS_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Multi-Rocket Launcher" />
+	</element>
+	<element name="Weapon Proficiency (Revolving Grenade Launcher)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_REVOLVING_GRENADE_LAUNCHER">
+		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Revolving Grenade Launcher" />
+	</element>
     <!-- ARMOR -->
    <!-- <element name="Exotic Armor" type="Armor Group" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARMOR_GROUP_EXOTIC" /> doesn't seem to work -->
 
-    <element name="Armor Proficiency (Exotic Armor)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR">
+	<element name="Armor Proficiency (Exotic Armor)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR">
 		<description>
 			<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient w arriors can manage their weight and bulk.</p>
 			<p class="indent">Heavy armor doesn't let you add your Dexterity modifier to your Armor Class, but it also doesn't penalize you if your Dexterity modifier is negative.</p>
@@ -748,28 +777,28 @@
         	<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_MOUNTAIN_PLATE" />
 		</rules>
 	</element>
-    <element name="Armor Proficiency (Brigandine)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BRIGANDINE">
+	<element name="Armor Proficiency (Brigandine)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BRIGANDINE">
 		<supports>Exotic Armor, ID_MHP_VSOS_ARMOR_GROUP_EXOTIC</supports>
 	</element>
-    <element name="Armor Proficiency (Banded Plate)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BANDED_PLATE">
+	<element name="Armor Proficiency (Banded Plate)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_BANDED_PLATE">
 		<supports>Exotic Armor, ID_MHP_VSOS_ARMOR_GROUP_EXOTIC</supports>
 	</element>
-    <element name="Armor Proficiency (Hero Plate)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_HERO_PLATE">
+	<element name="Armor Proficiency (Hero Plate)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_HERO_PLATE">
 		<supports>Exotic Armor, ID_MHP_VSOS_ARMOR_GROUP_EXOTIC</supports>
 	</element>
-    <element name="Armor Proficiency (Lamellar)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_LAMELLAR">
+	<element name="Armor Proficiency (Lamellar)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_LAMELLAR">
 		<supports>Exotic Armor, ID_MHP_VSOS_ARMOR_GROUP_EXOTIC</supports>
 	</element>
-    <element name="Armor Proficiency (Mountain Plate)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_MOUNTAIN_PLATE">
+	<element name="Armor Proficiency (Mountain Plate)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_MOUNTAIN_PLATE">
 		<supports>Exotic Armor, ID_MHP_VSOS_ARMOR_GROUP_EXOTIC</supports>
 	</element>
 
     <!-- Weapon Properties -->
-    <element name="Automatic" type="Weapon Property" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_PROPERTY_AUTOMATIC">
-        <description>
-            <p> When you make an attack with this weapon on your turn, you can choose to make two attacks instead. These attacks are always made with disadvantage, regardless of circumstance. These attacks use twice the normal amount of ammunition.</p>
-        </description>
-    </element>
+	<element name="Automatic" type="Weapon Property" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_PROPERTY_AUTOMATIC">
+        	<description>
+            		<p> When you make an attack with this weapon on your turn, you can choose to make two attacks instead. These attacks are always made with disadvantage, regardless of circumstance. These attacks use twice the normal amount of ammunition.</p>
+        	</description>
+	</element>
     <element name="Concealable" type="Weapon Property" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_PROPERTY_CONCEALABLE">
         <description>
             <p> While stowed, you have advantage on Dexterity (Stealth) checks made to conceal this weapon.</p>
