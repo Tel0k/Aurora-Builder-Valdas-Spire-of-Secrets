@@ -4,7 +4,7 @@
 		<name>Craftsman</name>
 		<description>The Craftsman from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-craftsman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-craftsman.xml" />
 		</update>
 	</info>
@@ -92,15 +92,15 @@
 			<div element="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MAGNUM_OPUS" />
 		</description>
 		<setters>
-			<set name="short">Decisive leaders and brilliant strategists, captains inspire their allies to greatness.</set>
+			<set name="short">Master artisans and inventors, craftsmen can forge masterwork equipment and devise entirely new weapons on the fly.</set>
 			<set name="hd">d10</set>
 		</setters>
 		<sheet display="false" />
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency (Craftsman)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="2" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            		<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
@@ -120,6 +120,25 @@
 			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_UNCANNY_TOOL_BELT" level="15" />
 			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_MAGNUM_OPUS" level="20" />
 		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_CRAFTSMAN">
+			<prerequisite>Strength 13 or Dexterity 13, and Intelligence 13</prerequisite>
+			<requirements>([str:13]||[dex:13]),[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">—</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                		<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS" />
+                		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+                		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+                		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+                		<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_WEAPONS" />
+                		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" level="2" />
+				<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR" level="3" />
+			</rules>
+		</multiclass>
 	</element>
 	<element name="Exotic Proficiencies" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_EXOTIC_PROFICIENCIES">
 		<description>
