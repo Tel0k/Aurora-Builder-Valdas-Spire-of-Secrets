@@ -4,7 +4,7 @@
       <name>Warden</name>
       <description>The Warden from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.1">
+      <update version="0.0.2">
         <file name="class-warden.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warden.xml" />
       </update>    
     </info>
@@ -99,13 +99,13 @@
         <rules>
             <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
-			<select type="Proficiency" name="Skill Proficiency (Warden)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
+	    <select type="Proficiency" name="Skill Proficiency (Warden)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_WARDEN"/>
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND" level="1" />
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_WARDENS_GRASP" level="1" />
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_FIGHTING_STYLE" level="2" />
@@ -120,8 +120,7 @@
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_INTERRUPT" level="10" />
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_SOUL" level="18" />
         </rules>
-    </element>
-    <multiclass id="ID_MHP_VSOS_MULTICLASS_WARDEN">
+        <multiclass id="ID_MHP_VSOS_MULTICLASS_WARDEN">
 		<prerequisite>Strength 13</prerequisite>
 		<requirements>[str:13]</requirements>
 		<setters>
@@ -129,14 +128,14 @@
 		</setters>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+                        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+                        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+                        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+	                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+                        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</multiclass>
-
+    </element>
     <element name="Sentinel's Stand" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND">
         <description>
             <p>Wardens are towers that cannot easily be felled. At 1st level, choose one of the following features.</p>
@@ -148,8 +147,8 @@
 			<p>You gain proficiency in one saving throw of your choice.</p>
         </description>
         <rules>
-			<select type="Class Feature" name="Sentinel's Stand" supports="Sentinel Stand, Warden" level="1"/>
-		</rules>
+		<select type="Class Feature" name="Sentinel's Stand" supports="Sentinel Stand, Warden" level="1"/>
+	</rules>
     </element>
     <element name="Armor Proficiency" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND_ARMOR_PROFICIENCY">
 		<supports>Sentinel Stand, Warden</supports>
@@ -173,7 +172,7 @@
 		</sheet>
 		<rules>
 			<stat name="hp" value="level" />
-            <stat name="hp" value="constitution:modifier" />
+                        <stat name="hp" value="constitution:modifier" />
 		</rules>
 	</element>
     <element name="Stalwart Spirit" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WARDEN_SENTINELS_STAND_STALWART_SPIRIT">
