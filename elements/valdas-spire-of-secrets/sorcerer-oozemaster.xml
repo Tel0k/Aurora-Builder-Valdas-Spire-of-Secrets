@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oozemaster Sorcerous Origin</name>
+		<description>The Oozemaster Sorcerous Origin from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="sorcerer-oozemaster.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/sorcerer-oozemaster.xml" />
+		</update>
+	</info>
+
+    <append id="ID_MHP_VSOS_SPELL_ABERRATE">
+		<supports>Aberrate</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+		<supports>Acid Arrow</supports>
+	</append>
+	<append id="ID_MHP_VSOS_SPELL_BENIGN_DISMEMBERMENT">
+		<supports>Benign Dismemberment</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISGUISE_SELF">
+		<supports>Disguise Self</supports>
+	</append>
+	<append id="ID_MHP_VSOS_SPELL_RUSTING_GRASP">
+		<supports>Rusting Grasp</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+		<supports>Freedom of Movement</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONESKIN">
+		<supports>Stoneskin</supports>
+	</append>
+	<append id="ID_MHP_VSOS_SPELL_EVASIVENESS">
+		<supports>Evasiveness</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEEMING">
+		<supports>Seeming</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREASE">
+		<supports>Grease</supports>
+	</append>
+
+	<element name="Oozemaster" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SORCERER_ARCHETYPE_OOZEMASTER">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic stems from a long family line of ooze-infused blood. For generations, the strange traits of oozes have run in your family line, afflicting some at birth and sparing others, stemming from a well-documented but shadowy ancestor. It’s unclear what horrific experiment infused a monstrous ooze or slime into their body so long ago, but some of their scattered descendants are born to this day with innate magic and bizarre physical characteristics.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_SLIME_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_REFORM" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_GOOPY_CLONE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_BOUNCY_BODY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_GELATINOUS_ALLY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_SLIME_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_REFORM" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_GOOPY_CLONE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_BOUNCY_BODY" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_GELATINOUS_ALLY" level="18" />
+		</rules>
+	</element>
+    <element name="Slime Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_SLIME_MAGIC">
+        <description>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Slime Spells table. Each of these spells counts as a sorcerer spell for you but doesn’t count against the number of sorcerer spells you know.</p>
+            <p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or a transmutation spell from the sorcerer, warlock, or wizard spell list.</p>
+            <h5 class="caption">Slime Spells</h5>
+			<p class="indent">New spells are marked with an asterisk.</p>
+            <table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>disguise self, grease</em></td></tr>
+				<tr><td>3rd</td><td><em>aberrate*, Melf's acid arrow</em></td></tr>
+				<tr><td>5th</td><td><em>benign dismemberment*, rusting grasp*</em></td></tr>
+				<tr><td>7th</td><td><em>freedom of movement, stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>evasiveness*, seeming</em></td></tr>
+			</table>
+        </description>
+        <sheet>
+            <description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or a transmutation spell from the sorcerer, warlock, or wizard spell list.</description>
+        </sheet>
+        <rules>
+			<select type="Spell" name="1st Additional Spell (Slime Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Disguise Self" level="1" default="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="2nd Additional Spell (Slime Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Grease" level="1" default="ID_PHB_SPELL_GREASE" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="3rd Additional Spell (Slime Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Aberrate" level="3" default="ID_MHP_VSOS_SPELL_ABERRATE" spellcasting="Sorcerer" allowReplace="true" />  
+			<select type="Spell" name="4th Additional Spell (Slime Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Acid Arrow" level="3" default="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Sorcerer" allowReplace="true" /> <!-- -->
+			<select type="Spell" name="5th Additional Spell (Slime Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Benign Dismemberment" level="5" default="ID_MHP_VSOS_SPELL_BENIGN_DISMEMBERMENT" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="6th Additional Spell (Slime Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Rusting Grasp" level="5" default="ID_MHP_VSOS_SPELL_RUSTING_GRASP" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="7th Additional Spell (Slime Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Freedom of Movement" level="7" default="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="8th Additional Spell (Slime Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Stoneskin" level="7" default="ID_PHB_SPELL_STONESKIN" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="9th Additional Spell (Slime Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Evasiveness" level="9" default="ID_MHP_VSOS_SPELL_EVASIVENESS" spellcasting="Sorcerer" allowReplace="true" />
+			<select type="Spell" name="10th Additional Spell (Slime Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Seeming" level="9" default="ID_PHB_SPELL_SEEMING" spellcasting="Sorcerer" allowReplace="true" />
+		</rules>
+    </element>
+    <element name="Reform" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_REFORM">
+        <description>
+            <p>Starting when you choose this origin at 1st level, your vaguely gelatinous flesh can mend itself when wounded. Whenever you take bludgeoning, piercing, or slashing damage from a nonmagical attack and don’t drop to 0 hit points, you can use your reaction to immediately regain 1d4 hit points, up to a maximum of the amount of damage taken.</p>
+            <p class="indent">The healing increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <sheet action="Reaction">
+            <description> Whenever you take bludgeoning, piercing, or slashing damage from a nonmagical attack and don’t drop to 0 hp, you can immediately regain {{healing}}d4 hit points, up to a maximum of the amount of damage taken.</description>
+        </sheet>
+        <rules>
+            <stat name="healing" value="1" level="1"/>
+            <stat name="healing" value="2" level="5"/>
+            <stat name="healing" value="3" level="11"/>
+            <stat name="healing" value="4" level="17"/>
+        </rules>
+    </element>
+    <element name="Goopy Clone" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_GOOPY_CLONE">
+        <description>
+            <p>By 6th level, you can expend 2 sorcery points as an action to create a duplicate of yourself made from a translucent ooze. If you spend an additional 3 sorcery points, you imbue this ooze duplicate with illusory magic, causing it to be indistinguishable from any Humanoid you choose. The duplicate has the statistics of a commoner, but is an ooze instead of a Humanoid. Additionally, it is formed with simulated clothing and equipment; this equipment is nonfunctional and melts into slime if it is not worn or carried by the duplicate.</p>
+            <p class="indent">The duplicate is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes, acting on your turn in combat.</p>
+            <p class="indent">The duplicate lasts for 24 hours or until it drops to 0 hit points, at which point it collapses into a large puddle of ooze.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can expend 2 sorcery points as an action to create a duplicate of yourself made from a translucent ooze. If you spend an additional 3 sorcery points, you imbue this ooze duplicate with illusory magic, causing it to be indistinguishable from any Humanoid you choose. The duplicate has the statistics of a commoner, but is an ooze instead of a Humanoid. Additionally, it is formed with simulated clothing and equipment; this equipment is nonfunctional and melts into slime if it is not worn or carried by the duplicate. The duplicate is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes, acting on your turn in combat. The duplicate lasts for 24 hours or until it drops to 0 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Bouncy Body" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_BOUNCY_BODY">
+        <description>
+            <p>Beginning at 14th level, when a creature you can see misses you with a melee weapon attack, you can use your reaction to bounce the attack back at the attacker with your goopy body. The attacker repeats its attack against its own AC, dealing damage to itself as normal on a hit.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When a creature you can see misses you with a melee weapon attack, you can bounce the attack back at the attacker with your goopy body. The attacker repeats its attack against its own AC, dealing damage to itself as normal on a hit.</description>
+        </sheet>
+    </element>
+    <element name="Gelatinous Ally" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOZEMASTER_GELATINOUS_ALLY">
+        <description>
+            <p>Starting at 18th level, you can expend 6 sorcery points as an action to summon a gelatinous cube to envelop your enemies. Choose a space you can see within 120 feet for the cube to appear. If you summon the cube into a creature’s space, the creature is immediately subject to the cube’s Engulf.</p>
+            <p class="indent">The cube uses your spell attack bonus and spell save DC in place of its own attack bonus and save DCs. You are immune to the cube’s acid damage, and you aren’t subject to the cube’s Engulf.</p>
+            <p class="indent">The cube is friendly to you and your companions. In combat, it rolls its own initiative and acts on its own turn. The cube obeys any verbal commands you issue to it (no action required). If you don’t issue any commands to it, the cube defends itself from hostile creatures, but otherwise takes no actions. The GM has the gelatinous cube’s statistics.</p>
+            <p class="indent">The cube dissolves into a sticky liquid when it drops to 0 hit points, or when you dismiss it as an action on your turn. You can only have one summoned gelatinous cube at a time.</p>
+        </description>
+        <sheet action="Action" usage="6 Sorcery Points">
+            <description> You can summon a gelatinous cube to envelop your enemies. Choose a space you can see within 120ft for the cube to appear. If you summon the cube into a creature’s space, the creature is immediately subject to the cube’s Engulf. The cube uses your spell attack bonus and spell save DC in place of its own attack bonus and save DCs. You are immune to the cube’s acid damage, and you aren’t subject to the cube’s Engulf. The cube is friendly to you and your companions. In combat, it rolls its own initiative and acts on its own turn. The cube obeys any verbal commands you issue to it (no action required). If you don’t issue any commands to it, the cube defends itself from hostile creatures, but otherwise takes no actions. The cube dissolves into a sticky liquid when it drops to 0 hit points, or when you dismiss it as an action on your turn. You can only have one summoned gelatinous cube at a time.</description>
+        </sheet>
+    </element>
+</elements>    

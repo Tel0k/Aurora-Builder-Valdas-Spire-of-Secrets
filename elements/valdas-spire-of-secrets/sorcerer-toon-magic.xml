@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Toon Magic Sorcerous Origin</name>
+		<description>The Toon Magic Sorcerous Origin from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="sorcerer-toon-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/sorcerer-toon-magic.xml" />
+		</update>
+	</info>
+	<element name="Toon Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SORCERER_ARCHETYPE_TOON_MAGIC">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>The demiplane of toons, called Toon Town, is an oft-overlooked nook on the far edge of the multiverse inhabited by creatures of ink and magic that defy logic. In Toon Town, the laws of physics take a backseat to comic timing and various hijinks; it is a plane that despises seriousness.</p> 
+            <p class="indent">You are descended from a denizen of Toon Town (likely a copyrighted one) or infected by the zany magic that suffuses that plane. As such, your eyes are larger than normal, and your sense of humor lets you bend the rigid restrictions of space and time, provided that you leave a trail of slapstick jokes in your wake.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_MADCAP_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_ZANY_LIMBS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_COMIC_TIMING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_OFFSCREEN_TELEPORTATION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_TWODIMENSIONAL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_MADCAP_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_ZANY_LIMBS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_COMIC_TIMING" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_OFFSCREEN_TELEPORTATION" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_TWODIMENSIONAL" level="18" />
+		</rules>
+	</element>
+    <element name="Madcap Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_MADCAP_MAGIC">
+        <description>
+            <p>Your connection to the demiplane of toons lets you cast wacky spells for comedic effect. You learn the vicious mockery cantrip, which doesn’t count against your total number of cantrips known.</p>
+            <p class="indent">You also learn additional, randomly generated spells. Whenever you finish a short or long rest, you can roll 1d6 on the 1st-level spells column of the Madcap Spells table. You learn the corresponding spell until you use this ability to roll for spells again. Spells rolled on this table count as sorcerer spells for you and don’t count against your total number of spells known.</p>
+            <p class="indent">When you gain sorcerer spells of 2nd level or higher, you roll a d6 for each level of spells you know, up to a maximum of 5d6. You can assign each d6 to a level of spells on the Madcap Spells table, learning all of the corresponding spells until you use this ability to roll for spells again.</p>
+			<p>New spells are marked with an asterisk.</p>
+			<h5 class="caption">MADCAP SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>1ST-LEVEL</td><td>2ND-LEVEL</td><td>3RD-LEVEL</td><td>4TH-LEVEL</td><td>5TH-LEVEL</td></tr>
+				</thead>
+				<tr><td> 1</td><td><i>charm person</i></td><td><i>defenestration*</i></td><td><i>counterspell</i></td><td><i>compulsion</i></td><td><i>animate objects</i></td></tr>
+				<tr><td> 2</td><td><i>disguise self</i></td><td><i>enlarge/reduce</i></td><td><i>fly</i></td><td><i>confusion</i></td><td><i>Bigby’s hand</i></td></tr>
+				<tr><td> 3</td><td><i>expeditious retreat</i></td><td><i>knock</i></td><td><i>haste</i></td><td><i>distort gravity*</i></td><td><i>mislead</i></td></tr>
+				<tr><td> 4</td><td><i>grease</i></td><td><i>levitate</i></td><td><i>major image</i></td><td><i>polymorph</i></td><td><i>passwall</i></td></tr>
+				<tr><td> 5</td><td><i>Tasha’s hideous laughter</i></td><td><i>suggestion</i></td><td><i>water walk</i></td><td><i>freedom of movement</i></td><td><i>seeming</i></td></tr>
+				<tr><td> 6</td><td><i>psychedelics*</i></td><td><i>Tyra’s coerced karaoke*</i></td><td><i>benign dismemberment*</i></td><td><i>Mandy’s marvelous dress*</i></td><td><i>wall of force</i></td></tr>
+			</table>
+            <p class="indent">Beginning at 2nd level, you can spend 1 sorcery point as an action to reroll your Madcap Spells.</p>
+        </description>
+        <sheet>
+            <description> You learn the vicious mockery cantrip. Also whenever you finish a short or long rest, you learn additional, randomly generated spells. You learn the corresponding spell until you use this ability to roll for spells again. You roll a d6 for each level of spells you know, up to a maximum of 5d6. </description>
+			<description level="2"> You learn the vicious mockery cantrip. Also whenever you finish a short or long rest, you learn additional, randomly generated spells. You learn the corresponding spell until you use this ability to roll for spells again. You roll a d6 for each level of spells you know, up to a maximum of 5d6. &#13;
+			You can spend 1 sorcery point as an action to reroll your Madcap Spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" spellcasting="Sorcerer" />
+            <select type="Spell" name="Madcap Magic (1st LV)" supports="ID_PHB_SPELL_CHARM_PERSON|ID_PHB_SPELL_DISGUISE_SELF|ID_PHB_SPELL_EXPEDITIOUS_RETREAT|ID_PHB_SPELL_GREASE|ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER|ID_MHP_VSOS_SPELL_PSYCHEDELICS" spellcasting="Sorcerer" allowReplace="true" level="3" />
+            <select type="Spell" name="Madcap Magic (2nd LV)" supports="ID_MHP_VSOS_SPELL_DEFENESTRATION|ID_PHB_SPELL_ENLARGE_REDUCE|ID_PHB_SPELL_KNOCK|ID_PHB_SPELL_LEVITATE|ID_PHB_SPELL_SUGGESTION|ID_MHP_VSOS_SPELL_TYRAS_COERCED_KARAOKE" spellcasting="Sorcerer" allowReplace="true" level="3" />
+            <select type="Spell" name="Madcap Magic (3rd LV)" supports="ID_PHB_SPELL_COUNTERSPELL|ID_PHB_SPELL_FLY|ID_PHB_SPELL_HASTE|ID_PHB_SPELL_MAJOR_IMAGE|ID_PHB_SPELL_WATER_WALK|ID_MHP_VSOS_SPELL_BENIGN_DISMEMBERMENT" spellcasting="Sorcerer" allowReplace="true" level="5" />
+            <select type="Spell" name="Madcap Magic (4th LV)" supports="ID_PHB_SPELL_COMPULSION|ID_PHB_SPELL_CONFUSION|ID_MHP_VSOS_SPELL_DISTORT_GRAVITY|ID_PHB_SPELL_POLYMORPH|ID_PHB_SPELL_FREEDOM_OF_MOVEMENT|ID_MHP_VSOS_SPELL_MANDYS_MARVELOUS_DRESS" spellcasting="Sorcerer" allowReplace="true" level="7" />
+            <select type="Spell" name="Madcap Magic (5th LV)" supports="ID_PHB_SPELL_ANIMATE_OBJECTS|ID_PHB_SPELL_BIGBYS_HAND|ID_PHB_SPELL_MISLEAD|ID_PHB_SPELL_PASSWALL|ID_PHB_SPELL_SEEMING|ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" allowReplace="true" level="9" />
+        </rules>
+    </element>
+    <element name="Zany Limbs" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_ZANY_LIMBS">
+        <description>
+            <p>At 1st level, you have elastic, fantastic limbs. You can stretch your arms and legs up to 5 feet beyond their normal length, allowing you to interact with distant objects or creatures, and your melee weapon attacks have the Reach property. Additionally, you can ignore the Heavy property of weapons.</p>
+        </description>
+        <sheet>
+            <description>You can stretch your arms and legs up to 5ft beyond their normal length, allowing you to interact with distant objects or creatures, and your melee weapon attacks have the Reach property. Additionally, you can ignore the Heavy property of weapons.</description>
+        </sheet>
+    </element>
+    <element name="Comic Timing" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_COMIC_TIMING">
+        <description>
+            <p>By 6th level, your wacky antics ensure your safety. When a hostile creature you can see within 5 feet of you makes an attack, you can use your reaction and spend 1 sorcery point to use one of the following abilities:</p>
+			<ul>
+				<li>You prank the attacker an instant before it attacks, such as by throwing a pie in its face, imposing disadvantage on the attack.</li>
+				<li>If the attacker hits, the target is magically squashed flat, deflated like a balloon, momentarily chopped in half, or burned to a crisp. As a result, the target has resistance to this damage, and is knocked prone.</li>
+				<li>If the attacker misses, they slip on a well-placed banana peel and fall prone.</li>
+			</ul>
+			<p>Beginning at 14th level, you can use this ability when a hostile creature within 30 feet of you attacks. You teleport to an unoccupied space within 5 feet of the target as a part of your reaction.</p>
+        </description>
+        <sheet>
+            <description>When a hostile creature you can see within 5ft of you makes an attack, you can use your reaction and spend 1 sorcery point to use one of the following abilities: &#13;
+			•You prank the attacker an instant before it attacks, such as by throwing a pie in its face, imposing disadvantage on the attack. &#13;
+			•If the attacker hits, the target is magically squashed flat, deflated like a balloon, momentarily chopped in half, or burned to a crisp. As a result, the target has resistance to this damage, and is knocked prone. &#13;
+			•If the attacker misses, they slip on a well-placed banana peel and fall prone.</description>
+			<description level="14">When a hostile creature you can see within 30ft of you makes an attack, you can use your reaction and spend 1 sorcery point to use one of the following abilities: &#13;
+			•You prank the attacker an instant before it attacks, such as by throwing a pie in its face, imposing disadvantage on the attack. &#13;
+			•If the attacker hits, the target is magically squashed flat, deflated like a balloon, momentarily chopped in half, or burned to a crisp. As a result, the target has resistance to this damage, and is knocked prone. &#13;
+			•If the attacker misses, they slip on a well-placed banana peel and fall prone.&#13;
+			You teleport to an unoccupied space within 5ft of the target as a part of your reaction.</description>
+        </sheet>
+    </element>
+    <element name="Off-Screen Teleportation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_OFFSCREEN_TELEPORTATION">
+        <description>
+            <p>By 14th level, you can exploit a well-known law of toons which states that anyone you can’t see basically teleports to where they need to be. When you are in a location no other creature can see you, or when you take the Hide action on your turn, you can teleport up to 120 feet to an unoccupied space you can see as a bonus action. Your destination must be a location no other creature can see, but can include obvious and easy to access locations, such as behind another creature’s back, inside a barrel, or just around a corner.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you are in a location no other creature can see you, or when you take the Hide action on your turn, you can teleport up to 120ft to an unoccupied space you can see. Your destination must be a location no other creature can see, but can include obvious and easy to access locations.</description>
+        </sheet>
+    </element>
+    <element name="Two-Dimensional" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_TOON_MAGIC_TWODIMENSIONAL">
+        <description>
+            <p>Starting at 18th level, as a bonus action, you can fully embrace your cartoonish influences and become perfectly flat. You can revert to three dimensions as a bonus action. In your two-dimensional form, the laws of reality are even looser for you, granting you the following benefits:</p>
+			<ul>
+				<li>Ranged attacks made against you have disadvantage.</li>
+				<li>You have advantage on Dexterity saving throws.</li>
+				<li>You can increase or decrease your size (as per the enlarge/reduce spell) as a bonus action.</li>
+				<li>When you fall, you descend at a rate of 60 feet per round and take no damage from falling, as you instead glide like a sheet of paper.</li>
+				<li>You can fit through passageways as narrow as 1/2-inch across.</li>
+			</ul>
+        </description>
+        <sheet>
+            <description> As a bonus action, you can become perfectly flat. You can revert to three dimensions as a bonus action. In your two-dimensional form, the laws of reality are even looser for you, granting you the following benefits: &#13;
+			•Ranged attacks made against you have disadvantage. &#13;
+			•You have advantage on DEX saving throws. &#13;
+			•You can increase or decrease your size (as per the enlarge/reduce spell) as a bonus action. &#13;
+			•When you fall, you descend at a rate of 60ft/round and take no damage from falling, as you instead glide like a sheet of paper. &#13;
+			•You can fit through passageways as narrow as 1/2-inch across.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mirrorkin Sorcerous Origin</name>
+		<description>The Mirrorkin Sorcerous Origin from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="sorcerer-mirrorkin.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/sorcerer-mirrorkin.xml" />
+		</update>
+	</info>
+	<element name="Mirrorkin" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SORCERER_ARCHETYPE_MIRRORKIN">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>One of your ancestors came from beyond the looking glass; a strange world where everything is a twisted reflection of the true reality. As such, you have inherited amazing powers of mimicry and illusion that allow you to copy other people's abilities. To fight against you is almost akin to fighting one's own mirror image, something few warriors would relish.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_MIRROR_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_MIMIC_TRAIT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_REFLECT_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_COPYCAT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_PERFECT_DUPLICATE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_MIRROR_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_MIMIC_TRAIT" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_REFLECT_MAGIC" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_COPYCAT" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_PERFECT_DUPLICATE" level="18" />
+		</rules>
+	</element>
+	<element name="Mirror Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_MIRROR_MAGIC">
+        <description>
+            <p>When you choose this origin at 1st level, you can duplicate the magic that affects you. When a spell is cast targeting you or you are in the area of a spell's effect, you can use your reaction to learn that spell. You can't use this ability to learn a spell that had no effect on you, even if it forced you to make a saving throw against it.</p>
+            <p class="indent">You can only learn a spell if it is of a level for which you have spell slots. You can learn two 1st-level spells using this ability, which don't count against the total number of sorcerer spells you know. When you gain 2nd, 3rd, 4th, and 5th-level spells, you can learn 2 spells for each of those levels, for a total of 10 additional spells known. The spells learned need not be from the sorcerer spell list, but count as sorcerer spells for you. You can use your action to forget a spell you have learned using this ability.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When a spell is cast targeting you or you are in the area of a spell's effect, you can use your reaction to learn that spell. You can't use this ability to learn a spell that had no effect on you, even if it forced you to make a saving throw against it. You can learn two 1st-level spells using this ability</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Spell (Sorcerer)" supports="1" level="1" number="2" spellcasting="Sorcerer"/>
+            <select type="Spell" name="Spell (Sorcerer)" supports="2" level="3" number="2" spellcasting="Sorcerer"/>
+            <select type="Spell" name="Spell (Sorcerer)" supports="3" level="5" number="2" spellcasting="Sorcerer"/>
+            <select type="Spell" name="Spell (Sorcerer)" supports="4" level="7" number="2" spellcasting="Sorcerer"/>
+            <select type="Spell" name="Spell (Sorcerer)" supports="5" level="9" number="2" spellcasting="Sorcerer"/>
+        </rules>
+    </element>
+    <element name="Mimic Trait" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_MIMIC_TRAIT">
+        <description>
+            <p>Also at 1st level, you gain an uncanny ability to mimic other people. As an action, you can choose a Humanoid you can see within 60 feet and gain one trait of your choice that they possess from the following list (even if they only possess it temporarily):</p>
+            <ul>
+                <li>One special sense, such as darkvision or tremorsense.</li>
+                <li>One movement speed, such as a swim or climb speed.</li>
+                <li>One skill, tool, or instrument proficiency.</li>
+                <li>One damage resistance.</li>
+                <li>Their accent, verbal tics, and mannerisms.</li>
+            </ul>
+            <p>You can keep this trait as long as you are within 60 feet of the target, or until you use this ability again.</p>
+        </description>
+        <sheet action="Action">
+            <description> You can choose a Humanoid you can see within 60ft and gain one of these traits of your choice that they possess: one special sense, one movement speed, one skill/tool/instrument proficiency, one damage resistance or their accent, verbal tics, and mannerisms. You can keep this trait as long as you are within 60ft of the target, or until you use this ability again.</description>
+        </sheet>
+    </element>
+    <element name="Reflect Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_REFLECT_MAGIC">
+        <description>
+            <p>At 6th level, you can turn your skin into a shimmering mirror that reflects magic. When a creature casts a spell that calls for a saving throw to resist its effects and targets you or includes you in its area of effect, you can attempt to reflect the spell's energy back against its caster. Spend a number of sorcery points equal to the spell's level (1 sorcery point for cantrips). If you succeed on your saving throw against the spell, the caster must also make a saving throw against the spell, using their own spell save DC. On a failed save, the caster suffers the effects of the spell as if you had cast it and they had been the original target or been within the area of the spell.</p>
+        </description>
+        <sheet>
+            <description> When a creature casts a spell that calls for a saving throw to resist its effects, and targets you or includes you in its area of effect, you can attempt to reflect the spell's energy back against its caster. Spend a number of sorcery points equal to the spell's level (1 for cantrips). If you succeed on your saving throw against the spell, the caster must also make a saving throw against the spell, using their own spell save DC. On a failed save, the caster suffers the effects of the spell as if you had cast it and they had been the original target or been within the area of the spell.</description>
+        </sheet>
+    </element>
+    <element name="Copycat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_COPYCAT">
+        <description>
+            <p>By 14th level, you have developed your mimicry to the point where you can mirror the unique and powerful abilities of those around you. As an action on your turn, you can perform any action that has been performed within the last minute by a Humanoid (other than yourself) that you can see within 60 feet. Any prerequisites that would normally be required for the action (such as brandishing of holy symbols, spending of ki points, or consumption of items) are waived when you use this feature, unless it is a spell or required the use of a spell slot, in which case you must still expend the relevant spell slot and any required expensive material components. If the ability forces targets to make a saving throw, you can use your sorcerer spell save DC.</p>
+            <p class="indent">Once you use this ability, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description> On your turn, you can perform any action that has been performed within the last minute by a Humanoid (other than yourself) that you can see within 60 feet. Any prerequisites that would normally be required for the action are waived when you use this feature, unless it is a spell or required the use of a spell slot, in which case you must still expend the relevant spell slot and any required expensive material components. If the ability forces targets to make a saving throw, you can use your sorcerer spell save DC.</description>
+        </sheet>
+    </element>
+    <element name="Perfect Duplicate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MIRRORKIN_PERFECT_DUPLICATE">
+        <description>
+            <p>At 18th level, you can duplicate yourself and others with ease. You learn the spells <i>disguise self</i> and <i>mirror image</i> if you do not know them already, and you can cast them at will without expending a spell slot.</p>
+        </description>
+        <sheet>
+            <description> You can duplicate yourself and others with ease. You learn the spells disguise self and mirror image if you do not know them already, and you can cast them at will without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" requirements="!ID_PHB_SPELL_DISGUISE_SELF" />
+            <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" requirements="!ID_PHB_SPELL_MIRROR_IMAGE" />
+        </rules>
+    </element>
+</elements>

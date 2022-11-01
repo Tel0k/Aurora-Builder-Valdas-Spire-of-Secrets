@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Emotion Lord Sorcerous Origin</name>
+		<description>The Emotion Lord Sorcerous Origin from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="sorcerer-emotion-lord.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/sorcerer-emotion-lord.xml" />
+		</update>
+	</info>
+
+	<element name="Emotion Lord" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SORCERER_ARCHETYPE_EMOTION_LORD">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Whenever you are filled with heartbreak, terror, or the depths of sorrow, waves of arcane energy spill forth from you. You might have found the spark of magic when great tragedy struck or while you shook with rage, or it may have always lingered in the back of your soul, only erupting forth when you lost control. However it originated, controlling your emotions and knowing yourself is key to manipulating your deep well of arcane energy. To lose focus, to be governed by your emotions, allows all your magic to flow through you in spectacular and uncontrollable fashion. But to have control of yourself, and true understanding of your soul, grants you a breadth of magic few can hope to equal.</p>
+			<h5>“I FIRST DISCOVERED MY MAGIC WHILE I WAS..."</h5>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Event</td></tr>
+				</thead>
+				<tr><td>1-2</td><td>Wracked by grief</td></tr>
+				<tr><td>3-4</td><td>In the throes of passion</td></tr>
+				<tr><td>5-6</td><td>Shaking with rage</td></tr>
+				<tr><td>7-8</td><td>Bursting with joy</td></tr>
+				<tr><td>9-10</td><td>Terrified to my core</td></tr>
+			</table>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EMOTIONAL_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EMPATHY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MOOD_SWING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_SHIFT_TEMPERAMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EMOTIONAL_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EMPATHY" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MOOD_SWING" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_SHIFT_TEMPERAMENT" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL" level="18" />
+		</rules>
+	</element>
+	<element name="Emotional Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EMOTIONAL_MAGIC">
+		<description>
+			<p>At 1st level, you learn additional spells when you reach certain levels in this class, as shown on the Emotional Spells table. The list of spells you know from this table changes with your predominant emotional state. These emotions should be informed by your character's history as much as the current situation; however, the GM decides whether or not a situation is appropriate to inspire a specific emotional state. For example, a pitched life-or-death battle is unlikely to inspire love. If your emotions would be uncertain, choose this state randomly.</p>
+			<p class="indent">Each spell counts as a sorcerer spell for you but doesn't count against the number of sorcerer spells you know. These spells can't be replaced when you gain a level in this class.</p>
+		</description>
+		<sheet>
+			<description level="3">You learn additional spells when you reach certain levels in this class. The list of spells you know changes with your predominant emotional state. These emotions should be informed by your character's history as much as the current situation; however, the GM decides whether or not a situation is appropriate to inspire a specific emotional state. If your emotions would be uncertain, choose this state randomly.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Emotional Magic" supports="Emotional Magic" requirements="!ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_ANGER" level="18" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_FEAR" level="18" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_JOY" level="18" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_LOVE" level="18" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_SORROW" level="18" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL"/>
+		</rules>
+	</element>
+	<element name="Emotion: Anger" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_ANGER">
+		<compendium display="false" />
+		<supports>Emotional Magic</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Anger Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>thunderwave</i></td></tr>
+				<tr><td>3rd</td><td><i>scorching ray</i></td></tr>
+				<tr><td>5th</td><td><i>lightning bolt</i></td></tr>
+				<tr><td>7th</td><td><i>fire shield</i></td></tr>
+				<tr><td>9th</td><td><i>cloudkill</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Sorcerer" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Sorcerer" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Sorcerer" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Sorcerer" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" spellcasting="Sorcerer" level="9" />
+		</rules>
+	</element>
+	<element name="Emotion: Fear" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_FEAR">
+		<compendium display="false" />
+		<supports>Emotional Magic</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Fear Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>expeditious retreat</i></td></tr>
+				<tr><td>3rd</td><td><i>invisibility</i></td></tr>
+				<tr><td>5th</td><td><i>fear</i></td></tr>
+				<tr><td>7th</td><td><i>phantasmal killer</i></td></tr>
+				<tr><td>9th</td><td><i>mislead</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Sorcerer" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Sorcerer" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Sorcerer" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" spellcasting="Sorcerer" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" spellcasting="Sorcerer" level="9" />
+		</rules>
+	</element>
+	<element name="Emotion: Joy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_JOY">
+		<compendium display="false" />
+		<supports>Emotional Magic</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Joy Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>heroism</i></td></tr>
+				<tr><td>3rd</td><td><i>lesser restoration</i></td></tr>
+				<tr><td>5th</td><td><i>fly</i></td></tr>
+				<tr><td>7th</td><td><i>freedom of movement</i></td></tr>
+				<tr><td>9th</td><td><i>greater restoration</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Sorcerer" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Sorcerer" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Sorcerer" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Sorcerer" level="9" />
+		</rules>
+	</element>
+	<element name="Emotion: Love" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_LOVE">
+		<compendium display="false" />
+		<supports>Emotional Magic</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Love Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>charm person</i></td></tr>
+				<tr><td>3rd</td><td><i>enthrall</i></td></tr>
+				<tr><td>5th</td><td><i>sending</i></td></tr>
+				<tr><td>7th</td><td><i>compulsion</i></td></tr>
+				<tr><td>9th</td><td><i>geas</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Sorcerer" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" spellcasting="Sorcerer" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" spellcasting="Sorcerer" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" spellcasting="Sorcerer" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" spellcasting="Sorcerer" level="9" />
+		</rules>
+	</element>
+	<element name="Emotion: Sorrow" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EM_SORROW">
+		<compendium display="false" />
+		<supports>Emotional Magic</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Sorrow Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>sleep</i></td></tr>
+				<tr><td>3rd</td><td><i>silence</i></td></tr>
+				<tr><td>5th</td><td><i>slow</i></td></tr>
+				<tr><td>7th</td><td><i>banishment</i></td></tr>
+				<tr><td>9th</td><td><i>antilife shell</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" spellcasting="Sorcerer" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_SILENCE" spellcasting="Sorcerer" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" spellcasting="Sorcerer" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" spellcasting="Sorcerer" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" spellcasting="Sorcerer" level="9" />
+		</rules>
+	</element>
+	<!---->
+	<element name="Empathy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_EMPATHY">
+		<description>
+			<p>Also at 1st level, you can use your action to probe the surface level of a creature's emotions. You must be able to see the creature, it must be within 30 feet of you, and it must have an Intelligence of 3 or higher. You learn the creature's emotional state and, at the GM's discretion, one of the creature's Bonds.</p>
+		</description>
+		<sheet action="Action">
+			<description> You can probe the surface level of a creature's emotions. You must be able to see it, it must be within 30ft of you, and it must have an INT of 3 or higher. You learn the creature's emotional state and, at the GM's discretion, one of the creature's Bonds.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Mood Swing" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MOOD_SWING">
+		<description>
+			<p>Starting at 6th level, you can channel great swings of emotional energy at a whim. You can use the following abilities, regardless of your emotional state:</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Burning Rage.</strong> As a bonus action on your turn, you can spend 1 sorcery point to ignite in arcane fury. Until the start of your next turn, when a creature comes within 5 feet of you or starts its turn there, it must make a Dexterity saving throw against your spell save DC. On a failed save, it takes 2d6 fire damage.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Crestfallen.</strong> Beset by sorrow, you can spend 2 sorcery points as a bonus action on your turn to fade out the world. Until the start of your next turn, you are visibly transparent, and attack rolls against you have disadvantage. This effect ends early if you are hit by an attack.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Flight of Terror.</strong> You can spend 1 sorcery point to take the Disengage action as a bonus action on your turn.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Heartsick.</strong> Overcome by lovesickness, you can use your bonus action and spend 1 sorcery point to end one effect on yourself that is causing you to be charmed or frightened.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Moment of Bliss.</strong> As a bonus action, you can spend 1 sorcery point to gain a flying speed equal to your walking speed until the end of your turn. If you end your turn in the air without anything holding you aloft, and you are within 30 feet of the ground, you float gently to the ground. Otherwise, you fall.</p>
+		</description>
+		<sheet>
+			<description> You can use the following abilities, regardless of your emotional state:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Mood Swing 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_BURNING_RAGE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_BURNING_RAGE" />
+			<select type="Archetype Feature" name="Mood Swing 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_CRESTFALLEN" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_CRESTFALLEN" />
+			<select type="Archetype Feature" name="Mood Swing 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_FLIGHT_OF_TERROR" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_FLIGHT_OF_TERROR" />
+			<select type="Archetype Feature" name="Mood Swing 4" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_HEARTSICK" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_HEARTSICK" />
+			<select type="Archetype Feature" name="Mood Swing 5" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_MOMENT_OF_BLISS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_MOMENT_OF_BLISS" />
+		</rules>
+	</element>
+	<element name="Burning Rage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_BURNING_RAGE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_BURNING_RAGE</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action on your turn, you can spend 1 sorcery point to ignite in arcane fury. Until the start of your next turn, when a creature comes within 5 feet of you or starts its turn there, it must make a Dexterity saving throw against your spell save DC. On a failed save, it takes 2d6 fire damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> On your turn, you can spend 1 sorcery point to ignite in arcane fury. Until the start of your next turn, when a creature comes within 5ft of you or starts its turn there, it must make a DC{{spellcasting:dc:cha}} saving throw. On a failed save, it takes 2d6 fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Crestfallen" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_CRESTFALLEN">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_CRESTFALLEN</supports>
+		<compendium display="false" />
+		<description>
+			<p>Beset by sorrow, you can spend 2 sorcery points as a bonus action on your turn to fade out the world. Until the start of your next turn, you are visibly transparent, and attack rolls against you have disadvantage. This effect ends early if you are hit by an attack.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You can spend 2 sorcery points on your turn to fade out the world. Until the start of your next turn, you are visibly transparent, and attack rolls against you have disadvantage. This effect ends early if you are hit by an attack.</description>
+		</sheet>
+	</element>
+	<element name="Flight of Terror" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_FLIGHT_OF_TERROR">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_FLIGHT_OF_TERROR</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can spend 1 sorcery point to take the Disengage action as a bonus action on your turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You can spend 1 sorcery point to take the Disengage action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Heartsick" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_HEARTSICK">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_HEARTSICK</supports>
+		<compendium display="false" />
+		<description>
+			<p>Overcome by lovesickness, you can use your bonus action and spend 1 sorcery point to end one effect on yourself that is causing you to be charmed or frightened.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You can spend 1 sorcery point to end one effect on yourself that is causing you to be charmed or frightened.</description>
+		</sheet>
+	</element>
+	<element name="Moment of Bliss" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_MOMENT_OF_BLISS">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_MS_MOMENT_OF_BLISS</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can spend 1 sorcery point to gain a flying speed equal to your walking speed until the end of your turn. If you end your turn in the air without anything holding you aloft, and you are within 30 feet of the ground, you float gently to the ground. Otherwise, you fall.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> You can spend 1 sorcery point to gain a flying speed equal to your walking speed until the end of your turn. If you end your turn in the air without anything holding you aloft, and you are within 30ft of the ground, you float gently down. Otherwise, you fall.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Shift Temperament" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_SHIFT_TEMPERAMENT">
+		<description>
+			<p>At 14th level, you can use your action to bend the emotions of a creature you can see within 60 feet, which must make a Charisma saving throw against your spell save DC. If the creature fails its saving throw, you can use one of the following abilities on it:</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Charmed.</strong>You spend 1 sorcery point, and the creature is charmed by you for 1 minute. This effect ends early if you or your companions do anything harmful to the creature.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Frenzied.</strong> You spend 3 sorcery points to cause the creature to become frenzied for up to 1 minute. The creature can repeat this saving throw whenever it takes damage, ending the effect on itself on a success.</p>
+			<p class="indent">A frenzied creature loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an opportunity attack if any creature provokes one.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Frightened.</strong> You spend 1 sorcery point, and the creature is frightened by you for up to 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Indifferent.</strong> If the creature is hostile towards you, you can spend 2 sorcery points to render it indifferent toward you for up to a minute. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed.</p>
+		</description>
+		<sheet action="Action">
+			<description> Choose one creature you can see within 60 feet, which must make a DC{{spellcasting:dc:cha}} CHA saving throw. If the creature fails its saving throw, you can use one of the following abilities on it: </description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Shift Temperament 1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_CHARMED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_CHARMED" />
+			<select type="Archetype Feature" name="Shift Temperament 2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRENZIED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRENZIED" />
+			<select type="Archetype Feature" name="Shift Temperament 3" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRIGHTENED" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRIGHTENED" />
+			<select type="Archetype Feature" name="Shift Temperament 4" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_INDIFFERENT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_INDIFFERENT" />
+		</rules>
+	</element>
+	<element name="Charmed" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_CHARMED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_CHARMED</supports>
+		<compendium display="false" />
+		<description>
+			<p>You spend 1 sorcery point, and the creature is charmed by you for 1 minute. This effect ends early if you or your companions do anything harmful to the creature.</p>
+		</description>
+		<sheet>
+			<description> You spend 1 sorcery point, and the creature is charmed by you for 1 minute. This effect ends early if you or your companions do anything harmful to the creature.</description>
+		</sheet>
+	</element>
+	<element name="Frenzied" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRENZIED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRENZIED</supports>
+		<compendium display="false" />
+		<description>
+			<p>You spend 3 sorcery points to cause the creature to become frenzied for up to 1 minute. The creature can repeat this saving throw whenever it takes damage, ending the effect on itself on a success.</p>
+			<p class="indent">A frenzied creature loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an opportunity attack if any creature provokes one.</p>
+		</description>
+		<sheet>
+			<description> You spend 3 sorcery points to cause the creature to become frenzied for up to 1 minute. The creature can repeat this saving throw whenever it takes damage, ending the effect on itself on a success. A frenzied creature loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an opportunity attack if any creature provokes one.</description>
+		</sheet>
+	</element>
+	<element name="Frightened" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRIGHTENED">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_FRIGHTENED</supports>
+		<compendium display="false" />
+		<description>
+			<p>You spend 1 sorcery point, and the creature is frightened by you for up to 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet>
+			<description> You spend 1 sorcery point, and the creature is frightened by you for up to 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Indifferent" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_INDIFFERENT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_ST_INDIFFERENT</supports>
+		<compendium display="false" />
+		<description>
+			<p>If the creature is hostile towards you, you can spend 2 sorcery points to render it indifferent toward you for up to a minute. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed.</p>
+		</description>
+		<sheet>
+			<description> If the creature is hostile towards you, you can spend 2 sorcery points to render it indifferent toward you for up to a minute. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed.</description>
+		</sheet>
+	</element>
+	<!---->
+	<element name="Vibrant Soul" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EL_VIBRANT_SOUL">
+		<description>
+			<p>By 18th level, you have mastery over your mercurial feelings. You know all of the spells on your Emotional Spells list at all times. Additionally, you learn the spell <i>antipathy/sympathy</i>, which counts as a sorcerer spell for you and doesn't count against your total number of spells known. You can cast this spell by spending 10 sorcery points, instead of using a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You know all of the spells on your Emotional Spells list at all times. Additionally, you learn the spell antipathy/sympathy, which counts as a sorcerer spell for you and doesn't count against your total number of spells known. You can cast this spell by spending 10 sorcery points, instead of using a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANTIPATHY_SYMPATHY" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+</elements>

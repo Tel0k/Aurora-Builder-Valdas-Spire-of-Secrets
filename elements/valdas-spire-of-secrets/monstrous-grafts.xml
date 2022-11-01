@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	  <name>Monstrous Grafts</name>
+	  <description>The Monstrous Grafts from Valda's Spire of Secrets</description>
+	  <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+	  <update version="0.0.1">
+		<file name="monstrous-grafts.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/monstrous-grafts.xml" />
+	  </update>    
+	</info>
+	
+	<element name="Amphibious Adaption" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_AMPHIBIOUS_ADAPTATION">
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Amphibious trait</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>You have grafted the gills of an aquatic creature to your neck, allowing you to breathe both air and water. Additionally, you attach minimal fins and gain a swimming speed equal to your walking speed.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_AMPHIBIOUS" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_AMPHIBIOUS">
+		<compendium display="false" />
+		<description>
+			<p>You have grafted the gills of an aquatic creature to your neck, allowing you to breathe both air and water. Additionally, you attach minimal fins and gain a swimming speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water and you have a swimming speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Arcane Synapses" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_ARCANE_SYNAPSES">
+		<requirements>!ID_MHP_VSOS_ITEM_ARCANE_SYNAPSES</requirements>
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Innate Spellcasting trait</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>You have stolen a bit of arcane potential from a creature by inserting some of its nerves into your brain. You learn one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.</p>
+			<p class="indent">By harvesting a second creature, you can improve this graft and learn an additional wizard cantrip of your choice.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ARCANE_SYNAPSES" />
+		</rules>
+	</element>
+	<element name="Arcane Synapses" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ARCANE_SYNAPSES">
+		<compendium display="false" />
+		<description>
+			<p>You have stolen a bit of arcane potential from a creature by inserting some of its nerves into your brain. You learn one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.</p>
+			<p class="indent">By harvesting a second creature, you can improve this graft and learn an additional wizard cantrip of your choice.</p>
+		</description>
+		<sheet>
+			<description>You learn one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Arcane Synapses)" supports="0, Wizard" />
+		</rules>
+	</element>
+
+	<element name="Arcane Synapses +1" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_ARCANE_SYNAPSES_2">
+		<requirements>ID_MHP_VSOS_ITEM_ARCANE_SYNAPSES</requirements>
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Innate Spellcasting trait</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>Again, you have stolen a bit of arcane potential from a creature by inserting some of its nerves into your brain. You learn one more cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ARCANE_SYNAPSES_2" />
+		</rules>
+	</element>
+	<element name="Arcane Synapses +1" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ARCANE_SYNAPSES_2">
+		<requirements>ID_MHP_VSOS_RACIAL_TRAIT_ARCANE_SYNAPSES, !ID_MHP_VSOS_RACIAL_TRAIT_ARCANE_SYNAPSES_2</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Again, you have stolen a bit of arcane potential from a creature by inserting some of its nerves into your brain. You learn one more cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.</p>
+		</description>
+		<sheet>
+			<description>You learn one more cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Arcane Synapses +1)" supports="0, Wizard" />
+		</rules>
+	</element>
+
+	<element name="Beast's Hide" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_BEASTS_HIDE">
+		<description>
+			<p><strong>Donor:</strong> Beast of Large size or larger</p>
+			<p><strong>Slot:</strong> External</p>
+			<p>You have transplanted the thick (and possibly furry) hide from a wild beast onto your body. Your Armor Class equals 13 + your Dexterity modifier</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="slot">external</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_BEASTS_HIDE" />
+		</rules> 
+	</element>
+	<element name="Beast's Hide" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BEASTS_HIDE">
+		<description>
+			<p>You have transplanted the thick (and possibly furry) hide from a wild beast onto your body. Your Armor Class equals 13 + your Dexterity modifier</p>
+		</description>
+		<sheet>
+			<description>You have transplanted the thick (and possibly furry) hide from a wild beast onto your body. Your AC equals {{beasthide:armor}}.</description>
+		</sheet>
+		<rules>
+			<stat name="beasthide:armor" value="13" />
+			<stat name="beasthide:armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="beasthide:armor" bonus="calculation" alt="Armor (Beast's Hide)" />
+		</rules>
+	</element>
+
+	<element name="Bestial Weapons: Teeth" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_BESTIAL_WEAPONS_TEETH">
+		<description>
+			<p><strong>Donor:</strong> Beast, Dragon, or Monstrosity with Bite or Claw attack</p>
+			<p><strong>Slot:</strong> Arms or Head</p>
+			<p>You have surgically implanted the teeth from a monster into yourself, which are natural weapons that you can use to make unarmed strikes. By harvesting a second creature, you can improve this graft to gain both the claws and teeth.</p>
+			<p class="indent">You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your teeth. If you hit with them, you deal damage equal to 1d6 + your Strength or Dexterity modifier (as appropriate to the attack roll), instead of the bludgeoning damage normal for an unarmed strike. Your teeth deal piercing damage and take up the Head slot.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_BESTIAL_WEAPONS_TEETH" />
+		</rules>
+	</element>
+	<element name="Teeth" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BESTIAL_WEAPONS_TEETH">
+		<compendium display="false" />
+		<requirements>!ID_MHP_VSOS_RACIAL_TRAIT_BESTIAL_WEAPONS_TEETH</requirements>
+		<description>
+			<p>You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your teeth. If you hit with them, you deal damage equal to 1d6 + your Strength or Dexterity modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike. Your teeth take up the Head slot.</p>
+		</description>
+		<sheet>
+			<description>You can use DEX instead of STR for the attack rolls of your unarmed strikes made using your teeth. If you hit with them, you deal damage equal to 1d6 + your STR or DEX mod piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Bestial Weapons: Claws" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_BESTIAL_WEAPONS_CLAWS">
+		<supports>Graft, Arms, Head</supports>
+		<description>
+			<p><strong>Donor:</strong> Beast, Dragon, or Monstrosity with Bite or Claw attack</p>
+			<p><strong>Slot:</strong> Arms or Head</p>
+			<p>You have surgically implanted the claws from a monster into yourself, which are natural weapons that you can use to make unarmed strikes. By harvesting a second creature, you can improve this graft to gain both the claws and teeth.</p>
+			<p class="indent">You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your claws. If you hit with them, you deal damage equal to 1d6 + your Strength or Dexterity modifier (as appropriate to the attack roll), instead of the bludgeoning damage normal for an unarmed strike. Your claws deal slashing damage and take up the Arms slot.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="slot">arms</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_BESTIAL_WEAPONS_CLAWS" />
+		</rules>
+	</element>
+	<element name="Claws" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BESTIAL_WEAPONS_CLAWS">
+		<compendium display="false" />
+		<requirements>!ID_MHP_VSOS_RACIAL_TRAIT_BESTIAL_WEAPONS_CLAWS</requirements>
+		<description>
+			<p>You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your claws. If you hit with them, you deal damage equal to 1d6 + your Strength or Dexterity modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike. Your claws take up the Arms slot.</p>
+		</description>
+		<sheet>
+			<description>You can use DEX instead of STR for the attack rolls of your unarmed strikes made using your claws. If you hit with them, you deal damage equal to 1d6 + your STR or DEX mod slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Charging Hooves" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_CHARGING_HOOVES">
+		<supports>Graft, Legs</supports>
+		<description>
+			<p><strong>Donor:</strong> Any creature with a Charge trait or a Gore or Hooves attack</p>
+			<p><strong>Slot:</strong> Legs</p>
+			<p>You have replaced your legs with those of a creature known for running down its foes. Once on each of your turns, when you move at least 15 feet in a straight line, you can move up to 10 additional feet in that direction without spending additional movement.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">legs</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CHARGING_HOOVES" />
+		</rules>
+	</element>
+	<element name="Charging Hooves" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CHARGING_HOOVES">
+		<compendium display="false" />
+		<description>
+			<p>You have replaced your legs with those of a creature known for running down its foes. Once on each of your turns, when you move at least 15 feet in a straight line, you can move up to 10 additional feet in that direction without spending additional movement.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you move at least 15 feet in a straight line, you can move up to 10 additional feet in that direction without spending additional movement.</description>
+		</sheet>
+	</element>
+
+	<element name="Climbing Apparatus" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_CLIMBING_APPARATUS">
+		<supports>Graft, Legs</supports>
+		<description>
+			<p><strong>Donor:</strong> Beast, Humanoid, or Monstrosity with a climbing speed</p>
+			<p><strong>Slot:</strong> Legs</p>
+			<p>You have replaced or complemented your limbs with those of a climbing creature. You gain a climbing speed equal to your walking speed.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1250</set>
+			<set name="slot">legs</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CLIMBING_APPARATUS" />
+		</rules>
+	</element>
+	<element name="Climb" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CLIMBING_APPARATUS">
+		<compendium display="false" />
+		<description>
+			<p>You have replaced or complemented your limbs with those of a climbing creature. You gain a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>You have a climbing speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Darkvision" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_DARKVISION">
+		<description>
+			<p><strong>Donor:</strong> Any creature with darkvision</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>You have replaced your own eyes with those of a monster with keen nightvision. You gain darkvision, the ability to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_MHP_VSOS_RACIAL_TRAIT_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Darkvision" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_DARKVISION">
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Doppel-Blooded" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_DOPPEL_BLOODED">
+		<description>
+			<p><strong>Donor:</strong> Any creature with the shapechanger tag</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You transform your appearance for up to 1 hour. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this ability to become quadrupedal, for instance.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SHAPECHANGER" />
+		</rules>
+	</element>
+	<element name="Shapechanger" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SHAPECHANGER">
+		<compendium display="false" />
+		<description>
+			<p>You transform your appearance for up to 1 hour. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this ability to become quadrupedal, for instance.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet alt="Shapechanger (Doppel-Blooded)" usage="1/Long Rest">
+			<description>You transform your appearance for up to 1 hour. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this ability to become quadrupedal, for instance.</description>
+		</sheet>
+	</element>
+
+	<element name="Draconis Fundamentum" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_DRACONIS_FUNDAMENTUM">
+		<description>
+			<p><strong>Donor:</strong> Dragon, Humanoid, or Monstrosity with a Breath Weapon</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You have installed the mighty source of breath weapons into yourself, and as an action on your turn, you can exhale a wave of energy. Each creature in a 15-foot cone must make a Dexterity saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d6 damage for each point of your proficiency bonus, or half as much damage on a successful one. The breath weapon's damage type is the same as the donor's breath weapon.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Breath Weapon" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON">
+		<compendium display="false" />
+		<description>
+			<p>You have installed the mighty source of breath weapons into yourself, and as an action on your turn, you can exhale a wave of energy. Each creature in a 15-foot cone must make a Dexterity saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d6 damage for each point of your proficiency bonus, or half as much damage on a successful one. The breath weapon's damage type is the same as the donor's breath weapon.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description> You can exhale a wave of energy. Each creature in a 15-foot cone must make a DC{{breath weapon:dc}} Dexterity saving throw. On a failed save, the creature takes {{proficiency}}d6 {{breath weapon:damage type}} damage, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Breath Weapon Damage" supports="Donor Damage" />
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Acid" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_ACID">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Acid damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Acid" inline="true" />
+		</rules>
+	</element>
+	<element name="Cold" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_COLD">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Cold damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Cold" inline="true" />
+		</rules>
+	</element>
+	<element name="Fire" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_FIRE">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Fire damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Fire" inline="true" />
+		</rules>
+	</element>
+	<element name="Force" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_FORCE">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Force damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Force" inline="true" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_LIGHTNING">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Lightning damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Lightning" inline="true" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_NECROTIC">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Necrotic damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Necrotic" inline="true" />
+		</rules>
+	</element>
+	<element name="Poison" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_POISON">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Poison damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Poison" inline="true" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_PSYCHIC">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Psychic damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Psychic" inline="true" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_RADIANT">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Radiant damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Radiant" inline="true" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BREATH_WEAPON_DMG_THUNDER">
+		<supports>Donor Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Thunder damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="breath weapon:damage type" value="Thunder" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Dragon's Hide" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_DRAGONS_HIDE">
+		<description>
+			<p><strong>Donor:</strong> Dragon of Large size or larger</p>
+			<p><strong>Slot:</strong> External</p>
+			<p>You've transplanted the scaly, diamond-like hide of a dragon onto your head. Your Armor Class equals 17. You also gain resistance to one of the following damage types to which the donor dragon was immune: acid, cold, fire, lightning, or poison damage. You can only install this graft if you are proficient with heavy armor.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">2250</set>
+			<set name="slot">external</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_DRAGONS_HIDE" />
+		</rules>
+	</element>
+	<element name="Dragon's Hide" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_DRAGONS_HIDE">
+		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
+		<description>
+			<p>You’ve transplanted the scaly, diamond-like hide of a dragon onto your body. While you aren’t wearing armor, this natural armor provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+			<p class="indent">You also gain resistance to one of the following damage types to which the donor dragon was immune: acid, cold, fire, lightning, or poison damage. You can only install this graft if you are proficient with heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have transplanted the scaly hide of a dragon onto your body. Your AC equals {{dragonhide:armor}}. You also gain resistance to the damage type the donor dragon was immune to.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Dragon Damage Resistance" supports="Dragon Damage Resistance" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<stat name="dragonhide:armor" value="17" />
+			<stat name="ac:calculation" value="dragonhide:armor" bonus="calculation" alt="Armor (Dragon's Hide)" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Acid" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ACID_RESISTANCE">
+		<supports>Dragon Damage Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>Acid Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Cold" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_COLD_RESISTANCE">
+		<supports>Dragon Damage Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>Cold Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />  
+		</rules>
+	</element>
+	<element name="Fire" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FIRE_RESISTANCE">
+		<supports>Dragon Damage Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>Fire Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />	  
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_LIGHTNING_RESISTANCE">
+		<supports>Dragon Damage Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>Thunder Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" /> 
+		</rules>
+	</element>
+	<element name="Poison" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_POISON_RESISTANCE">
+		<supports>Dragon Damage Resistance</supports>
+		<compendium display="false" />
+		<description>
+			<p>Poison Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Energetic Suture" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_ENERGETIC_SUTURE">
+		<description>
+			<p><strong>Donor:</strong> Celestial, Dragon, Elemental, Fey, or Fiend with immunity or resistance to acid, cold, fire, lightning, poison, or thunder damage</p>
+			<p><strong>Slot:</strong> External</p>
+			<p>You have managed to capture the essence of extraplanar resistance to magic. You gain resistance to one of the following damage types to which the donor was immune or resistant: acid, cold, fire, lightning, poison, or thunder.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">external</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ENERGETIC_SUTURE" />
+		</rules>
+	</element>
+	<element name="Energetic Suture" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ENERGETIC_SUTURE">
+		<description>
+			<p>You have managed to capture the essence of extraplanar resistance to magic. You gain resistance to one of the following damage types to which the donor was immune or resistant: acid, cold, fire, lightning, poison, or thunder.</p>
+		</description>
+		<sheet>
+			<description>You have managed to capture the essence of extraplanar resistance to magic. You gain resistance to one of the damage types to which the donor was immune or resistant: acid, cold, fire, lightning, poison, or thunder.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Energetic Suture" supports="Energetic Suture" />
+		</rules>
+	</element>
+	<element name="Acid" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ACID_RESISTANCE2">
+		<supports>Energetic Suture</supports>
+		<compendium display="false" />
+		<description>
+			<p>Acid Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Cold" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_COLD_RESISTANCE2">
+		<supports>Energetic Suture</supports>
+		<compendium display="false" />
+		<description>
+			<p>Cold Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />  
+		</rules>
+	</element>
+	<element name="Fire" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FIRE_RESISTANCE2">
+		<supports>Energetic Suture</supports>
+		<compendium display="false" />
+		<description>
+			<p>Fire Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />	  
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_LIGHTNING_RESISTANCE2">
+		<supports>Energetic Suture</supports>
+		<compendium display="false" />
+		<description>
+			<p>Thunder Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" /> 
+		</rules>
+	</element>
+	<element name="Poison" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_POISON_RESISTANCE2">
+		<supports>Energetic Suture</supports>
+		<compendium display="false" />
+		<description>
+			<p>Poison Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_THUNDER_RESISTANCE">
+		<supports>Energetic Suture</supports>
+		<compendium display="false" />
+		<description>
+			<p>Thunder Resistance</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+	<element name="Fiend's Hide" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_FIENDS_HIDE">
+		<description>
+			<p><strong>Donor:</strong> Fiend of Medium size or larger</p>
+			<p><strong>Slot:</strong> External</p>
+			<p>When you aren't wearing armor, your base AC is 15 + your Dexterity modifier (maximum 2). You can use your Fiend’s Hide to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your Fiend’s Hide.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="slot">external</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_FIENDS_HIDE" />
+		</rules> 
+	</element>
+	<element name="Fiend's Hide" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FIENDS_HIDE">
+		<description>
+			<p>You have transplanted the supernaturally tough hide of a fiend onto your body. Your Armor Class equals 15 + your Dexterity modifier (maximum 2).</p>
+		</description>
+		<sheet>
+			<description>You have transplanted the supernaturally tough hide of a fiend onto your body. Your AC equals {{fiendhide:armor}}.</description>
+		</sheet>
+		<rules>
+			<stat name="fiendhide:armor" value="13" />
+			<stat name="fiendhide:armor" value="dexterity:modifier" maximum="ac:armored:dexterity:cap" />
+			<stat name="ac:calculation" value="fiendhide:armor" bonus="calculation" alt="Armor (Fiend's Hide)" />
+		</rules>
+	</element>
+
+	<element name="Heart of Steel" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_HEART_OF_STEEL">
+		<description>
+			<p><strong>Donor:</strong> Any construct</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You have replaced your heart with the core from a construct. As a result, you can ignore the effects of 1 level of exhaustion, and you only need to rest for 4 hours to gain the same benefit that a human does from 8 hours of rest.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">2250</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_HEART_OF_STEEL" />
+		</rules>
+	</element>
+	<element name="Heart of Steel" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_HEART_OF_STEEL">
+		<compendium display="false" />
+		<description>
+			<p>You can ignore the effects of 1 level of exhaustion, and you only need to rest for 4 hours to gain the same benefit that a human does from 8 hours of rest.</p>
+		</description>
+		<sheet>
+			<description>You can ignore the effects of 1 level of exhaustion, and you only need to rest for 4 hours instead of 8.</description>
+		</sheet>
+	</element>
+
+	<element name="Horns" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_HORNS">
+		<description>
+			<p><strong>Donor:</strong> Any creature with a Gore, Horns, Ram, or Tusk attack</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>You attach a sturdy pair of horns or tusks onto your head, which are a natural weapon that you can use to make unarmed strikes. If you hit with them, you deal damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Your horns deal the same type of damage as the donor (usually bludgeoning or piercing damage).</p>
+			<p class="indent">Additionally, if you move in a straight line for 10 feet immediately before hitting a creature with your horns, that creature must make a Strength check contested by your Strength check. If you succeed, the creature is knocked prone.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<select type="Racial Trait" name="Natural Weapon" supports="ID_MHP_VSOS_RACIAL_TRAIT_HORNS|ID_MHP_VSOS_RACIAL_TRAIT_RAM" />
+		</rules>
+	</element>
+	<element name="Horns" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_HORNS">
+		<compendium display="false" />
+		<description>
+			<p>You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike. Additionally, if you move in a straight line for 10 feet immediately before hitting a creature with your horns, that creature must make a Strength check contested by your Strength check. If you succeed, the creature is knocked prone.</p>
+		</description>
+		<sheet>
+			<description>You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing damage. If you move in a straight line for 10 feet immediately before hitting a creature with your horns, that creature must make a Strength check contested by your Strength check. If you succeed, the creature is knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Ram" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_RAM">
+		<compendium display="false" />
+		<description>
+			<p>You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike. If you move in a straight line for 10 feet immediately before hitting a creature with your horns, that creature must make a Strength check contested by your Strength check. If you succeed, the creature is knocked prone.</p>
+		</description>
+		<sheet>
+			<description>You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} bludgeoning damage. Additionally, if you move in a straight line for 10 feet immediately before hitting a creature with your horns, that creature must make a Strength check contested by your Strength check. If you succeed, the creature is knocked prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Indiscernible Anatomy" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_INDISCERNIBLE_ANATOMY">
+		<description>
+			<p><strong>Donor:</strong> Aberration of Medium size or larger</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You have spliced aberrant genetics into your head, which have subsequently altered the placement and composition of your internal organs. Any critical hit against you becomes a normal hit.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1250</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_INDISCERNIBLE_ANATOMY" />
+		</rules>
+	</element>
+	<element name="Indiscernible Anatomy" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_INDISCERNIBLE_ANATOMY">
+		<compendium display="false" />
+		<description>
+			<p>You have spliced aberrant genetics into your head, which have subsequently altered the placement and composition of your internal organs. Any critical hit against you becomes a normal hit.</p>
+		</description>
+		<sheet>
+			<description>Any critical hit against you becomes a normal hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Leaping Legs" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_LEAPING_LEGS">
+		<supports>Graft, Legs</supports>
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Pounce or Standing Leap trait</p>
+			<p><strong>Slot:</strong> Legs</p>
+			<p>You have replaced or modified your legs with the muscular limbs of a bounding creature. Your jump distance doubles. Additionally, you can jump your full distance with or without a running start.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="slot">legs</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_LEAPING_LEGS" />
+		</rules>
+	</element>
+	<element name="Leaping Legs" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_LEAPING_LEGS">
+		<compendium display="false" />
+		<description>
+			<p>You have replaced or modified your legs with the muscular limbs of a bounding creature. Your jump distance doubles. Additionally, you can jump your full distance with or without a running start.</p>
+		</description>
+		<sheet>
+			<description>Your jump distance doubles (long {{longjump}}ft., high {{highjump:calculation}}) and you can jump your full distance with or without a running start.</description>
+		</sheet>
+		<rules>
+			<stat name="longjump" value="strength:score" />
+			<stat name="longjump" value="strength:score" />
+			<stat name="highjump" value="strength:modifier" />
+			<stat name="highjump" value="strength:modifier" />
+			<stat name="highjump" value="3" />
+			<stat name="highjump" value="3" />
+			<stat name="highjump:calculation" value="highjump"  />
+		</rules>
+	</element>
+
+	<element name="Olfactory Implants" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_OLFACTORY_IMPLANTS">
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Keen Smell or Keen Hearing and Smell trait</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>You have replaced or modified your nose with that of a creature with keen smell. You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_KEEN_SMELL" />
+		</rules>
+	</element>
+	<element name="Keen Smell" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_KEEN_SMELL">
+		<compendium display="false" />
+		<description>
+			<p>You have replaced or modified your nose with that of a creature with keen smell. You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+
+	<element name="Oversized Arms" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_OVERSIZED_ARMS">
+		<description>
+			<p><strong>Donor:</strong> Giant</p>
+			<p><strong>Slot:</strong> Arms</p>
+			<p>You have replaced your arms with a giant's massive limbs. The reach of your melee attacks increases by 5 feet, unless the attack is made with a weapon that already has the Reach property. If you are Small, you can wield heavy weapons with which you are proficient without penalty. Additionally, you have advantage on Strength checks and saving throws you make to maintain your grip on objects.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="slot">arms</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_OVERSIZED_ARMS" />
+		</rules>
+	</element>
+	<element name="Oversized Arms" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_OVERSIZED_ARMS">
+		<compendium display="false" />
+		<description>
+			<p>The reach of your melee attacks increases by 5 feet, unless the attack is made with a weapon that already has the Reach property. If you are Small, you can wield heavy weapons with which you are proficient without penalty. Additionally, you have advantage on Strength checks and saving throws you make to maintain your grip on objects.</p>
+		</description>
+		<sheet>
+			<description>Your melee attack get +5ft reach, unless it's made with a weapon that has the Reach property. If you are Small, you can wield heavy weapons with which you are proficient without penalty. You have advantage on STR checks and saving throws you make to maintain your grip on objects.</description>
+		</sheet>
+	</element>
+
+	<element name="Prehensile Tail" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_PREHENSILE_TAIL">
+		<description>
+			<p><strong>Donor:</strong> Any creature with a Tail attack</p>
+			<p><strong>Slot:</strong> External</p>
+			<p>You surgically attach a muscular, prehensile tail, which is a natural weapon that you can use to make unarmed strikes. You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your tail. If you hit with it, you deal bludgeoning damage equal to 1d6 + your Strength or Dexterity modifier (as appropriate to the attack roll), instead of the damage normal for an unarmed strike.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">external</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TAIL" />
+		</rules>
+	</element>
+	<element name="Tail" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TAIL">
+		<compendium display="false" />
+		<description>
+			<p>You surgically attach a muscular, prehensile tail, which is a natural weapon that you can use to make unarmed strikes. You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your tail. If you hit with it, you deal bludgeoning damage equal to 1d6 + your Strength or Dexterity modifier (as appropriate to the attack roll), instead of the damage normal for an unarmed strike.</p>
+			<p class="indent">Additionally, you can hold and manipulate objects and weapons with your tail, but you can't make attacks with weapons held by your tail or wield a shield with your tail and gain its benefits.</p>
+		</description>
+		<sheet>
+			<description>Your tail is a natural weapon that you can use to make unarmed strikes. You can use DEX or STR for the attack rolls of your unarmed strikes. On a hit, you deal 1d6 + STR or DEX mod bludgeoning damage. You can hold and manipulate objects and weapons with your tail, but you can't make attacks with weapons held by your tail or wield a shield with your tail and gain its benefits.</description>
+		</sheet>
+	</element>
+
+	<element name="Regenerating Marrow" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_REGENERATING_MARROW">
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Regeneration trait</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You have replaced your bone marrow with that of a regenerating creature. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your Constitution modifier.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_REGENERATION" />
+		</rules>
+	</element>
+	<element name="Regeneration" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_REGENERATION">
+		<compendium display="false" />
+		<description>
+			<p>On your turn, you can use a bonus action to regain hit points equal to 1d10 + your Constitution modifier.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You regain 1d10+{{constitution:modifier}} hp.</description>
+		</sheet>
+	</element>
+
+	<element name="Replacement" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_REPLACEMENT">
+		<description>
+			<p><strong>Donor:</strong> Any</p>
+			<p><strong>Slot:</strong> Any</p>
+			<p>One or more of your organs or limbs has been replaced with a part harvested from a monster. A replacement can effectively solve any amputation or organ failure, but they can't return to life someone that has died; such work is solely the domain of necromancy. Replacement limbs can resemble the original limb, or can demonstrate obvious monstrous characteristics, depending on the donor. A replacement organ or limb takes up one body slot relevant to it; for example, a troll's hand takes the Arms slot and a replacement kidney takes up the Internal slot.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">any</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Stench" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_STENCH">
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Stench trait</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>As a bonus action, you can release a foul liquid contained within an organ taken from the donor creature. Each creature within 10 feet of you must make a Constitution saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or be poisoned until the end of its next turn.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_STENCH" />
+		</rules>
+	</element>
+	<element name="Stench" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_STENCH">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can release a foul liquid contained within an organ taken from the donor creature. Each creature within 10 feet of you must make a Constitution saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or be poisoned until the end of its next turn.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You can release a foul liquid contained within an organ. Each creature within 10 feet of you must make a DC{{stench:dc}} CON saving throw or be poisoned until the end of its next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="stench:dc" value="8" />
+			<stat name="stench:dc" value="constitution:modifier" />
+			<stat name="stench:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Tentacles" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_TENTACLES">
+		<description>
+			<p><strong>Donor:</strong> Any creature with a Tentacles or Tendrils attack</p>
+			<p><strong>Slot:</strong> Arms</p>
+			<p>You surgically replace or modify one or both of your arms with a flexible tentacle or tendril, which is a natural weapon that you can use to make unarmed strikes. You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your tentacle, and it has a reach of 10 feet. If you hit with it, you deal bludgeoning damage equal to 1d6 + your Strength or Dexterity modifier (as appropriate to the attack roll), instead of the damage normal for an unarmed strike.</p>
+			<p class="indent">Additionally, when you hit a target with your tentacle as part of the Attack action, you can use your bonus action to attempt to grapple the target.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">arms</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TENTACLES" />
+		</rules>
+	</element>
+	<element name="Tentacles" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TENTACLES">
+		<compendium display="false" />
+		<description>
+			<p>You surgically replace or modify one or both of your arms with a flexible tentacle or tendril, which is a natural weapon that you can use to make unarmed strikes. You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your tentacle, and it has a reach of 10 feet. If you hit with it, you deal bludgeoning damage equal to 1d6 + your Strength or Dexterity modifier (as appropriate to the attack roll), instead of the damage normal for an unarmed strike.</p>
+			<p class="indent">Additionally, when you hit a target with your tentacle as part of the Attack action, you can use your bonus action to attempt to grapple the target.</p>
+		</description>
+		<sheet action="Action(1)|Bonus Action(2)">
+			<description> (1)One or both of your replaced/modified arms, are a natural weapon that you can use to make unarmed strikes. You can use DEX instead of STR for the attack rolls of your unarmed strikes made using your tentacles. On a hit, you deal 1d6 + STR or DEX mod (as appropriate to the attack roll) bludgeoning damage, instead of the damage normal for an unarmed strike.&#13;
+			(2)When you hit a target with your tentacle as part of the Attack action, you can attempt to grapple the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Venom Sac" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_VENOM_SAC">
+		<description>
+			<p><strong>Donor:</strong> Any creature with a natural weapon or trait that can deal poison damage or cause a creature to become poisoned</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You have installed a gland that secretes poison from your head. As a bonus action, you can coat a weapon you are holding or a natural weapon, if you have one, in basic poison. The save DC for the poison equals 8 + your Constitution modifier + your proficiency bonus.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_VENOM" />
+		</rules>
+	</element>
+	<element name="Venom" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_VENOM">
+		<compendium display="false" />
+		<description>
+			<p>You have installed a gland that secretes poison from your head. As a bonus action, you can coat a weapon you are holding or a natural weapon, if you have one, in basic poison. The save DC for the poison equals 8 + your Constitution modifier + your proficiency bonus.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You can coat a weapon you are holding or a natural weapon, if you have one, in basic poison. The save DC for the poison equals {{venom:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="venom:dc" value="8" />
+			<stat name="venom:dc" value="constitution:modifier" />
+			<stat name="venom:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Voice Box" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_VOICE_BOX">
+		<description>
+			<p><strong>Donor:</strong> Any creature with the Mimicry trait</p>
+			<p><strong>Slot:</strong> Head</p>
+			<p>You have augmented your own vocal folds with those of a creature that can mimic sounds. You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom (Insight) check, contested by your Charisma (Deception) check.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="slot">head</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_MIMICRY" />
+		</rules>
+	</element>
+	<element name="Mimicry" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_MIMICRY">
+		<description>
+			<p>You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.</p>
+		</description>
+		<sheet>
+			<description>You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Insight check opposed by your Deception check.</description>
+		</sheet>
+	</element>
+
+	<element name="Webspinner Apparatus" type="Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ITEM_WEBSPINNER_APPARATUS">
+		<description>
+			<p><strong>Donor:</strong> Any creature with a Web action</p>
+			<p><strong>Slot:</strong> Internal</p>
+			<p>You have installed spinnerets from a spiderlike creature into your head, allowing you to produce webs. You can cast the web spell without using spell slots or spell components (DC equals 8 + your Constitution modifier + your proficiency bonus).</p>
+			<p classs="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Graft</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">internal</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Graft</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_WEB"  />
+		</rules>
+	</element>
+	<element name="Web" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_WEB">
+		<compendium display="false" />
+		<description>
+			<p>You have installed spinnerets from a spiderlike creature into your head, allowing you to produce webs. You can cast the web spell without using spell slots or spell components (DC equals 8 + your Constitution modifier + your proficiency bonus).</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description>You can cast the web spell without using spell slots or spell components. DC{{web:dc}} Spell save.</description>
+		</sheet>
+		<rules>
+		<grant type="Spell" id="ID_PHB_SPELL_WEB" />
+			<stat name="web:dc" value="8" />
+			<stat name="web:dc" value="constitution:modifier" />
+			<stat name="web:dc" value="proficiency" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spiritborn Sorcerous Origin</name>
+		<description>The Spiritborn Sorcerous Origin from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="sorcerer-spiritborn.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/sorcerer-spiritborn.xml" />
+		</update>\
+	</info>
+	<element name="Spiritborn" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SORCERER_ARCHETYPE_SPIRITBORN">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your magic comes not from your blood, but from the conditions of your birth. Born during a specific time, or in accordance with a specific prophecy, your birth was heralded by the birth of an albino animal closely tied to your family. This animal, a powerful spirit in physical form, is bound to your very soul, allowing you to work powerful magic. Much like your bonded spirit, your skin and hair took on a color unusual for your race, with both usually becoming stark white, but sometimes a deep amber or golden hue.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_NATURAL_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_SPIRIT_ANIMAL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_POWERFUL_BOND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_HEALING_BOND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_SPIRIT_GUARDIAN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_NATURAL_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_SPIRIT_ANIMAL" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_POWERFUL_BOND" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_HEALING_BOND" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_SPIRIT_GUARDIAN" level="18" />
+		</rules>
+	</element>
+    <element name="Natural Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_NATURAL_MAGIC">
+        <description>
+            <p>The bond with your spirit animal grants you access to the magic of nature. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the druid spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.</p>
+            <p class="indent">Additionally, you learn additional spells when you reach certain levels in this class, as shown on the Natural Spells table. Each of these spells counts as a sorcerer spell for you but doesn’t count against the number of sorcerer spells you know. If you later replace one of these spells, you must replace it with a spell from the druid spell list.</p>
+            <h5 class="caption">Natural Spells</h5>
+			<p class="indent">New spells are marked with an asterisk.</p>
+            <table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>entangle, speak with animals</em></td></tr>
+				<tr><td>3rd</td><td><em>pass without trace, spike growth</em></td></tr>
+				<tr><td>5th</td><td><em>plant growth, speak with plants</em></td></tr>
+				<tr><td>7th</td><td><em>dominate beast, Mandy’s feral follower*</em></td></tr>
+				<tr><td>9th</td><td><em>awaken, commune with nature</em></td></tr>
+			</table>
+        </description>
+        <sheet>
+            <description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or a transmutation spell from the sorcerer, warlock, or wizard spell list.</description>
+        </sheet>
+        <rules>
+			<select type="Spell" name="1st Additional Spell (Natural Magic)" supports="1,(Druid)" level="1" default="ID_PHB_SPELL_ENTANGLE" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="2nd Additional Spell (Natural Magic)" supports="1,(Druid)" level="1" default="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="3rd Additional Spell (Natural Magic)" supports="2,(Druid)" level="3" default="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="4th Additional Spell (Natural Magic)" supports="2,(Druid)" level="3" default="ID_PHB_SPELL_SPIKE_GROWTH" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="5th Additional Spell (Natural Magic)" supports="3,(Druid)" level="5" default="ID_PHB_SPELL_PLANT_GROWTH" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="6th Additional Spell (Natural Magic)" supports="3,(Druid)" level="5" default="ID_PHB_SPELL_SPEAK_WITH_PLANTS" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="7th Additional Spell (Natural Magic)" supports="4,(Druid)" level="7" default="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="8th Additional Spell (Natural Magic)" supports="4,(Druid)" level="7" default="ID_MHP_VSOS_SPELL_MANDYS_FERAL_FOLLOWER" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="9th Additional Spell (Natural Magic)" supports="5,(Druid)" level="9" default="ID_PHB_SPELL_AWAKEN" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="10th Additional Spell (Natural Magic)" supports="5,(Druid)" level="9" default="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Sorcerer" allowReplace="false" />
+		</rules>
+    </element>
+    <element name="Spirit Animal" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_SPIRIT_ANIMAL">
+        <description>
+            <p>Starting at 1st level, you learn the <i>find familiar spell</i> and can cast it as a ritual without material components to summon a spirit animal. The spell doesn’t count against your number of spells known. The spell is improved in the following ways:</p>
+            <ul>
+                <li>A spirit animal summoned with this ability is always a Beast with albino features instead of its normal type.</li>
+                <li>Unlike a normal familiar, your spirit animal can attack on its turn, using your spell attack bonus for its attack rolls.</li>
+                <li>Your familiar adds your proficiency bonus to its Armor Class, saving throws, and damage rolls.</li>
+                <li>You add twice your sorcerer level to your familiar’s maximum hit points.</li>
+                <li>As you gain levels in the sorcerer class, your spirit animal can take on alternate Beast forms, as shown on the following table.</li>
+            </ul>
+            <table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Beast Forms</td></tr>
+				</thead>
+				<tr><td>6th</td><td><em>Boar, elk, giant lizard, giant owl, giant poisonous snake, panther, wolf</em></td></tr>
+				<tr><td>10th</td><td><em>Ape, black bear, crocodile, reef shark</em></td></tr>
+				<tr><td>14th</td><td><em>Brown bear, dire wolf, giant eagle, giant hyena, giant octopus, lion, tiger</em></td></tr>
+			</table>
+        </description>
+        <sheet>
+            <description> You learn the find familiar spell and can cast it as a ritual without M components to summon a spirit animal. The spell is improved in the following ways: &#13;
+            A spirit animal summoned with this ability is always a Beast with albino features; your spirit animal can attack on its turn, using your spell attack bonus for its attack rolls; your familiar adds your pb to its Ac, saving throws, and damage rolls; you add twice your sorcerer level to your familiar’s max hp; as you gain levels in the sorcerer class, your spirit animal can take on alternate Beast forms.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+    <element name="Powerful Bond" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_POWERFUL_BOND">
+        <description>
+            <p>Starting at 6th level, your spirit animal’s attacks are treated as magical for the purposes of overcoming damage resistance and immunity.</p>
+            <p class="indent">Additionally, you can spend 1 sorcery point as a bonus action to give your spirit animal advantage on attack rolls, ability checks, and saving throws until the start of your next turn.</p>
+        </description>
+        <sheet action="(2) Bonus Action">
+            <description>(1) Your spirit animal’s attacks are treated as magical for the purposes of overcoming damage resistance and immunity. &#13;
+            (2) You can spend 1 sorcery point to give your spirit animal advantage on attack rolls, ability checks, and saving throws until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Healing Bond" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_HEALING_BOND">
+        <description>
+            <p>At 14th level, you can use your bonus action and spend 1 or more sorcery points to heal your spirit animal’s wounds. Your spirit animal regains hit points equal to your Charisma modifier + 1d12 hit points for each sorcery point spent.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can spend 1 or more sorcery points to heal your spirit animal’s wounds. Your spirit animal regains 1d12+{{charisma:modifier}} hp for each sorcery point spent.</description>
+        </sheet>
+    </element>
+    <element name="Spirit Guardian" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPIRITBORN_SPIRIT_GUARDIAN">
+        <description>
+            <p>At 18th level, your spirit’s bond with you is powerful enough to shield you from harm. Whenever you take damage, your spirit can use its reaction to prevent half of that damage, taking the other half itself.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Whenever you take damage, your spirit can use its reaction to prevent half of that damage, taking the other half itself.</description>
+        </sheet>
+    </element>
+</elements>
