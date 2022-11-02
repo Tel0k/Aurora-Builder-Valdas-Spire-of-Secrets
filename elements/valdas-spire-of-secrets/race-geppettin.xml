@@ -4,8 +4,8 @@
 		<name>Geppettin</name>
 		<description>The Geppettin Race from Valda’s Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
-			<file name="race-geppettin.xml" url="" />
+		<update version="0.0.3">
+			<file name="race-geppettin.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-geppettin.xml" />
 		</update>
 	</info>
 	<element name="Geppettin" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_GEPPETTIN">
