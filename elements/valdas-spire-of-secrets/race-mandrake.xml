@@ -4,8 +4,8 @@
 		<name>Mandrake</name>
 		<description>The Mandrake Race from Valda’s Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
-			<file name="race-mandrake.xml" url="" />
+		<update version="0.0.3">
+			<file name="race-mandrake.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-mandrake.xml" />
 		</update>
 	</info>
 	<element name="Mandrake" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_MANDRAKE">
