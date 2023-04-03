@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>The Feats from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="vsos-feats.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-feats.xml" />
+		</update>
+	</info>
+    
+    <element name="Battle Adept" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_BATTLE_ADEPT">
+        <description>
+            <p>Intensive training and combat experience have allowed you to master special combat maneuvers. You gain the following benefits:</p>
+            <ul>
+                <li>You gain one battle die, which is a d6. This die is added to any battle dice you have from another source. A battle die is expended when you use it. You regain all of your expended battle dice when you finish a short or long rest, or when you roll initiative.</li>
+                <li>You learn two maneuvers of your choice from among those available to the Captain class or those available to the Grey Watchman subclass of the Warden class. You use your battle dice to fuel these maneuvers. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>{{battle adept:dice:amount}}d{{battle adept:dice:size}} battle dice / short or long rest. DC {{battle adept:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="battle adept:dc:ability" value="strength:modifier" bonus="ability" />
+			<stat name="battle adept:dc:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="battle adept:dc" value="8" />
+			<stat name="battle adept:dc" value="proficiency" />
+			<stat name="battle adept:dc" value="battle adept:dc:ability" />
+			<stat name="battle adept:dice:amount" value="1" />
+			<stat name="battle adept:dice:size" value="6" />
+            <select type="Archetype Feature" name="Battle Adept" supports="Maneuver,Captain, Grey Watchman" number="2" />
+        </rules>
+    </element>
+    
+    <element name="Bounty Hunter" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_BOUNTY_HUNTER">
+        <description>
+            <p>When there's a price on someone's head, you aim to collect. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+                <li>You perfectly remember the name and face of every person you've ever met.</li>
+                <li>You can use your action to mark a creature you can see within 120 feet of you for 1 hour. You have advantage on any Wisdom (Perception) or Wisdom (Survival) checks you make to find the marked creature. Additionally, as long as the creature is marked, you can discern whether or not the creature has passed through a location. You can have only one creature marked at a time.</li>
+                <li>Whenever you reduce a creature to 0 hit points with any attack you make or spell that you cast, you can choose to knock the creature out instead of killing it.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You perfectly remember the name and face of every person you've ever met.
+            You can use your action to mark a creature you can see within 120 feet of you for 1 hour. You have advantage on any Wisdom (Perception) or Wisdom (Survival) checks you make to find the marked creature. Additionally, as long as the creature is marked, you can discern whether or not the creature has passed through a location. You can have only one creature marked at a time.
+            Whenever you reduce a creature to 0 hit points with any attack you make or spell that you cast, you can choose to knock the creature out instead of killing it.</description>
+        </sheet>
+        <rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+    </element>
+    
+    <element name="Brutal Grip" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_BRUTAL_GRIP">
+        <description>
+            <p>You've learned to use the weight of your weapons effectively, and have adapted to using large weapons in one hand.</p>
+            <ul>
+                <li>Increase your Strength score by 1, to a maximum of 20.</li>
+                <li>When wielding a versatile weapon in one hand, you may use the two-handed damage die.</li>
+                <li>You can wield a two-handed melee weapon in one hand, treating it as a one-handed weapon. You have disadvantage on attack rolls made when wielding a two-handed weapon this way.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> When wielding a versatile weapon in one hand, you may use the two-handed damage die. You can wield a two-handed melee weapon in one hand, treating it as a one-handed weapon. You have disadvantage on attack rolls made when wielding a two-handed weapon this way.</description>
+        </sheet>
+        <rules>
+			<stat name="strength" value="1" />
+		</rules>
+    </element>
+    
+    <element name="Cantrip Specialist" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CANTRIP_SPECIALIST">
+        <prerequisite>Ability to cast a cantrip</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p><i>Prerequisite: Ability to cast a cantrip</i></p>
+            <p>Well practiced in fundamental spellcasting, you learn two Warmage tricks from among the following: Blasting Cantrip, Corrosive Cantrip, Draining Cantrip, Explosive Cantrip, Icy Cantrip, Severe Cantrip, Silent Cantrip, and Static Cantrip. Your cantrips count as warmage cantrips for the purposes of these tricks, and your character level counts as your warmage level, where applicable.</p>
+        </description>
+        <sheet>
+            <description> You learn two Warmage tricks. Your cantrips count as warmage cantrips for the purposes of these tricks, and your character level counts as your warmage level, where applicable.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Cantrip Specialist" supports="(ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_BLASTING_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_CORROSIVE_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_DRAINING_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_EXPLOSIVE_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_ICY_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_SEVERE_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_SILENT_CANTRIP|ID_MHP_VSOS_CLASS_FEATURE_WARMAGE_WMG_TRICKS_STATIC_CANTRIP)" number="2" />
+        </rules>
+    </element>
+    <!---->
+    <element name="Chronomancy Initiate" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE">
+        <prerequisite>Spellcasting feature or Pact Magic feature</prerequisite>
+        <description>
+            <p><i>Prerequisite: Spellcasting feature or Pact Magic feature</i></p>
+            <p>Having unraveled the secrets of time magic, chronomancy, you have learned to pull seconds apart, reorder them, and reap minutes as a reward. You gain the following benefits:</p>
+            <ul>
+                <li>All spells with the chronomancy tag are added to your class's spell list, if they are a level for which your class gets spell slots. Use your spellcasting ability for these spells.</li>
+                <li>You learn the <i>moment to think</i> cantrip, which doesn't count against your total number of cantrips known.</li>
+                <li>You learn four spells of your choice that you cast with the chronomancy tag. If you prepare spells, these spells are always prepared for you and don't count against the number of spells you can prepare each day. If you are a wizard, they are added to your spellbook instantly at no cost. If you learn spells, these spells do not count against your total number of spells known. When you gain a level in your spellcasting class, you can replace one of these spells with another spell with the chronomancy tag for which you have spell slots.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have learned to pull seconds apart, reorder them, and reap minutes as a reward. Chronomancy tag spells are added to your class's spell list, if they are a level for which your class gets spell slots. You learn the moment to think cantrip, four chronomancy spells of your choice and, when you gain a level in your spellcasting class, you can replace one of these spells with another chronomancy one for which you have spell slots.</description>
+        </sheet> 
+        <rules>
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_ARTIFICER" requirements="!ID_INTERNAL_GRANT_MULTICLASS, ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_RAGE_MAGE" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_BARD" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_CLERIC" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_DRUID" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_ELDRITCH_KNIGHT" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_PALADIN" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_RANGER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_ARCANE_TRICKSTER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_SORCERER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WARLOCK" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WIZARD" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_DYNAMO_ENGINEER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_SPELLSLINGER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" /> 
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_INVESTIGATOR" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_MARTYR" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_MARTYR_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_NECROMANCER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_SOULBLOOD_SHAMAN" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WARMAGE" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WITCH" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_WITCH_SPELLCASTING" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_MOMENT_TO_THINK" />
+            <select type="Spell" name="Chronomancy Initiate" supports="Chronomancy" number="4" requirements="!(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
+            <select type="Spell" name="Chronomancy Initiate" supports="Chronomancy" number="4" prepared="true" requirements="(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
+        </rules>
+    </element>
+    <!-- -->
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_ARTIFICER">
+		<compendium display="false" />
+		<spellcasting name="Artificer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_RAGE_MAGE">
+		<compendium display="false" />
+		<spellcasting name="Rage Mage" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_BARD">
+		<compendium display="false" />
+		<spellcasting name="Bard" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST</extend>
+			<extend>ID_MHP_VSOS_SPELL_PARADOX</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_CLERIC">
+		<compendium display="false" />
+		<spellcasting name="Cleric" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_PARADOX</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_DRUID">
+		<compendium display="false" />
+		<spellcasting name="Druid" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_PARADOX</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_ELDRITCH_KNIGHT">
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_PALADIN">
+		<compendium display="false" />
+		<spellcasting name="Paladin" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_RANGER">
+		<compendium display="false" />
+		<spellcasting name="Ranger" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_ARCANE_TRICKSTER">
+		<compendium display="false" />
+		<spellcasting name="Arcane Trickster" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_SORCERER">
+		<compendium display="false" />
+		<spellcasting name="Sorcerer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+            <extend>ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WARLOCK">
+		<compendium display="false" />
+		<spellcasting name="Warlock" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WIZARD">
+		<compendium display="false" />
+		<spellcasting name="Wizard" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_DYNAMO_ENGINEER">
+		<compendium display="false" />
+		<spellcasting name="Dynamo Engineer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_SPELLSLINGER">
+		<compendium display="false" />
+		<spellcasting name="Spellslinger" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element> 
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_INVESTIGATOR">
+		<compendium display="false" />
+		<spellcasting name="Investigator" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_MARTYR">
+		<compendium display="false" />
+		<spellcasting name="Martyr" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_NECROMANCER">
+		<compendium display="false" />
+		<spellcasting name="Necromancer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_PARADOX</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_SOULBLOOD_SHAMAN">
+		<compendium display="false" />
+		<spellcasting name="Soulblood Shaman" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WARMAGE">
+		<compendium display="false" />
+		<spellcasting name="Warmage" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_ACTION</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <element name="Chronomancy Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WITCH">
+		<compendium display="false" />
+		<spellcasting name="Witch" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+            <extend>ID_MHP_VSOS_SPELL_IMPRESSIONS_OF_THE_PAST</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_PARADOX</extend>
+            <extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIMES_ARROW</extend>
+			<extend>ID_MHP_VSOS_SPELL_TIME_HOP</extend>
+		</spellcasting>
+	</element>
+    <!-- -->
+    <element name="Dilettante" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DILETTANTE">
+        <description>
+            <p>With a few minutes of preparation, a bit of improvisation, and some talent, you can appear proficient in just about anything. When you finish a long rest, you can spend 10 minutes practicing with a simple or martial weapon, skill, or tool, or in the use of a cantrip from the wizard spell list. You gain proficiency with that weapon, skill, or tool, or you learn that cantrip and can cast it using Intelligence as your spellcasting ability until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest" >
+            <description> When you finish a long rest, you can spend 10 minutes practicing with a simple or martial weapon, skill, or tool, or in the use of a cantrip from the wizard spell list. You gain proficiency with that weapon, skill, or tool, or you learn that cantrip and can cast it using Intelligence as your spellcasting ability until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Dilettante Feature" supports="(ID_MHP_VSOS_FEAT_DILETTANTE_SIMPLE_WEAPON|ID_MHP_VSOS_FEAT_DILETTANTE_MARTIAL_WEAPON|ID_MHP_VSOS_FEAT_DILETTANTE_SKILL|ID_MHP_VSOS_FEAT_DILETTANTE_TOOL|ID_MHP_VSOS_FEAT_DILETTANTE_CANTRIP)" />
+        </rules>
+    </element>
+    <element name="Simple Weapon" type="Feat Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DILETTANTE_SIMPLE_WEAPON">
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+           <select type="Proficiency" name="Weapon Proficiency, Simple" supports="Weapon, Simple" />
+        </rules>
+    </element>
+    <element name="Martial Weapon" type="Feat Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DILETTANTE_MARTIAL_WEAPON">
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+           <select type="Proficiency" name="Weapon Proficiency, Martial" supports="Weapon, Martial" />
+        </rules>
+    </element>
+    <element name="Skill" type="Feat Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DILETTANTE_SKILL">
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+           <select type="Proficiency" name="Skill Proficiency" supports="Skill" />
+        </rules>
+    </element>
+    <element name="Tool" type="Feat Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DILETTANTE_TOOL">
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+           <select type="Proficiency" name="Tool Proficiency" supports="Tool" />
+        </rules> 
+    </element>
+    <element name="Cantrip" type="Feat Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DILETTANTE_CANTRIP">
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+           <select type="Spell" name="Cantrip" supports="Wizard, 0" />
+        </rules>
+    </element>
+    
+    <element name="Downcaster" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_DOWNCASTER">
+        <prerequisite>Spellcasting feature or Pact Magic feature</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p><i>Prerequisite: Spellcasting feature or Pact Magic feature</i></p>
+            <p>Thanks to study or deep introspection, you have achieved a firm grasp on spellcasting fundamentals, granting you the following benefits:</p>
+            <ul>
+                <li>If you learn spells, you learn 4 spells of your choice of 3rd level or lower from your class's spell list, which don't count against your total number of spells known. These spells must be of a level for which you have spell slots.</li>
+                <li>You can use your action to divide a spell slot of 5th level or lower into two or more lower-level spell slots whose combined level is equal to or less than the original slot's level. Any spell slot you create with this feat vanishes when you recover spell slots after a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You can divide a spell slot of 5th level or lower into two or more lower-level spell slots whose combined level is equal to or less than the original slot's level. Any spell slot you create with this feat vanishes when you recover spell slots after a short or long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Spell (Downcaster)" supports="$(spellcasting:list),1,2,3" number="4"/>
+        </rules>
+    </element>
+    
+    <element name="Early Riser" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_EARLY_RISER">
+        <description>
+            <p>By following a strict routine, you've become accustomed to resting less than others. You gain the full benefit of taking a long rest in only 4 hours, and you gain the full benefit of taking a short rest in only 30 minutes. Additionally, you regain all your expended Hit Dice, rather than half of them, when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description> You gain the full benefit of taking a long rest in only 4 hours, and you gain the full benefit of taking a short rest in only 30 minutes. Additionally, you regain all your expended Hit Dice, rather than half of them, when you finish a long rest.</description>
+        </sheet>
+    </element>
+    
+    <element name="Exotic Mastery" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_EXOTIC_MASTERY">
+        <prerequisite>Proficiency with martial weapons</prerequisite>
+        <requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</requirements>
+        <description>
+            <p><i>Prerequisite: Proficiency with martial weapons</i></p>
+            <p>You have trained in the use of unorthodox types of weapons and armor of irregular design. As such, you gain proficiency with exotic armor and four exotic weapons of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency with exotic armor and four exotic weapons of your choice.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR" />
+            <select type="Proficiency" name="Weapon Proficiency, Exotic" supports="(ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_MELEE||ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_RANGED)" number="4" />
+        </rules>
+    </element>
+    
+    <element name="Favorite Spell" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_FAVORITE_SPELL">
+        <prerequisite>The ability to cast at least one spell, spellcasting ability of 15 or higher</prerequisite>
+        <requirements>[type:spell],([wis:15]||[cha:15]||[int:15])</requirements>
+        <description>
+            <p><i>Prerequisite: The ability to cast at least one spell, spellcasting ability of 15 or higher</i></p>
+            <p>You are so familiar with a mastered spell that you can cast it effortlessly and with aplomb. Choose a spell you can cast of 5th level or lower to be your favorite spell. You can take this feat multiple times, choosing a different favorite spell each time. You gain the following benefits: </p>
+            <ul>
+                <li>When you cast your favorite spell, you can imbue it with a harmless but impressive visual effect of your choice, such as a shower of sparks or a flurry of illusory doves.</li>
+                <li>When you cast your favorite spell using a spell slot, you can treat it as if you cast it using a spell slot of one level higher, up to a maximum of 9th level.</li>
+                <li>Your favorite spell can't be counterspelled.</li>
+                <li>You can cast your favorite spell once at its lowest level without using a spell slot. Once you use this ability, you can't do so again until you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Choose a spell you can cast of 5th level or lower to be your favorite spell. It gets a harmless visual effect of your choice. It can't be counterspelled. When you cast it using a spell slot, you can treat it as if you cast it using a spell slot of one level higher, up to a maximum of 9th level. You can cast it once at its lowest level without using a spell slot. You can't do so again until you finish a long rest. </description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Favorite Spell" supports="$(spellcasting:list),1,2,3,4,5" />
+        </rules>
+    </element>
+    
+    <element name="Fickle Fortune" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_FICKLE_FORTUNE">
+        <description>
+            <p>Record whenever you roll a 10 or lower on the d20 for an attack roll, ability check, or saving throw. If you roll 10 or lower three or more times consecutively, you can immediately change the d20 roll to a 20. If this was an attack roll, it doesn't score a critical hit.</p>
+        </description>
+        <sheet>
+            <description> If you roll a 10 or lower on the d20 for an attack roll, ability check, or saving throw three or more times consecutively, you can immediately change the d20 roll to a 20. If this was an attack roll, it doesn't score a critical hit.</description>
+        </sheet>
+    </element>
+    
+    <element name="Field Commander" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_FIELD_COMMANDER">
+        <description>
+            <p>Under your leadership, your allies fight as a cohesive unit, outmaneuvering and outflanking any enemy. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Charisma score by 1, to a maximum of 20.</li>
+                <li>As an action, you can issue an order to an ally within 60 feet that can hear you. They can then use their reaction to take one of the following actions: Attack (one attack only), Dash, Disengage, Dodge, Help, Hide, Search, or Use an Object.</li>
+                <li>While you are within 5 feet of two or more allies who aren't incapacitated, hostile creatures can't have advantage on attack rolls against you.</li>
+            </ul>
+        </description>
+        <sheet action="Action (1)" >
+            <description> (1)You can issue an order to an ally within 60 feet that can hear you. They can then use their reaction to take one of the following actions: Attack (one attack only), Dash, Disengage, Dodge, Help, Hide, Search, or Use an Object. (2)While you are within 5 feet of two or more allies who aren't incapacitated, hostile creatures can't have advantage on attack rolls against you.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="1" />
+        </rules>
+    </element>
+    
+    <element name="Focused Critical" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_FOCUSED_CRITICAL">
+        <description>
+            <p>You've honed your combat skills to seize any opening that presents itself. When you choose this feat, select ranged weapon attacks or melee weapon attacks. You score a critical hit on a roll of 19 or 20 with attack rolls of that type.</p>
+        </description>
+        <sheet>
+            <description> Choose between ranged weapon attacks or melee weapon attacks. You score a critical hit on a roll of 19 or 20 with attack rolls of that type.</description>
+        </sheet>
+    </element>
+    
+    <element name="Gambler" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GAMBLER">
+        <description>
+            <p>Always keen for probabilities and risk, you often trust your safety and fortune to the hands of fate. You gain the following benefits:</p>
+            <ul>
+                <li>You gain proficiency in all gaming sets and have advantage on ability checks you make for games of chance.</li>
+                <li>Once on each of your turns, before you roll damage, you can place stakes on the roll. Choose less than the average, or higher than or equal to the average. If you choose correctly, you can add one extra die of damage to the roll. If you choose incorrectly, you must remove the damage die with the highest number.</li>
+            </ul>
+        </description>
+        <sheet usage="1/Turn (2)" >
+            <description> (1)You have advantage on ability checks you make for games of chance. (2)Before you roll damage, you can place stakes on the roll. Choose less than the average, or higher than or equal to the average. If you choose correctly, you can add one extra die of damage to the roll. If you choose incorrectly, you must remove the damage die with the highest number.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET" />
+        </rules>
+    </element>
+    
+    <element name="Gun-Mage Adept" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT">
+        <prerequisite>Spellcasting feature or Pact Magic feature</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p><i>Prerequisite: Spellcasting feature or Pact Magic feature</i></p>
+            <p>You've learned how to meld subtle arcana with the brute force of a firearm, gaining the following benefits:</p>
+            <ul>
+                <li>You gain proficiency with four simple or martial firearms of your choice. You can use these firearms as spellcasting focuses.</li>
+                <li>All spells with the renaissance tag are added to your class's spell list, if they are a level for which your class gets spell slots. Use your spellcasting ability for these spells.</li>
+                <li>You learn either the <i>concealed shot</i> or <i>finger guns</i> cantrip, your choice, which doesn't count against your total number of cantrips known</li>
+                <li>You learn four spells of your choice that you cast with the renaissance tag. If you prepare spells, these spells are always prepared for you and don't count against the number of spells you can prepare each day. If you are a wizard, they are added to your spellbook instantly at no cost. If you learn spells, these spells do not count against your total number of spells known. When you gain a level in your spellcasting class, you can replace one of these spells with another spell with the renaissance tag for which you have spell slots.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You've learned how to meld subtle arcana with the brute force of a firearm. You gain proficiency with four simple or martial firearms and can use these as spellcasting focuses. Renaissance tag spells are added to your class's spell list, if they are a level for which you get spell slots. You learn either the concealed shot or finger guns cantrip, four renaissance spells of your choice and, when you gain a level in your spellcasting class, you can replace one of these spells with another renaissance one for which you have spell slots. </description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Gun-Mage Adept, Cantrip" supports="(ID_MHP_VSOS_SPELL_CONCEALED_SHOT|ID_MHP_VSOS_SPELL_FINGER_GUNS)" />
+            <select type="Proficiency" name="Weapon Proficiency, Firearm" supports="" number="4" />
+            <select type="Spell" name="Gun-Mage Adept" supports="Renaissance" number="4" requirements="!(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
+            <select type="Spell" name="Gun-Mage Adept" supports="Renaissance" number="4" prepared="true" requirements="(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ARTIFICER" requirements="!ID_INTERNAL_GRANT_MULTICLASS, ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_RAGE_MAGE" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_BARD" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_CLERIC" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_DRUID" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ELDRITCH_KNIGHT" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_PALADIN" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_RANGER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ARCANE_TRICKSTER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_SORCERER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WARLOCK" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WIZARD" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD" /><!---->
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_DYNAMO_ENGINEER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING" /><!---->
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_SPELLSLINGER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" /><!---->
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_INVESTIGATOR" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SPELLCASTING" /><!---->
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_MARTYR" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_MARTYR_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_NECROMANCER" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_NECROMANCER_SPELLCASTING" /><!---->
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_SOULBLOOD_SHAMAN" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING" /><!---->
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WARMAGE" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_HOUSE_BISHOPS_SPELLCASTING" />
+            <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WITCH" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_WITCH_SPELLCASTING" />
+        </rules>
+    </element>
+    <!---->
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ARTIFICER">
+		<compendium display="false" />
+		<spellcasting name="Artificer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_RAGE_MAGE">
+		<compendium display="false" />
+		<spellcasting name="Rage Mage" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_BARD">
+		<compendium display="false" />
+		<spellcasting name="Bard" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_CLERIC">
+		<compendium display="false" />
+		<spellcasting name="Cleric" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_DRUID">
+		<compendium display="false" />
+		<spellcasting name="Druid" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ELDRITCH_KNIGHT">
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_PALADIN">
+		<compendium display="false" />
+		<spellcasting name="Paladin" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_RANGER">
+		<compendium display="false" />
+		<spellcasting name="Ranger" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ARCANE_TRICKSTER">
+		<compendium display="false" />
+		<spellcasting name="Arcane Trickster" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_SORCERER">
+		<compendium display="false" />
+		<spellcasting name="Sorcerer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WARLOCK">
+		<compendium display="false" />
+		<spellcasting name="Warlock" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WIZARD">
+		<compendium display="false" />
+		<spellcasting name="Wizard" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+        </spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_DYNAMO_ENGINEER">
+		<compendium display="false" />
+		<spellcasting name="Dynamo Engineer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_SPELLSLINGER">
+		<compendium display="false" />
+		<spellcasting name="Spellslinger" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element> 
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_INVESTIGATOR">
+		<compendium display="false" />
+		<spellcasting name="Investigator" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_MARTYR">
+		<compendium display="false" />
+		<spellcasting name="Martyr" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_NECROMANCER">
+		<compendium display="false" />
+		<spellcasting name="Necromancer" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_SOULBLOOD_SHAMAN">
+		<compendium display="false" />
+		<spellcasting name="Soulblood Shaman" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WARMAGE">
+		<compendium display="false" />
+		<spellcasting name="Warmage" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <element name="Gun-Mage Expanded Spells" type="Grants" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_WITCH">
+		<compendium display="false" />
+		<spellcasting name="Witch" extend="true">			
+			<extend>ID_MHP_VSOS_SPELL_ANTIBALLISTICS_FIELD</extend>
+			<extend>ID_MHP_VSOS_SPELL_CHROMATIC_BULLET</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONCEALED_SHOT</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_CANNONBALL</extend>
+			<extend>ID_MHP_VSOS_SPELL_CONJURE_COVER</extend>
+			<extend>ID_MHP_VSOS_SPELL_FINGER_GUNS</extend>
+            <extend>ID_MHP_VSOS_SPELL_PERFORATING_SMITE</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECTION_FROM_BALLISTICS</extend>
+		</spellcasting>
+	</element>
+    <!---->
+    <element name="Hexer" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_HEXER">
+        <prerequisite>Charisma 13</prerequisite>
+        <requirements>[cha:13]</requirements>
+        <description>
+            <p><i>Prerequisite: Charisma 13</i></p>
+            <p>You learn two hexes of your choice from among those available to the witch class, and gain the Cackle feature from the witch class. Use your Charisma when determining the attack rolls and saving throws of these hexes.</p>
+        </description>
+        <sheet>
+            <description>You learn two hexes of your choice from among those available to the witch class, and gain the Cackle feature from the witch class.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_WITCH_CACKLE" />
+            <select type="Class Feature" name="Hexes (Hexer)" supports="Hex" number="2" />
+        </rules>
+    </element>
+    
+    <element name="Homebrewer" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_HOMEBREWER">
+        <description>
+            <p>You gain proficiency with alchemist's supplies if you don't already have it. Using a set of alchemist's supplies over the course of 10 minutes, you can brew potions. You gain a number of reagent dice, which are d10s, equal to your proficiency bonus and can expend them to brew any potions available to an alchemist of 3rd level. These potions retain potency for 24 hours, after which they become inert. If you have the Reagent feature from the alchemist class, you can also use these reagent dice to add additional damage to a bomb's damage roll.</p>
+        </description>
+        <sheet>
+            <description>Using a set of alchemist's supplies over the course of 10 minutes, you can brew potions. You gain {{reagent:dice:amount}}d10 reagent dice and can expend them to brew any potions available to an alchemist of 3rd level. These potions retain potency for 24 hours, after which they become inert. If you have the Reagent feature from the alchemist class, you can also use these reagent dice to add additional damage to a bomb's damage roll.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" requirements="!ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<stat name="reagent:dice:amount" value="proficiency" />
+        </rules>
+    </element>
+    
+    <element name="Iron Hero" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_IRON_HERO">
+        <description>
+            <p>You have resolved yourself to save the day when all hope seems lost. You gain the following benefits:</p>
+            <ul>
+                <li>When you are attacked by a creature that has a CR higher than your level, you gain a +2 bonus to your Armor Class.</li>
+                <li>You have advantage on attack rolls against any creature that has reduced one of your allies to 0 hit points in the last round.</li>
+                <li>If a hostile creature you can see takes a legendary action, you can use your reaction to intercede, preventing the legendary action from happening. Once you use this ability, you can't use it again until you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet action="Reaction" usage="1/Short||Long Rest (3)">
+            <description> 1)When you are attacked by a creature that has a CR higher than your level, you gain a +2 bonus to your Armor Class.&#13;
+            2)You have advantage on attack rolls against any creature that has reduced one of your allies to 0 hit points in the last round. &#13;
+            3)If a hostile creature you can see takes a legendary action, you can intercede, preventing the legendary action from happening.</description>
+        </sheet>
+    </element>
+    
+    <element name="Marksman's Luck" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_MARKSMANS_LUCK">
+        <description>
+            <p>Once per turn, when you roll for damage with a ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. Note that for a balanced die, the top and bottom numbers add up to one more than the die's largest number.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description> When you roll for damage with a ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. Note that for a balanced die, the top and bottom numbers add up to one more than the die's largest number.</description>
+        </sheet>
+    </element>
+    
+    <element name="Master Thrower" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_MASTER_THROWER">
+        <prerequisite>Dexterity 13</prerequisite>
+        <requirements>[dex:13]</requirements>
+        <description>
+            <p><i>Prerequisite: Dexterity 13</i></p>
+            <p>You are an expert in using thrown weapons. You gain the following benefits:</p>
+            <ul>
+                <li>When you take the Attack action on your turn, you can use a bonus action to make a ranged attack with a thrown weapon. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.</li>
+                <li>When you make a ranged weapon attack, you can draw the weapon as part of the attack. You can draw any number of weapons in this fashion each round.</li>
+                <li>The short and long ranges of your thrown weapons double.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action (1)">
+            <description> 1)You can make a ranged attack as a BA with a thrown weapon, after you take the Attack action on your turn. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. &#13;
+            2)The short and long ranges of your thrown weapons double. When you make a ranged weapon attack, you can draw the weapon as part of it. You can draw any number of weapons in this fashion each round.</description>
+        </sheet>
+    </element>
+    
+    <element name="Precognitive" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_PRECOGNITIVE">
+        <prerequisite>Wisdom 13 or higher</prerequisite>
+        <requirements>[wis:13]</requirements>
+        <description>
+            <p><i>Prerequisite: Wisdom 13 or higher</i></p>
+            <p>You sometimes feel impressions of events an instant before they happen. When you begin your turn, you can choose to roll a d20 and record the number rolled. The next attack roll, ability check, or saving throw you make before the end of your turn is replaced with this roll. You can use this ability three times and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="3/Long Rest">
+            <description> When you begin your turn, you can choose to roll a d20 and record the number rolled. The next attack roll, ability check, or saving throw you make before the end of your turn is replaced with this roll.</description>
+        </sheet>
+    </element>
+    
+    <element name="Showman" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_SHOWMAN">
+        <description>
+            <p>Presentation is at least as important as being effective, if not more so. After all, there is little reason to do something unless it looks impressive. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Charisma score by 1, to a maximum of 20.</li>
+                <li>You gain proficiency in the Performance skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+                <li>If there is a non-combative audience watching you fight, once per turn, you can gain a bonus to an ability check or attack roll equal to the number of people in the audience, up to a maximum of your Charisma modifier. You can use this ability three times, regaining all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet usage="1/Turn, max 3/Long Rest">
+            <description> If there is a non-combative audience watching you fight, you can gain a bonus to an ability check or attack roll equal to the number of people in the audience, up to a maximum of your Charisma modifier.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="1" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFORMANCE" />
+        </rules>
+    </element>
+    
+    <element name="Spellblade" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_SPELLBLADE">
+        <description>
+            <p>You've learned to meld your strikes with sparks of arcane magic, gaining the following benefits:</p>
+            <ul>
+                <li>You gain proficiency with one martial melee weapon of your choice.</li>
+                <li>When you deal bludgeoning, piercing, or slashing damage with a melee weapon, you can change the damage to your choice of acid, cold, fire, or lightning damage.</li>
+                <li>You learn two cantrips of your choice from among the following: <i>arc blade</i>, <i>burning blade</i>, <i>caustic blade</i>, and <i>frigid blade</i>. Intelligence is your spellcasting ability for these spells.</li>
+                <li>You can cast the <i>shield</i> spell once without using a spell slot. Once you cast this spell using this feat, you can't do so again until you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet usage="1/Long Rest (2)">
+            <description> 1)When you deal bludgeoning, piercing, or slashing damage with a melee weapon, you can change the damage to your choice of acid, cold, fire, or lightning damage.&#13;
+            2)You can cast the shield spell once without using a spell slot with this feat.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency, Spellblade" supports="Martial" />
+            <select type="Spell" name="Cantrip (Spellblade)" supports="(ID_MHP_VSOS_SPELL_ARC_BLADE|ID_MHP_VSOS_SPELL_BURNING_BLADE|ID_MHP_VSOS_SPELL_CAUSTIC_BLADE|ID_MHP_VSOS_SPELL_FRIGID_BLADE)" number="2" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+        </rules>
+    </element>
+    
+    <element name="Upcaster" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_UPCASTER">
+        <prerequisite>Spellcasting feature</prerequisite>
+        <description>
+            <p><i>Prerequisite: Spellcasting feature</i></p>
+            <p>You can expend two spell slots of the same level to create a spell slot that is one level higher and immediately use this spell slot to cast a spell that you know or have prepared.</p>
+        </description>
+        <sheet>
+            <description> You can expend two spell slots of the same level to create a spell slot that is one level higher and immediately use this spell slot to cast a known or prepared spell.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Future You Patron</name>
+		<description>The Future You Patron from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-future-you.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-future-you.xml" />
+		</update>
+	</info>
+	<element name="The Future You" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WARLOCK_THE_FUTURE_YOU">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is you in a decades-distant future. Perhaps your future self found an artifact of great power connecting them to the past, which they must now lead you to discover, or perhaps they were taught the mystic arts by their future self long ago, a cycle you will have to continue by teaching yourself someday. Your future self has forgotten the fine details of some things, and outright refuses to tell you about things you “can't know yet,” but offers compelling insight and guidance nonetheless. You're not quite sure what your future self is planning for your future (and for their past), but one thing is certain—they need you alive.</p>
+			<h4>FUTURE YOU QUIRKS</h4>
+			<p>Strange effects linger after communicating with your future self. You gain one of the following traits:</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Personality Traits</td></tr>
+				</thead>
+				<tr><td>1</td><td>You often speak in the wrong tense or refer to yourself in a plural.</td></tr>
+				<tr><td>2</td><td>You sometimes refer to a person you just met by name, before they've introduced themselves.</td></tr>
+				<tr><td>3</td><td>Even in dire circumstances, you are unreasonably calm.</td></tr>
+				<tr><td>4</td><td>In certain lighting, you look much older than you are.</td></tr>
+				<tr><td>5</td><td>Seeing certain people alive can instantly reduce you to tears.</td></tr>
+				<tr><td>6</td><td>Your future fashion sense clashes completely with that of today.</td></tr>
+			</table>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_EXPANDED_SPELL_LIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_IT_HAPPENED_LIKE_THIS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_I_COULD_DO_WITH_FEWER_SCARS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_EXPECT_AN_AMBUSH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_GRANDFATHER_PARADOX" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Personality Trait" type="List">
+				<item id="1">You often speak in the wrong tense or refer to yourself in a plural.</item>
+				<item id="2">You sometimes refer to a person you just met by name, before they've introduced themselves.</item>
+				<item id="3">Even in dire circumstances, you are unreasonably calm.</item>
+				<item id="4">In certain lighting, you look much older than you are.</item>
+				<item id="5">Seeing certain people alive can instantly reduce you to tears.</item>
+				<item id="6">Your future fashion sense clashes completely with that of today.</item>
+			</select>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_IT_HAPPENED_LIKE_THIS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_I_COULD_DO_WITH_FEWER_SCARS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_EXPECT_AN_AMBUSH" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_GRANDFATHER_PARADOX" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Future You feature</em></p>
+			<p>Your future self lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. New spells are marked with an asterisk.</p>
+			<h5 class="caption">Future You Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>accelerate/decelerate,* instant replay*</em></td></tr>
+				<tr><td>2nd</td><td><em>delay,* recall*</em></td></tr>
+				<tr><td>3rd</td><td><em>haste, protection from energy</em></td></tr>
+				<tr><td>4th</td><td><em>death ward, dire warning*</em></td></tr>
+				<tr><td>5th</td><td><em>evasiveness,* legend lore</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Future You lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_MHP_VSOS_SPELL_ACCELERATE_DECELERATE</extend>
+			<extend>ID_MHP_VSOS_SPELL_INSTANT_REPLAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_DELAY</extend>
+			<extend>ID_MHP_VSOS_SPELL_RECALL</extend>
+			<extend>ID_PHB_SPELL_HASTE</extend>
+			<extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+			<extend>ID_PHB_SPELL_DEATH_WARD</extend>
+			<extend>ID_MHP_VSOS_SPELL_DIRE_WARNING</extend>
+			<extend>ID_MHP_VSOS_SPELL_EVASIVENESS</extend>
+			<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+		</spellcasting>
+	</element>
+	<element name="It Happened Like This" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_IT_HAPPENED_LIKE_THIS">
+		<description>
+			<p><em>1st-level Future You feature</em></p>
+			<p>Starting at 1st level, your discussions of the future with yourself have given you some periphery knowledge about how events played out. When you take a short or long rest, your GM rolls a d20 and a d4 in secret and records the number rolled on the d20. The GM tells you the number recorded, unless they rolled a 4 on the d4; in that case, they give you false information: a random number from 1 to 20.</p>
+			<p class="indent">You can replace any attack roll, ability check, or saving throw you make with this recorded value. You must choose to do so before the roll and can only use this recorded value once. If the GM gave you false information, they inform you after you replace the roll.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you take a short or long rest, your GM rolls a d20 and a d4 in secret and records the number rolled on the d20. The GM tells you the number recorded, unless they rolled a 4 on the d4; in that case, they give you false information: a random number from 1 to 20.
+			You can replace any attack roll, ability check, or saving throw you make with this recorded value. You must choose to do so before the roll and can only use this recorded value once. If the GM gave you false information, they inform you after you replace the roll.</description>
+		</sheet>
+	</element>
+	<element name="I Could Do With Fewer Scars" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_I_COULD_DO_WITH_FEWER_SCARS">
+		<description>
+			<p><em>6th-level Future You feature</em></p>
+			<p>At 6th level, your future self often warns you of particular attacks to watch out for. When a creature you can see makes an attack against you, you can use your reaction to gain a +10 bonus to your AC against that attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see makes an attack against you, you can gain a +10 bonus to your AC against that attack.</description>
+		</sheet>
+	</element>
+	<element name="Expect An Ambush" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_EXPECT_AN_AMBUSH">
+		<description>
+			<p><em>10th-level Future You feature</em></p>
+			<p>At 10th level, your future self always warns you about potential ambushes. As a result, you can't be surprised while you are conscious, and you have advantage on initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>You can't be surprised while you are conscious, and you have advantage on initiative rolls.</description>
+		</sheet>
+	</element>
+	<element name="Grandfather Paradox" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_FUTURE_YOU_GRANDFATHER_PARADOX">
+		<description>
+			<p><em>14th-level Future You feature</em></p>
+			<p>At 14th level, your knowledge of the future allows you to exploit some of the rules of spacetime. As an action, you can goad a creature that can hear you into causing a paradox. The creature must make an Intelligence saving throw against your warlock spell save DC. On a failed save, the creature is stunned for up to 1 minute, locked between two opposing timelines while the paradox sorts itself out. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can goad a creature that can hear you into causing a paradox. The creature must make a {{spellcasting:dc:cha}}DC INT saving throw. On a failed save, the creature is stunned for up to 1 minute, locked between two opposing timelines while the paradox sorts itself out. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+</elements>

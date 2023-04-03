@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dead Mists Patron</name>
+		<description>The Dead Mists Patron from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-dead-mists.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-dead-mists.xml" />
+		</update>
+	</info>
+	<element name="The Dead Mists" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WARLOCK_THE_DEAD_MISTS">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>The starry expanse of the Astral Plane contains horrors both great and small, but none rival the mass of astral fog known as the Dead Mists. An inky smoke that curls and drifts about the plane, they are infamous for claiming every incautious traveler that wanders into their misty embrace. Yet the Dead Mists aren't a mere astral hazard: they possess a grim intelligence, an intent, and a bottomless well of necromantic power.</p>
+			<p class="indent">Warlocks that embrace the Dead Mists unlock a terrible type of necromancy: the ability to trade pure life essence for arcana. As such, the Dead Mists slowly consume their warlocks, granting them surges of arcane power in exchange for every drop of life they possess.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_EXPANDED_SPELL_LIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_DRINK_THE_MISTS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_FEED_THE_SOUL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_FOG_FORM" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_MASTER_OF_THE_MISTS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_DRINK_THE_MISTS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_FEED_THE_SOUL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_FOG_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_MASTER_OF_THE_MISTS" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Dead Mists feature</em></p>
+			<p>The Dead Mists lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. New spells are marked with an asterisk.</p>
+			<h5 class="caption">Dead Mists Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>dead mist lash,* fog cloud</em></td></tr>
+				<tr><td>2nd</td><td><em>detect thoughts, protect threshold*</em></td></tr>
+				<tr><td>3rd</td><td><em>clairvoyance, dead fog*</em></td></tr>
+				<tr><td>4th</td><td><em>black tentacles, confusion</em></td></tr>
+				<tr><td>5th</td><td><em>cloudkill, scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Dead Mists lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_MHP_VSOS_SPELL_DEAD_MIST_LASH</extend>
+			<extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+			<extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+			<extend>ID_MHP_VSOS_SPELL_PROTECT_THRESHOLD</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_MHP_VSOS_SPELL_DEAD_FOG</extend>
+			<extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+			<extend>ID_PHB_SPELL_CONFUSION</extend>
+			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
+			<extend>ID_PHB_SPELL_SCRYING</extend>
+		</spellcasting>
+	</element>
+	<element name="Drink the Mists" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_DRINK_THE_MISTS">
+		<description>
+			<p><em>1st-level Dead Mists feature</em></p>
+			<p>Starting at 1st level, you learn to draw the withering Dead Mists into your soul, granting you eldritch insights and power at the cost of your health. As a bonus action, you can choose to lose hit points equal to 1d8 for each level of your Pact Magic spell slots. At the start of your next turn, you regain an expended Pact Magic spell slot. If this ability reduces you to 0 hit points, you are knocked unconscious, even if you have temporary hit points.</p>
+			<p class="indent">Because of the soul-draining nature of the Dead Mists, you can't regain hit points from any spell you cast.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can choose to lose 1d8hp for each level of your Pact Magic spell slots. At the start of your next turn, you regain an expended Pact Magic spell slot. If this ability reduces you to 0 hit points, you are knocked unconscious, even if you have temporary hit points.
+			Because of the soul-draining nature of the Dead Mists, you can't regain hit points from any spell you cast.</description>
+		</sheet>
+	</element>
+	<element name="Feed The Soul" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_FEED_THE_SOUL">
+		<description>
+			<p><em>6th-level Dead Mists feature</em></p>
+			<p>Starting at 6th level, your body begins to merge with the Dead Mists, allowing you to heal your mortal form by burning eldritch energy. As an action on your turn, you can consume one of your available Pact Magic spell slots to regain 1d8 hit points for each level of the spell slot consumed. This amount of healing can't be increased or maximized.</p>
+		</description>
+		<sheet action="Action">
+			<description>On your turn, you can consume one of your available Pact Magic spell slots to regain 1d8 hit points for each level of the spell slot consumed. This amount of healing can't be increased or maximized.</description>
+		</sheet>
+	</element>
+	<element name="Fog Form" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_FOG_FORM">
+		<description>
+			<p><em>10th-level Dead Mists feature</em></p>
+			<p>At 10th level, you learn to fully immerse yourself in the Dead Mists, transforming into a hazy, misty reflection of your true self. As an action, you can cast the spell <i>gaseous form</i>, targeting yourself only, without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can cast the spell gaseous form, targeting yourself only, without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Master Of The Mists" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_DEAD_MISTS_MASTER_OF_THE_MISTS">
+		<description>
+			<p><em>14th-level Dead Mists feature</em></p>
+			<p>Starting at 14th level, once on each of your turns when you deal necrotic damage to a hostile creature with a warlock spell, you drain some of the target's life essence with the Dead Mists. You regain hit points equal to 1d8 + your Charisma modifier, up to a maximum of the damage dealt.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you deal necrotic damage to a hostile creature with a warlock spell, you drain some of the target's life essence with the Dead Mists. You regain 1d8+{{charisma:modifier}}hp, up to a maximum of the damage dealt.</description>
+		</sheet>
+	</element>
+  
+</elements>

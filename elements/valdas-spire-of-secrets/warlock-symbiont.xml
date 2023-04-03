@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Symbiont Patron</name>
+		<description>The Symbiont Patron from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-symbiont.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-symbiont.xml" />
+		</update>
+	</info>
+	<element name="The Symbiont" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WARLOCK_SYMBIONT">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Though most warlocks forge pacts with distant, intangible entities, your patron is a physical being of incomprehensible power—a being that dwells inside your very body. This arrangement was struck in the spirit of symbiosis: your patron, which resembles a muscular, living ichor, requires a mortal dwelling, and you in turn may profit from its magic. You can even draw your patron out from where it resides in your blood, causing it to seep forth onto your skin until you are a monstrous hybrid of ichor, replete with claws and teeth to rend your foes asunder.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_EXPANDED_SPELL_LIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_SYMBIOTIC_TRANSFORMATION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_TRAUMATIC_REND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_LIFEDRAIN" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_VIOLENCE_AFTER_DEATH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_SYMBIOTIC_TRANSFORMATION" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_TRAUMATIC_REND" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_LIFEDRAIN" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_VIOLENCE_AFTER_DEATH" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Symbiont feature</em></p>
+			<p>The Symbiont lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">Symbiont Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>entangle, longstrider</em></td></tr>
+				<tr><td>2nd</td><td><em>blur, enlarge/reduce</em></td></tr>
+				<tr><td>3rd</td><td><em>haste, meld into stone</em></td></tr>
+				<tr><td>4th</td><td><em>black tentacles, stoneskin</em></td></tr>
+				<tr><td>5th</td><td><em>cloudkill, mislead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Symbiont lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_ENTANGLE</extend>
+			<extend>ID_PHB_SPELL_LONGSTRIDER</extend>
+			<extend>ID_PHB_SPELL_BLUR</extend>
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+			<extend>ID_PHB_SPELL_HASTE</extend>
+			<extend>ID_PHB_SPELL_MELD_INTO_STONE</extend>
+			<extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+			<extend>ID_PHB_SPELL_STONESKIN</extend>
+			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
+			<extend>ID_PHB_SPELL_MISLEAD</extend>
+		</spellcasting>
+	</element>
+	<element name="Symbiotic Transformation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_SYMBIOTIC_TRANSFORMATION">
+		<description>
+			<p><em>1st-level Symbiont feature</em></p>
+			<p>Starting when you choose this patron at 1st level, you can draw out your Symbiont, which proceeds to coat your body in a living slime exoskeleton. You can undergo this transformation or reverse it as a bonus action on your turn. While transformed, you can't cast spells, but transforming doesn't break your concentration or prevent you from taking actions that are part of a spell that you've already cast. While transformed, you gain the following benefits:</p>
+			<p class="indent"><b>The Flesh.</b> When you aren't wearing armor, your base AC is 10 + your Dexterity modifier + your Charisma modifier. You can use The Flesh to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use The Flesh.</p>
+            <p class="indent"><b>The Claws.</b> You sprout a set of wicked claws, which you can use as natural melee weapons to make claw attacks. You are proficient with your claw attacks and can use your Charisma modifier, instead of Strength, for their attack and damage rolls. On a hit, your claws deal 1d8 slashing damage, which counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you later gain the Pact of the Blade feature, your claws count as pact weapons for warlock class features.</p>
+			<p class="indent"><b>Extra Attack.</b> Starting at 5th level, you can attack twice with your claws, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can draw out your Symbiont. While transformed, you can't cast spells, but transforming doesn't break your concentration or prevent you from taking actions that are part of a spell that you've already cast. While transformed, you gain the following benefits:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="The Flesh" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_FLASH" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_FLASH" />
+			<select type="Archetype Feature" name="The Claws" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_CLAWS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_CLAWS" />
+			<select type="Archetype Feature" name="Extra Attack" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_EXTRA_ATTACK" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_EXTRA_ATTACK" />
+		</rules>
+	</element>
+	<element name="The Flesh" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_FLASH">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_FLASH</supports>
+		<description>
+			<p>When you aren't wearing armor, your base AC is 10 + your Dexterity modifier + your Charisma modifier. You can use The Flesh to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use The Flesh.</p>
+		</description>
+		<sheet>
+			<description>When you aren't wearing armor, your AC is {{ac:natural armor:flesh}}. You can use The Flesh to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use The Flesh.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:flesh" value="10" bonus="base" />
+			<stat name="ac:natural armor:flesh" value="dexterity:modifier" />
+			<stat name="ac:natural armor:flesh" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:natural armor:flesh" bonus="calculation" alt="Natural Armor (The Flesh)" />
+		</rules>
+	</element>
+	<element name="The Claws" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_CLAWS">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_THE_CLAWS</supports>
+		<description>
+			<p>You sprout a set of wicked claws, which you can use as natural melee weapons to make claw attacks. You are proficient with your claw attacks and can use your Charisma modifier, instead of Strength, for their attack and damage rolls. On a hit, your claws deal 1d8 slashing damage, which counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you later gain the Pact of the Blade feature, your claws count as pact weapons for warlock class features.</p>
+		</description>
+		<sheet>
+			<description>You sprout a set of wicked claws, which you can use as natural melee weapons to make claw attacks. You are proficient with your claw attacks and can use your Charisma modifier, instead of Strength, for their attack and damage rolls. On a hit, your claws deal 1d8 slashing damage, which counts as magical. If you later gain the Pact of the Blade feature, your claws count as pact weapons for warlock class features.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_EXTRA_ATTACK">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ST_EXTRA_ATTACK</supports>
+		<description>
+			<p>Starting at 5th level, you can attack twice with your claws, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice with your claws, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Traumatic Rend" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_TRAUMATIC_REND">
+		<description>
+			<p><em>6th-level Symbiont feature</em></p>
+			<p>Starting at 6th level, you can rake your foe's eyes with your claws to discourage its attacks. When you hit the same creature with your claws twice on your turn, you can make an additional attack using your claws against the target (no action required). On a hit, the target has disadvantage on attack rolls until the start of your turn.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you hit the same creature with your claws twice on your turn, you can make an additional attack using your claws against the target (no action required). On a hit, the target has disadvantage on attack rolls until the start of your turn.</description>
+		</sheet>
+	</element>
+	<element name="Lifedrain" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_LIFEDRAIN">
+		<description>
+			<p><em>10th-level Symbiont feature</em></p>
+			<p>By 10th level, your parasitic patron can draw life from those around you. While you are conscious, whenever you deal damage to a hostile creature using your claws, you regain 1d4 hit points.</p>
+		</description>
+		<sheet>
+			<description>While you are conscious, whenever you deal damage to a hostile creature using your claws, you regain 1d4 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Violence After Death" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SYMBIONT_VIOLENCE_AFTER_DEATH">
+		<description>
+			<p><em>14th-level Symbiont feature</em></p>
+			<p>Beginning at 14th level, if you should fall in combat, your Symbiont shall keep fighting. If you drop to 0 hit points while transformed with your Symbiotic Transformation, you don't fall prone or begin making death saving throws until the end of your next turn. Instead, your Symbiont controls your actions, acting as if you weren't unconscious, attacking any hostile creatures it sees. If you take any damage while at 0 hit points, you instantly fall unconscious and suffer one death saving throw failure. At the end of your next turn, you collapse and begin to make death saving throws as normal.</p>
+		</description>
+		<sheet>
+			<description>If you drop to 0 hit points while transformed with your Symbiotic Transformation, you don't fall prone or begin making death saving throws until the end of your next turn. Instead, your Symbiont controls your actions, acting as if you weren't unconscious, attacking any hostile creatures it sees. If you take any damage while at 0 hit points, you instantly fall unconscious and suffer one death saving throw failure. At the end of your next turn, you collapse and begin to make death saving throws as normal.</description>
+		</sheet>
+	</element>
+  
+</elements>

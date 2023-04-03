@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magician Patron</name>
+		<description>The Magician Patron from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-magician.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-magician.xml" />
+		</update>
+	</info>
+	<element name="The Magician" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WARLOCK_THE_MAGICIAN">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>While all warlocks are skilled in the art of magic, very few are what most people would consider “magicians,” skilled in the arts of physical illusion, sleight of hand, and showmanship. Those with such talents might find themselves drawn to the mysterious Magician, believed to be a minor trickster deity (who most often takes the form of a white rabbit), long forgotten and bereft of worshipers. Under the Magician's patronage, warlocks command an amalgamation of real and fake magic, such that it's never clear if they're casting spells, performing a ruse, or putting on a show.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_EXPANDED_SPELL_LIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_ABRACADABRA" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_IMPRESSIVE_ESCAPE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_ALAKAZAM" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_MASTER_OF_ILLUSIONS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_ABRACADABRA" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_IMPRESSIVE_ESCAPE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_ALAKAZAM" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_MASTER_OF_ILLUSIONS" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Magician feature</em></p>
+			<p>The Magician lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">Magician Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>find familiar, fog cloud</em></td></tr>
+				<tr><td>2nd</td><td><em>knock, rope trick</em></td></tr>
+				<tr><td>3rd</td><td><em>blink, speak with dead</em></td></tr>
+				<tr><td>4th</td><td><em>freedom of movement, secret chest</em></td></tr>
+				<tr><td>5th</td><td><em>creation, mislead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Magician lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_FIND_FAMILIAR</extend>
+			<extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+			<extend>ID_PHB_SPELL_KNOCK</extend>
+			<extend>ID_PHB_SPELL_ROPE_TRICK</extend>
+			<extend>ID_PHB_SPELL_BLINK</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+			<extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+			<extend>ID_PHB_SPELL_CREATION</extend>
+			<extend>ID_PHB_SPELL_MISLEAD</extend>
+		</spellcasting>
+	</element>
+	<element name="Abracadabra" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_ABRACADABRA">
+		<description>
+			<p><em>1st-level Magician feature</em></p>
+			<p>Starting at 1st level, you gain proficiency in the Sleight of Hand skill, and you learn the <i>card trick</i> and <i>prestidigitation</i> cantrips, which do not count against your number of cantrips known.</p>
+			<p class="indent">Additionally, you can attempt to cast any cantrip that you do not know from the wizard spell list by succeeding on a DC 10 Charisma check. While being cast, the cantrip counts as a warlock spell for you. On a failure, the spell fails.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Sleight of Hand skill. You learn the card trick and prestidigitation cantrips. You can attempt to cast any cantrip that you do not know from the wizard spell list by succeeding on a DC10 CHA check. While being cast, the cantrip counts as a warlock spell for you. On a failure, the spell fails.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_CARD_TRICK" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+		</rules>
+	</element>
+	<element name="Impressive Escape" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_IMPRESSIVE_ESCAPE">
+		<description>
+			<p><em>6th-level Magician feature</em></p>
+			<p>Starting at 6th level, you can use your Charisma modifier instead of the normal modifier for Dexterity (Sleight of Hand) checks, and you can add your Charisma modifier to all skill checks involving picking locks, escaping ropes or manacles, or other similar feats of escape artistry.</p>
+            <p class="indent">Additionally, as a bonus action, you can vanish in a puff of smoke, a shower of confetti, or a number of released doves, teleporting to any unoccupied location you choose within 120 feet. You can only choose a destination from which no conscious creature can see you appear.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action (2)" usage="1/Short||Long Rest">
+			<description>1)You can add your CHA mod (instead of Dex mod) to all skill checks involving picking locks, escaping ropes or manacles, or other similar feats of escape artistry. &#13;
+			2)You can teleport to any unoccupied location you choose within 120ft. You can only choose a destination from which no conscious creature can see you appear.</description>
+		</sheet>
+		<rules>
+			<stat name="sleight of hand:misc" value="-dexterity:modifier" />
+			<stat name="sleight of hand:misc" value="dexterity:modifier" bonus="misc" />
+			<stat name="sleight of hand:misc" value="charisma:modifier" bonus="misc" />
+		</rules>
+	</element>
+	<element name="Alakazam" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_ALAKAZAM">
+		<description>
+			<p><em>10th-level Magician feature</em></p>
+			<p>When you reach 10th level, you learn to alter your spellcasting in a number of ways, both to hide it from your audience and to expand your magical repertoire. Whenever you cast a warlock spell of 1st level or higher using a warlock spell slot, you can manipulate it in one of two ways:</p>
+            <p class="indent"><b>Conceal.</b> You can cast the spell without using spell components by succeeding on a Dexterity (Sleight of Hand) check. The DC for this check equals 8 + the spell's level. On a failure, the spell fails and its spell slot is wasted. You can't use this ability on a spell with material components that have a cost.</p>
+            <p class="indent"><b>Transmute.</b> You can attempt to cast any other spell from the wizard spell list of the same level or lower instead of the spell you initially cast. When you do so, you must succeed on a Charisma check with a DC equal to 12 + the spell's level. Otherwise, the spell fails and its spell slot is wasted.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a warlock spell of 1st level or higher using a warlock spell slot, you can manipulate it in one of two ways:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Conceal" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_CONCEAL" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_CONCEAL" />
+			<select type="Archetype Feature" name="Transmute" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_TRANSMUTE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_TRANSMUTE" />
+		</rules>
+	</element>
+	<element name="Conceal" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_CONCEAL">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_CONCEAL</supports>
+		<description>
+			<p>You can cast the spell without using spell components by succeeding on a Dexterity (Sleight of Hand) check. The DC for this check equals 8 + the spell's level. On a failure, the spell fails and its spell slot is wasted. You can't use this ability on a spell with material components that have a cost.</p>
+		</description>
+		<sheet>
+			<description>You can cast the spell without using spell components by succeeding on a DEX (Sleight of Hand) check of DC (8 + spell's level). On a failure, the spell fails and its spell slot is wasted. Can't use this ability on a spell with material components that have a cost.</description>
+		</sheet>
+	</element>
+	<element name="Transmute" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_TRANSMUTE">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ALAKAZAM_TRANSMUTE</supports>
+		<description>
+			<p>You can attempt to cast any other spell from the wizard spell list of the same level or lower instead of the spell you initially cast. When you do so, you must succeed on a Charisma check with a DC equal to 12 + the spell's level. Otherwise, the spell fails and its spell slot is wasted.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to cast any other spell from the wizard spell list of the same level or lower instead of the spell you initially cast by succeeding on a CHA check of DC (12 + spell's level), otherwise, the spell fails and its spell slot is wasted.</description>
+		</sheet>
+	</element>
+	<element name="Master Of Illusions" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_MAGICIAN_MASTER_OF_ILLUSIONS">
+		<description>
+			<p><em>14th-level Magician feature</em></p>
+			<p>Upon reaching 14th level, you gain a mastery over illusion magic. You can cast the spells <i>silent image</i> and <i>major image</i> at will without using a spell slot or spell components, and you can concentrate on one of these spells in addition to another spell.</p>
+		</description>
+		<sheet>
+			<description>You can cast the spells silent image and major image at will without using a spell slot or spell components, and you can concentrate on one of these spells in addition to another spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" />
+		</rules>
+	</element>
+</elements>

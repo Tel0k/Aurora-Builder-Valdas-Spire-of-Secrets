@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>New Pact Boons</name>
+		<description>The New Pact Boons from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-new-pact-boons-invocations.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-new-pact-boons-invocations.xml" />
+		</update>
+	</info>
+    <!-- Pact Boons -->
+	<element name="Pact of the Cloak" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>As a bonus action, you can summon a cloak, coat, or robe which aids your movement and mobility. This pact cloak appears on your body, fitting over any other clothes or armor, and it doesn't impede your movement, vision, or your ability to wear other equipment. While wearing your pact cloak, you constantly float a few inches off the ground. You ignore the effects of difficult terrain, your speed increases by 10 feet, and you can walk across fluid surfaces such as water and quicksand.</p>
+			<p class="indent">You can dismiss your pact cloak as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can summon a cloak, coat, or robe which doesn't impede your movement, vision, or your ability to wear other equipment. While wearing it, you constantly float a few inches off the ground. You ignore the effects of difficult terrain, your speed increases by 10 feet, and you can walk across fluid surfaces such as water and quicksand.
+            You can dismiss your pact cloak as a bonus action.</description>
+		</sheet>
+		<rules>
+            <stat name="speed" value="10" />
+		</rules>
+	</element>
+	<element name="Pact of the Flame" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_FLAME">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>Your patron grants you a mote of chaotic, otherworldly power. Your spell attacks score a critical hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet>
+			<description>Your spell attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+	<element name="Pact of the Skin" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_SKIN">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>You give yourself over completely to your patron, taking on greater aspects of your benefactor in exchange for more power. Your skin changes to reflect this, changing form and becoming more resistant to damage. When you take bludgeoning, piercing, or slashing damage from a nonmagical attack that isn't silvered, you can subtract 3 from the damage taken.</p>
+		</description>
+		<sheet>
+			<description>You give yourself over completely to your patron, taking on greater aspects of your benefactor in exchange for more power. Your skin changes to reflect this, changing form and becoming more resistant to damage. When you take bludgeoning, piercing, or slashing damage from a nonmagical attack that isn't silvered, you can subtract 3 from the damage taken.</description>
+		</sheet>
+	</element>
+    <!-- Invocations -->
+    <element name="Abyssall Concord" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_ABYSSAL_CONCORD">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can cast <em>might of the abyss</em> once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_MHP_VSOS_SPELL_MIGHT_OF_THE_ABYSS" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast might of the abyss once using a warlock spell slot.</description>
+		</sheet>
+	</element>
+	<element name="Crimson Investigator" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_CRIMSON_INVESTIGATOR">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can cast the <em>blood print</em> spell at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_MHP_VSOS_SPELL_BLOOD_PRINT" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast the blood print spell at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_BLOOD_PRINT" />
+		</rules>
+	</element>
+	<element name="Eldritch Claw" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_ELDRITCH_CLAW">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level</em></p>
+			<p>When you cast a cantrip that requires one or more ranged spell attacks, you can make melee spell attacks instead.</p>
+		</description>
+		<sheet>
+			<description>When you cast a cantrip that requires one or more ranged spell attacks, you can make melee spell attacks instead.</description>
+		</sheet>
+	</element>
+	<element name="Fell Flight" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_FELL_FLIGHT">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level</em></p>
+			<p>Your patron grants you the power to fly: this manifests as a pair of wings (of varying types), a dark aura, or some other sign appropriate to your patron. While you aren't wearing medium or heavy armor, you gain a flying speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>While you aren't wearing medium or heavy armor, you gain a flying speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" equipped="![armor:medium],![armor:heavy]" bonus="base" />
+		</rules>
+	</element>
+	<element name="Lurker In The Shadow" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_LURKER_IN_THE_THRESHOLD">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level</em></p>
+			<p>You can cast <em>protect threshold</em> at will, without expending a spell slot or material components. The spell ends early if you use this invocation to cast the spell again.</p>
+			<div class="reference">
+				<div element="ID_MHP_VSOS_SPELL_PROTECT_THRESHOLD" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you cast eldritch blast, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_PROTECT_THRESHOLD" />
+		</rules>
+	</element>
+	<element name="Mantle Of Mist" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_MANTLE_OF_MIST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>12th level, Pact of the Cloak feature</prerequisite>
+		<requirements>[level:12],ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK</requirements>
+		<description>
+			<p><em>Prerequisite: 12th level, Pact of the Cloak feature</em></p>
+			<p>You can cast <em>misty step</em> without using a spell slot by vanishing into your pact cloak, leaving behind a cloud of smoke. You can use this invocation a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MISTY_STEP" />
+			</div>
+		</description>
+		<sheet usage="{{number2:calculation}}/Long Rest">
+			<description>You can cast misty step without using a spell slot by vanishing into your pact cloak, leaving behind a cloud of smoke.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+			<stat name="number2:top" value="1" bonus="top" />
+        	<stat name="number2:top" value="charisma:modifier" bonus="top" />
+        	<stat name="number2:calculation" value="number2:top" bonus="calculation" />
+		</rules>
+	</element>
+	<element name="Monstrous Carapace" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_MONSTROUS_CARAPACE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>12th level, Pact of the Skin feature</prerequisite>
+		<requirements>[level:12],ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_SKIN</requirements>
+		<description>
+			<p><em>Prerequisite: 12th level, Pact of the Skin feature</em></p>
+			<p>Your already tough form becomes almost impenetrable. When you take bludgeoning, piercing, or slashing damage from a nonmagical attack that isn't silvered, you can use your reaction to halve the damage taken.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take bludgeoning, piercing, or slashing damage from a nonmagical attack that isn't silvered, you can halve the damage taken.</description>
+		</sheet>
+	</element>
+	<element name="Pale Horse" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_PALE_HORSE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+		<description>
+			<p><em>Prerequisite: 3rd level</em></p>
+			<p>You can cast the spell <em>find steed</em> once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FIND_STEED" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the spell find steed once using a warlock spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
+		</rules>
+	</element>
+	<element name="Pandemonium Spark" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_PANDEMONIUM_SPARK">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip, Pact of the Flame feature</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_FLAME</requirements>
+		<description>
+			<p><em>Prerequisite: eldritch blast cantrip, Pact of the Flame feature</em></p>
+			<p>When you roll a 10 on the damage die for your eldritch blast, you can roll an additional d10 and add its damage to the total, rolling again if this die is also a 10, and so on. You can roll a total number of four damage dice for this damage roll, or eight damage dice on a critical hit.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 10 on the damage die for your eldritch blast, you can roll an additional d10 and add its damage to the total, rolling again on a 10, up to a total of 4d10 (8d10 on a critical hit).</description>
+		</sheet>
+	</element>
+	<element name="Sigil Of Protection" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_SIGIL_OF_PROTECTION">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can cast <em>transient bulwark</em> once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_MHP_VSOS_SPELL_TRANSIENT_BULWARK" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you cast transient bulwark once using a warlock spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_TRANSIENT_BULWARK" />
+		</rules>
+	</element>
+	<element name="Sinister Snare" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_SINISTER_SNARE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Skin feature</prerequisite>
+		<requirements>ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_SKIN</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Skin feature</em></p>
+			<p>Creatures within your reach provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.</p>
+		</description>
+		<sheet>
+			<description>Creatures within your reach provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.</description>
+		</sheet>
+	</element>
+	<element name="Surge Of Chaos" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_SURGE_OF_CHAOS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level, Pact of the Flame feature</prerequisite>
+		<requirements>[level:9],ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_FLAME</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level, Pact of the Flame feature</em></p>
+			<p>As an action, you can set off an uncontrolled magic spark to cast a random spell. Spend a warlock spell slot and roll on the following table. Each entry gives a list of spells from a particular school of magic; you must choose to cast one of the spells from the list rolled using your warlock spell slot, without consuming expensive material components. New spells are marked with an asterisk.</p>
+			<h5>title</h5>
+			<table>
+				<thead>
+					<tr><td>d8</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1</td><td><b>Abjuration.</b><i> Aid, protection from energy, stoneskin, antilife shell.</i></td></tr>
+				<tr><td>2</td><td><b>Conjuration.</b><i> Web, conjure animals, dimension door, cloudkill.</i></td></tr>
+				<tr><td>3</td><td><b>Divination.</b><i> Detect thoughts, geomantic discernment,* divination, scrutinize foe*</i></td></tr>
+				<tr><td>4</td><td><b>Enchantment.</b><i> Suggestion, curse of blades,* confusion, hold monster</i></td></tr>
+				<tr><td>5</td><td><b>Evocation.</b><i> Gust of wind, fireball, ice storm, wall of force.</i></td></tr>
+				<tr><td>6</td><td><b>Illusion.</b><i> Mirror image, major image, greater invisibility, seeming.</i></td></tr>
+				<tr><td>7</td><td><b>Necromancy.</b><i> Ray of enfeeblement, bestow curse, blight, contagion.</i></td></tr>
+				<tr><td>8</td><td><b>Transmutation.</b><i> Heat metal, haste, polymorph, animate objects.</i></td></tr>
+			</table>
+		</description>
+		<sheet action="Action">
+			<description>Spend a warlock spell slot and roll on the table. Each entry gives a list of spells from a particular school of magic; you must choose to cast one of the spells from the list rolled using your warlock spell slot, without consuming expensive material components. New spells are marked with an asterisk.</description>
+		</sheet>
+	</element>
+	<element name="Wisp Of Shadow" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_WISP_OF_SHADOW">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Cloak feature</prerequisite>
+		<requirements>ID_MHP_VSOS_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Cloak feature</em></p>
+			<p>While wearing your pact cloak, you do not take any damage from falling.</p>
+		</description>
+		<sheet>
+			<description>While wearing your pact cloak, you do not take any damage from falling.</description>
+		</sheet>
+	</element>
+
+
+</elements>

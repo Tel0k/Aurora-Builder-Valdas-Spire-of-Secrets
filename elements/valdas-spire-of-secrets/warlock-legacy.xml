@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Legacy Patron</name>
+		<description>The Legacy Patron from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-legacy.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-legacy.xml" />
+		</update>
+	</info>
+	<element name="The Legacy" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WARLOCK_THE_LEGACY">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Rather than forging a pact inked by blood or bound to your soul, you have inherited a Legacy, a patron embodied by a line of inheritors sworn to a sacred cause. In so doing, you have acquired a relic of this ancient legacy, an object of unimaginable power passed down through the generations or recently uncovered from a long-lost civilization. With it, you can transform into the most powerful version of yourself to continue your Legacy's fight.</p>
+			<p class="indent">Countless Legacies have imbued warlocks with ancient powers, and only a few remain today, but each possesses a unique type of relic and bestows a unique type of transformation. How you use this transformation is ultimately up to you, but the Legacy conspires to see you achieve greatness and advance its unknowable ancient goals.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_EXPANDED_SPELL_LIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RELIC_OF_TRANSFORMATION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RELIC_FORCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RESOLUTE_LEGACY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_AURA_OF_LEGEND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_FINAL_LEGACY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RELIC_OF_TRANSFORMATION" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RELIC_FORCE" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RESOLUTE_LEGACY" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_AURA_OF_LEGEND" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_FINAL_LEGACY" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Legacy feature</em></p>
+			<p>The Legacy lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. New spells are marked with an asterisk.</p>
+			<h5 class="caption">Legacy Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>boomering,* heroism</em></td></tr>
+				<tr><td>2nd</td><td><em>aid, flame blade</em></td></tr>
+				<tr><td>3rd</td><td><em>fireball, phantom steed</em></td></tr>
+				<tr><td>4th</td><td><em>death ward, stoneskin</em></td></tr>
+				<tr><td>5th</td><td><em>cone of cold, dispel evil and good</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Legacy lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_MHP_VSOS_SPELL_BOOMERING</extend>
+			<extend>ID_PHB_SPELL_HEROISM</extend>
+			<extend>ID_PHB_SPELL_AID</extend>
+			<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
+			<extend>ID_PHB_SPELL_FIREBALL</extend>
+			<extend>ID_PHB_SPELL_PHANTOM_STEED</extend>
+			<extend>ID_PHB_SPELL_DEATH_WARD</extend>
+			<extend>ID_PHB_SPELL_STONESKIN</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+			<extend>ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD</extend>
+		</spellcasting>
+	</element>
+	<element name="Relic Of Transformation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RELIC_OF_TRANSFORMATION">
+		<description>
+			<p><em>1st-level Legacy feature</em></p>
+			<p>Beginning when you choose this subclass at 1st level, you have a magical relic tied to your patron which allows you to undergo a fantastic transformation or reverse it as a bonus action. The exact nature of the transformation varies from Legacy to Legacy, but it always changes your appearance and confers dramatic power. While transformed, you have the following benefits:</p>
+			<ul>
+				<li>Your AC equals 10 + your Dexterity modifier + your Charisma modifier.</li>
+				<li>Unless a creature has truesight or watches you transform, you can't be recognized as your true identity.</li>
+				<li>You have a pool of battle dice, which are d6s. A battle die is expended when you use it. You regain all expended battle dice when you finish a short or long rest, or when you roll initiative. Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown on the Battle Dice table on the next page.</li>
+				<li>Once on each of your turns, when you hit a creature with an attack, you can roll a battle die and add it to the attack's damage roll.</li>
+			</ul>
+			<h5>Battle Dice</h5>
+			<table>
+				<thead>
+					<tr><td>Warlock Level</td><td>Battle Dice</td></tr>
+				</thead>
+				<tr><td>1st</td><td>2d6</td></tr>
+				<tr><td>3rd</td><td>2d8</td></tr>
+				<tr><td>7th</td><td>3d8</td></tr>
+				<tr><td>13th</td><td>3d10</td></tr>
+				<tr><td>19th</td><td>4d10</td></tr>
+			</table>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You have a magical relic tied to your patron which allows you to undergo a fantastic transformation or reverse it.
+			While transformed, you have the following benefits:
+			</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="AC" supports="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_AC" default="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_AC" />
+            <select type="Archetype Feature" name="Secret Identity" supports="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_SECRET_IDENTITY" default="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_SECRET_IDENTITY" />           
+			<select type="Archetype Feature" name="Battle Dice" supports="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_BATTLE_DICE" default="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_BATTLE_DICE" />            
+            <select type="Archetype Feature" name="Additional Damage" supports="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_ADDITIONAL_DAMAGE" default="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_ADDITIONAL_DAMAGE" />           
+		</rules>
+	</element>
+	<element name="AC" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_AC">
+		<supports>ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_AC</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your AC equals 10 + your Dexterity modifier + your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>Your AC equals {{transformation:ac:calculation}}.</description>
+		</sheet>	
+		<rules>
+			<stat name="ac:relic" value="10" />
+			<stat name="ac:relic" value="dexterity:modifier" />
+			<stat name="ac:relic" value="charisma:modifier" />
+			<stat name="transformation:ac:calculation" value="ac:relic" bonus="calculation" />
+		</rules>
+	</element>
+	<element name="Secret Identity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_SECRET_IDENTITY">
+		<supports>ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_SECRET_IDENTITY</supports>
+		<compendium display="false" />
+		<description>
+			<p>Unless a creature has truesight or watches you transform, you can't be recognized as your true identity.</p>
+		</description>
+		<sheet>
+			<description>Unless a creature has truesight or watches you transform, you can't be recognized as your true identity.</description>
+		</sheet>
+	</element>
+	<element name="Battle Dice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_BATTLE_DICE">
+		<supports>ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_BATTLE_DICE</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have a pool of battle dice, which are d6s. A battle die is expended when you use it. You regain all expended battle dice when you finish a short or long rest, or when you roll initiative. Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown on the Battle Dice table on the next page.</p>
+		</description>
+		<sheet>
+			<description>You have {{battle dice:amount}} battle dice which are d{{battle dice:size}}s.</description>
+		</sheet>	
+		<rules>
+			<stat name="battle dice:amount" value="2" />
+			<stat name="battle dice:amount" value="1" level="7" />
+			<stat name="battle dice:amount" value="1" level="19" />
+			<stat name="battle dice:size" value="6" bonus="size"/>
+			<stat name="battle dice:size" value="8" bonus="size" level="3"/>
+			<stat name="battle dice:size" value="10" bonus="size" level="13"/>
+		</rules>
+	</element>
+	<element name="Additional Damage" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_ADDITIONAL_DAMAGE">
+		<supports>ID_MHP_VSOS_THE_LEGACY_RELIC_OF_TRANSFORMATION_ADDITIONAL_DAMAGE</supports>
+		<compendium display="false" />
+		<description>
+			<p>Once on each of your turns, when you hit a creature with an attack, you can roll a battle die and add it to the attack's damage roll.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with an attack, you can roll a 1d{{battle dice:size}} die and add it to the attack's damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Relic Force" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RELIC_FORCE">
+		<description>
+			<p><em>1st-level Legacy feature</em></p>
+			<p>Relics of Legacy are always tied to the fundamental forces of magic, nature, and the elements. At 1st level, choose one of the following damage types: acid, cold, fire, lightning, necrotic, or radiant. While transformed, whenever you deal damage with a warlock spell, warlock ability, or Pact Weapon, you can deal the chosen type of damage instead of the spell, ability, or weapon's normal damage type.</p>
+		</description>
+		<sheet>
+			<description>While transformed, whenever you deal damage with a warlock spell, warlock ability, or Pact Weapon, you can deal {{relic:damage type}} damage instead of the spell, ability, or weapon's normal damage type.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Relic Damage" supports="Relic Damage" />
+		</rules>
+	</element>
+	<element name="Acid" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_FORCE_DMG_ACID">
+		<supports>Relic Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Acid damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="relic:damage type" value="Acid" inline="true" />
+		</rules>
+	</element>
+	<element name="Cold" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_FORCE_DMG_COLD">
+		<supports>Relic Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Cold damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="relic:damage type" value="Cold" inline="true" />
+		</rules>
+	</element>
+	<element name="Fire" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_FORCE_DMG_FIRE">
+		<supports>Relic Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Fire damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="relic:damage type" value="Fire" inline="true" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_FORCE_DMG_LIGHTNING">
+		<supports>Relic Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Lightning damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="relic:damage type" value="Lightning" inline="true" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_FORCE_DMG_NECROTIC">
+		<supports>Relic Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Necrotic damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="relic:damage type" value="Necrotic" inline="true" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_THE_LEGACY_RELIC_FORCE_DMG_RADIANT">
+		<supports>Relic Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Radiant damage</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<stat name="relic:damage type" value="Radiant" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Resolute Legacy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_RESOLUTE_LEGACY">
+		<description>
+			<p><em>6th-level Legacy feature</em></p>
+			<p>Starting at 6th level, while transformed, you can emanate an aura of courage as an action. For the next minute, you and friendly creatures within 30 feet of you have advantage on death saving throws and saving throws against being frightened. Additionally, for the duration, you can expend a battle die as a bonus action to heal a willing creature within the aura, which regains hit points equal to the die roll + your Charisma modifier.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can emanate an aura of courage as an action. For the next minute, you and friendly creatures within 30ft of you have advantage on death saving throws and saving throws against being frightened. Additionally, for the duration, you can expend a battle die as a bonus action to heal a willing creature within the aura, which regains 1d{{battle dice:size}}+{{charisma:modifier}}hp.</description>
+		</sheet>
+	</element>
+    <element name="Aura Of Legend" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_AURA_OF_LEGEND">
+		<description>
+			<p><em>10th-level Legacy feature</em></p>
+			<p>Starting at 10th level, while transformed, you and any friendly creatures within 30 feet of you gain resistance to your Relic Force damage type.</p>
+		</description>
+		<sheet action="Action">
+			<description>While transformed, you and any friendly creatures within 30ft of you gain resistance to your Relic Force damage type.</description>
+		</sheet>
+        <rules>
+            
+        </rules>
+	</element>
+	<element name="Final Legacy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_LEGACY_FINAL_LEGACY">
+		<description>
+			<p><em>14th-level Legacy feature</em></p>
+			<p>Starting at 14th level, while you are transformed, you can use your action to begin charging the power of your allies into an ultimate attack. Until the start of your next turn, each friendly creature within 10 feet of you can use their action to aid your charge. At the start of your next turn, you fire a massive beam of force in a 120-foot long, 5-foot wide line in a direction you choose. Each creature in the line must make a Dexterity saving throw against your spell save DC, taking 10d10 force damage on a failed save, or half as much damage on a successful one. The beam's damage increases by 4d10 for each creature that aided your charge, up to a maximum of 30d10 force damage.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Until the start of your next turn, each friendly creature within 10ft of you can use their action to aid your charge. At the start of your next turn, you fire a massive beam of force in a 120ft long, 5ft wide line in a direction you choose. Each creature in the line must make a DC{{spellcasting:dc:cha}} DEX saving throw, taking 10d10 force damage on a failed save, or half as much damage on a successful one. The beam's damage increases by 4d10 for each creature that aided your charge, up to a maximum of 30d10 force damage.</description>
+		</sheet>
+	</element>
+  
+</elements>

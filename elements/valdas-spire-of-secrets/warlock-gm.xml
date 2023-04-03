@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>GM Patron</name>
+		<description>The GM Patron from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="warlock-gm.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-gm.xml" />
+		</update>
+	</info>
+	<element name="The GM" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WARLOCK_THE_GM">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>None of this is real, not a lick of it. You, me, the whole damn world: we're nothing but pencil scratches on some pieces of paper. It doesn't matter if you believe me, because there's nothing you or I can do about it. The world is the way it is, and it only exists so long as the GM wants to tell a story. After that, the whole thing goes poof.</p>
+			<p class="indent">The GM isn't one creature. It might be male, female, or neither. Maybe it's old, young, smart, dumb, or any one of a million different things. The GM may be no more powerful than a commoner in its own world, but to our world, its will is absolute. The GM grants us our powers, and its laws and decisions dictate the way everything in our world works. In fact, it can change the very fabric of reality on a whim. Those that fight the will of the GM find that its ire is easy to rouse and hard to be rid of, but if you cater to its wishes and play along with the story that it wants to tell, you might find that things go very well for you.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_EXPANDED_SPELL_LIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_PLAYER_CHARACTER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_FUDGE_THE_ROLL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_PLOT_ARMOR" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_OP_CLASS_FEATURE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_PLAYER_CHARACTER" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_FUDGE_THE_ROLL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_PLOT_ARMOR" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_OP_CLASS_FEATURE" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level GM feature</em></p>
+			<p>The GM lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">The GM Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>detect magic, identify</em></td></tr>
+				<tr><td>2nd</td><td><em>augury, locate object</em></td></tr>
+				<tr><td>3rd</td><td><em>clairvoyance, remove curse</em></td></tr>
+				<tr><td>4th</td><td><em>divination, locate creature</em></td></tr>
+				<tr><td>5th</td><td><em>commune, legend lore</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The GM lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_DETECT_MAGIC</extend>
+			<extend>ID_PHB_SPELL_IDENTIFY</extend>
+			<extend>ID_PHB_SPELL_AUGURY</extend>
+			<extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_REMOVE_CURSE</extend>
+			<extend>ID_PHB_SPELL_DIVINATION</extend>
+			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_PHB_SPELL_COMMUNE</extend>
+			<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+		</spellcasting>
+	</element>
+	<element name="Player Character" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_PLAYER_CHARACTER">
+		<description>
+			<p><em>1st-level GM feature</em></p>
+			<p>Beginning at 1st level, you have grasped the profound secret that you are merely under the control of a far-distant player, making you a player character, one of the GM's favorite playthings. You have advantage on Charisma (Persuasion) checks and Charisma (Deception) checks that you make to interact with friendly Humanoids. However, you only gain this benefit when doing so would advance the plot in a way that the GM feels is appropriate. </p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma (Persuasion) checks and Charisma (Deception) checks that you make to interact with friendly Humanoids. However, you only gain this benefit when doing so would advance the plot in a way that the GM feels is appropriate.</description>
+		</sheet>
+	</element>
+	<element name="Fudge The Roll" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_FUDGE_THE_ROLL">
+		<description>
+			<p><em>6th-level GM feature</em></p>
+			<p>By 6th level, your player has gotten a taste of success and wants to look as impressive as possible while achieving it. Consequently, they might occasionally fudge a cosmic die roll in your favor. When you make an attack roll, ability check, or saving throw, you can nudge the d20 slightly, changing the number to one of the three sides adjacent to the topmost side. Alternatively, you can reroll the die. You must use the new result.</p>
+			<p class="indent">Once you use this ability, you can't do so again until you finish a short or long rest. However, you can push your luck and attempt to use it additional times between rests; doing so might evoke the GM's wrath, however, and cause unpredictable negative side effects, decided by the GM.</p>
+		</description>
+		<sheet usage="1*/Short||Long Rest">
+			<description>When you make an attack roll, ability check, or saving throw, you can nudge the d20 slightly, changing the number to one of the three sides adjacent to the topmost side. Alternatively, you can reroll the die. You must use the new result. &#13;
+			*You can push your luck and attempt to use it additional times between rests; doing so might evoke the GM's wrath, however, and cause unpredictable negative side effects, decided by the GM.</description>
+		</sheet>
+	</element>
+	<element name="Plot Armor" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_PLOT_ARMOR">
+		<description>
+			<p><em>10th-level GM feature</em></p>
+			<p>By 10th level, you've learned that the universe follows an overarching plot, and your role in the plot is critical. As such, the GM conspires to keep you and your allies alive. When you finish a short or long rest, you and each of your allies that rested with you gains temporary hit points equal to your warlock level plus your Charisma modifier.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You and each of your allies that rested with you gains {{temphp:misc}}temporary hp.</description>
+		</sheet>
+		<rules>
+			<stat name="temphp:misc" value="warlock:level" />
+			<stat name="temphp:misc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="OP Class Feature" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_THE_GM_OP_CLASS_FEATURE">
+		<description>
+			<p><em>14th-level GM feature</em></p>
+			<p>At 14th level, you have stored up enough cache with the GM to use abilities other player characters would be punished for employing. You can use your bonus action to break the balance of the game. For the next minute, you roll advantage on all attack rolls, ability checks, and saving throws. For this duration, you roll three d20s and take the highest number rolled for advantage, instead of two as normal.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>For the next minute, you roll advantage on all attack rolls, ability checks, and saving throws. For this duration, you roll 3 d20s, instead of 2 and take the highest number rolled for advantage.</description>
+		</sheet>
+	</element>
+  
+</elements>
