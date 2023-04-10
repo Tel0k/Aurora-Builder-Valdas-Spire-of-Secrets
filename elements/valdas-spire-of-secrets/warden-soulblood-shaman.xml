@@ -4,7 +4,7 @@
       <name>Soulblood Shaman</name>
       <description>The Soulblood Shaman from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.1">
+      <update version="0.0.2">
         <file name="warden-soulblood-shaman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-soulblood-shaman.xml" />
       </update>    
     </info>
@@ -12,22 +12,22 @@
         <supports>Call</supports>
         <description>
             <p>The ancestral spirits called you by starlight to enact their will on the world, to protect their descendants, and to safeguard their resting places. You are a Soulblood Shaman, a manipulator of soul and ascetic of primal magic. Your community looks to you as a leader as well as a vital connection to the afterlife, for if you play your role, they too will join their ancestors in the great beyond.</p>
-            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING" />
-            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SOULBLOOD" />
-            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND" />
-            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE" />
-            <div element="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SPELLCASTING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SOULBLOOD" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER" />
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING" level="3" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SOULBLOOD" level="3" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND" level="6" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE" level="13" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER" level="20" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SPELLCASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SOULBLOOD" level="3" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE" level="13" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER" level="20" />
         </rules>
     </element>
-    <element name="Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELLCASTING">
+    <element name="Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SPELLCASTING">
         <description>
             <p>Starting when you hear this call at 3rd level, you can channel your ancient insights into magic.</p>
 		    <h5>CANTRIPS</h5>
@@ -100,7 +100,7 @@
 			<select type="Spell" name="Spell (Soulblood Shaman)" supports="Druid, $(spellcasting:slots)" level="20" spellcasting="Soulblood Shaman"/>
 		</rules>
     </element>
-    <element name="Soulblood" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SOULBLOOD">
+    <element name="Soulblood" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SOULBLOOD">
         <description>
             <p>Also at 3rd level, as a reaction when a creature within 5 feet of you deals damage to you, you can mark that creature.</p>
         </description>
@@ -108,7 +108,7 @@
             <description>When a creature within 5 feet of you deals damage to you, you can mark that creature.</description>
         </sheet>
     </element>
-    <element name="Whispers of Beyond" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND">
+    <element name="Whispers of Beyond" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_WHISPERS_OF_BEYOND">
         <description>
             <p>At 6th level, you can hear the small voices of ancient spirits when you need guidance. If you spend 1 minute in contemplation when you make an Intelligence or Wisdom check, you can consult a host of ancestor spirits to gain advantage on the roll. You can't use this ability when your ancestors wouldn't have appropriate knowledge or guidance, such as if you try to understand cutting-edge alchemy.</p>
         </description>
@@ -116,7 +116,7 @@
             <description>If you spend 1 minute in contemplation when you make an INT or WIS check, you can consult a host of ancestor spirits to gain advantage on the roll. You can't use this ability when your ancestors wouldn't have appropriate knowledge or guidance.</description>
         </sheet>
     </element>
-    <element name="Spell Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE">
+    <element name="Spell Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_SPELL_RESISTANCE">
         <description>
             <p>Beginning at 13th level, you have advantage on saving throws you make against spells.</p>
         </description>
@@ -124,7 +124,7 @@
             <description>You have advantage on saving throws you make against spells.</description>
         </sheet>
     </element>
-    <element name="Ethereal Watcher" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER">
+    <element name="Ethereal Watcher" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SOULBLOOD_SHAMAN_ETHEREAL_WATCHER">
         <description>
             <p>At 20th level, as an action, you can shrug off your mortal form for a short time to become something spiritual and immaterial, an ethereal watcher. For 1 minute, you gain the following benefits:</p>
             <ul>
