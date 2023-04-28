@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mad Bomber</name>
+		<description>The Mad Bomber from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="alchemist-mad-bomber.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-mad-bomber.xml" />
+		</update>
+	</info>
+    <element name="Mad Bomber" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MAD_BOMBER">
+        <supports>Field</supports>
+        <description>
+            <p>While many “mad bombers” aren't actually mad, it takes a special kind of crazy to devote one's life to studying explosives. Most alchemists who specialize in this field are incorrigible pyromaniacs who take great pleasure in burning, blasting, and blowing things up. Mad bombers are always working to improve their bombs' effectiveness.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLASTING_SPECIALTY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_SHRAPNEL_BOMB" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_TIMED_DEMOLITION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLAST_SHIELD" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLACK_POWDER_BOMB" />
+        </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="short">Pyromaniacs who fashion particularly devastating bombs.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLASTING_SPECIALTY" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_SHRAPNEL_BOMB" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_TIMED_DEMOLITION" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLAST_SHIELD" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLACK_POWDER_BOMB" level="18" />
+        </rules>
+    </element>
+    <element name="Blasting Specialty" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLASTING_SPECIALTY">
+        <description>
+            <p>Starting when you choose this field of study at 2nd level, your bombs deal double damage to objects and structures.</p>
+        </description>
+        <sheet>
+            <description>Your bombs deal double damage to objects and structures.</description>
+        </sheet>
+    </element>
+    <element name="Formula: Shrapnel Bomb" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_SHRAPNEL_BOMB">
+        <description>
+            <p>At 2nd level, you can augment your bomb's explosive contents with metal bearings, changing it into a shrapnel bomb. A shrapnel bomb deals piercing damage instead of fire damage, its damage dice are d8s, and it explodes in a 10-foot radius.</p>
+        </description>
+        <sheet>
+            <description>You can craft shrapnel bombs, by adding metal bearings to your bomb. A shrapnel bomb deals piercing damage instead of fire damage, its damage dice are d8s, and it explodes in a 10-foot radius.</description>
+        </sheet>
+    </element>
+    <element name="Timed Demolition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_TIMED_DEMOLITION">
+        <description>
+            <p>Starting at 6th level, when you prime and throw a bomb, you can set a duration for its detonation, which can be any number of rounds (any increment of 6 seconds) up to 1 minute. The bomb detonates at the end of your turn after this duration. If a creature is in the area of more than one bomb's blast radius simultaneously, the creature is only affected by one of the bombs of your choice.</p>
+        </description>
+        <sheet>
+            <description>When you prime and throw a bomb, you can set a duration for its detonation, which can be any number of rounds up to 10. The bomb detonates at the end of your turn after this duration. If a creature is in the area of more than one bomb's blast radius simultaneously, the creature is only affected by one of the bombs of your choice.</description>
+        </sheet>
+    </element>
+    <element name="Blast Shield" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLAST_SHIELD">
+        <description>
+            <p>By 10th level, you have developed an elemental plating to protect you from hazardous energies. You gain resistance to your choice of acid, cold, fire, lightning, or thunder damage and can change your selection whenever you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to your choice of acid, cold, fire, lightning, or thunder damage and can change your selection whenever you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Blast Shield" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_ACID|ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_COLD|ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_FIRE|ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_LIGHTNING|ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_THUNDER" />
+        </rules>
+    </element>
+    <element name="Acid" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_ACID">
+        <compendium display="false" />
+        <description>
+            <p>You gain resistance to acid damage.</p>
+        </description>
+        <sheet />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Cold" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_COLD">
+        <compendium display="false" />
+        <description>
+            <p>You gain resistance to cold damage.</p>
+        </description>
+        <sheet />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Fire" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_FIRE">
+        <compendium display="false" />
+        <description>
+            <p>You gain resistance to fire damage.</p>
+        </description>
+        <sheet />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_LIGHTNING">
+        <compendium display="false" />
+        <description>
+            <p>You gain resistance to lightning damage.</p>
+        </description>
+        <sheet />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Thunder" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BS_THUNDER">
+        <compendium display="false" />
+        <description>
+            <p>You gain resistance to thunder damage.</p>
+        </description>
+        <sheet />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+
+    <element name="Formula: Black Powder Bomb" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MAD_BOMBER_BLACK_POWDER_BOMB">
+        <description>
+            <p>Beginning at 18th level, you can replace your bomb's explosive contents with a charge of black powder, changing it into a dreaded black powder bomb. A black powder bomb's damage dice are d12s.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can replace your bomb's explosive contents with a charge of black powder, changing it into a dreaded black powder bomb. A black powder bomb's damage dice are d12s.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Xenoalchemist</name>
+		<description>The Xenoalchemist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="alchemist-xenoalchemist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-xenoalchemist.xml" />
+		</update>
+	</info>
+    <element name="Xenoalchemist" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_XENOALCHEMIST">
+        <supports>Field</supports>
+        <description>
+            <p>Many practically minded alchemists assume the role of the xenoalchemist, for adventuring parties always need a healer, and clerics might be in short supply. During their downtime, such alchemists have a marketable skill to depend upon for income and can do an indisputable amount of good with their knowledge. Apothecaries are constantly at work studying potions and herbology, preferring to learn how to mend the body, rather than destroy it.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_XENOBIOLOGY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_MAD_SCIENTIST" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_SURGICAL_ATTACK" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_NECROMANTIC_ORGANS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ITS_ALIVE" />
+        </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="short">Alchemical healers and herbalists.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_XENOBIOLOGY" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_MAD_SCIENTIST" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_SURGICAL_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_NECROMANTIC_ORGANS" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ITS_ALIVE" level="18" />
+        </rules>
+    </element>
+    <element name="Xenobiology" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_XENOBIOLOGY">
+        <description>
+            <p>Starting when you choose this field of study at 2nd level, you have advantage on all ability checks you make to identify or research monsters.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on all ability checks you make to identify or research monsters.</description>
+        </sheet>
+    </element>
+    <element name="Mad Scientist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_MAD_SCIENTIST">
+        <description>
+            <p>By 2nd level, you've learned the finer points of reanimating dead appendages and stitching them to things. You gain two monstrous grafts of your choice. Additionally, you don't lose hit points or Hit Dice from installing or removing grafts, and it takes you no time to recover after the attachment of a new graft. See Equipment section for monstrous grafts.</p>
+        </description>
+        <sheet>
+            <description>You gain two monstrous grafts of your choice. Additionally, you don't lose hp or Hit Dice from installing or removing grafts, and it takes you no time to recover after the attachment of a new graft.</description>
+        </sheet>
+    </element>
+    <element name="Surgical Attack" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_SURGICAL_ATTACK">
+        <description>
+            <p>Beginning at 6th level, whenever you take the Attack action or prime and throw a bomb on your turn, you can make an unarmed strike as part of that action. You can only use this ability if your unarmed strike is improved by a graft, such as Bestial Weapons.</p>
+        </description>
+        <sheet>
+            <description>Whenever you take the Attack action or prime and throw a bomb on your turn, you can make an unarmed strike as part of that action. You can only use this ability if your unarmed strike is improved by a graft.</description>
+        </sheet>
+    </element>
+    <element name="Necromantic Organs" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_NECROMANTIC_ORGANS">
+        <description>
+            <p>By 10th level, you've learned how to tinge your own biology with necromancy through reanimated organs that will persist after your death. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you are reduced to 0 hp but not killed outright, you can drop to 1 hp instead.</description>
+        </sheet>
+    </element>
+    <element name="It's Alive" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ITS_ALIVE">
+        <description>
+            <p>Beginning at 18th level, your research into the field of necromancy has culminated in an alchemical golem stitched together from discarded body parts. You can create an alchemy golem through an 8-hour-long procedure, which can be conducted over the course of a long rest. To complete this process, you must have a healer's kit, alchemist's supplies, and a knife (or a facility with access to such tools), as well as at least three recently deceased Humanoid corpses.</p>
+            <p class="indent">Your alchemy golem acts independently on its own turn, but always obeys your commands. On each of your turns, you can use a bonus action to mentally command your golem if it is within 60 feet of you. You decide what action the golem will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the golem only defends itself against hostile creatures. Once given an order, the golem continues to follow it until its task is complete.</p>
+            <p class="indent">The golem can use your Intelligence modifier + your proficiency bonus for its attack rolls.</p>
+            <p class="indent">When the alchemy golem drops to 0 hit points, it dies. You can restore your alchemy golem's hit points and reanimate it over the course of a short or long rest.</p>
+            <p class="indent">You can attach up to three grafts to your alchemy golem. You can only have one alchemy golem at a time.</p>
+        </description>
+        <sheet>
+            <description>You can create an alchemy golem through an 8hr-long procedure, which can be conducted over the course of a long rest. To complete this process, you must have a healer's kit, alchemist's supplies, and a knife (or a facility with access to such tools), as well as at least three recently deceased Humanoid corpses. &#13;
+            Your alchemy golem acts independently on its own turn, but always obeys your commands. On each of your turns, you can use a bonus action to mentally command your golem if it is within 60ft of you. You decide what action the golem will take and where it will move during its next turn, or you can issue a general command. If you issue no commands, the golem only defends itself against hostile creatures. Once given an order, the golem continues to follow it until its task is complete. &#13;
+            The golem can use your INT modifier + your PB for its attack rolls. When the alchemy golem drops to 0 hit points, it dies. You can restore your alchemy golem's hit points and reanimate it over the course of a short or long rest. &#13; 
+            You can attach up to three grafts to your alchemy golem. You can only have one alchemy golem at a time.</description>
+        </sheet>
+		<rules>
+			<select type="Companion" name="Alchemy Golem" supports="Golem" />
+		</rules>
+    </element>
+
+    <element name="Alchemy Golem" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ALCHEMY_GOLEM">
+		<supports>Golem</supports>
+		<setters>
+			<set name="strength">17</set>
+			<set name="dexterity">9</set>
+			<set name="constitution">18</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">5</set>
+			<set name="ac">13</set>
+			<set name="hp">76 (9d8+36)</set>
+			<set name="speed">30 ft.</set>
+			<set name="resistances">bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</set>			
+            <set name="immunities">lightning</set>
+			<set name="conditionImmunities">charmed, exhaustion, frightened, paralyzed, petrified, poisoned</set>			
+			<set name="senses">darkvision 60 ft., passive Perception 13</set>
+			<set name="languages"> understands the languages of its creator but can't speak</set>
+			<set name="type">Construct</set>
+			<set name="size">Medium</set>
+			<set name="alignment">typically Neutral</set>
+			<set name="challenge">5</set>
+			<set name="traits">ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_AVERSION_TO_FIRE, ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_IMMUTABLE_FORM, ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_LIGHTNING_ABSORPTION, ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MAGIC_RESISTANCE, ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MONSTROUS_GRAFT</set>
+			<set name="actions">ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MULTIATTACK, ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_SLAM</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="76" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />
+			<stat name="companion:proficiency" value="3" bonus="base" />
+			<grant type="Companion Trait" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_AVERSION_TO_FIRE" />
+            <grant type="Companion Trait" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_IMMUTABLE_FORM" />
+			<grant type="Companion Trait" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_LIGHTNING_ABSORPTION" />
+			<grant type="Companion Trait" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MAGIC_RESISTANCE" />
+			<grant type="Companion Trait" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MONSTROUS_GRAFT" />
+		</rules>
+	</element>
+    <element name="Aversion to Fire" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_AVERSION_TO_FIRE">
+		<description>
+			<p>If the alchemy golem takes fire damage, it has disadvantage on ability checks and attack rolls until the end of its next turn. </p>
+		</description>
+		<sheet>
+			<description>If the alchemy golem takes fire damage, it has disadvantage on ability checks and attack rolls until the end of its next turn. </description>
+		</sheet>
+	</element>
+    <element name="Immutable Form" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_IMMUTABLE_FORM">
+		<description>
+			<p>The alchemy golem is immune to any spell or effect that would alter its form.</p>
+		</description>
+		<sheet>
+			<description>The alchemy golem is immune to any spell or effect that would alter its form.</description>
+		</sheet>
+	</element>
+    <element name="Lightning Absorption" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_LIGHTNING_ABSORPTION">
+		<description>
+			<p>Whenever the alchemy golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to half the lightning damage dealt.</p>
+		</description>
+		<sheet>
+			<description>Whenever the alchemy golem is subjected to lightning damage, it takes no damage and instead regains a number of hp equal to half the lightning damage dealt.</description>
+		</sheet>
+	</element>
+    <element name="Magic Resistance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MAGIC_RESISTANCE">
+		<description>
+			<p>The alchemy golem has advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The alchemy golem has advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+    <element name="Monstrous Grafts" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MONSTROUS_GRAFT">
+		<description>
+			<p>The alchemy golem's weapon attacks, including monstrous grafts added by its creator, are magical. Monstrous grafts have a +6 attack bonus, deal twice the normal number of damage dice, and have a +5 bonus to their damage rolls. The alchemical golem can only have 1 graft in each slot.</p>
+		</description>
+		<sheet>
+			<description>The alchemy golem can install up to 3 grafts. Its weapon attacks, including monstrous grafts added by its creator, are magical. Monstrous grafts have a +6 attack bonus, deal twice the normal number of damage dice, and have a +5 bonus to their damage rolls. The alchemical golem can only have 1 graft in each slot.</description>
+		</sheet>
+	</element>
+    <element name="Multiattack" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_MULTIATTACK">
+		<description>
+			<p>The alchemy golem makes two melee weapon attacks.</p>
+		</description>
+		<sheet>
+			<description>The alchemy golem makes two melee weapon attacks.</description>
+		</sheet>
+	</element>
+    <element name="Slam" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_XENOALCHEMIST_ALCHEMY_GOLEM_SLAM">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Amorist</name>
+		<description>The Amorist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="alchemist-amorist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-amorist.xml" />
+		</update>
+	</info>
+    <element name="Amorist" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_AMORIST">
+        <supports>Field</supports>
+        <description>
+            <p>The study of mind-affecting alchemy is a delicate one, practiced only by a small number of alchemists known as amorists. Often called “love doctors” by their clientele, amorists specialize in brewing of potions that produce strong emotional responses in their drinkers. While love potions are by far their most popular product, amorists can also craft pungent pheromone bombs that can even soften the hearts of terrible monsters.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_PHEROMONE_BOMB" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_MAGNETIC_PERSONALITY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_ALCHEMICAL_PERFUME" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_ALCHEMICAL_ROMANCE" />
+        </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="short">Brewers of love potions and practitioners of mind-affecting alchemy.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_BONUS_PROFICIENCIES" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_PHEROMONE_BOMB" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_MAGNETIC_PERSONALITY" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_ALCHEMICAL_PERFUME" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_ALCHEMICAL_ROMANCE" level="18" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you choose this field of study at 2nd level, you gain proficiency in the Deception and Persuasion skills. </p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Formula: Pheromone Bomb" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_PHEROMONE_BOMB">
+        <description>
+            <p>Starting at 2nd level, you can replace your bomb’s explosive contents with a potent pheromone, changing it into a pheromone bomb. A pheromone bomb requires a Wisdom saving throw, instead of a Dexterity saving throw. The bomb deals no damage, and instead causes the target, as well as each creature within the blast radius that fails its saving throw, to be charmed by you until the end of its turn or until it takes damage.</p>
+        </description>
+        <sheet>
+            <description>A pheromone bomb requires a WIS saving throw, instead of a DEX saving throw. The bomb deals no damage, and instead causes the target, + each creature within the blast radius that fails its saving throw, to be charmed by you until the end of its turn or until it takes damage.</description>
+        </sheet>
+    </element>
+    <element name="Magnetic Personality" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_MAGNETIC_PERSONALITY">
+        <description>
+            <p>Starting at 6th level, you can add your Intelligence modifier to Charisma checks that you make.</p>
+        </description>
+        <sheet>
+            <description>You can add your INT modifier to CHA checks that you make.</description>
+        </sheet>
+        <rules>
+            <stat name="deception:misc" value="intelligence:modifier"  />
+            <stat name="intimidation:misc" value="intelligence:modifier"  />
+            <stat name="performance:misc" value="intelligence:modifier"  />
+            <stat name="persuasion:misc" value="intelligence:modifier"  />
+        </rules>
+    </element>
+    <element name="Alchemical Perfume" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_ALCHEMICAL_PERFUME">
+        <description>
+            <p>Beginning at 10th level, you wear an aromatic, mind-altering perfume that endears others to you. When a hostile creature within 5 feet of you makes an attack roll against you, it must succeed on a Wisdom saving throw against your bomb save DC or have disadvantage on the attack roll. Once a creature succeeds on this saving throw, it is immune to this effect for 24 hours. A target automatically succeeds on this saving throw if it can’t be charmed.</p>
+        </description>
+        <sheet>
+            <description>When a hostile creature within 5ft of you makes an attack roll against you, it must succeed on a DC{{bombs:dc}} WIS saving throw or have disadvantage on the attack roll. Once a creature succeeds on this saving throw, it is immune to this effect for 24 hours. A target automatically succeeds on this saving throw if it can’t be charmed.</description>
+        </sheet>
+    </element>
+    <element name="Alchemical Romance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_AMORIST_ALCHEMICAL_ROMANCE">
+        <description>
+            <p>Starting at 18th level, during a long rest, you can spend 4 reagent dice to make an extremely potent <i>potion of true love</i>. This potion acts much like a <i>philter of love</i>, except that when you make the potion, you choose the creature the target regards as its true love, provided the target knows the creature or meets it within 24 hours of consuming the potion. Additionally, this effect lasts indefinitely, ended only when you make a new <i>potion of true love</i>, or the effect is removed with a <i>remove curse</i> spell or similar magic. When this potion’s effects are ended on a target, it regards the creature it once loved with total disgust, and can never love that creature again.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can spend 4 reagent dice to make a potion of true love. You choose the creature the target regards as its true love, provided the target knows the creature or meets it within 24 hours of consuming the potion. Additionally, this effect lasts indefinitely, ended only when you make a new potion of true lovee, or the effect is removed with a remove curse spell or similar magic. When this potion’s effects are ended on a target, it regards the creature it once loved with total disgust, and can never love that creature again.</description>
+        </sheet>
+    </element>
+</elements>

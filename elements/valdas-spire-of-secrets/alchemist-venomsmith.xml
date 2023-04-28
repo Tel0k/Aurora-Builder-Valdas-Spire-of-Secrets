@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Venomsmith</name>
+		<description>The Venomsmith from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="alchemist-venomsmith.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-venomsmith.xml" />
+		</update>
+	</info>
+    <element name="Venomsmith" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_VENOMSMITH">
+        <supports>Field</supports>
+        <description>
+            <p>For every alchemist that has devoted their life to healing the sick and infirm, there is another with a darker calling. Commonly called poisoners or venomsmiths, these alchemists are masters in the art of crafting deadly and debilitating poisons. Whether employed by an assassin's guild or performing assassinations themselves, a venomsmith's presence is usually accompanied by untimely death.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_POISONER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_VENOM_BOMB" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_ALCHEMICAL_ASSASSIN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_MITHRIDATISM" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_TOXIC_RECOMPENSE" />
+        </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="short">Poison expert and assassin.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_POISONER" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_VENOM_BOMB" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_ALCHEMICAL_ASSASSIN" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_MITHRIDATISM" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_TOXIC_RECOMPENSE" level="18" />
+        </rules>
+    </element>
+    <element name="Poisoner" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_POISONER">
+        <description>
+            <p>Beginning when you choose this field of study at 2nd level, you gain the Poisoner discovery. Until you reach 3rd level, you have 2 reagent dice, which you can spend only on crafting poisons using this discovery. This discovery doesn't count against your number of discoveries known, and you can't later replace this discovery with a different one when you gain a level in this class.</p>
+            <p class="indent">Additionally, when you deal poison damage to a creature, you ignore resistance to poison damage and you treat immunity to poison damage as resistance instead, dealing half damage.</p>
+        </description>
+        <sheet>
+            <description>You gain the Poisoner discovery. Until you reach 3rd level, you have 2 reagent dice, which you can spend only on crafting poisons using this discovery. Additionally, when you deal poison damage to a creature, you ignore resistance to poison damage and you treat immunity to poison damage as resistance instead, dealing half damage.</description>
+            <description level="3">You gain the Poisoner discovery. When you deal poison damage to a creature, you ignore resistance to poison damage and you treat immunity to poison damage as resistance instead, dealing half damage.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Poisoner (Feature)" supports="Discovery,Alchemist,Poisoner"/>
+        </rules>
+    </element>
+    <element name="Formula: Venom Bomb" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_VENOM_BOMB">
+        <description>
+            <p>At 2nd level, you can mix a few drops of a fast-acting toxin into your bomb's explosive components, changing it into a venom bomb. A venom bomb deals poison damage instead of fire damage, its damage dice are d8s, and it requires a Constitution saving throw instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on the next Strength, Dexterity, or Constitution saving throw it makes before the end of its next turn.</p>
+        </description>
+        <sheet>
+            <description>A venom bomb deals poison damage instead of fire damage, its damage dice are d8s, and it requires a CON saving throw instead of a DEX saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on the next STR, DEX, or CON saving throw it makes before the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Alchemical Assassin" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_ALCHEMICAL_ASSASSIN">
+        <description>
+            <p>Beginning at 6th level, you are adept at applying poisons without being seen. You have advantage on Dexterity (Sleight of Hand) checks you make to add ingested poison to food or drink, to apply poison to a weapon you are holding without being seen, or to place a vial of poison on another creature without it noticing. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on DEX(Sleight of Hand) checks you make to add ingested poison to food or drink, to apply poison to a weapon you are holding without being seen, or to place a vial of poison on another creature without it noticing.</description>
+        </sheet>
+    </element>
+    <element name="Mithridatism" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_MITHRIDATISM">
+        <description>
+            <p>By 10th level, by administering yourself small doses of various poisons and toxins, you have developed an immunity to their ravages. You have immunity to poison damage and the poisoned condition.</p>
+        </description>
+        <sheet>
+            <description>You have immunity to poison damage and the poisoned condition.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        </rules>
+    </element>
+    <element name="Alchemical Resurrection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_VENOMSMITH_TOXIC_RECOMPENSE">
+        <description>
+            <p>Starting at 18th level, whenever a creature within 5 feet of you hits you with a melee attack, you can use your reaction to unleash a spray of poisonous vapor. The attacker must make a Constitution saving throw against your bomb save DC or be poisoned for 1 minute. While poisoned, the creature takes 1d10 poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Whenever a creature within 5ft of you hits you with a melee attack, you can unleash a spray of poisonous vapor. The attacker must make a DC{{bombs:dc}} CON saving throw or be poisoned for 1 minute. While poisoned, the creature takes 1d10 poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Alchemist</name>
+		<description>The Alchemist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="class-alchemist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-alchemist.xml" />
+		</update>
+	</info>
+	<element name="Alchemist" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_ALCHEMIST">
+        <description>
+			<p>A grinning gnome cackles with glee as he hurls a bomb into a group of charging goblins, blasting them into scorched chunks. He produces another, throws it at his feet, and disappears, still laughing, into the ensuing cloud of smoke.</p>
+            <p class="indent">A slender elf quickly mixes liquids and herbs in a small bowl. She applies the mixture to an arrow wound on an injured dwarf 's side, which immediately stops bleeding.</p>
+            <p class="indent">Whether their methods are explosive, transformative, or restorative, alchemists live to transmute the world around them to their liking.</p>
+            <h4>CHEMICAL REACTIONS</h4>
+            <p>One of the first things an alchemist learns is how to mix chemicals that react explosively with each other. Ostensibly, this is taught to students to prevent deadly accidents, but adventuring alchemists regularly apply this knowledge to create bombs.</p>
+            <p class="indent">An alchemical bomb is a 1-pound, apple-sized, spherical glass or clay flask filled with a reactive chemical. A smaller vial of thin glass containing a reagent is suspended in the liquid, and the whole thing is sealed with a cork or wax seal. The chemicals violently explode when mixed. This occurs when the inner vial breaks, usually after the bomb impacts a solid surface or a fuse sets off a small explosive detonator within the vial. Bombs are primarily used to fend off enemies, but creative alchemists may find more practical uses for explosives, such as demolishing obstacles.</p>
+            <h4>SERUMS AND TINCTURES</h4>
+            <p>More experienced alchemists learn to mix less volatile substances into potions, alchemical concoctions that replicate magical effects. These potions range from the medicinal, such as potions of healing, to the transformative, such as potions of gaseous form, to the downright deadly, such as potions of poison. Undisputed masters of potions, alchemists constantly innovate with new formulations and preparations, improving their potions into magic items in their own right.</p>
+            <h4>ELEMENTAL SCIENCES</h4>
+            <p>The primary source of alchemy's power comes from the elemental planes. It is no surprise, then, that alchemists strive to tap deeper into that power, researching and discovering new compounds composed of the elements. The pinnacle of alchemy is the philosopher's stone, which is rumored to grant its bearer supreme elemental power. Few alchemists have succeeded in creating a philosopher's stone, and fewer still remain alive to divulge its secrets.</p>
+            <h4>CREATING AN ALCHEMIST</h4>
+            <p>When you create an alchemist, consider why you study alchemy. Are you attracted to its dangerous power or its ability to help others? Do you desire to use magic, but lack the aptitude or inborn ability?</p>
+            <p class="indent">Why do you adventure? Are you searching for new alchemical formulae or rare ingredients? Do you, like so many, seek the philosopher's stone?</p>
+            <p class="indent">Be sure to understand alchemy's place in your campaign world. You might have learned your trade from a master or studied alongside artificers and wizards in a university. Your trade might be commonplace or an oddity. Depending on the setting, you might be respected for your knowledge or feared for your destructive potential.</p>
+            <h5>QUICK BUILD</h5>
+            <p>You can make an alchemist quickly by following these suggestions. First, make Intelligence your highest ability score, followed by Dexterity. Choose any background of your choice, preferably one that lends insight into your history with alchemy.</p>
+            <h3>CLASS FEATURES</h3>
+            <p>As an alchemist, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per alchemist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per alchemist level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons, bombs</li>
+				<li><strong>Tools:</strong> Alchemist's supplies, herbalism kit</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+				<li><strong>Skills:</strong> Choose two from Arcana, History, Insight, Medicine, Nature, Perception, Sleight of Hand, and Survival</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+				<li>(a) scale mail, or (b) leather armor</li>
+				<li>A dagger and (a) a warhammer, (b) a longsword, or (c) any simple weapon</li>
+				<li>(a) a light crossbow and 20 bolts, (b) a shortbow and 20 arrows, or (c) 5 javelins</li>
+				<li>An embroidered standard and (a) a diplomat's pack or (b) an explorer's pack</li>
+			</ul>
+			<h5 class="caption">THE ALCHEMIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Formulae Known</td><td class="col-10">Reagent Dice</td><td class="col-10">Discoveries Known</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>—</td><td>—</td><td>—</td><td class="left">Bombs, Natural Philosopher</td></tr>
+				<tr><td> 2nd</td><td>3</td><td>—</td><td>—</td><td class="left">Bomb Formulae, Field of Study</td></tr>
+				<tr><td> 3rd</td><td>3</td><td>3d10</td><td>—</td><td class="left">Reagent</td></tr>
+				<tr><td> 4th</td><td>3</td><td>4d10</td><td>2</td><td class="left">Ability Score Improvement, Discoveries</td></tr>
+				<tr><td> 5th</td><td>4</td><td>5d10</td><td>2</td><td class="left">Flashbang</td></tr>
+				<tr><td> 6th</td><td>4</td><td>6d10</td><td>3</td><td class="left">Field of Study feature</td></tr>
+				<tr><td> 7th</td><td>5</td><td>7d10</td><td>3</td><td class="left">Potions improvement</td></tr>
+				<tr><td> 8th</td><td>5</td><td>8d10</td><td>3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>6</td><td>9d10</td><td>4</td><td class="left">—</td></tr>
+				<tr><td>10th</td><td>6</td><td>10d10</td><td>4</td><td class="left">Field of Study feature</td></tr>
+				<tr><td>11th</td><td>7</td><td>11d10</td><td>4</td><td class="left">Evasion</td></tr>
+				<tr><td>12th</td><td>7</td><td>12d10</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>8</td><td>13d10</td><td>5</td><td class="left">—</td></tr>
+				<tr><td>14th</td><td>8</td><td>14d10</td><td>5</td><td class="left">Potions improvement</td></tr>
+				<tr><td>15th</td><td>9</td><td>15d10</td><td>5</td><td class="left">Blast Coating</td></tr>
+				<tr><td>16th</td><td>9</td><td>16d10</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>10</td><td>17d10</td><td>6</td><td class="left">—</td></tr>
+				<tr><td>18th</td><td>10</td><td>18d10</td><td>6</td><td class="left">Field of Study feature</td></tr>
+				<tr><td>19th</td><td>11</td><td>19d10</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>11</td><td>20d10</td><td>6</td><td class="left">Philosopher's Stone</td></tr>
+			</table>
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_NATURAL_PHILOSOPHER" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BOMBS" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BOMB_FORMULAE" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_FIELD_OF_STUDY" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_REAGENT" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_DISCOVERIES" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_FLASHBANG" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_EVASION" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BLAST_COATING" />
+            <div element="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_PHILOSOPHERS_STONE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+			<set name="short">Using half-science, half-magic concoctions, alchemists brew up explosives and transmutative potions on the fly.</set>
+			<set name="hd">d6</set>
+		</setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB"  requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+            <select type="Proficiency" name="Skill Proficiency (Alchemist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_NATURE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_NATURAL_PHILOSOPHER" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BOMBS" level="1" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BOMB_FORMULAE" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_FIELD_OF_STUDY" level="2" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_REAGENT" level="3" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_DISCOVERIES" level="4" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST" level="4" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_FLASHBANG" level="5" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_EVASION" level="11" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BLAST_COATING" level="15" />
+            <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_PHILOSOPHERS_STONE" level="20" />
+        </rules>
+        <multiclass id="ID_MHP_VSOS_MULTICLASS_ALCHEMIST">
+			<prerequisite>Strength 13 or Dexterity 13, and Charisma 13</prerequisite>
+			<requirements>([str:13]||[dex:13]),[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">—</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			</rules>
+		</multiclass>
+    </element>
+	<element name="Natural Philosopher" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_NATURAL_PHILOSOPHER">
+		<description>
+			<p>You have learned much about alchemy during your studies. Starting at 1st level, you can add half your proficiency bonus, rounded up, to any ability check you make to identify herbs, potions, poisons, or other alchemical substances. If the ability check already includes your proficiency bonus, you can add this bonus in addition to your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You can add {{proficiency:half:up}} to any ability check you make to identify herbs, potions, poisons, or other alchemical substances, even if the ability check already includes your PB.</description>
+		</sheet>
+		<rules>
+			<stat name="arcana:misc" value="proficiency:half:up" />
+			<stat name="nature:misc" value="proficiency:half:up" />
+		</rules>
+	</element>
+	<element name="Bombs" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BOMBS">
+		<description>
+			<p>At 1st level, you can create volatile alchemical bombs using your alchemist's supplies. Whenever you finish a short or long rest, you can create a number of bombs equal to 10 + twice your alchemist level. For you the cost of materials necessary to create these bombs is negligible. After 24 hours, an unused bomb becomes inert. The statistics of a bomb are shown in the Bomb sidebar above.</p>
+			<p class="indent"><strong>Priming Bombs.</strong> Once per turn you can take the Use an Object action to prime a bomb with explosive reagents and make an attack with it, increasing the bomb's explosive potential. When you do so, you can add your Intelligence modifier, instead of Dexterity, to the bomb's damage roll.</p>
+			<p class="indent">Additionally, when you throw a bomb in this way, its damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+			<p class="indent"><strong>Saving Throws.</strong> When you throw a bomb, the save DC for its blast radius is calculated as follows:</p>
+			<ul class="unstyled">
+				<li><strong>Bomb save DC =</strong> 8 + your proficiency bonus + your Intelligence modifier</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can create volatile alchemical bombs using your alchemist's supplies. Whenever you finish a short or long rest, you can create {{bombs:number}} bombs. For you production cost is negligible. After 24 hours, an unused bomb becomes inert. Once per turn you can take the Use an Object action to prime a bomb with explosive reagents and make an attack with it. When you do so, you can add your INT mod, instead of DEX, to the damage roll and its damage increases by 1d10 when you reach 5th lv (2d10), 11th lv (3d10), and 17th lv (4d10). When you throw a bomb, the save DC for its blast radius is {{bombs:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="bombs:number" value="10" />
+			<stat name="bombs:number" value="level:alchemist" />
+			<stat name="bombs:number" value="level:alchemist" />
+			
+			<stat name="bombs:dc" value="8" />
+			<stat name="bombs:dc" value="proficiency" />
+			<stat name="bombs:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Bomb Formulae" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BOMB_FORMULAE">
+		<description>
+			<p>By 2nd level, your research has granted you insight into new alchemical formulations for your bombs. Select three bomb formulae from the Bomb Formulae section. Once per turn when you prime a bomb, you can apply a formula to it. Applying a formula sometimes changes all of the damage dice rolled for a bomb, but also grants it special effects.</p>
+			<p class="indent">When you gain certain levels in this class, you learn additional formulae of your choice, as shown in the Bomb Formulae Known column of the Alchemist table. Additionally, when you gain a level in this class, you can choose one of the formulae you know and replace it with another formula.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Your research has granted you insight into new alchemical formulations for your bombs. When you gain a level in this class, you can choose one of the formulae you know and replace it with another formula. When you prime a bomb, you can apply a formula to it.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" number="3"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="5"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="7"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="9"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="11"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="13"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="15"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="17"/>
+			<select type="Class Feature" name="Bomb Formulae" supports="Bomb Formulae" level="19"/>
+		</rules>
+	</element>
+	<element name="Field of Study" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_FIELD_OF_STUDY">
+		<description>
+			<p>While all alchemists share a common knowledge base, most alchemists specialize into a particular field of study. When you reach 2nd level, you select your field of study, which grants you features at 2nd, 6th, 10th, and 18th level.</p>
+			<p class="indent">A formula granted by your field of study doesn't count against the total number of formulae you know.</p>
+		</description>
+		<sheet display="false"/>
+        <rules>
+			<select type="Archetype" name="Field of Study" supports="Field" level="2" />
+		</rules>
+	</element>
+	<element name="Reagent" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_REAGENT">
+		<description>
+			<p>Starting at 3rd level, you have a collection of powerful alchemical reagents, represented by a pool of reagent dice, that you can spend to brew potions or magnify the power of your explosives.</p>
+			<h5>REAGENT DICE</h5>
+            <p>You start with three reagent dice, which are d10s, and you gain additional reagent dice as you gain levels in this class, as shown in the Reagent Dice column of the Alchemist table. You regain all expended reagent dice when you finish a long rest.</p>
+			<p class="indent">When you prime a bomb, you can expend a number of reagent dice up to your proficiency bonus and add the dice to the bomb's damage roll.</p>
+			<h5>BREWING POTIONS</h5>
+            <p>You can spend 10 minutes and expend any number of reagent dice to brew potions. These potions retain potency for 24 hours, after which they become inert. If a potion calls for a saving throw, it uses your bomb save DC.</p>
+			<p class="indent">The number of reagent dice and the alchemist level required to brew a potion are given on the Potions table.</p>
+			<h5>Potions</h5>
+			<table>
+				<thead>
+					<tr><td>Potion</td><td>Cost</td><td>Alchemist Level</td></tr>
+				</thead>
+				<tr><td>Potion of Climbing</td><td>1 reagent die</td><td>3rd</td></tr>
+				<tr><td>Potion of Growth</td><td>1 reagent die</td><td>3rd</td></tr>
+				<tr><td>Potion of Healing</td><td>1 reagent die</td><td>3rd</td></tr>
+				<tr><td>Potion of Water Breathing</td><td>1 reagent die</td><td>3rd</td></tr>
+				<tr><td>Universal Solvent</td><td>1 reagent die</td><td>3rd</td></tr>
+				<tr><td>Cure-All</td><td>2 reagent dice</td><td>7th</td></tr>
+				<tr><td>Potion of Greater Healing</td><td>2 reagent dice</td><td>7th</td></tr>
+				<tr><td>Potion of Heroism</td><td>2 reagent dice</td><td>7th</td></tr>
+				<tr><td>Potion of Resistance</td><td>2 reagent dice</td><td>7th</td></tr>
+				<tr><td>Sovereign Glue (1 ounce)</td><td>2 reagent dice</td><td>7th</td></tr>
+				<tr><td>Potion of Diminution</td><td>3 reagent dice</td><td>14th</td></tr>
+				<tr><td>Potion of Flying</td><td>4 reagent dice</td><td>14th</td></tr>
+				<tr><td>Potion of Hill Giant Strength</td><td>4 reagent dice</td><td>14th</td></tr>
+				<tr><td>Potion of Invisibility</td><td>4 reagent dice</td><td>14th</td></tr>
+				<tr><td>Potion of Superior Healing</td><td>4 reagent dice</td><td>14th</td></tr>
+			</table>
+			<h5>REAGENT SYNTHESIS</h5>
+            <p>When you finish a short rest, you can choose to regain all of your expended reagent dice that weren't used to brew potions. Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You a collection of powerful alchemical reagents, represented by a pool of reagent dice, that you can spend to brew potions or magnify the power of your explosives. You have {{level:alchemist}} reagent dice which are d10s. &#13;
+			When you prime a bomb, you can expend up to {{proficiency}} reagent dice and add the dice to the bomb's damage roll. &#13;
+			You can spend 10 minutes and expend any number of reagent dice to brew potions. These potions retain potency for 24 hours, after which they become inert. If a potion calls for a saving throw, it uses your bomb save DC.</description>
+		</sheet>
+	</element>
+	<element name="Discoveries" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_DISCOVERIES">
+		<description>
+			<p>In the course of your research, you have made a number of discoveries regarding the nature of alchemy. At 4th level, you gain two discoveries of your choice. When you gain certain alchemist levels, you gain additional discoveries of your choice, as shown in the Discoveries Known column of the Alchemist table.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the discoveries you know and replace it with another discovery that you could learn at that level.</p>
+		</description>
+		<sheet>
+			<description>You have made a number of discoveries regarding the nature of alchemy. You gain 2 at 4th lv and additional ones at other levels. When you gain a level in this class, you can choose one of the discoveries you know and replace it with another.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Discoveries (Level 4)" supports="Discovery,Alchemist" number="2" />
+			<select type="Class Feature" name="Discoveries (Level 6)" supports="Discovery,Alchemist" level="6" />
+			<select type="Class Feature" name="Discoveries (Level 9)" supports="Discovery,Alchemist" level="9" />
+			<select type="Class Feature" name="Discoveries (Level 13)" supports="Discovery,Alchemist" level="13" />
+			<select type="Class Feature" name="Discoveries (Level 17)" supports="Discovery,Alchemist" level="17" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p class="indent">Alternatively, as an alchemist, when you gain an ability score improvement, you can instead choose to learn a new discovery for which you meet the prerequisites.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Alchemist 4)" supports="Improvement Option,Alchemist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Alchemist 8)" supports="Improvement Option,Alchemist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Alchemist 12)" supports="Improvement Option,Alchemist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Alchemist 16)" supports="Improvement Option,Alchemist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Alchemist 19)" supports="Improvement Option,Alchemist,19" level="19" />
+		</rules>
+	</element>
+	<element name="ASI Alternative (Discovery)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ASI_ALTERNATIVE_4">
+		<compendium display="false" />
+		<supports>Improvement Option, Alchemist,4</supports>
+		<requirements>ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST</requirements>
+		<description>
+			<p>Select a discovery of your choice.</p>
+    	</description>
+    	<sheet display="false" />
+		<rules>
+      		<select name="Discovery (Lv4 ASI Alternative)" type="Class Feature" supports="Discovery,Alchemist"/>
+    	</rules>
+	</element>
+	<element name="ASI Alternative (Discovery)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ASI_ALTERNATIVE_8">
+		<compendium display="false" />
+		<supports>Improvement Option, Alchemist,8</supports>
+		<requirements>ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST</requirements>
+		<description>
+			<p>Select a discovery of your choice.</p>
+    	</description>
+    	<sheet display="false" />
+		<rules>
+      		<select name="Discovery (Lv8 ASI Alternative)" type="Class Feature" supports="Discovery,Alchemist"/>
+    	</rules>
+	</element>
+	<element name="ASI Alternative (Discovery)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ASI_ALTERNATIVE_12">
+		<compendium display="false" />
+		<supports>Improvement Option, Alchemist,12</supports>
+		<requirements>ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST</requirements>
+		<description>
+			<p>Select a discovery of your choice.</p>
+    	</description>
+    	<sheet display="false" />
+		<rules>
+      		<select name="Discovery (Lv12 ASI Alternative)" type="Class Feature" supports="Discovery,Alchemist"/>
+    	</rules>
+	</element>
+	<element name="ASI Alternative (Discovery)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ASI_ALTERNATIVE_16">
+		<compendium display="false" />
+		<supports>Improvement Option, Alchemist,16</supports>
+		<requirements>ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST</requirements>
+		<description>
+			<p>Select a discovery of your choice.</p>
+    	</description>
+    	<sheet display="false" />
+		<rules>
+      		<select name="Discovery (Lv16 ASI Alternative)" type="Class Feature" supports="Discovery,Alchemist"/>
+    	</rules>
+	</element>
+	<element name="ASI Alternative (Discovery)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ASI_ALTERNATIVE_19">
+		<compendium display="false" />
+		<supports>Improvement Option, Alchemist,19</supports>
+		<requirements>ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_ABILITYSCOREIMPROVEMENT_ALCHEMIST</requirements>
+		<description>
+			<p>Select a discovery of your choice.</p>
+    	</description>
+    	<sheet display="false" />
+		<rules>
+      		<select name="Discovery (Lv19 ASI Alternative)" type="Class Feature" supports="Discovery,Alchemist"/>
+    	</rules>
+	</element>
+
+	<element name="Flashbang" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_FLASHBANG">
+		<description>
+			<p>Beginning at 5th level, you carry a supply of concussive explosives to help you escape from perilous situations. As a bonus action, you can throw one of these explosives at your feet, disorienting and distracting nearby foes. Each Large or smaller creature within 5 feet of you can't take reactions until the start of its next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You carry a supply of concussive explosives to help you escape from perilous situations. You can throw one of these explosives at your feet, disorienting and distracting nearby foes. Each Large or smaller creature within 5 feet of you can't take reactions until the start of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_EVASION">
+		<description>
+			<p>Beginning at 11th level, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a DEX saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Blast Coating" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_BLAST_COATING">
+		<description>
+			<p>Starting at 15th level, you automatically succeed on saving throws against your own bombs and never take damage from them.</p>
+		</description>
+		<sheet>
+			<description>You automatically succeed on saving throws against your own bombs and never take damage from them.</description>
+		</sheet>
+	</element>
+	<element name="Philosopher's Stone" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_PHILOSOPHERS_STONE">
+		<description>
+			<p>At 20th level, you unlock the crowning achievement of all alchemy: a philosopher's stone, a dynamo of alchemical energy in a fist-sized, glowing jewel. You can construct your philosopher's stone using your alchemist's supplies, 1,000 gp worth of materials, and 7 days of work. You can only have one philosopher's stone at a time. As long as you possess the stone, you gain the following benefits:</p>
+			<ul>
+				<li>Whenever you finish a short rest, you regain all expended reagent dice.</li>
+				<li>You can brew potions as an action, instead of over the course of 10 minutes.</li>
+				<li>You age 10 times slower than normal, and you can't be aged magically.</li>
+			</ul>
+			<p>Additionally, you learn the following formula, which doesn't count against the total number of formulae you know:</p>
+			<h5>FORMULA: NUCLEAR BOMB</h5>
+			<p>By replacing your bomb's explosive contents with your philosopher's stone, you can change it into a nuclear bomb. A nuclear bomb deals 10d10 + 100 force damage instead of its normal fire damage, has a blast radius of 1 mile, and completely destroys the philosopher's stone. Additionally, each creature within the blast radius that fails its saving throw takes the full bomb damage rolled, or half as much damage on a successful save. Creatures within 60 feet of the bomb gain no benefit from Evasion or similar features.</p>
+		</description>
+		<sheet>
+			<description>You can construct your philosopher's stone using your alchemist's supplies, 1,000 gp worth of materials, and 7 days of work. You can only have one philosopher's stone at a time. As long as you possess the stone, you regain all expended reagent dice after a short rest, you can brew potions as an action instead of over 10 minutes, you age 10 times slower than normal, and you can't be aged magically.&#13;
+			You also learn the following formula:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_NUCLEAR_BOMB" requirements="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_PHILOSOPHERS_STONE" />
+		</rules>
+	</element>
+	<element name="Nuclear Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NUCLEAR_BOMB">
+		<compendium display="false" />
+		<description>
+			<p>By replacing your bomb's explosive contents with your philosopher's stone, you can change it into a nuclear bomb. A nuclear bomb deals 10d10 + 100 force damage instead of its normal fire damage, has a blast radius of 1 mile, and completely destroys the philosopher's stone. Additionally, each creature within the blast radius that fails its saving throw takes the full bomb damage rolled, or half as much damage on a successful save. Creatures within 60 feet of the bomb gain no benefit from Evasion or similar features.</p>
+		</description>
+		<sheet>
+			<description>A nuclear bomb deals 10d10 + 100 force damage instead of its normal fire damage, has a blast radius of 1 mile, and completely destroys the philosopher's stone. Additionally, each creature within the blast radius that fails its saving throw takes the full bomb damage rolled, or half as much damage on a successful save. Creatures within 60 feet of the bomb gain no benefit from Evasion or similar features.</description>
+		</sheet>
+	</element>
+
+	<!-- Bomb Formulae -->
+	<element name="Acid Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ACID_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By mixing your bomb's explosive contents with a few drops of ardenflotic acid, a highly corrosive chemical, you can change it into an acid bomb. An acid bomb deals acid damage instead of fire damage, and its damage dice are d4s. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, takes the same amount of damage again at the end of its next turn.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Bramble Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_BRAMBLE_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By adding a potent fertilizer to your bomb's explosive contents, you can change it into a bramble bomb. A bramble bomb deals no damage, but instead causes tough, thorny brambles to sprout from any area of natural ground within the bomb's blast radius, which becomes difficult terrain. Additionally, if a creature in the blast radius is prone when the bomb detonates, it is enveloped by the brambles and must succeed on a Strength (Athletics) check against your bomb save DC before it can move or stand. The brambles shrivel and die after 1 minute.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Cryo Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRYO_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a piece of ice-nine, you can change it into a cryo bomb. A cryo bomb deals cold damage instead of fire damage, its damage dice are d8s, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has its speed reduced by 10 feet until the end of its next turn.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Holy Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_HOLY_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By adding a few drops of holy water to your bomb's explosive contents, you can change it into a holy bomb. A holy bomb deals radiant damage instead of fire damage, and its damage dice are d8s, unless the target is a Celestial, Fiend, or Undead. The bomb's damage dice are d6s against Celestials and d12s against Fiends and Undead.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Impact Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_IMPACT_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with more reactive ones, you can change it into an impact bomb. An impact bomb deals force damage instead of fire damage, and its damage dice are d8s. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, is pushed 5 feet away from the center of the blast.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Incendiary Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INCENDIARY_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By adding a thickening agent to your bomb's explosive contents, you can change it into an incendiary bomb. An incendiary bomb's damage dice are d6s. Additionally, the area of the blast radius is engulfed in flames, which persist until the start of your next turn. Flammable objects in this area that aren't being worn or carried ignite. Any creature that ends its turn in this area takes half the bomb's damage.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Laughing Gas Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_LAUGHING_GAS_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By mixing your bomb's explosive contents with a drop of jesterate, a highly euphoric chemical, you can change it into a laughing gas bomb. A laughing gas bomb deals poison damage instead of fire damage, its damage dice are d6s, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, falls prone in a fit of laughter. Once a creature falls prone due to this bomb's effects, it is immune to this effect (but not the bomb's poison damage) for the next 24 hours.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Lightning Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_LIGHTNING_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a charged arcane capacitor, you can change it into a lightning bomb. A lightning bomb deals lightning damage instead of fire damage, and its damage dice are d8s. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, can't take reactions until the end of its next turn.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Nonlethal Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_NONLETHAL_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a pouch of rubber pellets, you can change it into a nonlethal bomb. A nonlethal bomb deals bludgeoning damage instead of fire damage, and its damage dice are d8s. If damage from this bomb drops a creature to 0 hit points, it knocks the creature out, rather than dealing a killing blow, rendering the creature unconscious and stable. Additionally, this bomb's rubber pellets bounce around corners, ignoring half and three-quarters cover for targets within the blast radius.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Oil Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_OIL_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By mixing your bomb's explosive contents with a few drops of a super-surfactant, you can change it into an oil bomb. An oil bomb deals no damage, but coats each creature within the blast radius in a sticky, flammable oil. The next time a creature coated in oil takes fire damage, it takes an extra d6 fire damage for each die of fire damage rolled, up to a maximum of half your alchemist level, rounded up. This oil can be removed by dousing a creature with a gallon of water.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Prismatic Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_PRISMATIC_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By adding an ounce of polyjuice, an unpredictable, multicolored chemical, to your bomb's explosive contents, you can change it into a prismatic bomb. A prismatic bomb deals damage of a randomly determined type instead of fire damage, and it requires a randomly determined type of saving throw. Its damage dice are d8s. Roll on each of the following tables.</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Damage Type</td><td>d6</td><td>Saving Throw</td></tr>
+				</thead>
+				<tr><td>1</td><td>Acid</td><td>1-2</td><td>Dexterity</td></tr>
+				<tr><td>2</td><td>Cold</td></tr>
+				<tr><td>3</td><td>Fire</td><td>3-4</td><td>Constitution</td></tr>
+				<tr><td>4</td><td>Lightning</td></tr>
+				<tr><td>5</td><td>Poison</td><td>5-6</td><td>Wisdom</td></tr>
+				<tr><td>6</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet />
+	</element>
+	<element name="Psionic Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_PSIONIC_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By mixing your bomb's explosive contents with dust from a psionic crystal, you can change it into a psionic bomb. A psionic bomb deals psychic damage instead of fire damage, its damage dice are d6s, and it requires a Wisdom saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on Constitution saving throws it makes to maintain concentration on spells until the end of its next turn, including against this bomb's damage.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Quiet Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_QUIET_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a wad of thermal cotton, you can change it into a quiet bomb. A quiet bomb's damage dice are d8s. When this bomb detonates, it makes only a low thud, audible out to 10 feet, and releases a puff of smoke to mask the light given off by its blast. Creatures have disadvantage on ability checks to detect that this bomb was detonated nearby.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Seeking Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_SEEKING_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a powerful lodestone, you can change it into a seeking bomb. A seeking bomb's damage dice are d6s. You don't have disadvantage on ranged attack rolls you make using this bomb as a result of being within 5 feet of a hostile creature.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Smoke Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_SMOKE_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By removing your bomb's explosive contents entirely, you can change it into a smoke bomb. A smoke bomb deals no damage but fills a 10-foot-radius sphere with smoke. This smoke spreads around corners and its area is heavily obscured. It lasts for a number of rounds equal to your Intelligence modifier (minimum of 1 round) or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. Once you throw one of these bombs, you can't throw another one for 1 minute.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Sonic Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_SONIC_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By mixing your bomb's explosive contents with a few drops of air elemental essence, you can change it into a sonic bomb. A sonic bomb deals thunder damage instead of fire damage, its damage dice are d6s, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, is deafened until the end of its next turn.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Stink Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_STINK_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By adding a single drop of skunkanide, a chemical too unholy to expound upon, you can change it into a stink bomb. A stink bomb deals poison damage instead of fire damage, its damage dice are d8, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on ability checks it makes until the end of its next turn.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Teleportation Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_TELEPORTATION_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a glowing etherite crystal, you can change it into a teleportation bomb. A teleportation bomb deals no damage and instead opens a rift in space, instantly teleporting you to its point of detonation. This effect fails if the bomb explodes more than 30 feet away from you.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Thermobaric Bomb" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_THERMOBARIC_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By replacing your bomb's explosive contents with a lower speed explosive, you can change it into a thermobaric bomb. A thermobaric bomb's damage dice are d6s, and it explodes in a 10-foot radius.</p>
+		</description>
+		<sheet />
+	</element>
+	<element name="Withering Bomb " type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_WITHERING_BOMB">
+		<supports>Bomb Formulae</supports>
+		<description>
+			<p>By mixing your bomb's explosive components with a powerful desiccating agent, you can change it into a withering bomb. A withering bomb deals necrotic damage instead of fire damage, its damage dice are d8s, it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, can't regain hit points until the end of its next turn.</p>
+		</description>
+		<sheet />
+	</element>
+	<!-- Discoveries -->
+	<element name="Advanced Poisoner" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ADVANCED_POISONER">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Venomsmith Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_VENOMSMITH</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Venomsmith Field of Study</em></p>
+			<p>Your morbid research into the most vicious, exotic poisons allows you to brew the following poisons (found in the SRD) when you brew potions:</p>
+			<table>
+				<thead>
+					<tr><td>Potion</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>Burnt Othur Fumes</td><td>3 reagent dice</td></tr>
+				<tr><td>Crawler Mucus</td><td>3 reagent dice</td></tr>
+				<tr><td>Drow Poison</td><td>3 reagent dice</td></tr>
+				<tr><td>Pale Tincture</td><td>4 reagent dice</td></tr>
+				<tr><td>Midnight Tears</td><td>5 reagent dice</td></tr>
+				<tr><td>Wyvern Poison</td><td>6 reagent dice</td></tr>
+			</table>
+		</description>
+		<sheet />
+	</element>
+	<element name="Alchemy Of Ascendancy" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMY_OF_ASCENDANCY">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>17th level</prerequisite>
+		<requirements>[level:17]</requirements>
+		<description>
+			<p><em>Prerequisite: 17th level</em></p>
+			<p>A breakthrough in your alchemical studies has revealed the formulation of several potent elixirs. You can brew the following potions:</p>
+			<table>
+				<thead>
+					<tr><td>Potion</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>Necromantic Draught</td><td>4 reagent dice</td></tr>
+				<tr><td>Oil of Etherealness</td><td>4 reagent dice</td></tr>
+				<tr><td>Potion of Speed</td><td>4 reagent dice</td></tr>
+				<tr><td>Potion of Stone Giant Strength</td><td>4 reagent dice</td></tr>
+			</table>
+		</description>
+		<sheet />
+	</element>
+	<element name="Alchemy Of Influence" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMY_OF_INFLUENCE">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level</prerequisite>
+		<requirements>[level:13]</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level</em></p>
+			<p>Your alchemical research has revealed many of the basic chemicals that govern emotions. You can brew the following potions:</p>
+			<table>
+				<thead>
+					<tr><td>Potion</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>Potion of Animal Friendship</td><td>1 reagent dice</td></tr>
+				<tr><td>Philter of Love</td><td>2 reagent dice</td></tr>
+				<tr><td>Potion of Clairvoyance</td><td>3 reagent dice</td></tr>
+				<tr><td>Potion of Mind Reading</td><td>3 reagent dice</td></tr>
+			</table>
+		</description>
+		<sheet />
+	</element>
+	<element name="Alchemy Of Transformation" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMY_OF_TRANSFORMATION">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level</prerequisite>
+		<requirements>[level:13]</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level</em></p>
+			<p>You have mastered the alchemical secrets of shifting matter, which allow you to brew the following potions:</p>
+			<table>
+				<thead>
+					<tr><td>Potion</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>Oil of Slipperiness</td><td>2 reagent dice</td></tr>
+				<tr><td>Sandstone Solution</td><td>2 reagent dice</td></tr>
+				<tr><td>Aqua Fortis</td><td>3 reagent dice</td></tr>
+				<tr><td>Chameleon Concoction</td><td>3 reagent dice</td></tr>
+				<tr><td>Potion of Gaseous Form</td><td>3 reagent dice</td></tr>
+			</table>
+		</description>
+		<sheet />
+	</element>
+	<element name="Arcane Study" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_ARCANE_STUDY">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>You learn three cantrips of your choice from the wizard spell list. Intelligence is your spellcasting ability for your wizard spells.</p>
+		</description>
+		<sheet>
+			<description>You learn 3 cantrips of your choice from the wizard spell list. INT is your spellcasting ability.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Arcane Study)" supports="0,Wizard" number="3" ability="Intelligence"/>
+		</rules>
+	</element>
+	<element name="Ballistic Research" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_BALLISTICS_RESEARCH">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>You learn two additional bomb formulae.</p>
+		</description>
+		<sheet>
+			<description>You learn two additional bomb formulae.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Bomb Formulae (Ballistic Research)" supports="Bomb Formulae" number="2"/>
+		</rules>
+	</element>
+	<element name="Battle Training" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_BATTLE_TRAINING">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>You gain proficiency with martial weapons and shields.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with martial weapons and shields.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+	<element name="Beguiling Haze" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_BEGUILING_HAZE">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Amorist Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_AMORIST</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Amorist Field of Study</em></p>
+			<p>When you charm a creature, you can choose to place it in a dreamy state, from which it regards everyone it sees as close friends. While the creature is charmed, it is nonhostile and acts as though it is charmed equally by each creature it sees.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you charm a creature, you can choose to place it in a dreamy state, from which it regards everyone it sees as close friends. While the creature is charmed, it is nonhostile and acts as though it is charmed equally by each creature it sees.</description>
+		</sheet>
+	</element>
+	<element name="Buffered Metabolism" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_BUFFERED_METABOLISM">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level</prerequisite>
+		<requirements>[level:13]</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Xenoalchemist Field of Study</em></p>
+			<p>As a reaction when you take damage, you can expend any number of reagent dice up to your proficiency bonus to reduce the amount of damage taken by the total rolled on the dice.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage, you can expend up to {{proficiency}} reagent dice to reduce the amount of damage taken by the total rolled on the dice.</description>
+		</sheet>
+	</element>
+	<element name="Clotting Agent" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CLOTTING_AGENT">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>You have developed a serum that thickens your blood. Your hit point maximum increases by your alchemist level + your Constitution modifier, and it increases by 1 again whenever you gain a level in this class.</p>
+		</description>
+		<sheet>
+			<description>Your hit point maximum increases by {{clotagent:hp}}</description>
+		</sheet>
+		<rules>
+			<stat name="clotagent:hp" value="level:alchemist" />
+			<stat name="clotagent:hp" value="constitution:modifier" />
+			<stat name="hp" value="tough:hp" />
+		</rules>
+	</element>
+	<element name="Craft Homunculus" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFT_HOMUNCULUS">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>Using a special alchemical process requiring 8 hours of work, which can be performed over the course of a long rest, you can create a homunculus. A homunculus functions as a familiar summoned by the find familiar spell, with several differences:</p>
+			<ul>
+				<li>The telepathic link between you and your homunculus functions at any distance, provided you and your homunculus are on the same plane of existence</li>
+				<li>You can't dismiss your homunculus as you would a familiar</li>
+				<li>Your homunculus is a Construct and can't assume a different form.</li>
+				<li>Your homunculus can take the Attack action on its turn.</li>
+			</ul>
+			<p>When your homunculus dies, its body remains, and can be reanimated in a procedure requiring 1 hour of work, which can be performed over the course of a short or long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			
+		</rules>
+	</element>
+	<element name="Demolition Spree" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_DEMOLITION_SPREE">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Mad Bomber Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_MAD_BOMBER</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Mad Bomber Field of Study</em></p>
+			<p>When you prime and throw a bomb, you can choose to throw a number of bombs equal to the number of damage dice for the bomb instead of only one. Each bomb you throw deals 1d10 damage plus your Intelligence modifier and can't target the same creature or space. You must spend reagent dice separately on these bombs and can apply a bomb formula to only one of them.</p>
+		</description>
+		<sheet>
+			<description>When you prime and throw a bomb, you can choose to throw a number of bombs equal to the number of damage dice for the bomb instead of only one. Each bomb you throw deals 1d10 damage + INT mod and can't target the same creature or space. You must spend reagent dice separately on these bombs and can apply a bomb formula to only one of them.</description>
+		</sheet>
+	</element>
+	<element name="Explosive Missile" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_EXPLOSIVE_MISSILE">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>As a bonus action, you can load one of your bombs onto the head of a crossbow bolt. Instead of its normal damage, this bolt deals damage as if the bomb had been primed and thrown, but it doesn't have a blast radius. Only one of your bombs can be loaded onto a bolt at a time, and you can't fire an explosive bolt on the same turn you throw a bomb.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can load one of your bombs onto the head of a crossbow bolt. Instead of its normal damage, this bolt deals damage as if the bomb had been primed and thrown, but it doesn't have a blast radius. Only one of your bombs can be loaded onto a bolt at a time, and you can't fire an explosive bolt on the same turn you throw a bomb.</description>
+		</sheet>
+	</element>
+	<element name="Fire Brand" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIRE_BRAND">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>As a bonus action you can mix your bomb's contents together and apply the fiery concoction to a melee weapon you are holding. Until the end of your turn, this melee weapon deals an extra 1d6 fire damage on a hit. This extra damage increases by 1d6 at 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can mix your bomb's contents together and apply the fiery concoction to a melee weapon you are holding. Until the end of your turn, this melee weapon deals an extra {{amount}}d6 fire damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="amount" value="1" bonus="bonus"/>
+			<stat name="amount" value="2" bonus="bonus"/>
+			<stat name="amount" value="3" bonus="bonus"/>
+			<stat name="amount" value="4" bonus="bonus"/>
+		</rules>
+	</element>
+	<element name="Fire Eater" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIRE_EATER">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>Instead of priming and throwing a bomb, you use an action to drink its contents and spit them out in a 15-foot cone. Each creature within the cone must make a Dexterity saving throw against your bomb save DC. On a failed save, a creature takes fire damage as if the bomb had been primed and thrown, or half as much on a successful save. When you use this ability, you take 1d4 points of fire damage for each of your bomb's damage dice.</p>
+		</description>
+		<sheet action="Action">
+			<description>Instead of priming and throwing a bomb, you drink its contents and spit them out in a 15ft cone. Each creature within the cone must make a DC{{bombs:dc}} DEX saving throw. On a failed save, a creature takes fire damage as if the bomb had been primed and thrown, or half as much on a successful save. When you use this ability, you take 1d4 fire damage for each of your bomb's damage dice.</description>
+		</sheet>
+	</element>
+	<element name="Fire In The Hole" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FIRE_IN_THE_HOLE">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level</em></p>
+			<p>You have tweaked your bomb's formula to increase its explosive yield. Your bomb save DC increases by half your proficiency bonus, rounded down.</p>
+		</description>
+		<sheet>
+			<description>Your bomb save DC increases by {{proficiency:half}}</description>
+		</sheet>
+		<rules>
+			<stat name="bombs:dc" value="proficiency:half" />
+		</rules>
+	</element>
+	<element name="Fortified Serum" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_FORTIFIED_SERUM">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Apothecary Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_APOTHECARY</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Apothecary Field of Study</em></p>
+			<p>Whenever a creature regains hit points by drinking one of your potions, it gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature regains hp by drinking one of your potions, it gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks until the end of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Grenadier" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_GRENADIER">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>When you prime and throw a bomb, you can use your bonus action to make an attack with a weapon that isn't two-handed.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you prime and throw a bomb, you can make an attack with a weapon that isn't two-handed.</description>
+		</sheet>
+	</element>
+	<element name="Dynamo Charger" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_DYNAMO_CHARGER">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Dynamo Engineer Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Dynamo Engineer Field of Study</em></p>
+			<p>You've invented a device that rapidly recharges your spell dynamos. Once per day when you finish a short rest, you can regain 2 expended spell slots stored in dynamos. You can configure these dynamos immediately.</p>
+		</description>
+		<sheet usage="1/Day - Short Rest">
+			<description>You can regain 2 expended spell slots stored in dynamos. You can configure these dynamos immediately.</description>
+		</sheet>
+	</element>
+	<element name="Hemoreagent" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_HEMOREAGENT">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>17th level</prerequisite>
+		<requirements>[level:17]</requirements>
+		<description>
+			<p><em>Prerequisite: 17th level</em></p>
+			<p>When you prime and throw a bomb, you can convert a measure of your own blood into reagents. You can add five or fewer reagent dice to the bomb's damage roll without expending them, and you lose 1d6 hit points for each reagent die added. This loss of hit points can't be reduced or prevented in any way.</p>
+		</description>
+		<sheet>
+			<description>You can add 5 or less reagent dice to the bomb's dmg roll without expending them, and you lose 1d6 hp for each reagent die added. This loss of hp can't be reduced or prevented in any way.</description>
+		</sheet>
+	</element>
+	<element name="Lazarus Bolt" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_LAZARUS_BOLT">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level</em></p>
+			<p>You've discovered a radical necromantic workaround: restoring life with direct electricity to the heart. As an action, you can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature returns to life with 1 hit point. This feature can't return to life a creature that lacks a heart, a creature that has died of old age, or a creature that is missing vital organs.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description>You can drive a bolt into the torso of a creature within 5ft of you that has died within the last minute. That creature returns to life with 1hp. This feature can't return to life a creature that lacks a heart, that has died of old age, or that is missing vital organs.</description>
+		</sheet>
+	</element>
+	<element name="Magnified Blast" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_MAGNIFIED_BLAST">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>17th level</prerequisite>
+		<requirements>[level:17]</requirements>
+		<description>
+			<p><em>Prerequisite: 17th level</em></p>
+			<p>Thanks to a new internal design for your bombs, you have expanded their blast radius and magnitude. Whenever you add reagent dice to your bomb's damage, you can also choose to expand the bomb's blast radius by a distance of up to 5 feet per two reagent dice spent.</p>
+		</description>
+		<sheet>
+			<description>Whenever you add reagent dice to your bomb's damage, you can also choose to expand the bomb's blast radius by a distance of up to 5ft per two reagent dice spent.</description>
+		</sheet>
+	</element>
+	<element name="Ooze Cowboy" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_OOZE_COWBOY">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Ooze Rancher Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_OOZE_RANCHER</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Ooze Rancher Field of Study</em></p>
+			<p>Tired of waiting for your Oozes to catch up with you, you've modified your formula to make extra fast slimes! All slimes you make have a speed of 30 feet, unless it was already higher. Additionally, you can ride any Ooze you make of Medium size or larger as a mount. You and your equipment suffer no ill effect from touching your Oozes directly. Lastly, your Oozes add your proficiency bonus to their damage rolls and initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>All slimes you make have a speed of 30ft, unless it was already higher. Additionally, you can ride any Ooze you make of Medium size or larger as a mount. You and your equipment suffer no ill effect from touching your Oozes directly. Lastly, your Oozes add your proficiency bonus to their damage rolls and initiative rolls.</description>
+		</sheet>
+	</element>
+	<element name="Poisoner" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_POISONER">
+		<supports>Discovery,Alchemist,Poisoner</supports>
+		<description>
+			<p>Your research into poisonous compounds has taught you how to concoct lethal toxins. You gain proficiency with the poisoner's kit. Additionally, you can craft the following poisons when you brew potions, which use your bomb save DC instead of their normal save DCs:</p>
+			<table>
+				<thead>
+					<tr><td>Potion</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>2 x Antitoxin</td><td>1 reagent die</td></tr>
+				<tr><td>2 x Basic Poison</td><td>1 reagent die</td></tr>
+				<tr><td>Oil of Taggit</td><td>2 reagent dice</td></tr>
+				<tr><td>Potion of Poison</td><td>2 reagent dice</td></tr>
+				<tr><td>Serpent Venom</td><td>2 reagent dice</td></tr>
+				<tr><td>Truth Serum</td><td>2 reagent dice</td></tr>
+			</table>
+		</description>
+		<sheet />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+		</rules>
+	</element>
+	<element name="Precision Explosives" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_PRECISION_EXPLOSIVES">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>You have modified your bombs to have narrow gaps in their explosions, perfect for keeping some creatures safe from the blast. You can choose one creature in the blast radius of a bomb, other than the target, to automatically succeed on its saving throw against the bomb and take no damage from it.</p>
+		</description>
+		<sheet>
+			<description>You can choose one creature in the blast radius of a bomb, other than the target, to automatically succeed on its saving throw against the bomb and take no damage from it.</description>
+		</sheet>
+	</element>
+	<element name="Reactionary Gulp" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_REACTIONARY_GULP">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>17th level</prerequisite>
+		<requirements>[level:17]</requirements>
+		<description>
+			<p><em>Prerequisite: 17th level</em></p>
+			<p>By keeping your potions organized on a bandolier or in a series of pouches, you can quickly draw them at a moment's notice. Immediately after you take damage, you can use your reaction to drink a potion.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Immediately after you take damage, you can drink a potion.</description>
+		</sheet>
+	</element>
+	<element name="Recycled Potions" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_RECYCLED_POTIONS">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>When you brew potions, you can distill potions you have already brewed, destroying them and regaining the reagent dice expended to brew them. You can choose to expend these reagent dice to create new potions. You can't gain more than your maximum number of reagent dice using this ability.</p>
+		</description>
+		<sheet>
+			<description>When you brew potions, you can distill potions you have already brewed, destroying them and regaining the reagent dice expended to brew them. You can choose to expend these reagent dice to create new potions. You can't gain more than your maximum number of reagent dice using this ability.</description>
+		</sheet>
+	</element>
+	<element name="Syringe" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_SYRINGE">
+		<supports>Discovery,Alchemist</supports>
+		<description>
+			<p>Using a sophisticated hypodermic needle, you can more quickly administer potions and poisons. As a bonus action, you can inject a potion into yourself or a willing creature within 5 feet of you, granting the benefits of the potion as if it were consumed normally. You can inject a potion into an unwilling creature with a successful melee attack, treating the syringe as a finesse weapon.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can inject a potion into yourself or a willing creature within 5ft of you, granting the benefits of the potion as if it were consumed normally. You can inject a potion into an unwilling creature with a successful melee attack, treating the syringe as a finesse weapon.</description>
+		</sheet>
+	</element>
+	<element name="Tri-Mutation" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_TRIMUTATION">
+		<supports>Discovery,Alchemist</supports>
+		<prerequisite>13th level, Mutagenist Field of Study</prerequisite>
+		<requirements>[level:13], ID_MHP_VSOS_ARCHETYPE_MUTAGENIST</requirements>
+		<description>
+			<p><em>Prerequisite: 13th level, Mutagenist Field of Study</em></p>
+			<p>You've developed a powerful, but fleeting way to blend your mutagens. When you inject yourself with a mutagen, you can choose to inject a tri-mutagen, which grants you the benefit of all your mutagens at once. This benefit lasts for 1 minute, or until you inject yourself with a different mutagen. Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you inject yourself with a mutagen, you can choose to inject a tri-mutagen, which grants you the benefit of all your mutagens at once. This benefit lasts for 1 minute, or until you inject yourself with a different mutagen.</description>
+		</sheet>
+	</element>
+</elements>

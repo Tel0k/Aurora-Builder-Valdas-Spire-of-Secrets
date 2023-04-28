@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mutagenist</name>
+		<description>The Mutagenist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="alchemist-mutagenist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-mutagenist.xml" />
+		</update>
+	</info>
+    <element name="Mutagenist" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MUTAGENIST">
+        <supports>Field</supports>
+        <description>
+            <p>The study of alchemy is fundamentally the study of transformation. All alchemists transmute mundane materials into magical substances—potions, elixirs, and bombs—yet some take it one step further. You have discovered the secrets of the mutagen, the keystone of transmutation, which allows you to transform your very body, gaining supernatural strength or speed, sprouting additional limbs or claws, or thickening your skin into a stony aegis.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_BONUS_PROFICIENCIES" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_SHARED_MUTAGEN" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_ADVANCED_MUTATION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTATED_BLOOD" />
+        </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="short">Transmutes their body with experimental, injected mutagens.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_BONUS_PROFICIENCIES" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_SHARED_MUTAGEN" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_ADVANCED_MUTATION" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTATED_BLOOD" level="18" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_BONUS_PROFICIENCIES">
+        <description>
+            <p>Starting when you choose this field of study at 2nd level, you gain proficiency in your choice of the Acrobatics or Athletics skill, as well as with shields.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Proficiency" name="Bonus Proficiency" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+    <element name="Mutagen" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN">
+        <description>
+            <p>Also at 2nd level, you can use your bonus action to inject yourself with a potent transmutative potion known as a mutagen. You gain one of the following benefits of your choice for 1 minute, or until you use your bonus action to inject yourself with a different mutagen:</p>
+            <p class="indent"><b>Strength.</b> Your Strength score increases by 3, to a maximum of 20.</p>
+            <p class="indent">Additionally, you sprout claws, fangs, spines, horns, or a different natural weapon of your choice. You can use this natural weapon to make unarmed strikes. If you hit with it, you deal damage equal to 1d6 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike. The damage of this attack is bludgeoning, piercing, or slashing, as appropriate for the natural weapon.</p>
+            <p class="indent"><b>Dexterity.</b> Your Dexterity score increases by 3, to a maximum of 20. Additionally, your walking speed increases by 5 feet.</p>
+            <p class="indent"><b>Constitution.</b> Your Constitution score increases by 3, to a maximum of 20. As a result, your current and maximum hit points increase accordingly with your new Constitution score, but when this effect ends, both your current and maximum hit points decrease by the same amount.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can inject yourself with a potent transmutative potion known as a mutagen. You gain one of the following benefits of your choice for 1 minute, or until you inject yourself with a different mutagen:</description>
+        </sheet>
+        <rules>
+			<select type="Archetype Feature" name="Strength" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_STR" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_STR" />
+			<select type="Archetype Feature" name="Dexterity" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_DEX" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_DEX" />
+			<select type="Archetype Feature" name="Constitution" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_CON" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_CON" />
+		</rules>
+    </element>
+    <element name="Strength" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_STR">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_STR</supports>
+		<description>
+			<p>Your Strength score increases by 3, to a maximum of 20.</p>
+            <p class="indent">Additionally, you sprout claws, fangs, spines, horns, or a different natural weapon of your choice. You can use this natural weapon to make unarmed strikes. If you hit with it, you deal damage equal to 1d6 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike. The damage of this attack is bludgeoning, piercing, or slashing, as appropriate for the natural weapon.</p>
+		</description>
+		<sheet>
+			<description>Your STR score increases by 3, you sprout a natural weapon of your choice. You can use this natural weapon to make unarmed strikes. If you hit with it, you deal 1d6 + {{strength:modifier}} damage. The damage of this attack is bludgeoning, piercing, or slashing, as appropriate for the natural weapon.</description>
+		</sheet>
+	</element>
+    <element name="Dexterity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_DEX">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_DEX</supports>
+		<description>
+			<p>Your Dexterity score increases by 3, to a maximum of 20. Additionally, your walking speed increases by 5 feet.</p>
+		</description>
+		<sheet>
+			<description>Your DEX score increases by 3. Additionally, your walking speed increases by 5ft.</description>
+		</sheet>
+	</element>
+    <element name="Constitution" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_CON">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTAGEN_CON</supports>
+		<description>
+			<p>Your Constitution score increases by 3, to a maximum of 20. As a result, your current and maximum hit points increase accordingly with your new Constitution score, but when this effect ends, both your current and maximum hit points decrease by the same amount.</p>
+		</description>
+		<sheet>
+			<description>Your CON score increases by 3. Your current and maximum hp increase accordingly until this effect ends, when they decrease by the same amount.</description>
+		</sheet>
+	</element>
+
+    <element name="Shared Mutagen" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_SHARED_MUTAGEN">
+        <description>
+            <p>At 6th level, you've created a mutagen formulation generic enough to safely be injected into others. You can use your action and spend a reagent die to inject a willing creature within 5 feet of you with a mutagen of your choice. A creature can only be under the effect of one mutagen at a time. Once have injected another creature with a mutagen, you can't do so again until the original mutagen ends.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can spend a reagent die to inject a willing creature within 5ft of you with a mutagen of your choice. A creature can only be under the effect of one mutagen at a time. Once have injected another creature with a mutagen, you can't do so again until the original mutagen ends.</description>
+        </sheet>
+    </element>
+    <element name="Advanced Mutation" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_ADVANCED_MUTATION">
+        <description>
+            <p>Starting at 10th level, whenever you inject yourself with a mutagen, you can choose one of the following additional mutations:</p>
+            <p class="indent"><b>Hyperelastic.</b> Your flesh takes on a rubbery quality, allowing you to bend and stretch with ease. Melee weapons you use are considered to have the Reach property, if they didn't have it already. Additionally, you have advantage on ability checks you make to escape grapple or slip binds.</p>
+            <p class="indent"><b>Mucilaginous.</b>. Your skin secretes a thick, extremely sticky substance that helps you adhere to objects. You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also have a climbing speed equal to your walking speed.</p>
+            <p class="indent">Additionally, creatures have disadvantage on ability checks made to escape your grapples.</p>
+            <p class="indent"><b>Polybrachia.</b> You grow a pair of additional arms. These arms are fully functional and can be used to hold weapons and shields (allowing you to hold 2 two-handed weapons, or 4 one-handed weapons), perform somatic components of spells, and perform other actions, though the arms themselves don't grant you any additional actions.</p>
+        </description>
+        <sheet>
+            <description>Whenever you inject yourself with a mutagen, you can choose one of the following additional mutations:</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Hyperelastic" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_HYPEREALISTIC" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_HYPEREALISTIC" />
+			<select type="Archetype Feature" name="Mucilaginous" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_MUCILAGINOUS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_MUCILAGINOUS" />
+			<select type="Archetype Feature" name="Polybrachia" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_POLYBRACHIA" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_POLYBRACHIA" />
+        </rules>
+    </element>
+    <element name="Hyperelastic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_HYPEREALISTIC">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_HYPEREALISTIC</supports>
+		<description>
+			<p>Your flesh takes on a rubbery quality, allowing you to bend and stretch with ease. Melee weapons you use are considered to have the Reach property, if they didn't have it already. Additionally, you have advantage on ability checks you make to escape grapple or slip binds.</p>
+		</description>
+		<sheet>
+			<description>Melee weapons you use gain the Reach property, if they didn't have it already. Additionally, you have advantage on ability checks you make to escape grapple or slip binds.</description>
+		</sheet>
+	</element>
+    <element name="Mucilaginous" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_MUCILAGINOUS">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_MUCILAGINOUS</supports>
+		<description>
+			<p>Your skin secretes a thick, extremely sticky substance that helps you adhere to objects. You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also have a climbing speed equal to your walking speed.</p>
+            <p class="indent">Additionally, creatures have disadvantage on ability checks made to escape your grapples.</p>
+		</description>
+		<sheet>
+			<description>You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also have a climbing speed equal to your walking speed.</description>
+		</sheet>
+	</element>
+    <element name="Polybrachia" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_POLYBRACHIA">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_AM_POLYBRACHIA</supports>
+		<description>
+			<p>You grow a pair of additional arms. These arms are fully functional and can be used to hold weapons and shields (allowing you to hold 2 two-handed weapons, or 4 one-handed weapons), perform somatic components of spells, and perform other actions, though the arms themselves don't grant you any additional actions.</p>
+		</description>
+		<sheet>
+			<description>You grow a pair of additional arms. These arms are fully functional and can be used to hold weapons and shields (allowing you to hold 2 two-handed weapons, or 4 one-handed weapons), perform somatic components of spells, and perform other actions, though the arms themselves don't grant you any additional actions.</description>
+		</sheet>
+	</element>
+
+    <element name="Mutated Blood" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MUTATED_BLOOD">
+        <description>
+            <p>By 18th level, your mutagens have permanently altered your biology. Choose Strength, Dexterity, or Constitution. The chosen ability score increases by 2, and your maximum for this score increases to 22. Once you have chosen an ability score, this selection can't be altered.</p>
+        </description>
+        <sheet>
+            <description>Your mutagens have permanently altered your biology.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Mutated Blood" supports="Mutated Blood" />
+        </rules>
+    </element>
+    <element name="Strength" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MB_STR">
+        <supports>Mutated Blood</supports>
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Your STR score increase by 2. Your maximum STR score is now 22.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="2" />
+			<stat name="strength:max" value="2" />
+        </rules>
+    </element>
+    <element name="Dexterity" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MB_DEX">
+        <supports>Mutated Blood</supports>
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Your DEX score increase by 2. Your maximum DEX score is now 22.</description>
+        </sheet>
+        <rules>
+            <stat name="dexterity" value="2"/>
+            <stat name="dexterity:max" value="2" />
+        </rules>
+    </element>
+    <element name="Constitution" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MUTAGENIST_MB_CON">
+        <supports>Mutated Blood</supports>
+        <compendium display="false" />
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Your CON score increase by 2. Your maximum CON score is now 22.</description>
+        </sheet>
+        <rules>
+            <stat name="constitution" value="2" />
+			<stat name="constitution:max" value="2" />
+        </rules>
+    </element>
+</elements>
