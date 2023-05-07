@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="vsos-familiars.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-familiars.xml" />
+        </update>
+    </info>
+    <element name="Death Snail" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_DEATH_SNAIL">
+		<supports>Familiar</supports>
+		<description>
+			<p>A death snail is formed from a vile concoction of forest troll bone meal, giant eagle blood, and goblin bone meal, enclosed in a hollowed-out efreet horn, and sealed shut with an ettercap tongue. The resulting monstrosity possesses a dull intelligence, but its only impulse is to slay all creatures other than its master.</p>
+        </description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">6</set>
+			<set name="ac">14 (natural armor)</set>
+			<set name="hp">11 (2d4+6)</set>
+			<set name="speed">10 ft., climb 10 ft.</set>
+            <set name="resistances">fire</set>
+			<set name="senses">blindsight 30ft. (blind beyond this radius), passive Perception 10</set>
+			<set name="languages">—</set>
+			<set name="type">Monstrosity</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">typically neutral evil</set>
+			<set name="challenge">1/4</set>
+			<set name="proficiency">2</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_DEATH_SNAIL_LEECH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="11" bonus="base" />
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:climb" value="10" bonus="base" />
+		</rules>
+	</element>
+    <element name="Leech" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_DEATH_SNAIL_LEECH">
+		<description>
+			<p><i>Melee Weapon Attack:</i>  +4 to hit, reach 5ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 4 (1d8) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 plus PB to hit, reach 5 ft., one target. Hit: 1d8 plus PB poison damage. The target must succeed on a DC13 CON save or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+
+    <element name="Flying Book" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_FLYING_BOOK">
+		<supports>Familiar</supports>
+		<description>
+			<p>Little can be said about the flying book that is not readily apparent. Though it is indistinguishable from an arcanist's spellbook while motionless, this animated arcane tome can flutter through the air at a moment's notice, using its cover as rudimentary wings. Flying books are playful, and enjoy the sensation of being written in.</p>
+        </description>
+		<setters>
+			<set name="strength">3</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">4</set>
+			<set name="charisma">1</set>
+			<set name="ac">13 (natural armor)</set>
+			<set name="hp">2 (1d4)</set>
+			<set name="speed">0ft., fly 30ft. (hover)</set>
+            <set name="vulnerabilities">fire</set>
+            <set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</set>			
+			<set name="languages">—</set>
+			<set name="senses">blindsight 60ft. (blind beyond this radius), passive Perception 7</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_FLYING_BOOK_ANTIMAGIC_SUSCEPTIBILITY, ID_MHP_VSOS_COMPANION_TRAIT_FLYING_BOOK_FALSE_APPEARANCE</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_FLYING_BOOK_SLAM</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Antimagic Susceptibility" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_FLYING_BOOK_ANTIMAGIC_SUSCEPTIBILITY">
+		<description>
+			<p>The flying book is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the flying book must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</p>
+		</description>
+		<sheet>
+			<description>The flying book is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the flying book must succeed on a CON save against the caster's spell save DC or fall unconscious for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="False Appearance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_FLYING_BOOK_FALSE_APPEARANCE">
+		<description>
+			<p>While the flying book remains motionless, it is indistinguishable from a normal book.</p>
+		</description>
+		<sheet>
+			<description>While the flying book remains motionless, it is indistinguishable from a normal book.</description>
+		</sheet>
+	</element>
+	<element name="Slam" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_FLYING_BOOK_SLAM">
+		<description>
+			<p><i>Melee Weapon Attack:</i>  +4 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 plus PB to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Fright" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_FRIGHT">
+		<supports>Familiar</supports>
+		<description>
+			<p>Hauntings can often be attributed to the usual spectral suspects: ghosts, specters, shadows, and poltergeists. But benign hauntings, where a restless spirit merely plays tricks on the living, are usually caused by a fright. These spirits tend to be the artifacts of children or entertainers, clinging to the afterlife for company and a semblance of affection, and are as such preoccupied with fun. They never willingly harm others when they haunt a house, and they will serve any master that conjures them, if only for the sake of inclusion.</p>
+        </description>
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">14</set>
+			<set name="ac">12</set>
+			<set name="hp">21 (6d6)</set>
+			<set name="speed">0ft., fly 40ft. (hover)</set>
+            <set name="vulnerabilities">fire</set>
+            <set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</set>			
+			<set name="languages">—</set>
+			<set name="senses">blindsight 60ft. (blind beyond this radius), passive Perception 9</set>
+			<set name="type">Undead</set>
+			<set name="size">Small</set>
+			<set name="alignment">typically chaotic neutral</set>
+			<set name="challenge">1</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_FRIGHT_INCORPOREAL_MOVEMENT</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_FRIGHT_LIFE_DRAIN</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="21" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name="Incorporeal Movement" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_FRIGHT_INCORPOREAL_MOVEMENT">
+		<description>
+			<p>The fright can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>The fright can move through other creatures and objects as if they were difficult terrain. It takes 1d10 force damage if it ends its turn inside an object.</description>
+		</sheet>
+	</element>
+	<element name="Life Drain" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_FRIGHT_LIFE_DRAIN">
+		<description>
+			<p><i>Melee Spell Attack:</i>  +4 to hit, reach 5 ft., one target. Hit: 9 (2d8) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>
+		</description>
+		<sheet>
+			<description>Melee Spell Attack: +4 plus PB to hit, reach 5 ft., one target. Hit: 2d8 necrotic damage. The target must succeed on a DC 10 CON save or its maximum hp is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its maximum hp to 0.</description>
+		</sheet>
+	</element>
+
+    <element name="Grep" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_GREP">
+		<supports>Familiar</supports>
+		<description>
+			<p>A grep is an underground scavenger, known for using its keen vision, acute hearing, and silent flight to trick and steal from travelers, hoarding its possessions in well-hidden troves. Arcanists use greps as messengers and scouts, but they excel as retrievers; a grep can be given the name of an important object and sent to find it, returning a short time later with its prize.</p>
+        </description>
+		<setters>
+			<set name="strength">3</set>
+			<set name="dexterity">18</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">13</set>
+			<set name="wisdom">15</set>
+			<set name="charisma">10</set>
+			<set name="ac">15 (natural armor)</set>
+			<set name="hp">19 (6d4+4)</set>
+			<set name="speed">15ft., fly 50ft.</set>
+			<set name="conditionImmunities">poisoned</set>			
+			<set name="languages">understands Common and Undercommon but can't speak</set>
+			<set name="skills"> Perception +4, Sleight of Hand +6, Stealth +6</set>
+			<set name="senses">darkvision 60ft. (blind beyond this radius), passive Perception 9</set>
+			<set name="type">Monstrosity</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">typically neutral</set>
+			<set name="challenge">1</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_GREP_AMBUSHER,ID_MHP_VSOS_COMPANION_TRAIT_GREP_KEEN_HEARING_SMELL,ID_MHP_VSOS_COMPANION_TRAIT_GREP_MIMICRY</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_GREP_CLAW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="19" bonus="base" />
+			<stat name="companion:speed" value="15" bonus="base" />
+			<stat name="companion:speed:fly" value="50" bonus="base" />
+		</rules>
+	</element>
+	<element name="Ambusher" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_GREP_AMBUSHER">
+		<description>
+			<p>The grep has advantage on attack rolls against any creature it has surprised.</p>
+		</description>
+		<sheet>
+			<description>The grep has advantage on attack rolls against any creature it has surprised.</description>
+		</sheet>
+	</element>
+	<element name="Keen Hearing and Smell" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_GREP_KEEN_HEARING_SMELL">
+		<description>
+			<p>The grep has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+		</description>
+		<sheet>
+			<description>The grep has advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
+		</sheet>
+	</element>
+	<element name="Mimicry" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_GREP_MIMICRY">
+		<description>
+			<p>The grep can mimic animal sounds and Humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom(Insight) check.</p>
+		</description>
+		<sheet>
+			<description>The grep can mimic animal sounds and Humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC14 WIS(Insight) check.</description>
+		</sheet>
+	</element>
+	<element name="Claw" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_GREP_CLAW">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. Hit: 6 (1d4+4) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4+4) slashing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Mock" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_MOCK">
+		<supports>Familiar</supports>
+		<description>
+			<p>The diminutive relative of the mimic, the mock is a tiny shapechanger that replicates small, valuable objects to lure in its victims. In the desert, a mock might take the form of a canteen of precious water, and in a dungeon, it may replicate a sizable jewel or a spare gold piece. If an adventurer is caught by surprise, a mock is just as dangerous as its larger relatives, for it can hide in far less conspicuous places.</p>
+        </description>
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">5</set>
+			<set name="ac">11</set>
+			<set name="hp">18 (3d4+3)</set>
+			<set name="speed">15ft.</set>
+            <set name="immunities">acid</set>
+			<set name="conditionImmunities">prone</set>			
+			<set name="languages">—</set>
+			<set name="skills">Stealth +5</set>
+			<set name="senses">darkvision 60ft., passive Perception 11</set>
+			<set name="type">Monstrosity (Shapechanger)</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">neutral</set>
+			<set name="challenge">1/4</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_MOCK_SHAPECHANGER,ID_MHP_VSOS_COMPANION_TRAIT_MOCK_ADHESIVE,ID_MHP_VSOS_COMPANION_TRAIT_MOCK_FALSE_APPEARANCE</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_MOCK_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" />
+			<stat name="companion:hp:max" value="18" bonus="base" />
+			<stat name="companion:speed" value="15" bonus="base" />
+		</rules>
+	</element>
+	<element name="Shapechanger" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MOCK_SHAPECHANGER">
+		<description>
+			<p>The mock can use its action to polymorph into an object or back into its true, amorphous form. It can only take the appearance of Tiny objects and prefers the form of gold coins and jewels. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</p>
+		</description>
+		<sheet action="Action">
+			<description>The mock can polymorph into an object or back into its true, amorphous form. It can only take the appearance of Tiny objects and prefers the form of gold coins and jewels. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</description>
+		</sheet>
+	</element>
+	<element name="Adhesive" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MOCK_ADHESIVE">
+		<description>
+			<p>The mock adheres to anything that touches it. A creature that picks up the mock can't drop it unless it succeeds on a DC 9 Strength check, made with disadvantage. The mock can only adhere to one creature at a time. The mock has advantage on attack rolls against any creature adhered to it.</p>
+		</description>
+		<sheet usage="(Object Form Only)">
+			<description>The mock adheres to anything that touches it. A creature that picks up the mock can't drop it unless it succeeds on a DC9 STR check, made with disadvantage. The mock can only adhere to one creature at a time. The mock has advantage on attack rolls against any creature adhered to it.</description>
+		</sheet>
+	</element>
+	<element name="False Appearance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MOCK_FALSE_APPEARANCE">
+		<description>
+			<p> While the mock remains motionless, it is indistinguishable from an ordinary object.</p>
+		</description>
+		<sheet usage="(Object Form Only)">
+			<description>While the mock remains motionless, it is indistinguishable from an ordinary object.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_MOCK_BITE">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage plus 3 (1d6) acid damage. If the mock is in object form, the target is subjected to its Adhesive trait.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage plus 3 (1d6) acid damage. If the mock is in object form, the target is subjected to its Adhesive trait.</description>
+		</sheet>
+	</element>
+
+    <element name="Moon Jelly" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_MOON_JELLY">
+		<supports>Familiar</supports>
+		<description>
+			<p>Though incapable of surviving on land, moon jellies are favored for their bioluminescence by witches that intend to explore deep underwater</p>
+        </description>
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">13</set>
+			<set name="constitution">8</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">3</set>
+			<set name="ac">11</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">0ft., swim 25ft.</set>
+			<set name="languages">—</set>
+			<set name="senses">darkvision 60ft., passive Perception 10</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_MOON_JELLY_BIOLUMINESCENCE,ID_MHP_VSOS_COMPANION_TRAIT_MOON_JELLY_WATER_BREATHING</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:swim" value="25" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bioluminescence" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MOON_JELLY_BIOLUMINESCENCE">
+		<description>
+			<p>The moon jelly sheds dim light in a 10-foot radius.</p>
+		</description>
+		<sheet>
+			<description>The moon jelly sheds dim light in a 10-foot radius.</description>
+		</sheet>
+	</element>
+	<element name="Water Breathing" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_MOON_JELLY_WATER_BREATHING">
+		<description>
+			<p>The moon jelly can only breathe underwater.</p>
+		</description>
+		<sheet>
+			<description>The moon jelly can only breathe underwater.</description>
+		</sheet>
+	</element>
+
+    <element name="Pet Rock" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_PET_ROCK">
+		<supports>Familiar</supports>
+		<description>
+			<p>Widely considered to be the perfect familiar, requiring no food or water and possessing extremely high natural defenses, a pet rock can be conjured by most spellcasters. Though it doesn't act with any agility (indeed, it doesn't move at all), it can make a formidable weapon when thrown.</p>
+        </description>
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">5</set>
+			<set name="ac">15 (natural armor)</set>
+			<set name="hp">5 (1d4+3)</set>
+			<set name="speed">0ft.</set>
+            <set name="vulnerabilities">thunder</set>
+			<set name="resistances">fire, lightning, radiant; bludgeoning, piercing, and slashing from nonmagical attacks</set>
+            <set name="immunities">necrotic, poison, psychic</set>
+			<set name="conditionImmunities">charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone, unconscious</set>			
+			<set name="languages">—</set>
+			<set name="senses">passive Perception 7</set>
+			<set name="type">Elemental</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_PET_ROCK_FALSE_APPEARANCE,ID_MHP_VSOS_COMPANION_TRAIT_PET_ROCK_JUSTAROCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+		</rules>
+	</element>
+	<element name="False Appearance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_PET_ROCK_FALSE_APPEARANCE">
+		<description>
+			<p>The pet rock is indistinguishable from an ordinary rock with a face drawn on it.</p>
+		</description>
+		<sheet>
+			<description>The pet rock is indistinguishable from an ordinary rock with a face drawn on it.</description>
+		</sheet>
+	</element>
+	<element name="Just a Rock" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_PET_ROCK_JUSTAROCK">
+		<description>
+			<p>The pet rock counts as an object for the purposes of spells and magical effects. Additionally, the rock can't take actions that aren't specified in its statistics, and its speed can't be increased.</p>
+		</description>
+		<sheet>
+			<description>The pet rock counts as an object for the purposes of spells and magical effects. Additionally, the rock can't take actions that aren't specified in its statistics, and its speed can't be increased.</description>
+		</sheet>
+	</element>
+
+    <element name="Rag Doll" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_RAG_DOLL">
+		<supports>Familiar</supports>
+		<description>
+			<p>Crudely constructed but oddly endearing, rag dolls are constructs formed from children's toys, stuffed with soft material and adorned with smiling faces. Besides being generally comforting to have around, spellcasters favor rag dolls as familiars for their soft construction and inconspicuous nature; nobody questions a discarded doll, after all.</p>
+        </description>
+		<setters>
+			<set name="strength">4</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">5</set>
+			<set name="charisma">16</set>
+			<set name="ac">11</set>
+			<set name="hp">2 (1d4)</set>
+			<set name="speed">20 ft.</set>
+            <set name="vulnerabilities">fire</set>
+            <set name="immunities"> poison, psychic; bludgeoning from nonmagical attacks</set>
+			<set name="conditionImmunities">poisoned</set>			
+			<set name="languages">—</set>
+			<set name="skills">Persuasion +3, Stealth +3</set>
+			<set name="senses">darkvision 60 ft., passive Perception 7</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">typically neutral good</set>
+			<set name="challenge">0</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_RAG_DOLL_FALSE_APPEARANCE,ID_MHP_VSOS_COMPANION_TRAIT_RAG_DOLL_MIMICRY</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_RAG_DOLL_HEADBUTT</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="False Appearance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_RAG_DOLL_FALSE_APPEARANCE">
+		<description>
+			<p>While the rag doll remains motionless, it is indistinguishable from a normal stuffed toy.</p>
+		</description>
+		<sheet>
+			<description>While the rag doll remains motionless, it is indistinguishable from a normal stuffed toy.</description>
+		</sheet>
+	</element>
+	<element name="Mimicry" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_RAG_DOLL_MIMICRY">
+		<description>
+			<p>The rag doll can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 11 Wisdom (Insight) check.</p>
+		</description>
+		<sheet>
+			<description>The rag doll can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC11 WIS(Insight) check.</description>
+		</sheet>
+	</element>
+
+    <element name="Tin Soldier" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TIN_SOLDIER">
+		<supports>Familiar</supports>
+		<description>
+			<p>Full of ticking clockwork, sprockets, and other gizmos, tin soldiers are mechanical creations fashioned by arcanists as servants and messengers. With some patience and skill, almost anyone can build a tin soldier, but spellcasters have long devised methods to conjure them wholesale from the Plane of Law's excess energies.</p>
+        </description>
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">5</set>
+			<set name="ac">14 (natural armor)</set>
+			<set name="hp">7 (2d4+2)</set>
+			<set name="speed">30 ft.</set>
+            <set name="immunities"> poison, psychic</set>
+			<set name="conditionImmunities">poisoned</set>			
+			<set name="languages">—</set>
+			<set name="skills">Persuasion +3, Stealth +3</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">typically lawful neutral</set>
+			<set name="challenge">1/4</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_TIN_SOLDIER_FALSE_APPEARANCE,ID_MHP_VSOS_COMPANION_TRAIT_TIN_SOLDIER_FORMATION</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_ABYSSAL_CHICKEN_MULTIATTACK,ID_MHP_VSOS_COMPANION_ACTION_ABYSSAL_CHICKEN_BITE,ID_MHP_VSOS_COMPANION_ACTION_ABYSSAL_CHICKEN_CLAWS</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="7" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="False Appearance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_TIN_SOLDIER_FALSE_APPEARANCE">
+		<description>
+			<p>While the tin soldier remains motionless, it is indistinguishable from a normal toy.</p>
+		</description>
+		<sheet>
+			<description>While the tin soldier remains motionless, it is indistinguishable from a normal toy.</description>
+		</sheet>
+	</element>
+	<element name="Formation" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_TIN_SOLDIER_FORMATION">
+		<description>
+			<p>The tin soldier has advantage on attack rolls when it is within 5 feet of another tin soldier.</p>
+		</description>
+		<sheet>
+			<description>The tin soldier has advantage on attack rolls when it is within 5 feet of another tin soldier.</description>
+		</sheet>
+	</element>
+	<element name="Bayonet" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_MOCK_BITE">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Rifle (Recharge 6)" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_MOCK_BITE">
+		<description>
+			<p><i>Ranged Weapon Attack:</i> +3 to hit, range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +3 to hit, range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Winter Wolf Pup" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_WINTER_WOLF_PUP">
+		<supports>Familiar</supports>
+		<description>
+			<p>When fully grown, a winter wolf is an apex predator of the snow, a terror of teeth and fur, stalking the tundra in packs. But before they develop their fearsome freezing breath, winter wolf pups are far more amicable (perhaps because they have yet to realize the scope of their own might), and will dutifully follow a master that feeds them well and treats them with respect.</p>
+        </description>
+		<setters>
+			<set name="strength">5</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="ac">13 (natural armor)</set>
+			<set name="hp">7 (2d6)</set>
+			<set name="speed">45 ft.</set>
+			<set name="resistances">cold</set>			
+			<set name="languages">—</set>
+			<set name="skills">Perception +3, Stealth +3</set>
+			<set name="senses">passive Perception 13</set>
+			<set name="type">Monstrosity</set>
+			<set name="size">Small</set>
+			<set name="alignment">typically neutral evil</set>
+			<set name="challenge">1/8</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_WINTER_WOLF_PUP_SNOW_CAMOUFLAGE</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_WINTER_WOLF_PUP_BITE,</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="7" bonus="base" />
+			<stat name="companion:speed" value="45" bonus="base" />
+		</rules>
+	</element>
+	<element name="Snow Camouflage" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_WINTER_WOLF_PUP_SNOW_CAMOUFLAGE">
+		<description>
+			<p>The pup has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.</p>
+		</description>
+		<sheet>
+			<description>The pup has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_WINTER_WOLF_PUP_BITE">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Yarn Golem" type="Companion" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_YARN_GOLEM">
+		<supports>Familiar</supports>
+		<description>
+			<p>The greatest of golems are formed of clay, stone, and iron, but the least of them are constructed of yarn. Balled and sewn into a vaguely humanoid shape, yarn golems are among the first animated objects that arcanists learn to create, practicing with them obsessively until they master the basics and move onto more rigid materials. Yarn golems are friendly and playful, but risk foolishly unraveling themselves if they catch on sharp objects.</p>
+        </description>
+		<setters>
+			<set name="strength">8</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">8</set>
+			<set name="ac">12</set>
+			<set name="hp">2 (1d4)</set>
+			<set name="speed">30 ft.</set>
+			<set name="resistances">piercing</set>
+            <set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">poisoned</set>			
+			<set name="languages">—</set>
+			<set name="senses">passive Perception 10</set>
+			<set name="type">Fiend</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">typically chaotic neutral</set>
+			<set name="challenge">0</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSOS_COMPANION_TRAIT_YARN_GOLEM_FALSE_APPEARANCE,ID_MHP_VSOS_COMPANION_TRAIT_YARN_GOLEM_MUTABLE_FORM</set>
+			<set name="actions">ID_MHP_VSOS_COMPANION_ACTION_YARN_GOLEM_TANGLE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="False Appearance" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_YARN_GOLEM_FALSE_APPEARANCE">
+		<description>
+			<p>While the golem remains motionless, it is indistinguishable from a normal ball of yarn.</p>
+		</description>
+		<sheet>
+			<description>While the golem remains motionless, it is indistinguishable from a normal ball of yarn.</description>
+		</sheet>
+	</element>
+	<element name="Mutable Form" type="Companion Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_TRAIT_YARN_GOLEM_MUTABLE_FORM">
+		<description>
+			<p>Whenever a spell or effect would alter the golem's form, the effect works as normal, except that the new form is always made out of a tangle of yarn.</p>
+		</description>
+		<sheet>
+			<description>Whenever a spell or effect would alter the golem's form, the effect works as normal, except that the new form is always made out of a tangle of yarn.</description>
+		</sheet>
+	</element>
+	<element name="Tangle" type="Companion Action" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_COMPANION_ACTION_YARN_GOLEM_TANGLE">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one creature. Hit: If the target is Medium or smaller, it is grappled (escape DC 12). The yarn golem can only grapple one creature at a time.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: If the target is Medium or smaller, it is grappled (escape DC 12). The yarn golem can only grapple one creature at a time.</description>
+		</sheet>
+	</element>
+</elements>

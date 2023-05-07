@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Near-Human Variant</name>
+		<update version="0.0.1">
+			<file name="race-near-human-variant.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-near-human-variant.xml" />
+		</update>
+	</info>
+    <element name="Near-Human Variant" type="Race Variant" source="Valda's Spire of Secrets" id="ID_RACE_VARIANT_NEAR_HUMAN_VARIANT">
+		<supports>Human</supports>
+		<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+		<description>
+			<p>If your campaign uses the optional feat rules from the Valda's Spire of Secrets book, your Dungeon Master might allow these variant traits, all of which replace the human's Ability Score Increase trait.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span>Two different ability scores of your choice increase by 1.<br />
+				<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
+				<span class="feature">Feat.</span>You gain one feat of your choice.<br />
+			</p>
+		</description>
+		<sheet alt="Near-Human" display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Near-Human Variant)" supports="Human Variant" number="2" />
+			<select type="Proficiency" name="Skill Proficiency (Near-Human Variant)" supports="Skill" />
+			<select type="Feat" name="Feat (Near-Human Variant)" supports="Near-Human Variant"/>
+		</rules>
+	</element>
+
+	<element name="Human" type="Race" source="Player’s Handbook" id="ID_RACE_HUMAN">
+		<description>
+			<p class="flavor">In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that’s why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.</p>
+
+			<h4>A BROAD SPECTRUM</h4>
+			<p>With their penchant for migration and conquest, humans are more physically diverse than other common races. There is no typical human. An individual can stand from 5 feet to a little over 6 feet tall and weigh from 125 to 250 pounds. Human skin shades range from nearly black to very pale, and hair colors from black to blond (curly, kinky, or straight); males might sport facial hair that is sparse or thick. A lot of humans have a dash of nonhuman blood, revealing hints of elf, orc, or other lineages. Humans reach adulthood in their late teens and rarely live even a single century.</p>
+
+			<h4>VARIETY IN ALL THINGS</h4>
+			<p>Humans are the most adaptable and ambitious people among the common races. They have widely varying tastes, morals, and customs in the many different lands where they have settled. When they settle, though, they stay: they build cities to last for the ages, and great kingdoms that can persist for long centuries. An individual human might have a relatively short life span, but a human nation or culture preserves traditions with origins far beyond the reach of any single human’s memory. They live fully in the present—making them well suited to the adventuring life—but also plan for the future, striving to leave a lasting legacy. Individually and as a group, humans are adaptable opportunists, and they stay alert to changing political and social dynamics.</p>
+
+			<h4>LASTING INSTITUTIONS</h4>
+			<p>Where a single elf or dwarf might take on the responsibility of guarding a special location or a powerful secret, humans found sacred orders and institutions for such purposes. While dwarf clans and halfling elders pass on the ancient traditions to each new generation, human temples, governments, libraries, and codes of law fix their traditions in the bedrock of history. Humans dream of immortality, but (except for those few who seek undeath or divine ascension to escape death’s clutches) they achieve it by ensuring that they will be remembered when they are gone.</p>
+			<p class="indent">Although some humans can be xenophobic, in general their societies are inclusive. Human lands welcome large numbers of nonhumans compared to the proportion of humans who live in nonhuman lands.</p>
+
+			<h4>EXEMPLARS OF AMBITION</h4>
+			<p>Humans who seek adventure are the most daring and ambitious members of a daring and ambitious race. They seek to earn glory in the eyes of their fellows by amassing power, wealth, and fame. More than other people, humans champion causes rather than territories or groups.</p>
+
+			<h4>HUMAN NAMES AND ETHNICITIES</h4>
+			<p>Having so much more variety than other cultures, humans as a whole have no typical names. Some human parents give their children names from other languages, such as Dwarvish or Elvish (pronounced more or less correctly), but most parents give names that are linked to their region’s culture or to the naming traditions of their ancestors.</p>
+			<p class="indent">The material culture and physical characteristics of humans can change wildly from region to region. In the Forgotten Realms, for example, the clothing, architecture, cuisine, music, and literature are different in the northwestern lands of the Silver Marches than in distant Turmish or Impiltur to the east—and even more distinctive in far-off Kara-Tur. Human physical characteristics, though, vary according to the ancient migrations of the earliest humans, so that the humans of the Silver Marches have every possible variation of coloration and features.</p>
+			<p class="indent">In the Forgotten Realms, nine human ethnic groups are widely recognized, though over a dozen others are found in more localized areas of Faerûn. These groups, and the typical names of their members, can be used as inspiration no matter which world your human is in.</p>
+
+			<h6>Calishite</h6>
+			<p>Shorter and slighter in build than most other humans, Calishites have dusky brown skin, hair, and eyes. They’re found primarily in southwest Faerûn.</p>
+			<p><span class="feature">Calishite Names:</span>(Male) Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir; (female) Atala, Ceidil, Hama, Jasmal, Meilil, Seipora, Yasheira, Zasheida; (surnames) Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein</p>
+
+			<h6>Chondathan</h6>
+			<p>Chondathans are slender, tawny-skinned folk with brown hair that ranges from almost blond to almost black. Most are tall and have green or brown eyes, but these traits are hardly universal. Humans of Chondathan descent dominate the central lands of Faerûn. around the Inner Sea.</p>
+			<p><span class="feature">Chondathan Names:</span>(Male) Darvin, Dorn, Evendur, Gorstag, Grim, Helm, Malark, Morn, Randal, Stedd; (female) Arveene, Esvele, Jhessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (surnames) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag</p>
+
+			<h6>Damaran</h6>
+			<p>Found primarily in the northwest of Faerûn, Damarans are of moderate height and build, with skin hues ranging from tawny to fair. Their hair is usually brown or black, and their eye color varies widely, though brown is most common.</p>
+			<p><span class="feature">Damaran Names:</span>(Male) Bor, Fodel, Glar, Grigor, Igan, Ivor, Kosef, Mival, Orel, Pavel, Sergor; (female) Alethra, Kara, Katernin, Mara, Natali, Olma, Tana, Zora; (surnames) Bersk, Chernin, Dotsk, Kulenov, Marsk, Nemetsk, Shemov, Starag</p>
+
+			<h6>Illuskan</h6>
+			<p>Illuskans are tall, fair-skinned folk with blue or steely gray eyes. Most have raven-black hair, but those who inhabit the extreme northwest have blond, red, or light brown hair.</p>
+			<p><span class="feature">Illuskan Names:</span>(Male) Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth; (female) Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra; (surnames) Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</p>
+
+			<h6>Mulan</h6>
+			<p>Dominant in the eastern and southeastern shores of the Inner Sea, the Mulan are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown, but in the lands where the Mulan are most prominent, nobles and many other Mulan shave off all their hair.</p>
+			<p><span class="feature">Mulan Names:</span>(Male) Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (female) Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (surnames) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt</p>
+
+			<h6>Rashemi</h6>
+			<p>Most often found east of the Inner Sea and often intermingled with the Mulan, Rashemis tend to be short, stout, and muscular. They usually have dusky skin, dark eyes, and thick black hair.</p>
+			<p><span class="feature">Rashemi Names:</span>(Male) Borivik, Faurgar, Jandar, Kanithar, Madislak, Ralmevik, Shaumar, Vladislak; (female) Fyevarra, Hulmarra, Immith, Imzel, Navarra, Shevarra, Tammith. Yuldra; (surnames) Chergoba, Dyernina, Iltazyara, Murnyethara, Stayanoga, Ulmokina</p>
+
+			<h6>Shou</h6>
+			<p>The Shou are the most numerous and powerful ethnic group in Kara-Tur, far to the east of Faerûn. They are yellowish-bronze in hue, with black hair and dark eyes. Shou surnames are usually presented before the given name.</p>
+			<p><span class="feature">Shou Names:</span>(Male) An, Chen, Chi, Fai, Jiang, Jun, Lian, Long, Meng, On, Shan, Shui, Wen; (female) Bai, Chao, Jia, Lei, Mei, Qiao, Shui, Tai; (surnames) Chien, Huang, Kao, Kung, Lao, Ling, Mei, Pin, Shin, Sum, Tan, Wan</p>
+
+			<h6>Tethyrian</h6>
+			<p>Widespread along the entire Sword Coast at the western edge of Faerûn, Tethyrians are of medium build and height, with dusky skin that tends to grow fairer the farther north they dwell. Their hair and eye color varies widely, but brown hair and blue eyes are the most common. Tethyrians primarily use Chondathan names.</p>
+
+			<h6>Turami</h6>
+			<p>Native to the southern shore of the Inner Sea, the Turami people are generally tall and muscular, with dark mahogany skin, curly black hair, and dark eyes.</p>
+			<p><span class="feature">Turami Names:</span>(Male) Anton, Diero, Marcon, Pieron, Rimardo, Romero, Salazar, Umbero; (female) Balama, Dona, Faila, Jalana, Luisa, Marta, Quara, Selise, Vonda; (surnames) Agosto, Astorio, Calabra, Domine, Falone, Marivaldi, Pisacar, Ramondo</p>
+
+			<h4>HUMAN TRAITS</h4>
+			<p>It’s hard to make generalizations about humans, but your human character has these traits.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span>Your ability scores each increase by 1.<br />
+				<span class="feature">Age.</span>Humans reach adulthood in their late teens and live less than a century.<br />
+				<!-- (removed in Errata v3.0) -->
+				<!-- <span class="feature">Alignment.</span>Humans tend toward no particular alignment. The best and the worst are found among them.<br /> -->
+				<span class="feature">Size.</span>Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.<br />
+			</p>
+			<div element="ID_RACE_VARIANT_HUMAN_VARIANT"/>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+			<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+			<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_NEAR_HUMAN_VARIANT||ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
+			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_NEAR_HUMAN_VARIANT||ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
+			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_NEAR_HUMAN_VARIANT||ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
+			<stat name="intelligence" value="1" requirements="!(ID_RACE_VARIANT_NEAR_HUMAN_VARIANT||ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
+			<stat name="wisdom" value="1" requirements="!(ID_RACE_VARIANT_NEAR_HUMAN_VARIANT||ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
+			<stat name="charisma" value="1" requirements="!(ID_RACE_VARIANT_NEAR_HUMAN_VARIANT||ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />      
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />	  
+			<select type="Language" name="Language (Human)" supports="Standard||Exotic" requirements="!ID_UA_PS_GRANTS_HUMAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING"/>
+			<select type="Race Variant" name="Human Variant" supports="Human" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Aberrant Spawn" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_ABERRANT_SPAWN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>You were somehow mutated or created by an aberration, such as an aboleth, and you suffer from strange deformities as a result. Due to these changes, you have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Aberrant Mind.</strong> You have advantage on saving throws you make to avoid or end the charmed condition on yourself and against any effect that would sense your emotions or read your thoughts.</p>
+			<p class="indent"><strong>Psychic Resistance.</strong> You have resistance to psychic damage.</p>
+			<p class="indent"><strong>Tentacle.</strong> At least one of your limbs is muscular, rubbery, and pliant, acting as a tentacle that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Aberrant Spawn)" supports="Human Variant"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<select type="Racial Trait" name="Aberrant Mind" supports="ID_MHP_VSOS_RACIAL_TRAIT_ABERRANT_MIND" default="ID_MHP_VSOS_RACIAL_TRAIT_ABERRANT_MIND" />
+			<select type="Racial Trait" name="Tentacle" supports="ID_MHP_VSOS_RACIAL_TRAIT_TENTACLE" default="ID_MHP_VSOS_RACIAL_TRAIT_TENTACLE"/>
+		</rules>
+	</element>
+	<element name="Aberrant Mind" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ABERRANT_MIND">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_ABERRANT_MIND</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition on yourself and against any effect that would sense your emotions or read your thoughts.</p>
+		</description>
+		<sheet>
+			<description> You have advantage on saving throws you make to avoid or end the charmed condition on yourself and against any effect that would sense your emotions or read your thoughts.</description>
+		</sheet>
+	</element>
+	<element name="Tentacle" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TENTACLE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_TENTACLE</supports>
+		<compendium display="false" />
+		<description>
+			<p>At least one of your limbs is muscular, rubbery, and pliant, acting as a tentacle that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description> One of your limbs acts as a tentacle that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6+{{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Aquanaut" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_AQUANAUT">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>One of your parents is a merfolk, or you are distantly descended from the Elemental Plane of Water; consequently, you have aquatic features like gills, webbed fingers and toes, and fishlike scales, which grant you the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Aquatic.</strong> You can breathe air and water.</p>
+			<p class="indent"><strong>Finned.</strong> You have a swimming speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Aquanaut)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Aquatic" supports="ID_MHP_VSOS_RACIAL_TRAIT_AQUATIC" default="ID_MHP_VSOS_RACIAL_TRAIT_AQUATIC" />
+			<select type="Racial Trait" name="Finned" supports="ID_MHP_VSOS_RACIAL_TRAIT_FINNED" default="ID_MHP_VSOS_RACIAL_TRAIT_FINNED"/>
+		</rules>
+	</element>
+	<element name="Aquatic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_AQUATIC">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_AQUATIC</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description> You can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Finned" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FINNED">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_FINNED</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have a swimming speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description> You have a swimming speed equal to your walking speed.</description>
+		</sheet>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="base"/>
+        </rules>
+	</element>
+
+    <element name="Arachne" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_ARACHNE">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Much like drow, humans can be corrupted by the magic of the drow goddess, becoming arachne — humans with eight eyes and coarse, black hair. Sometimes these humans are the offspring of driders or drow priestesses, while other times they bear the marks of a ritual sacrifice gone terribly awry.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Darkvision.</strong> You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong>Spider Magic.</strong> You know the <i>poison spray</i> cantrip. Starting at 3rd level, you can cast the <i>bane</i> spell with this trait. Starting at 5th level, you can also cast the <i>spider climb</i> spell with this trait. Once you cast <i>bane</i> or <i>spider climb</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Arachne)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Spider Magic" supports="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC" default="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC"/>
+            <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+		</rules>
+	</element>
+    <element name="Spider Magic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC</supports>
+		<compendium display="false" />
+		<description>
+			<p>You know the <i>poison spray</i> cantrip. Starting at 3rd level, you can cast the <i>bane</i> spell with this trait. Starting at 5th level, you can also cast the <i>spider climb</i> spell with this trait. Once you cast <i>bane</i> or <i>spider climb</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Ability (Spider Magic)" supports="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC_INTELLIGENCE|ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC_WISDOM|ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC_CHARISMA" />
+            <grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" level="5" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the <i>poison spray</i>, <i>bane</i> and <i>spider climb</i> spells.</p>
+		</description>
+		<sheet alt="Spider Magic">
+			<description>You know the poison spray cantrip. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know the poison spray cantrip. You can cast bane spell once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know the poison spray cantrip. You can cast bane or spider climb spells once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the <i>poison spray</i>, <i>bane</i> and <i>spider climb</i> spells.</p>
+		</description>
+		<sheet alt="Spider Magic">
+			<description>You know the poison spray cantrip. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the poison spray cantrip. You can cast bane spell once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the poison spray cantrip. You can cast bane or spider climb spells once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIDER_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the <i>poison spray</i>, <i>bane</i> and <i>spider climb</i> spells.</p>
+		</description>
+		<sheet alt="Spider Magic">
+			<description>You know the poison spray cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the poison spray cantrip. You can cast bane spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the poison spray cantrip. You can cast bane or spider climb spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+
+    <element name="Beastman" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_BEASTMAN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>With a short tail, coarse fur covering your face, and long teeth and claws, you appear more like a ferocious beast than a man. Perhaps your parentage includes a werecreature or an intelligent beast, granting you the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Claws.</strong> You have sharp claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong>Keen Smell.</strong> You have advantage on Wisdom (Perception) checks made to smell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Beastman)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Claws" supports="ID_MHP_VSOS_RACIAL_TRAIT_CLAWS" default="ID_MHP_VSOS_RACIAL_TRAIT_CLAWS"/>
+			<select type="Racial Trait" name="Keen Smell" supports="ID_MHP_VSOS_RACIAL_TRAIT_KEEN_SMELL2" default="ID_MHP_VSOS_RACIAL_TRAIT_KEEN_SMELL2"/>
+		</rules>
+	</element>
+    <element name="Claws" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CLAWS">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_CLAWS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have sharp claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have sharp claws that you can use to make unarmed strikes. If you hit with them, you deal damage equal to 1d6 + STR modifier slashing damage.</description>
+		</sheet>
+	</element>
+    <element name="Keen Smell" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_KEEN_SMELL2">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_KEEN_SMELL2</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks made to smell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks made to smell.</description>
+		</sheet>
+	</element>
+
+    <element name="Firebrand" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_FIREBRAND">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Born, imbued with, or later marked by the powers of Elemental Fire, these near-humans have an affinity for fire magic. Their heritage makes them dangerous adversaries in combat, as does the volatile nature of their innate powers. Firebrands are human in shape, but have deep red skin and flames behind their eyes. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Fire Resistance.</strong> You have resistance to fire damage.</p>
+			<p class="indent"><strong>Flame Magic.</strong> You know the <i>poison spray</i> cantrip. Starting at 3rd level, you can cast the <i>bane</i> spell with this trait. Starting at 5th level, you can also cast the <i>spider climb</i> spell with this trait. Once you cast <i>bane</i> or <i>spider climb</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Firebrand)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Flame Magic" supports="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC" default="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+    <element name="Flame Magic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC</supports>
+		<compendium display="false" />
+		<description>
+			<p>You know the <i>produce flame</i> cantrip. Starting at 3rd level, you can cast the <i>burning hands</i> spell with this trait. Starting at 5th level, you can also cast the <i>flaming sphere</i> spell with this trait. Once you cast <i>burning hands</i> or <i>flaming sphere</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Ability (Flame Magic)" supports="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC_INTELLIGENCE|ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC_WISDOM|ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC_CHARISMA" />
+            <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="5" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the <i>produce flame</i>, <i>burning hands</i> and <i>flaming sphere</i> spells.</p>
+		</description>
+		<sheet alt="Flame Magic">
+			<description>You know the produce flame cantrip. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know the produce flame cantrip. You can cast burning hands spell once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know the produce flame cantrip. You can cast burning hands and flaming sphere spells once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the <i>produce flame</i>, <i>burning hands</i> and <i>flaming sphere</i> spells.</p>
+		</description>
+		<sheet alt="Flame Magic">
+			<description>You know the produce flame cantrip. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the produce flame cantrip. You can cast burning hands spell once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the produce flame cantrip. You can cast burning hands and flaming sphere spells once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FLAME_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the <i>produce flame</i>, <i>burning hands</i> and <i>flaming sphere</i> spells.</p>
+		</description>
+		<sheet alt="Flame Magic">
+			<description>You know the produce flame cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the produce flame cantrip. You can cast burning hands spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the produce flame cantrip. You can cast burning hands and flaming sphere spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+
+    <element name="Green Skin" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GREEN_SKIN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Your people metabolize by basking in the sunlight. Aided by your tough, photosynthetic skin, you gain the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Natural Armor.</strong> Your skin acts as a tough natural armor. When you aren't wearing armor, your base AC equals 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+			<p class="indent"><strong>Photosynthetic Resilience.</strong> You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Green Skin)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Natural Armor" supports="ID_MHP_VSOS_RACIAL_TRAIT_NATURAL_ARMOR" default="ID_MHP_VSOS_RACIAL_TRAIT_NATURAL_ARMOR"/>
+			<select type="Racial Trait" name="Photosynthetic Resilience" supports="ID_MHP_VSOS_RACIAL_TRAIT_PHOTOSYNTHETIC_RESILIENCE" default="ID_MHP_VSOS_RACIAL_TRAIT_PHOTOSYNTHETIC_RESILIENCE"/>
+		</rules>
+	</element>
+    <element name="Natural Armor" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_NATURAL_ARMOR">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_NATURAL_ARMOR</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your skin acts as a tough natural armor. When you aren't wearing armor, your base AC equals 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet>
+			<description>Your skin provides you an AC of {{ac:calculation}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal.</description>
+		</sheet>
+        <rules>
+			<stat name="ac:natural armor:greenskin" value="12" bonus="base" />
+            <stat name="ac:natural armor:greenskin" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:natural armor:greenskin" bonus="calculation" equipped="![armor:any]" alt="Natural Armor (Green Skin)" />
+		</rules>
+	</element>
+    <element name="Photosynthetic Resilience" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PHOTOSYNTHETIC_RESILIENCE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_PHOTOSYNTHETIC_RESILIENCE</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+	</element>
+
+    <element name="Grendel" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GRENDEL">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>The children of goblins, hobgoblins, and bugbears with humans are known as grendels. Despite their varied heritage, grendels don't quite resemble either of their parents, with green- or orange-tanned skin, coarse hair, and three knuckles on each finger.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Size.</strong> Unlike other humans, you are Medium or Small, depending on your heritage.</p>
+			<p class="indent"><strong>Darkvision.</strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong>Fey Ancestry.</strong> You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+			<p class="indent"><strong>Grendel Ambition.</strong> On your first turn in combat, you can add your proficiency bonus to your attack rolls, ability checks, and saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Grendel)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Size (Grendel)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Fey Ancestry" supports="ID_MHP_VSOS_RACIAL_TRAIT_FEY_ANCESTRY" default="ID_MHP_VSOS_RACIAL_TRAIT_FEY_ANCESTRY"/>
+            <select type="Racial Trait" name="Grendel Ambition" supports="ID_MHP_VSOS_RACIAL_TRAIT_GRENDEL_AMBITION" default="ID_MHP_VSOS_RACIAL_TRAIT_GRENDEL_AMBITION"/>		
+        </rules>
+	</element>
+    <element name="Fey Ancestry" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FEY_ANCESTRY">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_FEY_ANCESTRY</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</description>
+		</sheet>
+	</element>
+    <element name="Grendel Ambition" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_GRENDEL_AMBITION">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_GRENDEL_AMBITION</supports>
+		<compendium display="false" />
+		<description>
+			<p>On your first turn in combat, you can add your proficiency bonus to your attack rolls, ability checks, and saving throws.</p>
+		</description>
+		<sheet>
+			<description>On your first turn in combat, you can add your proficiency bonus to your attack rolls, ability checks, and saving throws.</description>
+		</sheet>
+	</element>
+
+    <element name="Grue" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_GRUE">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>One of your parents was a creature of darkness, such as a shadow or a native of the Plane of Shadow. Grues, such as yourself, have blackened skin and cast a shadow in all directions, even when directly in light. In shadows, you are nearly invisible. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Darkvision.</strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong>Covert.</strong> When you are hidden and a creature discovers you with a successful Wisdom (Perception) check, you can reattempt your Dexterity (Stealth) check to hide. On a success, you silently reposition yourself and the creature doesn't notice you.</p>
+            <p class="indent">Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Grue)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Covert" supports="ID_MHP_VSOS_RACIAL_TRAIT_COVERT" default="ID_MHP_VSOS_RACIAL_TRAIT_COVERT"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+    <element name="Covert" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_COVERT">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_COVERT</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you are hidden and a creature discovers you with a successful Wisdom (Perception) check, you can reattempt your Dexterity (Stealth) check to hide. On a success, you silently reposition yourself and the creature doesn't notice you.</p>
+            <p class="indent">Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you are hidden and a creature discovers you with a successful WIS (Perception) check, you can reattempt your DEX (Stealth) check to hide. On a success, you silently reposition yourself and the creature doesn't notice you.</description>
+		</sheet>
+	</element>
+
+	<element name="Insectoid" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_INSECTOID">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Insectoids bear one or two insectlike features, such as prominent compound eyes or chitinous plates, but almost always have a pair of sensitive antennae atop their heads.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Blindsight.</strong> Due to your antennae, you have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<p class="indent"><strong>Regenerative.</strong> If any part of your body is amputated, but its amputation doesn't kill you, you can fully regrow that part of your body in 24 hours.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Insectoid)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Blindsight" supports="ID_MHP_VSOS_RACIAL_TRAIT_BLINDSIGHT" default="ID_MHP_VSOS_RACIAL_TRAIT_BLINDSIGHT"/>
+			<select type="Racial Trait" name="Regenerative" supports="ID_MHP_VSOS_RACIAL_TRAIT_REGENERATIVE" default="ID_MHP_VSOS_RACIAL_TRAIT_REGENERATIVE"/>
+		</rules>
+	</element>
+    <element name="Blindsight" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BLINDSIGHT">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_BLINDSIGHT</supports>
+		<compendium display="false" />
+		<description>
+			<p>Due to your antennae, you have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+		</description>
+		<sheet>
+			<description>Due to your antennae, you have blindsight with a range of 10ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="10" bonus="base" />
+		</rules>
+	</element>
+	<element name="Regenerative" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_REGENERATIVE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_REGENERATIVE</supports>
+		<compendium display="false" />
+		<description>
+			<p>If any part of your body is amputated, but its amputation doesn't kill you, you can fully regrow that part of your body in 24 hours.</p>
+		</description>
+		<sheet>
+			<description>If any part of your body is amputated, but its amputation doesn't kill you, you can fully regrow that part of your body in 24 hours.</description>
+		</sheet>
+	</element>
+
+	<element name="Immortal" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_IMMORTAL">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>According to legend, a human can achieve immortality by replacing their heart with a mote of celestial radiance. The secret to immortality, including the elixirs and rituals needed to achieve it, is protected by a small, clandestine sect of immortal mystics, each of who only know one component of the process. There are perhaps only a dozen true immortals in the world, but as many as hundreds if every tale can be believed.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Ageless.</strong> You don't age, can't be aged magically, and suffer none of the frailty of old age. You can't die of old age.</p>
+			<p class="indent"><strong>Immortal Resilience.</strong> You have advantage on saving throws you make to avoid or end diseases and the poisoned condition yourself. You also have resistance to poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Immortal)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Ageless" supports="ID_MHP_VSOS_RACIAL_TRAIT_AGELESS" default="ID_MHP_VSOS_RACIAL_TRAIT_AGELESS"/>
+			<select type="Racial Trait" name="Immortal Resilience" supports="ID_MHP_VSOS_RACIAL_TRAIT_IMMORTAL_RESILIENCE" default="ID_MHP_VSOS_RACIAL_TRAIT_IMMORTAL_RESILIENCE"/>
+		</rules>
+	</element>
+    <element name="Ageless" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_AGELESS">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_AGELESS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You don't age, can't be aged magically, and suffer none of the frailty of old age. You can't die of old age.</p>
+		</description>
+		<sheet>
+			<description>You don't age, can't be aged magically, and suffer none of the frailty of old age. You can't die of old age.</description>
+		</sheet>
+	</element>
+	<element name="Immortal Resilience" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_IMMORTAL_RESILIENCE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_IMMORTAL_RESILIENCE</supports>
+		<compendium display="false" />
+		<description>
+			<p>If any part of your body is amputated, but its amputation doesn't kill you, you can fully regrow that part of your body in 24 hours.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end diseases and the poisoned condition yourself. You also have resistance to poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Mul" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_MUL">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>One of your parents was a human and the other was a dwarf. Such a pairing is unlikely to have produced offspring, but you have defied the odds to join the ranks of the sturdy and resilient muls. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Darkvision.</strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong>Armor Acclimation.</strong> Your speed is not reduced by wearing heavy armor and you never have disadvantage on Dexterity (Stealth) checks as a result of wearing heavy armor.</p>
+			<p class="indent"><strong>Dwarven Toughness.</strong> Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Ability Score Increase (Mul)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Armor Acclimation" supports="ID_MHP_VSOS_RACIAL_TRAIT_ARMOR_ACCLIMATION" default="ID_MHP_VSOS_RACIAL_TRAIT_ARMOR_ACCLIMATION"/>
+			<select type="Racial Trait" name="Dwarven Toughness" supports="ID_MHP_VSOS_RACIAL_TRAIT_DWARVEN_TOUGHNESS" default="ID_MHP_VSOS_RACIAL_TRAIT_DWARVEN_TOUGHNESS"/>
+		</rules>
+	</element>
+    <element name="Armor Acclimation" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ARMOR_ACCLIMATION">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_ARMOR_ACCLIMATION</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your speed is not reduced by wearing heavy armor and you never have disadvantage on Dexterity (Stealth) checks as a result of wearing heavy armor.</p>
+		</description>
+		<sheet>
+			<description>While wearing heavy armor, your speed is not reduced and you never have disadvantage on DEX(Stealth) checks.</description>
+		</sheet>
+	</element>
+	<element name="Dwarven Toughness" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_DWARVEN_TOUGHNESS">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_DWARVEN_TOUGHNESS</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+		</description>
+		<sheet>
+			<description>Your max hp increases by 1, and it increases by 1 every time you gain a level.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+
+	<element name="Ogre-Blooded" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_OGREBLOODED">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Your coarse features and monstrous build betray that one of your parents is an ogre. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Darkvision.</strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong>Monstrous Strength.</strong> You gain proficiency in the Athletics skill. Additionally, when you make a Strength (Athletics) check, you can treat the result as a 10, or your level plus your Strength modifier, whichever is higher.</p>
+			<p class="indent"><strong>Powerful Build.</strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Ability Score Increase (Ogre-Blooded)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Monstrous Strength" supports="ID_MHP_VSOS_RACIAL_TRAIT_MONSTROUS_STRENGTH" default="ID_MHP_VSOS_RACIAL_TRAIT_MONSTROUS_STRENGTH"/>
+			<select type="Racial Trait" name="Powerful Build" supports="ID_MHP_VSOS_RACIAL_TRAIT_POWERFUL_BUILD" default="ID_MHP_VSOS_RACIAL_TRAIT_POWERFUL_BUILD"/>
+		</rules>
+	</element>
+    <element name="Monstrous Strength" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_MONSTROUS_STRENGTH">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_MONSTROUS_STRENGTH</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Athletics skill. Additionally, when you make a Strength (Athletics) check, you can treat the result as a 10, or your level plus your Strength modifier, whichever is higher.</p>
+		</description>
+		<sheet>
+			<description>When you make a Strength (Athletics) check, you can treat the result as a 10, or your level plus your Strength modifier, whichever is higher.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_POWERFUL_BUILD">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_POWERFUL_BUILD</supports>
+		<compendium display="false" />
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Owlbearman" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_OWLBEARMAN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>You are a hulking thing of feathers, flesh, and fur; half-man, half-bear, and half-owl. None can say for sure what you are, other than the result of some mad wizard meddling in the gods' domain. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Beak.</strong> You have a long, hooked beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong>Owlbear Wrestling.</strong> You can attempt to grapple creatures two size categories larger than yourself, and you have advantage on grappling checks you make on your turn against creatures that are at least one size category smaller than you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Owlbearman)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Beak" supports="ID_MHP_VSOS_RACIAL_TRAIT_BEAK" default="ID_MHP_VSOS_RACIAL_TRAIT_BEAK"/>
+			<select type="Racial Trait" name="Owlbear Wrestling" supports="ID_MHP_VSOS_RACIAL_TRAIT_OWLBEAR_WRESTLING" default="ID_MHP_VSOS_RACIAL_TRAIT_OWLBEAR_WRESTLING"/>
+		</rules>
+	</element>
+    <element name="Beak" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BEAK">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_BEAK</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have a long, hooked beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You can use your beak for unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Owlbear Wrestling" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_OWLBEAR_WRESTLING">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_OWLBEAR_WRESTLING</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can attempt to grapple creatures two size categories larger than yourself, and you have advantage on grappling checks you make on your turn against creatures that are at least one size category smaller than you.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to grapple creatures two size categories larger than yourself, and you have advantage on grappling checks you make on your turn against creatures that are at least one size category smaller than you.</description>
+		</sheet>
+	</element>
+
+	<element name="Porterling" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_PORTERLING">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>You are a porterling, parented both by a human and either a gnome or a halfling. You stand about as tall as a dwarf, but are far leaner—and if fathered by a gnome, also somewhat top-heavy. Though they are often confused for dwarves, porterlings can only rarely grow large or thick beards. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Flexible.</strong> You have a long, hooked beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong>Springheel Leap.</strong> You have a long, hooked beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong>Squeeze.</strong> You can attempt to grapple creatures two size categories larger than yourself, and you have advantage on grappling checks you make on your turn against creatures that are at least one size category smaller than you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Porterling)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Flexible" supports="ID_MHP_VSOS_RACIAL_TRAIT_FLEXIBLE" default="ID_MHP_VSOS_RACIAL_TRAIT_FLEXIBLE"/>
+			<select type="Racial Trait" name="Springheel Leap" supports="ID_MHP_VSOS_RACIAL_TRAIT_SPRINGHEEL_LEAP" default="ID_MHP_VSOS_RACIAL_TRAIT_SPRINGHEEL_LEAP"/>
+			<select type="Racial Trait" name="Squeeze" supports="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE" default="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE"/>
+		</rules>
+	</element>
+    <element name="Flexible" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FLEXIBLE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_FLEXIBLE</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on checks you make to escape grapple or to slip bindings.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on checks you make to escape grapple or to slip bindings.</description>
+		</sheet>
+	</element>
+	<element name="Springheel Leap" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPRINGHEEL_LEAP">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_SPRINGHEEL_LEAP</supports>
+		<compendium display="false" />
+		<description>
+			<p>Whenever you make a long jump or a high jump, you can roll a d8 and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a long jump or a high jump, you can add 1d8 to the number of ft you cover, even when making a standing jump. This extra distance costs movement as normal.</description>
+		</sheet>
+	</element>
+	<element name="Squeeze" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE</supports>
+		<compendium display="false" />
+		<description>
+			<p>You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</p>
+		</description>
+		<sheet>
+			<description>You suffer no penalty for squeezing into a space that fits a creature one size smaller than you.</description>
+		</sheet>
+	</element>
+
+	<element name="Psionic" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_PSIONIC">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Most humans possess some dull psionic potential, but those who unlock their psionic spark transcend their peers. Sometimes, these humans are indistinguishable from ordinary folks, but other times their psionic awakening leaves a tell-tale mark: stark white hair, glowing pupils, or hair and clothing that float and drift around them.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Empathy.</strong> You can use your action to probe the surface level of a creature's emotions. You must be able to see the creature and it must be within 30 feet and have an Intelligence of 3 or higher. You learn the creature's emotional state and, at the GM's discretion, one of the creature's Bonds.</p>
+			<p class="indent"><strong>Psionics.</strong> You know the <i>mage hand</i> cantrip, and the hand is invisible when you cast the cantrip with this trait.</p>
+			<p class="indent">Starting at 3rd level, you can cast the <i>unseen servant</i> spell with this trait. Starting at 5th level, you can also cast the <i>levitate</i> spell with this trait. Once you cast <i>unseen servant</i> or <i>levitate</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Psionic)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Empathy" supports="ID_MHP_VSOS_RACIAL_TRAIT_EMPATHY" default="ID_MHP_VSOS_RACIAL_TRAIT_EMPATHY"/>
+			<select type="Racial Trait" name="Psionics" supports="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS" default="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS"/>
+		</rules>
+	</element>
+    <element name="Empathy" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_EMPATHY">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_EMPATHY</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can use your action to probe the surface level of a creature's emotions. You must be able to see the creature and it must be within 30 feet and have an Intelligence of 3 or higher. You learn the creature's emotional state and, at the GM's discretion, one of the creature's Bonds.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can probe the surface level of a creature's emotions. You must be able to see the creature and it must be within 30 feet and have an INT of 3 or higher. You learn the creature's emotional state and, at the GM's discretion, one of its Bonds.</description>
+		</sheet>
+	</element>
+	<element name="Psionics" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You know the <i>mage hand</i> cantrip, and the hand is invisible when you cast the cantrip with this trait.</p>
+			<p class="indent">Starting at 3rd level, you can cast the <i>unseen servant</i> spell with this trait. Starting at 5th level, you can also cast the <i>levitate</i> spell with this trait. Once you cast <i>unseen servant</i> or <i>levitate</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Psionics" supports="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS_INTELLIGENCE|ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS_WISDOM|ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS_CHARISMA" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" level="5" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the <i>mage hand</i>, <i>unseen servant</i> and <i>levitate</i> spells.</p>
+		</description>
+		<sheet alt="Psionics">
+			<description>You know the mage hand cantrip, and the hand is invisible when cast with this trait. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know the mage hand cantrip, and the hand is invisible when cast with this trait. You can cast unseen servant spell once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know the mage hand cantrip, and the hand is invisible when cast with this trait. You can cast unseen servant or levitate spells once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the <i>mage hand</i>, <i>unseen servant</i> and <i>levitate</i> spells.</p>
+		</description>
+		<sheet alt="Psionics">
+			<description>You know the mage hand cantrip, and the hand is invisible when cast with this trait. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the mage hand cantrip, and the hand is invisible when cast with this trait. You can cast unseen servant spell once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the mage hand cantrip, and the hand is invisible when cast with this trait. You can cast unseen servant or levitate spells once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PSIONICS_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the <i>mage hand</i>, <i>unseen servant</i> and <i>levitate</i> spells.</p>
+		</description>
+		<sheet alt="Psionics">
+			<description>You know the mage hand cantrip, and the hand is invisible when cast with this trait. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the mage hand cantrip, and the hand is invisible when cast with this trait. You can cast unseen servant spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the mage hand cantrip, and the hand is invisible when cast with this trait. You can cast unseen servant or levitate spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Proto-Man" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_PROTOMAN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>You come from a place of massive flora and ancient creatures; your people are hearty and robust, much like very early humans. You gain the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Brave.</strong> You have advantage on saving throws you make to avoid or end the frightened condition on yourself.</p>
+			<p class="indent"><strong>Primal Recovery.</strong> When you take a short rest, you can automatically regain 1 hit die and can choose to spend it immediately. Once you use this trait, you can't use this trait again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Proto-Man)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Brave" supports="ID_MHP_VSOS_RACIAL_TRAIT_BRAVE" default="ID_MHP_VSOS_RACIAL_TRAIT_BRAVE"/>
+			<select type="Racial Trait" name="Primal Recovery" supports="ID_MHP_VSOS_RACIAL_TRAIT_PRIMAL_RECOVERY" default="ID_MHP_VSOS_RACIAL_TRAIT_PRIMAL_RECOVERY"/>
+		</rules>
+	</element>
+    <element name="Brave" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_BRAVE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_BRAVE</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the frightened condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the frightened condition on yourself.</description>
+		</sheet>
+	</element>
+	<element name="Primal Recovery" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PRIMAL_RECOVERY">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_PRIMAL_RECOVERY</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take a short rest, you can automatically regain 1 hit die and can choose to spend it immediately. Once you use this trait, you can't use this trait again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you take a short rest, you can automatically regain 1 hit die and can choose to spend it immediately.</description>
+		</sheet>
+	</element>
+
+	<element name="Reptiloid" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_REPTILOID">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>You bear the abrasive skin, slitted eyes, and split tongue of a reptile—perhaps due to a dragonborn or kobold parent—which grant you the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Acid Spit.</strong> When you take the Attack action on your turn, you can replace one of your attacks with a lob of acid from your mouth. This is a special ranged attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. On a hit, the target takes 1d10 acid damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+			<p class="indent">You can use your Acid Spit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Reptiloid)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Acid Spit" supports="ID_MHP_VSOS_RACIAL_TRAIT_ACID_SPIT" default="ID_MHP_VSOS_RACIAL_TRAIT_ACID_SPIT"/>
+		</rules>
+	</element>
+    <element name="Acid Spit" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ACID_SPIT">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_ACID_SPIT</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a lob of acid from your mouth. This is a special ranged attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. On a hit, the target takes 1d10 acid damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+			<p class="indent">You can use your Acid Spit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you take the Attack action on your turn, you can replace one of your attacks with a lob of acid from your mouth. This is a special ranged attack with a range of 30ft. You are proficient with it, and you add your DEX mod to its attack and damage rolls. On a hit, the target takes {{spit}}d10+{{dexterity:modifier}} acid damage.</description>
+		</sheet>
+		<rules>
+			<stat name="spit" value="1" bonus="base" level="1"/>
+			<stat name="spit" value="2" bonus="base" level="5"/>
+			<stat name="spit" value="3" bonus="base" level="11"/>
+			<stat name="spit" value="4" bonus="base" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Roguean" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_ROGUEAN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>You hail from an icy, desolate land, prone to dramatic swings in temperature. Surviving the interminable harshness of your home gives you the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Darkvision.</strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong>Cold Resistance.</strong> You have resistance to cold damage.</p>
+			<p class="indent"><strong>Extremophile.</strong> You can tolerate temperatures as low as -100 degrees Fahrenheit and as high as 300 degrees Fahrenheit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Ability Score Increase (Roguean)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Cold Resistance" supports="ID_MHP_VSOS_RACIAL_TRAIT_COLD_RESISTANCE2" default="ID_MHP_VSOS_RACIAL_TRAIT_COLD_RESISTANCE2"/>
+			<select type="Racial Trait" name="Extremophile" supports="ID_MHP_VSOS_RACIAL_TRAIT_EXTREMOPHILE" default="ID_MHP_VSOS_RACIAL_TRAIT_EXTREMOPHILE"/>
+		</rules>
+	</element>
+    <element name="Cold Resistance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_COLD_RESISTANCE2">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_COLD_RESISTANCE2</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Extremophile" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_EXTREMOPHILE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_EXTREMOPHILE</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can tolerate temperatures as low as -100 degrees Fahrenheit and as high as 300 degrees Fahrenheit.</p>
+		</description>
+		<sheet>
+			<description>You can tolerate temperatures as low as -100°F and as high as 300°F.</description>
+		</sheet>
+	</element>
+
+	<element name="Stoneborn" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_STONEBORN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>With cracked and abrasive skin, stoneborn appear as if they were roughly hewn from granite and have similarly rigid personalities. These near-humans are proud of their connection to Elemental Earth and believe themselves conquerors, fated to rule over every stone. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Stony Skin.</strong> You have a +1 bonus to Armor Class.</p>
+			<p class="indent"><strong>Sure-Footed.</strong> You have advantage on ability checks and saving throws you make to resist being knocked prone or moved against your will.</p>
+			<p class="indent"><strong>Oresight.</strong> By placing your hand on natural stone and using your action to focus, you can feel the presence of any natural gems or metals within 100 feet of you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Stoneborn)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Stony Skin" supports="ID_MHP_VSOS_RACIAL_TRAIT_STONY_SKIN" default="ID_MHP_VSOS_RACIAL_TRAIT_STONY_SKIN"/>
+			<select type="Racial Trait" name="Sure-Footed" supports="ID_MHP_VSOS_RACIAL_TRAIT_SUREFOOTED" default="ID_MHP_VSOS_RACIAL_TRAIT_SUREFOOTED"/>
+			<select type="Racial Trait" name="Oresight" supports="ID_MHP_VSOS_RACIAL_TRAIT_ORESIGHT" default="ID_MHP_VSOS_RACIAL_TRAIT_ORESIGHT"/>
+		</rules>
+	</element>
+    <element name="Stony Skin" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_STONY_SKIN">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_STONY_SKIN</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have a +1 bonus to Armor Class.</p>
+		</description>
+		<sheet>
+			<description>You have a +1 bonus to Armor Class.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Sure-Footed" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SUREFOOTED">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_SUREFOOTED</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on ability checks and saving throws you make to resist being knocked prone or moved against your will.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on ability checks and saving throws you make to resist being knocked prone or moved against your will.</description>
+		</sheet>
+	</element>
+	<element name="Oresight" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ORESIGHT">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_ORESIGHT</supports>
+		<compendium display="false" />
+		<description>
+			<p>By placing your hand on natural stone and using your action to focus, you can feel the presence of any natural gems or metals within 100 feet of you.</p>
+		</description>
+		<sheet action="Action">
+			<description>By placing your hand on natural stone, you can feel the presence of any natural gems or metals within 100ft of you.</description>
+		</sheet>
+	</element>
+
+	<element name="Stheno" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_STHENO">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>The offspring of medusas —named sthenos— are usually conceived before the mother begins their transformation. With sharp features and a nest of snakes for hair, sthenos can be easily mistaken for their monstrous parent, but possess a gaze that falls short of turning people into stone.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Immobilizing Gaze.</strong> When you take the Attack action on your turn, you can replace one of your attacks with an immobilizing gaze. Choose a creature you can see within 60 feet of you that can see you to make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). A creature that is immune to being restrained automatically succeeds this saving throw. On a failed save, the creature is incapacitated and its speed becomes 0 until the start of your next turn.</p>
+			<p class="indent">You can use your Immobilizing Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Stheno)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Immobilizing Gaze" supports="ID_MHP_VSOS_RACIAL_TRAIT_IMMOBILIZING_GAZE" default="ID_MHP_VSOS_RACIAL_TRAIT_IMMOBILIZING_GAZE"/>
+		</rules>
+	</element>
+    <element name="Immobilizing Gaze" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_IMMOBILIZING_GAZE">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_IMMOBILIZING_GAZE</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an immobilizing gaze. Choose a creature you can see within 60 feet of you that can see you to make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). A creature that is immune to being restrained automatically succeeds this saving throw. On a failed save, the creature is incapacitated and its speed becomes 0 until the start of your next turn.</p>
+			<p class="indent">You can use your Immobilizing Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you take the Attack action on your turn, you can replace one of your attacks with an immobilizing gaze. Choose a creature you can see within 60ft of you that can see you to make a DC{{immobilizing gaze:dc}} CON save. A creature that is immune to being restrained automatically succeeds this saving throw. On a failed save, the creature is incapacitated and its speed becomes 0 until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="immobilizing gaze:dc" value="8" />
+			<stat name="immobilizing gaze:dc" value="constitution:modifier" />
+			<stat name="immobilizing gaze:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Tauran" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_TAURAN">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Your large nose, strong jaw, and wide head do much to reveal your distantly bovine nature, but the prominent bull-horns atop your head reveal to all that you are half-minotaur. Taurans tower over most people and can solve mazes with ease, but typically possess only a shadow of their minotaur parent's might. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Horns.</strong> You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong>Labyrinthine Recall.</strong> You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track.</p>
+			<p class="indent"><strong>Rush.</strong> On any turn in which you only move in a straight line, your speed increases by 10 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Tauran)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Horns" supports="ID_MHP_VSOS_RACIAL_TRAIT_HORNS2" default="ID_MHP_VSOS_RACIAL_TRAIT_HORNS2"/>
+			<select type="Racial Trait" name="Labyrinthine Recall" supports="ID_MHP_VSOS_RACIAL_TRAIT_LABYRINTHINE_RECALL" default="ID_MHP_VSOS_RACIAL_TRAIT_LABYRINTHINE_RECALL"/>
+			<select type="Racial Trait" name="Rush" supports="ID_MHP_VSOS_RACIAL_TRAIT_RUSH" default="ID_MHP_VSOS_RACIAL_TRAIT_RUSH"/>
+		</rules>
+	</element>
+    <element name="Horns" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_HORNS2">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_HORNS2</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have horns that you can use to make unarmed strikes. On a hit, the strike deals 1d6+{{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Labyrinthine Recall" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_LABYRINTHINE_RECALL">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_LABYRINTHINE_RECALL</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track.</p>
+		</description>
+		<sheet>
+			<description>You always know which direction is north, and you have advantage on any WIS(Survival) check you make to navigate or track.</description>
+		</sheet>
+	</element>
+	<element name="Rush" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_RUSH">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_RUSH</supports>
+		<compendium display="false" />
+		<description>
+			<p>On any turn in which you only move in a straight line, your speed increases by 10 feet.</p>
+		</description>
+		<sheet>
+			<description>On any turn in which you only move in a straight line, your speed increases by 10ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Troll-Blooded" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_TROLLBLOODED">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>With their green-tinted and boil-ridden skin, spindly fingers, and pointed teeth, few people will mark troll-blooded individuals as half-human. These humans exclusively favor the look of their troll parentage and have immense difficulty in human society. You have the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Troll Regeneration.</strong> You retain some of the regenerative properties of your troll parentage. You regain 1 hit point each minute if you have no more than one-fourth of your hit points (rounded down) left. You can't use this trait if you have 0 hit points.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Troll-Blooded)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Troll Regeneration" supports="ID_MHP_VSOS_RACIAL_TRAIT_TROLL_REGENERATION" default="ID_MHP_VSOS_RACIAL_TRAIT_TROLL_REGENERATION"/>
+		</rules>
+	</element>
+    <element name="Troll Regeneration" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TROLL_REGENERATION">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_TROLL_REGENERATION</supports>
+		<compendium display="false" />
+		<description>
+			<p>You retain some of the regenerative properties of your troll parentage. You regain 1 hit point each minute if you have no more than one-fourth of your hit points (rounded down) left. You can't use this trait if you have 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>You regain 1HP each minute if you have no more than one-fourth of your HP left. You can't use this trait if you have 0HP.</description>
+		</sheet>
+	</element>
+
+	<element name="Two-Headed" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_TWOHEADED">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Like ettins, you have two heads with differing personalities that jointly control your body.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Two-Heads.</strong> You have advantage on saving throws you make to avoid or end the following conditions on yourself: blinded, charmed, deafened, frightened.</p>
+			<p class="indent"><strong>Wakeful.</strong> Because one of your heads is always awake, you retain consciousness when you take a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Ability Score Increase (Two-Headed)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Two-Heads" supports="ID_MHP_VSOS_RACIAL_TRAIT_TWOHEADS" default="ID_MHP_VSOS_RACIAL_TRAIT_TWOHEADS"/>
+			<select type="Racial Trait" name="Wakeful" supports="ID_MHP_VSOS_RACIAL_TRAIT_WAKEFUL" default="ID_MHP_VSOS_RACIAL_TRAIT_WAKEFUL"/>
+		</rules>
+	</element>
+    <element name="Two-Heads" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TWOHEADS">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_TWOHEADS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the following conditions on yourself: blinded, charmed, deafened, frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the following conditions on yourself: blinded, charmed, deafened, frightened.</description>
+		</sheet>
+	</element>
+	<element name="Wakeful" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_WAKEFUL">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_WAKEFUL</supports>
+		<compendium display="false" />
+		<description>
+			<p>Because one of your heads is always awake, you retain consciousness when you take a long rest.</p>
+		</description>
+		<sheet>
+			<description>Because one of your heads is always awake, you retain consciousness when you take a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Windswept" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_WINDSWEPT">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Carefree and constantly possessed of wanderlust, the extraordinarily pale windswept embody their connection to Elemental Air. Windswept humans are never likely to sleep in the same bed for two nights in a row; they are always moving, always exploring, and always following the wind. You are lighter than a normal human, capable of floating gently on the breeze, and have faint inborn power over the winds, which grant you the following racial traits:</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Lightning Resistance.</strong> You have resistance to lightning damage.</p>
+			<p class="indent"><strong>Zephyr Magic.</strong> You know the <i>message</i> cantrip, and the hand is invisible when you cast the cantrip with this trait.</p>
+			<p class="indent">Starting at 3rd level, you can cast the <i>unseen servant</i> spell with this trait. Starting at 5th level, you can also cast the <i>levitate</i> spell with this trait. Once you cast <i>unseen servant</i> or <i>levitate</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<select type="Racial Trait" name="Ability Score Increase (Windswept)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Zephyr Magic" supports="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC" default="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC"/>
+		</rules>
+	</element>
+	<element name="Zephyr Magic" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC</supports>
+		<compendium display="false" />
+		<description>
+			<p>You know the <i>message</i> cantrip.</p>
+			<p class="indent">Starting at 3rd level, you can cast the <i>feather fall</i> spell with this trait. Starting at 5th level, you can also cast the <i>gust of wind</i> spell with this trait, without requiring a material component. Once you cast <i>feather fall</i> or <i>gust of wind</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Psionics" supports="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC_INTELLIGENCE|ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC_WISDOM|ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC_CHARISMA" />
+            <grant type="Spell" id="ID_PHB_SPELL_MESSAGE" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the <i>message</i>, <i>unseen servant</i> and <i>levitate</i> spells.</p>
+		</description>
+		<sheet alt="Zephyr Magic">
+			<description>You know the message cantrip. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know the message cantrip. You can cast feather fall spell without requiring a material component once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know the message cantrip. You can cast feather fall or gust of wind spells without requiring a material component once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the <i>mage hand</i>, <i>unseen servant</i> and <i>levitate</i> spells.</p>
+		</description>
+		<sheet alt="Zephyr Magic">
+			<description>You know the message cantrip. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the message cantrip. You can cast feather fall spell without requiring a material component once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the message cantrip. You can cast feather fall or gust of wind spells without requiring a material component once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ZEPHYR_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the <i>mage hand</i>, <i>unseen servant</i> and <i>levitate</i> spells.</p>
+		</description>
+		<sheet alt="Zephyr Magic">
+			<description>You know the message cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the message cantrip. You can cast feather fall spell without requiring a material component once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the message cantrip. You can cast feather fall or gust of wind spells without requiring a material component once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Winged" type="Feat" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_FEAT_WINGED">
+		<prerequisite>Prerequisites: 1st level only, near-human variant</prerequisite>
+		<requirements>[level:1],ID_RACE_VARIANT_NEAR_HUMAN_VARIANT</requirements>
+		<supports>Near-Human Variant</supports>
+        <description>
+			<p>Winged humans, sometimes called Icarusians, are the offspring of aarakocra, harpies, or birdfolk. Depending on their parentage, these humans might possess feathers, talons, or beaks.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Flight.</strong> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Winged)" supports="Human Variant"/>
+			<select type="Racial Trait" name="Flight" supports="ID_MHP_VSOS_RACIAL_TRAIT_FLIGHT" default="ID_MHP_VSOS_RACIAL_TRAIT_FLIGHT"/>
+		</rules>
+	</element>
+    <element name="Flight" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FLIGHT">
+		<supports>ID_MHP_VSOS_RACIAL_TRAIT_FLIGHT</supports>
+		<compendium display="false" />
+		<description>
+			<p>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+</elements>
