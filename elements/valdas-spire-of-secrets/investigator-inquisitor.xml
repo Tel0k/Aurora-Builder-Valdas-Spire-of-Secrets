@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Inquisitor</name>
+		<description>The Inquisitor from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-inquisitor.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-inquisitor.xml" />
+		</update>
+	</info>
+	<element name="Inquisitor" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_INQUISITOR">
+		<supports>Specialization</supports>
+		<description>
+			<p>The church has long been the first line of defense against the tide of impending darkness. Yet, the clergy's stubborn devotion to righteousness impedes them where it counts: you must sometimes be willing to do evil to counter evil. That's where the inquisition comes in.</p>
+			<p class="indent">As a righteous inquisitor of the faith, you are tasked with rooting out heresy, exorcising demons, and stamping out any sign of the occult, and you are offered clemency for any action you take in the defense of the greater good. You may investigate anyone or anything you deem to be in line with the forces of evil, for you alone are a holy blade in the dark, the arbiter of your church.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_BONUS_PROFICIENCIES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_EXORCISTS_DOCTRINES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_TRINKETS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_DIVINE_STRIKE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ROTE_PIETY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_EXCOMMUNICATION" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">An agent of the church that performs exorcisms and roots out heresy.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_EXORCISTS_DOCTRINES" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_TRINKETS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_DIVINE_STRIKE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ROTE_PIETY" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_EXCOMMUNICATION" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_BONUS_PROFICIENCIES">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you gain proficiency with medium armor.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
+	</element>
+	<element name="Exorcist's Doctrines" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_EXORCISTS_DOCTRINES">
+		<description>
+			<p>Also at 3rd level, you gain proficiency in the Religion skill, and your proficiency bonus is doubled for any ability check you make that uses this skill.</p>
+		</description>
+    	<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_RELIGION" />
+		</rules>
+	</element>
+	<element name="Trinkets (Inquisitor)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_TRINKETS">
+		<description>
+			<p>By 3rd level, you've collected a number of magical trinkets to  help you banish restless spirits and foul demonic forces. You can use the following trinkets:</p>
+			<p class="indent"><b>Alabaster Balm.</b> As a bonus action, you can cast the <i>lesser restoration</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Hallowed Chalice.</b> As a bonus action, you can utter a prayer and produce a volume of holy water from this cup sufficient to fill five flasks. After 24 hours, this holy water becomes ordinary water.</p>
+			<p class="indent"><b>Reliquary of Doubt.</b> As a bonus action, you can cast the <i>detect thoughts</i> spell once without using a spell slot or spell components. When you cast the spell in this way, you can only detect thoughts that are associated with negative emotions, such as guilt, apprehension, regret, and melancholy.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinkets, you must be holding one to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Alabaster Balm" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ALABASTER_BALM" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ALABASTER_BALM" />
+			<select type="Archetype Feature" name="Hallowed Chalice" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_HALLOWED_CHALICE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_HALLOWED_CHALICE" />
+			<select type="Archetype Feature" name="Reliquary of Doubt" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_RELIQUARY_OF_DOUBT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_RELIQUARY_OF_DOUBT" />
+		</rules>
+	</element>
+	<element name="Alabaster Balm" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ALABASTER_BALM">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ALABASTER_BALM</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>lesser restoration</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Lesser Restoration spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Hallowed Chalice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_HALLOWED_CHALICE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_HALLOWED_CHALICE</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can utter a prayer and produce a volume of holy water from this cup sufficient to fill five flasks. After 24 hours, this holy water becomes ordinary water.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can utter a prayer and produce a volume of holy water from this cup sufficient to fill five flasks. After 24 hours, this holy water becomes ordinary water.</description>
+		</sheet>
+	</element>
+	<element name="Reliquary of Doubt" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_RELIQUARY_OF_DOUBT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_RELIQUARY_OF_DOUBT</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>detect thoughts</i> spell once without using a spell slot or spell components. When you cast the spell in this way, you can only detect thoughts that are associated with negative emotions, such as guilt, apprehension, regret, and melancholy.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Detect Thoughts spell once without using a spell slot or spell components. When you cast the spell in this way, you can only detect thoughts that are associated with negative emotions, such as guilt, apprehension, regret, and melancholy.</description>
+		</sheet>
+	</element>
+
+	<element name="Divine Strike" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_DIVINE_STRIKE">
+		<description>
+			<p>At 6th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you deal an extra 1d6 radiant damage to the target.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you you hit a creature with a weapon attack, you deal an extra 1d6 radiant damage to the target.</description>
+		</sheet>
+	</element>
+	<element name="Rote Piety" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ROTE_PIETY">
+		<description>
+			<p>Starting at 10th level, you command a mastery of divine magic seldom seen among the clergy. You can use your Opportunistic Piety feature three times, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You gain two additional uses of your Opportunistic Piety feature.</description>
+		</sheet>
+	</element>
+	<element name="Excommunication" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_EXCOMMUNICATION">
+		<description>
+			<p>By 14th level, as an action, you can emblazon a mark of religious condemnation upon a creature you can see within 60 feet of you. The target must succeed on your choice of a Constitution or Wisdom saving throw or be marked for 1 minute. While marked, the creature can't regain hit points or have advantage on any attack roll or ability check. Additionally, whenever the creature takes an action, it takes 2d6 radiant damage as the mark burns with radiant light.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description>You can mark a creature you can see within 60ft of you. The target must succeed on your choice of a CON or WIS saving throw or be marked for 1 minute. While marked, the creature can't regain hp or have advantage on any attack roll or ability check. Additionally, whenever the creature takes an action, it takes 2d6 radiant damage as the mark burns with radiant light.</description>
+		</sheet>
+	</element>
+</elements>

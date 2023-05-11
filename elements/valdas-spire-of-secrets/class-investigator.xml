@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Investigator</name>
+		<description>The Investigator from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="class-investigator.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-investigator.xml" />
+		</update>
+	</info>
+	<element name="Investigator" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_INVESTIGATOR">
+		<description>
+	<p>A collage of diagrams, maps, and small items litters the wall, pinned with nails and connected by a spiderweb of colorful strings. An elf stands nearby, contemplating the mystery splayed out in front of her and readying her crossbow for work. </p>
+	<p class="indent">A half-orc wearing a wide-brimmed hat leafs through a thick tome, double-checking the supplies: a sturdy net trap, holy symbols on the doors, cloves of garlic, and several dozen wooden stakes. The preparations made, the half-orc slinks into the shadows and readies himself for the bloodshed. </p>
+	<p class="indent">Blood dripping from its fangs and claws, a monstrously fat demon bears down on a human, who busies herself marking a tavern's door frame with a few chalkmark runes. She takes a long step back and waits. As the demon lunges for its next meal, an invisible force lashes forth from the doorway, lopping off its hand and raking its stomach. The fiend howls with rage, and the inquisitor breathes a sigh of relief.</p>
+	<p class="indent">Supernatural detectives and monster slayers, investigators are always on the hunt for malevolent outsiders. Whenever evil seeps into the world—be it fiends, undead, or strange abominations from beyond the stars—investigators will be the first to locate them and banish their foul corruption from the mortal plane.</p>
+	<h4>PARANORMAL INVESTIGATORS</h4>
+	<p>There are forces more ancient than time, foes more sinister than the foulest men, and beings more titanic than gods. The world stands on a precipice of woe and terror, being threatened nightly by dark agents and hordes of monsters. At risk to their own lives and sanities, investigators penetrate the evil that creeps in the shadows and banish it from the world. Their battles are never-ending, for victory only delays doomsday another night.</p>
+	<p class="indent">Investigators track supernatural threats ranging from incorporeal spirits, to nefarious vampires and lycanthropes, to incursions of demons and devils. Often in their investigations, they uncover secret cults and maligned individuals who bring these supernatural threats to bear. It is always their goal to impede these evildoers by any means necessary, resorting to trickery, guile, magic, and bloodshed when necessary. To an investigator, no tactic is unthinkable when the world is at stake.</p>
+	<h4>EXORCISTS AND OCCULTISTS</h4>
+	<p>Even as they strive to contain its influence from the world at large, investigators dabble in forbidden magic to give themselves an edge against supernatural threats. Prepared investigators keep a well-stocked grimoire of magical secrets, containing rituals, incantations, notes on monsters' powers and weaknesses, recipes for poisons, and arcane diagrams—everything needed to confront their foes on an even footing. Even so, an investigator's occupation is perilous. A grimoire might spell out a vampire's fear of sunlight and aversion to silver, but it does little to hinder their fangs.</p>
+	<h4>CREATING A INVESTIGATOR</h4>
+	<p>As you build your investigator, consider what sort of supernatural threat first drove you to investigating and combating the occult. Did one of your family members strike a bargain with a fiend? Were you kidnapped by a cabal of vampires or a pack of lycanthropes? Did you stumble across evidence of an eldritch abomination, such as a Great Old One? The type of creature you first did battle with likely shaped your tools and methods later on.</p>
+	<p class="indent">Did you apprentice under a seasoned monster hunter, learning the ropes of tracking a threat, uncovering its weaknesses, and setting a trap for it? Or did you strike out on your own, compiling your own grimoire from hard-earned research? Perhaps you learned everything about monster hunting from someone else's grimoire, a masterwork containing an abridged library of occult knowledge and a lifetime of experience. It's even possible that you signed a contract with a minor fiend and turned to supernatural investigation in a last-ditch effort to save your soul.</p>
+	<h5 class="caption">QUICK BUILD</h5>
+	<p>Follow these suggestions to build an investigator quickly: Intelligence should be your highest ability score, followed by Dexterity or Strength. Then, select the rituals <i>clue</i>, <i>comprehend languages</i>, <i>detect magic</i>, and <i>transient bulwark</i> to add to your grimoire. Finally, pick any background, preferably one that relates to your experience with supernatural monsters and the occult.</p>
+	<h2>CLASS FEATURES</h2>
+	<p>As an investigator, you gain the following class features.</p>
+	<h5 class="caption">HIT POINTS</h5>
+	<ul class="unstyled">
+		<li><strong>Hit Dice:</strong> 1d8 per investigator level</li>
+		<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+		<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per investigator level after 1st</li>
+	</ul>
+	<h5 class="caption">PROFICIENCIES</h5>
+	<ul class="unstyled mb">
+		<li><strong>Armor:</strong> Light armor</li>
+		<li><strong>Weapons:</strong>: Simple weapons, hand crossbows, heavy crossbows, longswords, rapiers, shortswords</li>
+		<li><strong>Tools:</strong> One gaming set of your choice</li>
+	</ul>
+	<ul class="unstyled">
+		<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+		<li><strong>Skills:</strong> Choose three from Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Persuasion, Religion, Sleight of Hand, and Stealth</li>
+	</ul>
+	<h5 class="caption">EQUIPMENT</h5>
+	<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+	<ul>
+		<li>Leather armor</li>
+		<li>A dagger and (a) a longsword or (b) a rapier</li>
+		<li>(a) a heavy crossbow and 20 bolts or (b) a hand crossbow and 20 bolts</li>
+		<li>(a) dungeoneer's pack or (b) a priest's pack</li>
+		<li>A grimoire and a component pouch</li>
+	</ul>
+		<h5 class="caption">THE INVESTIGATOR</h5>
+		<table class="class-features">
+			<thead>
+				<tr><td class="col-5">Level</td><td class="col-60 left">Features</td><td class="col-10">Ritual Level</td></tr>
+			</thead>
+			<tr><td> 1st</td><td class="left">Expertise, Ritualist</td><td>1st</td></tr>
+			<tr><td> 2nd</td><td class="left">Myths and Legends, Rushed Incantation</td><td>1st</td></tr>
+			<tr><td> 3rd</td><td class="left">Occult Specialization</td><td>2nd</td></tr>
+			<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2nd</td></tr>
+			<tr><td> 5th</td><td class="left">Exploit Weakness</td><td>3rd</td></tr>
+			<tr><td> 6th</td><td class="left">Expertise, Occult Specialization feature</td><td>3rd</td></tr>
+			<tr><td> 7th</td><td class="left">Opportunistic Piety</td><td>4th</td></tr>
+			<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4th</td></tr>
+			<tr><td> 9th</td><td class="left">Supernatural Resolve</td><td>5th</td></tr>
+			<tr><td>10th</td><td class="left">Occult Specialization feature</td><td>5th</td></tr>
+			<tr><td>11th</td><td class="left">Finisher</td><td>6th</td></tr>
+			<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6th</td></tr>
+			<tr><td>13th</td><td class="left">Enigma Arcane</td><td>6th</td></tr>
+			<tr><td>14th</td><td class="left">Occult Specialization feature</td><td>6th</td></tr>
+			<tr><td>15th</td><td class="left">Enigma Arcane improvement</td><td>6th</td></tr>
+			<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>6th</td></tr>
+			<tr><td>17th</td><td class="left">Enigma Arcane improvement</td><td>6th</td></tr>
+			<tr><td>18th</td><td class="left">Exorcist</td><td>6th</td></tr>
+			<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>6th</td></tr>
+			<tr><td>20th</td><td class="left">Spellbinder</td><td>6th</td></tr>
+		</table>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXPERTISE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_RITUALIST" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_MYTHSANDLEGENDS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_RUSHED_INCANTATION" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OCCULT_SPECIALIZATION" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_ABILITYSCOREIMPROVEMENT_INVESTIGATOR" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXPLOIT_WEAKNESS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SUPERNATURAL_RESOLVE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_FINISHER" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_ENIGMA_ARCANE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXORCIST" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SPELLBINDER" />
+		</description>
+		<setters>
+			<set name="short">Supernatural detectives and monster slayers, investigators are always on the hunt for malevolent outsiders.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+			<select type="Proficiency" name="Skill Proficiency (Investigator)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR"/>
+			<select type="Proficiency" name="Tool Proficiency (Investigator)" supports="Gaming Set" requirements="!ID_MHP_VSOS_MULTICLASS_INVESTIGATOR" />
+
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXPERTISE" level="1" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_RITUALIST" level="1" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_MYTHSANDLEGENDS" level="2" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_RUSHED_INCANTATION" level="2" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OCCULT_SPECIALIZATION" level="3" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_ABILITYSCOREIMPROVEMENT_INVESTIGATOR" level="4" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXPLOIT_WEAKNESS" level="5" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP" level="7" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SUPERNATURAL_RESOLVE" level="9" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_FINISHER" level="11" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_ENIGMA_ARCANE" level="13" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXORCIST" level="18" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SPELLBINDER" level="20" />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_INVESTIGATOR">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, heavy crossbows, one skill from the class's skill list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
+				<select type="Proficiency" name="Skill Proficiency (Investigator)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL"/>
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Expertise" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXPERTISE">
+		<description>
+			<p>At 1st level, choose two of your skill proficiencies; your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p class="indent">At 6th level, you can choose another two skill proficiencies to gain this benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Investigator)" level="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Class Feature" name="Expertise (Investigator)" level="6" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	<element name="Ritualist" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_RITUALIST">
+		<description>
+			<p>You maintain a grimoire brimming with magical rituals: your most potent tools to defeat supernatural threats.</p>
+			<h5 class="caption">GRIMOIRE</h5>
+			<p>At 1st level, you have a grimoire containing four 1st-level spells of your choice that have the ritual tag from any class's spell list (the spells needn't be from the same list). You can't cast spells that are in your grimoire except as rituals, unless you've learned them by some other means.</p>
+			<p class="indent">Whenever you gain a level in this class, you can add an additional ritual spell from the Investigator Spells list (see Chapter 6) to your grimoire at no cost. The Ritual Level column on the Investigator table shows the maximum spell level you can add to your grimoire.</p>
+			<p class="indent">Additionally, whenever you find a ritual spell on your adventures, you can add it to your grimoire if it is on the investigator spell list and is of a level you can add to your grimoire. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it.</p>
+			<h5 class="caption">BONUS RITUALS</h5>
+			<p>As an investigator, you can treat specific spells as if they had the ritual tag, allowing you to add them to your grimoire and cast them as rituals. These spells are marked in the investigator spell list.</p>
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your ritual spells, since you master your spells through deduction and cunning. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, when you cast an investigator ritual or a spell offered to you by a feature in this class, you use your Intelligence modifier when setting the saving throw DC and making an attack roll.</p>
+			<center>
+				<p><strong>Spell save DC =</strong> 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier =</strong> your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Investigator" ability="Intelligence" allowReplace="true">
+			<list>Investigator</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1" level="1" number="4" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1" level="2" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2" level="3" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2" level="4" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3" level="5" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3" level="6" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4" level="7" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4" level="8" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5" level="9" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5" level="10" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="11" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="12" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="13" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="14" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="15" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="16" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="17" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="18" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="19" spellcasting="Investigator" />
+			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="20" spellcasting="Investigator" />
+		</rules>
+	</element>
+	<element name="Myths and Legends" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_MYTHSANDLEGENDS">
+		<description>
+			<p>At 2nd level, you are extremely adept at uncovering knowledge that pertains to eldritch threats and forgotten legends. You have advantage on Intelligence checks related to researching creatures, spells, and other ancient or secret lore.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence checks related to researching creatures, spells, and other ancient or secret lore.</description>
+		</sheet>
+	</element>
+	<element name="Rushed Incantation" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_RUSHED_INCANTATION">
+		<description>
+			<p>Beginning at 2nd level, you can hastily perform any ritual spell in your grimoire that has a casting time of 1 action or 1 bonus action, completing the ritual as a bonus action. If the spell requires material components worth 100 gp or less, you can cast it without providing those components. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">As you gain higher levels in this class, you can use this feature additional times. You can use it once more at 5th level (Intelligence modifier + 1), 9th level (Intelligence modifier + 2), 13th level (Intelligence modifier + 3), and 17th level (Intelligence modifier + 4).</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{incantation:usage:max}}/Long Rest">
+			<description>You can hastily perform any ritual spell in your grimoire that has a casting time of 1 action or 1 bonus action. If the spell requires material components worth 100 gp or less, you can cast it without providing those components.</description>
+		</sheet>
+		<rules>
+            <stat name="incantation:usage:max" value="1" bonus="base" />
+			<stat name="incantation:usage:max" value="incantation:usage" bonus="base" />
+			<stat name="incantation:usage" value="intelligence:modifier" />
+			<stat name="incantation:usage" value="1" level="5" />
+			<stat name="incantation:usage" value="1" level="9" />
+			<stat name="incantation:usage" value="1" level="13" />
+			<stat name="incantation:usage" value="1" level="17" />
+        </rules>
+	</element>
+	<element name="Occult Specialization" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OCCULT_SPECIALIZATION">
+		<description>
+			<p>At 3rd level, you choose a specialization, an area of expertise in handling eldritch threats. Specializations are detailed at the end of the class description. Your specialization choice grants you features at 3rd level and again at 6th, 10th, and 14th level.</p>
+			<h5 class="caption">TRINKETS</h5>
+			<p>Investigators also collect a number of supernatural trinkets. You must be holding a trinket to activate it. Once you use one of your trinkets, you can't use any of them again until you finish a short or long rest.</p>
+			<p class="indent">As you gain higher levels in this class, you can use your trinkets additional times between rests: You can use them once more at 5th level (2 uses), 11th level (3 uses), and 17th level (4 uses).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Occult Specialization" supports="Specialization" level="3"/>
+			<stat name="trinket:use" value="1" />
+			<stat name="trinket:use" value="1" level="5"/>
+			<stat name="trinket:use" value="1" level="11"/>
+			<stat name="trinket:use" value="1" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_ABILITYSCOREIMPROVEMENT_INVESTIGATOR">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+			<select type="Class Feature" name="Improvement Option (Investigator 4)" supports="Improvement Option,Investigator,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Investigator 8)" supports="Improvement Option,Investigator,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Investigator 12)" supports="Improvement Option,Investigator,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Investigator 16)" supports="Improvement Option,Investigator,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Investigator 19)" supports="Improvement Option,Investigator,19" level="19" />           
+        </rules>
+	</element>
+	<element name="Exploit Weakness" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXPLOIT_WEAKNESS">
+		<description>
+			<p>Most supernatural creatures have some form of weakness, a gap in their armor that allows them to be defeated. Starting at 5th level, once on each of your turns when you hit a creature with a weapon attack, the target is treated as if it has vulnerability to the weapon's damage. Vulnerability from this feature only doubles your weapon's damage roll and your ability modifier; you don't double extra damage from sources like spells (such as hunter's mark), magic items (such as the extra fire damage of a flame tongue), feats, or class features (such as Sneak Attack).</p>
+			<p class="indent">Additionally, the attack, as well as all other attacks made against the target until the start of your next turn, count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon attack, the target is treated as if it has vulnerability to the weapon's damage. Vulnerability from this feature only doubles your weapon's damage roll and your ability modifier; you don't double extra damage from sources like spells, magic items, feats, or class features. Additionally, the attack, as well as all other attacks made against the target until the start of your next turn, count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+	<element name="Opportunistic Piety" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP">
+		<description>
+			<p>By 7th level, you always keep a wide array of holy symbols and blessed items on your person, even if you aren't particularly pious. When you use your Opportunistic Piety, you choose which effect to create from the list below. You must then finish a short or long rest to use your Opportunistic Piety again.</p>
+			<p class="indent"><strong>Banish.</strong> You cast the <i>banishment</i> spell without expending a spell slot. If the target is a Fey, Fiend, or Undead and fails its saving throw against this spell, it also takes radiant damage equal to your level.</p>
+			<p class="indent"><strong>Miracle Healing.</strong> As an action, divine light from your hands knit the wounds of a willing creature you touch. That creature regains a number of hit points equal to twice your investigator level. This ability has no effect on Undead or Constructs.</p>
+			<p class="indent"><strong>Warding.</strong> As an action, you trace a holy symbol on a creature within 5 feet of you, warding it against harm. For the next minute, Aberrations, Celestials, Elementals, Fey, Fiends, and Undead that touch the warded creature or hit it with a melee attack take 1d12 radiant damage.</p>
+		</description>
+		<sheet>
+			<description usage="1/Short||Long Rest" requirements="!ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ROTE_PIETY">When you use your Opportunistic Piety, you choose which effect to create from the list below:</description>
+			<description usage="3/Short||Long Rest" requirements="ID_MHP_VSOS_ARCHETYPE_FEATURE_INQUISITOR_ROTE_PIETY">When you use your Opportunistic Piety, you choose which effect to create from the list below:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Banish" supports="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_BANISH" default="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_BANISH" />
+			<select type="Class Feature" name="Miracle Healing" supports="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_MIRACLE_HEALING" default="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_MIRACLE_HEALING" />
+			<select type="Class Feature" name="Warding" supports="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_WARDING" default="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_WARDING" />
+		</rules>
+	</element>
+	<element name="Banish" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_BANISH">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_BANISH</supports>
+		<description>
+			<p>You cast the <i>banishment</i> spell without expending a spell slot. If the target is a Fey, Fiend, or Undead and fails its saving throw against this spell, it also takes radiant damage equal to your level.</p>
+		</description>
+		<sheet>
+			<description>You cast the Banishment spell without expending a spell slot. If the target is a Fey, Fiend, or Undead and fails its saving throw against this spell, it also takes {{level:investigator}} radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Miracle Healing" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_MIRACLE_HEALING">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_MIRACLE_HEALING</supports>
+		<description>
+			<p>As an action, divine light from your hands knit the wounds of a willing creature you touch. That creature regains a number of hit points equal to twice your investigator level. This ability has no effect on Undead or Constructs.</p>
+		</description>
+		<sheet action="Action">
+			<description>A willing creature you touch regains {{miraclehealing}}hp. This ability has no effect on Undead or Constructs.</description>
+		</sheet>
+		<rules>
+			<stat name="miraclehealing" value="level:investigator" />
+			<stat name="miraclehealing" value="level:investigator" />
+		</rules>
+	</element>
+	<element name="Warding" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_WARDING">
+		<compendium display="false" />
+		<supports>ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_OP_WARDING</supports>
+		<description>
+			<p>As an action, you trace a holy symbol on a creature within 5 feet of you, warding it against harm. For the next minute, Aberrations, Celestials, Elementals, Fey, Fiends, and Undead that touch the warded creature or hit it with a melee attack take 1d12 radiant damage.</p>
+		</description>
+		<sheet action="Action">
+			<description>You trace a holy symbol on a creature within 5ft of you, warding it against harm. For the next minute, Aberrations, Celestials, Elementals, Fey, Fiends, and Undead that touch the warded creature or hit it with a melee attack take 1d12 radiant damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Supernatural Resolve" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SUPERNATURAL_RESOLVE">
+		<description>
+			<p>At 9th level, you gain resilience to the attacks and effects of the creatures you regularly investigate. You can't be possessed or charmed, and you have resistance to necrotic and psychic damage.</p>
+		</description>
+		<sheet>
+			<description>You can't be possessed or charmed, and you have resistance to necrotic and psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Finisher" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_FINISHER">
+		<description>
+			<p>Beginning at 11th level, you know exactly how to bring a monster down. Once on each of your turns when you take the Attack action and hit a creature with a weapon attack, you can deal an extra 2d8 damage to the creature. If the creature has less than half its hit points remaining, you can instead deal an extra 4d8 damage to the creature.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you take the Attack action and hit a creature with a weapon attack, you can deal an extra 2d8 damage to the creature. If the creature has less than half its hit points remaining, you can instead deal an extra 4d8 damage to the creature.</description>
+		</sheet>
+	</element>
+	<element name="Enigma Arcane" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_ENIGMA_ARCANE">
+		<description>
+			<p>At 13th level, you uncover a magical secret connected to a wellspring of potent magic. You can cast one of the following spells once without expending a spell slot: mirage arcane, plane shift, reverse gravity, sequester, or teleport. Once you do so, you can't cast a spell in this way again until you finish a long rest.</p>
+			<p class="indent">At 15th level, you can also cast one of the following spells once without expending a spell slot: antimagic field, glibness, maze, or mind blank. Once you do so, you can't cast any of these spells in this way again until you finish a long rest.</p>
+			<p class="indent">At 17th level, you can also cast one of the following spells once without expending a spell slot: astral projection, gate, or weird. Once you do so, you can't cast any of these spells in this way again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast one of the following spells once without expending a spell slot: &#13;
+			(a) mirage arcane, plane shift, reverse gravity, sequester, or teleport.</description>
+			<description level="15">You can cast one spell of each of the following lists once without expending a spell slot: &#13;
+			(a) mirage arcane, plane shift, reverse gravity, sequester, or teleport. &#13;
+			(b) antimagic field, glibness, maze, or mind blank.</description>
+			<description level="17">You can cast one spell of each of the following lists once without expending a spell slot: &#13;
+			(a) mirage arcane, plane shift, reverse gravity, sequester, or teleport. &#13;
+			(b) antimagic field, glibness, maze, or mind blank. &#13;
+			(c) astral projection, gate, or weird.</description>
+		</sheet>
+	</element>
+	<element name="Exorcist" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_EXORCIST">
+		<description>
+			<p>Beginning at 18th level, you can cast the <i>protection from evil and good</i> spell without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Protection from Evil and Good spell without expending a spell slot or material components.</description>
+		</sheet>
+	</element>
+	<element name="Spellbinder" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_SPELLBINDER">
+		<description>
+			<p>By 20th level, many rituals you perform have become second nature to you. Select five ritual spells in your grimoire with a casting time of 1 action. You can cast these spells as a bonus action without expending a use of Rushed Incantation, and you can do so without your grimoire on hand. If the spell requires material components worth 100 gp or less, you can cast it without providing those components.</p>
+		</description>
+		<sheet>
+			<description>Select five ritual spells in your grimoire with a casting time of 1 action. You can cast these spells as a bonus action without expending a use of Rushed Incantation, and you can do so without your grimoire on hand. If the spell requires material components worth 100 gp or less, you can cast it without providing those components.</description>
+		</sheet>
+	</element>
+
+</elements>

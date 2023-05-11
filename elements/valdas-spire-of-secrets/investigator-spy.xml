@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spy</name>
+		<description>The Spy from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-spy.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-spy.xml" />
+		</update>
+	</info>
+	<element name="Spy" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_SPY">
+		<supports>Specialization</supports>
+		<description>
+			<p>Infiltration, disguise, and lying through their teeth: these are the principal skills of a spy. A talented spy rarely ever needs to draw a dagger to silence someone, for their honeyed words and agreeable disposition are all that is needed to draw out someone's secrets. Of course, when they do strike, it is decisively and without warning. Such skills are invaluable for governments and organizations of all varieties, for stealing confidential information, sabotage, monitoring persons of interest, and everything in between.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_BRAVADO" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_TRINKETS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_CLOAK_AND_DAGGER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_SHAKEN_NOT_STIRRED" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_BODY_DOUBLE" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">Infiltrates with perfect disguises and unmatched charm.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_BRAVADO" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_TRINKETS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_CLOAK_AND_DAGGER" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_SHAKEN_NOT_STIRRED" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_BODY_DOUBLE" level="14" />
+		</rules>
+	</element>
+	<element name="Bravado" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_BRAVADO">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, your knowing smile and infectious confidence inspires trust in most people you meet, even when you're not telling the truth. You gain proficiency in the Deception skill, and you can use your Intelligence modifier, instead of Charisma, for Charisma (Deception) checks.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<stat name="deception:proficiency" value="-charisma:modifier" />
+			<stat name="deception:proficiency:ability" value="charisma:modifier" bonus="ability" />
+            <stat name="deception:proficiency:ability" value="intelligence:modifier" bonus="ability" />
+            <stat name="deception:proficiency" value="deception:proficiency:ability" />
+		</rules>
+	</element>
+	<element name="Trinkets (Spy)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_TRINKETS">
+		<description>
+			<p>By 3rd level, you've collected a number of objects that aid your espionage. You can use the following trinkets:</p>
+			<p class="indent"><b>Glass Dust.</b> As a bonus action, you can throw this dust in the air, becoming invisible until the start of your next turn. This effect ends early if you take any damage.</p>
+			<p class="indent"><b>Horn-Rimmed Glasses.</b> As a bonus action, you can cast the disguise self spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Martini Glass.</b> As a bonus action, you can cast the suggestion spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinkets, you must be holding one to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Glass Dust" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_GLASS_DUST" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_GLASS_DUST" />
+			<select type="Archetype Feature" name="Horn-Rimmed Glasses" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_HORNRIMMED_GLASSES" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_HORNRIMMED_GLASSES" />
+			<select type="Archetype Feature" name="Martini Glass" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_MARTINI_GLASS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_MARTINI_GLASS" />
+		</rules>
+	</element>
+	<element name="Glass Dust" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_GLASS_DUST">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_GLASS_DUST</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can throw this dust in the air, becoming invisible until the start of your next turn. This effect ends early if you take any damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can throw this dust in the air, becoming invisible until the start of your next turn. This effect ends early if you take any damage.</description>
+		</sheet>
+	</element>
+	<element name="Horn-Rimmed Glasses" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_HORNRIMMED_GLASSES">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_HORNRIMMED_GLASSES</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>disuise self</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Disguise Self spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Martini Glass" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_MARTINI_GLASS">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_MARTINI_GLASS</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>suggestion</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Suggestion spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+
+	<element name="Cloak And Dagger" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_CLOAK_AND_DAGGER">
+		<description>
+			<p>By 6th level, you always endeavor to kill your target in one strike. When you make an attack roll against a creature that is surprised or hasn't taken a turn in combat yet, you can treat your weapon's damage dice as having rolled their maximum value.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack roll against a creature that is surprised or hasn't taken a turn in combat yet, you can treat your weapon's damage dice as having rolled their maximum value.</description>
+		</sheet>
+	</element>
+	<element name="Shaken Not Stirred" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_SHAKEN_NOT_STIRRED">
+		<description>
+			<p>Starting at 10th level, your roguish smile grants you incredible leeway. Whenever you fail a Charisma (Deception) or Charisma (Persuasion) check, you can reroll the check, and you must use the new roll.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>Whenever you fail a Charisma (Deception) or Charisma (Persuasion) check, you can reroll the check, and you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Body Double" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPY_BODY_DOUBLE">
+		<description>
+			<p>By 14th level, you can rapidly exchange identities with a corpse. When you reduce a Humanoid to 0 hit points, you can use your reaction to assume the creature's appearance, as per the disguise self spell. When you do so, the creature's body, as well as its blood, clothing, and other physical evidence of its death, magically become invisible for 8 hours. You can also use this ability as an action to touch the corpse of a Humanoid that has been dead no longer than 24 hours, assuming its appearance and causing it to become invisible, as above.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="(1)Reaction, (2)Action" usage="1/Long Rest">
+			<description>(1)When you reduce a Humanoid to 0 hit points, you can assume the creature's appearance, as per the disguise self spell. When you do so, the creature's body, as well as its blood, clothing, and other physical evidence of its death, magically become invisible for 8 hours. &#13;
+			(2)You touch the corpse of a Humanoid that has been dead no longer than 24 hours, assuming its appearance and causing it to become invisible, as above.</description>
+		</sheet>
+	</element>
+</elements>

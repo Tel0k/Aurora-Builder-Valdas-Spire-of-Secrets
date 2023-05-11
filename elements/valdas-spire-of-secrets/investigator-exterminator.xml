@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Exterminator</name>
+		<description>The Exterminator from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-exterminator.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-exterminator.xml" />
+		</update>
+	</info>
+	<element name="Exterminator" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_EXTERMINATOR">
+		<supports>Specialization</supports>
+		<description>
+			<p>An exterminator suffers no monster to live. Trained in the art of slaying aberrations, fiends, and undead, you stand against evil where others falter, and draw your blade before others recognize a threat. Grand schemes and plots are less important than retribution against those monsters which stalk the night, and your thirst for such retribution is unquenchable. There is always another werewolf to be slain, another vampire to be staked, another demon to be banished. People rarely thank you, but you find satisfaction enough in your work.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_BONUS_PROFICIENCIES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_MONSTER_SLAYER" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_SILVERED_EDGE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_KILLER_INSTINCT" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">Hunts down vampires, lycanthropes, and beasts that stalk the night.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_MONSTER_SLAYER" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_SILVERED_EDGE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_KILLER_INSTINCT" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_BONUS_PROFICIENCIES">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you gain proficiency with martial weapons and medium armor.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
+	</element>
+	<element name="Trinkets (Exterminator)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS">
+		<description>
+			<p>By 3rd level, you've collected a number of magical trinkets to aid you in the elimination of monsters and other threats. You can use the following trinkets:</p>
+			<p class="indent"><b>Consecrated Whetstone.</b> As a bonus action, you can cast the <i>magic weapon</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Gilded Dragon Scale.</b> As a bonus action, you gain resistance to one damage type of your choice for 1 minute.</p>
+			<p class="indent"><b>Wyverntooth Necklace.</b> When you hit a creature with a weapon attack, you can use your bonus action to activate this trinket, dealing an extra 2d8 poison damage to the creature.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinkets, you must be holding one to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Consecrated Whetstone" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_CONSECRATED_WHETSTONE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_CONSECRATED_WHETSTONE" />
+			<select type="Archetype Feature" name="Gilded Dragon Scale" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_GILDED_DRAGON_SCALE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_GILDED_DRAGON_SCALE" />
+			<select type="Archetype Feature" name="Wyverntooth Necklace" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_WYVERNTOOTH_NECKLACE" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_WYVERNTOOTH_NECKLACE" />
+		</rules>
+	</element>
+	<element name="Consecrated Whetstone" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_CONSECRATED_WHETSTONE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_CONSECRATED_WHETSTONE</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>magic weapon</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Magic Weapon spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Gilded Dragon Scale" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_GILDED_DRAGON_SCALE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_GILDED_DRAGON_SCALE</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you gain resistance to one damage type of your choice for 1 minute.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Invisibility spell once, targeting yourself only, without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Wyverntooth Necklace" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_WYVERNTOOTH_NECKLACE">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_TRINKETS_WYVERNTOOTH_NECKLACE</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with a weapon attack, you can use your bonus action to activate this trinket, dealing an extra 2d8 poison damage to the creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Knock spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+
+	<element name="Monster Slayer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_MONSTER_SLAYER">
+		<description>
+			<p>Beginning at 6th level, when you take the Attack action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="{{feature:usage}}/Short||Long Rest">
+			<description>When you take the Attack action, you can make one weapon attack as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="feature:usage" value="1" bonus="base" />
+			<stat name="feature:usage" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Silvered Edge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_SILVERED_EDGE">
+		<description>
+			<p>Starting at 10th level, whenever you deal damage to a creature with a weapon attack, it can't regain hit points until the start of your next turn. Additionally, when you reduce a creature to 0 hit points, it can't be raised as an Undead creature nor be returned to life by any means short of the wish spell for 7 days.</p>
+		</description>
+		<sheet>
+			<description>Whenever you deal damage to a creature with a weapon attack, it can't regain hit points until the start of your next turn. Additionally, when you reduce a creature to 0 hit points, it can't be raised as an Undead creature nor be returned to life by any means short of the wish spell for 7 days.</description>
+		</sheet>
+	</element>
+	<element name="Killer Instinct" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_EXTERMINATOR_KILLER_INSTINCT">
+		<description>
+			<p>Starting at 14th level, you can use your Exploit Weakness feature twice on your turn, but can't use it against the same target more than once.</p>
+		</description>
+		<sheet>
+			<description>You can use your Exploit Weakness feature twice on your turn, but can't use it against the same target more than once.</description>
+		</sheet>
+	</element>
+</elements>

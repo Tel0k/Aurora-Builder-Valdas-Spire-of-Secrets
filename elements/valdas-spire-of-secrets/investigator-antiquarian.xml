@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Antiquarian</name>
+		<description>The Antiquarian from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-antiquarian.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-antiquarian.xml" />
+		</update>
+	</info>
+	<element name="Antiquarian" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ANTIQUARIAN">
+		<supports>Specialization</supports>
+		<description>
+			<p>Festooned with magical trinkets from every corner of the globe, antiquarians have a tool for every occasion: silver arrowheads for lycanthropes, heartwood stakes for vampires, blessed relics for fiends, and so on. As they expand their collections from piles of trinkets to veritable museums, they become adept historians and arcanists, familiar with the story of every magic item in their care, as well how to use them in dire situations.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_ARTIFACT_HISTORIAN" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_MAGIC_ITEM_COLLECTION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">Festooned with powerful magical trinkets of all shapes and sizes.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_ARTIFACT_HISTORIAN" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_MAGIC_ITEM_COLLECTION" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY" level="14" />
+		</rules>
+	</element>
+	<element name="Artifact Historian" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_ARTIFACT_HISTORIAN">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you add the identify spell to your grimoire. It doesn't require material components when you cast it.</p>
+		</description>
+		<sheet>
+			<description>You add the Identify spell to your grimoire. It doesn't require material components when you cast it.</description>
+		</sheet>
+	</element>
+	<element name="Trinkets (Antiquarian)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS">
+		<description>
+			<p>By 3rd level, you've collected a number of magical trinkets to help you collect and unravel profound arcane secrets. You can use the following trinkets:</p>
+			<p class="indent"><b>Hateful Arrowhead.</b> You can cast the <i>ray of enfeeblement</i> or <i>scorching ray</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Mirrored Prism.</b> You can cast the <i>blur</i> or <i>mirror image</i> spell once, targeting yourself only, without using a spell slot or spell components.</p>
+			<p class="indent"><b>Razortooth Bandages.</b> You can cast the <i>cure wounds</i> or <i>inflict wounds</i> spell once without using a spell slot or spell components. This spell is cast as if using a spell slot of the level shown in the Ritual Level column of the Investigator table.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinkets, you must be holding one to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Hateful Arrowhead" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_HATEFUL_ARROWHEAD" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_HATEFUL_ARROWHEAD" />
+			<select type="Archetype Feature" name="Mirrored Prism" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_MIRRORED_PRISM" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_MIRRORED_PRISM" />
+			<select type="Archetype Feature" name="Razortooth Bandages" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_RAZORTOOTH_BANDAGES" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_RAZORTOOTH_BANDAGES" />
+		</rules>
+	</element>
+	<element name="Hateful Arrowhead" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_HATEFUL_ARROWHEAD">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_HATEFUL_ARROWHEAD</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>ray of enfeeblement</i> or <i>scorching ray</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Ray of Enfeeblement or Scorching Ray spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Mirrored Prism" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_MIRRORED_PRISM">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_MIRRORED_PRISM</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>blur</i> or <i>mirror image</i> spell once, targeting yourself only, without using a spell slot or spell components.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Blur or Mirror Image spell once, targeting yourself only, without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Razortooth Bandages" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_RAZORTOOTH_BANDAGES">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_RAZORTOOTH_BANDAGES</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>cure wounds</i> or <i>inflict wounds</i> spell once without using a spell slot or spell components. This spell is cast as if using a spell slot of the level shown in the Ritual Level column of the Investigator table.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Cure Wounds or Inflict Wounds spell once without using a spell slot or spell components. This spell is cast as if using a spell slot of the level shown in the Ritual Level column of the Investigator table.</description>
+		</sheet>
+	</element>
+
+	<element name="Relics" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS">
+		<description>
+			<p>By 6th level, you've secured a handful of priceless relics with rare and delicate enchantments. You can use one of the following relics once, and regain the ability to use this feature when you finish a short or long rest.</p>
+			<p class="indent"><b>Antediluvian Dynamo.</b> You can cast the <i>fireball</i> or <i>lightning bolt</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Lich's Deathmask.</b> You can cast the <i>counterspell</i> or <i>dispel magic</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Mortal Coil.</b> You can cast the <i>animate dead</i> or <i>revivify</i> spell once without using a spell slot or spell components. Casting <i>animate dead</i> using this trinket causes all Undead servants created by previous castings of the spell to revert to lifeless corpses.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can use one of the following relics once.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Antediluvian Dynamo" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_ANTEDILUVIAN_DYNAMO" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_ANTEDILUVIAN_DYNAMO" />
+			<select type="Archetype Feature" name="Lich's Deathmask" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_LICHS_DEATHMASK" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_LICHS_DEATHMASK" />
+			<select type="Archetype Feature" name="Mortal Coil" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_MORTAL_COIL" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_MORTAL_COIL" />
+		</rules>
+	</element>
+	<element name="Antediluvian Dynamo" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_ANTEDILUVIAN_DYNAMO">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_ANTEDILUVIAN_DYNAMO</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>fireball</i> or <i>lightning bolt</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Firebolt or Lightning Bolt spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Lich's Deathmask" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_LICHS_DEATHMASK">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_LICHS_DEATHMASK</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>counterspell</i> or <i>dispel magic</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Counterspell or Dispel Magic spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Mortal Coil" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_MORTAL_COIL">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_RELICS_MORTAL_COIL</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>animate dead</i> or <i>revivify</i> spell once without using a spell slot or spell components. Casting <i>animate dead</i> using this trinket causes all Undead servants created by previous castings of the spell to revert to lifeless corpses.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Animate Dead or Revivify spell once without using a spell slot or spell components. Casting Animate Dead using this trinket causes all Undead servants created by previous castings of the spell to revert to lifeless corpses.</description>
+		</sheet>
+	</element>
+
+	<element name="Magic Item Collection" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_MAGIC_ITEM_COLLECTION">
+		<description>
+			<p>Starting at 10th level, you maintain a vault of magic items, secured in an extradimensional space with an elaborate locking mechanism. When you finish a long rest, you can produce one of the items listed below, which remains in your possession until you use this feature to select a different item.</p>
+			<p class="indent">The item is your choice of the following: a <i>carpet of flying</i>, a <i>cloak of the bat</i>, a <i>flame tongue</i>, <i>gauntlets of ogre power</i>, an <i>instant fortress</i>, a <i>ring of regeneration</i>, a <i>ring of telekinesis</i>, a <i>sun blade</i>, or a <i>wand of wonder</i>. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Choose one of the following: a Carpet of Flying, a Cloak of the Bat, a Flame Tongue, Gauntlets of Ogre Power, an Instant Fortress, a Ring of Regeneration, a Ring of Telekinesis, a Sun Blade, or a Wand of Wonder. The item you select remains in your possession until you use this feature to select a different item.</description>
+		</sheet>
+	</element>
+	<element name="Phylactery" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY">
+		<description>
+			<p>By 14th level, you've secured the crown jewel of your collection: a lich's phylactery. Though the original owner's soul has been expelled from this accursed artifact, it retains many of its unique properties.</p>
+			<p class="indent">This magic item is always attuned to you and doesn't count against your total number of attuned magic items. It has 5 charges, and regains 1d4 + 1 expended charges daily at dawn. You can expend one or more of these charges to use the following abilities:</p>
+			<p><i>1 Charge:</i> You can cast the false life spell as a 2nd-level spell without expending a spell slot or spell components.</p>
+			<p><i>1 Charge:</i> You can use your bonus action to regain one expended use of your Trinkets feature.</p>
+			<p><i>2 Charges:</i> As a reaction when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</p>
+			<p><i>3 Charges:</i> Make a melee spell attack against a creature within your reach. On a hit, the target takes 5d6 necrotic damage and you regain hit points equal to the necrotic damage dealt.</p>
+		</description>
+		<sheet>
+			<description>You've secured a lich's phylactery. Though the original owner's soul has been expelled from this item, it retains many of its unique properties. &#13;
+			This magic item is always attuned to you and doesn't count against your total number of attuned magic items. It has 5 charges, and regains 1d4 + 1 expended charges daily at dawn. You can expend one or more of these charges to use the following abilities:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="1 Charge Ability n°1" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_1" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_1" />
+			<select type="Archetype Feature" name="1 Charge Ability n°2" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_2" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_2" />
+			<select type="Archetype Feature" name="2 Charges" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_3" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_3" />
+			<select type="Archetype Feature" name="3 Charge" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_4" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_4" />
+		</rules>
+	</element>
+	<element name="1 Charge Ability n°1" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_1">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_1</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the false life spell as a 2nd-level spell without expending a spell slot or spell components.</p>
+		</description>
+		<sheet alt="1 Charge:">
+			<description>You can cast the false life spell as a 2nd-level spell without expending a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="1 Charge Ability n°2" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_2">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_2</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can use your bonus action to regain one expended use of your Trinkets feature.</p>
+		</description>
+		<sheet alt="1 Charge:">
+			<description>You can use your bonus action to regain one expended use of your Trinkets feature.</description>
+		</sheet>
+	</element>
+	<element name="2 Charges:" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_3">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_3</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a reaction when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</p>
+		</description>
+		<sheet>
+			<description>As a reaction when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+		</sheet>
+	</element>
+	<element name="3 Charges:" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_4">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_PHYLACTERY_ABILITY_4</supports>
+		<compendium display="false" />
+		<description>
+			<p>Make a melee spell attack against a creature within your reach. On a hit, the target takes 5d6 necrotic damage and you regain hit points equal to the necrotic damage dealt.</p>
+		</description>
+		<sheet>
+			<description>Make a melee spell attack against a creature within your reach. On a hit, the target takes 5d6 necrotic damage and you regain hit points equal to the necrotic damage dealt.</description>
+		</sheet>
+	</element>
+</elements>

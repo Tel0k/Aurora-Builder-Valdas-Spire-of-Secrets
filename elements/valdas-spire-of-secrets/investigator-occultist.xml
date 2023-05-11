@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Occultist</name>
+		<description>The Occultist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-occultist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-occultist.xml" />
+		</update>
+	</info>
+	<element name="Occultist" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_OCCULTIST">
+		<supports>Specialization</supports>
+		<description>
+			<p>Vampires, demons, lycanthropes, and Aberrations all have one thing in common: they are all magical threats, best combated through magical means. To meet these foes on a level playing field, occultists indulge in arcana, filling their grimoires with magical secrets and mastering a handful of spells. Occultists are the most likely investigators to cavort with warlocks, borrow tricks from wizards and magicians, and dabble in dark magic to defeat their foes.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_TRINKET" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_PACT_MAGIC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_ELDRITCH_RUIN" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_EYES_OF_ANOTHER_WORLD" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_MALEFICIUM" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">A magician borrowing spells from wizards and warlocks.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_TRINKET" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_PACT_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_ELDRITCH_RUIN" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_EYES_OF_ANOTHER_WORLD" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_MALEFICIUM" level="14" />
+		</rules>
+	</element>
+	<element name="Trinket (Occultist)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_TRINKET">
+		<description>
+			<p>By 3rd level, you've acquired a trinket to assist in your collection of eldritch lore:</p>
+			<p class="indent"><b>Rune Keeper's Eyeglass.</b> As a bonus action, you can activate this trinket to gain the ability to read all writing for 1 hour.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinket, you must be holding it to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Rune Keeper's Eyeglass" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_RUNE_KEEPERS_EYEGLASS" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_RUNE_KEEPERS_EYEGLASS" />
+		</rules>
+	</element>
+	<element name="Rune Keeper's Eyeglass" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_RUNE_KEEPERS_EYEGLASS">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_RUNE_KEEPERS_EYEGLASS</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can activate this trinket to gain the ability to read all writing for 1 hour.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can activate this trinket to gain the ability to read all writing for 1 hour.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pact Magic" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_PACT_MAGIC">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you augment your investigative skills with complex magics.</p>
+			<h5>CANTRIPS</h5>
+			<p>You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrips of your choice at 10th level.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Occultist Spellcasting table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level.</p>
+			<p class="indent">To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>At 3rd level, you know two 1st-level spells of your choice from the warlock spell list.</p>
+			<p class="indent">The Spells Known column of the Occultist Spellcasting table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. Use your investigator spell save DC and spell attack modifier for your warlock spells.</p>
+		</description>
+        <sheet>
+            <description>You  augment your investigative skills with complex magics.</description>
+        </sheet>
+		<rules>
+			<stat name="investigator:spellcasting:slots:count" value="1" level="3"/>
+			<stat name="investigator:spellcasting:slots:count" value="1" level="5"/>
+
+			<stat name="investigator:spellcasting:slot" value="1" level="3" />
+			<stat name="investigator:spellcasting:slot" value="1" level="7" />
+			<stat name="investigator:spellcasting:slot" value="1" level="13" />
+			<stat name="investigator:spellcasting:slot" value="1" level="19" />
+
+			<stat name="investigator:spellcasting:slots:1" value="investigator:spellcasting:slots:count" level="3" />
+			<stat name="investigator:spellcasting:slots:1" value="-investigator:spellcasting:slots:count" level="7" />
+			<stat name="investigator:spellcasting:slots:2" value="investigator:spellcasting:slots:count" level="7" />
+			<stat name="investigator:spellcasting:slots:2" value="-investigator:spellcasting:slots:count" level="13" />
+			<stat name="investigator:spellcasting:slots:3" value="investigator:spellcasting:slots:count" level="13" />
+			<stat name="investigator:spellcasting:slots:3" value="-investigator:spellcasting:slots:count" level="19" />
+			<stat name="investigator:spellcasting:slots:4" value="investigator:spellcasting:slots:count" level="19" />
+
+			<select type="Spell" name="Cantrip (Occultist)" supports="Warlock,0" level="3" number="2" spellcasting="Investigator" />
+			<select type="Spell" name="Cantrip (Occultist)" supports="Warlock,0" level="10" spellcasting="Investigator" />
+
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="3" number="2" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="5" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="7" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="9" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="11" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="13" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="15" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="17" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="19" spellcasting="Investigator"/>
+			<select type="Spell" name="Spellcasting (Occultist)" supports="Warlock,$(spellcasting:slots)" level="20" spellcasting="Investigator"/>
+		</rules>
+	</element>
+
+	<element name="Eldritch Ruin" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_ELDRITCH_RUIN">
+		<description>
+			<p>Starting at 6th level, you can use your magical cunning to rip your foes asunder. When you use your Exploit Weakness feature, you can forgo dealing additional damage to instead cast a cantrip as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>When you use your Exploit Weakness feature, you can forgo dealing additional damage to instead cast a cantrip as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Eyes Of Another World" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_EYES_OF_ANOTHER_WORLD">
+		<description>
+			<p>Starting at 10th level, supernatural creatures can no longer escape your detection. You can see creatures and objects that are invisible or on the Ethereal Plane, and you can see the original form of shapechangers or creatures whose form has been altered by magic. Additionally, you can immediately detect if a creature you can see is possessed.</p>
+		</description>
+		<sheet>
+			<description>You can see creatures and objects that are invisible or on the Ethereal Plane, and you can see the original form of shapechangers or creatures whose form has been altered by magic. Additionally, you can immediately detect if a creature you can see is possessed.</description>
+		</sheet>
+	</element>
+	<element name="Maleficium" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_OCCULTIST_MALEFICIUM">
+		<description>
+			<p>Starting at 14th level, when you use your Exploit Weakness feature against a creature, you can cast the <i>bestow curse</i> spell on that creature as a bonus action, without using a spell slot or spell components; the targeted creature has disadvantage on its saving throw against this spell.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>When you use your Exploit Weakness feature against a creature, you can cast the Bestow Curse spell on that creature without using a spell slot or spell components; the targeted creature has disadvantage on its saving throw against this spell.</description>
+		</sheet>
+	</element>
+</elements>

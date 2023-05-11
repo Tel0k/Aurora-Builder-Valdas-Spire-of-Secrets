@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Medium</name>
+		<description>The Medium from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-medium.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-medium.xml" />
+		</update>
+	</info>
+	<element name="Medium" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_MEDIUM">
+		<supports>Specialization</supports>
+		<description>
+			<p>As conduits between the living and dead, mediums offer an essential glimpse past the veil of mortality. Using their auguries, seances, and divinations, mediums can retrieve morsels of information from the afterlife to settle debts between the living or dead, and to assist ongoing investigations. This information, however cryptic, can point an interested party toward clues or evidence that only the deceased are able to provide.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_FORTELLING" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_TRINKETS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_FOREWARNING_PRESENCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_WHISPERS_FROM_BEYOND" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_THIRD_EYE" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">Foretells events of the future using a magical connection to the dead.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_FORTELLING" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_TRINKETS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_FOREWARNING_PRESENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_WHISPERS_FROM_BEYOND" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_THIRD_EYE" level="14" />
+		</rules>
+	</element>
+	<element name="Fortelling" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_FORTELLING">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you can receive glimpses of the future. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any ability check, attack roll, or saving throw made by you or a creature that you can see with one of these foretold rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.</p>
+			<p class="indent">As an action, you can expend a use of your Rushed Incantation feature to make an additional foretold roll. You can have up to three foretold rolls at one time. Each foretold roll can be used only once. When you finish a long rest, you lose any unused foretold rolls.</p>
+		</description>
+        <sheet action="(1)Action + Rushed Incantation" usage="1/Turn">
+            <description>When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any ability check, attack roll, or saving throw made by you or a creature that you can see with one of these foretold rolls. You must choose to do so before the roll. (1)You can make an additional foretold roll. You can have up to three foretold rolls at one time. Each foretold roll can be used only once. When you finish a long rest, you lose any unused foretold rolls.</description>
+        </sheet>
+	</element>
+	<element name="Trinkets (Medium)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_TRINKETS">
+		<description>
+			<p>By 3rd level, you've collected a number of objects that help you attune to the afterlife. You can use the following trinkets:</p>
+			<p class="indent"><b>Dead Ringer.</b> As an action, you can ring this bell to cast the <i>speak with dead</i> spell once without using a spell slot or spell components. When you cast the spell using this trinket, you can ask the corpse only one question.</p>
+			<p class="indent"><b>Heptagonal Spectacles.</b> As a bonus action, you can cast the <i>see invisibility</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Lucent Mirror.</b> You can use your bonus action to activate this trinket, causing you to phase partially into the Ethereal Plane for up to 1 minute. For the duration, you can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object. Additionally, you have resistance to all damage. This effect ends early after you take any damage.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinkets, you must be holding one to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Dead Ringer" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_DEAD_RINGER" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_DEAD_RINGER" />
+			<select type="Archetype Feature" name="Heptagonal Spectacles" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_HEPTAGONAL_SPECTACLES" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_HEPTAGONAL_SPECTACLES" />
+			<select type="Archetype Feature" name="Lucent Mirror" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_LUCENT_MIRROR" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_LUCENT_MIRROR" />
+		</rules>
+	</element>
+	<element name="Dead Ringer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_DEAD_RINGER">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_DEAD_RINGER</supports>
+		<compendium display="false" />
+		<description>
+			<p>As an action, you can ring this bell to cast the <i>speak with dead</i> spell once without using a spell slot or spell components. When you cast the spell using this trinket, you can ask the corpse only one question.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can ring this bell to cast the Speak With Dead spell once without using a spell slot or spell components. When you cast the spell using this trinket, you can ask the corpse only one question.</description>
+		</sheet>
+	</element>
+	<element name="Heptagonal Spectacles" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_HEPTAGONAL_SPECTACLES">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_HEPTAGONAL_SPECTACLES</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>see invisibility</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Invisibility spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Lucent Mirror" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_LUCENT_MIRROR">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_LUCENT_MIRROR</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can use your bonus action to activate this trinket, causing you to phase partially into the Ethereal Plane for up to 1 minute. For the duration, you can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object. Additionally, you have resistance to all damage. This effect ends early after you take any damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can phase partially into the Ethereal Plane for up to 1 minute. For the duration, you can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object. Additionally, you have resistance to all damage. This effect ends early after you take any damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Forewarning Presence" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_FOREWARNING_PRESENCE">
+		<description>
+			<p>By 6th level, the spirits of the dead guide your hand when you would falter. You can reroll an attack roll, ability check, or saving throw you make, and you must use the new roll. You can choose to use this feature after you make the roll, but before the GM determines whether it succeeds or fails.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can reroll an attack roll, ability check, or saving throw you make, and you must use the new roll. You can choose to use this feature after you make the roll, but before the GM determines whether it succeeds or fails.</description>
+		</sheet>
+	</element>
+	<element name="Whispers From Beyond" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_WHISPERS_FROM_BEYOND">
+		<description>
+			<p>Starting at 10th level, as an action you can open your perceptions to receive a hint from beyond the pale. The GM answers with a one-word hint pertaining to your best course of action, a fruitful line of inquiry, or some other useful direction.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can open your perceptions to receive a hint from beyond the pale. The GM answers with a one-word hint pertaining to your best course of action, a fruitful line of inquiry, or some other useful direction.</description>
+		</sheet>
+	</element>
+	<element name="Third Eye" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MEDIUM_THIRD_EYE">
+		<description>
+			<p>By 14th level, your connection to the afterlife allows you to see all. You can use your bonus action to cast the <i>true seeing</i> spell without using a spell slot or spell components.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can cast the True Seeing spell without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+</elements>

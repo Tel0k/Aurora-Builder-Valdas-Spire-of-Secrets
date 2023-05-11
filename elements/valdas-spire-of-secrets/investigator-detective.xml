@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Detective</name>
+		<description>The Detective from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-detective.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-detective.xml" />
+		</update>
+	</info>
+	<element name="Detective" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DETECTIVE">
+		<supports>Specialization</supports>
+		<description>
+			<p>Prowling at the edge of darkness, detectives chase down clues and pull on threads to unravel conspiracies that bring darkness into the world. Sometimes, this requires that you infiltrate a cult's secret meetings, other times it calls on you to reconstruct a person's last moments at a murder scene. No matter what the mystery, however, you know that there is always an explanation.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_INVESTIGATORS_HUNCH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_TRINKETS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_PREDICTIVE_INTUITION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_INTERROGATORS_INSTINCT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_POWER_OF_DEDUCTION" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">Chases down clues and unravels crimes with their impressive intellect.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_INVESTIGATORS_HUNCH" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_TRINKETS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_PREDICTIVE_INTUITION" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_INTERROGATORS_INSTINCT" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_POWER_OF_DEDUCTION" level="14" />
+		</rules>
+	</element>
+	<element name="Trinkets (Detective)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_TRINKETS">
+		<description>
+			<p>By 3rd level, you've collected a number of magical trinkets to aid you in tracking supernatural creatures and unraveling mysteries. You can use the following trinkets:</p>
+			<p class="indent"><b>Fogstone Periapt.</b> As a bonus action, you can cast the <i>misty step</i> spell once without using a spell slot or spell components.</p>
+			<p class="indent"><b>Glass Medallion.</b> As a bonus action, you can cast the <i>invisibility</i> spell once, targeting yourself only, without using a spell slot or spell components.</p>
+			<p class="indent"><b>Skeleton's Key.</b> As a bonus action, you can cast the <i>knock</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet alt="Trinkets" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinkets, you must be holding one to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Fogstone Periapt" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_FOGSTONE_PERIAPT" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_FOGSTONE_PERIAPT" />
+			<select type="Archetype Feature" name="Glass Medallion" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_GLASS_MEDALLION" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_GLASS_MEDALLION" />
+			<select type="Archetype Feature" name="Skeleton's Key" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_SKELETONS_KEY" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_SKELETONS_KEY" />
+		</rules>
+	</element>
+	<element name="Fogstone Periapt" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_FOGSTONE_PERIAPT">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_FOGSTONE_PERIAPT</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>misty step</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Misty Step spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Glass Medallion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_GLASS_MEDALLION">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_GLASS_MEDALLION</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>invisibility</i> spell once, targeting yourself only, without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Invisibility spell once, targeting yourself only, without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+	<element name="Skeleton's Key" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_SKELETONS_KEY">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ANTIQUARIAN_TRINKETS_SKELETONS_KEY</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you can cast the <i>knock</i> spell once without using a spell slot or spell components.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cast the Knock spell once without using a spell slot or spell components.</description>
+		</sheet>
+	</element>
+
+	<element name="Investigator's Hunch" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_INVESTIGATORS_HUNCH">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you can unravel even the toughest of mysteries. If you spend at least 10 minutes combing through documents and arranging clues, you can make an Intelligence check related to those documents and clues with advantage.</p>
+		</description>
+		<sheet>
+			<description>If you spend at least 10 minutes combing through documents and arranging clues, you can make an INT check related to those documents and clues with advantage.</description>
+		</sheet>
+	</element>
+	<element name="Predictive Intuition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_PREDICTIVE_INTUITION">
+		<description>
+			<p>By 6th level, you can turn your skills with reconstructing events toward anticipating the next moment of a fight. As a bonus action, you can examine the movements of a creature you can see within 30 feet of you. When you do so, you can choose to add 1d6 to your next attack roll targeting that creature before the start of your next turn, or you can choose to subtract 1d6 from the creature's next attack roll against you before the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can examine the movements of a creature you can see within 30ft of you. When you do so, you can choose to add 1d6 to your next attack roll targeting that creature before the start of your next turn, or you can choose to subtract 1d6 from the creature's next attack roll against you before the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Interrogator's Instinct" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_INTERROGATORS_INSTINCT">
+		<description>
+			<p>At 10th level, you are so accustomed to uncovering the truth that you can sense the intents behind someone's voice. You can tell if a creature that you can hear speaking is charmed, possessed, or otherwise enchanted to speak against its will, and you have advantage on any ability check you make to determine if you hear a lie.</p>
+		</description>
+		<sheet>
+			<description>You can tell if a creature that you can hear speaking is charmed, possessed, or otherwise enchanted to speak against its will, and you have advantage on any ability check you make to determine if you hear a lie.</description>
+		</sheet>
+	</element>
+	<element name="Power of Deduction" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DETECTIVE_POWER_OF_DEDUCTION">
+		<description>
+			<p>Starting at 14th level, you can use your action to examine a creature you can see within 30 feet of you, noting innumerable details and making a lengthy string of logical deductions. For the next minute, you have advantage on Intelligence and Charisma checks you make to interact with that creature, and you have advantage on attack rolls against it.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description>You can examine a creature you can see within 30ft of you, noting innumerable details and making a lengthy string of logical deductions. For the next minute, you have advantage on Intelligence and Charisma checks you make to interact with that creature, and you have advantage on attack rolls against it.</description>
+		</sheet>
+	</element>
+</elements>

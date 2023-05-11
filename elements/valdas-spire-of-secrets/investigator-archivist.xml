@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Archivist</name>
+		<description>The Archivist from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="investigator-archivist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/investigator-archivist.xml" />
+		</update>
+	</info>
+	<element name="Archivist" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_ARCHIVIST">
+		<supports>Specialization</supports>
+		<description>
+			<p>Though most investigators fill their grimoires with hard-won knowledge borne from encounters with supernatural threats, some prefer to do bookkeeping instead. Such archivists seek to accumulate knowledge, moreso than trinkets, by spending untold hours digging through disparate tomes of occult secrets and compiling them into encyclopedic texts on the supernatural. Through their research, archivists become academic masters of the arcane and priceless reservoirs of obscure knowledge.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKET" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_ERUDITE_SPELL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_ENCYCLOPEDIC_EXPERTISE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_EIDETIC_MEMORY" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">A scholar who collects scraps of ancient lore.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKET" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_ERUDITE_SPELL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_ENCYCLOPEDIC_EXPERTISE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_EIDETIC_MEMORY" level="14" />
+		</rules>
+	</element>
+	<element name="Trinket (Archivist)" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKET">
+		<description>
+			<p>Starting when you choose this specialization at 3rd level, you've collected a powerful trinket to enhance your ritual magic:</p>
+			<p class="indent"><b>Archaic Scroll.</b> You can perform a ritual spell with your Rushed Incantation feature without expending one of the feature's uses.</p>
+		</description>
+		<sheet alt="Trinket" usage="{{trinket:use}}/Short||Long Rest">
+			<description>You can use the following trinket, you must be holding it to activate it.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Archaic Scroll" supports="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKETS_ARCHAIC_SCROLL" default="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKETS_ARCHAIC_SCROLL" />
+		</rules>
+	</element>
+	<element name="Archaic Scroll" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKETS_ARCHAIC_SCROLL">
+		<supports>ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_TRINKETS_ARCHAIC_SCROLL</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can perform a ritual spell with your Rushed Incantation feature without expending one of the feature's uses.</p>
+		</description>
+		<sheet>
+			<description>You can perform a ritual spell with your Rushed Incantation feature without expending one of the feature's uses.</description>
+		</sheet>
+	</element>
+
+	<element name="Thesis" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS">
+		<description>
+			<p>Also at 3rd level, you gain access to certain spells associated with your thesis. Pick one of the following subject areas for your thesis: Corpus, Ignis, Mortis, or Regis. You gain a list of associated thesis spells. Once you gain access to a thesis spell, it is added to your grimoire. If you gain access to a spell that doesn't appear on the investigator spell list, the spell is nonetheless an investigator spell for you. You can use your action and expend a use of your Rushed Incantation feature to cast one of your thesis spells.</p>
+		</description>
+		<sheet>
+			<description>You gain access to certain spells associated with your thesis.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Thesis" supports="Thesis" />
+		</rules>
+	</element>
+	<element name="Corpus" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS_CORPUS">
+		<supports>Thesis</supports>
+		<compendium display="false" />
+		<spellcasting name="Investigator" extend="true">			
+			<extend>ID_PHB_SPELL_JUMP</extend>
+			<extend>ID_PHB_SPELL_LONGSTRIDER</extend>
+			<extend>ID_PHB_SPELL_ALTER_SELF</extend>
+			<extend>ID_PHB_SPELL_HEAT_METAL</extend>
+			<extend>ID_PHB_SPELL_GASEOUS_FORM</extend>
+            <extend>ID_PHB_SPELL_MELD_INTO_STONE</extend>
+		</spellcasting>
+		<sheet action="Action" usage="Rushed Incantation"/>
+	</element>
+	<element name="Ignis" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS_IGNIS">
+		<supports>Thesis</supports>
+		<compendium display="false" />
+		<spellcasting name="Investigator" extend="true">			
+			<extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+			<extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+			<extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+			<extend>ID_PHB_SPELL_CALL_LIGHTNING</extend>
+            <extend>ID_PHB_SPELL_WIND_WALL</extend>
+		</spellcasting>
+		<sheet action="Action" usage="Rushed Incantation"/>
+	</element>
+	<element name="Mortis" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS_MORTIS">
+		<supports>Thesis</supports>
+		<compendium display="false" />
+		<spellcasting name="Investigator" extend="true">			
+			<extend>ID_PHB_SPELL_BANE</extend>
+			<extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_DARKNESS</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+            <extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+		</spellcasting>
+		<sheet action="Action" usage="Rushed Incantation"/>
+	</element>
+	<element name="Regis" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_THESIS_REGIS">
+		<supports>Thesis</supports>
+		<compendium display="false" />
+		<spellcasting name="Investigator" extend="true">			
+			<extend>ID_PHB_SPELL_CHARM_PERSON</extend>
+			<extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+			<extend>ID_PHB_SPELL_ENTHRALL</extend>
+			<extend>ID_PHB_SPELL_SUGGESTION</extend>
+			<extend>ID_PHB_SPELL_DISPEL_MAGIC</extend>
+            <extend>ID_PHB_SPELL_HYPNOTIC_PATTERN</extend>
+		</spellcasting>
+		<sheet action="Action" usage="Rushed Incantation"/>
+	</element>
+
+	<element name="Erudite Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_ERUDITE_SPELL">
+		<description>
+			<p>By 6th level, you've mastered the intricate theory of arcane propagation. When you cast a spell that forces a creature to make a saving throw to resist its effects, you can give one target of the spell disadvantage on its first saving throw against the spell.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can give one target of the spell disadvantage on its first saving throw against the spell.</description>
+		</sheet>
+	</element>
+	<element name="Encyclopedic Expertise" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_ENCYCLOPEDIC_EXPERTISE">
+		<description>
+			<p>Starting at 10th level, you can identify any arcane effect from memory. Whenever you witness a spell being cast or investigate a magical effect, you can always identify the spell that was cast, the magic item responsible, or the monster which produced the effect. However, this ability fails to identify spells, magic items, and monsters that are utterly unique or are otherwise not recorded in arcane texts.</p>
+		</description>
+		<sheet>
+			<description>Whenever you witness a spell being cast or investigate a magical effect, you can always identify the spell that was cast, the magic item responsible, or the monster which produced the effect. However, this ability fails to identify spells, magic items, and monsters that are utterly unique or are otherwise not recorded in arcane texts.</description>
+		</sheet>
+	</element>
+	<element name="Eidetic Memory" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCHIVIST_EIDETIC_MEMORY">
+		<description>
+			<p>At 14th level, you can effortlessly duplicate spells you see in the world. You can copy any ritual spell you see being cast into your grimoire.</p>
+			<p class="indent">Moreover, you can precisely copy the exact motions of a spell's casting to duplicate its effect. When you see a spell of 5th level or lower being cast, you can use your action and spend 1 use of your Rushed Incantation feature to cast the spell yourself without expending a spell slot. To use this ability, the spell must have a casting time of 1 action, must have been cast within the last minute, and must not have expensive material components.</p>
+			<p class="indent">Once you duplicate a spell in this way, you can't do so again until you finish a long rest. </p>
+		</description>
+		<sheet usage="(1) 1/Long Rest">
+			<description>You can copy any ritual spell you see being cast into your grimoire. Moreover, you can precisely copy the exact motions of a spell's casting to duplicate its effect. (1)When you see a spell of 5th level or lower being cast, you can use your action and spend 1 use of your Rushed Incantation feature to cast the spell yourself without expending a spell slot. To use this ability, the spell must have a casting time of 1 action, must have been cast within the last minute, and must not have expensive material components.</description>
+		</sheet>
+	</element>
+</elements>
