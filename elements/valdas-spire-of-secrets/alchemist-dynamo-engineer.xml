@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dynamo Engineer</name>
+		<description>The Dynamo Engineer from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="alchemist-dynamo engineer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-dynamo engineer.xml" />
+		</update>
+	</info>
+    <element name="Dynamo Engineer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER">
+        <supports>Field</supports>
+        <description>
+            <p>As an early alchemical thesis states: if the fundamental energy of magic could be captured within physical substance, there would be no need for magic-users. Some alchemists have founded their careers on this notion, inventing and iterating upon small devices known as spell dynamos which store and manipulate arcane energy. These dynamos can be configured to store their energy at a specific resonance, such that, when it is released, it perfectly replicates the effect of a spell. Indeed, these few alchemists have begun to brave the frontier of spellcasting without an ounce of arcane talent; just a knack for tinkering and endless inventiveness.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_SPECTRUM_ANALYZER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_SPELLCASTING" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_ARCANO_BOMB" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_COUNTERDISCHARGE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_ARCANE_RECYCLER" />
+        </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="short">Casts spells by preparing them in devices known as spell dynamos.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_SPECTRUM_ANALYZER" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_SPELLCASTING" level="2" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_ARCANO_BOMB" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_COUNTERDISCHARGE" level="10" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_ARCANE_RECYCLER" level="18" />
+        </rules>
+    </element>
+    <element name="Spectrum Analyzer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_SPECTRUM_ANALYZER">
+        <description>
+            <p>Starting at 2nd level, you have invented a small device shaped like a monocle capable of rendering magical auras visible to the naked eye. You can cast the detect magic spell once without using a spell slot or spell components.</p>
+            <p class="indent">Once you cast the spell in this way, you can't do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short||Long Rest">
+            <description>You can cast the detect magic spell once without using a spell slot or spell components.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_SPELLCASTING">
+        <description>
+            <p>Also at 2nd level, you can cast spells by storing and releasing energy in spell dynamos. See the core rules for the general rules of spellcasting and the wizard spell list.</p>
+			<h5>SPELL DYNAMOS</h5>
+			<p>You power your spells through handheld arcane devices called spell dynamos, which each hold a single spell slot. The Dynamo Engineer Spellcasting table shows how many spell dynamos you have. The table also shows what the level of those slots held in each of your dynamos is; all of these spell slots are the same level. To cast one of your wizard spells of 1st level or higher, you must expend a spell dynamo. You regain all expended spell dynamos when you finish a long rest.</p>
+			<h5>PREPARING SPELLS</h5>
+			<p>Unlike other spells, you must prepare the spells held in each of your spell dynamos in advance. When you finish a long rest, you configure each of your dynamos to cast a particular wizard spell you know. You can only use a spell dynamo to cast a spell to which it is configured. When you finish a short or long rest, you can reconfigure your unexpended dynamos to hold different spells.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know three 1st-level wizard spells of your choice, two of which you must choose from the evocation and transmutation spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Dynamo Engineer Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an evocation or transmutation spell of your choice, and must be of a level for which you have spell slots.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an evocation or transmutation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your wizard spells, since you cast them using cutting-edge arcane technology. You use your Intelligence whenever a spell refers to your spellcasting ability. Use your bomb save DC as the saving throw DC for a wizard spell you cast, and use your Intelligence modifier when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description> You power your spells through handheld arcane devices called spell dynamos, which each hold a single spell slot. When you finish a long rest, you configure each of your dynamos to cast a particular wizard spell you know. You can only use a spell dynamo to cast a spell to which it is configured. When you finish a short or long rest, you can reconfigure your unexpended dynamos to hold different spells.</description>
+		</sheet>
+		<spellcasting name="Dynamo Engineer" ability="Intelligence" allowReplace="true" prepare="true">
+			<list known="true">Wizard, (Evocation||Transmutation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" /> 
+			<stat name="dynamo engineer:spellcasting:slots:count" value="2" level="2"/>
+			<stat name="dynamo engineer:spellcasting:slots:count" value="1" level="4"/>
+			<stat name="dynamo engineer:spellcasting:slots:count" value="1" level="7"/>
+			<stat name="dynamo engineer:spellcasting:slots:count" value="1" level="10"/>
+			<stat name="dynamo engineer:spellcasting:slots:count" value="1" level="16"/>
+			<stat name="dynamo engineer:spellcasting:slots:count" value="1" level="19"/>
+
+			<stat name="dynamo engineer:spellcasting:slot" value="1" level="2" />
+			<stat name="dynamo engineer:spellcasting:slot" value="1" level="7" />
+			<stat name="dynamo engineer:spellcasting:slot" value="1" level="13" />
+			<stat name="dynamo engineer:spellcasting:slot" value="1" level="19" />
+
+			<!-- negative count to remove slots -->
+			<stat name="dynamo engineer:spellcasting:slots:1" value="dynamo engineer:spellcasting:slots:count" level="2" />
+            <stat name="dynamo engineer:spellcasting:slots:1" value="-dynamo engineer:spellcasting:slots:count" level="7" />
+            <stat name="dynamo engineer:spellcasting:slots:2" value="dynamo engineer:spellcasting:slots:count" level="7" />
+            <stat name="dynamo engineer:spellcasting:slots:2" value="-dynamo engineer:spellcasting:slots:count" level="13" />
+            <stat name="dynamo engineer:spellcasting:slots:3" value="dynamo engineer:spellcasting:slots:count" level="13" />
+            <stat name="dynamo engineer:spellcasting:slots:3" value="-dynamo engineer:spellcasting:slots:count" level="19" />
+            <stat name="dynamo engineer:spellcasting:slots:4" value="dynamo engineer:spellcasting:slots:count" level="19" />
+			
+			<stat name="dynamo engineer:spellcasting:prepare" value="dynamo engineer:spellcasting:slots:count" />
+
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="Wizard, $(spellcasting:slots)" level="2" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="2" number="2" spellcasting="Dynamo Engineer"  />
+            <select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="4" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="7" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="Wizard, $(spellcasting:slots)" level="8" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="10" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="11" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="13" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="Wizard, $(spellcasting:slots)" level="14" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="16" spellcasting="Dynamo Engineer"  />
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="(Wizard, (Evocation||Transmutation)), $(spellcasting:slots)" level="19" spellcasting="Dynamo Engineer"/>
+			<select type="Spell" name="Spell (Dynamo Engineer)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="Dynamo Engineer"/>
+		</rules>
+    </element>
+    <element name="Formula: Arcano Bomb" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_ARCANO_BOMB">
+        <description>
+            <p>Starting at 6th level, you can craft arcano bombs. By adding an unexpended dynamo to your bomb (and thus expending the dynamo's spell slot), you can change it into an arcano bomb. An arcano bomb deals force damage instead of fire damage, its damage dice are d12s, and it deals one extra die of damage, as if a reagent die were added to it.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can craft arcano bombs, by adding an unexpended dynamo to your bomb (and thus expending the dynamo's spell slot). An arcano bomb deals force damage instead of fire damage, its damage dice are d12s, and it deals one extra die of damage, as if a reagent die were added to it.</description>
+        </sheet>
+    </element>
+    <element name="Counter-Discharge" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_COUNTERDISCHARGE">
+        <description>
+            <p>Beginning at 10th level, when a creature you can see casts a spell that affects you, you can use your reaction to expend a spell dynamo to release a wave of disruptive magical energy. If the spell requires you to make a saving throw to resist its effects, you have advantage on the saving throw. If the spell deals damage, you have resistance against it.</p>
+            <p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>When a creature you can see casts a spell that affects you, you can expend a spell dynamo to release a wave of disruptive magical energy. If the spell requires you to make a saving throw to resist its effects, you have advantage on the saving throw. If the spell deals damage, you have resistance against it.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Recycler" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_DYNAMO_ENGINEER_ARCANE_RECYCLER">
+        <description>
+            <p>By 18th level, you can convert otherwise wasted magical energy into a usable form. When you miss with an arcano bomb, you can recycle the spell slot stored in the dynamo and transfer it to one of the empty dynamos on your person.</p>
+        </description>
+        <sheet>
+            <description>When you miss with an arcano bomb, you can recycle the spell slot stored in the dynamo and transfer it to one of the empty dynamos on your person.</description>
+        </sheet>
+    </element>
+</elements>
