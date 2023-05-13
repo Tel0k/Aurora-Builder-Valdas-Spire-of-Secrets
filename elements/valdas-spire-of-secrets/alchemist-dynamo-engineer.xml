@@ -4,8 +4,8 @@
 		<name>Dynamo Engineer</name>
 		<description>The Dynamo Engineer from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
-			<file name="alchemist-dynamo engineer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-dynamo-engineer.xml" />
+		<update version="0.0.2">
+			<file name="alchemist-dynamo-engineer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/alchemist-dynamo-engineer.xml" />
 		</update>
 	</info>
     <element name="Dynamo Engineer" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER">
