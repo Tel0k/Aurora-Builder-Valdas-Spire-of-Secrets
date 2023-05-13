@@ -50,7 +50,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Language (Spirithost)" supports="Standard||Exotic" />
+			<select type="Language" name="Language (Spirithost)" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_VISION" />
 			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_INCORPOREAL_MOVEMENT" />
