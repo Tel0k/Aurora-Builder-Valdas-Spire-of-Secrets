@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mousefolk - Updated</name>
+		<update version="0.0.1">
+			<file name="race-mousefolk-updated.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-mousefolk-updated.xml" />
+		</update>
+	</info>
+	<element name="Mandrake (post MotM)" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_MOUSEFOLK">
+		<description>
+			<p class="flavor">Never to be looked down upon, the slight, unassuming mousefolk are kindhearted to a fault and possess courage greater than most giants.</p>
+			<h4>TINY BUT BRAVE</h4>
+			<p>Though the tiny, big-eared mousefolk are often overlooked by larger creatures, history is rife with stories of gallant mouse-knights staring down dragons, crossing blades with warlords, and charging into grand battles. It happens that few mousefolk aspire to heroism, but a certain moral compass often compels mousefolk to a higher cause.</p>
+			<p class="indent">As a rule, mousefolk are good to their neighbors and rarely pick fights; after all, most folk can be reasoned with. Those who can't be reasoned with, however, should rightly fear mousefolk striking at their knees. Mousefolk do not suffer bullies lightly.</p>
+			<p class="indent">Despite their valorous legacies, no histories are written about the mousefolk culture itself. This is because the mousefolk language, Rodentia, has no written form, and mousefolk preserve thier history in stories and songs passed from elders to children throughout the generations.</p>
+			<h4>HOODED OR DISGRACED</h4>
+			<p>Though ratlings have long abandoned the old ways, a mouseling is never to be seen without a hood. Following ancient tradition, mouselings wear hoods they have sewn themselves at all times, except in the most dire of circumstances. A hood is a symbol of wealth and social standing, and is sometimes replaced with hats or other headwear when appropriate. If a mouseling is seen without a hood, it is a sure sign of disgrace and exile, the most personal punishment a village of mouselings can inflict.</p>
+			<h4>MOUSEFOLK TRAITS</h4>
+			<p>Slight and swift, you possess the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one ability score of your choice by 2 and increase a different score by 1, or increase three different scores by 1. &#13;
+			<i>Typical:</i> Dexterity +2, Charisma +1</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Lightfooted.</em></strong> You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Scurry.</em></strong> You can move through the space of any hostile creature as if it were difficult terrain.</p>
+			<p class="indent"><strong><em>Squeeze.</em></strong> You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</p>
+			<p class="indent"><strong><em>Mousefolk Lineage.</em></strong> Mousefolk belong to a lineage of mouselings or ratlings. Choose one of the following lineage options:</p>
+			<p class="indent"><strong><em>Mouseling's Sidestep.</em></strong> When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Ratling's Gnaw.</em></strong> You can use your action to chew through and break a small nonmagical object that isn't being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can't chew through materials that are harder than your teeth, such as metal, stone, or crystal.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Mousefolk)" supports="Custom Ability Score Improvement Option" />
+			<select type="Racial Trait" name="Mousefolk Lineage" supports="ID_MHP_VSOS_MOUSELING_TRAIT|ID_MHP_VSOS_RATLING_TRAIT" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_RODENTIA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Mousefolk)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Mousefolk)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_LIGHTFOOTED2" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SCURRY2" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE2" />
+		</rules>
+	</element>
+	<element name="Lightfooted" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_LIGHTFOOTED2">
+		<description>
+			<p>You have proficiency in the Stealth skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Stealth skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Scurry" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SCURRY2">
+		<description>
+			<p>You can move through the space of any hostile creature as if it were difficult terrain.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any hostile creature as if it were difficult terrain.</description>
+		</sheet>
+	</element>
+	<element name="Squeeze" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SQUEEZE2">
+		<description>
+			<p>You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</p>
+		</description>
+		<sheet>
+			<description>You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.</description>
+		</sheet>
+	</element>
+	<element name="Mouseling's Sidestep" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MOUSELING_TRAIT">
+		<description>
+			<p>When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor.</p>
+		</description>
+			<sheet action="Reaction">
+			<description>When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor.</description>
+		</sheet>
+	</element>
+	<element name="Ratling's Gnaw" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RATLING_TRAIT">
+		<description>
+			<p>You can use your action to chew through and break a small nonmagical object that isn't being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can't chew through materials that are harder than your teeth, such as metal, stone, or crystal.</p>
+		</description>
+		<sheet usage="Action">
+			<description>You can chew through and break a small nonmagical object that isn't being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can't chew through materials that are harder than your teeth, such as metal, stone, or crystals.</description>
+		</sheet>
+	</element>
+</elements>

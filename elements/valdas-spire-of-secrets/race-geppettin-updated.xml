@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Geppettin - Updated</name>
+		<update version="0.0.1">
+			<file name="race-geppettin-updated.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-geppettin-updated.xml" />
+		</update>
+	</info>
+    <element name="Geppettin (post MotM)" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_GEPPETTIN2">
+        <description>
+            <p class="flavor">Ever a joy to children, geppettin resemble living playthings made of wood, cloth, or porcelain. Though easily mistaken for puppets, geppettin are not manipulated by a just-out-of-sight puppeteer; they are animated, sentient, and independent.</p>
+			<h4>LIVING TOYS</h4>
+			<p>As a race, the geppettin are an oddity. Though rare, they are numerous enough and share enough similarities with each other that they may be counted as an actual race of people, and not just freak mishaps of magic. While it may be that there are dedicated creators of geppettin, as there are with golems, a significant number of them have come to life on their own.</p>
+			<p class="indent">Physically, geppettin are often shorter than halflings. Their physical features vary greatly from type to type, but they are almost always humanoid in shape. For simplicity, geppettin are classified by the materials of which they are composed: bisque are porcelain, marionettes are wood, and plushies are made of fabric.</p>
+			<p class="indent">Despite being made of somewhat flimsy materials, sentience seems to grant them an odd hardiness. Additionally, due to their non-living nature, they never hunger, rarely tire, and are adept at being innocuous. Most find some form of work or profession in entertainment, but a few find fantastic success as spies and assassins.</p>
+            <p class="indent">As living constructs, geppettin do not age, and are mature as soon as they become sentient.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="Geppetin Trait" supports="ID_MHP_VSOS_GEPPETTIN_BISQUE_TRAIT|ID_MHP_VSOS_GEPPETTIN_MARIONETTE_TRAIT|ID_MHP_VSOS_GEPPETTIN_PLUSHIE_TRAIT" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CONSTRUCT_ANATOMY2" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_FALSE_APPEARANCE" />
+        </rules>
+    </element>
+    <element name="Construct Anatomy - Updated" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CONSTRUCT_ANATOMY2">
+		<description>
+			<p>You are immune to nonmagical diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish.</p>
+			<p class="indent">You don't need to sleep, and magic can't put you to sleep. You can finish a long rest by spending 4 hours in a motionless state, during which you retain consciousness.</p>
+		</description>
+		<sheet alt="Construct Anatomy">
+			<description> You are immune to nonmagical disease. You don’t need to eat, drink, breathe or sleep. Instead of sleeping you enter an inactive state for 4 hours each day, you are still conscious and can see and hear as normal. You can still be affected by sleepinducing magic.</description>
+		</sheet>
+	</element>
+    <element name="False Appearance" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_FALSE_APPEARANCE">
+		<description>
+			<p>While you are motionless, you are indistinguishable from an ordinary wooden doll.</p>
+		</description>
+		<sheet>
+			<description> While you are motionless, you are indistinguishable from an ordinary wooden doll.</description>
+		</sheet>
+	</element>
+
+    <element name="Bisque" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_GEPPETTIN_BISQUE_TRAIT">
+        <description>
+            <p>Bisque geppettin are a form of porcelain doll, crafted with exacting specification and often luxurious clothing materials. Though they are designed to look as realistic as possible, they are often thought to be the most terrifying of geppettin due to their lifeless visage. Though their faces are often very fragile, their construction is generally much hardier than their brethren’s.</p>
+			<h4>BISQUE TRAITS</h4>
+			<p>As a bisque, you have the following racial traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one ability score of your choice by 2 and increase a different score by 1, or increase three different scores by 1. &#13;
+            <i>Typical:</i> Dexterity +1, Constitution +1, Charisma +1</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong>  You are a Humanoid. However, spells and effects that specifically affect Constructs affect you as well.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Construct Anatomy.</em></strong> You are immune to nonmagical diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish.</p>
+			<p class="indent">You don't need to sleep, and magic can't put you to sleep. You can finish a long rest by spending 4 hours in a motionless state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>False Appearance.</em></strong> While you are motionless, you are indistinguishable from an ordinary porcelain doll.</p>
+			<p class="indent"><strong><em>Sudden Strike.</em></strong> Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes extra damage equal to your proficiency bonus.</p>
+            <p class="indent"><strong><em>Unnerving.</em></strong> You gain proficiency in the Intimidation skill, and have advantage on any Charisma (Intimidation) rolls in you make against a creature that hasn’t previously seen you move.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Bisque)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TYPE_HUMANOID_CONSTRUCT" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Bisque)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Bisque)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SUDDEN_STRIKE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_UNNERVING" />
+        </rules>
+    </element>
+    <element name="Sudden Strike" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SUDDEN_STRIKE">
+		<description>
+			<p>Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes extra damage equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description> Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes {{proficiency}} extra damage.</description>
+		</sheet>
+	</element>
+    <element name="Unnerving" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_UNNERVING">
+		<description>
+			<p>You gain proficiency in the Intimidation skill, and have advantage on any Charisma (Intimidation) rolls in you make against a creature that hasn’t previously seen you move.</p>
+		</description>
+		<sheet>
+			<description> You have advantage on any Charisma (Intimidation) rolls in you make against a creature that hasn’t previously seen you move.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+	</element>
+
+    <element name="Marionette" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_GEPPETTIN_MARIONETTE_TRAIT">
+        <description>
+            <p>Marionette geppettin are made mostly out of wood, with painted faces and carved clothing. Due to their construction, their jointed limbs are quite flexible, and they are known to be fantastic dancers. The very largest marionettes, called mannequins, stand as tall as a human and bear completely blank, expressionless faces.</p>
+			<h4>MARIONETTE TRAITS</h4>
+            <p class="indent">As a marionette, you have the following racial traits:</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one ability score of your choice by 2 and increase a different score by 1, or increase three different scores by 1. &#13;
+            <i>Typical:</i> Dexterity +2, Charisma +1</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong>  You are a Humanoid. However, spells and effects that specifically affect Constructs affect you as well.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small or Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Construct Anatomy.</em></strong> You are immune to nonmagical diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish.</p>
+			<p class="indent">You don't need to sleep, and magic can't put you to sleep. You can finish a long rest by spending 4 hours in a motionless state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>False Appearance.</em></strong> While you are motionless, you are indistinguishable from an ordinary porcelain doll.</p>
+            <p class="indent"><strong><em>Clipped Strings.</em></strong> When you make an attack with a melee weapon that lacks the Two-Handed property on your turn, the weapon gains the Reach property if it didn’t already have it.</p>
+            <p class="indent"><strong><em>Pantomime.</em></strong> You gain proficiency in the Performance skill, and have advantage on Charisma (Performance) checks made to dance.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Marionette)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Racial Trait" name="Size (Marionette)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TYPE_HUMANOID_CONSTRUCT" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Marionette)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Marionette)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_CLIPPED_STRINGS2" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_PANTOMIME2" />
+        </rules>
+    </element>
+    <element name="Clipped Strings - Updated" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_CLIPPED_STRINGS2">
+		<description>
+			<p>When you make an attack with a melee weapon that lacks the Two-Handed property on your turn, the weapon gains the Reach property if it didn’t already have it.</p>
+		</description>
+		<sheet alt="Clipped Strings">
+			<description> When you make an attack with a melee weapon that lacks the Two-Handed property on your turn, the weapon gains the Reach property if it didn’t already have it.</description>
+		</sheet>
+	</element>
+    <element name="Pantomime - Updated" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_PANTOMIME2">
+		<description>
+			<p>You gain proficiency in the Performance skill, and have advantage on Charisma (Performance) checks made to dance.</p>
+		</description>
+		<sheet alt="Pantomime">
+			<description> You gain proficiency in the Performance skill, and have advantage on Charisma (Performance) checks made to dance.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+        </rules>
+	</element>
+
+    <element name="Plushie" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_GEPPETTIN_PLUSHIE_TRAIT">
+        <description>
+            <p>Plushies, also called raggedies, are any form of stuffed or soft geppettin. Though they often look humanoid, they may also look like animals, monsters, or any other form of anthropomorphic creature.</p>
+            <h4>PLUSHIE TRAITS</h4>
+            <p class="indent">As a plushie, you have the following racial traits:</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one ability score of your choice by 2 and increase a different score by 1, or increase three different scores by 1. &#13;
+            <i>Typical:</i> Dexterity +1, Charisma +2</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong>  You are a Humanoid. However, spells and effects that specifically affect Constructs affect you as well.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Construct Anatomy.</em></strong> You are immune to nonmagical diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish.</p>
+			<p class="indent">You don't need to sleep, and magic can't put you to sleep. You can finish a long rest by spending 4 hours in a motionless state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>False Appearance.</em></strong> While you are motionless, you are indistinguishable from an ordinary porcelain doll.</p>
+            <p class="indent"><strong><em>Adorable.</em></strong> You gain proficiency in the Persuasion skill, and have advantage on Charisma (Persuasion) rolls you make against children or other humanoids that are fond of cute things.</p>
+            <p class="indent"><strong><em>Stuffed with Fluff.</em></strong> When you take bludgeoning damage, you can use your reaction to gain resistance to the damage, and you are also knocked 5 feet away from the source of the damage. You can’t use this reaction if you can’t be knocked away from the source of the damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Plushie)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_TYPE_HUMANOID_CONSTRUCT" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Plushie)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Plushie)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ADORABLE2" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_STUFFED_WITH_FLUFF2" />
+        </rules>
+    </element>
+    <element name="Adorable - Updated" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ADORABLE2">
+		<description>
+			<p>You gain proficiency in the Persuasion skill, and have advantage on Charisma (Persuasion) rolls you make against children or other humanoids that are fond of cute things.</p>
+		</description>
+		<sheet alt="Adorable">
+			<description> You gain proficiency in the Persuasion skill, and have advantage on Charisma (Persuasion) rolls you make against children or other humanoids that are fond of cute things.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+	</element>
+    <element name="Stuffed with Fluff - Updated" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_STUFFED_WITH_FLUFF2">
+		<description>
+			<p>When you take bludgeoning damage, you can use your reaction to gain resistance to the damage, and you are also knocked 5 feet away from the source of the damage. You can’t use this reaction if you can’t be knocked away from the source of the damage.</p>
+		</description>
+		<sheet alt="Stuffed with Fluff" action="Reaction">
+			<description> When you take bludgeoning damage, you can gain resistance to the damage, and you are also knocked 5ft away from the source of the damage. You can’t use this reaction if you can’t be knocked away from the source of the damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Humanoid Construct" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_TYPE_HUMANOID_CONSTRUCT">
+		<supports>Creature Type</supports>
+		<description>
+			<p>You are a Humanoid. You are also considered a Construct for any prerequisite or effect that requires you to be a Construct.</p>
+			<div class="reference">
+				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
+			</div>
+		</description>
+		<sheet alt="Creature Type">
+			<description>Humanoid. You are also considered a Construct for any prerequisite or effect that requires you to be a Construct.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_CONSTRUCT" />
+		</rules>
+	</element>
+
+    <element name="Race Construct" type="Grants" source="Internal" id="ID_INTERNAL_GRANT_RACE_CONSTRUCT" />
+
+</elements>
