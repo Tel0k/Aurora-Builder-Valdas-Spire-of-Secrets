@@ -3,7 +3,7 @@
 	<info>
 		<name>Spirithost</name>
 		<description>The Spirithost Race from Valda’s Spire of Secrets</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-spirithost.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-spirithost.xml" />
 		</update>
 	</info>
@@ -50,7 +50,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Language (Spirithost)" number="1" />
+			<select type="Language" name="Language (Spirithost)" supports="Standard||Exotic" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_VISION" />
 			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_INCORPOREAL_MOVEMENT" />
