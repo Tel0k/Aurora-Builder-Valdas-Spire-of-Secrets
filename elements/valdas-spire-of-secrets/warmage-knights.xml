@@ -4,15 +4,14 @@
         <name>House of Knights</name>
         <description>The Warmage's House of Knights from Valda's Spire of Secrets</description>
         <author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="warmage-knights.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-knights.xml" />
         </update>
     </info>
     <element name="House of Knights" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_HOUSE_KNIGHTS">
         <supports>Warmage House</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>The House of Knights has a long and storied tradition of melding melee combat and swordplay with the warmage’s simple spellcasting. Unlike other warriors, however, Knights rarely carry swords or shields into combat, for they can forge both out of magical force at a moment’s notice.</p>
             <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_BONUS_PROFICIENCIES" />
             <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_FORCE_BREASTPLATE" />
             <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_KNIGHTS_MYSTICAL_WEAPON" />
