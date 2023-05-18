@@ -4,7 +4,7 @@
 		<name>Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="vsos-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-spells.xml" />
 		</update>
 	</info>
@@ -2292,7 +2292,7 @@
 			<set name="duration">1 round</set>
 		</setters>	
 	</element>
-	<element name="Swift Flight" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_STONE_BONES">
+	<element name="Swift Flight" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_SWIFT_FLIGHT">
 		<supports>Witch, Sorcerer, Wizard</supports>
 		<description>
 			<p>Streaks of energy flow from the back of a creature you touch, tracing the shapes of wings. Until the end of the target’s next turn, it has a fly speed of 30 feet. It falls if it ends its turn in the air and nothing else is holding it aloft.</p>
