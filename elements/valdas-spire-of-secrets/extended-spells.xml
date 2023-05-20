@@ -56,7 +56,7 @@
 		<supports>Warmage</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SHOCKING_GRASP">
-		<supports>Warmage</supports>
+		<supports>Necromancer, Warmage</supports>
 	</append>
 	<append id="ID_PHB_SPELL_TRUE_STRIKE">
 		<supports>Warmage, Necromancer, Witch</supports>
@@ -105,6 +105,9 @@
 	<append id="ID_PHB_SPELL_FAERIE_FIRE">
 		<supports>Witch</supports>
 	</append>
+	<append id="ID_PHB_SPELL_FALSE_LIFE">
+		<supports>Necromancer</supports>
+	</append>
 	<append id="ID_PHB_SPELL_FIND_FAMILIAR">
 		<supports>Investigator</supports>
 	</append>
@@ -128,6 +131,9 @@
 	</append>
 	<append id="ID_PHB_SPELL_INFLICT_WOUNDS">
 		<supports>Necromancer, Martyr</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGE_ARMOR">
+		<supports>Necromancer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
 		<supports>Necromancer, Martyr, Witch</supports>
@@ -231,7 +237,7 @@
 		<supports>Necromancer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_MISTY_STEP">
-		<supports>Necromancer</supports>
+		<supports>Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA">
 		<supports>Investigator</supports>
@@ -396,6 +402,9 @@
 	<append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
 		<supports>Necromancer, Witch</supports>
 	</append>
+	<append id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN">
+		<supports>Witch</supports>
+	</append>
 	<append id="ID_PHB_SPELL_LOCATE_CREATURE">
 		<supports>Investigator, Martyr, Necromancer, Witch</supports>
 	</append>
@@ -547,7 +556,7 @@
 		<supports>Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PLANE_SHIFT">
-		<supports>Witch</supports>
+		<supports>Necromancer, Witch</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PROJECT_IMAGE">
 		<supports>Witch</supports>
