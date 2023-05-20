@@ -4,7 +4,7 @@
 		<name>Investigator</name>
 		<description>The Investigator from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-investigator.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-investigator.xml" />
 		</update>
 	</info>
@@ -171,26 +171,26 @@
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
 			
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1" level="1" number="4" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1" level="2" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2" level="3" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2" level="4" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3" level="5" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3" level="6" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4" level="7" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4" level="8" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5" level="9" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5" level="10" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="11" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="12" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="13" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="14" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="15" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="16" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="17" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="18" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="19" spellcasting="Investigator" />
-			<select type="Spell" name="Spellbook (Investigator)" supports="$(spellcasting:list), 1, 2, 3, 4, 5, 6" level="20" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), 1" level="1" number="4" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), 1" level="2" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2)" level="3" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2)" level="4" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3)" level="5" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3)" level="6" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4)" level="7" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4)" level="8" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5)" level="9" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5)" level="10" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="11" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="12" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="13" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="14" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="15" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="16" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="17" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="18" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="19" spellcasting="Investigator" />
+			<select type="Spell" name="Grimoire (Investigator)" supports="$(spellcasting:list), (1||2||3||4||5||6)" level="20" spellcasting="Investigator" />
 		</rules>
 	</element>
 	<element name="Myths and Legends" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_INVESTIGATOR_MYTHSANDLEGENDS">
