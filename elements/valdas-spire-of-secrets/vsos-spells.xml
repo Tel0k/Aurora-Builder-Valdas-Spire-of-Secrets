@@ -4,7 +4,7 @@
 		<name>Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="vsos-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-spells.xml" />
 		</update>
 	</info>
@@ -235,7 +235,7 @@
 		</setters>
 	</element>
 	<element name="Blood Print" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_BLOOD_PRINT">
-		<supports>Investogator, Martyr, Necromancer, Witch, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard</supports>
+		<supports>Investigator, Martyr, Necromancer, Witch, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>At your touch, wet blood on a surface shifts and reforms into a pattern of crimson blotches. This blood print is unique to the particular creature to whom the blood belongs, but you can determine the creature’s kind (such as human, gnoll, deer, or fire giant) by examining the general shape. A print can be preserved by pressing a sheet of paper against it. If this spell is cast twice, it is possible to match samples of blood originating from the same creature by comparing the prints.</p>
 		</description>
@@ -1132,7 +1132,7 @@
 		</setters>
 	</element>
 	<element name="Game of Fate" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_GAME_OF_FATE">
-		<supports>Bard, Wizard, Spell Saving Throw</supports>
+		<supports>Investigator, Bard, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You magically compel a creature within range to a nonmagical game with vital consequences. If the creature you choose has an Intelligence of 3 or lower or doesn’t speak any language, the creature is unaffected. An unwilling creature can make a Wisdom saving throw to resist this effect. On a failed save, the creature is compelled to join you in the game. If the target takes damage or falls unconscious, this spell ends.</p>
 			<p class="indent">The loser of the game takes 6d6 psychic damage. If no player loses the game or no player has won at the end of the spell’s duration, both you and the target take this damage.</p>
@@ -1420,7 +1420,7 @@
 		</setters>	
 	</element>
 	<element name="Indemnify" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_INDEMNIFY">
-		<supports>Necromancer, Spell Saving Throw</supports>
+		<supports>Martyr, Necromancer, Spell Saving Throw</supports>
 		<description>
 			<p>You fling a drop of blood at a target you can see within range, marking them for reckoning. The target must make a Constitution saving throw. On a failed save, the target takes 1d8 radiant or necrotic damage (your choice) whenever you lose hit points for the duration. This spell ends early if the target begins its turn further than 60 feet from you.</p>
 		</description>
@@ -1928,7 +1928,7 @@
 		</setters>	
 	</element>
 	<element name="Pillar of Salt" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_PILLAR_OF_SALT">
-		<supports>Martyr, Witch, Spell Saving Throw</supports>
+		<supports>Martyr, Spell Saving Throw</supports>
 		<description>
 			<p>You deliver a mote of divine wrath to a point you can see within range. Each creature you choose in a 10-foot radius sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes 7d6 necrotic damage, or half as much on a successful save. If this damage reduces a target which failed its saving throw to 0 hit points, it is transformed into a pillar of salt.</p>
 			<p class="indent"><strong>At Higher Levels</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
@@ -2513,7 +2513,7 @@
 		</setters>	
 	</element>
 	<element name="Zephyr's Feather" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_ZEPHYRS_FEATHER">
-		<supports>Investigator, Witch, Bard, Cleric, Druid, Wizard</supports>
+		<supports>Bard, Cleric, Druid, Wizard</supports>
 		<description>
 			<p>You wave your hand and three alabaster feathers, magically sharpened to a razor’s edge, appear and orbit you. When you cast this spell, make a ranged spell attack using one of your feathers against a creature within 120 feet of you. On a hit, the target takes 2d8 slashing damage. Until the spell ends, while you have feathers remaining, you can make an attack using a feather on each of your turns as an action.</p>
 			<p class="indent"><strong>At Higher Levels</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st, up to a maximum of 6d8. You gain an additional two feathers when you cast this spell using a spell slot of 3rd level or higher (5 feathers), and two more when you cast it using a spell slot of 5th level or higher (7 feathers).</p>
