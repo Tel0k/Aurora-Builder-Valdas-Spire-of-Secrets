@@ -4,7 +4,7 @@
 		<name>House of Lancers</name>
 		<description>The Warmage's House of Lancers from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="warmage-lancers.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warmage-lancers.xml" />
 		</update>
 	</info>
@@ -34,10 +34,10 @@
     </element>
     <element name="Intercept Technique" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_INTERCEPT_TECHNIQUE">
         <description>
-            <p>Starting when you choose this house at 3rd level, you adopt the monastic principle of offensive protection. While you are unarmored or are under the effects of <i>mage armor</i>, you can add your Intelligence, rather than your Dexterity, to your Armor Class.</p>
+            <p>Starting when you choose this house at 3rd level, you adopt the monastic principle of offensive protection. While you aren't wearing armor or wielding a shield, your AC equals 10 + your Dexterity modifier + your Intelligence modifier. If you are under the effects of the mage armor spell, your AC equals 13 + your Dexterity modifier or your Intelligence modifier (your choice). You can't use a shield and gain this benefit.</p>
         </description>
         <sheet>
-            <description> While you are unarmored or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your AC.</description>
+            <description> While you are unarmored or are under the effects of mage armor, you can add your Intelligence, rather than your Dexterity, to your AC. You can't use a shield and gain this benefit.</description>
         </sheet>
         <rules>
 	    <stat name="ac:unarmored lancer:base" value="10" alt="Base" />
@@ -45,7 +45,7 @@
             <stat name="ac:unarmored lancer:ability" value="intelligence:modifier" bonus="ability" />
             <stat name="ac:unarmored lancer" value="ac:unarmored lancer:base" />
             <stat name="ac:unarmored lancer" value="ac:unarmored lancer:ability" />
-            <stat name="ac:calculation" value="ac:unarmored lancer" bonus="calculation" equipped="[armor:none]" alt="Unarmored Lancer" />
+            <stat name="ac:calculation" value="ac:unarmored lancer" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Lancer" />
 	</rules>
     </element>
     <element name="Hand-to-hand Arcana" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_LANCERS_HANDTOHAND_ARCANA">
