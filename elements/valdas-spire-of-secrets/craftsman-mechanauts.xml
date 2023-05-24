@@ -4,7 +4,7 @@
 		<name>Mechanauts' Guild</name>
 		<description>The Mechanauts' Guild from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="craftsman-mechanauts.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/craftsman-mechanauts.xml" />
 		</update>
 	</info>
@@ -41,7 +41,7 @@
 			<p class="indent"><b>Piloting the Apparatus.</b> A creature that is inside the apparatus can pilot it; the apparatus acts on its pilot's turn. Any creature piloting the apparatus can command it to move on its turn (no action required). When you pilot the apparatus, you can use your action to command it to take the Attack, Dash, Disengage, Hide, or Use an Object action. You can also command it to use a reaction, using your own reaction to do so. </p>
             <p>Only one creature can pilot the apparatus at a time. The pilot takes half the damage the apparatus takes.</p>
             <p class="indent">While you are outside the apparatus, you can command the apparatus to wait or follow you. While following, it moves on its turn to remain within 30 feet of you.</p>
-			<p class="indent"><b>Attacking with the Apparatus.</b> When you hit with a ranged weapon attack using a firearm that has the Scatter property, you can reroll the lowest damage die, and you must use the new roll, even if the new roll is lower than the original.</p>
+			<p class="indent"><b>Attacking with the Apparatus.</b> The apparatus attacks with its integrated weapons as if you were wielding them, and uses your Dexterity or Intelligence modifier (your choice) for its attack and damage rolls, using the same modifier for both. When you take the Attack action, it makes the same number of attacks you normally would.</p>
 		</description>
 		<sheet>
             <description> [See Compendium or book for detailed description]</description>
