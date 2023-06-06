@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>The Feats from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="vsos-feats.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-feats.xml" />
 		</update>
 	</info>
@@ -21,7 +21,7 @@
             <description>{{battle adept:dice:amount}}d{{battle adept:dice:size}} battle dice / short or long rest. DC {{battle adept:dc}}</description>
         </sheet>
         <rules>
-            <stat name="battle adept:dc:ability" value="strength:modifier" bonus="ability" />
+			<stat name="battle adept:dc:ability" value="strength:modifier" bonus="ability" />
 			<stat name="battle adept:dc:ability" value="dexterity:modifier" bonus="ability" />
 			<stat name="battle adept:dc" value="8" />
 			<stat name="battle adept:dc" value="proficiency" />
@@ -120,8 +120,8 @@
             <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WARMAGE" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_FEATURE_HOUSE_BISHOPS_SPELLCASTING" />
             <grant type="Grants" id="ID_MHP_VSOS_FEAT_CHRONOMANCY_INITIATE_EXPANDED_SPELL_LIST_WITCH" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_CLASS_FEATURE_WITCH_SPELLCASTING" />
             <grant type="Spell" id="ID_MHP_VSOS_SPELL_MOMENT_TO_THINK" />
-            <select type="Spell" name="Chronomancy Initiate" supports="Chronomancy" number="4" requirements="!(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
-            <select type="Spell" name="Chronomancy Initiate" supports="Chronomancy" number="4" prepared="true" requirements="(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
+            <select type="Spell" name="Chronomancy Initiate" supports="Chronomancy" number="4" requirements="!(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING||ID_MHP_VSOS_CLASS_FEATURE_MARTYR_SPELLCASTING)"/>
+            <select type="Spell" name="Chronomancy Initiate" supports="Chronomancy" number="4" prepared="true" requirements="(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING||ID_MHP_VSOS_CLASS_FEATURE_MARTYR_SPELLCASTING)"/>
         </rules>
     </element>
     <!-- -->
@@ -578,8 +578,8 @@
         <rules>
             <select type="Spell" name="Gun-Mage Adept, Cantrip" supports="(ID_MHP_VSOS_SPELL_CONCEALED_SHOT|ID_MHP_VSOS_SPELL_FINGER_GUNS)" />
             <select type="Proficiency" name="Weapon Proficiency, Firearm" supports="" number="4" />
-            <select type="Spell" name="Gun-Mage Adept" supports="Renaissance" number="4" requirements="!(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
-            <select type="Spell" name="Gun-Mage Adept" supports="Renaissance" number="4" prepared="true" requirements="(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING)"/>
+            <select type="Spell" name="Gun-Mage Adept" supports="Renaissance" number="4" requirements="!(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING||ID_MHP_VSOS_CLASS_FEATURE_MARTYR_SPELLCASTING)"/>
+            <select type="Spell" name="Gun-Mage Adept" supports="Renaissance" number="4" prepared="true" requirements="(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_ERLW_CLASS_ARTIFICER||ID_MHP_VSOS_ARCHETYPE_DYNAMO_ENGINEER_SPELLCASTING||ID_MHP_VSOS_CLASS_FEATURE_MARTYR_SPELLCASTING)"/>
             <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_ARTIFICER" requirements="!ID_INTERNAL_GRANT_MULTICLASS, ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING" />
             <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_RAGE_MAGE" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_MHP_VSOS_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MAGE_SPELLCASTING" />
             <grant type="Grants" id="ID_MHP_VSOS_FEAT_GUNMAGE_ADEPT_EXPANDED_SPELL_LIST_BARD" requirements="!ID_INTERNAL_GRANT_MULTICLASS,ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" />
