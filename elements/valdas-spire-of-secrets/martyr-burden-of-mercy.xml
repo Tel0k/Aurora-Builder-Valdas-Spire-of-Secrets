@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burden of Mercy</name>
+ 		<description>The Burden of Mercy archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+	   <update version="0.0.1">
+			<file name="martyr-burden-of-mercy.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-mercy.xml" />
+		</update>
+	</info>
+	<element name="Burden of Mercy" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_MERCY">
+		<supports>Burden</supports>
+		<description>
+			<p>When the suffering of the world grows too heavy and the cries of the anguished grow too loud, the gods deliver a martyr to ease the strife and bring peace to the masses. This burden, however, has no end. A martyr may spend all their days healing the sick and driving demons out of the possessed, but they will scarcely impact the world at large. Indeed, the onus upon them is not to mend every wound or comfort every widow, but to provide hope in the darkest of times that the gods have not forsaken their people, that peace will soon reign, and that light will be victorious.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BURDEN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_CANTRIPS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BALM" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_SACROSANCT_SPELL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BLESSING_OF_BROKEN_BREAD" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_ANOINTED_HEALER" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="short">Heals the sick and eases the suffering of all.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BURDEN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_CANTRIPS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BALM" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_SACROSANCT_SPELL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BLESSING_OF_BROKEN_BREAD" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_ANOINTED_HEALER" level="18" />
+		</rules>
+	</element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>healing word, sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>enhance ability, lesser restoration</em></td></tr>
+				<tr><td>9th</td><td><em>remove curse, revivify</em></td></tr>
+				<tr><td>13th</td><td><em>death ward, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>mass cure wounds, raise dead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Cantrips" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_CANTRIPS">
+		<description>
+			<p>Starting at 1st level, your divine mission grants you a sliver of divine magic. You learn the <i>spare the dying</i> and <i>thaumaturgy</i> cantrips, and one other cantrip of your choice from the cleric spell list. You don’t lose hit points for casting these spells. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You learn the Spare the Dying and Thaumaturgy cantrips, and one other cantrip of your choice from the Cleric spell list. You don’t lose hp for casting these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" spellcasting="Martyr"/>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Martyr"/>
+			<select type="Spell" name="Cantrip (Mercy)" supports="Cleric, 0" spellcasting="Martyr"/>
+		</rules>
+	</element>
+	<element name="Balm" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BALM">
+		<description>
+			<p>Also at 1st level, you can use a bonus action to restore 1 hit point to a creature within 60 feet or remove the blinded, deafened, or poisoned condition from a willing creature you touch.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You can restore 1hp to a creature within 60ft or remove the blinded, deafened, or poisoned condition from a willing creature you touch.</description>
+		</sheet>
+	</element>
+	<element name="Sacrosant Spell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_SACROSANCT_SPELL">
+		<description>
+			<p>At 6th level, when you cast one of your Burden Spells or a spell that has the sole effect restoring hit points to a creature, you lose no hit points from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</p>
+		</description>
+		<sheet>
+			<description>When you cast one of your Burden Spells or a spell that has the sole effect restoring hp to a creature, you lose no hp from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</description>
+		</sheet>
+	</element>
+	<element name="Blessing of Broken Bread" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_BLESSING_OF_BROKEN_BREAD">
+		<description>
+			<p>Beginning at 14th level, once per day when you finish a short or long rest, choose up to five creatures you can see at the end of the rest to gain a blessing. This blessing lasts until the creature finishes a short or long rest. Whenever a blessed creature makes an attack roll, ability check, or saving throw, it can expend the blessing to reroll the die and must use the new roll.</p>
+		</description>
+		<sheet usage="(1/Day)/Short||Long Rest">
+			<description>Choose up to 5 creatures you can see at the end of the rest to gain a blessing. This blessing lasts until the creature finishes a short or long rest. Whenever a blessed creature makes an attack roll, ability check, or saving throw, it can expend the blessing to reroll the die and must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Anointed Healer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_MERCY_ANOINTED_HEALER">
+		<description>
+			<p>By 18th level, your status as a divine healer is enshrined in sainthood. Whenever you restore hit points to a creature, you can add your martyr level to the number of regained hit points. A creature can benefit from this additional healing once, regaining the ability to do so when you finish a long rest.</p>
+		</description>
+		<sheet >
+			<description>Whenever you restore hp to a creature, you can add {{level:martyr}} to the number of regained hp. A creature can benefit from this additional healing once, regaining the ability to do so when you finish a long rest.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Burden of Tyranny</name>
+		<description>The Burden of Tyranny archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="martyr-burden-of-tyranny.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-tyranny.xml" />
+        </update>
+    </info>
+    <element name="Burden of Tyranny" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_TYRANNY">
+        <supports>Burden</supports>
+        <description>
+            <p>When malevolent gods find the world pacified and defenseless, they send a martyr of tyranny to conquer its kingdoms, subjugate the weak, and spread misery with their blade. Once unleashed, this martyr stops at nothing to establish an empire to rule over with an iron fist. They demand bloodshed from their foes and pledges of absolute fealty from their allies, taking gleeful satisfaction with every power grab and malicious turn. It is not enough to rule: they must be feared, and any resistance must cower in their shadows. Only then will the gods let them die, likely stabbed in the back by someone crueler or more pitiless.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BURDEN_SPELLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BONUS_PROFICIENCY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_DIABOLIC_ULTIMATUM" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BLOODY_REPRIEVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_CRUSH_RESISTANCE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_TOTALITARIAN" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+		<setters>
+			<set name="short">Fated to become a king and rule with an iron fist.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BURDEN_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_DIABOLIC_ULTIMATUM" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BLOODY_REPRIEVE" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_CRUSH_RESISTANCE" level="14" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_TOTALITARIAN" level="18" />
+        </rules>
+    </element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>bane, command</em></td></tr>
+				<tr><td>5th</td><td><em>find steed, hold person</em></td></tr>
+				<tr><td>9th</td><td><em>bestow curse, fear</em></td></tr>
+				<tr><td>13th</td><td><em>banishment, dominate beast</em></td></tr>
+				<tr><td>17th</td><td><em>dominate person, geas</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>    
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BONUS_PROFICIENCY">
+		<description>
+			<p>Starting at 1st level, you gain proficiency with heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Diabolic Ultimatum" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_DIABOLIC_ULTIMATUM">
+		<description>
+			<p>Also at 1st level, you can use your action to drive an enemy to harsh choices with a glance. Choose one creature you can see which can see you within 60 feet to make a Wisdom saving throw (DC equals 8 + your proficiency bonus + your Wisdom modifier). On a failed save, the creature is charmed or frightened by you (the target's choice) for up to 1 minute. It can repeat this saving throw on each of its turns, ending the effect on a success.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description>Choose one creature you can see which can see you within 60ft to make a DC{{spellcasting:dc:wis}} WIS saving throw. On a failed save, the creature is charmed or frightened by you (the target's choice) for up to 1 minute. It can repeat this saving throw on each of its turns, ending the effect on a success.</description>
+		</sheet>
+	</element>
+	<element name="Bloody Reprieve" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_BLOODY_REPRIEVE">
+		<description>
+			<p>Starting at 6th level, whenever you use your Torment feature against a hostile creature and you reduce the target to 0 hit points, you don't lose any hit points from using the ability.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Torment feature against a hostile creature and you reduce the target to 0hp, you don't lose any hp from using the ability.</description>
+		</sheet>
+	</element>
+	<element name="Crush Resistance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_CRUSH_RESISTANCE">
+		<description>
+			<p>By 14th level, your strikes drain the vitality of others. Once on each of your turns, when you hit a hostile creature with a melee weapon attack, you gain 1d8 temporary hit points. If you reduce a Humanoid to 0 hit points with a melee weapon attack, you instead gain 4d8 temporary hit points.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a hostile creature with a melee weapon attack, you gain 1d8 temporary hp. If you reduce a Humanoid to 0 hp with a melee weapon attack, you instead gain 4d8 temporary hp.</description>
+		</sheet>
+	</element>
+	<element name="Totalitarian" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TYRANNY_TOTALITARIAN">
+		<description>
+			<p>By 18th level, you can demand complete fealty from dire enemies. You can cast the spell dominate person once without expending hit points or counting against your total number of martyr spells per day. Whenever you cast dominate person, the target has disadvantage on its saving throw and doesn't make a new Wisdom saving throw against the spell when it takes damage.</p>
+			<p class="indent">Once you cast this spell without expending hit points, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the spell Dominate Person once without expending hp or counting against your total number of martyr spells per day. Whenever you cast Dominate Person, the target has disadvantage on its saving throw and doesn't make a new WIS saving throw against the spell when it takes damage.</description>
+		</sheet>
+	</element>
+
+</elements>

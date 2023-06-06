@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spirithost - Updated</name>
+		<update version="0.0.1">
+			<file name="race-spirithost-updated.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/race-spirithost-updated.xml" />
+		</update>
+	</info>
+	<element name="Spirithost (post MotM)" type="Race" source="Valda's Spire of Secrets" id="ID_RACE_SPIRITHOST2">
+		<description>
+			<p class="flavor">Spirithosts are the eerie, spectral residents of the Border Ethereal. Though often confused for ghosts, spirithosts are very much alive—as much as their shifting, partly material bodies allow.</p>
+			<h4>ETHEREAL PROGENY</h4>
+			<p>The Ethereal Plane is rightly believed to be the domain of restless, transient souls. However, the Border Ethereal, which lies closer to the Material Plane, has its fair share of adopted inhabitants, such as the blink dog and phase spider. Spirithosts are the only humanoids to have adpoted this plane, and might be considered its only true descendents.</p>
+			<p class="indent">Though  their bodies resemble that of ghosts—slightly translucent and glowing with a pale, white light—spirithosts are not undead. Far from it: they are born, grow old, die, and can even raise children. Yet the stigma of undeath lingers over them. Many a well-meaning but ignorant cleric or paladin has tried to turn or banish a spirithost to no avail. To avoid such conflict, spirithosts often avoid large, unfamiliar towns, or disguise their ethereality from others.</p>
+			<p class="indent">Spirithosts do not experience time in the same way as most mortal creatures. As a result, even though they mature in their teens, their lives can stretch on for hundreds of years.</p>
+			<h4>SPIRITHOST TRAITS</h4>
+			<p>Your borderline ethereal body grants you the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong>  Increase one ability score of your choice by 2 and increase a different score by 1, or increase three different scores by 1. &#13;
+            <i>Typical:</i> Strength +1, Dexterity +1, Intelligence +1</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. However, spells and effects that specifically affect Undead affect you as well, except for effects that turn undead.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Ethereal Vision.</em></strong>While you are on the Material Plane, you can see 120 feet into the Ethereal Plane.</p>
+			<p class="indent"><strong><em>Ghostly Descent.</em></strong>You float gently to the ground. At the end of a fall when you aren't incapacitated, subtract 60 feet from the distance you fell when calculating your falling damage.</p>
+			<p class="indent"><strong><em>Incorporeal Movement.</em></strong> You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but your partially-material form cannot pass through more than one foot of stone, one inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+			<p class="indent">If you end your movement occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</p>
+			<p class="indent"><strong><em>Spirit Speech.</em></strong> You can cast the spell <i>speak with dead</i>, without using spell slots or material components. When you cast the spell using this trait, you can ask the corpse a number of questions equal to your proficiency bonus, and you can't cast the spell with it again until you finish a long rest. You can also cast this spell using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Astras, Boreas, Cin'nilas, Cusnon, Fesim, Mesaron, Senvas, Servalas, Sesirops, Yalsin</set>
+			<set name="names" type="female">Amias, Belias, Heathimis, Lethreas, Nix'silia, Priscilla, Sayu, Shavaras, Sunda, Wishnas</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<stat name="Dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Racial Trait" name="Ability Score Increase (Spirithost)" supports="Half-Elf" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spirithost)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Spirithost)" number="1" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_VISION" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_GHOSTLY_DESCENT" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_INCORPOREAL_MOVEMENT" />
+			<grant type="Racial Trait" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH" />
+		</rules>
+	</element>
+	<element name="Ethereal Vision" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_ETHEREAL_VISION">
+		<description>
+			<p>While you are on the Material Plane, you can see 120 feet into the Ethereal Plane.</p>
+		</description>
+		<sheet>
+			<description>You can see {{ethereal:range}}ft into the Ethereal Plane.</description>
+		</sheet>
+		<rules>
+			<stat name="ethereal:range" value="120" bonus="base"  />
+		</rules>
+	</element>
+	<element name="Ghostly Descent" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_GHOSTLY_DESCENT">
+		<description>
+			<p>You float gently to the ground. At the end of a fall when you aren't incapacitated, subtract 60 feet from the distance you fell when calculating your falling damage.</p>
+		</description>
+		<sheet>
+			<description>At the end of a fall when you aren't incapacitated, subtract 60ft from the distance you fell when calculating your falling damage.</description>
+		</sheet>
+	</element>
+	<element name="Incorporeal Movement" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_INCORPOREAL_MOVEMENT">
+		<description>
+			<p>You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but your partially-material form cannot pass through more than one foot of stone, one inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+			<p class="indent">If you end your movement occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</p>
+		</description>
+		<sheet>
+			<description>You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but you cannot pass through more than 1ft of stone, 1 inch of common metal, a thin sheet of lead, or 3ft of wood or dirt. If you end occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space and take force damage equal to twice the number of feet you are moved.</description>
+		</sheet>
+	</element>
+	<element name="Spirit Speech" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH">
+		<description>
+			<p>You can cast the spell <i>speak with dead</i>, without using spell slots or material components. When you cast the spell using this trait, you can ask the corpse a number of questions equal to your proficiency bonus, and you can't cast the spell with it again until you finish a long rest. You can also cast this spell using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+			<select type="Racial Trait" name="Spellcasting Ability (Spirit Speech)" supports="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH_INTELLIGENCE|ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH_WISDOM|ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the <i>speak with dead</i> spell.</p>
+		</description>
+		<sheet alt="Spirit Speech" usage="1/Long Rest">
+			<description>You can cast the Speak with Dead spell with this trait, without requiring a material component and ask the corpse up to {{proficiency}} questions. You can also cast the spell using any spell slots you have of 3rd Lv or higher.&#13;
+			Intelligence is your spellcasting ability for this spell.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the <i>speak with dead</i> spell.</p>
+		</description>
+		<sheet alt="Spirit Speech" usage="1/Long Rest">
+			<description>You can cast the Speak with Dead spell with this trait, without requiring a material component and ask the corpse up to {{proficiency}} questions. You can also cast the spell using any spell slots you have of 3rd Lv or higher.&#13;
+			Wisdom is your spellcasting ability for this spell.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_RACIAL_TRAIT_SPIRIT_SPEECH_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the <i>speak with dead</i> spell.</p>
+		</description>
+		<sheet alt="Spirit Speech" usage="1/Long Rest">
+			<description>You can cast the Speak with Dead spell with this trait, without requiring a material component and ask the corpse up to {{proficiency}} questions. You can also cast the spell using any spell slots you have of 3rd Lv or higher.&#13;
+			Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+	</element>
+</elements>
+
+	

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Burden of Revolution</name>
+		<description>The Burden of Revolution archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+            <file name="martyr-burden-of-revolution.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-revolution.xml" />
+        </update>
+    </info>
+    <element name="Burden of Revolution" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_REVOLUTION">
+        <supports>Burden</supports>
+        <description>
+            <p>Kings and leaders are bound by an unspoken covenant to the gods to govern their people justly and peacefully. When a monarch turns their back on the gods, embraces tyranny, or uses cruel measures against their own people, a martyr is called to end their reign. Rarely does a Martyr of Revolution come with peaceful measures, for when a king must fall, only the sword can provide the necessary leverage.</p>
+            <p class="indent">Such martyrs are not only called to battle kings; any person of influence that oppresses others and abuses their power might wrong the gods enough to earn the ire of a martyr. In dark times, a martyr might be tasked with clearing a continent of despots and oppressors, calling for a full-scale military campaign of liberation.</p>
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BURDEN_SPELLS" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BONUS_PROFICIENCY" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BULWARK_OF_REBELLION" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BLOODY_REPRIEVE" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_UNYIELDING_BANNER" />
+            <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_KINGSLAYER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+		<setters>
+			<set name="short">Sent by the gods to spread freedom and crush despots.</set>
+		</setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BURDEN_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BULWARK_OF_REBELLION" level="1" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BLOODY_REPRIEVE" level="6" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_UNYIELDING_BANNER" level="14" />
+            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_KINGSLAYER" level="18" />
+        </rules>
+    </element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<p>New spells are marked with an asterisk.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>command, heroism</em></td></tr>
+				<tr><td>5th</td><td><em>hold person, magic weapon</em></td></tr>
+				<tr><td>9th</td><td><em>haste, pillar of salt*</em></td></tr>
+				<tr><td>13th</td><td><em>stoneskin, wall of fire</em></td></tr>
+				<tr><td>17th</td><td><em>hold monster, telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_PILLAR_OF_SALT" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BONUS_PROFICIENCY">
+		<description>
+			<p>Starting at 1st level, you gain proficiency with heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Bulwark of Rebellion" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BULWARK_OF_REBELLION">
+		<description>
+			<p>Also at 1st level, you can use a bonus action to gain temporary hit points equal to 1d12 + your martyr level, which last for 1 hour.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You gain temporary hp equal to 1d12 + {{level:martyr}}, which last for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Bloody Reprieve" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_BLOODY_REPRIEVE">
+		<description>
+			<p>Starting at 6th level, whenever you use your Torment feature against a hostile creature and you reduce the target to 0 hit points, you don't lose any hit points from using the ability.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Torment feature against a hostile creature and you reduce the target to 0hp, you don't lose any hp from using the ability.</description>
+		</sheet>
+	</element>
+	<element name="Unyelding Banner" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_UNYIELDING_BANNER">
+		<description>
+			<p>At 14th level, your banner is a symbol of resistance. You and friendly creatures within 10 feet of you can add your Wisdom modifier to initiative rolls and are immune to being charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>You and friendly creatures within 10ft of you gain a +{{wisdom:modifier}} to initiative rolls and are immune to being charmed or frightened.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Kingslayer" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REVOLUTION_KINGSLAYER">
+		<description>
+			<p>By 18th level, you are the bane of despots, the usurper of tyrants. When you reduce a hostile creature to 0 hit points, choose one of the following effects:</p>
+			<ul>
+				<li>All of the creature's spells and effects immediately end, including all spells with permanent effects. Additionally, spells contingent on the target's death don't trigger.</li>
+				<li>Each creature within 120 feet of the target that is allied with it and has a lower challenge rating than it must make a Wisdom saving throw against your spell save DC or be frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li>You can use your bonus action to move up to 15 feet and make another melee weapon attack.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you reduce a hostile creature to 0 hit points, choose one of the following effects: &#13;
+			• All of the creature's spells and effects immediately end, including all spells with permanent effects. Additionally, spells contingent on the target's death don't trigger. &#13;
+			• Each creature within 120ft of the target that is allied with it and has a lower CR than it must make a DC{{spellcasting:dc:wis}} WIS saving throw or be frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. &#13;
+			• You can use your bonus action to move up to 15ft and make another melee weapon attack. </description>
+		</sheet>
+	</element>
+    
+</elements>

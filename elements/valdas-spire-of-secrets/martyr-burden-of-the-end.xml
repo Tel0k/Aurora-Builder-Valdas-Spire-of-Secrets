@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burden of the End</name>
+		<description>The Burden of the End archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="martyr-burden-of-the-end.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-the-end.xml" />
+		</update>
+	</info>
+	<element name="Burden of the End" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_END">
+		<supports>Burden</supports>
+		<description>
+			<p>The gods have seen a great cataclysm on the horizon and tasked their martyr with protecting the world from catastrophe. The exact nature of the coming End may vary: sometimes the awakening or arrival of an evil entity, sometimes the discovery and abuse of a powerful artifact, and sometimes a singularly destructive event that endangers the gods themselves, but the martyr must be dedicated to give their life to stop it. To this end, the gods imbue their martyr with ancient and powerful spells, tools once gifted only to prophets.</p>
+			<p class="indent">When the coming cataclysm threatens the world, a martyr would be ill-served to ignore their call, for the cataclysm imperils them directly—as well as the lives of their family and companions. The life of a martyr is always forfeit, but the rest of the world can yet be saved.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_BURDEN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_CANTRIPS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_HERALD_OF_THE_END" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_SACROSANCT_SPELL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_EMBRACE_THE_INEVITABLE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_HALT_APOCALYPSE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="short">One mission: prevent the end of the world.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_BURDEN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_CANTRIPS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_HERALD_OF_THE_END" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_SACROSANCT_SPELL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_EMBRACE_THE_INEVITABLE" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_HALT_APOCALYPSE" level="18" />
+		</rules>
+	</element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>guiding bolt, protection from evil and good</em></td></tr>
+				<tr><td>5th</td><td><em>blindness/deafness, darkness</em></td></tr>
+				<tr><td>9th</td><td><em>call lightning, counterspell</em></td></tr>
+				<tr><td>13th</td><td><em>blight, control water</em></td></tr>
+				<tr><td>17th</td><td><em>flame strike, insect plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Cantrips" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_CANTRIPS">
+		<description>
+			<p>Starting at 1st level, your divine mission grants you a sliver of divine magic. You learn the <i>sacred flame</i> and <i>thaumaturgy</i> cantrips, and one other cantrip of your choice from the cleric spell list. You don't lose hit points for casting these spells. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You learn the Sacred Flame and Thaumaturgy cantrips, and one other cantrip of your choice from the Cleric spell list. You don't lose hp for casting these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" spellcasting="Martyr"/>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Martyr"/>
+			<select type="Spell" name="Cantrip (End)" supports="Cleric, 0" spellcasting="Martyr"/>
+		</rules>
+	</element>
+	<element name="Herald of the End" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_HERALD_OF_THE_END">
+		<description>
+			<p>Also at 1st level, your magic is empowered with foreknowledge of the end times, heightening its force. When you cast a martyr spell that deals damage, you can choose to reroll all of its damage dice and must use the new rolls.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you cast a martyr spell that deals damage, you can choose to reroll all of its damage dice and must use the new rolls.</description>
+		</sheet>
+	</element>
+	<element name="Sacrosant Spell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_SACROSANCT_SPELL">
+		<description>
+			<p>At 6th level, when you cast one of your Burden Spells or a spell that has the sole effect restoring hit points to a creature, you lose no hit points from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</p>
+		</description>
+		<sheet>
+			<description>When you cast one of your Burden Spells or a spell that has the sole effect restoring hp to a creature, you lose no hp from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</description>
+		</sheet>
+	</element>
+	<element name="Embrace the Inevitable" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_EMBRACE_THE_INEVITABLE">
+		<description>
+			<p>Starting at 14th level, once on each of your turns, when you cast a martyr spell of 1st level or higher which calls for a saving throw to resist its effects, you can spend additional hit points equal to half the cost of the spell to to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you cast a martyr spell of 1st level or higher which calls for a saving throw to resist its effects, you can spend additional hp equal to half the cost of the spell to to give one target of the spell disadvantage on its first saving throw made against the spell.</description>
+		</sheet>
+	</element>
+	<element name="Halt Apocalypse" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_END_HALT_APOCALYPSE">
+		<description>
+			<p>By 18th level, the gods have blessed you with enough precious time to forestall catastrophe. At the end of your turn, you can choose to take immediately an extra turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At the end of your turn, you can choose to take immediately an extra turn.</description>
+		</sheet>
+	</element>
+	
+</elements>

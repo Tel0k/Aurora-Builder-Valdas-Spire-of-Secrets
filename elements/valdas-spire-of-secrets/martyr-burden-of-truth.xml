@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burden of Truth</name>
+		<description>The Burden of Truth archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="martyr-burden-of-truth.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-truth.xml" />
+		</update>
+	</info>
+	<element name="Burden of Truth" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_TRUTH">
+		<supports>Burden</supports>
+		<description>
+			<p>Tasked with unveiling the world's persuasions and delivering to the people a profound truth, martyrs tasked with the Burden of Truth face an endless battle with disillusionment and lies. Such a martyr must earn the people's hearts and minds, turning their favors away from evil influences and toward divine ones. It is an uphill battle, but one that rarely requires grievous violence except in the most dire of circumstances.</p>
+			<p class="indent">Martyrs of Truth are often deemed prophets, for their gods entrust them with knowledge of the future, insights into the past, and sagacious perspective on the present. Such information is proof of their messages' divine origin and is a necessary balm, for the truths such martyrs are called to preach are often a bitter pill for listeners to swallow.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_BURDEN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_MORAL_ERUDITION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_MAXIM_OF_TRUTH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_SACROSANCT_SPELL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_FORETOLD_ESCAPE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_EYES_OF_PROPHECY" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="short">A prophet tasked with bringing a revolutionary truth to the world.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_BURDEN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_MORAL_ERUDITION" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_MAXIM_OF_TRUTH" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_SACROSANCT_SPELL" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_FORETOLD_ESCAPE" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_EYES_OF_PROPHECY" level="1" />
+		</rules>
+	</element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>charm person, identify</em></td></tr>
+				<tr><td>5th</td><td><em>augury, detect thoughts</em></td></tr>
+				<tr><td>9th</td><td><em>sending, speak with dead</em></td></tr>
+				<tr><td>13th</td><td><em>divination, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>legend lore, scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Moral Erudition" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_MORAL_ERUDITION">
+		<description>
+			<p>Starting at 1st level, you can use your Wisdom modifier, instead of Charisma, for Charisma (Persuasion) checks. Additionally, other creatures can always discern when you are telling the truth. </p>
+		</description>
+		<sheet>
+			<description>You can use your WIS modifier, instead of CHA, for (Cha)Persuasion checks. Additionally, other creatures can always discern when you are telling the truth.</description>
+		</sheet>
+		<rules>
+			<stat name="persuasion:misc" value="-charisma:modifier" />
+            <stat name="persuasion:misc:ability" value="charisma:modifier" bonus="ability" />
+            <stat name="persuasion:misc:ability" value="wisdom:modifier" bonus="ability" />
+            <stat name="persuasion:misc" value="persuasion:misc:ability" />
+		</rules>
+	</element>
+	<element name="Maxim of Truth" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_MAXIM_OF_TRUTH">
+		<description>
+			<p>Also at 1st level, your force of personality compels others to truthfulness. You can use your bonus action to cast the spell <i>zone of truth</i>, centered on yourself. When you cast the spell using this feature, it has a 5-foot radius area and a duration of 1 minute. Wisdom is your spellcasting ability for this spell.</p>
+			<p class="indent">Once you cast this spell in this way, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You can cast the spell Zone of Truth, centered on yourself. When you cast the spell using this feature, it has a 5-ft radius area and a duration of 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" spellcasting="Martyr"/>
+		</rules>
+	</element>
+	<element name="Sacrosant Spell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_SACROSANCT_SPELL">
+		<description>
+			<p>At 6th level, when you cast one of your Burden Spells or a spell that has the sole effect restoring hit points to a creature, you lose no hit points from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</p>
+		</description>
+		<sheet>
+			<description>When you cast one of your Burden Spells or a spell that has the sole effect restoring hp to a creature, you lose no hp from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</description>
+		</sheet>
+	</element>
+	<element name="Foretold Escape" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_FORETOLD_ESCAPE">
+		<description>
+			<p>Starting at 14th level, when a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on that roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see makes an attack roll against you, you can impose disadvantage on that roll.</description>
+		</sheet>
+	</element>
+	<element name="Eyes of Prophecy" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_TRUTH_EYES_OF_PROPHECY">
+		<description>
+			<p>By 18th level, you are entrusted with glimpses of the future, allowing you to replace the roll of one attack roll, ability check, or saving throw you make with a 20.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can replace the roll of one attack roll, ability check, or saving throw you make with a 20.</description>
+		</sheet>
+	</element>
+
+</elements>

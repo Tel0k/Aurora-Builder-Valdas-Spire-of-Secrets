@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burden of Discord</name>
+		<description>The Burden of Discord archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="martyr-burden-of-discord.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-discord.xml" />
+		</update>
+	</info>
+	<element name="Burden of Discord" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_DISCORD">
+		<supports>Burden</supports>
+		<description>
+			<p>Martyrs of Discord are chosen at random to sow chaos and stoke evil wherever they travel. They light things on fire, commit petty crimes, and even murder when the fancy strikes. Given to their own predilections, martyrs of discord are unified only by their charge to disrupt the status quo as much as possible.</p>
+			<p class="indent">No one is certain why the gods make martyrs of Discord in the first place. Perhaps it is at the whim of one capricious or evil god, or perhaps the gods desire a balance between chaos and law, and must sometimes stoke the fire to restore this balance.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_BURDEN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_CANTRIPS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_HAVOC" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_BLOODY_REPRIEVE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_COIN_OF_CHAOS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_PANDEMONIUM" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="short">Spreads havoc and upsets the status quo.</set>
+		</setters>
+        <rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_BURDEN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_CANTRIPS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_HAVOC" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_BLOODY_REPRIEVE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_COIN_OF_CHAOS" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_PANDEMONIUM" level="18" />
+		</rules>
+	</element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>hideous laughter, inflict wounds</em></td></tr>
+				<tr><td>5th</td><td><em>knock, shatter</em></td></tr>
+				<tr><td>9th</td><td><em>lightning bolt, stinking cloud</em></td></tr>
+				<tr><td>13th</td><td><em>confusion, polymorph</em></td></tr>
+				<tr><td>17th</td><td><em>animate objects, passwall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_KNOCK" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_KNOCK" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Cantrips" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_CANTRIPS">
+		<description>
+			<p>Starting at 1st level, your divine mission grants you a sliver of divine magic. You learn the <i>shocking grasp</i> and <i>thaumaturgy</i> cantrips, and one other cantrip of your choice from the cleric spell list. You don't lose hit points for casting these spells. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You learn the Shocking Grasp and Thaumaturgy cantrips, and one other cantrip of your choice from the Cleric spell list. You don't lose hp for casting these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="Martyr"/>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Martyr"/>
+			<select type="Spell" name="Cantrip (Discord)" supports="Cleric, 0" spellcasting="Martyr"/>
+		</rules>
+	</element>
+	<element name="Havoc!" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_HAVOC">
+		<description>
+			<p>Also at 1st level, you can stoke the flames of chaos with your sword. When you hit a hostile creature with a melee weapon attack, you can roll on the table below to trigger an additional effect.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>You and the target teleport, trading places.</td></tr>
+				<tr><td>2</td><td>Lightning strikes you and the target, dealing 3d6 lightning damage to each of you.</td></tr>
+				<tr><td>3</td><td>The target must vocalize their innermost thoughts for the next minute.</td></tr>
+				<tr><td>4</td><td>You cast the spell <i>darkness</i>, centered on the target.</td></tr>
+				<tr><td>5</td><td>You become invisible until the end of your next turn, as per the spell <i>invisibility</i>.</td></tr>
+				<tr><td>6</td><td>The target bursts into flames, taking 1d4 fire damage. The target continues to take 1d4 fire damage at the start of each of its turns until a creature extinguishes the flames as an action.</td></tr>
+				<tr><td>7</td><td>The target's skin transforms into a brittle glass until the end of its next turn, reducing its AC by 3, to a minimum of 10.</td></tr>
+				<tr><td>8</td><td>The target comically falls prone.</td></tr>
+				<tr><td>9</td><td>An object of the GM's choice explodes, dealing 8d6 fire damage to each creature within a 20-foot radius of the object.</td></tr>
+				<tr><td>10</td><td>Roll on this table twice and apply both results, rerolling any 10s.</td></tr>
+			</table>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>When you hit a hostile creature with a melee weapon attack, you can roll on the associated table to trigger an additional effect.</description>
+		</sheet>
+	</element>
+	<element name="Bloody Reprieve" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_BLOODY_REPRIEVE">
+		<description>
+			<p>Starting at 6th level, whenever you use your Torment feature against a hostile creature and you reduce the target to 0 hit points, you don't lose any hit points from using the ability.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Torment feature against a hostile creature and you reduce the target to 0hp, you don't lose any hp from using the ability.</description>
+		</sheet>
+	</element>
+	<element name="Coin of Caos" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_COIN_OF_CHAOS">
+		<description>
+			<p>By 14th level, you have a coin blessed with the tides of chaos. Whenever you or a creature you can see makes an attack roll, ability check, or saving throw, you can flip a coin to add a bonus to the roll. The bonus equals +4 on a heads or +1 on a tails. Once you use the coin, the coin goes to the GM, who can use it to enhance any roll made by an NPC or monster. Once the GM uses the coin, it passes back to you, and so on. When you finish a short or long rest, you regain the coin, whether or not the GM has used it.</p>
+		</description>
+		<sheet>
+			<description>Whenever you or a creature you can see makes an attack roll, ability check, or saving throw, you can flip a coin to add a bonus to the roll. The bonus equals +4 on a heads or +1 on a tails. Once you use the coin, the coin goes to the GM, who can use it to enhance any roll made by an NPC or monster. Once the GM uses the coin, it passes back to you, and so on. When you finish a short or long rest, you regain the coin, whether or not the GM has used it.</description>
+		</sheet>
+	</element>
+	<element name="Pandemonium" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_DISCORD_PANDEMONIUM">
+		<description>
+			<p>At 18th level, you can use your Havoc! feature whenever you make an attack roll or cast a spell targeting a hostile creature, and don't need to rest between uses.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use your Havoc! feature whenever you make an attack roll or cast a spell targeting a hostile creature, and don't need to rest between uses.</description>
+		</sheet>
+	</element>
+	
+</elements>

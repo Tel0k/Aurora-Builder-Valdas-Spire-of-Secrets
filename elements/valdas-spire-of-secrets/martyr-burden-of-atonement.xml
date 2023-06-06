@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burden of Atonement</name>
+		<description>The Burden of Atonement archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="martyr-burden-of-atonement.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-atonement.xml" />
+		</update>
+	</info>
+	<element name="Burden of Atonement" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_ATONEMENT">
+		<supports>Burden</supports>
+		<description>
+			<p>For all the wrong you have done in your life, the gods have graced you with an undeserved second chance. Your burden is to atone, to undo all the evils you have done in your life, and to seek redemption before the gods. How you accomplish this is your choice, so long as you remove any dark marks you leave behind. Ultimately, your final martyrdom might be a grand act, averting a great disaster or banishing a force of evil, or it might be as humble as redirecting the life of an evil person and causing them to seek redemption, passing the torch to a new martyr of atonement.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BURDEN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BONUS_PROFICIENCY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_SELFSACRIFICE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BLOODY_REPRIEVE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_DRAW_AGGRESSION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_SIN_EATER" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="short">Aims to correct all the evils of their life through divine martyrdom.</set>
+		</setters>		
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BURDEN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_SELFSACRIFICE" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BLOODY_REPRIEVE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_DRAW_AGGRESSION" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_SIN_EATER" level="18" />
+		</rules>
+	</element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>cure wounds, sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>calm emotions, lesser restoration</em></td></tr>
+				<tr><td>9th</td><td><em>remove curse, speak with dead</em></td></tr>
+				<tr><td>13th</td><td><em>death ward, fire shield</em></td></tr>
+				<tr><td>17th</td><td><em>greater restoration, mass cure wounds</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BONUS_PROFICIENCY">
+		<description>
+			<p>Starting at 1st level, you gain proficiency with heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Self-Sacrifice" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_SELFSACRIFICE">
+		<description>
+			<p>Also at 1st level, you can dive in the way of an attack. When a friendly creature within 5 feet of you is targeted by an attack while you are within the attack's range or reach, you can use your reaction to change the target of the attack to you instead.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short||Long Rest">
+			<description>When a friendly creature within 5ft of you is targeted by an attack while you are within the attack's range or reach, you can use change the target of the attack to you instead.</description>
+		</sheet>
+	</element>
+	<element name="Bloody Reprieve" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_BLOODY_REPRIEVE">
+		<description>
+			<p>Starting at 6th level, whenever you use your Torment feature against a hostile creature and you reduce the target to 0 hit points, you don't lose any hit points from using the ability.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Torment feature against a hostile creature and you reduce the target to 0hp, you don't lose any hp from using the ability.</description>
+		</sheet>
+	</element>
+	<element name="Draw Aggression" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_DRAW_AGGRESSION">
+		<description>
+			<p>Beginning at 14th level, as a bonus action on your turn, you can invoke the ire of your foes to protect your allies. Until the start of your next turn, each hostile creature you choose within 5 feet of you that can see or hear you has disadvantage on attack rolls against creatures other than you, and advantage on attack rolls against you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Until the start of your next turn, each hostile creature you choose within 5ft of you that can see or hear you has disadvantage on attack rolls against creatures other than you, and advantage on attack rolls against you.</description>
+		</sheet>
+	</element>
+	<element name="Sin Eater" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_ATONEMENT_SIN_EATER">
+		<description>
+			<p>Starting at 18th level, you can use your action to transfer negative effects from any number of willing creatures within 60 feet to yourself. You can transfer one of the following effects from each creature:</p>
+			<ul>
+				<li>One level of exhaustion</li>
+				<li>One disease or poison</li>
+				<li>One curse, including the target's attunement to a cursed magic item</li>
+				<li>Any reduction to one of the target's ability scores</li>
+				<li>One effect reducing the target's hit point maximum</li>
+				<li>The blinded, charmed, deafened, paralyzed, petrified, poisoned, or stunned condition</li>
+			</ul>
+			<p>The effect ends for the creature and targets you as if you were the original target, with the effect's original duration. You can transfer multiple negative effects of the same type to yourself, affecting you only once each time you use this ability.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can transfer one of the following effects from each willing creature within 60ft to yourself: &#13;
+			-One level of exhaustion &#13;
+			-One disease or poison &#13;
+			-One curse, including the target's attunement to a cursed magic item &#13;
+			-Any reduction to one of the target's ability scores &#13;
+			-One effect reducing the target's hit point maximum &#13;
+			-The blinded, charmed, deafened, paralyzed, petrified, poisoned, or stunned condition &#13;
+			The effect ends for the creature and targets you as if you were the original target, with the effect's original duration. You can transfer multiple negative effects of the same type to yourself, affecting you only once each time you use this ability.</description>
+		</sheet>
+	</element>
+
+</elements>

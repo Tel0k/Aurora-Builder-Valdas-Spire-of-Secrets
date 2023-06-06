@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burden of Rebirth</name>
+		<description>The Burden of Rebirth archetype from Valda's Spire of Secrets.</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="martyr-burden-of-rebirth.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/martyr-burden-of-rebirth.xml" />
+		</update>
+	</info>
+	<element name="Burden of Rebirth" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_M_REBIRTH">
+		<supports>Burden</supports>
+		<description>
+			<p>When the natural world is threatened by the needs of growing industry, the ravages of war, or a catastrophic event, the gods may choose a martyr to protect the wild places of the world. Martyrs with this burden don’t seek to prevent the destruction of the world; that would be impossible given the number of factors that threaten it. Instead, those tasked with the Burden of Rebirth give their lives to regenerate what has been razed, ushering in new life in places devastated by death.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_BURDEN_SPELLS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_CANTRIPS" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_FRIEND_OF_THE_FOREST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_SACROSANCT_SPELL" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_VERDANT_RESILIENCE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_TURN_OF_THE_WHEEL" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="short">Tasked with preserving the balance between civilization and the natural world.</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_BURDEN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_CANTRIPS" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_FRIEND_OF_THE_FOREST" level="1" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_SACROSANCT_SPELL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_VERDANT_RESILIENCE" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_TURN_OF_THE_WHEEL" level="18" />
+		</rules>
+	</element>
+	<element name="Burden Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_BURDEN_SPELLS">
+		<description>
+			<p>You gain burden spells at the martyr levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Martyr Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>entangle, goodberry</em></td></tr>
+				<tr><td>5th</td><td><em>pass without trace, spike growth</em></td></tr>
+				<tr><td>9th</td><td><em>plant growth, speak with plants</em></td></tr>
+				<tr><td>13th</td><td><em>conjure woodland beings, hallucinatory terrain</em></td></tr>
+				<tr><td>17th</td><td><em>awaken, reincarnate</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="3" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="5" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="9" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="13" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="17" spellcasting="Martyr" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="17" spellcasting="Martyr" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Cantrips" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_CANTRIPS">
+		<description>
+			<p>Starting at 1st level, your divine mission grants you a sliver of divine magic. You learn the <i>druidcraft</i> and <i>shillelagh</i> cantrips, and one other cantrip of your choice from the cleric spell list. You don’t lose hit points for casting these spells. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You learn the Spare the Dying and Thaumaturgy cantrips, and one other cantrip of your choice from the Cleric spell list. You don’t lose hp for casting these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" spellcasting="Martyr"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SHILLELAGH" spellcasting="Martyr"/>
+			<select type="Spell" name="Cantrip (Rebirth)" supports="Cleric, 0" spellcasting="Martyr"/>
+		</rules>
+	</element>
+	<element name="Friend of the Forest" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_FRIEND_OF_THE_FOREST">
+		<description>
+			<p>Also at 1st level, you can cast the <i>speak with animals</i> spell without losing hit points to cast it. When you do so, you have advantage on Charisma ability checks made directed at Beasts for the duration of the spell.</p>
+			<p class="indent">Once you cast the spell in this way, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can cast the Speak With Animals spell without losing hp to cast it. When you do so, you have advantage on CHA ability checks made directed at Beasts for the duration of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Sacrosant Spell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_SACROSANCT_SPELL">
+		<description>
+			<p>At 6th level, when you cast one of your Burden Spells or a spell that has the sole effect restoring hit points to a creature, you lose no hit points from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</p>
+		</description>
+		<sheet>
+			<description>When you cast one of your Burden Spells or a spell that has the sole effect restoring hp to a creature, you lose no hp from casting the spell if you cast it at its lowest level. Casting the spell still counts against your total number of spell uses.</description>
+		</sheet>
+	</element>
+	<element name="Verdant Resilience" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_VERDANT_RESILIENCE">
+		<description>
+			<p>Beginning at 14th level, as a bonus action on your turn you can enter a state of natural regeneration. When you do so, and again at the start of each of your turns for 1 minute, you regain hit points equal to your Wisdom modifier. Also, for this duration, you have resistance to bludgeoning, piercing, and slashing damage and you can’t cast martyr spells. You can use a bonus action to end this effect early.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>On your turn you can enter a state of natural regeneration. When you do so, and again at the start of each of your turns for 1 minute, you regain {{wisdom:modifier}}hp. Also, for this duration, you have resistance to bludgeoning, piercing, and slashing damage and you can’t cast martyr spells. You can use a bonus action to end this effect early.</description>
+		</sheet>
+	</element>
+	<element name="Turn of the Wheel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_M_REBIRTH_TURN_OF_THE_WHEEL">
+		<description>
+			<p>Starting at 18th level, you can cast the <i>reincarnate</i> spell without expending material components or losing hit points. When you do, you can choose which race the target reincarnates as rather than the GM rolling randomly.</p>
+			<p class="indent">If you die without using your Final Martyrdom feature, you can return to life 24 hours after you die as if you were targeted by the <i>reincarnate</i> spell. You can choose which race you reincarnate as rather than the GM rolling randomly. Once you return to life in this way, you can’t do so again for 10 days.</p>
+		</description>
+		<sheet usage="(2) Once/10 Days">
+			<description>(1) You can cast the Reincarnate spell without expending material components or losing hp. When you do, you can choose which race the target reincarnates as rather than the GM rolling randomly. 
+			(2) If you die without using your Final Martyrdom feature, you can return to life 24 hours after you die as if you were targeted by the reincarnate spell. You can choose which race you reincarnate as rather than the GM rolling randomly.</description>
+		</sheet>
+	</element>	
+	
+</elements>
