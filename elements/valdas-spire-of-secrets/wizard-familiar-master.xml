@@ -4,7 +4,7 @@
 		<name>Familiar Master</name>
 		<description>The Familiar Master from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
 			<file name="wizard-familiar-master.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/wizard-familiar-master.xml" />
 		</update>
 	</info>
@@ -37,9 +37,12 @@
 		<description>
 			<p>Beginning when you choose this arcane tradition at 2nd level, you always have the find familiar spell prepared, and it doesn't count against the number of spells you prepare. Additionally, you can cast the spell as an action, without expending material components. When you choose your familiar's creature type, you can choose Aberration, Construct, Elemental, or Undead, in addition to the normal options for the spell.</p>
 		</description>
-		<sheet>
-			<description>The gold and time you must spend to copy an abjuration spell into your spellbook is halved.</description>
-		</sheet>
+	<sheet action="Action">
+		<description>You can cast the find familiar spell without expending material components. When you choose your familiar's creature type, you can choose Aberration, Construct, Elemental, or Undead, in addition to the normal options for the spell.</description>
+	</sheet>
+        <rules>
+		<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Wizard" prepared="true" />
+        </rules>
 	</element>
 	<element name="Arcane Evolution" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_ARCANE_EVOLUTION">
 		<description>
