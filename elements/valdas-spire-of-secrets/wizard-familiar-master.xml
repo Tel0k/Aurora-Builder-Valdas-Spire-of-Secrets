@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Familiar Master</name>
+		<description>The Familiar Master from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+			<file name="wizard-familiar-master.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/wizard-familiar-master.xml" />
+		</update>
+	</info>
+
+	<element name="Familiar Master" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WIZARD_FAMILIAR_MASTER">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Learning the <i>find familiar</i> spell is seen as a rite of passage among fledgling wizards, as the spell offers a useful, if limited, magical servant. However, a small subschool of wizards known as the “familiar masters” or “evolutionists” believe that within the humble spell lies manifold hidden powers. Indeed, their studies have unlocked the spell's hidden potential: the ability to evolve a familiar and fluidly shift its form.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_IMPROVED_FAMILIAR" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_ARCANE_EVOLUTION" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SERVITORS_GIFT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_EMPOWER_FAMILIAR" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SERVITORS_GREATER_GIFT" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+        <setters>
+			<set name="short">A master of the <i>find familiar</i> spell who can evolve their magical servant</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_IMPROVED_FAMILIAR" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_ARCANE_EVOLUTION" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SERVITORS_GIFT" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_EMPOWER_FAMILIAR" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SERVITORS_GREATER_GIFT" level="14"/>
+		</rules>
+	</element>
+	<element name="Improved Familiar" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_IMPROVED_FAMILIAR">
+		<description>
+			<p>Beginning when you choose this arcane tradition at 2nd level, you always have the find familiar spell prepared, and it doesn't count against the number of spells you prepare. Additionally, you can cast the spell as an action, without expending material components. When you choose your familiar's creature type, you can choose Aberration, Construct, Elemental, or Undead, in addition to the normal options for the spell.</p>
+		</description>
+		<sheet>
+			<description>The gold and time you must spend to copy an abjuration spell into your spellbook is halved.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Evolution" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_ARCANE_EVOLUTION">
+		<description>
+			<p>Also at 2nd level, you can use an action and expend a spell slot to transform your familiar. When you do, choose a Beast with a challenge rating equal to or lower than half the level of the spell slot expended, and your familiar takes on that Beast's appearance and statistics (except that it keeps its creature type). During this time, your familiar can attack on its turn. This transformation lasts for 10 minutes, after which time you can choose which animal form it takes from those made available by the spell.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can expend a spell slot to transform your familiar. When you do, choose a Beast with a CR equal to or lower than half the level of the spell slot expended, and your familiar takes on that Beast's appearance and statistics (except that it keeps its creature type). During this time, your familiar can attack on its turn. This transformation lasts for 10 minutes, after which time you can choose which animal form it takes from those made available by the spell.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane ward:hp" value="level:wizard" />
+			<stat name="arcane ward:hp" value="level:wizard" />
+			<stat name="arcane ward:hp" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Servitor's Gift" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SERVITORS_GIFT">
+		<description>
+			<p>Starting at 6th level, while you have a familiar, you gain a benefit based on its current form. You continue to gain this benefit when your familiar is transformed by your Arcane Evolution feature.</p>
+			<p class="indent"><b>Bat.</b> You can use a bonus action on your turn to gain blindsight out to a distance of 15 feet while you are not deafened.</p>
+			<p class="indent"><b>Cat.</b> When you land after jumping or falling, you can use your reaction to reduce falling damage to 0.</p>
+			<p class="indent"><b>Crab.</b> While you aren't wearing armor, your AC equals 12 + your Dexterity modifier.</p>
+			<p class="indent"><b>Frog.</b> Your jump distances are tripled.</p>
+			<p class="indent"><b>Hawk.</b> You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+			<p class="indent"><b>Lizard.</b> You have resistance to poison damage.</p>
+			<p class="indent"><b>Octopus.</b> While you are grappled, you can use a bonus action to attempt to escape. When you attempt to escape from a grapple, you gain a bonus to your Strength (Athletics) or Dexterity (Acrobatics) check equal to your Intelligence modifier (minimum +1).</p>
+			<p class="indent"><b>Owl.</b> You gain darkvision out to a distance of 30 feet.</p>
+			<p class="indent"><b>Poisonous Snake.</b> When you hit a creature with a melee weapon attack, you deal an extra 1d4 poison damage.</p>
+			<p class="indent"><b>Quipper.</b> You have a swim speed of 30 feet, and the length of time you can hold your breath is doubled.</p>
+			<p class="indent"><b>Rat.</b> You have advantage on saving throws you make to avoid or end a disease or the poisoned condition on yourself.</p>
+			<p class="indent"><b>Raven.</b> You add your proficiency bonus to death saving throws and know the <i>spare the dying</i> cantrip, which doesn't count against your number of cantrips known. Intelligence is your spellcasting ability for this spell.</p>
+			<p class="indent"><b>Sea Horse.</b> You add your proficiency bonus to ability checks you make to control a creature as a mount, and you count as one size smaller than you are for the purposes of determining creatures you can use as a mount.</p>
+			<p class="indent"><b>Spider.</b> You have a climb speed of 30 feet.</p>
+			<p class="indent"><b>Weasel.</b> Squeezing doesn't require extra movement for you, and you can stand up from prone by spending 5 feet of movement.</p>
+		</description>
+		<sheet>
+			<description>You gain a benefit based on your familiar's creature form:</description>
+		</sheet>
+		<rules>
+            <select type="Archetype Feature" name="Servitor's Gift" supports="Gift" />
+		</rules>
+	</element>
+
+    <element name="Bat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_BAT">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You can use a bonus action on your turn to gain blindsight out to a distance of 15 feet while you are not deafened.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>On your turn you gain blindsight out to a distance of 15ft while you are not deafened.</description>
+        </sheet>
+    </element>
+	<element name="Cat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_CAT">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>When you land after jumping or falling, you can use your reaction to reduce falling damage to 0.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When you land after jumping or falling, you can reduce falling damage to 0.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Crab" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_CRAB">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>While you aren't wearing armor, your AC equals 12 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>While you aren't wearing armor, your AC equals 12 + your Dexterity modifier.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:crab" value="12" />
+            <stat name="ac:crab" value="dexterity:modifier" />
+            <stat name="ac:calculation" value="ac:crab" bonus="calculation" equipped="[armor:none]" alt="Servitor's Gift (Crab)" />
+        </rules>
+    </element>
+    <element name="Hawk" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_HAWK">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on WIS(Perception) checks that rely on sight.</description>
+        </sheet>
+    </element>
+    <element name="Lizard" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_LIZARD">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You have resistance to poison damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to poison damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <element name="Octopus" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_OCTOPUS">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>While you are grappled, you can use a bonus action to attempt to escape. When you attempt to escape from a grapple, you gain a bonus to your Strength (Athletics) or Dexterity (Acrobatics) check equal to your Intelligence modifier (minimum +1).</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>While you are grappled, you can attempt to escape from the grapple. Doing so you gain a +{{octopus}} bonus to your STR(Athletics) or DEX(Acrobatics) check.</description>
+        </sheet>
+        <rules>
+            <stat name="octopus" value="1" bonus="base" />
+			<stat name="octopus" value="intelligence:modifier" bonus="base" />
+        </rules>
+    </element>
+    <element name="Owl" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_OWL">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You gain darkvision out to a distance of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>You gain darkvision out to a distance of 30ft.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Poisonous Snake" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_POISONOUS_SNAKE">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>When you hit a creature with a melee weapon attack, you deal an extra 1d4 poison damage.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a melee weapon attack, you deal an extra 1d4 poison damage.</description>
+        </sheet>
+    </element>
+    <element name="Quipper" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_QUIPPER">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You have a swim speed of 30 feet, and the length of time you can hold your breath is doubled.</p>
+        </description>
+        <sheet>
+            <description>The length of time you can hold your breath is doubled.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Rat" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_RAT">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You have advantage on saving throws you make to avoid or end a disease or the poisoned condition on yourself.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws you make to avoid or end a disease or the poisoned condition on yourself.</description>
+        </sheet>
+    </element>
+    <element name="Raven" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_RAVEN">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You add your proficiency bonus to death saving throws and know the <i>spare the dying</i> cantrip, which doesn't count against your number of cantrips known. Intelligence is your spellcasting ability for this spell.</p>
+        </description>
+        <sheet>
+            <description>You add your proficiency bonus to death saving throws and know the Spare the Dying cantrip, which doesn't count against your number of cantrips known. Intelligence is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+        </rules>
+    </element>
+    <element name="Sea Horse" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_SEAHORSE">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You add your proficiency bonus to ability checks you make to control a creature as a mount, and you count as one size smaller than you are for the purposes of determining creatures you can use as a mount.</p>
+        </description>
+        <sheet>
+            <description>You count as one size smaller than you are for the purposes of determining creatures you can use as a mount.</description>
+        </sheet>
+        <rules>
+            <stat name="animal handling:misc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Spider" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_SPIDER">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>You have a climb speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>You have a climb speed of 30ft.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Weasel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SG_WEASEL">
+        <compendium display="false" />
+        <supports>Gift</supports>
+        <description>
+            <p>Squeezing doesn't require extra movement for you, and you can stand up from prone by spending 5 feet of movement.</p>
+        </description>
+        <sheet>
+            <description>Squeezing doesn't require extra movement for you, and you can stand up from prone by spending 5 feet of movement.</description>
+        </sheet>
+    </element>
+
+	<element name="Empower Familiar" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_EMPOWER_FAMILIAR">
+		<description>
+			<p>Starting at 10th level, you can use a bonus action to grant your familiar a number of temporary hit points equal to twice your level in this class. When you do, you can also change the familiar's creature type and which form it takes from the list provided in the find familiar spell.</p>
+            <p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short||Long Rest">
+			<description>You can grant your familiar {{temphp:familiar}} temporary hp. When you do, you can also change the familiar's creature type and which form it takes from the list provided in the find familiar spell.</description>
+		</sheet>
+        <rules>
+            <stat name="temphp:familiar" value="level:wizard" />
+            <stat name="temphp:familiar" value="level:wizard" />
+        </rules>
+	</element>
+	<element name="Servitor's Greater Gift" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SERVITORS_GREATER_GIFT">
+		<description>
+			<p>At 14th level, while you have a familiar, you gain a benefit based on its creature type.</p>
+			<p class="indent"><b>Aberration.</b> When you cast a spell that deals damage, you can choose to change its damage type to psychic. In addition, you have resistance to psychic damage.</p>
+			<p class="indent"><b>Celestial.</b> When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can choose a creature within 30 feet to regain hit points equal to your Intelligence modifier + the level of spell slot expended. In addition, you have resistance to radiant damage.</p>
+			<p class="indent"><b>Construct.</b> Critical hits made against you with nonmagical attacks become normal hits. In addition, you gain a +1 bonus to your AC.</p>
+			<p class="indent"><b>Elemental.</b> When you cast a spell that deals damage, you can choose to change its damage type to acid, cold, fire, lightning, or thunder damage. In addition, you can speak, read, and write Primordial.</p>
+			<p class="indent"><b>Fey.</b> When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can teleport a number of feet equal to 5 x the level of the spell slot expended. In addition, you have advantage on saving throws you make to avoid or end the charmed or frightened conditions on yourself.</p>
+			<p class="indent"><b>Fiend.</b> When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can choose a creature within 30 feet of you and deal cold, fire, or necrotic damage (your choice) to it equal to your Intelligence modifier + the level of spell slot expended. In addition, you have resistance to fire damage.</p>
+			<p class="indent"><b>Undead.</b> When you cast a spell that deals damage, you can choose to change its damage type to necrotic. In addition, you have resistance to necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>You gain a benefit based on your familiar's creature type:</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Servitor's Greater Gift" supports="Greater Gift" />
+        </rules>
+	</element>
+    <element name="Aberration" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_ABERRATION">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>When you cast a spell that deals damage, you can choose to change its damage type to psychic. In addition, you have resistance to psychic damage.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that deals damage, you can choose to change its damage type to psychic.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Celestial" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_CELESTIAL">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can choose a creature within 30 feet to regain hit points equal to your Intelligence modifier + the level of spell slot expended. In addition, you have resistance to radiant damage.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can choose a creature within 30ft to regain ({{intelligence:modifier}}+ spell slot's Lv) hp.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+    <element name="Construct" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_CONSTRUCT">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>Critical hits made against you with nonmagical attacks become normal hits. In addition, you gain a +1 bonus to your AC.</p>
+        </description>
+        <sheet>
+            <description>Critical hits made against you with nonmagical attacks become normal hits. +1 AC bonus.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+    <element name="Elemental" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_ELEMENTAL">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>When you cast a spell that deals damage, you can choose to change its damage type to acid, cold, fire, lightning, or thunder damage. In addition, you can speak, read, and write Primordial.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that deals damage, you can choose to change its damage type to acid, cold, fire, lightning, or thunder damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+        </rules>
+    </element>
+    <element name="Fey" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_FEY">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can teleport a number of feet equal to 5 x the level of the spell slot expended. In addition, you have advantage on saving throws you make to avoid or end the charmed or frightened conditions on yourself.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can teleport up to (5 x spell slot's Lv) ft. In addition, you have advantage on saving throws you make to avoid or end the charmed or frightened conditions on yourself.</description>
+        </sheet>
+    </element>
+    <element name="Fiend" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_FIEND">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can choose a creature within 30 feet of you and deal cold, fire, or necrotic damage (your choice) to it equal to your Intelligence modifier + the level of spell slot expended. In addition, you have resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot to cast a spell or use your Arcane Evolution feature, you can choose a creature within 30ft of you and deal ({{intelligence:modifier}} + spell slot's Lv) cold, fire, or necrotic damage (your choice).</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Undead" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_FM_SGG_UNDEAD">
+        <compendium display="false" />
+        <supports>Greater Gift</supports>
+        <description>
+            <p>When you cast a spell that deals damage, you can choose to change its damage type to necrotic. In addition, you have resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that deals damage, you can choose to change its damage type to necrotic.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+</elements>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Missile Mage</name>
+		<description>The Magic Missile Mage from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+			<file name="wizard-magic-missile-mage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/wizard-magic-missile-mage.xml" />
+		</update>
+	</info>
+
+	<element name="Magic Missile Mage" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WIZARD_MAGIC_MISSILE_MAGE">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p><i>Magic missile</i> is a staple wizard spell, well-loved for its versatility and unerring accuracy. As a missile magician, however, your fondness for the spell borders on obsession. Your studies focus entirely on this spell, exploring every rune in the spell's composition and analyzing every aspect of its casting, resulting in new augmentations and greater power than ever before.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_FORCE_MISSILE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_SHIELD_OF_MISSILES" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_COUNTERMISSILE" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_INESCAPABLE_MISSILE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+        <setters>
+			<set name="short">Expert and obsessive master of the staple wizard spell, <i>magic missile</i></set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_FORCE_MISSILE" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_SHIELD_OF_MISSILES" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_COUNTERMISSILE" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_INESCAPABLE_MISSILE" level="14"/>
+		</rules>
+	</element>
+	<element name="Force Missile" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_FORCE_MISSILE">
+		<description>
+			<p>Beginning when you select this tradition at 2nd level, you learn the spell magic missile, if you do not know it already. Whenever you cast this spell, it is improved in the following ways:</p>
+			<ul>
+				<li>You fire 1 additional dart whenever you cast this spell. The additional number of missiles increases by 1 at 6th level (2 additional missiles), 10th level (3 additional missiles), and 14th level (4 additional missiles).</li>
+				<li>Your missiles bypass any effect, such as the shield spell, that specifically blocks or reflects the magic missile spell.</li>
+				<li>You can cast this spell at its lowest level without using a spell slot. You can use this ability a number of times equal to your Intelligence modifier. You regain all expended uses when you finish a long rest. Beginning at 14th level, you can use this ability an unlimited number of times.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you cast Magic Missile, it is improved in the following ways:
+			• You fire 1 additional dart whenever you cast this spell.&#13;
+			• Your missiles bypass any effect that specifically blocks or reflects the Magic Missile spell.&#13;
+			• You can cast this spell at its lowest level without using a spell slot. You can use this ability {{intelligence:modifier}}times, and you regain all expended uses when you finish a long rest.</description>
+			<description level="6">Whenever you cast Magic Missile, it is improved in the following ways:
+			• You fire 2 additional dart whenever you cast this spell.&#13;
+			• Your missiles bypass any effect that specifically blocks or reflects the Magic Missile spell.&#13;
+			• You can cast this spell at its lowest level without using a spell slot. You can use this ability {{intelligence:modifier}}times, and you regain all expended uses when you finish a long rest.</description>
+			<description level="10">Whenever you cast Magic Missile, it is improved in the following ways:
+			• You fire 3 additional dart whenever you cast this spell.&#13;
+			• Your missiles bypass any effect that specifically blocks or reflects the Magic Missile spell.&#13;
+			• You can cast this spell at its lowest level without using a spell slot. You can use this ability {{intelligence:modifier}}times, and you regain all expended uses when you finish a long rest.</description>
+			<description level="14">Whenever you cast Magic Missile, it is improved in the following ways:
+			• You fire 4 additional dart whenever you cast this spell.&#13;
+			• Your missiles bypass any effect that specifically blocks or reflects the Magic Missile spell.&#13;
+			• You can cast this spell at its lowest level without using a spell slot. You can use this ability an unlimited number of times.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" requirements="!ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Wizard"/>
+		</rules>
+	</element>
+	<element name="Shield of Missiles" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_SHIELD_OF_MISSILES">
+		<description>
+			<p>Starting at 6th level, you can cast <i>magic missile</i> in a tight orbit around you, creating a deadly aegis from your foes which lasts for up to 10 minutes. You gain a bonus to your Armor Class equal to the number of missiles orbiting you, which begins as the number of missiles fired, up to a maximum bonus of +6. When a hostile creature ends its turn within 5 feet of you, a single missile strikes it, dealing damage as normal and decreasing the number of missiles orbiting you. Additionally, when you cast <i>magic missile</i>, you can add some or all of the missiles orbiting you to the spell, decreasing the missiles orbiting you by the number used.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can cast Magic Missile in a tight orbit around you, as a protection which lasts for up to 10 minutes. You gain a bonus to your AC equal to the number of missiles orbiting you, up to a maximum bonus of +6. When a hostile creature ends its turn within 5ft of you, a single missile strikes it, dealing damage as normal and decreasing the number of missiles orbiting you. Additionally, when you cast Magic Missile, you can add some or all of the missiles orbiting you to the spell, decreasing those orbiting you by the number used.</description>
+		</sheet>
+	</element>
+	<element name="Counter-Missile" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_COUNTERMISSILE">
+		<description>
+			<p>By 10th level, you've learned how to use <i>magic missile</i> to overcome your most powerful fellow wizards. When you see a creature within 60 feet of you casting a spell, you can use your reaction to cast <i>magic missile</i>, with all missiles targeting that creature. The creature must make a single Constitution saving throw as a result of the total damage dealt to maintain concentration while casting the spell, even if the spell wouldn't normally require concentration. The spell fails and has no effect if the creature loses concentration.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you see a creature within 60ft of you casting a spell, you can cast Magic Missile, with all missiles targeting that creature. The creature must make a single CON saving throw as a result of the total damage dealt to maintain concentration while casting the spell, even if the spell wouldn't normally require concentration. The spell fails and has no effect if the creature loses concentration.</description>
+		</sheet>
+	</element>
+	<element name="Inescapable Missile" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MMM_INESCAPABLE_MISSILE">
+		<description>
+			<p>Beginning at 14th level, your missiles seek out targets that would otherwise somehow escape them. This grants you the following benefits:</p>
+			<ul>
+				<li>The range of the spell increases to 500 feet.</li>
+				<li>You can target creatures you can't see within range, as long as you can hear the creatures and there is a path within range from you to the target.</li>
+				<li>You can't be counterspelled when you cast <i>magic missile</i>.</li>
+				<li>Your missiles penetrate constructs of magical force, such as those created by the spells <i>wall of force</i>, <i>tiny hut</i>, and <i>resilient sphere</i>.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>This grants you the following benefits:&#13;
+			• The range of the spell increases to 500 feet.&#13;
+			• You can target creatures you can't see within range, as long as you can hear the creatures and there is a path within range from you to the target.&#13;
+			• You can't be counterspelled when you cast Magic Missile.&#13;
+			• Your missiles penetrate constructs of magical force, such as those created by the spells Wall of Force, Tiny Hut, and Resilient Sphere.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>School of Gastronomy</name>
+		<description>The School of Gastronomy from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+			<file name="wizard-school-gastronomy.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/wizard-school-gastronomy.xml" />
+		</update>
+	</info>
+
+	<element name="School of Gastronomy" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WIZARD_SCHOOL_OF_GASTRONOMY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Gastronomy, the oft-satirized subschool of food-related magic, is rarely taught to wizardly apprentices, for even masters of transmutation can be terrible at cuisine. However, gastronomy is a truly nourishing magic which spans all cultures and is more akin to an art than an arcane tradition. Stereotypical gastronomists are thought of as monstrously fat and held aloft by magic, like great balloons in robes, but this is mostly a myth; wizards of this school are usually healthier than their contemporaries, owing to a healthy and balanced magical diet.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_SOUS_CHEF" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_MONSTER_DISH" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_FLAVOR_BLAST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_BOTTOMLESS_FEAST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_RAVENOUS_MAGIC_MOUTH" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+        <setters>
+			<set name="short">Chef-wizards of gourmet magic who eat slain monsters</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_SOUS_CHEF" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_MONSTER_DISH" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_FLAVOR_BLAST" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_BOTTOMLESS_FEAST" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_RAVENOUS_MAGIC_MOUTH" level="14"/>
+		</rules>
+	</element>
+	<element name="Sous Chef" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_SOUS_CHEF">
+		<description>
+			<p>Beginning when you select this school at 2nd level, you gain proficiency with cook's utensils and have advantage on any ability check you make to cook or prepare ingredients. Additionally, you can cast the spell create food and water once without using a spell slot, and you regain the ability to do so when you finish a long rest. When you cast the spell using this feature, the resulting food is a mouthwatering meal of your choosing.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on any ability check you make to cook or prepare ingredients. You can cast the spell Create Food And Water once without using a spell slot, and you regain the ability to do so when you finish a long rest. When you cast the spell using this feature, the resulting food is a mouthwatering meal of your choosing.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+	<element name="Monster Dish" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_MONSTER_DISH">
+		<description>
+			<p>Also at 2nd level, when you finish a short or long rest, you can prepare a meal using monsters that you and your allies have slain. The meal uses the entire corpse of a creature as an ingredient, which must have died within the last 24 hours or been preserved by a <i>gentle repose</i> spell. You can't use this ability with the corpses of Celestials, Humanoids, or Undead creatures. The meal contains enough food for a number of creatures equal to your Intelligence modifier; this food spoils if not eaten in 24 hours. When a creature partakes of this meal at the end of a short or long rest, it rolls a number of d6s equal to the ingredient creature's challenge rating (1d6 for creatures of CR 1/2 and lower) and gains temporary hit points equal to the total rolled. Additionally, if the ingredient creature had immunity to a damage type other than bludgeoning, piercing, or slashing damage, you can choose for the meal to bestow resistance to one such damage type for 8 hours to any creature that partakes of it.</p>
+			<p class="indent">You can only prepare one meal using this ability, regaining the ability to do so when you finish a long rest. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a short or long rest, you can prepare a meal using the entire corpse of a creature as an ingredient, which must have died within the last 24 hours or been preserved by a Gentle Repose spell. You can't use this ability with the corpses of Celestials, Humanoids, or Undead creatures. The meal contains enough food for  {{intelligence:modifier}} creatures; this food spoils if not eaten in 24 hours. When a creature partakes of this meal at the end of a short or long rest, it rolls a number of d6s equal to the ingredient creature's CR (1d6 for CR 1/2 and lower) and gains temporary hp equal to the total rolled. Additionally, if the ingredient creature had immunity to a damage type other than bludgeoning, piercing, or slashing damage, you can choose for the meal to bestow resistance to one such damage type for 8 hours to any creature that partakes of it.</description>
+		</sheet>
+	</element>
+	<element name="Flavor Blast" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_FLAVOR_BLAST">
+		<description>
+			<p>Beginning at 6th level, you can make other creatures smell delicious! Once per turn, when a creature fails a saving throw against a spell that you cast of 1st level or higher, you can cause the target to smell and taste like delectable food for up to 1 minute or until you use this ability again. This odor carries out to 15 feet and can resemble any food of your choosing, from freshly baked bread to grilling meat. While the target smells this way, attacks made to bite the creature or attack it with teeth have advantage, and the target has disadvantage on Constitution saving throws it makes to maintain concentration.</p>
+			<p class="indent">Additionally, creatures of Intelligence 3 or lower can't distinguish the target from the smell and react accordingly. Most creatures can distinguish the target from the odor after dealing damage to it.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When a creature fails a saving throw against a 1st level or higher spell that you cast, you can cause the target to smell and taste like delectable food for up to 1 minute or until you use this ability again. This odor carries out to 15ft and can resemble any food of your choosing. While the target smells this way, attacks made to bite the creature or attack it with teeth have advantage, and the target has disadvantage on CON saving throws it makes to maintain concentration. Creatures of INT 3 or lower can't distinguish the target from the smell and react accordingly. Most creatures can distinguish the target from the odor after dealing damage to it.</description>
+		</sheet>
+	</element>
+	<element name="Bottomless Feast" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_BOTTOMLESS_FEAST">
+		<description>
+			<p>At 10th level, you can cast the spell <i>heroes' feast</i> once, creating enough food for one creature, without using a spell slot or material components. At 11th level, you can create enough food for 5 creatures. </p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the spell Heroes' Feast once, creating enough food for one creature, without using a spell slot or material components.</description>
+			<description level="11">You can cast the spell Heroes' Feast once, creating enough food for 5 creatures, without using a spell slot or material components.</description>
+		</sheet>
+	</element>
+	<element name="Ravenous Magic Mouth" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_GASTRONOMY_RAVENOUS_MAGIC_MOUTH">
+		<description>
+			<p>Beginning at 14th level, you can use your action to summon a Large-sized disembodied mouth of magical force filled with sharp teeth in an unoccupied space you can see within 60 feet. On each of your turns, you can command the mouth to float up to 30 feet (no action required), and you can use your bonus action to command it to bite a creature within 5 feet of it. The mouth uses your spell attack modifier for its melee attack roll, and on a hit, deals 4d10 force damage and grapples its target (escape DC equals your spell save DC) on a hit. The mouth can grapple only one target at a time, and can only attack the creature it is grappling.</p>
+			<p class="indent">If the mouth is grappling a target of Medium size or smaller at the start of your turn, you can use your bonus action to command it to swallow its target, depositing the creature in an extradimensional space filled with acid. While swallowed, the creature is blinded and restrained, taking 4d6 acid damage at the beginning of each of its turns. The creature can use its action to make a Strength saving throw against your spell save DC to escape. On a success, it magically reappears and falls prone in an unoccupied space within 5 feet of the mouth. The creature automatically escapes when the mouth vanishes.</p>
+			<p class="indent">The mouth disappears after 1 minute, or if you dismiss it early on your turn (no action required). Once you summon the mouth, you can’t use it again until you finish a long rest.</p>
+			</description>
+		<sheet action="(1)Action - (2)(3)Bonus Action" usage="1/Long Rest">
+			<description>(1)You summon a Large-sized disembodied mouth of magical force filled with sharp teeth in an unoccupied space you can see within 60 feet. On each of your turns, you can command the mouth to float up to 30 feet (no action required), and (2)command it to bite a creature within 5ft of it. The mouth uses your spell attack modifier for its melee attack roll, and on a hit, deals 4d10 force damage and grapples its target (escape DC={{wizard:spellcasting:dc}}). The mouth can grapple only one target at a time, and can only attack the creature it is grappling. &#13;
+			If the mouth is grappling a target of Medium size or smaller at the start of your turn, you can (3)command it to swallow its target, depositing the creature in an extradimensional space filled with acid. While swallowed, the creature is blinded and restrained, taking 4d6 acid damage at the beginning of each of its turns. The creature can use its action to make a STR DC{{wizard:spellcasting:dc}} saving throw to escape. On a success, it magically reappears and falls prone in an unoccupied space within 5ft of the mouth. The creature automatically escapes when the mouth vanishes.&#13;
+			The mouth disappears after 1 minute, or if you dismiss it early on your turn (no action required).</description>
+		</sheet>
+	</element>
+</elements>

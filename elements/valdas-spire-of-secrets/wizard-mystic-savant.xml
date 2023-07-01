@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mystic Savant</name>
+		<description>The Mystic Savant from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+        <update version="0.0.1">
+			<file name="wizard-mystic-savant.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/wizard-mystic-savant.xml" />
+		</update>
+	</info>
+
+	<element name="Mystic Savant" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_WIZARD_MYSTIC_SAVANT">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Unlike most other arcane traditions, mystic savants do not belong to a formalized institution, instead sharing a philosophy that, to master arcana, one must master every individual aspect of it. Their contemporaries call them “universalists” or “holistics,” but they are savants by any definition. The skill of spellcasting comes naturally to them, so while other wizards refine a specific school of magic, mystic savants master an array of cross-school stratagems to help them snatch victory from the jaws of defeat.</p>
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_ARCANE_STRATEGIST" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_BONUS_PROFICIENCY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_ARCANISTS_ASSESSMENT" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_VERSATILE_MEMORY" />
+			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_FONT_OF_PERCIPIENCE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+        <setters>
+			<set name="short">Masters of arcane stratagems who have an innate pool of battle dice</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_ARCANE_STRATEGIST" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_BONUS_PROFICIENCY" level="2"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_ARCANISTS_ASSESSMENT" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_VERSATILE_MEMORY" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_FONT_OF_PERCIPIENCE" level="14"/>
+		</rules>
+	</element>
+	<element name="Arcane Strategist" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_ARCANE_STRATEGIST">
+		<description>
+			<p>Beginning when you choose this arcane tradition at 2nd level, you learn stratagems that are fueled by special dice called battle dice.</p>
+			<p class="indent"><b>Battle Dice.</b> You have two battle dice, which are d6s. A battle die is expended when you use it. You regain all of your expended battle dice when you finish a short or long rest, or when you roll initiative.</p>
+			<p class="indent">Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown on the table below.</p>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Battle Dice</td></tr>
+				</thead>
+				<tr><td>2nd</td><td>2d6</td></tr>
+				<tr><td>3rd</td><td>2d8</td></tr>
+				<tr><td>7th</td><td>3d8</td></tr>
+				<tr><td>13th</td><td>3d10</td></tr>
+				<tr><td>19th</td><td>4d10</td></tr>
+			</table>
+			<p class="indent"><b>Using Battle Dice.</b> Once per turn, you can expend a battle die to use a stratagem of your choice. Your stratagem options are detailed at the end of this subclass description.</p>
+			<p class="indent"><b>Stratagems.</b> You learn three stratagems of your choice, which are detailed under “Stratagems” at the end of the subclass description. Many stratagems enhance a spell in some way. You can use only one stratagem per spell.</p>
+			<p class="indent">You learn two additional stratagems of your choice at 6th level and one additional stratagem of your choice at 10th and 14th level. Each time you learn new stratagems, you can also replace one stratagem you know with a different one.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You learn stratagems that are fueled by special dice called Battle Dice. You have {{battle dice:amount}} Battle Dice which are d{{battle dice:size}}s. Many stratagems enhance a spell in some way. You can use only one stratagem per spell.</description>
+		</sheet>
+		<rules>
+			<stat name="battle dice:amount" value="2" />
+			<stat name="battle dice:amount" value="1" level="7" />
+			<stat name="battle dice:amount" value="1" level="19" />
+			<stat name="battle dice:size" value="6" bonus="size"/>
+			<stat name="battle dice:size" value="8" bonus="size" level="3" />
+            <stat name="battle dice:size" value="10" bonus="size" level="13" />
+			<select type="Archetype Feature" name="Stratagems" supports="Stratagems" number="3"/>
+			<select type="Archetype Feature" name="Stratagems" supports="Stratagems" number="2" level="6" />
+			<select type="Archetype Feature" name="Stratagems" supports="Stratagems" level="10" />
+			<select type="Archetype Feature" name="Stratagems" supports="Stratagems" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_BONUS_PROFICIENCY">
+		<description>
+			<p>Also at 2nd level, you gain proficiency in one of the following skills of your choice: Arcana, History, Insight, Investigation, Medicine, Nature, Perception, or Religion.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" />
+		</rules>
+	</element>
+	<element name="Versatile Memory" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_VERSATILE_MEMORY">
+		<description>
+			<p>Starting at 6th level, you can use your action to exchange one spell you have prepared for another of the same level or lower in your spellbook.</p>
+			<p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short||Long Rest">
+			<description>You can exchange one spell you have prepared for another of the same level or lower in your spellbook.</description>
+		</sheet> 
+	</element>
+	<element name="Arcanist's Assessment" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_ARCANISTS_ASSESSMENT">
+		<description>
+			<p>At 10th level, you can use your action to appraise the spellcasting prowess of a creature you can see within 30 feet. Make an Intelligence check contested by the creature's spellcasting ability check. If the creature doesn't have a spellcasting ability, it rolls a d20 instead. If you succeed, you learn if the creature has the Spellcasting, Innate Spellcasting, or Pact Magic features, and whether the creature can cast spells of a higher level than you can cast.</p>
+			<p class="indent">Regardless of whether the target succeeds or fails, it knows you have assessed its magical capabilities. You can't use this ability on the same target for 24 hours.</p>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum once) and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{assessment}}/Long Rest">
+			<description>You can appraise the spellcasting prowess of a creature you can see within 30ft. Make an INT check contested by the creature's spellcasting ability check. If the creature doesn't have a spellcasting ability, it rolls a d20 instead. If you succeed, you learn if the creature has the Spellcasting, Innate Spellcasting, or Pact Magic features, and whether the creature can cast spells of a higher level than you can cast. Regardless of whether the target succeeds or fails, it knows you have assessed its magical capabilities. You can't use this ability on the same target for 24 hours.</description>
+		</sheet>
+		<rules>
+            <stat name="assessment" value="1" bonus="base" />
+			<stat name="assessment" value="intelligence:modifier" bonus="base" />
+        </rules>
+	</element>
+	<element name="Font of Percipience" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_WIZARD_MS_FONT_OF_PERCIPIENCE">
+		<description>
+			<p>Starting at 14th level, you can use a bonus action and expend a spell slot to regain a number of your expended battle dice up to the level of the spell slot expended. When you do, you can choose a stratagem you know and replace it with a different stratagem.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a spell slot to regain a number of your expended battle dice up to the level of the spell slot expended. When you do, you can choose a stratagem you know and replace it with a different stratagem.</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Warding" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ARCANE_WARDING">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you cast a spell of 1st level or higher, you can expend and roll one battle die as a bonus action to gain temporary hit points equal to the level of spell slot expended to cast the spell + the result of the battle die. You lose any temporary hit points gained from this stratagem after 10 minutes.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you cast a spell of 1st level or higher, you can expend and roll one battle die to gain temp hp equal to the level of spell slot expended to cast the spell + the result of the battle die. You lose any temp hp gained from this stratagem after 10 minutes.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Aegis" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_ELDRITCH_AEGIS">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you or a creature you can see within 30 feet takes damage from a spell, you can use your reaction to expend one battle die, reducing the damage taken by an amount equal to the roll of the battle die + your Intelligence modifier.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you or a creature you can see within 30ft takes damage from a spell, you can expend one battle die, reducing the damage taken by an amount equal to the roll of the battle die + {{intelligence:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Flash of Brilliance" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_FLASH_OF_BRILLIANCE">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you make an Intelligence or Wisdom check, you can expend one battle die to add it to the check. You can choose to use this stratagem after the ability check is rolled but before the GM says whether the result was a success or failure.</p>
+		</description>
+		<sheet>
+			<description>When you make an INT or WIS check, you can expend one battle die to add it to the check. You can choose to use this stratagem after the ability check is rolled but before the GM says whether the result was a success or failure.</description>
+		</sheet>
+	</element>
+	<element name="Mystic Counsel" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MYSTIC_COUNSEL">
+		<supports>Stratagems</supports>
+		<description>
+			<p>You can use a bonus action and expend one battle die to give counsel to a creature that can hear you within 30 feet of you. Once in the next minute when the creature makes a saving throw against a spell it can choose to roll the battle die and add the result to the saving throw.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend one battle die to give counsel to a creature that can hear you within 30ft of you. Once in the next minute when the creature makes a saving throw against a spell it can choose to roll the battle die and add the result to the saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Mystic Defense" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MYSTIC_DEFENSE">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you make a saving throw against a spell or other magical effect, you can use your reaction to expend and roll one battle die to add its result to the saving throw. You can choose to use this stratagem after the saving throw is rolled but before the GM says whether the result was a success or failure.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you make a saving throw against a spell or other magical effect, you can expend and roll one battle die to add its result to the saving throw. You can choose to use this stratagem after the saving throw is rolled but before the GM says whether the result was a success or failure.</description>
+		</sheet>
+	</element>
+	<element name="Potent Casting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_POTENT_CASTING">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you roll damage for a spell you cast, you can expend one battle die as a bonus action. When you do, you can reroll a number of the damage dice up to your Intelligence modifier (minimum of one) and must use the new rolls.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you roll damage for a spell you cast, you can expend one battle die. When you do, you can reroll a number of the damage dice up to your INT modifier (minimum of one) and must use the new rolls.</description>
+		</sheet>
+	</element>
+	<element name="Precision Spell" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_PRECISION_SPELL">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you make a spell attack roll against a creature, you can expend one battle die to add it to the roll as a bonus action. You can use this stratagem before or after making the attack roll, but before any effects of the spell attack are applied.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you make a spell attack roll against a creature, you can expend one battle die to add it to the roll. You can use this stratagem before or after making the attack roll, but before any effects of the spell attack are applied.</description>
+		</sheet>
+	</element>
+	<element name="Quick Thinking" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_QUICK_TINKING">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you make an ability check to determine initiative, you can expend and roll one battle die to add its result to your initiative roll. You can choose to use this stratagem after the ability check is rolled but before the GM determines initiative order.</p>
+		</description>
+		<sheet>
+			<description>When you make an ability check to determine initiative, you can expend and roll one battle die to add its result to your initiative roll. You can choose to use this stratagem after the ability check is rolled but before the GM determines initiative order.</description>
+		</sheet>
+	</element>
+	<element name="Sorcerous Spread" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SORCEROUS_SPREAD">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you deal damage to a creature with a spell of 1st level or higher, you can use your bonus action to choose another creature within 5 feet of the target, then expend and roll a battle die. That chosen creature takes damage equal to the level of spell slot expended casting the spell + the result of the battle die. The type of damage is the same as that taken by the original target of the spell.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you deal damage to a creature with a spell of 1st level or higher, you can choose another creature within 5ft of the target, then expend and roll a battle die. That chosen creature takes damage equal to the level of spell slot expended casting the spell + the result of the battle die. The type of damage is the same as that taken by the original target of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Spellcaster's Sting" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPELLCASTERS_STING">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When a creature within 60 feet of you that you can see succeeds on a saving throw against a spell you cast of 1st level or higher, you can use a bonus action to expend and roll a battle die. The creature takes force damage equal to the level of spell slot expended casting the spell + the result of the battle die.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When a creature within 60ft of you that you can see succeeds on a saving throw against a spell you cast of 1st level or higher, you can expend and roll a battle die. The creature takes force damage equal to the level of spell slot expended casting the spell + the result of the battle die.</description>
+		</sheet>
+	</element>
+	<element name="Spell Sundering" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_SPELL_SUNDERING">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you deal damage to a creature concentrating on a spell, you can use your bonus action to expend and roll one battle die, adding its result to the damage dealt. If the creature must make a Constitution saving throw to maintain concentration as a result of this damage, that saving throw has disadvantage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you deal damage to a creature concentrating on a spell, you can expend and roll one battle die, adding its result to the damage dealt. If the creature must make a CON saving throw to maintain concentration as a result of this damage, that saving throw has disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Unbreakable Concentration" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_UNBREAKABLE_CONCENTRATION">
+		<supports>Stratagems</supports>
+		<description>
+			<p>When you make a saving throw to maintain concentration on a spell, you can expend and roll one battle die to add its result to the saving throw. You can choose to use this stratagem after the saving throw is rolled but before the GM says whether the result was a success or failure.</p>
+		</description>
+		<sheet>
+			<description>When you make a saving throw to maintain concentration on a spell, you can expend and roll one battle die to add its result to the saving throw. You can choose to use this stratagem after the saving throw is rolled but before the GM says whether the result was a success or failure.</description>
+		</sheet>
+	</element>
+</elements>
