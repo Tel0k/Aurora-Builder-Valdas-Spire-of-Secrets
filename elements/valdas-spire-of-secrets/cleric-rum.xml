@@ -4,7 +4,7 @@
 		<name>Rum Domain</name>
 		<description>The Rum Domain from Valda's Spire of Secrets</description>
 		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-rum.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-rum.xml" />
         </update>
 	</info>
@@ -92,7 +92,7 @@
 			<description action="Action"> You learn the legendary libation cantrip, which counts as a cleric spell for you and doesn't count against the number of cantrips you know.</description>
 		</sheet>
 		<rules>
-			<grant  type="Spell" id="ID_MHP_VSOS_LEGENDARY_LIBATION" level="1" spellcasting="Cleric" />
+			<grant  type="Spell" id="ID_MHP_VSOS_SPELL_LEGENDARY_LIBATION" level="1" spellcasting="Cleric" />
 		</rules>
 	</element>
 	<element name="Channel Divinity: Intoxicate" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_CD_INTOXICATE">
