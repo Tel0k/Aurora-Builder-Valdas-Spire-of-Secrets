@@ -79,7 +79,7 @@
 			<stat name="ac:unarmored defense rum" value="ac:unarmored defense rum:dexterity" />
 			<stat name="ac:unarmored defense rum" value="ac:unarmored defense rum:wisdom" />
 			<stat name="ac:calculation" value="ac:unarmored defense rum" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Rum)" />
-            		<grant type="Proficiency" name="Weapon Proficiency (Martial Weapons)" />			
+            		<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />			
 		</rules>
 	</element>
 	<element name="Cup Floweth Over" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RUM_DOMAIN_CUP_FLOWETH_OVER">
