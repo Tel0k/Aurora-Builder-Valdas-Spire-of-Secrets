@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>The new weapons from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
         <file name="vsos-weapons.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-weapons.xml" />
       	</update>
 	</info>
@@ -1315,7 +1315,7 @@
             		<set name="reload">8</set>
 		</setters>
 	</element>
-	<element name="Magnum, Explosive" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BRIEFCASE_GUN">
+	<element name="Magnum, Explosive" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_MAGNUM_EXPLOSIVE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_MHP_VSOS_WEAPON_PROPERTY_EXPLOSIVE, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
 		<description>
 			<p></p>
@@ -1340,7 +1340,7 @@
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1750</set>
 			<set name="weight" lb="22">22 lb.</set>
-			<set name="slot">onehand</set>
+			<set name="slot">twohand</set>
 			<set name="range">30/90</set>
 			<set name="damage" type="fire">2d8</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MULTI_ROCKET_LAUNCHER</set>
@@ -1355,7 +1355,7 @@
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1250</set>
 			<set name="weight" lb="16">16 lb.</set>
-			<set name="slot">onehand</set>
+			<set name="slot">twohand</set>
 			<set name="range">100/400</set>
 			<set name="damage" type="fire">2d8</set>
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_REVOLVING_GRENADE_LAUNCHER</set>
