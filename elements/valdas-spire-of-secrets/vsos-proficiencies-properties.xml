@@ -4,7 +4,7 @@
 		<name>Proficiencies and Properties</name>
 		<description>The new proficiencies and properties from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
         <file name="vsos-proficiencies-properties.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-proficiencies-properties.xml" />
       	</update>
 	</info>
@@ -688,7 +688,7 @@
 		<sheet alt="Sniper Rifle" />
 	</element>
     <!-- Exotic Firearms -->
-    <element name="Martial Melee" type="Weapon Category" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS" />
+    <element name="Exotic Ranged" type="Weapon Category" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS" />
     <element name="Weapon Proficiency (Exotic Firearms)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_FIREARMS">
 		<rules>
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_DUCKS_FOOT" />
