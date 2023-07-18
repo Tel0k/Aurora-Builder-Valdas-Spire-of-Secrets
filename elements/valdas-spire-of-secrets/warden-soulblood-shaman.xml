@@ -4,7 +4,7 @@
       <name>Soulblood Shaman</name>
       <description>The Soulblood Shaman from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.2">
+      <update version="0.0.3">
         <file name="warden-soulblood-shaman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-soulblood-shaman.xml" />
       </update>    
     </info>
@@ -76,14 +76,14 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
-			<stat name="soulblood-shaman:spellcasting:slots:1" value="2" level="3" />
-			<stat name="soulblood-shaman:spellcasting:slots:1" value="1" level="4" />
-			<stat name="soulblood-shaman:spellcasting:slots:1" value="1" level="7" />
-			<stat name="soulblood-shaman:spellcasting:slots:2" value="2" level="7" />
-			<stat name="soulblood-shaman:spellcasting:slots:2" value="1" level="10" />
-			<stat name="soulblood-shaman:spellcasting:slots:3" value="3" level="13" />
-			<stat name="soulblood-shaman:spellcasting:slots:4" value="1" level="19" />
-			<stat name="soulblood-shaman:spellcasting:slots:4" value="1" level="20" />
+			<stat name="soulblood shaman:spellcasting:slots:1" value="2" level="3" />
+			<stat name="soulblood shaman:spellcasting:slots:1" value="1" level="4" />
+			<stat name="soulblood shaman:spellcasting:slots:1" value="1" level="7" />
+			<stat name="soulblood shaman:spellcasting:slots:2" value="2" level="7" />
+			<stat name="soulblood shaman:spellcasting:slots:2" value="1" level="10" />
+			<stat name="soulblood shaman:spellcasting:slots:3" value="3" level="13" />
+			<stat name="soulblood shaman:spellcasting:slots:4" value="1" level="19" />
+			<stat name="soulblood shaman:spellcasting:slots:4" value="1" level="20" />
 			<select type="Spell" name="Cantrip (Soulblood Shaman)" supports="Druid,0" level="3" number="2" spellcasting="Soulblood Shaman" />
 			<select type="Spell" name="Cantrip (Soulblood Shaman)" supports="Druid,0" level="10" spellcasting="Soulblood Shaman"/>
 			<select type="Spell" name="Spell (Soulblood Shaman)" supports="Druid, $(spellcasting:slots)" level="3" number="1" spellcasting="Soulblood Shaman" />
