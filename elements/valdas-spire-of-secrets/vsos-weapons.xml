@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>The new weapons from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
         <file name="vsos-weapons.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-weapons.xml" />
       	</update>
 	</info>
@@ -208,7 +208,7 @@
 		</setters>
 	</element>
     <!-- martial -->
-    	<element name="Bayonet" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BAYONET">
+    <element name="Bayonet" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BAYONET">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_MHP_VSOS_WEAPON_PROPERTY_SPECIAL_BAYONET</supports>
 		<description>
 			<p></p>
@@ -222,7 +222,7 @@
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BAYONET</set>
 		</setters>
 	</element>
-	<element name="Catchpole" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BAYONET">
+	<element name="Catchpole" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATCHPOLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_SPECIAL_CATCHPOLE</supports>
 		<description>
 			<p></p>
@@ -236,7 +236,7 @@
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CATCHPOLE</set>
 		</setters>
 	</element>
-	<element name="Cutlass" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_BAYONET">
+	<element name="Cutlass" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CUTLASS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 		<description>
 			<p></p>
@@ -381,7 +381,7 @@
 			<set name="proficiency">ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</set>
 		</setters>
 	</element>
-	<element name="Crossbow, Repeating" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CHAKRAM">
+	<element name="Crossbow, Repeating" type="Weapon" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CROSSBOW_REPEATING">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
 		<description>
 			<p></p>
