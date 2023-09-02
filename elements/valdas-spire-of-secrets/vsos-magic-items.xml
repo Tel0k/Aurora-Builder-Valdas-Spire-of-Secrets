@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>The Magic Items from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="vsos-magic-items.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-magic-items.xml" />
+		</update>
+	</info>
+
+	<element name="Adamantine Polish" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ADAMANTINE_POLISH">
+		<description>
+			<p>This abrasive paste can be applied as an action to the claws, fangs, tusks, or spines of a creature to make them sharper, harder, or cleaner. For 8 hours after application, that creature gains a +1 to attack and damage rolls with its natural weapons, which count as being made of adamantine for the purposes of overcoming damage resistance and immunity.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Alchemical Anesthetic" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ALCHEMICAL_ANESTHETIC">
+		<description>
+			<p>This clear, odorless potion is housed in a wicked-looking syringe that contains 4 doses. You can administer the anesthetic to a willing creature as an action, dulling its nerves and making it impossible for it to feel pain for one hour. An anesthetized creature has advantage on Constitution checks and saving throws and can't be incapacitated or have disadvantage on rolls due to being in pain. However, the creature is unaware of how much pain it is in or how many levels of exhaustion it has. If a player character is anesthetized, the GM tracks the character's hit points and levels of exhaustion instead of the player for the duration.</p>
+			<p class="indent">If you administer a dose over the course of a minute to a willing or unconscious creature, you can render the creature unconscious for one hour. If you continue to slowly administer anesthetic (one dose every eight hours), you can keep a creature unconscious for up to 24 hours; keeping a creature unconscious longer than this results in death.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Alchemical Reactor" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ALCHEMICAL_REACTOR">
+		<description>
+			<p>This stupendously complex vessel the size of a cask is festooned with valves and dials. While attuned to the reactor, you can use an action to adjust its settings and begin producing any of the following potions: <i>potion of flying</i>, <i>potion of hill giant strength</i>, <i>potion of invisibility</i>, <i>potion of superior healing</i>, <i>sovereign glue</i> (1 ounce), or <i>universal solvent</i>.</p>
+			<p class="indent">The reactor rumbles and whirs for the next 12 hours as it produces the specified potion. Once it is finished, you can use your action to pour the potion from the top of the reactor. This potion loses its potency and becomes nonmagical if it is not consumed within 24 hours.</p>
+			<p class="indent">Additionally, while attuned to the reactor, you can regain 2 expended reagent dice whenever you finish a short rest.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an alchemist">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Ankh of Anubis" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ANKH_OF_ANUBIS">
+		<description>
+			<p>While attuned to this wrought iron holy symbol, you have advantage on attack rolls, ability checks, and saving throws while you have 10 hit points or less.</p>
+			<p class="indent">Additionally, whenever you take damage, record the damage you take in a damage pool, which resets to 0 at the end of your turn. When you lose hit points to cast a martyr spell, you subtract the number in the damage pool from the spell's hit point cost, to a minimum of 0 hit points lost.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a martyr">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Antimagic Bell" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ANTIMAGIC_BELL">
+		<description>
+			<p>This round bell is enchanted to be perfectly silent. It only rings when its magic is disrupted, such as within an <i>antimagic field</i>.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Aqua Fortis" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_AQUA_FORTIS">
+		<description>
+			<p>This transparent acid constantly bubbles within its sealed vial. As an action, you can throw the vial up to 20 feet, shattering it on impact. Make a ranged attack, treating the vial as an improvised weapon.</p>
+			<p class="indent">If the target is an object that isn't being worn or carried, the acid dissolves a 1-foot cube of the object. If splashed on a suit of armor or a shield, the object takes a permanent and cumulative -1 penalty to the AC it offers. A suit of armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If splashed on a weapon, it takes a permanent and cumulative -1 penalty to damage rolls. A weapon reduced to a -5 penalty is destroyed. It has no effect on magic items and objects made of gold, glass, stone, or adamantine.</p>
+			<p class="indent">If the target is a creature, it takes 3d6 acid damage, followed by an extra 2d6 acid damage at the end of its next turn and another 1d6 acid damage at the end of the turn after that. The acid can be washed off with one gallon of water, ending the effect early.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Arrow of Explosions" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ARROW_OF_EXPLOSIONS">
+		<description>
+			<p>When this arrow strikes a solid surface, be it a creature, object, wall, or floor, it explodes with a fiery blast. Each creature within 20 feet of the point of impact must make a DC 17 Dexterity saving throw. A creature takes 8d6 fire damage on a failed save, or half as much on a successful one. The arrow is destroyed in the blast.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Arrow of Glue" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ARROW_OF_GLUE">
+		<description>
+			<p>An <i>arrow of glue</i> is one of a few arrows known as trick arrows. When you fire an arrow of glue, the arrow's shaft becomes pliant on impact and hardens immediately after. You can fire this arrow at any point you can see within range to cover a 1-foot square area with hardened glue. The GM may rule that especially challenging shots are made with disadvantage. A creature hit by this arrow must succeed a DC 15 Dexterity saving throw or be glued to a nearby surface, unable to move. It can break free with a successful DC 15 Strength (Athletics) check.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Arrow of Piercing" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ARROW_OF_PIERCING">
+		<description>
+			<p>An <i>arrow of piercing</i> is one of a few arrows known as trick arrows. When you make an attack with this arrow, it becomes a 5-foot-wide line of magical energy that extends out from you to the weapon's normal range. Each creature in that line must make a DC 15 Dexterity saving throw. A creature takes the weapon's normal damage on a failed save, or half as much damage on a successful one. The arrow is then destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Arrow of Teleportation" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ARROW_OF_TELEPORTATION">
+		<description>
+			<p>An <i>arrow of teleportation</i> is one of a few arrows known as trick arrows. When this arrow is fired from a bow at an unoccupied space within 100 feet of the archer, the archer immediately teleports to its location. The arrow is destroyed on impact.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Aura Lenses, Incomplete Set" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_AURA_LENSES_INCOMPLETE">
+		<description>
+			<p>A set of these large glass lenses is contained in a single cylindrical case. Each is four inches across, tinted in a different hue, and associated with a particular school of magic, as shown on the following table. When you hold a lens up to your eye and look through it, the world appears to be tinted in the len's color, except for creatures and objects which are under the effect of a spell from the lens's associated school of magic, which appear normal.</p>
+			<p class="indent">An incomplete set, contains only 1d8 individual lenses.</p>
+			<table>
+				<thead>
+					<tr><td>School of Magic</td><td>Color</td></tr>
+				</thead>
+				<tr><td>Abjuration</td><td>White</td></tr>
+				<tr><td>Conjuration</td><td>Blue</td></tr>
+				<tr><td>Divination</td><td>Yellow</td></tr>
+				<tr><td>Enchantment</td><td>Pink</td></tr>
+				<tr><td>Evocation</td><td>Red</td></tr>
+				<tr><td>Illusion</td><td>Purple</td></tr>
+				<tr><td>Necromancy</td><td>Grey</td></tr>
+				<tr><td>Transmutation</td><td>Green</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Aura Lenses, Complete Set" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_AURA_LENSES_COMPLETE">
+		<description>
+			<p>A set of these large glass lenses is contained in a single cylindrical case. Each is four inches across, tinted in a different hue, and associated with a particular school of magic, as shown on the following table. When you hold a lens up to your eye and look through it, the world appears to be tinted in the len's color, except for creatures and objects which are under the effect of a spell from the lens's associated school of magic, which appear normal.</p>
+			<p class="indent">A complete set of aura lenses contains all 8 individual lenses.</p>
+			<table>
+				<thead>
+					<tr><td>School of Magic</td><td>Color</td></tr>
+				</thead>
+				<tr><td>Abjuration</td><td>White</td></tr>
+				<tr><td>Conjuration</td><td>Blue</td></tr>
+				<tr><td>Divination</td><td>Yellow</td></tr>
+				<tr><td>Enchantment</td><td>Pink</td></tr>
+				<tr><td>Evocation</td><td>Red</td></tr>
+				<tr><td>Illusion</td><td>Purple</td></tr>
+				<tr><td>Necromancy</td><td>Grey</td></tr>
+				<tr><td>Transmutation</td><td>Green</td></tr>
+			</table>		
+			</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Bag of Cheer" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BAG_OF_CHEER">
+		<description>
+			<p>This large sack, which weighs 30 pounds and is made from red velvet, appears to be full of presents in colorful wrapping. As an action, you can pull a present from the bag and give it to another creature. The gift is tailored specifically to the recipient; the GM determines its nature or rolls on the table on the following page. The value of the gift can't exceed 100 gp.</p>
+			<p class="indent">Once three presents have been pulled from the bag, the bag can't be used again until the next dawn. Any additional presents removed from the bag are empty but well-decorated boxes.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Gift</td></tr>
+				</thead>
+				<tr><td>1</td><td>A weapon or shield</td></tr>
+				<tr><td>2</td><td>Gold</td></tr>
+				<tr><td>3</td><td>An art object</td></tr>
+				<tr><td>4</td><td>A clothing item</td></tr>
+				<tr><td>5</td><td>A tool or musical instrument</td></tr>
+				<tr><td>6</td><td>A <i>potion of healing</i></td></tr>
+				<tr><td>7</td><td>Gems</td></tr>
+				<tr><td>8</td><td>An exotic food</td></tr>
+				<tr><td>9</td><td>A book</td></tr>
+				<tr><td>10</td><td>A toy or gaming set</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	<element name="Bedroll of Rest" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BEDROLL_OF_REST">
+		<description>
+			<p>This enchanted, silken bedroll is immensely comfortable. Sleeping in it during a long rest removes all levels of exhaustion and restores all expended Hit Dice. After sleeping in it, you don't require rest for 48 hours, though you can still choose to take a long rest during that time.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Bells of Due Alarm" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BELLS_OF_DUE_ALARM">
+		<description>
+			<p>This trio of bells warns you of intruders. You can arrange the bells up to 500 feet apart from each other, and can use your action to speak a command word to cast the <i>alarm</i> spell, warding the area between the bells.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Blindfold of True Darkness" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BLINDFOLD_OF_TRUE_DARKNESS">
+		<description>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<p class="indent"><b>Curse.</b> This blindfold is cursed. Attuning to it curses you until you are targeted by the <i>remove curse</i> spell or similar magic. While cursed, you are blinded, whether you are wearing the blindfold or not.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Bonze's Bokken" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BONZES_BOKKEN">
+		<description>
+			<p>This magic weapon deals bludgeoning damage instead of its normal slashing damage. As an action, you can use the bokken to blow a strong wind, dispersing any gases within a 15-foot cube adjacent to you.</p>
+			<p class="indent">When you take the Attack action while holding this weapon, you can replace one or more of your attacks with concussive waves of sound. Make a ranged spell attack roll with a range of 30/60 feet and a +7 bonus to hit. On a hit, the target takes 1d10 + 3 thunder damage, and on a critical hit, the target is deafened. This attack is audible out to 100 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="katana">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Boots of the Hare" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BOOTS_OF_THE_HARE">
+		<description>
+			<p>While attuned to these boots, whenever you use your action to Dash, you gain 90 feet of extra movement instead of the usual amount.</p>
+			<p class="indent"><b>Curse.</b> These boots are cursed, a fact that is revealed only when an identify spell is cast on the boots or you attune to them. Attuning to the boots curses you until you are targeted by the remove cursespell or similar magic. While cursed, your speed is 15 feet and can't be increased by any means other than taking the Dash action.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Boots of the Trail" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BOOTS_OF_THE_TRAIL">
+		<description>
+			<p>Until they are worn, the boots of the trail appear to be in grave disrepair. When you lace them up, the illusion fades: they are immaculate hiking boots with gold clasps and silk laces. While wearing these boots, you leave behind no tracks or other traces of your passage, and can't be tracked except by magical means. You can march for twice as long before suffering levels of exhaustion.</p>
+			<p class="indent">Additionally, you can remove the boots and speak a command word as an action to cause the boots to walk alone, leaving a false trail in any direction for up to one mile. The boots then teleport back to your feet.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Brawling Gloves, +1" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BRAWLING_GLOVES_UNCOMMON">
+		<description>
+			<p>While attuned to these fingerless magical gloves, you have proficiency with all improvised weapons and gain a +1 bonus to attack and damage rolls made using them.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a barbarian, captain, craftsman, fighter, rogue, or warden">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Brawling Gloves, +2" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BRAWLING_GLOVES_RARE">
+		<description>
+			<p>While attuned to these fingerless magical gloves, you have proficiency with all improvised weapons and gain a +2 bonus to attack and damage rolls made using them.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a barbarian, captain, craftsman, fighter, rogue, or warden">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Brawling Gloves, +3" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BRAWLING_GLOVES_VERYRARE">
+		<description>
+			<p>While attuned to these fingerless magical gloves, you have proficiency with all improvised weapons and gain a +3 bonus to attack and damage rolls made using them.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a barbarian, captain, craftsman, fighter, rogue, or warden">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Burning Knuckles" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_BURNING_KNUCKLES">
+		<description>
+			<p>While attuned to these magical gauntlets, your unarmed strikes deal 2d6 fire damage instead of their usual damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="cestus">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Cane of Youth" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_CANE_OF_YOUTH">
+		<description>
+			<p>While attuned to this cane, you suffer none of the frailty of old age and can't be aged magically. You can still die of old age, however.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Chameleon Concoction" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_CHAMELEON_CONCOCTION">
+		<description>
+			<p>When you drink this potion, your skin camouflages to match the color and texture of your surroundings, granting you advantage on Dexterity (Stealth) checks you make to avoid being seen for 1 hour. This liquid's hue rapidly shifts to match whatever material it is nearest to. </p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Coil of Strength Storing" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_COIL_OF_STRENGTH_STORING">
+		<description>
+			<p>This metallic coil is usually worn on an arm or leg. While attuned to it, whenever you make a melee weapon attack against a hostile creature that exceeds the target's AC by 5 or more, the coil gains 1 stored charge. It can hold up to 5 charges at a time.</p>
+			<p class="indent">When you make an attack with a melee weapon, you can expend any number of stored charges to gain a bonus on the attack roll equal to the number of charges expended. You can wait until after you roll the d20 before deciding to expend charges, but must decide before the GM says whether the attack hits. Unused charges disappear 1 minute after being stored.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Cure-All" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_CUREALL">
+		<description>
+			<p>A bottle of <i>cure-all</i> contains 1d4 + 1 doses of potent medicine. As an action, you can drink a dose, curing you of any disease, ending your poisoning, and causing you to be immune to the poisoned condition for 1 hour. A complex swirl of red liquid in the potion's center resembles a snake on a pole. Shaking the bottle fails to mix the potion's contents.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Dowsing Rod" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_DOWSING_ROD">
+		<description>
+			<p>This forked stick is used to discover water. It has 3 charges and regains 1d3 expended charges daily at dawn. While holding this rod, you can use your action and expend a charge to cause the rod to point to the largest source of water in a 10-mile radius. The rod doesn't indicate the distance or quantity of water. If there is little to no water to be found, the rod indicates vaguely downward, for there is always some amount of water underground.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Drum of Blasted Beats" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_DRUM_OF_BLASTED_BEATS">
+		<description>
+			<p>This drum has 6 charges. While attuned to it, you can use an action to strike it and expend one charge to cast the <i>thunderwave</i> spell, or two charges to cast the <i>shatter</i> spell (save DC 15).</p>
+			<p class="indent">The drum regains 1d6 expended charges daily at dusk. If you expend the drum's last charge, roll a d20. On a 1, the drum ruptures and loses its magic.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Émigré Manuscript" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ÉMIGRÉ_MANUSCRIPT">
+		<description>
+			<p>This ancient tome is shaped like a skull and smells either of violets or tiger lilies. While holding the tome, you can cast the spell <i>resurrection</i> without using material components. Once the manuscript is used, it can't be used again until the next dawn. </p>
+			<p class="indent"><b>Curse.</b>The <i>émigré manuscript</i> is cursed to bring nothing but misery to those who use it. Whenever you use it to raise the dead, roll a d20 to determine the result according to the following table.</p>
+			<table>
+				<thead>
+					<tr><td>d20</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1-2</td><td>The spell fails and the caster immediately dies.</td></tr>
+				<tr><td>3-4</td><td>The target is resurrected as a revenant, seeking revenge against the caster</td></tr>
+				<tr><td>5-6</td><td>The target is resurrected as a ghost, but otherwise retains its memories and personality.</td></tr>
+				<tr><td>7-8</td><td>The spell works, but the 100 Humanoids nearest to the target (excluding the caster) immediately die.</td></tr>
+				<tr><td>9-10</td><td>The spell works, but the caster must roll twice on the Indefinite Madness table, suffering both results. If the same result is rolled twice, the caster immediately dies.</td></tr>
+				<tr><td>11-12</td><td>The spell works, but the target loses all of its memories, class levels, proficiencies (including languages), and personality traits.</td></tr>
+				<tr><td>13-14</td><td>The spell appears to work, but the target dies again after 1d10 minutes. No magic short of a wish can revive it from this death.</td></tr>
+				<tr><td>15-20</td><td>The spell works as normal.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Exploding Armor" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ARMOR_EXPLODING_ARMOR">
+		<description>
+			<p>While wearing this armor, you can use your action to cast <i>fireball</i> (save DC 15), centered on yourself. You take no damage from this spell. The armor can't be used this way again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Exploding {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Flutterby Rod" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_FLUTTERBY_ROD">
+		<description>
+			<p>This rod has 7 charges and regains 1d6 + 1 expended charges daily at dawn. While holding the rod, you can use it to cast the <i>light</i> cantrip targeting the rod.</p>
+			<p class="indent">As an action, you can expend a charge to shoot a shimmering, green, butterfly-shaped flutterbolt at a target within 60 feet. Make a ranged spell attack with a +5 attack bonus. On a hit, the target takes 1d4 + 1 force damage and is outlined in sparkling green butterflies. The next attack roll made against this target before the end of your next turn has advantage, and the target can't benefit from being invisible until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Rods</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Folding Ladder" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_FOLDING_LADDER">
+		<description>
+			<p>This item appears as two short wooden rods, 12 inches long and 1 inch in diameter, connected side by side. It weighs four pounds. It has three command words.</p>
+			<p class="indent">When you speak the ladder's first command word, it expands into a ladder, 2 feet wide and 20 feet long. If you speak the second command word, it extends into a freestanding stepladder, 30 feet high with a base that is 5 feet by 10 feet. The third command word causes the ladder to collapse back into its folded form.</p>
+			<p class="indent">The ladder can support 500 pounds of weight in either of its extended configurations.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Frog Prince Statuette" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_FROG_PRINCE_STATUETTE">
+		<description>
+			<p>This clay statuette of a crown-wearing frog transforms into a Humanoid if you speak its command word and kiss it as an action. It gains the statistics of a commoner, as per the spell <i>Mandy's feral follower</i>, except that the Humanoid can speak the languages you speak and is adorned in fine clothes. Furthermore, the Humanoid created by the statuette retains the memories of each time it is transformed, no matter what appearance you ascribe to it.</p>
+			<p class="indent">The transformation lasts until the twelfth stroke of midnight, unless cast in a location where time doesn't pass normally, in which case it lasts for 24 hours. The Humanoid then reverts back to its statuette form. It also reverts early if it drops to 0 hit points or if you speak the command word again while touching it.</p>
+			<p class="indent">Once it has been used, the statuette can't transform again until 5 days have passed.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Gambler's Coin" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GAMBLERS_COIN">
+		<description>
+			<p>This ordinary looking gold piece has deep scratches on one side. It has 3 charges. When you make an attack roll, ability check, or saving throw while holding it, you can expend 1 charge to replace the d20 roll with a coin flip. On heads, the roll is treated as a 20 (though you don't score a critical hit with an attack roll or activate any other effects which trigger on the roll of a 20). On tails, the roll is treated as a 1. The coin regains all expended charges at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Gaol Net" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GAOL_NET">
+		<description>
+			<p>When a Large or smaller creature is restrained with this magical net, you can use your bonus action to speak its command word, causing the net to transform into a Large iron cage that encloses the target. The enclosed creature is no longer restrained.</p>
+			<p class="indent">The cage weighs 500 pounds and is fitted with a locked door (DC 15 to pick the lock). A creature, including the one enclosed in the cage, can use an action to make a DC 25 Strength check to bend the bars enough to let a creature out. If the cage is empty, you can use an action to speak a command word, causing it to transform back into a net.</p>
+			<p class="indent">Once the net transforms into a cage, it can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="net">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Gauntlet of the Grandmaster, +1" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GAUNTLET_OF_THE_GRANDMASTER_UNCOMMON">
+		<description>
+			<p>While wearing this gauntlet, you can use it as a spellcasting focus for your warmage spells, and you gain a bonus to spell attack and damage rolls and to the saving throw DCs of your warmage spells. This bonus is determined by the gauntlet's rarity. This gauntlet counts as a specially prepared gauntlet for cantrips such as <i>force buckler</i></p>
+			<p class="indent">In addition, you gain one of the following cantrips of your choice: <i>force buckler</i>, <i>force dart</i>, or <i>force weapon</i>. The cantrip doesn't count against your number of cantrips known. Whenever you finish a long rest, you can change your selection.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an warmage">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<select type="Spell" name="Gauntlet of the Grandmaster" supports="ID_MHP_VSOS_SPELL_FORCE_BUCKLER|ID_MHP_VSOS_SPELL_FORCE_DART|ID_MHP_VSOS_SPELL_FORCE_WEAPON" />
+			<stat name="warmage:spellcasting:attack" value="1" bonus="gauntlet grandmaster" />
+			<stat name="warmage:spellcasting:dc" value="1" bonus="gauntlet grandmaster" />
+		</rules>
+	</element>
+	<element name="Gauntlet of the Grandmaster, +2" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GAUNTLET_OF_THE_GRANDMASTER_RARE">
+		<description>
+			<p>While wearing this gauntlet, you can use it as a spellcasting focus for your warmage spells, and you gain a bonus to spell attack and damage rolls and to the saving throw DCs of your warmage spells. This bonus is determined by the gauntlet's rarity. This gauntlet counts as a specially prepared gauntlet for cantrips such as <i>force buckler</i></p>
+			<p class="indent">In addition, you gain one of the following cantrips of your choice: <i>force buckler</i>, <i>force dart</i>, or <i>force weapon</i>. The cantrip doesn't count against your number of cantrips known. Whenever you finish a long rest, you can change your selection.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an warmage">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="warmage:spellcasting:attack" value="2" bonus="gauntlet grandmaster" />
+			<stat name="warmage:spellcasting:dc" value="2" bonus="gauntlet grandmaster" />
+			<select type="Spell" name="Gauntlet of the Grandmaster" supports="ID_MHP_VSOS_SPELL_FORCE_BUCKLER|ID_MHP_VSOS_SPELL_FORCE_DART|ID_MHP_VSOS_SPELL_FORCE_WEAPON" />
+		</rules>
+	</element>
+	<element name="Gauntlet of the Grandmaster, +3" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GAUNTLET_OF_THE_GRANDMASTER_VERYRARE">
+		<description>
+			<p>While wearing this gauntlet, you can use it as a spellcasting focus for your warmage spells, and you gain a bonus to spell attack and damage rolls and to the saving throw DCs of your warmage spells. This bonus is determined by the gauntlet's rarity. This gauntlet counts as a specially prepared gauntlet for cantrips such as <i>force buckler</i></p>
+			<p class="indent">In addition, you gain one of the following cantrips of your choice: <i>force buckler</i>, <i>force dart</i>, or <i>force weapon</i>. The cantrip doesn't count against your number of cantrips known. Whenever you finish a long rest, you can change your selection.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an warmage">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="warmage:spellcasting:attack" value="3" bonus="gauntlet grandmaster" />
+			<stat name="warmage:spellcasting:dc" value="3" bonus="gauntlet grandmaster" />
+			<select type="Spell" name="Gauntlet of the Grandmaster" supports="ID_MHP_VSOS_SPELL_FORCE_BUCKLER|ID_MHP_VSOS_SPELL_FORCE_DART|ID_MHP_VSOS_SPELL_FORCE_WEAPON" />
+		</rules>
+	</element>
+	<element name="Glimmerbolt" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GLIMMERBOLT">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">This weapon has 10 charges and regains 1d6 + 4 charges daily at dawn. As part of your Attack action, you can expend a charge to create and load a piece of radiant ammunition into the crossbow. This bolt deals an extra 1d6 damage on a hit and deals radiant damage, instead of its normal piercing damage.</p>
+			<p class="indent">Additionally, as an action, you can expend 3 charges to load a blinding bolt of light into the crossbow and fire it at a point you can see within 60 feet, where it detonates in a flash. Each creature within 20 feet of that point must succeed on a DC 17 Constitution saving throw or be blinded until the end of your next turn. Motes of light hang in the air around that point for the next minute, shedding bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any crossbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</set>
+			<set name="name-format">Glimmerbolt {{parent}}</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+	<element name="Gloves of Skill" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GLOVES_OF_SKILL">
+		<description>
+			<p>While attuned to these gloves, you have proficiency with one tool or instrument. The GM chooses the proficiency or determines it randomly from the options below.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Proficiency</td></tr>
+				</thead>
+				<tr><td>1</td><td>Drum</td></tr>
+				<tr><td>2</td><td>Flute</td></tr>
+				<tr><td>3</td><td>Horn</td></tr>
+				<tr><td>4</td><td>Lute</td></tr>
+				<tr><td>5</td><td>Lyre</td></tr>
+				<tr><td>6</td><td>Carpenter's Tools</td></tr>
+				<tr><td>7</td><td>Cobbler's Tools</td></tr>
+				<tr><td>8</td><td>Jeweler's Tools</td></tr>
+				<tr><td>9</td><td>Mason's Tools</td></tr>
+				<tr><td>10</td><td>Smith's Tools</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Graverobber's Spade, +1" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GRAVEROBBERS_SPADE_UNCOMMON">
+		<description>
+			<p>You can use this magic weapon as a spellcasting focus for your necromancer spells. While holding this magic weapon, you gain a +1 bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell attack rolls and the saving throw DCs of your necromancer spells.</p>
+			<p class="indent">Additionally, you can cast the <i>exhume</i> spell at will without using a spell slot or material components.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="shovel">Weapon</set>
+			<set name="attunement" addition="by a necromancer">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Shovel</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_EXHUME" spellcasting="Necromancer" />
+			<stat name="necromancer:spellcasting:attack" value="1" bonus="graverobber spade" />
+			<stat name="necromancer:spellcasting:dc" value="1" bonus="graverobber spade" />
+		</rules>
+	</element>
+	<element name="Graverobber's Spade, +2" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GRAVEROBBERS_SPADE_RARE">
+		<description>
+			<p>You can use this magic weapon as a spellcasting focus for your necromancer spells. While holding this magic weapon, you gain a +2 bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell attack rolls and the saving throw DCs of your necromancer spells.</p>
+			<p class="indent">Additionally, you can cast the <i>exhume</i> spell at will without using a spell slot or material components.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="shovel">Weapon</set>
+			<set name="attunement" addition="by a necromancer">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Shovel</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_EXHUME" spellcasting="Necromancer" />
+			<stat name="necromancer:spellcasting:attack" value="2" bonus="graverobber spade" />
+			<stat name="necromancer:spellcasting:dc" value="2" bonus="graverobber spade" />
+		</rules>
+	</element>
+	<element name="Graverobber's Spade, +3" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_GRAVEROBBERS_SPADE_VERYRARE">
+		<description>
+			<p>You can use this magic weapon as a spellcasting focus for your necromancer spells. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a bonus to spell attack rolls and the saving throw DCs of your necromancer spells.</p>
+			<p class="indent">Additionally, you can cast the <i>exhume</i> spell at will without using a spell slot or material components.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="shovel">Weapon</set>
+			<set name="attunement" addition="by a necromancer">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Shovel</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_EXHUME" spellcasting="Necromancer" />
+			<stat name="necromancer:spellcasting:attack" value="3" bonus="graverobber spade" />
+			<stat name="necromancer:spellcasting:dc" value="3" bonus="graverobber spade" />
+		</rules>
+	</element>
+	<element name="Hand of Glory" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_HAND_OF_GLORY">
+		<description>
+			<p>This mummified hand is worn around the neck with a leather cord. While attuned to the hand, you can attune to two additional magic items beyond the normal limit, which must be magic rings worn on the hand's digits. If your attunement with the hand ends, your attunement with the magic rings worn on it also ends.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="attunement:max" value="5" bonus="base" />
+		</rules>
+	</element>
+	<element name="Invisible Ink" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_INVISIBLE_INK">
+		<description>
+			<p>Anything written in this ink is invisible. A DC 25 Intelligence (Investigation) check reveals that there is writing present, but not what it says. Only creatures that have truesight or are under the effect of the <i>see invisibility</i> spell can read text written in this ink, though the invisibility effect can be removed using <i>dispel magic</i>. One pot is sufficient to write 250 words or draw one picture or diagram.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Jax" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_JAX">
+		<description>
+			<p>Rather than drinking this vial of orange, brackish liquid, you inject into your body as an action. Once injected, for 1 hour, your Strength, Dexterity, and Constitution scores each increase by 4, and the maximum for these scores is increased to 24. However, your hit point maximum is permanently reduced by 1d12. No means short of a <i>greater restoration</i> or <i>wish</i> spell can restore hit points lost in this way.</p>
+			<p class="indent">You can use more than one dose of jax at once, and its ability score increases stack for the 1-hour duration. However, you still suffer the reduction to your maximum hit points each time you take an additional dose, and you must succeed a DC 20 Constitution saving throw or suffer an overdose. When you overdose, you are reduced to 0 hit points and can't regain hit points for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Khaliber's Iron, +1" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_KHALIBERS_IRON_UNCOMMON">
+		<description>
+			<p>This magic weapon, which is blessed by Khaliber, the goddess of gunpowder, magically produces its own ammunition immediately after it is fired. You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+			<p class="indent">When you score a critical hit with this weapon, the bullet explodes on impact. Each creature you choose other than the target within 5 feet of it must make a Dexterity saving throw, taking fire damage equal to half the damage dealt on a failure. The DC for this saving throw is 13.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any one-handed firearm">Weapon</set>
+			<set name="attunement" addition="by a gunslinger">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_ONEHAND_FIREARMS</set>
+		</setters>
+	</element>
+	<element name="Khaliber's Iron, +2" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_KHALIBERS_IRON_RARE">
+		<description>
+			<p>This magic weapon, which is blessed by Khaliber, the goddess of gunpowder, magically produces its own ammunition immediately after it is fired. You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+			<p class="indent">When you score a critical hit with this weapon, the bullet explodes on impact. Each creature you choose other than the target within 5 feet of it must make a Dexterity saving throw, taking fire damage equal to half the damage dealt on a failure. The DC for this saving throw is 15.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any one-handed firearm">Weapon</set>
+			<set name="attunement" addition="by a gunslinger">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_ONEHAND_FIREARMS</set>
+		</setters>
+	</element>
+	<element name="Khaliber's Iron, +3" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_KHALIBERS_IRON_VERYRARE">
+		<description>
+			<p>This magic weapon, which is blessed by Khaliber, the goddess of gunpowder, magically produces its own ammunition immediately after it is fired. You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+			<p class="indent">When you score a critical hit with this weapon, the bullet explodes on impact. Each creature you choose other than the target within 5 feet of it must make a Dexterity saving throw, taking fire damage equal to half the damage dealt on a failure. The DC for this saving throw is 17.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any one-handed firearm">Weapon</set>
+			<set name="attunement" addition="by a gunslinger">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_ONEHAND_FIREARMS</set>
+		</setters>
+	</element>
+	<element name="Lady and Lord Rings" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_LADY_AND_LORD_RINGS">
+		<description>
+			<p>These two rings, one engraved with the image of a mighty lord and the other with a stately lady, are part of a matched set. Two creatures can attune to the rings, each wearing one of the rings. While within 30 feet of each other, both attuned creatures have resistance to all damage. Additionally, while both creatures are within 30 feet of each other, whenever an attuned creature takes damage, the other creature loses the same number of hit points. Attunement to these rings breaks if either attuned creature dies or breaks attunement.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="attunement" addition="by two creatures">true</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Leaden Manacles" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_LEADEN_MANACLES">
+		<description>
+			<p>These manacles behave the same as normal manacles with the following addition: a creature that attempts to cast a spell while wearing the manacles must make a DC 12 ability check using its spellcasting ability. On a failure, the spell fails and has no effect; the spell slot is expended, the action is wasted, and the manacled creature takes 1d6 fire damage per level of the spell slot expended. On a success, the creature takes half as much damage and the spell is cast successfully.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Leonora's Throne of Indolence" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_LEONORAS_THRONE_OF_INDOLENCE">
+		<description>
+			<p>This high-backed armchair made of oak and gold weighs 100 pounds and functions like an ordinary chair until you sit in it and speak its command word as an action. It then hovers beneath you and can fly through the air. The throne has a flying speed of 50 feet and can carry up to 400 pounds. The throne stops hovering when you speak its command word again.</p>
+			<p class="indent">By speaking another command word, you can use your action to cast the <i>unseen servant</i> spell using the throne. The servant can conjure a spectral trumpet to announce your arrival, in addition to its usual tasks.</p>
+			<p class="indent">Lastly, while attuned to the throne, you can speak a third command word to magically create up to 10 pounds of delicious food of your choice and up to four bottles of wine. Only you can partake of this meal and drink; it instantly becomes stale and sickening in another creature's mouth. Once you have spoken this command word, you can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="100">100 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Locket of Remembrance" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_LOCKET_OF_REMEMBRANCE">
+		<description>
+			<p>When a <i>locket of remembrance</i> is created, it is engraved with the name and likeness of a creature that has died. It is then dedicated to this creature. As long as the locket is worn by a living creature, the remembered creature's remains can't become Undead, and its soul can't linger as an Undead creature.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Loincloth of Oni Magic" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_LOINCLOTH_OF_ONI_MAGIC">
+		<description>
+			<p>While attuned to this blood-red loincloth, you can cast and concentrate on any spells you know, even while you are raging.</p>
+			<p class="indent">Furthermore, the loincloth has 6 charges. While attuned to it, you can use an action to expend 1 or more charges to cast one of the following spells (save DC 17): <i>charm person</i> (1 charge), <i>sleep</i> (1 charge), <i>darkness</i> (2 charges), <i>invisibility</i> (2 charges), <i>gaseous form</i> (3 charges), or <i>cone of cold</i> (4 charges). The loincloth regains 1d6 expended charges daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a barbarian">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Magehunter Blade" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_MAGEHUNTER_BLADE">
+		<description>
+			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">If you use this weapon to hit a creature that is under the effect of a spell, one spell of your choice affecting the target is dispelled if it is 5th-level or lower, and the target takes an extra 1d8 force damage for the level of the dispelled spell (dispelled cantrips deal no extra damage). Once a spell is dispelled, roll a d6. If the number is less than or equal to the level of dispelled spell, the sword loses this trait until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+		</setters>
+	</element>
+	<element name="Magehunter Plate" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_ARMOR_MAGEHUNTER_PLATE">
+		<description>
+			<p>This magical armor has 3 charges. When you are subjected to a magical effect that allows you to make a saving throw to take only half damage, you can expend a charge to instead take no damage on a success and only half as much damage on a failure. The armor regains all expended charges at dusk.</p>
+			<p class="indent">Additionally, while you are attuned to this armor and wearing it, acid, cold, fire, lightning, and thunder damage you take from magical sources, as well as magical healing you receive, is reduced by 3. When you take damage from a magical melee weapon, the attacker must roll a d20. On a 10 or lower, the weapon's magic is suppressed for 1 hour, causing it to temporarily become nonmagical.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="type" addition="breastplate, half plate, or full plate">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_WOTC_ARMOR_MEDIUM_BREASTPLATE|ID_WOTC_ARMOR_MEDIUM_HALF_PLATE|ID_WOTC_ARMOR_HEAVY_PLATE</set>
+			<set name="name-format">name {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Marvelous Painted World" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_MARVELOUS_PAINTED_WORLD">
+		<description>
+			<p>This masterful painting, at least a 5-foot square in area, was crafted by a master painter using at least ten pots of marvelous pigments. It depicts a serene painted world. The painting itself acts as a portal to a demiplane in which the painted world exists, and is large enough to allow Medium creatures to pass through unhindered. Inside the painted world, a misty archway is a portal to the real world. If the painting is rolled up or faced toward a solid surface, the portal disappears inside the painted world.</p>
+			<p class="indent">The location, objects, and creatures depicted within the painted world are determined by the painting's creator, but such objects and creatures can't leave the painted world, as they can't pass through the portal, and disappear into smoke if removed from the demiplane by other means. Time passes at half speed within the painted world, and you don't need to eat or drink while within it.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	<element name="Memento Mori" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_MEMENTO_MORI">
+		<description>
+			<p>This sealed letter, infused with chronomancy magic, contains a written description of how the creature that reads it shall die. The letter always contains specific descriptions, such as “The red-eyed orc drove its scimitar through Faizon the Blue's heart,” but may also use cryptic or vague language. It never specifies an exact time. Once a creature has read the letter, it has advantage on death saving throws, and dies only after gaining five death saving throw failures, instead of three. However, when the creature arrives at the moment of its death described in the letter, it dies without making death saving throws if it is reduced to 0 hit points.</p>
+			<p class="indent">Once a memento mori is opened and read, it becomes an ordinary letter. Its effects end only if the creature that read it dies and is later restored to life.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Morbid Makeup" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_MORBID_MAKEUP">
+		<description>
+			<p>This makeup kit contains only red, white, and black paint. It functions as a disguise kit which lets you convincingly appear as a Fey, Fiend, or Undead creature. While wearing the makeup, you have advantage on Charisma (Intimidation) checks you make against Humanoids.</p>
+			<p class="indent">The kit contains enough makeup for 10 applications. Each application lasts up to 8 hours, and can be washed off as an action.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Mouse of Cowardice" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_MOUSE_OF_COWARDICE">
+		<description>
+			<p>This wind-up clockwork mouse terrifies even the largest beasts. When you speak its command word and set it rolling toward a Large or larger creature within 15 feet of you as an action, you cast the spell <i>phantasmal killer</i> (save DC 15) using the mouse. The mouse can't be used this way again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Necromantic Draught" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_NECROMANTIC_DRAUGHT">
+		<description>
+			<p>You can pour this potion on a Medium or Small Humanoid corpse as an action to animate it, as per the <i>animate dead</i> spell for 24 hours. You command Undead animated in this way. This brightly glowing neon-yellow goo retreats from living things that touch its container.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Ooze Bottle" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_OOZE_BOTTLE">
+		<description>
+			<p>As an action, you can throw this vial up to 20 feet, shattering it on impact and releasing a gray ooze. This ooze is friendly to you and your allies, and will otherwise attack the nearest creature it can detect. If there is no creature to attack, the ooze will follow you. However, the biochemistry of this ooze is unstable, and the ooze dissolves into a lifeless sludge after 1 hour. The charcoal-colored liquid inside this bottle seems to lunge about with unnatural momentum.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element> 
+	<element name="Parchment of Sending" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PARCHMENT_OF_SENDING">
+		<description>
+			<p>This parchment can hold a message of twenty-five words or less; additional text is magically erased. When addressed with the name of a creature with which you are familiar, the parchment folds itself into the shape of a glider and flutters on the wind, magically seeking out the creature within 24 hours if the recipient is on the same plane of existence as you. The recipient can write an additional twenty-five word message, and cause the parchment to fold itself and return to you by addressing it to your name. The parchment can make four such trips, and then becomes nonmagical parchment.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Peacekeeper" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PEACEKEEPER">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">As an action, you launch a radiant, magical bolas from the weapon, directed at a creature within 60 feet of you. The target must succeed on a DC 13 Dexterity saving throw or be knocked prone and restrained by the bolas. A Huge or larger creature automatically succeeds on this saving throw. A restrained creature can use its action to make a DC 13 Strength check, breaking the bolas and freeing itself on a success. Each time a creature fails this check, the bolas tightens, dealing 1d8 radiant damage to the restrained creature.</p>
+			<p class="indent">When you launch a bolas, roll a d6. On a 1 or 2, it can't be used to do so again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any firearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_FIREARMS</set>
+		</setters>
+	</element>
+	<element name="Pentacle of Woe, +1" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PENTACLE_OF_WOE_UNCOMMON">
+		<description>
+			<p>While attuned to this medallion, you gain a bonus to spell attack rolls and to the saving throw DCs of your hexes and witch spells. This bonus is determined by the pentacle's rarity. </p>
+			<p class="indent">Additionally, this pentacle has 3 charges. You can expend a charge as a bonus action to cast a hex that usually takes an action. The pentacle regains all expended charges daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement" addition="by a witch">true</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="witch:spellcasting:attack" value="1" bonus="pentacle woe" />
+			<stat name="witch:spellcasting:dc" value="1" bonus="pentacle woe" />
+		</rules>
+	</element>
+	<element name="Pentacle of Woe, +2" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PENTACLE_OF_WOE_RARE">
+		<description>
+			<p>While attuned to this medallion, you gain a bonus to spell attack rolls and to the saving throw DCs of your hexes and witch spells. This bonus is determined by the pentacle's rarity. </p>
+			<p class="indent">Additionally, this pentacle has 3 charges. You can expend a charge as a bonus action to cast a hex that usually takes an action. The pentacle regains all expended charges daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement" addition="by a witch">true</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="witch:spellcasting:attack" value="2" bonus="pentacle woe" />
+			<stat name="witch:spellcasting:dc" value="2" bonus="pentacle woe" />
+		</rules>
+	</element>
+	<element name="Pentacle of Woe, +3" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PENTACLE_OF_WOE_VERYRARE">
+		<description>
+			<p>While attuned to this medallion, you gain a bonus to spell attack rolls and to the saving throw DCs of your hexes and witch spells. This bonus is determined by the pentacle's rarity. </p>
+			<p class="indent">Additionally, this pentacle has 3 charges. You can expend a charge as a bonus action to cast a hex that usually takes an action. The pentacle regains all expended charges daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement" addition="by a witch">true</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="witch:spellcasting:attack" value="3" bonus="pentacle woe" />
+			<stat name="witch:spellcasting:dc" value="3" bonus="pentacle woe" />
+		</rules>
+	</element>
+	<element name="Phase Arrow" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PHASE_ARROW">
+		<description>
+			<p>When this arrow strikes a solid surface, be it a creature, object, wall, or floor, it explodes with a fiery blast. Each creature within 20 feet of the point of impact must make a DC 17 Dexterity saving throw. A creature takes 8d6 fire damage on a failed save, or half as much on a successful one. The arrow is destroyed in the blast.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Polymorph Potion" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_POLYMORPH_POTION">
+		<description>
+			<p>When you drink this potion, which is a purple liquid derived from mimic blood, you gain the effects of the <i>polymorph</i> spell for 1 hour. Roll a d20 and consult the following table to determine the form you are transformed into.</p>
+			<table>
+				<thead>
+					<tr><td>d20</td><td>New Form</td><td>d20</td><td>New Form</td></tr>
+				</thead>
+				<tr><td>1</td><td>Rat</td><td>11</td><td>Constrictor Snake</td></tr>
+				<tr><td>2</td><td>Lizard</td><td>12</td><td>Wolf</td></tr>
+				<tr><td>3</td><td>Cat</td><td>13</td><td>Ape</td></tr>
+				<tr><td>4</td><td>Octopus</td><td>14</td><td>Crocodile</td></tr>
+				<tr><td>5</td><td>Weasel</td><td>15</td><td>Giant Toad</td></tr>
+				<tr><td>6</td><td>Goat</td><td>16</td><td>Commoner (random appearance)</td></tr>
+				<tr><td>7</td><td>Owl</td><td>17</td><td>Brown Bear</td></tr>
+				<tr><td>8</td><td>Draft Horse</td><td>18</td><td>Tiger</td></tr>
+				<tr><td>9</td><td>Eagle</td><td>19</td><td>Elephant</td></tr>
+				<tr><td>10</td><td>Mastiff</td><td>20</td><td>Tyrannosaurus Rex</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Portable Cannonballs" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PORTABLE_CANNONBALLS">
+		<description>
+			<p>This bag contains twenty iron balls, each one inch in diameter and weighing 1/4 of a pound. As a bonus action, you can speak the command word, which causes any number of the balls to expand into full-size cannonballs weighing 10 pounds each, suitable for firing from a cannon.</p>
+			<p class="indent">The bag can be poured out on the ground as an action, in which case it functions exactly as a bag of ball bearings. If the command word is spoken after the bag is poured out, all the balls expand at once. If a bag full of expanded balls is set to rolling, such as by being poured down a hill, any creature in the path of the balls must make a DC 13 Dexterity saving throw or take 11 (2d10) bludgeoning damage.</p>
+			<p class="indent">Individual iron balls can be fired from a sling or firearm and expanded in midair, dealing 2d12 bludgeoning damage on a hit, though any attacks made in this fashion have disadvantage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type" addition="cannonballs">Weapon</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Portal Chalk" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PORTAL_CHALK">
+		<description>
+			<p>Each of these two pieces of chalk radiate a different luminescent aura: one orange, the other blue. Each piece of chalk has 10 uses. As an action, you can expend one use of a piece of chalk to draw a circular or rectangular portal on a solid stone surface large enough for a Medium creature. This portal instantly becomes linked to the most recent portal drawn with the other color of chalk, unlinking any portals created by these pieces of chalk other than these two. A linked portal is a glowing ring or rectangle filled with opaque mist; an unlinked portal is simply mundane chalk. A pair of linked portals acts as a magical gate. Any creature or object entering a linked portal exits from the other portal as if the two were adjacent to each other. </p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Potion of Mirrored Eyes" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_POTION_OF_MIRRORED_EYES">
+		<description>
+			<p>For 1 minute after you drink this potion, you gain immunity to any effect which can normally be avoided by averting your gaze from it, such as a medusa's petrifying gaze. While under the influence of this potion, you can safely look at such creatures without being subjected to their abilities.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Puzzle Box" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_PUZZLE_BOX">
+		<description>
+			<p>Though a magic item in and of itself, this cubic box often contains far more powerful and destructive items. The puzzle box can hold one cubic foot of contents, which can't be targeted by divination spells or perceived through scrying sensors created by divination spells.</p>
+			<p class="indent">Once the box is closed, it can only be opened by solving the box's puzzle. You can attempt to solve it by spending 24 hours working on the puzzle mechanism, after which you must succeed a DC 23 Intelligence check to open the box. You can close the box as an action, automatically scrambling the puzzle.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Reaper's Bullet" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_REAPERS_BULLET">
+		<description>
+			<p>This bullet, forged by the reaper and engraved with insidious runes, brings inevitable death on its target. A creature hit by this bullet dies.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any firearm ammunition">Weapon</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	<element name="Replacement Man" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_REPLACEMENT_MAN">
+		<description>
+			<p>If damage would reduce you to 0 hit points while you are attuned to this human-shaped figurine, you drop to 1 hit point instead and the figurine fades away with a sad smile on his face.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Replica Clay" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_REPLICA_CLAY">
+		<description>
+			<p>When you touch this lump of clay to an object that can fit within a 5-foot cube, the clay shifts and molds into an exact replica with the same color and texture. The replica even mimics visual magical elements, such as glowing runes. Touching the replica reveals it to be made of clay, as it yields under any significant force, but it is impossible to distinguish with a visual inspection. Once the clay is shaped into a replica, it becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Reverberating Shield" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SHIELD_REVERBERATING_SHIELD">
+		<description>
+			<p>While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC. Whenever a creature misses you with a melee weapon attack while you are holding this shield, it must succeed a DC 15 Dexterity saving throw. On a failure, the creature drops its weapon, which is thrown 15 feet away from you. If the weapon can't be dropped, such as a dragon's bite or claws, the attacker instead has disadvantage on all weapon attacks until the end of its turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="enhancement">1</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+	<element name="Ring of Barrels" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_RING_OF_BARRELS">
+		<description>
+			<p>This ring has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the ring, you can use an action and expend 1 to 3 of its charges to summon a number of empty barrels in spaces adjacent to you equal to the number of charges expended. The barrels are large, fully 6-feet high and 4-feet in diameter, occupying the same space as a Medium creature and providing three-quarters cover from ranged attacks. Barrels weigh 150 pounds and can be moved with an action.</p>
+			<p class="indent">You can summon a barrel around an incapacitated Medium creature, restraining it, or around a Small or smaller creature, trapping it inside. A creature can break free of a barrel by making a DC 22 Strength check</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="attunement">true</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Ring of Icebergs" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_RING_OF_ICEBERGS">
+		<description>
+			<p>As a bonus action, or a reaction to being hit by an attacker you can see, you can spin the ring's jewel, causing it to expand into a hollow block of clear ice that completely surrounds you. This iceberg occupies your space and pushes creatures within your space to the nearest unoccupied area, ending any grapple in which you are involved. There is enough room within the iceberg to move around, but you can't move more than 6 inches in any direction. Spells and other magical effects can't extend through the iceberg or be cast through it</p>
+			<p class="indent">The iceberg is an object with AC 10 and 100 HP. If it was activated as a reaction, it takes as much of the triggering damage as possible. The iceberg has immunity to cold, poison, and psychic damage, and vulnerability to fire damage. The iceberg lasts for up to 1 minute, until it is destroyed, or until you use a bonus action to cease the jewel's spinning.</p>
+			<p class="indent">Once you spin the ring to create an iceberg, you can't do so again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Salvation" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_RING_OF_SALVATION">
+		<description>
+			<p>If you fail a saving throw while attuned to this ring, you can choose to succeed it instead. Once you use this ability, you can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="attunement">true</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Sandstone Solution" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SANDSTONE_SOLUTION">
+		<description>
+			<p>You can pour this substance on the ground as an action. If poured onto stone, a 10-foot deep, 10-foot radius portion of the stone becomes mud for 1 hour.</p>
+			<p class="indent">When poured into mud, sand, or quicksand, a 10-foot deep, 10-foot radius region of the material become solid stone for 1 hour. The stone has AC 17, 75 HP, and immunity to psychic and poison damage. Any creature inside it when it becomes stone must make a DC 14 Dexterity saving throw or be restrained. The restrained creature can break free by succeeding on a DC 20 Strength check or by dealing 25 damage to the stone. This sandlike substance flows about its container like a fluid.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Scroll of Duplication" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SCROLL_OF_DUPLICATION">
+		<description>
+			<p>This blank scroll is imbued with enchantments that enable it to copy text from another source. As an action, you can touch the <i>scroll of duplication</i> to an object that contains writing. The scroll instantaneously copies up to 500 consecutive words from the source material (you can choose which section if the source material is longer than this), creating a perfect duplicate of the original text. The scroll only copies nonmagical text, not illustrations or magical writings (such as the contents of a spellbook or a <i>glyph of warding</i>). If the source contains a mixture of magical writing, illustrations, and nonmagical text, only the nonmagical text is copied, leaving blank space where illustrations and magical writing would be expected. Using the scroll doesn't activate magical traps that trigger upon reading the source material.</p>
+		</description>
+		<setters>
+			<set name="category">Scrolls</set>
+			<set name="type">Scroll</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Skitterlegs" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SKITTERLEGS">
+		<description>
+			<p>Worn like a backpack, these brass and mithral legs deploy when you're knocked out or paralyzed. A series of switches allows you to program the legs with either the “Defend” or “Eliminate” setting, as well as a list of friendly creatures in order of priority.</p>
+			<p class="indent">Whenever you are paralyzed or knocked unconscious (except when unconscious due to nonmagical sleep), the skitterlegs deploy, lifting your body from the ground. While the legs are deployed, you don't count as being prone. Attacks made against you while the legs are deployed aren't critical hits, even though you are paralyzed or unconscious. The legs make Strength and Dexterity checks and saving throws with a +5 modifier.</p>
+			<p class="indent">The legs have a walking speed of 30 feet. On each of your turns while you are paralyzed or unconscious, the legs behave according to their settings:</p>
+			<p class="indent"><b>Defend.</b> The legs take the Dodge or Disengage action (your choice when you program the legs) and move toward the highest-priority friendly creature that is still conscious.</p>
+			<p class="indent"><b>Eliminate.</b> The legs move toward the nearest hostile creature and make two melee attacks with an attack bonus of +7. On a hit, the legs deal 1d8 + 2 piercing damage.</p>
+			<p class="indent">If you regain consciousness or recover from paralysis, the legs set you back on your feet before retracting. The legs can function for one cumulative hour each day. If this duration is exceeded, the legs collapse and drop you prone.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Smoking Pipe of Dragon's Breath" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SMOKING_PIPE_OF_DRAGONS_BREATH">
+		<description>
+			<p>This pipe has 2 charges and regains 1 expended charge daily at dawn. If the pipe is full of one ounce of smoking herb, you can use an action and expend 1 charge to inhale deeply from it and exhale dragon's flame. Each creature in a 30-foot-radius cone must make a DC 15 Dexterity saving throw or take 8d6 fire damage, or half as much on a successful one.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>		
+		</setters>
+	</element>
+	<element name="Sorting Beast" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SORTING_BEAST">
+		<description>
+			<p>The <i>sorting beast</i> is a six-legged machine with eyes, legs, and antennae at both ends, as well as an array of measuring devices near its center. It can manipulate and hold objects up to 30 pounds in weight.</p>
+			<p class="indent">When activated as an action, the <i>sorting beast</i> sets about collecting and sorting all loose valuable items within 100 feet. It sorts all gold pieces, silver pieces, and copper pieces into neat stacks of 10. For material goods, such as precious stones, the <i>sorting beast</i> can appraise value by weight and quality, before sorting the goods appropriately and printing the results on a fine paper strip. The sorting beast continues sorting until finished or deactivated as an action.</p>
+			<p class="indent">Additionally, the <i>sorting beast</i> can cast the spell <i>identify</i>, without using material components, on one object you designate each day.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Switch Amalgam" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_SWITCH_AMALGAM">
+		<description>
+			<p>This mixture of mithral, quicksilver, and platinum molds easily and adheres to steel, allowing a trained craftsman to make unique compound weapons. While attuned to the amalgam, you can spend a minute heating the amalgam and carefully attaching it to a weapon or removing it from one. The amalgam can be attached to two weapons at a time. Once attached to two weapons, the weapons become magical, and each gains a +1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls.</p>
+			<p class="indent">Additionally, each weapon gains the Switch property. A switch weapon has two forms; you can swap between which weapon is being used at any time, even between attacks. Unlike other switch weapons, weapons unified with the amalgam do not become exotic weapons.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement" addition="by a craftsman">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Thornbow" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_THORNBOW">
+		<description>
+			<p>This magic weapon has 6 charges and regains 1d4 + 2 charges daily at dawn. As a bonus action, you can expend a charge to cause a thorny arrow to grow from the bow, choosing whether it is a Bramblestrike or Splinterstrike arrow. You can also spend three charges as an action to fire an Overgrowth Volley.</p>
+			<p class="indent"><b>Bramblestrike.</b> On a hit, this magic arrow deals the weapon's normal damage, and the target must succeed on a DC 15 Strength saving throw or become restrained by magical vines for up to 1 minute. A restrained creature can use its action to make a DC 15 Strength check, freeing itself on a success.</p>
+			<p class="indent"><b>Splinterstrike.</b> On a hit, this magic arrow deals the weapon's normal damage, and then erupts in a storm of splinters and thorns. Each creature within 5 feet of the target must succeed on a DC 15 Dexterity saving throw or take 1d10 piercing damage.</p>
+			<p class="indent"><b>Overgrowth Volley.</b> Three thick-limbed, thorny arrows grow from the bow and fire at a point you choose that you can see within 120 feet of you. Where the arrows land, a mass of syklthorn brambles grow, creating an effect identical to the <i>wall of thorns</i> spell, dealing 4d8 damage instead of 7d8.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+		</setters>
+	</element>
+	<element name="Tome of Tongues" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_TOME_OF_TONGUES">
+		<description>
+			<p>This book contains grammar and vocabulary for a specific language, and its words are charged with magic. If you spend 8 hours over a period of 2 days or fewer studying the book's contents and practicing its guidelines, you learn to read, write, and speak whatever language it concerns. The tome then loses its magic forever.</p>
+		</description>
+		<setters>
+			<set name="keywords">language</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Totem of Enmity" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_TOTEM_OF_ENMITY">
+		<description>
+			<p>This wooden rod is engraved with evil symbols and hateful curses in all languages. As an action, you can break the rod while speaking the name of a creature you are familiar with to swear vengeance against that creature. You indefinitely have advantage on attack rolls against the named creature. This effect ends if you break another <i>totem of enmity</i> or the creature dies.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Treant's Bane" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_TREANTS_BANE">
+		<description>
+			<p>If you hit a Plant with this weapon, the Plant takes an extra 2d6 damage of the weapon's type. This weapon ignores the damage threshold of objects made of wood, vines, or other naturally grown materials.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any axe or sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+		</setters>
+	</element>
+	<element name="Troll Rod" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_TROLL_ROD">
+		<description>
+			<p>This uncouth pommel has a troll's arm attached—still living—to one end. As a bonus action, you can issue it commands in the troll dialect of Giant to pick up items, drop them, or make a fist (typical command words include “grabbit,” “leggo,” and “maik'a'fist.”) If closed into a fist, the rod acts as a magic mace, and you have a +1 bonus to attack and damage rolls made using it.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="mace">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MACES</set>
+		</setters>
+	</element>
+	<element name="Universal Knocker" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_UNIVERSAL_KNOCKER">
+		<description>
+			<p>You can use your action to hold this brass door knocker against an object to cast the <i>knock</i> spell targeting the object. The knocker can’t be used this way again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Bat" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_BAT">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Bat.</b> This obsidian charm appears like a shrieking bat. While attached, when you deal damage to a creature with this weapon, its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The creature dies if this effect reduces its hit point maximum to 0.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Blade" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_BLADE">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Blade.</b> This adamantine charm is shaped like a miniature longsword. While attached, you have a +1 bonus to attack and damage rolls made with this magic weapon. This bonus doesn’t apply to magic weapons that already have a bonus to attack and damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Die" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_DIE">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Die.</b> This silver charm depicts a six-sided die. While attached, the weapon deals more potent critical hits. When you score a critical hit, if you roll the maximum number on any damage die, you can roll an extra damage die and add its damage to the total, rolling again if this die is also the maximum number, and so on. You can roll a total number of damage dice for this critical hit equal to twice the number of damage dice you initially rolled.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Feather" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_FEATHER">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Feather.</b> This gold charm of a feather feels unusually light. While attached, this weapon weighs half as much as usual. Small creatures can effectively use the weapon, even if it has the Heavy property</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Ghost" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_GHOST">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Ghost.</b> This crystal charm is carved into the shape of a wispy spirit. While attached, the weapon can affect creatures on the Ethereal Plane as if they were on the Material Plane, and vice versa.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Hook" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_HOOK">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Hook.</b> This bronze charm is shaped like a fishing hook. When attached, if the weapon is on the same plane of existence, you can use your bonus action to teleport it to your hand.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Lance" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_LANCE">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Lance.</b> This copper charm depicts a short lance. While attached, once on each of your turns when you make a melee attack with this weapon against a creature you can see, you can lunge up to 15 feet toward your target before making the attack. This movement doesn’t provoke opportunity attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you have nothing holding you aloft.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Lightning Bolt" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_LIGHTNING_BOLT">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Lightning Bolt.</b> This mithral charm depicts a wild lightning bolt. While attached, this weapon deals an extra 1d6 lightning damage to any target it hits.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Weapon Charm, Mirror" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_CHARM_MIRROR">
+		<description>
+			<p>A weapon charm is a small ornament fixed on a loop of string or chain. You can use your action to attach the charm on a weapon, usually on the weapon’s pommel, causing the weapon to become a magic weapon that requires attunement. Even if the weapon was already magical, you must attune to it again to gain the charm’s magical benefits, which are listed in the charm’s description. A weapon can only have one charm attached at a time.</p>
+			<p class="indent"><b>Mirror.</b> This shiny platinum charm depicts an elegant hand mirror. This charm can only be attached to a weapon with the Light property. When attached, when you draw the weapon with one hand, a spectral duplicate of the weapon appears in your other hand. This spectral duplicate has identical statistics to the original weapon, including its magical effects, but doesn’t include ammunition. When the attached weapon or its spectral duplicate leaves your hand, the duplicate vanishes.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Weapon For Dummies" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WEAPON_FOR_DUMMIES">
+		<description>
+			<p>While attuned to this magic weapon, you have proficiency in it. This weapon has 3 charges and regains all expended charges daily at dawn. When you miss an attack with this weapon, you can expend a charge to gain a +5 bonus to the attack roll, potentially causing the attack to hit. The weapon congratulates you when you hit an enemy, and condescendingly berates you when you miss.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any martial weapon">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" requirements="ID_WOTC_PHB_WEAPON_BATTLEAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" requirements="ID_WOTC_PHB_WEAPON_FLAIL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" requirements="ID_WOTC_PHB_WEAPON_GLAIVE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" requirements="ID_WOTC_PHB_WEAPON_GREATAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" requirements="ID_WOTC_PHB_WEAPON_GREATSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" requirements="ID_WOTC_PHB_WEAPON_HALBERD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" requirements="ID_WOTC_PHB_WEAPON_LANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="ID_WOTC_PHB_WEAPON_LONGSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" requirements="ID_WOTC_PHB_WEAPON_MAUL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" requirements="ID_WOTC_PHB_WEAPON_MORNINGSTAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" requirements="ID_WOTC_PHB_WEAPON_PIKE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="ID_WOTC_PHB_WEAPON_RAPIER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="ID_WOTC_PHB_WEAPON_SCIMITAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="ID_WOTC_PHB_WEAPON_SHORTSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" requirements="ID_WOTC_PHB_WEAPON_TRIDENT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" requirements="ID_WOTC_PHB_WEAPON_WAR_PICK" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" requirements="ID_WOTC_PHB_WEAPON_WARHAMMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" requirements="ID_WOTC_PHB_WEAPON_WHIP" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" requirements="ID_WOTC_PHB_WEAPON_BLOWGUN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="ID_WOTC_PHB_WEAPON_LONGBOW" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="ID_WOTC_PHB_WEAPON_NET" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BAYONET" requirements="ID_MHP_VSOS_WEAPON_BAYONET" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CATCHPOLE" requirements="ID_MHP_VSOS_WEAPON_CATCHPOLE" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CUTLASS" requirements="ID_MHP_VSOS_WEAPON_CUTLASS" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ESTOC" requirements="ID_MHP_VSOS_WEAPON_ESTOC" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_HARPOON" requirements="" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KATANA" requirements="" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KHOPESH" requirements="ID_MHP_VSOS_WEAPON_KHOPESH"/>
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_NAGINATA" requirements="ID_MHP_VSOS_WEAPON_NAGINATA"/>
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU" requirements="ID_MHP_VSOS_WEAPON_NUNCHAKU" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ATLATL" requirements="ID_MHP_VSOS_WEAPON_ATLATL" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOOMERANG" requirements="ID_MHP_VSOS_WEAPON_BOOMERANG" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM" requirements="ID_MHP_VSOS_WEAPON_CHAKRAM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_REPEATING" requirements="ID_MHP_VSOS_WEAPON_CROSSBOW_REPEATING" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER_THROWING" requirements="ID_MHP_VSOS_WEAPON_DAGGER_THROWING" />
+			<!-- DMG firearms, are considered martial weapons -->
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_PISTOL" requirements="ID_WOTC_DMG_WEAPON_PISTOL" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET" requirements="ID_WOTC_DMG_WEAPON_MUSKET" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_PISTOL_AUTOMATIC" requirements="ID_WOTC_DMG_WEAPON_PISTOL_AUTOMATIC" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_REVOLVER" requirements="ID_WOTC_DMG_WEAPON_REVOLVER" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_RIFLE_HUNTING" requirements="ID_WOTC_DMG_WEAPON_RIFLE_HUNTING" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_RIFLE_AUTOMATIC" requirements="ID_WOTC_DMG_WEAPON_RIFLE_AUTOMATIC" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_SHOTGUN" requirements="ID_WOTC_DMG_WEAPON_SHOTGUN" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FUTURISTIC_FIREARMS_LASTER_PISTOL" requirements="ID_WOTC_DMG_WEAPON_LASER_PISTOL" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FUTURISTIC_FIREARMS_ANTIMATTER_RIFLE" requirements="ID_WOTC_DMG_WEAPON_ANTIMATTER_RIFLE" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FUTURISTIC_FIREARMS_LASER_RIFLE" requirements="ID_WOTC_DMG_WEAPON_LASER_RIFLE" />
+			<!-- -->
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_RENAISSANCE_FIREARMS_BLUNDERBUSS" requirements="ID_MHP_VSOS_WEAPON_BLUNDERBUSS" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_RENAISSANCE_FIREARMS_MUSKET" requirements="ID_MHP_VSOS_WEAPON_MUSKET" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_INDUSTRIAL_FIREARMS_GATLING_GUN" requirements="ID_MHP_VSOS_WEAPON_GATLING_GUN" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_INDUSTRIAL_FIREARMS_HARPOON_GUN" requirements="ID_MHP_VSOS_WEAPON_HARPOON_GUN" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_INDUSTRIAL_FIREARMS_LIGHT_CANNON" requirements="ID_MHP_VSOS_WEAPON_LIGHT_CANNON" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_ASSAULT_RIFLE" requirements="ID_MHP_VSOS_WEAPON_ASSAULT_RIFLE" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_GRENADE_LAUNCHER" requirements="ID_MHP_VSOS_WEAPON_GRENADE_LAUNCHER" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_MAGNUM" requirements="ID_MHP_VSOS_WEAPON_MAGNUM" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_PUMP_SHOTGUN" requirements="ID_MHP_VSOS_WEAPON_PUMP_SHOTGUN" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_ROCKET_LAUNCHER" requirements="ID_MHP_VSOS_WEAPON_ROCKET_LAUNCHER" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_SNIPER_RIFLE" requirements="ID_MHP_VSOS_WEAPON_SNIPER_RIFLE" />
+		</rules>
+	</element>
+
+	<element name="Wooden Coin of Lies" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_WOODEN_COIN_OF_LIES">
+		<description>
+			<p>While attuned to this coin, you are constantly under the effect of the <i>glibness</i> spell.</p>
+			<p class="indent"><b>Curse.</b>. This coin is cursed; attuning to it extends its curse to you. You can only break attunement to the coin with the <i>remove curse</i> spell or similar magic. While attuned to the coin, you can’t deliberately speak the truth. You can be evasive in your wording, lie by omission, or speak half-truths, as long as your words remain within the boundaries of deception.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+</elements>
