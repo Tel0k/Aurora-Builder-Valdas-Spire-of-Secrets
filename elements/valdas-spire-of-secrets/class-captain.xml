@@ -4,7 +4,7 @@
       <name>Captain</name>
       <description>The Captain from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.2">
+      <update version="0.0.3">
         <file name="class-captain.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-captain.xml" />
       </update>    
     </info>
@@ -299,7 +299,7 @@
 	</element>
 	<element name="Maneuver: Rally" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_RALLY">
 		<supports>Maneuver, Captain</supports>
-        <compendium display="false" />
+        	<compendium display="false" />
 		<description>
 			<p>As a bonus action on your turn, you can expend a battle die to choose one allied creature other than yourself within 60 feet of you who can see or hear you. That creature regains hit points equal to the number rolled + your Charisma modifier. You can't use this ability to heal a creature who has 0 hit points.</p>
 		</description>
@@ -308,6 +308,7 @@
 		</sheet>
 	</element>
 	<element name="Maneuver: Staggering Strike" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_ADVANCED_TACTICS_STAGGERING_STRIKE">
+		<supports>Maneuver, Captain</supports>
 		<compendium display="false" />
 		<description>
 			<p>As a bonus action when you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a Constitution saving throw or be incapacitated until the start of your next turn.</p>
@@ -316,7 +317,7 @@
 			<description> When you make a weapon attack against a Large or smaller creature, you can expend a battle die to attempt to daze the target. On a hit, the target must succeed on a CON saving throw or be incapacitated until the start of your next turn. When you hit with a staggering strike, you add the battle die to the damage roll.</description>
 		</sheet>
 	</element>
-    <element name="Coordinated Strike" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COORDINATED_STRIKE">
+	<element name="Coordinated Strike" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CAPTAIN_COORDINATED_STRIKE">
         <description>
             <p>By 11th level, you and your cohort fight as a perfect fighting unit. Once on each of your turns, when you hit a creature with an attack, you can deal an extra 2d8 damage to the creature if your cohort has also hit that creature with an attack since the end of your last turn.</p>
         </description>
