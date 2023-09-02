@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Auxiliary Levels</name>
+		<description>The Auxiliary Levels from Valda's Spire of Secrets</description>
+		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
+		<update version="0.0.1">
+			<file name="vsos-auxiliary-levels.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-auxiliary-levels.xml" />
+		</update>
+	</info> 
+	<element name="Animal Master" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_ANIMAL_MASTER">
+		<description>
+			<p>With patience or a bit of magic, you have trained an animal companion to accompany you on your adventures. Few people can become fast friends with a wolf, but it's hard to undervalue their teeth in a brawl.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> 3rd level</li>
+				<li><strong>Hit Dice:</strong> 1d10</li>
+				<li><strong>Hit Points:</strong> 1d10 (6) + your Constitution modifier</li>
+				<li><strong>Skills:</strong> Animal Handling</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_ANIMAL_MASTER_BEAST_COMPANION" />
+		</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_ANIMAL_MASTER_BEAST_COMPANION"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_ANIMAL_MASTER">
+			<prerequisite>3rd level</prerequisite>
+			<requirements>[level:3]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Beast Companion" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_ANIMAL_MASTER_BEAST_COMPANION">
+		<description>
+			<p>Choose a Beast that is no larger than Medium and has a challenge rating of 1/4 or lower. Add your proficiency bonus to the Beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
+			<p class="indent">The Beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the Beast where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, or Help action. If you don't issue a command, the Beast takes the Dodge action. If you gain the Extra Attack feature or another feature that allows you to attack twice when you take the Attack action, you can forgo one of your attacks to command the Beast to take the Attack action.</p>
+			<p class="indent">If you are incapacitated or absent, the Beast acts on its own, focusing on protecting you and itself. The Beast never requires your command to use its reaction, such as when making an opportunity attack.</p>
+			<p class="indent">If the Beast dies, you can obtain a new companion by spending 8 hours training and bonding with a Beast that isn't hostile to you and that meets the requirements.</p>
+		</description>
+		<sheet>
+			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn't take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, or Help action. If you don't issue a command, the beast takes the Dodge action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+			If you are incapacitated or absent, the Beast acts on its own, focusing on protecting you and itself. The Beast never requires your command to use its reaction.
+			If the beast dies, you can obtain another one by spending 8 hours training and bonding with another beast that isn't hostile to you, either the same type of beast as before or a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Animal Master's Companion" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />			
+			<stat name="additional:hp:max" value="level" />
+			<stat name="additional:hp:max" value="level" />
+			<stat name="additional:hp:max" value="level" />
+			<stat name="additional:hp:max" value="level" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Buffoon" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_BUFFOON">
+		<description>
+			<p>People assume you're not very bright. Sure, you stumble sometimes and you forget words, but you're not dumb! No matter what all those eggheads say. When all else fails, you've always got a cutting observation or a really mean name in your back pocket, so they never get the last laugh.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> None</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong> 1d8 (5) + your Constitution modifier</li>
+				<li><strong>Tools:</strong> One musical instrument of your choice</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_BONUS_CANTRIPS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_TAUNT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_I_MEANT_TO_DO_THAT" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_BONUS_CANTRIPS"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_TAUNT"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_I_MEANT_TO_DO_THAT"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_BUFFOON">
+			<prerequisite>No prerequisites</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Bonus Cantrips (Buffoon)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_BONUS_CANTRIPS">
+		<description>
+			<p>You learn the <i>vicious mockery</i> cantrip and one additional cantrip of your choice from the bard spell list. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+			<select type="Spell" name="Bonus Cantrips (Buffoon)" supports="Bard, 0" spellcasting="charisma"/>
+		</rules>
+	</element>
+	<element name="Taunt" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_TAUNT">
+		<description>
+			<p>You can use your bonus action to mock a creature within 15 feet of you. If the target can hear you (though it need not understand you), it has disadvantage on the next attack roll it makes against a creature other than you before the end of its next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{taunt:usage}}/Long Rest">
+			<description>You can mock a creature within 15ft of you. If the target can hear you (though it need not understand you), it has disadvantage on the next attack roll it makes against a creature other than you before the end of its next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="taunt:usage" value="1" bonus="base" />
+			<stat name="taunt:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="I Meant To Do That" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_BUFFOON_I_MEANT_TO_DO_THAT">
+		<description>
+			<p>When you roll a 10 or lower on the d20 roll for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you roll a 10 or lower on the d20 roll for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</description>
+		</sheet>
+	</element>
+	
+	<element name="Clandestine Caster" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_CLANDESTINE_CASTER">
+		<description>
+			<p>Discretion is the better part of both valor and incredible arcane might. With some canny trickery, you've learned to hide your magic in plain sight, where you might pass as a mighty but otherwise unremarkable warrior, until the moment when you have the upper hand.</p>
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Spellcasting or Pact Magic feature</li>
+				<li><strong>Hit Dice:</strong> 1d6</li>
+				<li><strong>Hit Points:</strong> 1d6 (4) + your Constitution modifier</li>
+				<li><strong>Skills:</strong> Arcana or Deception</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_INVISIBLE_CANTRIPS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_SUBTLE_SPELL" />
+		</description>
+		<setters>
+			<set name="hd">d6</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<select type="Proficiency" name="Skill Proficiency (Clandestine Caster)" supports="(ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION)" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_SPELLCASTING"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_INVISIBLE_CANTRIPS"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_SUBTLE_SPELL"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_CLANDESTINE_CASTER">
+			<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting (Clandestine Caster)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_SPELLCASTING">
+		<description>
+			<p>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared. For example, if you are a Wizard 2/Clandestine Caster, you have four 1st-level spell slots and two 2nd-level spell slots, but you only know 1st-level spells.</p>
+		</description>
+		<sheet>
+			<description>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared.</description>
+		</sheet>
+	</element>
+	<element name="Invisible Cantrips" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_INVISIBLE_CANTRIPS">
+		<description>
+			<p>When you cast a cantrip that requires one or more spell attack rolls, you can disguise its casting (including its spell components) and effects as if it were a melee weapon attack. To do this, you must be holding a melee weapon, and must target a creature within 5 feet of you. You don't have disadvantage on ranged spell attack rolls using this feature as a result of being within 5 feet of a hostile creature. The effects of the spell are completely invisible, appearing as if you instead delivered a mighty blow with the weapon.</p>
+		</description>
+		<sheet>
+			<description>When you cast a cantrip that requires one or more spell attack rolls, you can disguise its casting (including its spell components) and effects as if it were a melee weapon attack. To do this, you must be holding a melee weapon, and must target a creature within 5ft of you. You don't have disadvantage on ranged spell attack rolls using this feature as a result of being within 5ft of a hostile creature. The effects of the spell are completely invisible, appearing as if you instead delivered a mighty blow with the weapon.</description>
+		</sheet>
+	</element>
+	<element name="Subtle Spell" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CLANDESTINE_CASTER_SUBTLE_SPELL">
+		<description>
+			<p>You can cast a spell without any somatic or verbal components.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can cast a spell without any somatic or verbal components.</description>
+		</sheet>
+	</element>
+	
+	<element name="Courier" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_COURIER">
+		<description>
+			<p>A trader, a smuggler, or merely a messenger, you have been tasked with traveling to and fro delivering parcels, and have become quite adept at it. You're quick on your feet and have a second sense for navigation matched only by sailors and compass salesmen, and you carry those advantages with you in adventuring.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Have been employed as a courier, messenger, navigator, smuggler, or trader</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong> 1d8 (5) + your Constitution modifier</li>
+				<li><strong>Languages:</strong></li> One of your choice
+				<li><strong>Tools:</strong> Cartographer's tools, navigator's tools, one musical instrument of your choice</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_ABLE_NAVIGATOR" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_BEELINE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_HUSTLE" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<select type="Language" name="Language (Courier)" supports="Standard||Exotic" />
+			<select type="Proficiency" name="Tool Proficiency (Courier)" supports="Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_ABLE_NAVIGATOR"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_BEELINE"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_HUSTLE"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_COURIER">
+			<prerequisite>Have been employed as a courier, messenger, navigator, smuggler, or trader</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Able Navigator" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_ABLE_NAVIGATOR">
+		<description>
+			<p>You can't become lost except by magical means.</p>
+		</description>
+		<sheet>
+			<description>You can't become lost except by magical means.</description>
+		</sheet>
+	</element>
+	<element name="Beeline" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_BEELINE">
+		<description>
+			<p>You can take the Disengage action as a bonus action. You can use this ability a number of times equal to your Dexterity modifier, and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{dexterity:modifier}}/Long Rest">
+			<description>You can take the Disengage action as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Hustle" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_COURIER_HUSTLE">
+		<description>
+			<p>When you take the Dash action, your speed increases by an additional 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When you take the Dash action, your speed increases by an additional 30ft.</description>
+		</sheet>
+	</element>
+	
+	<element name="Cultist" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_CULTIST">
+		<description>
+			<p>A dark pact, a black, leather-bound tome, and your fellow hooded acolytes: these are your clearest memories of your indoctrination to the cult, before your mind started to unravel. No matter which terrible, extradimensional being your secret society is dedicated to, its teachings have revealed enigmas of the universe to you and laced your every thought with paranoia.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Have joined a cult or gained one or more Indefinite Madness traits</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong> 1d8 (5) + your Constitution modifier</li>
+				<li><strong>Languages:</strong></li> One chosen randomly by the GM
+				<li><strong>Skills:</strong> Arcana</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_BONUS_CANTRIPS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_CONSPIRATORIAL" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_LUNATIC_INSIGHT" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<select type="Language" name="Language (Cultist)" supports="Standard||Exotic" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_SPELLCASTING"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_BONUS_CANTRIPS"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_CONSPIRATORIAL"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_LUNATIC_INSIGHT"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_CULTIST">
+			<prerequisite>Have joined a cult or gained one or more Indefinite Madness traits</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting (Cultist)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_SPELLCASTING">
+		<description>
+			<p>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared. For example, if you are a Wizard 2/Cultist, you have four 1st-level spell slots and two 2nd-level spell slots, but you only know 1st-level spells.</p>
+		</description>
+		<sheet>
+			<description>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared.</description>
+		</sheet>
+	</element>
+	<element name="Bonus Cantrips (Cultist)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_BONUS_CANTRIPS">
+		<description>
+			<p>You learn the <i>eldritch orb</i> cantrip and one additional cantrip of your choice from the warlock spell list. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_ELDRITCH_ORB" />
+			<select type="Spell" name="Bonus Cantrips (Cultist)" supports="Warlock, 0" spellcasting="charisma"/>
+		</rules>
+	</element>
+	<element name="Conspirational" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_CONSPIRATORIAL">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition or madness effects on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the charmed condition or madness effects on yourself.</description>
+		</sheet>
+	</element>
+	<element name="Lunatic Insight" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_CULTIST_LUNATIC_INSIGHT">
+		<description>
+			<p>Whenever you make an ability check that doesn't include your proficiency bonus, your unique insight allows you to make connections which may or may not exist. If the d20 roll for the ability check is even, you add your proficiency bonus to the check.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check that doesn't include your PB, if the d20 roll for the ability check is even, you add your proficiency bonus to the check.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Dragon Acolyte" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_DRAGON_ACOLYTE">
+		<description>
+			<p>Dragons strike awe and fear into mere mortals who gaze upon them. Many flee in terror, but a few fall to their hands and knees, pledging themselves to their new draconic masters. Such dragon acolytes learn to emulate the great beasts, and eventually to capture a semblance of draconic that might.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Allied with a dragon or an aspect of the dragon god</li>
+				<li><strong>Hit Dice:</strong> 1d10</li>
+				<li><strong>Hit Points:</strong> 1d10 (6) + your Constitution modifier</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_BREATH_WEAPON" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_CLAWS_AND_BITE" />
+		</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_BREATH_WEAPON"  /> 
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_CLAWS_AND_BITE"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_DRAGON_ACOLYTE">
+			<prerequisite>No prerequisites</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Draconic Alliance" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE">
+		<description>
+			<p>When you gain this level, you become allied with an ancient wyrm or an aspect of the dragon god, who grants you a fraction of their power. You gain resistance to the damage type associated with your dragon, as shown on the Draconic Alliance table.</p>
+			<h5>DRACONIC ALLIANCE</h5>
+			<table>
+				<thead>
+					<tr><td>Dragon</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>Black</td><td>Acid</td></tr>
+				<tr><td>Blue</td><td>Lightning</td></tr>
+				<tr><td>Brass</td><td>Fire</td></tr>
+				<tr><td>Bronze</td><td>Lightning</td></tr>
+				<tr><td>Copper</td><td>Acid</td></tr>
+				<tr><td>Gold</td><td>Fire</td></tr>
+				<tr><td>Green</td><td>Poison</td></tr>
+				<tr><td>Red</td><td>Fire</td></tr>
+				<tr><td>Silver</td><td>Cold</td></tr>
+				<tr><td>White</td><td>Cold</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain resistance to the damage type associated with your dragon.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Draconic Alliance" supports="Draconic Alliance" />
+		</rules>
+	</element>
+	<element name="Black" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_BLACK">
+		<supports>Draconic Alliance</supports>
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Acid Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Acid"/>
+		</rules>
+	</element>
+	<element name="Blue" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_BLUE">
+		<supports>Draconic Alliance</supports>
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Lightning Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Lightning"/>
+		</rules>
+	</element>
+	<element name="Brass" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_BRASS">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Fire Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Fire"/>
+		</rules>
+	</element>
+	<element name="Bronze" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_BRONZE">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Lightning Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Lightning"/>
+		</rules>
+	</element>
+	<element name="Copper" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_COPPER">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Acid Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Acid"/>
+		</rules>
+	</element>
+	<element name="Gold" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_GOLD">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Fire Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Fire"/>
+		</rules>
+	</element>
+	<element name="Green" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_GREEN">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Poison Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Poison"/>
+		</rules>
+	</element>
+	<element name="Red" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_RED">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Fire Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Fire"/>
+		</rules>
+	</element>
+	<element name="Silver" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_SILVER">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Cold Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Cold"/>
+		</rules>
+	</element>
+	<element name="White" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_DRACONIC_ALLIANCE_WHITE">
+		<supports>Draconic Alliance</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Cold Resistance</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat inline="true" name="draconic-alliance:damage type" value="Cold"/>
+		</rules>
+	</element>
+
+	<element name="Breath Weapon" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_BREATH_WEAPON">
+		<description>
+			<p>When you take the Attack action, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in the area must make a Dexterity saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus). A creature takes 2d8 damage of the type associated with your Draconic Alliance on a failed save, and half as much damage on a successful one. This damage increases by 1d8 when you reach 5th level (3d8), 11th level (4d8), and 17th level (5d8).</p>
+			<p class="indent">Once you use this ability, you can't use it again until it recharges. Roll a d6 at the start of each of your turns; the ability recharges when you roll a 6.</p>
+		</description>
+		<sheet action="Attack Action" usage="1 of your attacks">
+			<description>Exhale destructive energy . Your breath weapon does {{breath-weapon:dice count}}d8 {{draconic-alliance:damage type}} damage in a 15ft cone, DC{{breath-weapon:dc}}. Once you use this ability, you can't use it again until it recharges. Roll a d6 at the start of each of your turns; the ability recharges when you roll a 6.</description>
+		</sheet>
+		<rules>
+			<stat name="breath-weapon:dc" value="8" />
+			<stat name="breath-weapon:dc" value="constitution:modifier" />
+			<stat name="breath-weapon:dc" value="proficiency" />
+			<stat name="breath-weapon:dice count" value="2" />
+			<stat name="breath-weapon:dice count" value="1" requirements="[level:5]" />
+			<stat name="breath-weapon:dice count" value="1" requirements="[level:11]" />
+			<stat name="breath-weapon:dice count" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Claws And Bite" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_DRAGON_ACOLYTE_CLAWS_AND_BITE">
+		<description>
+			<p>You can manifest claws and teeth of crackling draconic magic, which are natural weapons that you can use to make unarmed strikes. On a hit with them, you deal 1d6 damage of the type associated with your Draconic Alliance. You can choose to deal slashing damage with the claws or piercing damage with your bite. If you already have natural weapons, you can choose to deal the type associated with your Draconic Alliance instead of its normal damage type.</p>
+		</description>
+		<sheet>
+			<description>You can manifest claws and teeth, which are natural weapons that you can use to make unarmed strikes. On a hit with them, you deal 1d6 {{draconic-alliance:damage type}} damage. You can choose to deal slashing damage with the claws or piercing damage with your bite. If you already have natural weapons, you can choose to deal {{draconic-alliance:damage type}} damage instead of its normal damage type.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Expert" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_EXPERT">
+		<description>
+			<p>Diligent research and practice has paid dividends. Through months of effort, you've mastered new crafts, honed your skills, trained in combat, or even improved your book smarts.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> None</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong> 1d8 (5) + your Constitution modifier</li>
+				<li><strong>Tools:</strong></li>: One type of artisan's tools
+				<li><strong>Languages:</strong></li> One of your choice
+				<li><strong>Skills:</strong> Choose any two</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_EXPERTISE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_TRAINING" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<select type="Language" name="Language (Expert)" supports="Standard||Exotic" />
+			<select type="Proficiency" name="Tool Proficiency (Expert)" supports="Tool, Artisan tools" />
+			<select type="Proficiency" name="Skill Proficiency (Expert)" supports="Skill" number="2"/>
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_SPELLCASTING"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_EXPERTISE"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_TRAINING"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_EXPERT">
+			<prerequisite>No prerequisites</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting (Expert)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_SPELLCASTING">
+		<description>
+			<p>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared. For example, if you are a Wizard 2/Expert, you have four 1st-level spell slots and two 2nd-level spell slots, but you only know 1st-level spells.</p>
+		</description>
+		<sheet>
+			<description>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared.</description>
+		</sheet>
+	</element>
+	<element name="Expertise (Expert)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_EXPERTISE">
+		<description>
+			<p>Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Expert)" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	<element name="Training" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_EXPERT_TRAINING">
+		<description>
+			<p>You gain proficiency with any three simple or martial weapons of your choice. Additionally, you gain proficiency with light armor. If you already have proficiency with light armor, you gain proficiency with medium armor instead.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Weapon Proficiency (Training)" supports="(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED)" number="3"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+		</rules>
+	</element>
+	
+	<element name="Hedge Wizard" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_HEDGE_WIZARD">
+		<description>
+			<p>Unlike ordinary wizards who learn their craft through extensive research and formal training, you discovered arcana on your own, reading what you could find and uncovering deeper magic through experimentation. Self-education is not without its merits, however, for you have become exceptionally well versed in the most fundamental spells: cantrips.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Spellcasting or Pact Magic feature</li>
+				<li><strong>Hit Dice:</strong> 1d6</li>
+				<li><strong>Hit Points:</strong> 1d6 (4) + your Constitution modifier</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_CANTRIP_SAVANT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_POTENT_CANTRIPS" />
+		</description>
+		<setters>
+			<set name="hd">d6</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_SPELLCASTING"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_CANTRIP_SAVANT"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_POTENT_CANTRIPS"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_HEDGE_WIZARD">
+			<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting (Hedge Wizard)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_SPELLCASTING">
+		<description>
+			<p>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared. For example, if you are a Wizard 2/Hedge Wizard, you have four 1st-level spell slots and two 2nd-level spell slots, but you only know 1st-level spells.</p>
+		</description>
+		<sheet>
+			<description>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared.</description>
+		</sheet>
+	</element>
+	<element name="Cantrip Savant" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_CANTRIP_SAVANT">
+		<description>
+			<p>You learn three cantrips of your choice from the wizard spell list. Use your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Cantrip Savant" supports="Cantrip Savant"/>
+		</rules>
+	</element>
+	<element name="Intelligence" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HW_CANTRIP_SAVANT_INT">
+		<compendium display="false" />
+		<supports>Cantrip Savant</supports>
+		<description>
+			<p>You learn three cantrips of your choice from the wizard spell list. Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Cantrip Savant, Intelligence">
+			<description>You learn three cantrips of your choice from the wizard spell list. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip Savant, Intelligence" supports="Wizard, 0" spellcasting="intelligence" number="3" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HW_CANTRIP_SAVANT_WIS">
+		<compendium display="false" />
+		<supports>Cantrip Savant</supports>
+		<description>
+			<p>You learn three cantrips of your choice from the wizard spell list. Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Cantrip Savant, Wisdom">
+			<description>You learn three cantrips of your choice from the wizard spell list. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip Savant, Wisdom" supports="Wizard, 0" spellcasting="wisdom" number="3" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HW_CANTRIP_SAVANT_CHA">
+		<compendium display="false" />
+		<supports>Cantrip Savant</supports>
+		<description>
+			<p>You learn three cantrips of your choice from the wizard spell list. Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Cantrip Savant, Charisma">
+			<description>You learn three cantrips of your choice from the wizard spell list. Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip Savant, Charisma" supports="Wizard, 0" spellcasting="charisma" number="3" />
+		</rules>
+	</element>
+	<element name="Potent Cantrips" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_HEDGE_WIZARD_POTENT_CANTRIPS">
+		<description>
+			<p>You can add your spellcasting ability modifier to the damage you deal with any wizard cantrip.</p>
+		</description>
+		<sheet>
+			<description>You can add your spellcasting ability modifier to the damage you deal with any wizard cantrip.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Priest" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_PRIEST">
+		<description>
+			<p>Though you have not been granted the divine purpose of an adventuring cleric, you have nevertheless been ordained as a priest to one of the many gods. Your lot is that of a quieter life with the church: conducting services, looking after your congregation, performing community rituals, and other administrative duties. Even when whisked off into adventuring, your posture is that of an unassuming reverend, not an evangelizing cleric or crusading paladin.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Must be ordained by some faith</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong> 1d8 (5) + your Constitution modifier</li>
+				<li><strong>Skills:</strong> Religion</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_SPELLCASTING" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_BONUS_CANTRIPS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_SPELLCASTING"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_BONUS_CANTRIPS"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_PRIEST">
+			<prerequisite>Must be ordained by some faith</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting (Priest)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_SPELLCASTING">
+		<description>
+			<p>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared. For example, if you are a Wizard 2/Priest, you have four 1st-level spell slots and two 2nd-level spell slots, but you only know 1st-level spells.</p>
+		</description>
+		<sheet>
+			<description>This auxiliary level counts as a level in your Spellcasting or Pact Magic class (if you have a level in such a class) for the purpose of determining your available spell slots. However, it doesn't advance your spells known and prepared.</description>
+		</sheet>
+	</element>
+	<element name="Bonus Cantrips (Priest)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_BONUS_CANTRIPS">
+		<description>
+			<p>You learn the <i>spare the dying</i> cantrip and one additional cantrip of your choice from the cleric spell list. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+			<select type="Spell" name="Bonus Cantrips (Priest)" supports="Cleric, 0" spellcasting="wisdom"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity (Priest)" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Faith Healing and Turn Undead.</p>
+			<p class="indent">When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p>
+			<p class="indent">Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals 8 + your proficiency bonus + your Wisdom modifier</p>
+			<p class="indent"><b>Faith Healing.</b> As an action, you can present your holy symbol and touch a willing Humanoid creature to mend its wounds. The creature rolls a number of d8s equal to half your level (rounded down) and regains that many hit points + your Wisdom modifier. This feature has no effect on Undead or Constructs.</p>
+			<p class="indent"><b>Turn Undead.</b> As an action, you present your holy symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest"/>
+		<rules>
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY_FAITH_HEALING" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY_TURN_UNDEAD" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Faith Healing" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY_FAITH_HEALING">
+		<description>
+			<p>As an action, you can present your holy symbol and touch a willing Humanoid creature to mend its wounds. The creature rolls a number of d8s equal to half your level (rounded down) and regains that many hit points + your Wisdom modifier. This feature has no effect on Undead or Constructs.</p>
+		</description>
+		<sheet alt="Faith Healing" action="Action" usage="Channel Divinity">
+			<description>You can present your holy symbol and touch a willing Humanoid creature to mend its wounds. The creature rolls {{level:half}}d8s and regains that many hp + {{wisdom:modifier}}. This feature has no effect on Undead or Constructs.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PRIEST_CHANNEL_DIVINITY_TURN_UNDEAD">
+		<compendium display="false" />
+		<description>
+			<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet alt="Turn Undead" action="Action" usage="Channel Divinity">
+			<description>Each undead that can see or hear you within 30ft of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.&#13;
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Pugilist" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_PUGILIST">
+		<description>
+			<p>Where other warriors equip themselves with swords and axes, you use your bare knuckles and a poor disposition to bring down your foes. You've mastered this unarmed killer edge through hand-to-hand bouts for prize money, pride, or freedom.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> None</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong>  1d8 (5) + your Constitution modifier</li>
+				<li><strong>Skills:</strong> Choose one from Athletics or Acrobatics</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_HANDTOHAND" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_THICKSKULLED" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_TOUGH_REPUTATION" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<select type="Proficiency" name="Skill Proficiency (Pugilist)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_HANDTOHAND"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_THICKSKULLED"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_TOUGH_REPUTATION"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_PUGILIST">
+			<prerequisite>No prerequisites</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Hand-to-Hand" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_HANDTOHAND">
+		<description>
+			<p>Your body is a single deadly weapon, more dangerous and versatile than any sword or arrow. You gain the following benefits:</p>
+			<ul>
+				<li>Your unarmed strikes deal 1d6 bludgeoning damage. This damage increases to 1d8 when you reach 5th level, 1d10 when you reach 11th level, and 1d12 when you reach 17th level.</li>
+				<li>When you hit a creature with an unarmed strike, you can use your bonus action to add an extra unarmed strike damage die to the damage roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• Your unarmed strikes deal 1d6 bludgeoning damage.&#13;
+			• When you hit a creature with an unarmed strike, you can use your bonus action to add an extra unarmed strike damage die to the damage roll.</description>
+			<description level="5">You gain the following benefits: &#13;
+			• Your unarmed strikes deal 1d8 bludgeoning damage.&#13;
+			• When you hit a creature with an unarmed strike, you can use your bonus action to add an extra unarmed strike damage die to the damage roll.</description>
+			<description level="11">You gain the following benefits: &#13;
+			• Your unarmed strikes deal 1d10 bludgeoning damage.&#13;
+			• When you hit a creature with an unarmed strike, you can use your bonus action to add an extra unarmed strike damage die to the damage roll.</description>
+			<description level="17">You gain the following benefits: &#13;
+			• Your unarmed strikes deal 1d12 bludgeoning damage.&#13;
+			• When you hit a creature with an unarmed strike, you can use your bonus action to add an extra unarmed strike damage die to the damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Thick-Skulled" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_THICKSKULLED">
+		<description>
+			<p>When you take bludgeoning, piercing, or slashing damage while you have half your hit points or fewer, you can use your reaction to roll a d6 and reduce the damage taken by the number rolled. The damage reduction increases to 1d8 when you reach 5th level, 1d10 when you reach 11th level, and 1d12 when you reach 17th level.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take bludgeoning, piercing, or slashing damage while you have half your hit points or fewer, you can roll 1d6 and reduce the damage taken by the number rolled.</description>
+			<description level="5">When you take bludgeoning, piercing, or slashing damage while you have half your hit points or fewer, you can roll 1d8 and reduce the damage taken by the number rolled.</description>
+			<description level="11">When you take bludgeoning, piercing, or slashing damage while you have half your hit points or fewer, you can roll a 1d10 and reduce the damage taken by the number rolled.</description>
+			<description level="17">When you take bludgeoning, piercing, or slashing damage while you have half your hit points or fewer, you can roll 1d12 and reduce the damage taken by the number rolled.</description>
+		</sheet>
+	</element>
+	<element name="Tough Reputation" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_PUGILIST_TOUGH_REPUTATION">
+		<description>
+			<p>You have advantage on Charisma (Intimidation) checks you make against Humanoids that have watched you engage in combat.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on CHA(Intimidation) checks you make against Humanoids that have watched you engage in combat.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Relic Keeper" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_RELIC_KEEPER">
+		<description>
+			<p>Be it a family heirloom or a recovered artifact, you have come into possession of a mysterious weapon. Though its iron is rusted and its wood is stained with blood, an unseen power weights its swing, and you can feel an intelligence echoing within it. Once you bind with it, the weapon is linked with your soul, and it grows in power as you do.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> None</li>
+				<li><strong>Hit Dice:</strong> 1d10</li>
+				<li><strong>Hit Points:</strong> 1d10 (6) + your Constitution modifier</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_RELIC_KEEPER_SENTIENT_WEAPON" />
+		</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_RELIC_KEEPER_SENTIENT_WEAPON"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_RELIC_KEEPER">
+			<prerequisite>No prerequisites</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Sentient Weapon" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_RELIC_KEEPER_SENTIENT_WEAPON">
+		<description>
+			<p>When you gain this level, you acquire a sentient magic weapon that bonds to your very soul and grows in might as you do. Your weapon is your choice of any martial weapon that lacks the Two Handed property. Once made, this decision can't be changed.</p>
+			<p class="indent">You can use your action to summon your sentient weapon to your open hand. You are proficient with it while you wield it.</p>
+			<p class="indent">Magic Weapon. The weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. When you reach 5th level, your bond with the weapon strengthens, and you gain a +1 bonus to attack and damage rolls made with it. At 11th level, your bond strengthens further, and you gain a +2 bonus to attack and damage rolls made with the weapon.</p>
+			<p class="indent">Relic Magic. Your relic weapon has 3 charges and regains all expended charges daily at dawn. When you use the Attack action to make an attack with your relic weapon, you can spend 1 of its charges to make an attack using it as a bonus action.</p>
+			<p class="indent">Additionally, whenever you cast a spell of 1st level or higher, you can siphon some of the energy into the weapon. The next time you hit a creature with the weapon during the next minute, you deal extra force damage equal to twice the spell's level.</p>
+			<p class="indent">Sentience. The weapon is a sentient magic item with an alignment and personality determined by the GM. It has an Intelligence of 14, a Wisdom of 14, and a Charisma of 14. The weapon has hearing and darkvision out to a range of 120 feet, and it can speak, read, and understand Common, as well as communicate with you telepathically.</p>
+		</description>
+		<sheet>
+			<description>You acquire a sentient magic weapon that bonds to your very soul and grows in might as you do. Your weapon is your choice of any martial weapon that lacks the Two Handed property. Once made, this decision can't be changed. You can use your action to summon your sentient weapon to your open hand. You are proficient with it while you wield it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Sentient Weapon" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_RELIC_KEEPERS_SENTIENT_WEAPON">		
+		<description>		
+			<p>This sentient magic weapon bonds to your very soul and grows in might as you do. Your weapon is your choice of any martial weapon that lacks the Two Handed property. Once made, this decision can't be changed.</p>
+			<p class="indent">You can use your action to summon your sentient weapon to your open hand. You are proficient with it while you wield it.</p>
+			<p class="indent">Magic Weapon. The weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. When you reach 5th level, your bond with the weapon strengthens, and you gain a +1 bonus to attack and damage rolls made with it. At 11th level, your bond strengthens further, and you gain a +2 bonus to attack and damage rolls made with the weapon.</p>
+			<p class="indent">Relic Magic. Your relic weapon has 3 charges and regains all expended charges daily at dawn. When you use the Attack action to make an attack with your relic weapon, you can spend 1 of its charges to make an attack using it as a bonus action.</p>
+			<p class="indent">Additionally, whenever you cast a spell of 1st level or higher, you can siphon some of the energy into the weapon. The next time you hit a creature with the weapon during the next minute, you deal extra force damage equal to twice the spell's level.</p>
+			<p class="indent">Sentience. The weapon is a sentient magic item with an alignment and personality determined by the GM. It has an Intelligence of 14, a Wisdom of 14, and a Charisma of 14. The weapon has hearing and darkvision out to a range of 120 feet, and it can speak, read, and understand Common, as well as communicate with you telepathically.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any martial weapon that lacks the Two Handed property">Weapon</set>
+			<set name="rarity">-</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED), !ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SENTIENT_WEAPON" />
+		</rules>
+	</element>
+	<element name="Sentient Weapon, +1" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_RELIC_KEEPERS_SENTIENT_WEAPON2">		
+		<description>		
+			<p>This sentient magic weapon bonds to your very soul and grows in might as you do. Your weapon is your choice of any martial weapon that lacks the Two Handed property. Once made, this decision can't be changed.</p>
+			<p class="indent">You can use your action to summon your sentient weapon to your open hand. You are proficient with it while you wield it.</p>
+			<p class="indent">Magic Weapon. The weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. When you reach 5th level, your bond with the weapon strengthens, and you gain a +1 bonus to attack and damage rolls made with it. At 11th level, your bond strengthens further, and you gain a +2 bonus to attack and damage rolls made with the weapon.</p>
+			<p class="indent">Relic Magic. Your relic weapon has 3 charges and regains all expended charges daily at dawn. When you use the Attack action to make an attack with your relic weapon, you can spend 1 of its charges to make an attack using it as a bonus action.</p>
+			<p class="indent">Additionally, whenever you cast a spell of 1st level or higher, you can siphon some of the energy into the weapon. The next time you hit a creature with the weapon during the next minute, you deal extra force damage equal to twice the spell's level.</p>
+			<p class="indent">Sentience. The weapon is a sentient magic item with an alignment and personality determined by the GM. It has an Intelligence of 14, a Wisdom of 14, and a Charisma of 14. The weapon has hearing and darkvision out to a range of 120 feet, and it can speak, read, and understand Common, as well as communicate with you telepathically.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any martial weapon that lacks the Two Handed property">Weapon</set>
+			<set name="rarity">-</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED), !ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SENTIENT_WEAPON" />
+		</rules>
+	</element>
+	<element name="Sentient Weapon, +2" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_RELIC_KEEPERS_SENTIENT_WEAPON3">		
+		<description>		
+			<p>This sentient magic weapon bonds to your very soul and grows in might as you do. Your weapon is your choice of any martial weapon that lacks the Two Handed property. Once made, this decision can't be changed.</p>
+			<p class="indent">You can use your action to summon your sentient weapon to your open hand. You are proficient with it while you wield it.</p>
+			<p class="indent">Magic Weapon. The weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. When you reach 5th level, your bond with the weapon strengthens, and you gain a +1 bonus to attack and damage rolls made with it. At 11th level, your bond strengthens further, and you gain a +2 bonus to attack and damage rolls made with the weapon.</p>
+			<p class="indent">Relic Magic. Your relic weapon has 3 charges and regains all expended charges daily at dawn. When you use the Attack action to make an attack with your relic weapon, you can spend 1 of its charges to make an attack using it as a bonus action.</p>
+			<p class="indent">Additionally, whenever you cast a spell of 1st level or higher, you can siphon some of the energy into the weapon. The next time you hit a creature with the weapon during the next minute, you deal extra force damage equal to twice the spell's level.</p>
+			<p class="indent">Sentience. The weapon is a sentient magic item with an alignment and personality determined by the GM. It has an Intelligence of 14, a Wisdom of 14, and a Charisma of 14. The weapon has hearing and darkvision out to a range of 120 feet, and it can speak, read, and understand Common, as well as communicate with you telepathically.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any martial weapon that lacks the Two Handed property">Weapon</set>
+			<set name="rarity">-</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED), !ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SENTIENT_WEAPON" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KHOPESH" requirements="ID_MHP_VSOS_WEAPON_KHOPESH"/>
+		</rules>
+	</element>
+	<!-- -->
+	<element name="Weapon Proficiency (Sentient Weapon)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SENTIENT_WEAPON">
+        <supports>Weapon, Martial, Melee, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+        <sheet alt="Sentient Weapon" />
+    </element>
+	<!-- -->
+	<!-- "Martial weapons that lacks the Two Handed property" group -->
+	<element name="Weapon Group (Martial weapons that lacks the Two Handed property)" type="Weapon Group" source="Valda's Spire of Secrets" id="ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON" />
+
+	<append id="ID_WOTC_PHB_WEAPON_BATTLEAXE">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_FLAIL">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_LANCE">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_LONGSWORD">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_MORNINGSTAR">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_RAPIER">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_SCIMITAR">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_SHORTSWORD">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_TRIDENT">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_WAR_PICK">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_WARHAMMER">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_WHIP">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_BLOWGUN">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_WOTC_PHB_WEAPON_NET">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_BAYONET">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_CUTLASS">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CUTLASS">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_ESTOC">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_HARPOON">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_KATANA">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_KHOPESH">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_KHOPESH">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_NUNCHAKU">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_ATLATL">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_BOOMERANG">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_CHAKRAM">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_DAGGER_THROWING">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_HARPOON_GUN">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<append id="ID_MHP_VSOS_WEAPON_MAGNUM">
+        <supports>ID_INTERNAL_WEAPON_GROUP_MARTIAL_SENTIENT_WEAPON</supports>
+    </append>
+	<!-- -->
+
+	<element name="Sellsword" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_SELLSWORD">
+		<description>
+			<p>Blades-for-hire, mercenaries, sellswords; they go by many names. As a somewhat veteran sellsword, you've learned that mercenary work is a volatile business from which only the cautious and cunning can hope to profit. You might have established a set of personal rules or superstitions, or simply gathered a raft of tricks to give you the edge when life and death (and profit) are on the line.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Have completed at least one contract for mercenary work</li>
+				<li><strong>Hit Dice:</strong> 1d10</li>
+				<li><strong>Hit Points:</strong> 1d10 (6) + your Constitution modifier</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BONUS_PROFICIENCIES" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BATTLE_TACTICS" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BREATHER" />
+		</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BONUS_PROFICIENCIES"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BATTLE_TACTICS"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BREATHER"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_SELLSWORD">
+			<prerequisite>Have completed at least one contract for mercenary work</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">-</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Bonus Proficiencies" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with the battleaxe, longsword, trident, and warhammer</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+		</rules>
+	</element>
+	<element name="Battle Tactics" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BATTLE_TACTICS">
+		<description>
+			<p>You learn maneuvers that are fueled by special dice called battle dice.</p>
+			<p class="indent"><b>Battle Dice.</b> You have two battle dice, which are d6s. A battle die is expended when you use it. You regain all of your expended battle dice when you finish a short or long rest, or when you roll initiative. Once per turn, you can expend a battle die to perform a maneuver of your choice.</p>
+			<p class="indent"><b>Maneuvers.</b> You learn two maneuvers of your choice from among those available to the Captain class or those available to the Grey Watchman subclass of the warden class.</p>
+			<p class="indent"><b>Saving Throws.</b> Some maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+			</center>
+		</description>
+		<sheet>
+			<description>You learn maneuvers that are fueled by special dice called battle dice. You have 2 battle dice which are d6s. DC{{battle-dice:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="battle-dice:dc" value="8" />
+			<stat name="battle-dice:dc" value="proficiency" />
+			<stat name="battle-dice:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="battle-dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+			<select type="Class Feature" name="Battle Tactics (Sellsword)" supports="Maneuver, Captain||GreyWatchman" number="2" />
+		</rules>
+	</element>
+	<element name="Breather" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SELLSWORD_BREATHER">
+		<description>
+			<p>You can take a breather, 1 minute of downtime during which you compose yourself and mend your wounds. When you do so, you can spend one Hit Die to regain hit points as if you finished a short rest.</p>
+			<p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short||Long Rest">
+			<description>You can take a breather, 1 minute of downtime during which you compose yourself and mend your wounds. When you do so, you can spend one Hit Die to regain hp as if you finished a short rest.</description>
+		</sheet>
+	</element> 
+	
+	<element name="Scoundrel" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_SCOUNDREL">
+		<description>
+			<p>Whether you made some dastardly friends, discovered a love for illicit substances, or merely decided that the law shouldn't stand in the way of making some coin, you're in deep with the criminal underworld. You can probably keep your criminal ties under wraps, but you can't stop looking over your shoulder for fear that the authorities, or worse, your friends might come calling.</p>	
+			<ul class="unstyled">
+				<li><strong>Prerequisite:</strong> Have joined a criminal organization</li>
+				<li><strong>Hit Dice:</strong> 1d8</li>
+				<li><strong>Hit Points:</strong> 1d8 (5) + your Constitution modifier</li>
+				<li><strong>Tools:</strong> Thieves' tools</li>
+				<li><strong>Skills:</strong> Deception, Sleight of Hand, or Stealth</li>
+			</ul>
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_THIEVES_CANT" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_QUICK_DODGE" />
+			<div element="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_CRAVEN" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Auxiliary Level</set>
+		</setters>
+		<sheet display="false" />
+		<rules>	
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<select type="Proficiency" name="Skill Proficiency (Scoundrel)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_THIEVES_CANT"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_QUICK_DODGE"  />
+			<grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_CRAVEN"  />
+		</rules>
+		<multiclass id="ID_MHP_VSOS_MULTICLASS_SCOUNDREL">
+			<prerequisite>Have joined a criminal organization</prerequisite>
+			<requirements>[level:2]</requirements>
+			<setters>
+				<set name="multiclass proficiencies"> Thieves' tools, one from Deception, Sleight of Hand, and Stealth</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Thieves' Cant" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_THIEVES_CANT">
+		<compendium display="false" />
+		<description>
+			<p>During your training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly</p>
+			<p class="indent">In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>
+		</description>
+		<sheet>
+			<description>A secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
+			In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+	<element name="Quick Dodge" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_QUICK_DODGE">
+		<description>
+			<p>As a bonus action, you can evade the attacks of a creature you can see within 5 feet of you. Until the start of your next turn, you have a +2 bonus to your Armor Class against that creature's attacks. You must be unarmored or wearing light armor to use this ability.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can evade the attacks of a creature you can see within 5ft of you. Until the start of your next turn, you have a +2 bonus to your AC against that creature's attacks. You must be unarmored or wearing light armor to use this ability.</description>
+		</sheet>
+	</element>
+	<element name="Craven" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_AL_SCOUNDREL_CRAVEN">
+		<description>
+			<p>When a creature you can see misses you with a melee attack, you can use your reaction to move 5 feet without provoking opportunity attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see misses you with a melee attack, you can move 5ft without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+
+</elements>
