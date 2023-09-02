@@ -4,7 +4,7 @@
       <name>Grey Watchman</name>
       <description>The Grey Watchman from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.3">
+      <update version="0.0.4">
         <file name="warden-grey-watchman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-grey-watchman.xml" />
       </update>    
     </info>
@@ -171,7 +171,7 @@
         </sheet>
     </element>
 
-	<element name="Bull Rush" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH2">
+	<element name="Maneuver: Bull Rush" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH2">
 		<compendium display="false" />
 		<supports>Maneuver, GreyWatchman</supports>
 		<description>
@@ -181,7 +181,7 @@
 			<description>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</description>
 		</sheet>
 	</element>
-	<element name="Bulwark" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK2">
+	<element name="Maneuver: Bulwark" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK2">
 		<compendium display="false" />
 		<supports>Maneuver, GreyWatchman</supports>
 		<description>
@@ -191,7 +191,7 @@
 			<description>When you hit a creature with a melee attack, you can expend a battle die to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</description>
 		</sheet>
 	</element>
-	<element name="Cleave" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE2">
+	<element name="Maneuver: Cleave" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE2">
 		<compendium display="false" />
 		<supports>Maneuver, GreyWatchman</supports>
 		<description>
@@ -201,7 +201,7 @@
 			<description>When you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</description>
 		</sheet>
 	</element>
-	<element name="Heel-Cutter" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER2">
+	<element name="Maneuver: Heel-Cutter" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER2">
 		<compendium display="false" />
 		<supports>Maneuver, GreyWatchman</supports>
 		<description>
@@ -211,7 +211,7 @@
 			<description>You can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</description>
 		</sheet>
 	</element>
-	<element name="Reckless Assault" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT2">
+	<element name="Maneuver: Reckless Assault" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT2">
 		<compendium display="false" />
 		<supports>Maneuver, GreyWatchman</supports>
 		<description>
