@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>The Feats from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="vsos-feats.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-feats.xml" />
 		</update>
 	</info>
@@ -28,7 +28,7 @@
 			<stat name="battle adept:dc" value="battle adept:dc:ability" />
 			<stat name="battle adept:dice:amount" value="1" />
 			<stat name="battle adept:dice:size" value="6" />
-            <select type="Archetype Feature" name="Battle Adept" supports="Maneuver,Captain, Grey Watchman" number="2" />
+            <select type="Archetype Feature" name="Battle Adept" supports="Maneuver, Captain||GreyWatchman" number="2" />
         </rules>
     </element>
     
