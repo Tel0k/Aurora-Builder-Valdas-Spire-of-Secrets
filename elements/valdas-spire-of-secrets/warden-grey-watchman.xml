@@ -4,7 +4,7 @@
       <name>Grey Watchman</name>
       <description>The Grey Watchman from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.2">
+      <update version="0.0.3">
         <file name="warden-grey-watchman.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warden-grey-watchman.xml" />
       </update>    
     </info>
@@ -31,9 +31,9 @@
     <element name="Battle Tactics" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS">
         <description>
             <p>When you  hear this call at 3rd level, you learn maneuvers that are fueled by special dice called battle dice.</p>
-			<p class="indent"><strong><em>Battle Dice.</em></strong> You have two battle dice, which are d8s. A battle die is expended when you use it. You regain all of your expended battle dice when you finish a short or long rest, or when you roll initiative.</p>
+		<p class="indent"><strong><em>Battle Dice.</em></strong> You have two battle dice, which are d8s. A battle die is expended when you use it. You regain all of your expended battle dice when you finish a short or long rest, or when you roll initiative.</p>
             <p class="indent">Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown on the table below.</p>
-			<table>
+		<table>
                 <thead>
                     <tr><td>Warden Level</td><td>Battle Dice</td></tr>
                 </thead>
@@ -64,23 +64,22 @@
 			<stat name="battle-dice:amount" value="1" level="7" />
 			<stat name="battle-dice:amount" value="1" level="19" />
 			<stat name="battle-dice:size" value="8" bonus="size" />
-            <stat name="battle-dice:size" value="10" level="13" bonus="size" />
+			<stat name="battle-dice:size" value="10" level="13" bonus="size" />
 			<stat name="battle-dice:dc" value="8" />
 			<stat name="battle-dice:dc" value="proficiency" />
 			<stat name="battle-dice:dc:ability" value="strength:modifier" bonus="ability"/>
 			<stat name="battle-dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
 			<stat name="battle-dice:dc" value="battle-dice:dc:ability" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE" />
-            <grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER" />
+			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT" />
 			<grant type="Archetype Feature" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_STAGGERING_STRIKE" />
 		</rules>
     </element>
 
     <element name="Bull Rush" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH">
-		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</p>
 		</description>
@@ -89,7 +88,6 @@
 		</sheet>
 	</element>
     <element name="Bulwark" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK">
-		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you hit a creature with a melee attack, you can expend a battle die as a bonus action to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</p>
 		</description>
@@ -98,7 +96,6 @@
 		</sheet>
 	</element>
     <element name="Cleave" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE">
-		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>Once on each of your turns, when you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</p>
 		</description>
@@ -107,7 +104,6 @@
 		</sheet>
 	</element>
     <element name="Heel-Cutter" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER">
-		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you make an opportunity attack against a creature, you can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</p>
 		</description>
@@ -116,7 +112,6 @@
 		</sheet>
 	</element>
     <element name="Reckless Assault" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT">
-		<supports>Maneuver, Grey Watchman</supports>
 		<description>
 			<p>When you make an attack against a creature, you can expend a battle die to make a wild, desperate strike, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</p>
 		</description>
@@ -175,4 +170,55 @@
             •You can take one additional reaction during each round of combat. You can't take more than one reaction during a single turn.</description>
         </sheet>
     </element>
+
+	<element name="Bull Rush" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULL_RUSH2">
+		<compendium display="false" />
+		<supports>Maneuver, GreyWatchman</supports>
+		<description>
+			<p>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can choose to either knock the target prone or push it up to 10 feet away from you.</description>
+		</sheet>
+	</element>
+	<element name="Bulwark" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_BULWARK2">
+		<compendium display="false" />
+		<supports>Maneuver, GreyWatchman</supports>
+		<description>
+			<p>When you hit a creature with a melee attack, you can expend a battle die as a bonus action to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit a creature with a melee attack, you can expend a battle die to brace yourself for its counterattack. The next time you take damage from that creature before the start of your next turn, you can roll the battle die and reduce the damage you take by the number rolled.</description>
+		</sheet>
+	</element>
+	<element name="Cleave" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_CLEAVE2">
+		<compendium display="false" />
+		<supports>Maneuver, GreyWatchman</supports>
+		<description>
+			<p>Once on each of your turns, when you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack, you can spend a battle die to move up to 15 feet and make another melee weapon attack as part of the same action. On a hit, you add the battle die to the attack's damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Heel-Cutter" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_HEEL_CUTTER2">
+		<compendium display="false" />
+		<supports>Maneuver, GreyWatchman</supports>
+		<description>
+			<p>When you make an opportunity attack against a creature, you can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</p>
+		</description>
+		<sheet action="Opportunity Attack">
+			<description>You can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn.</description>
+		</sheet>
+	</element>
+	<element name="Reckless Assault" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREY_WATCHMAN_BATTLE_TACTICS_RECKLESS_ASSAULT2">
+		<compendium display="false" />
+		<supports>Maneuver, GreyWatchman</supports>
+		<description>
+			<p>When you make an attack against a creature, you can expend a battle die to make a wild, desperate strike, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</p>
+		</description>
+		<sheet action="Attack">
+			<description>You can expend a battle die to make a wild, desperate strike against a creature, leaving you vulnerable. You have advantage on the attack roll. Until the start of your next turn, however, attack rolls against you have advantage.</description>
+		</sheet>
+	</element>
 </elements>
