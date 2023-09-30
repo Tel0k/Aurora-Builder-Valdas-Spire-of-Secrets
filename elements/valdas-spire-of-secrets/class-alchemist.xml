@@ -4,7 +4,7 @@
 		<name>Alchemist</name>
 		<description>The Alchemist from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-alchemist.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-alchemist.xml" />
 		</update>
 	</info>
@@ -46,7 +46,7 @@
 			</ul>
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
-            <ul>
+			<ul>
 				<li>(a) scale mail, or (b) leather armor</li>
 				<li>A dagger and (a) a warhammer, (b) a longsword, or (c) any simple weapon</li>
 				<li>(a) a light crossbow and 20 bolts, (b) a shortbow and 20 arrows, or (c) 5 javelins</li>
@@ -98,7 +98,7 @@
 			<set name="hd">d6</set>
 		</setters>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
             <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB"  requirements="!ID_MHP_VSOS_MULTICLASS_ALCHEMIST"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
@@ -119,14 +119,14 @@
             <grant type="Class Feature" id="ID_MHP_VSOS_CLASS_FEATURE_ALCHEMIST_PHILOSOPHERS_STONE" level="20" />
         </rules>
         <multiclass id="ID_MHP_VSOS_MULTICLASS_ALCHEMIST">
-			<prerequisite>Strength 13 or Dexterity 13, and Charisma 13</prerequisite>
-			<requirements>([str:13]||[dex:13]),[cha:13]</requirements>
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
 			<setters>
-				<set name="multiclass proficiencies">—</set>
+				<set name="multiclass proficiencies"> Light armor, bombs, alchemist's supplies</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
 			</rules>
