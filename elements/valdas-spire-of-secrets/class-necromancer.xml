@@ -4,7 +4,7 @@
       <name>Necromancer</name>
       <description>The Necromancer from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.3">
+      <update version="0.0.4">
         <file name="class-necromancer.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-necromancer.xml" />
       </update>    
     </info>
@@ -242,7 +242,7 @@
             <stat name="thrall:cr" value="1" level="9" />
             <stat name="thrall:cr" value="1" level="13" />
             <stat name="thrall:cr" value="1" level="17" />
-            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="3" spellcasting="Necromancer" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Necromancer" />
             <select type="Companion" name="Thrall" supports="Thrall" level="2" />
 			<!--
 			<select type="Companion" name="Thrall 2" supports="Thrall" level="3" />
