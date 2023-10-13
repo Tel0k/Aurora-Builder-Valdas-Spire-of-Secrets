@@ -4,7 +4,7 @@
 		<name>Auxiliary Levels</name>
 		<description>The Auxiliary Levels from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="vsos-auxiliary-levels.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-auxiliary-levels.xml" />
 		</update>
 	</info>
@@ -21,7 +21,7 @@
 		</setters>
 	</element>
 	
-	<element name="Animal Master" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_ANIMAL_MASTER">
+	<element name="Animal Master" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_ANIMAL_MASTER">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>With patience or a bit of magic, you have trained an animal companion to accompany you on your adventures. Few people can become fast friends with a wolf, but it's hard to undervalue their teeth in a brawl.</p>	
@@ -78,7 +78,7 @@
 		</rules>
 	</element>
 	
-	<element name="Buffoon" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_BUFFOON">
+	<element name="Buffoon" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_BUFFOON">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>People assume you're not very bright. Sure, you stumble sometimes and you forget words, but you're not dumb! No matter what all those eggheads say. When all else fails, you've always got a cutting observation or a really mean name in your back pocket, so they never get the last laugh.</p>	
@@ -146,7 +146,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Clandestine Caster" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_CLANDESTINE_CASTER">
+	<element name="Clandestine Caster" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_CLANDESTINE_CASTER">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Discretion is the better part of both valor and incredible arcane might. With some canny trickery, you've learned to hide your magic in plain sight, where you might pass as a mighty but otherwise unremarkable warrior, until the moment when you have the upper hand.</p>
@@ -208,7 +208,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Courier" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_COURIER">
+	<element name="Courier" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_COURIER">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>A trader, a smuggler, or merely a messenger, you have been tasked with traveling to and fro delivering parcels, and have become quite adept at it. You're quick on your feet and have a second sense for navigation matched only by sailors and compass salesmen, and you carry those advantages with you in adventuring.</p>	
@@ -273,7 +273,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Cultist" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_CULTIST">
+	<element name="Cultist" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_CULTIST">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>A dark pact, a black, leather-bound tome, and your fellow hooded acolytes: these are your clearest memories of your indoctrination to the cult, before your mind started to unravel. No matter which terrible, extradimensional being your secret society is dedicated to, its teachings have revealed enigmas of the universe to you and laced your every thought with paranoia.</p>	
@@ -349,7 +349,7 @@
 	</element>
 	
 	
-	<element name="Dragon Acolyte" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_DRAGON_ACOLYTE">
+	<element name="Dragon Acolyte" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_DRAGON_ACOLYTE">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Dragons strike awe and fear into mere mortals who gaze upon them. Many flee in terror, but a few fall to their hands and knees, pledging themselves to their new draconic masters. Such dragon acolytes learn to emulate the great beasts, and eventually to capture a semblance of draconic that might.</p>	
@@ -571,7 +571,7 @@
 	</element>
 	
 	
-	<element name="Expert" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_EXPERT">
+	<element name="Expert" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_EXPERT">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Diligent research and practice has paid dividends. Through months of effort, you've mastered new crafts, honed your skills, trained in combat, or even improved your book smarts.</p>	
@@ -644,7 +644,7 @@
 		</rules>
 	</element>
 	
-	<element name="Hedge Wizard" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_HEDGE_WIZARD">
+	<element name="Hedge Wizard" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_HEDGE_WIZARD">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Unlike ordinary wizards who learn their craft through extensive research and formal training, you discovered arcana on your own, reading what you could find and uncovering deeper magic through experimentation. Self-education is not without its merits, however, for you have become exceptionally well versed in the most fundamental spells: cantrips.</p>	
@@ -744,7 +744,7 @@
 	</element>
 	
 	
-	<element name="Priest" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_PRIEST">
+	<element name="Priest" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_PRIEST">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Though you have not been granted the divine purpose of an adventuring cleric, you have nevertheless been ordained as a priest to one of the many gods. Your lot is that of a quieter life with the church: conducting services, looking after your congregation, performing community rituals, and other administrative duties. Even when whisked off into adventuring, your posture is that of an unassuming reverend, not an evangelizing cleric or crusading paladin.</p>	
@@ -833,7 +833,7 @@
 	</element>
 	
 	
-	<element name="Pugilist" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_PUGILIST">
+	<element name="Pugilist" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_PUGILIST">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Where other warriors equip themselves with swords and axes, you use your bare knuckles and a poor disposition to bring down your foes. You've mastered this unarmed killer edge through hand-to-hand bouts for prize money, pride, or freedom.</p>	
@@ -913,7 +913,7 @@
 	</element>
 	
 	
-	<element name="Relic Keeper" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_RELIC_KEEPER">
+	<element name="Relic Keeper" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_RELIC_KEEPER">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Be it a family heirloom or a recovered artifact, you have come into possession of a mysterious weapon. Though its iron is rusted and its wood is stained with blood, an unseen power weights its swing, and you can feel an intelligence echoing within it. Once you bind with it, the weapon is linked with your soul, and it grows in power as you do.</p>	
@@ -1124,7 +1124,7 @@
     </append>
 	<!-- -->
 
-	<element name="Sellsword" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_SELLSWORD">
+	<element name="Sellsword" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_SELLSWORD">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Blades-for-hire, mercenaries, sellswords; they go by many names. As a somewhat veteran sellsword, you've learned that mercenary work is a volatile business from which only the cautious and cunning can hope to profit. You might have established a set of personal rules or superstitions, or simply gathered a raft of tricks to give you the edge when life and death (and profit) are on the line.</p>	
@@ -1201,7 +1201,7 @@
 		</sheet>
 	</element> 
 	
-	<element name="Scoundrel" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_SCOUNDREL">
+	<element name="Scoundrel" type="Multiclass" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_AUXILIARY_LEVEL_SCOUNDREL">
 		<requirements>ID_MHP_VSOS_CLASS_OPTION_AUXILIARY_LEVEL</requirements>
 		<description>
 			<p>Whether you made some dastardly friends, discovered a love for illicit substances, or merely decided that the law shouldn't stand in the way of making some coin, you're in deep with the criminal underworld. You can probably keep your criminal ties under wraps, but you can't stop looking over your shoulder for fear that the authorities, or worse, your friends might come calling.</p>	
