@@ -4,7 +4,7 @@
         <name>Freerunner</name>
         <description>The Freerunner from Valda's Spire of Secrets</description>
         <author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="ranger-freerunner.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/ranger-freerunner.xml" />
         </update>
     </info>
@@ -80,7 +80,7 @@
             <p>At 3rd level, if you move through a hostile creature's space, leave a creature's reach, or move at least 15 feet, you deal an additional 1d6 on the next weapon attack you make on your turn.</p>
         </description>
         <sheet>
-            <description>While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness.</description>
+            <description>If you move through a hostile creature's space, leave a creature's reach, or move at least 15ft, you deal an additional 1d6 on the next weapon attack you make on your turn.</description>
         </sheet>
     </element>
     <element name="Evasive Fighter" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_RANGER_FREE_EVASIVE_FIGHTER">
