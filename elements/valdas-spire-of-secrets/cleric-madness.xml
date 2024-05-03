@@ -4,7 +4,7 @@
 		<name>Madness Domain</name>
 		<description>The Madness Domain from Valda's Spire of Secrets</description>
 		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-madness.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/cleric-madness.xml" />
         </update>
 	</info>
@@ -33,7 +33,7 @@
     </element>
     <element name="Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_MADNESS_DOMAIN_DOMAIN_SPELLS">
         <description>
-            <p>You gain domain spells at the cleric levels listed in the name Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
+            <p>You gain domain spells at the cleric levels listed in the Madness Domain Spells table. See the Divine Domain class feature in the Player's Handbook for how domain spells work.</p>
             <h5>Madness Domain Spells</h5>
             <table>
                 <thead>
