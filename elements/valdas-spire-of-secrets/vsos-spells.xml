@@ -4,7 +4,7 @@
 		<name>Spells</name>
 		<description>The Spells Arcane Tradition from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com/">Valda's Spire of Secrets</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="vsos-spells.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-spells.xml" />
 		</update>
 	</info>
@@ -585,8 +585,7 @@
 	<element name="Curse Ward" type="Spell" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_SPELL_CURSE_WARD">
 		<supports>Investigator, Martyr, Necromancer, Witch, Cleric, Paladin, Warlock, Wizard</supports>
 		<description>
-			<p>A black brand resembling iron shackles darkens the ankles of two creatures you can see. Choose two creatures you can see within range of the spell and within 30 feet of each other to make a Constitution saving throw. A willing creature can choose to fail this saving throw. On a failed save, a target is cursed for the duration. If only one target is cursed by this spell, you can use your action or bonus action on a subsequent turn to choose another target within 30 feet of the cursed creature to make a saving throw. While two creatures are cursed by this spell, they are unable to willingly move further away from each other.</p>
-			<p class="indent">A <em>remove curse</em> spell ends this curse early.</p>
+			<p>You reach out your hand and touch a willing creature within your reach, raising a smoke-like barrier around it. For the duration, the target has resistance to necrotic damage and can’t be cursed, possessed, or targeted by a hex. Also, its hit point maximum can’t be reduced. If the target is already affected by one of these effects, the effect is suspended until the spell ends.</p>
 		</description>
 		<setters>
 			<set name="level">2</set>
