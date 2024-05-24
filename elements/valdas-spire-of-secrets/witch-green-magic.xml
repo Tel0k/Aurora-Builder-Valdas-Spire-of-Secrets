@@ -4,14 +4,14 @@
 		<name>Green Magic</name>
 		<description>The Green Magic from Valda's Spire of Secrets</description>
 		<author url="https://shop.magehandpress.com">Valda's Spire of Secrets</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="witch-green-magic.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/witch-green-magic.xml" />
         </update>
 	</info>
 	<element name="Green Magic" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_GREEN_MAGIC">
 		<supports>Craft</supports>
 		<description>
-			<p>Forbidden by most witch covens, Green magic centers on the use of dark spells and mortal hexes that draw from the spellcaster's very essence. It is fundamentally more perilous than other witch crafts, but its many risks come with copious rewards.</p>
+			<p>Plants, nature, and wild animals are the domain of green magic. Normally a type of arcana championed by druids, some witches have a close tie to the powers of green magic and can coax plants and animals to do their bidding.</p>
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_CRAFT_SPELLS" />
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_HEX_ELDER_TONGUE" />
             <div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_GREEN_MAGIC_PRIMAL_ALLY" />
