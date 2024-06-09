@@ -4,7 +4,7 @@
       <name>Warmage</name>
       <description>The Warmage from Valda's Spire of Secrets</description>
       <author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-      <update version="0.0.8">
+      <update version="0.0.9">
         <file name="class-warmage.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/class-warmage.xml" />
       </update>    
     </info>
@@ -430,7 +430,7 @@
 			<p>When you hit with a cantrip requiring a melee attack and exceed the target's AC by 5 or more or score a critical hit, you can add your proficiency modifier to the damage roll.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+			<description>When you hit with a cantrip requiring a melee attack and exceed the target's AC by 5 or more or score a critical hit, you can add +{{proficiency}} to the damage roll.</description>
 		</sheet>
 	</element>
 	
