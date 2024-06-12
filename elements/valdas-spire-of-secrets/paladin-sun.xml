@@ -4,7 +4,7 @@
 		<name>Oath of the Sun</name>
 		<description>The Oath of the Sun from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="paladin-sun.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/paladin-sun.xml" />
 		</update>
 	</info>
@@ -12,12 +12,13 @@
 	<element name="Oath of the Sun" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_PALADIN_OATH_OF_THE_SUN">
 		<supports>Sacred Oath</supports>
 		<description>
-			<p>Paladins who swear the Oath of the Sun make a solemn vow to party day and night until their hearts give out. The antithesis of stuffy, lawful crusaders, these emissaries of carousal travel the land, crashing parties and raising hell wherever they raise a glass. Authorities bristle at their arrival, but the youth cheer, for a Party Paladin is always accompanied by a good time.</p>
+			<p>In the wastes, the sun is a double-edged sword: though it brings light, warmth, and nourishment to the desert's scant greenery, it also burns, blinds, and can destroy those who don't respect it. Paladins who take the Oath of the Sun understand the sun's dual nature, and strive to both bring its light to the darkest reaches of the world and protect those who fall prey to the sun's rays out of happenstance or misfortune.</p>
+			<p class="indent">Unlike other paladins, most brothers who take the Oath of the Sun belong to a clergy of a sun god of some sort, be it Amaterasu, Apollo, Ra, or any other. They most often serve as templars, protecting their temples from raiders, bandits, and more supernatural threats. They are uniformly good, but have little adherence to laws other than those of their faith.</p>
 			<h5 class="caption">TENETS OF THE SUN</h5>
-			<p>Many paladins who swear the Oath of the Sun choose to abide by the Codicus Brodicus, a doctrine of moral judgments, both foul and fair, about the way one should conduct life and party. In general, paladins who take this oath abide by the following principles: </p>
-			<p class="indent"><b><i>The Party Don't Stop.</i></b> Every occasion deserves celebration, and everyone should be invited.</p>
-			<p class="indent"><b><i>Work Hard, Party Hard.</i></b> Without planning and effort, a good bacchanal has no momentousness. Bring your “A” game to events.</p>
-			<p class="indent"><b><i>Fight for Your Right to Party.</i></b> Those who would stand in your way need to be reminded what it's like to have a good time, or failing that, be circumvented.</p>
+			<p>The Oath of the Sun is always taken in public at the height of noon, among the congregation of the paladin's church. </p>
+			<p class="indent"><b><i>The Sun Rises.</i></b> The sun rises over the horizon each day, without fail, spreading light over the whole of the world. So should you never fail in your task to spread your faith and knowledge every day.</p>
+			<p class="indent"><b><i>The Sun Blazes.</i></b> Under the noonday sun, only the pure may survive for long. Those that fear the sun must see its light, so as to burn away their impurity.</p>
+			<p class="indent"><b><i>The Sun Sets.</i></b> The sun must rest each night, and give the world a chance to sleep. So too should you give rest to your fury and righteousness in the service of mercy, though only to those who deserve it.</p>
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_OATH_SPELLS" />
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_CHANNEL_DIVINITY" />
 			<div element="ID_MHP_VSOS_ARCHETYPE_FEATURE_OOTS_SUNS_WARMTH" />
