@@ -66,10 +66,10 @@
             <stat name="spellcasting:dc:int" value="intelligence:modifier" bonus="ability" />
             <grant type="Spell" id="ID_MHP_VSOS_SPELL_ACTION" level="3" />
             <grant type="Spell" id="ID_MHP_VSOS_SPELL_INSTANT_REPLAY" level="3" />
-            <grant type="Spell" id="ID_MHP_VSOS_SPELL_DELAY" level="4" />
-            <grant type="Spell" id="ID_MHP_VSOS_SPELL_RECALL" level="4" />
-            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_DELAY" level="9" />
+            <grant type="Spell" id="ID_MHP_VSOS_SPELL_RECALL" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="13" />
         </rules>
     </element>
     <element name="Impressions Of The Future" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_IMPRESSIONS_OFTHE_FUTURE">
