@@ -4,7 +4,7 @@
 		<name>Temporal Trickster</name>
 		<description>The Temporal Trickster from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="rogue-temporal-trickster.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/rogue-temporal-trickster.xml" />
 		</update>
 	</info>
@@ -52,8 +52,8 @@
 					<tr><td class="col-10">Rogue Level</td><td class="col-10">Chronomancy Points</td><td class="col-10">Spells</td></tr>
 				</thead>
 				<tr><td> 3rd</td><td>2</td><td> action, instant replay</td></tr>
-				<tr><td> 4th</td><td>3</td><td> delay, recall</td></tr>
-				<tr><td> 5th</td><td>5</td><td> haste, slow</td></tr>
+				<tr><td> 9th</td><td>3</td><td> delay, recall</td></tr>
+				<tr><td> 13th</td><td>5</td><td> haste, slow</td></tr>
             </table>
         </description>
         <sheet>
