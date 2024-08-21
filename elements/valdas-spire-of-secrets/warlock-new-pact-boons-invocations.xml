@@ -4,7 +4,7 @@
 		<name>New Pact Boons</name>
 		<description>The New Pact Boons from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-new-pact-boons-invocations.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/warlock-new-pact-boons-invocations.xml" />
 		</update>
 	</info>
@@ -42,7 +42,7 @@
 		</sheet>
 	</element>
     <!-- Invocations -->
-    <element name="Abyssall Concord" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_ABYSSAL_CONCORD">
+    <element name="Abyssal Concord" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_ABYSSAL_CONCORD">
 		<supports>Eldritch Invocation</supports>
 		<description>
 			<p>You can cast <em>might of the abyss</em> once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
@@ -51,7 +51,7 @@
 			</div>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>You can cast might of the abyss once using a warlock spell slot.</description>
+			<description>You can cast Might of the Abyss once using a warlock spell slot.</description>
 		</sheet>
 	</element>
 	<element name="Crimson Investigator" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_CRIMSON_INVESTIGATOR">
@@ -63,7 +63,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>You can cast the blood print spell at will, without expending a spell slot.</description>
+			<description>You can cast the Blood Print spell at will, without expending a spell slot.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_MHP_VSOS_SPELL_BLOOD_PRINT" />
@@ -108,7 +108,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>When you cast eldritch blast, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+			<description>You can cast the Protect Threshold spell at will, without expending a spell slotor material components. The spell ends early if you use this invocation to cast the spell again.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_MHP_VSOS_SPELL_PROTECT_THRESHOLD" />
@@ -126,7 +126,7 @@
 			</div>
 		</description>
 		<sheet usage="{{number2:calculation}}/Long Rest">
-			<description>You can cast misty step without using a spell slot by vanishing into your pact cloak, leaving behind a cloud of smoke.</description>
+			<description>You can cast Misty Step without using a spell slot by vanishing into your pact cloak, leaving behind a cloud of smoke.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
@@ -159,7 +159,7 @@
 			</div>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>You can cast the spell find steed once using a warlock spell slot.</description>
+			<description>You can cast the spell Find Steed once using a warlock spell slot.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
@@ -174,7 +174,7 @@
 			<p>When you roll a 10 on the damage die for your eldritch blast, you can roll an additional d10 and add its damage to the total, rolling again if this die is also a 10, and so on. You can roll a total number of four damage dice for this damage roll, or eight damage dice on a critical hit.</p>
 		</description>
 		<sheet>
-			<description>When you roll a 10 on the damage die for your eldritch blast, you can roll an additional d10 and add its damage to the total, rolling again on a 10, up to a total of 4d10 (8d10 on a critical hit).</description>
+			<description>When you roll a 10 on the damage die for your Eldritch Blast, you can roll an additional d10 and add its damage to the total, rolling again on a 10, up to a total of 4d10 (8d10 on a critical hit).</description>
 		</sheet>
 	</element>
 	<element name="Sigil Of Protection" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ELDRITCH_INVOCATION_SIGIL_OF_PROTECTION">
@@ -186,7 +186,7 @@
 			</div>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When you cast transient bulwark once using a warlock spell slot.</description>
+			<description>You can cast Transient Bulwark using a warlock spell slot.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_MHP_VSOS_SPELL_TRANSIENT_BULWARK" />
