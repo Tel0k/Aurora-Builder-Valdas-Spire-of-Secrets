@@ -4,7 +4,7 @@
 		<name>Magic Items</name>
 		<description>The Magic Items from Valda's Spire of Secrets</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="vsos-magic-items.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-magic-items.xml" />
 		</update>
 	</info>
@@ -802,8 +802,8 @@
 			<set name="category">Magic Armor</set>
 			<set name="type" addition="breastplate, half plate, or full plate">Armor</set>
 			<set name="rarity">Very Rare</set>
-			<set name="armor">ID_WOTC_ARMOR_MEDIUM_BREASTPLATE|ID_WOTC_ARMOR_MEDIUM_HALF_PLATE|ID_WOTC_ARMOR_HEAVY_PLATE</set>
-			<set name="name-format">name {{parent}}</set>
+			<set name="armor">Breastplate|Half Plate|Plate</set>
+			<set name="name-format">Magehunter {{parent}}</set>
 		</setters>
 	</element>
 	<element name="Marvelous Painted World" type="Magic Item" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_MAGIC_ITEM_MARVELOUS_PAINTED_WORLD">
