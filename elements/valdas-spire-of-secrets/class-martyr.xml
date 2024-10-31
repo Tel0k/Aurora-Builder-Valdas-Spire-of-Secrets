@@ -11,75 +11,75 @@
 
 	<element name="Martyr" type="Class" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_MARTYR">
 		<description>
-		<p>Squalid masses draw close around a young dwarf in spotless clothing. He touches each person in turn, healing injuries, curing illnesses, and restoring hope.</p>
-		<p class="indent">A ragged tiefling speaks in a crowded square. As if in response, dark clouds gather over her head and the earth trembles at her words.</p>
-		<p class="indent">A mad king spits and swears from his throne at imperial guards who have fled or been slain. A lone dragonborn stands before him, solemnly preparing herself for divinely demanded regicide.</p>
-		<p class="indent">Martyrs are implements of the gods, hand-picked to spill their blood in service of a divine cause. Such an end is inevitable, for once a martyr is chosen, their fate is fixed in the heavens.</p>
-		<h4>FATED TO DIE</h4>
-		<p>Martyrs are chosen by the gods as prophets, oracles, great priests, and liberators. However, regardless of how much good they might accomplish in their lives, the end must always be the same: a glorious death, to be remembered in legend.</p>
-		<p class="indent">No matter the circumstance, a martyr cannot avoid their destiny. While some martyrs gladly accept their holy approbation, others struggle against it. However, from the moment the gods choose their martyr, they shall intervene in the martyr's fate, pulling them inexorably toward their cause. The gods will settle for a lesser martyr if they must—if the one chosen is unwilling to follow their path—but they always prefer to uplift their martyr to the heights of sainthood before their inevitable demise.</p>
-		<h4>BLOOD OF THE MARTYR</h4>
-		<p>Martyrs grow more powerful the closer they are to death, and those that spill their own blood evoke waves of divine energy. In the view of the gods, such hardship is necessary to lay the foundation for a story that will live on in history.</p>
-		<p class="indent">Paradoxically, martyrs are protected from death's precipice even as they are edged closer toward it. Every torment and persecution suffered by them is weighed with equal moments of respite offered by the gods. The gods do not mean to kill their charge early; a martyr should meet their fate only at the preordained time and place.</p>
-		<h4>CREATING A MARTYR</h4>
-		<p>As you create a martyr, think about the moment you were chosen by the gods and your burden was placed upon you. Were you visited by an angelic host or a god disguised as a mortal? Did you quietly hear a divine voice in your ear, as stigmata formed on your body? Was your soul violently dragged to the Upper (or Lower) Planes for an audience with the gods?</p>
-		<p class="indent">Consider the life you led before you were ordained for martyrdom. Were you a wicked soul, purified and redeemed to undergo this task? Were you already a warrior, adventurer, or cleric in service of the gods? Also consider how you reacted. Did you accept the task and your inevitable destiny, or did you run from it? Are you still running?</p>
-		<h5 class="caption">QUICK BUILD</h5>
-		<p>To build a martyr quickly, follow these suggestions: Constitution should be your highest ability score. Your next highest ability score should be Strength if you choose a Burden, such as the Burden of Revolution, which focuses on melee combat, or Wisdom if you choose one focused on spellcasting. Choose any background.</p>
-		<h2>CLASS FEATURES</h2>
-		<p>As an martyr, you gain the following class features.</p>
-		<h5 class="caption">HIT POINTS</h5>
-		<ul class="unstyled">
-			<li><strong>Hit Dice:</strong> 1d12 per martyr level</li>
-			<li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
-			<li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per martyr level after 1st</li>
-		</ul>
-		<h5 class="caption">PROFICIENCIES</h5>
-		<ul class="unstyled mb">
-			<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
-			<li><strong>Weapons:</strong> Simple and martial weapons</li>
-			<li><strong>Tools:</strong> None</li>
-		</ul>
-		<ul class="unstyled">
-			<li><strong>Saving Throws:</strong> Strength, Wisdom</li>
-			<li><strong>Skills:</strong> Choose two from Athletics, History, Insight, Intimidation, Medicine, Persuasion, and Religion</li>
-		</ul>
-		<h5 class="caption">EQUIPMENT</h5>
-		<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
-		<ul>
-			<li>(a) a martial weapon and a shield or (b) two martial weapons</li>
-			<li>(a) scale mail or (b) chain mail (if proficient)</li>
-			<li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
-			<li>(a) a priest's pack or (b) an explorer's pack</li>
-			<li>A holy symbol</li>
-		</ul>
-		<h5 class="caption">THE </h5>
-		<table class="class-features">
-			<thead>
-				<tr><td class="col-5">Level</td><td class="col-60 left">Features</td><td class="col-10">Max Spell Level</td><td class="col-10">Spell Uses</td></tr>
-			</thead>
-			<tr><td> 1st</td><td class="left">Mortal Burden, Ordained Death</td><td>—</td><td>—</td></tr>
-			<tr><td> 2nd</td><td class="left">Spellcasting, Sainted Reprisal, Mark of the Herald</td><td>1st</td><td>2</td></tr>
-			<tr><td> 3rd</td><td class="left">Divine Healing, Torment</td><td>1st</td><td>3</td></tr>
-			<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>1st</td><td>3</td></tr>
-			<tr><td> 5th</td><td class="left">Extra Attack</td><td>2nd</td><td>6</td></tr>
-			<tr><td> 6th</td><td class="left">Mortal Burden feature</td><td>2nd</td><td>6</td></tr>
-			<tr><td> 7th</td><td class="left">Respite</td><td>2nd</td><td>7</td></tr>
-			<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>2nd</td><td>7</td></tr>
-			<tr><td> 9th</td><td class="left">—</td><td>3rd</td><td>9</td></tr>
-			<tr><td>10th</td><td class="left">Undying Conviction</td><td>3rd</td><td>9</td></tr>
-			<tr><td>11th</td><td class="left">Torment improvement</td><td>3rd</td><td>10</td></tr>
-			<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3rd</td><td>10</td></tr>
-			<tr><td>13th</td><td class="left">—</td><td>4th</td><td>11</td></tr>
-			<tr><td>14th</td><td class="left">Mortal Burden feature</td><td>4th</td><td>11</td></tr>
-			<tr><td>15th</td><td class="left">March Unto Destiny</td><td>4th</td><td>12</td></tr>
-			<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4th</td><td>12</td></tr>
-			<tr><td>17th</td><td class="left">—</td><td>5th</td><td>14</td></tr>
-			<tr><td>18th</td><td class="left">Mortal Burden feature</td><td>5th</td><td>14</td></tr>
-			<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>5th</td><td>15</td></tr>
-			<tr><td>20th</td><td class="left">Final Martyrdom</td><td>5th</td><td>15</td></tr>
-		</table>
-		<!-- class table here -->
+			<p>Squalid masses draw close around a young dwarf in spotless clothing. He touches each person in turn, healing injuries, curing illnesses, and restoring hope.</p>
+			<p class="indent">A ragged tiefling speaks in a crowded square. As if in response, dark clouds gather over her head and the earth trembles at her words.</p>
+			<p class="indent">A mad king spits and swears from his throne at imperial guards who have fled or been slain. A lone dragonborn stands before him, solemnly preparing herself for divinely demanded regicide.</p>
+			<p class="indent">Martyrs are implements of the gods, hand-picked to spill their blood in service of a divine cause. Such an end is inevitable, for once a martyr is chosen, their fate is fixed in the heavens.</p>
+			<h4>FATED TO DIE</h4>
+			<p>Martyrs are chosen by the gods as prophets, oracles, great priests, and liberators. However, regardless of how much good they might accomplish in their lives, the end must always be the same: a glorious death, to be remembered in legend.</p>
+			<p class="indent">No matter the circumstance, a martyr cannot avoid their destiny. While some martyrs gladly accept their holy approbation, others struggle against it. However, from the moment the gods choose their martyr, they shall intervene in the martyr's fate, pulling them inexorably toward their cause. The gods will settle for a lesser martyr if they must—if the one chosen is unwilling to follow their path—but they always prefer to uplift their martyr to the heights of sainthood before their inevitable demise.</p>
+			<h4>BLOOD OF THE MARTYR</h4>
+			<p>Martyrs grow more powerful the closer they are to death, and those that spill their own blood evoke waves of divine energy. In the view of the gods, such hardship is necessary to lay the foundation for a story that will live on in history.</p>
+			<p class="indent">Paradoxically, martyrs are protected from death's precipice even as they are edged closer toward it. Every torment and persecution suffered by them is weighed with equal moments of respite offered by the gods. The gods do not mean to kill their charge early; a martyr should meet their fate only at the preordained time and place.</p>
+			<h4>CREATING A MARTYR</h4>
+			<p>As you create a martyr, think about the moment you were chosen by the gods and your burden was placed upon you. Were you visited by an angelic host or a god disguised as a mortal? Did you quietly hear a divine voice in your ear, as stigmata formed on your body? Was your soul violently dragged to the Upper (or Lower) Planes for an audience with the gods?</p>
+			<p class="indent">Consider the life you led before you were ordained for martyrdom. Were you a wicked soul, purified and redeemed to undergo this task? Were you already a warrior, adventurer, or cleric in service of the gods? Also consider how you reacted. Did you accept the task and your inevitable destiny, or did you run from it? Are you still running?</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>To build a martyr quickly, follow these suggestions: Constitution should be your highest ability score. Your next highest ability score should be Strength if you choose a Burden, such as the Burden of Revolution, which focuses on melee combat, or Wisdom if you choose one focused on spellcasting. Choose any background.</p>
+			<h2>CLASS FEATURES</h2>
+			<p>As an martyr, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d12 per martyr level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per martyr level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple and martial weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Wisdom</li>
+				<li><strong>Skills:</strong> Choose two from Athletics, History, Insight, Intimidation, Medicine, Persuasion, and Religion</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a martial weapon and a shield or (b) two martial weapons</li>
+				<li>(a) scale mail or (b) chain mail (if proficient)</li>
+				<li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+				<li>(a) a priest's pack or (b) an explorer's pack</li>
+				<li>A holy symbol</li>
+			</ul>
+			<h5 class="caption">THE MARTYR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-60 left">Features</td><td class="col-10">Max Spell Level</td><td class="col-10">Spell Uses</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Mortal Burden, Ordained Death</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Spellcasting, Sainted Reprisal, Mark of the Herald</td><td>1st</td><td>2</td></tr>
+				<tr><td> 3rd</td><td class="left">Divine Healing, Torment</td><td>1st</td><td>3</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>1st</td><td>3</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack</td><td>2nd</td><td>6</td></tr>
+				<tr><td> 6th</td><td class="left">Mortal Burden feature</td><td>2nd</td><td>6</td></tr>
+				<tr><td> 7th</td><td class="left">Respite</td><td>2nd</td><td>7</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>2nd</td><td>7</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>3rd</td><td>9</td></tr>
+				<tr><td>10th</td><td class="left">Undying Conviction</td><td>3rd</td><td>9</td></tr>
+				<tr><td>11th</td><td class="left">Torment improvement</td><td>3rd</td><td>10</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3rd</td><td>10</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>4th</td><td>11</td></tr>
+				<tr><td>14th</td><td class="left">Mortal Burden feature</td><td>4th</td><td>11</td></tr>
+				<tr><td>15th</td><td class="left">March Unto Destiny</td><td>4th</td><td>12</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4th</td><td>12</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>5th</td><td>14</td></tr>
+				<tr><td>18th</td><td class="left">Mortal Burden feature</td><td>5th</td><td>14</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>5th</td><td>15</td></tr>
+				<tr><td>20th</td><td class="left">Final Martyrdom</td><td>5th</td><td>15</td></tr>
+			</table>
+			<!-- class table here -->
 			<div element="ID_MHP_VSOS_CLASS_FEATURE_MARTYR_MORTAL_BURDEN" />
 			<div element="ID_MHP_VSOS_CLASS_FEATURE_MARTYR_ORDAINED_DEATH" />
 			<div element="ID_MHP_VSOS_CLASS_FEATURE_MARTYR_MARK_OFTHE_HERALD" />
