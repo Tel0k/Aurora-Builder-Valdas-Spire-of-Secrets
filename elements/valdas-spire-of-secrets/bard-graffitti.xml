@@ -45,7 +45,7 @@
       <description> You learn the tag cantrip. You can expend one use of your Bardic Inspiration to spray out a mural. For the next minute, you and all friendly creatures within 30 feet of the mural that can see it gain a +1 bonus to ability checks, attack rolls, and saving throws, up to a maximum of +3. You can use this ability again and expend more uses of Bardic Inspiration to expand this mural further, increasing the bonus by 1 each time.</description>
     </sheet>
     <rules>
-      <grant type="Spell" id="ID_PHB_SPELL_TAG" level="3" />
+      <grant type="Spell" id="ID_MHP_VSOS_SPELL_TAG" level="3" />
     </rules>
   </element>
   <element name="Signature Mark" type="Archetype Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_FEATURE_BARD_GRAFFITTI_SIGNATURE_MARK">
