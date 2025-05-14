@@ -150,6 +150,7 @@
 		<rules>
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_WEAPONS" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_ARMOR_PROFICIENCY_EXOTIC_ARMOR" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_FIREARMS" />
 		</rules>
 	</element>
 	<element name="Active Crafting" type="Class Feature" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_CLASS_FEATURE_CRAFTSMAN_ACTIVE_CRAFTING">
