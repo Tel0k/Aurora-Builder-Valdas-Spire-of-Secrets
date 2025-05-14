@@ -689,7 +689,7 @@
 		<sheet alt="Sniper Rifle" />
 	</element>
     <!-- Exotic Firearms -->
-	<element name="Exotic Ranged" type="Weapon Category" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS" />
+	<element name="Exotic Firearms" type="Weapon Category" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS" />
 	<element name="Weapon Proficiency (Exotic Firearms)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_FIREARMS">
 		<rules>
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_DUCKS_FOOT" />
