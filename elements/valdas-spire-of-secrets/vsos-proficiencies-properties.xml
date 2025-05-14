@@ -307,6 +307,7 @@
 		<rules>
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_MELEE_WEAPONS" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_RANGED_WEAPONS" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_FIREARMS" />
 		</rules>
 	</element>
 	<element name="Weapon Proficiency (Exotic Melee Weapons)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_MELEE_WEAPONS">
@@ -322,7 +323,7 @@
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ELVEN_FOIL" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GNOMISH_HOOKED_HAMMER" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR" />
-        	<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GRIM_SCYTE" />
+        		<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GRIM_SCYTE" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_HOOK_SWORD" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_CHAIN" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_MOUNTAIN_CLEAVER" />
@@ -335,16 +336,16 @@
 	</element>
 	<element name="Weapon Proficiency (Exotic Ranged Weapons)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_RANGED_WEAPONS">
 		<rules>
-    	   	<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_BOMB" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_AUTOMATIC" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_SNIPER" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_WRIST" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DEMOLITION_BOW" />
-        	<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DOOMERANG" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_DOOMERANG" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EDGED_CARD" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_ELVEN_LONGBOW" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GOLIATH_SLING" />
-        	<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GREATBOW" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_GREATBOW" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_PORTABLE_BALLISTA" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_SHOTBOW" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_TWINBOW" />
@@ -545,12 +546,12 @@
         <sheet alt="Submachine Gun" />
     </element>
 	<!-- Martial Firearms -->
-    <element name="Weapon Proficiency (Martial Firearms)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_FIREARMS"> 
+	<element name="Weapon Proficiency (Martial Firearms)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_FIREARMS"> 
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Firearms" />
 		<rules>
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_RENAISSANCE_FIREARMS_BLUNDERBUSS" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_RENAISSANCE_FIREARMS_MUSKET" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_RENAISSANCE_FIREARMS_MUSKET" />
 
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_INDUSTRIAL_FIREARMS_GATLING_GUN" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_INDUSTRIAL_FIREARMS_HARPOON_GUN" />
@@ -558,10 +559,10 @@
 
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_ASSAULT_RIFLE" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_GRENADE_LAUNCHER" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_MAGNUM" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_PUMP_SHOTGUN" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_ROCKET_LAUNCHER" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_SNIPER_RIFLE" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_MAGNUM" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_PUMP_SHOTGUN" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_ROCKET_LAUNCHER" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_MARTIAL_MODERN_FIREARMS_SNIPER_RIFLE" />
 		</rules>
 	</element>
     <!---->
@@ -688,35 +689,35 @@
 		<sheet alt="Sniper Rifle" />
 	</element>
     <!-- Exotic Firearms -->
-    <element name="Exotic Ranged" type="Weapon Category" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS" />
-    <element name="Weapon Proficiency (Exotic Firearms)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_FIREARMS">
+	<element name="Exotic Ranged" type="Weapon Category" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS" />
+	<element name="Weapon Proficiency (Exotic Firearms)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_PROFICIENCY_EXOTIC_FIREARMS">
 		<rules>
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_DUCKS_FOOT" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_VOLLEY_GUN" />
-
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DOUBLE_HANDGUN" />
+			
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DOUBLE_HANDGUN" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DRAGON_RIFLE" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_QUADRUPLE_BARREL_SHOTGUN" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_QUADRUPLE_BARREL_SHOTGUN" />
 
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ANTI_MATERIAL_RIFLE" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ASSAULT_SHOTGUN" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_ASSAULT_SHOTGUN" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_BRIEFCASE_GUN" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MAGNUM_EXPLOSIVE" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MAGNUM_EXPLOSIVE" />
 			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_MULTI_ROCKET_LAUNCHER" />
-            <grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_REVOLVING_GRENADE_LAUNCHER" />
+			<grant type="Proficiency" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_MODERN_REVOLVING_GRENADE_LAUNCHER" />
 		</rules>
 	</element>
-    <element name="Weapon Proficiency (Duck's Foot)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_DUCKS_FOOT">
+	<element name="Weapon Proficiency (Duck's Foot)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_DUCKS_FOOT">
 		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_MHP_VSOS_WEAPON_PROPERTY_DRY, ID_MHP_VSOS_WEAPON_PROPERTY_TWINSHOT, ID_MHP_VSOS_WEAPON_PROPERTY_MISFIRE</supports>
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Duck's Foot" />
 	</element>
-    <element name="Weapon Proficiency (Volley Gun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_VOLLEY_GUN">
+	<element name="Weapon Proficiency (Volley Gun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_RENAISSANCE_VOLLEY_GUN">
 		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_VSOS_WEAPON_PROPERTY_FIREARM_RELOAD_10_SHOTS_2_ACTIONS, ID_MHP_VSOS_WEAPON_PROPERTY_DRY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_VSOS_WEAPON_PROPERTY_MISFIRE</supports>
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Volley Gun" />
 	</element>
-    <element name="Weapon Proficiency (Double Handgun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DOUBLE_HANDGUN">
+	<element name="Weapon Proficiency (Double Handgun)" type="Proficiency" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_PROFICIENCY_WEAPON_EXOTIC_INDUSTRIAL_DOUBLE_HANDGUN">
 		<supports>Weapon, Exotic, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_MHP_VSOS_WEAPON_CATEGORY_EXOTIC_FIREARMS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_MHP_VSOS_WEAPON_PROPERTY_TWINSHOT</supports>
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Double Handgun" />
