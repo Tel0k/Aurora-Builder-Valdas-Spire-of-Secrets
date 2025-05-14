@@ -4,7 +4,7 @@
 		<name>Proficiencies and Properties</name>
 		<description>The new proficiencies and properties from Valda's Spire of Secrets.</description>
 		<author url="https://mfov.magehandpress.com">Valda's Spire of Secrets</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
         <file name="vsos-proficiencies-properties.xml" url="https://raw.githubusercontent.com/Tel0k/Aurora-Builder-Valdas-Spire-of-Secrets/main/elements/valdas-spire-of-secrets/vsos-proficiencies-properties.xml" />
       	</update>
 	</info>
