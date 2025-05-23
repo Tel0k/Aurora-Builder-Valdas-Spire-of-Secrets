@@ -62,15 +62,15 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
-			<stat name="rage-mage:spellcasting:slots:1" value="2" level="3" />
-			<stat name="rage-mage:spellcasting:slots:1" value="1" level="4" />
-			<stat name="rage-mage:spellcasting:slots:1" value="1" level="7" />
-			<stat name="rage-mage:spellcasting:slots:2" value="2" level="7" />
-			<stat name="rage-mage:spellcasting:slots:2" value="1" level="10" />
-			<stat name="rage-mage:spellcasting:slots:3" value="2" level="13" />
-			<stat name="rage-mage:spellcasting:slots:3" value="1" level="16" />
-			<stat name="rage-mage:spellcasting:slots:4" value="1" level="19" />
-			<stat name="rage-mage:spellcasting:slots:4" value="1" level="20" />
+			<stat name="rage mage:spellcasting:slots:1" value="2" level="3" />
+			<stat name="rage mage:spellcasting:slots:1" value="1" level="4" />
+			<stat name="rage mage:spellcasting:slots:1" value="1" level="7" />
+			<stat name="rage mage:spellcasting:slots:2" value="2" level="7" />
+			<stat name="rage mage:spellcasting:slots:2" value="1" level="10" />
+			<stat name="rage mage:spellcasting:slots:3" value="2" level="13" />
+			<stat name="rage mage:spellcasting:slots:3" value="1" level="16" />
+			<stat name="rage mage:spellcasting:slots:4" value="1" level="19" />
+			<stat name="rage mage:spellcasting:slots:4" value="1" level="20" />
 			<select type="Spell" name="Cantrip (Rage Mage)" supports="Sorcerer,0" level="3" number="2" spellcasting="Rage Mage" />
 			<select type="Spell" name="Cantrip (Rage Mage)" supports="Sorcerer,0" level="10" spellcasting="Rage Mage"/>
 			<select type="Spell" name="Spell (Rage Mage)" supports="Sorcerer, $(spellcasting:slots)" level="3" number="1" spellcasting="Rage Mage" />
