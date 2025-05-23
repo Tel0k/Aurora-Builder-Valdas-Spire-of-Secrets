@@ -57,7 +57,7 @@
 		<sheet>
 			<description>While you are raging, you can cast and concentrate on spells. Additionally, casting a spell on your turn counts as attacking a hostile creature for the purpose of sustaining your rage.</description>
 		</sheet>
-		<spellcasting name="Sorcerer" ability="Charisma" allowReplace="true">
+		<spellcasting name="Rage Mage" ability="Charisma" allowReplace="true">
 			<list>Sorcerer,(Evocation||Transmutation)</list>
 		</spellcasting>
 		<rules>
