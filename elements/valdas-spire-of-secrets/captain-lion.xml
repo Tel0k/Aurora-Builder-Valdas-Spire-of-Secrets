@@ -11,7 +11,7 @@
     <element name="Lion Banner" type="Archetype" source="Valda's Spire of Secrets" id="ID_MHP_VSOS_ARCHETYPE_LION_BANNER">
         <supports>Banner</supports>
         <description>
-            <p>The skulls and crossbones adorning the Banner of the Jolly Roger need no introduction: it means thieves, brigands, treasure, and adventure on the high seas. Moreover, it means the strong backs of a crew working in unison, piloting a ship from horizon to horizon, under the command of a fierce captain and their first mate.</p>
+            <p>Bravery in the face of overwhelming odds, mastery of horsemanship, and unwavering honor are the hallmarks of captains of the Lion. This banner represents the very ideal of gallantry and fortitude that knights and paladins aspire to achieve. The mere sight of it inspires heroism in its troops, and a captain who flies it can turn even the most poorly equipped militia into a fit fighting force.</p>
             <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_MANEUVER_LIONS_CHALLENGE" />
             <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_SADDLE_SURE" />
             <div element="ID_MHP_VSOS_ARCHETYPE_LION_BANNER_REPOSITION" />
