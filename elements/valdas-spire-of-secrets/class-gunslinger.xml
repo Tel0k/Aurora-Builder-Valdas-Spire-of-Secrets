@@ -196,7 +196,7 @@
 				<p><strong>Deed save DC</strong> = 8 + your proficiency bonus + your Dexterity modifier</p>
 			</center>
         </description>
-        <sheet usage="1/Turn, {{risk dice:amount}}/Long Rest">
+        <sheet usage="{{risk dice:amount}}/Long Rest, 1/Turn">
             <description> You can perform incredible feats of daring that are fueled by special dice called risk dice. You have {{risk dice:amount}} risk dice which are d{{risk dice:size}}s. DC {{risk dice:dc}}</description>
         </sheet>
         <rules>

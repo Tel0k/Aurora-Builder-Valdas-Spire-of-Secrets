@@ -39,7 +39,7 @@
     	<description>
   			<p>At 3rd level, once on each of your turns when you hit a creature with an unarmed strike, you can spend 1 ki point to produce a vibrant eruption of flower petals which obscures the target's vision. Until the end of the target's next turn, it can see out to 5 feet but is blind beyond this radius. The flower petals follow the creature when it moves unless the creature takes the Dash action or moves more than 40 feet on its turn.</p>
     	</description>
-    	<sheet usage="Ki - 1/Turn">
+    	<sheet usage="1/Turn - Ki">
   			<description> When you hit a creature with an unarmed strike, you can obscure the target's vision. Until the end of the target's next turn, it can see out to 5 feet but is blind beyond this radius. The flower petals follow the creature when it moves unless the creature takes the Dash action or moves more than 40ft on its turn.</description>
     	</sheet>
 	</element>

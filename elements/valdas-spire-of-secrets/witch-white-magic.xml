@@ -60,7 +60,7 @@
         <description>
             <p>At 3rd level, you learn a hex that closes wounds and eases pain. As an action, choose one creature you can see within 60 feet of you. This creature regains a number of hit points equal to 1d10 + your witch level. A creature that regains hit points from this hex can't be affected by it again until it finishes a short or long rest.</p>
         </description>
-        <sheet action="Action" usage="Each target: 1/Short||Long Rest">
+        <sheet action="Action" usage="1/Short||Long Rest for each target">
             <description> Choose one creature you can see within 60 feet of you. This creature regains 1d10+{{level:witch}}hp.</description>
         </sheet>
     </element>

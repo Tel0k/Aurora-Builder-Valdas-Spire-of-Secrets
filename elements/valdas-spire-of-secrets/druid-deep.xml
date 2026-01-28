@@ -72,7 +72,7 @@
             <p class="indent">Additionally, if you are underwater, you can use your action to call a Beast of CR 3 or lower that has a swimming speed from the environment to your aid, which arrives at the start of your next turn. The Beast rolls its own initiative and acts on its own turn, but is friendly to you and your companions and follows your commands. After 1 hour passes, or if you or one of your companions harms the Beast, the effect ends and the Beast returns to the wild.</p>
             <p class="indent">Once you use this ability to call an aquatic Beast, you can’t do so again until you finish a short or long rest.</p>
         </description>
-        <sheet action="Action (2)" usage="1/Short||Long Rest">
+        <sheet action="Action (2)" usage="1/Short||Long Rest (2)">
             <description> (1)You can speak to fish and other aquatic creatures at will, as per the speak with animals spell. (2)If you are underwater, you can call a Beast of CR3 or lower that has a swimming speed from the environment to your aid, which arrives at the start of your next turn. The Beast rolls its own initiative and acts on its own turn, but is friendly to you and your companions and follows your commands. After 1hr passes, or if you or one of your companions harms the Beast, the effect ends and it returns to the wild.</description>
         </sheet>
     </element>

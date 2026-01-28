@@ -81,7 +81,7 @@
             <p class="indent">Additionally, as a bonus action, you can vanish in a puff of smoke, a shower of confetti, or a number of released doves, teleporting to any unoccupied location you choose within 120 feet. You can only choose a destination from which no conscious creature can see you appear.</p>
             <p class="indent">Once you use this ability, you can't use it again until you finish a short or long rest.</p>
 		</description>
-		<sheet action="Bonus Action (2)" usage="1/Short||Long Rest">
+		<sheet action="Bonus Action (2)" usage="1/Short||Long Rest (2)">
 			<description>1)You can add your CHA mod (instead of Dex mod) to all skill checks involving picking locks, escaping ropes or manacles, or other similar feats of escape artistry. &#13;
 			2)You can teleport to any unoccupied location you choose within 120ft. You can only choose a destination from which no conscious creature can see you appear.</description>
 		</sheet>

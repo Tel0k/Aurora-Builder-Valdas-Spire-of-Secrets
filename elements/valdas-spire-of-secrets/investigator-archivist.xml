@@ -140,7 +140,7 @@
 			<p class="indent">Moreover, you can precisely copy the exact motions of a spell's casting to duplicate its effect. When you see a spell of 5th level or lower being cast, you can use your action and spend 1 use of your Rushed Incantation feature to cast the spell yourself without expending a spell slot. To use this ability, the spell must have a casting time of 1 action, must have been cast within the last minute, and must not have expensive material components.</p>
 			<p class="indent">Once you duplicate a spell in this way, you can't do so again until you finish a long rest. </p>
 		</description>
-		<sheet usage="(1) 1/Long Rest">
+		<sheet usage="1/Long Rest (1)">
 			<description>You can copy any ritual spell you see being cast into your grimoire. Moreover, you can precisely copy the exact motions of a spell's casting to duplicate its effect. (1)When you see a spell of 5th level or lower being cast, you can use your action and spend 1 use of your Rushed Incantation feature to cast the spell yourself without expending a spell slot. To use this ability, the spell must have a casting time of 1 action, must have been cast within the last minute, and must not have expensive material components.</description>
 		</sheet>
 	</element>

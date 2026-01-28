@@ -92,7 +92,7 @@
 			<p>Beginning at 17th level, you can spend 3 ki points to channel your ki into a single strike, knocking a foe unconscious. As an action, make an unarmed strike against a creature within your reach. On a hit, the target takes damage as normal. If the creature has 100 or fewer hit points after you deal damage, it is reduced to 0 hit points, is knocked unconscious, and becomes stable.</p>
 			<p class="indent">Once you use this ability, you can't use it again until you finish a long rest.</p>
 		</description>
-		<sheet action="Action" usage="3 Ki - 1/Long Rest">
+		<sheet action="Action" usage="1/Long Rest - 3 Ki">
 			<description> You channel your ki into a single strike. Make an unarmed strike against a creature within your reach. On a hit, the target takes damage as normal. If the creature has 100 or fewer hit points after you deal damage, it is reduced to 0 hit points, is knocked unconscious, and becomes stable.</description>
 		</sheet>
 	</element>

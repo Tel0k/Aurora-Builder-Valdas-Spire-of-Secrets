@@ -96,7 +96,7 @@
 		<description>
 			<p>Beginning at 14th level, once per day when you finish a short or long rest, choose up to five creatures you can see at the end of the rest to gain a blessing. This blessing lasts until the creature finishes a short or long rest. Whenever a blessed creature makes an attack roll, ability check, or saving throw, it can expend the blessing to reroll the die and must use the new roll.</p>
 		</description>
-		<sheet usage="(1/Day)/Short||Long Rest">
+		<sheet usage="1/Day /Short||Long Rest">
 			<description>Choose up to 5 creatures you can see at the end of the rest to gain a blessing. This blessing lasts until the creature finishes a short or long rest. Whenever a blessed creature makes an attack roll, ability check, or saving throw, it can expend the blessing to reroll the die and must use the new roll.</description>
 		</sheet>
 	</element>

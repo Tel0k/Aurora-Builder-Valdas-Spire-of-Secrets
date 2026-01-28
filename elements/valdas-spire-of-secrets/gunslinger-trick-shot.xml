@@ -63,7 +63,7 @@
         <description>
             <p>Starting at 14th level, once per turn when you hit a creature with a ranged firearm attack, you can ricochet the bullet to hit an additional target. The second target must be within half the firearm's range of the first target. Make a separate attack roll for the second target. You can use this feature a number of times equal to your Dexterity modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
         </description>
-        <sheet usage="1/Turn, {{pinball}}/Long Rest">
+        <sheet usage="{{pinball}}/Long Rest, 1/Turn">
             <description> When you use your Attack action to make only one ranged attack with a firearm and do not have disadvantage, you can gain advantage on the attack roll and deal damage on a hit as if you scored a critical hit.</description>
         </sheet>
         <rules>

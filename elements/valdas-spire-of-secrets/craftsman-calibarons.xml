@@ -152,7 +152,7 @@
             <p class="indent">You can use your action to fire the launcher at a point you can see within 60 feet of you. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw against your Masterwork save DC, taking 8d6 fire damage on a failed save, or half as much on a successful save.</p>
             <p class="indent">Once you fire the launcher, you can't do so again until you finish a short or long rest.</p>
 		</description>
-		<sheet action="(1)||(2) Action" usage="(2) 1/Short||Long Rest">
+		<sheet action="(1)||(2) Action" usage="1/Short||Long Rest (2)">
 			<description> You have learned to construct an underbarrel grenade launcher. &#13;
             (1)You can attach this launcher to a two-handed ranged weapon with the Firearm property or remove it from one. If the launcher is ever lost or stolen, you can construct a new one over the course of a long rest with 100 gp in materials. &#13;
             (2)You can fire the launcher at a point you can see within 60ft of you. Each creature in a 10ft-radius sphere centered on that point must make a DC{{masterwork:dc}} DEX saving throw, taking 8d6 fire damage on a failed save, or half as much on a successful save.</description>

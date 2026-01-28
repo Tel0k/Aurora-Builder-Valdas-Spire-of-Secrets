@@ -95,7 +95,7 @@
 		<description>
 			<p>Once on each of your turns when you miss with an unarmed strike, you can spend 1 ki point to follow it up with a quick headbutt. Make a second unarmed strike against the same target. The damage die of this unarmed strike is 1d8.</p>
 		</description>
-		<sheet usage="Ki - 1/Turn">
+		<sheet usage="1/Turn - Ki">
 			<description>When you miss with an unarmed strike, you can follow it up with a quick headbutt. Make a second unarmed strike against the same target. The damage die of this unarmed strike is 1d8.</description>
 		</sheet>
 	</element>

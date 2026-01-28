@@ -124,7 +124,7 @@
             <p>Starting at 14th level, your accursed magic has seeped into your weapon. Once per turn, when you hit a creature with a melee weapon attack, you can perform a shrieking strike. The target must succeed a Wisdom saving throw against your spell save DC or be frightened of you for up to 1 minute. The target can repeat this saving throw at the end of its turn, ending the effect on itself on a success.</p>
             <p class="indent">You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
         </description>
-        <sheet usage="1/Turn,{{strike:count}}/Long Rest">
+        <sheet usage="{{strike:count}}/Long Rest, 1/Turn">
             <description> When you hit a creature with a melee weapon attack, you can perform a shrieking strike. The target must succeed a DC{{spellcasting:dc:cha}} WIS saving throw or be frightened of you for up to 1 minute. The target can repeat this saving throw at the end of its turn, ending the effect on itself on a success.</description>
         </sheet>
         <rules>
